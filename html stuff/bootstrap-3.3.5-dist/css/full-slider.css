@@ -4,16 +4,12 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-.col-xs-6
-{
 
-}
 
 html,
 body {
     height: 100%;
     width: 100%;
-
 }
 
 
@@ -24,11 +20,16 @@ body {
 .active {
     height: 100%;
 
+    
 }
 
 
 .carousel-inner {
     height: 100%;
+
+
+  
+
 
 }
 
@@ -37,12 +38,11 @@ body {
 .fill {
     width: 100%;
     height: 100%;
-    background-position: top;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    background-size: contain;
-    -o-background-size: contain;
-
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 /*
 footer {
