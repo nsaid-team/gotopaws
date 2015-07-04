@@ -101,9 +101,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/bootstrap-3.3.5-dist/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
-    '/home/gotopaws/html stuff/',
+    '/home/gotopaws/html stuff/bootstrap-3.3.5-dist',
 )

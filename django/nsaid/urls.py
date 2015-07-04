@@ -22,6 +22,9 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^test/$', views.test),
     url(r'^$', views.home),
+    url(r'^Home.html$', views.home),
     url(r'^About.html$', views.about),
-    url(r'^testInput.html$', views.testInput),
+    url(r'^Cats.html$', views.cats),
+    url(r'^Dogs.html$', views.dogs),
+    url(r'^Shelters.html$', views.shelters),
 ]
