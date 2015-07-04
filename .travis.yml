@@ -3,18 +3,38 @@ language: python
 python:
   - "3.4"
 
+before_install:
+  - sudo apt-get update
+
 # install dependencies
 install: "pip install -r dependencies.txt"
 
-# create database
 before_script:
+  - pip install --upgrade pip
+  - pip install coverage
+  - sudo apt-get install python-numpy
   - psql -c 'create database testdb;' -U postgres
+  - uname -a
+  - printenv
+  - pip3 --version
+  - pip3 freeze
+  - python3 --version
+  - coverage3 --version
+  - python3 -c "import numpy; print(numpy.__version__)"
 
-# run tests
-script: python tests.py
-script: bash travis.bash
+script:
+    - date
+    - ls -al
+    - touch IDB.log
+    - ls -al
+    - make test
+    - ls -al
+    - bash travis.bash
+    - make check
+
 
 # ignore push events to this branch
 branches:
-  except:
-    - travis-ci
+  only:
+  - master
+  - dev-branch
