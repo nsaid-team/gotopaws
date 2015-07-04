@@ -1,17 +1,17 @@
-﻿FILES :=                            \
-    .travis.yml                     \
-    manage.py                       \
-    apiary.apib 										\
-		IDB.log                       	\
-    models.html											\
-    Report.pdf											\
-    tests.out												\
-    tests.py												\
+﻿FILES :=                            				\
+    	.travis.yml                     			\
+    	manage.py                       			\
+    	apiary.apib 						\
+	IDB.log             					\
+    	models.html						\
+    	Report.pdf						\
+    	tests.out						\
+    	tests.py						\
 
 all:
 
 check:
-	@for i in $(FILES);                                         \
+	@for i in $(FILES);                                     \
     do                                                          \
         [ -e $$i ] && echo "$$i found" || echo "$$i NOT FOUND"; \
     done
