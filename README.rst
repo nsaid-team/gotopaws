@@ -1,4 +1,4 @@
-gotopaws.me source code
-=============================
+GotoPaws Source Code
+====================
 
-https://travis-ci.org/nsaid-team/gotopaws.svg?branch=master
+<img> https://travis-ci.org/nsaid-team/gotopaws.svg?branch=master
