@@ -1,4 +1,5 @@
 GotoPaws Source Code
 ====================
 
-<img> https://travis-ci.org/nsaid-team/gotopaws.svg?branch=master
+### Status
+[![Build Status](https://travis-ci.org/nsaid-team/gotopaws.svg?branch=master)
