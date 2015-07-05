@@ -1,12 +1,13 @@
 FORMAT: 1A
-HOST: http://nsaid.me/
+HOST: http://private-300ca-nsaid.apiary-mock.com/
 
-# The GotoPaws Database API
----------------------------
+# GotoPaws Database API
+
 Below you will find a current list of the available methods on our website API.
 
 ## Useful Link
 * [GitHub Developer Team](https://github.com/nsaid-team)]
+* [API Support](http://docs.nsaid.apiary.io/)
 
 ## Resources
 
@@ -14,41 +15,58 @@ Below you will find a current list of the available methods on our website API.
 + [Pets](<http://private-300ca-nsaid.apiary-mock.com/pets)
 + [Cities](<http://private-300ca-nsaid.apiary-mock.com/cities)
 
+## Response Format
+Our version of the API, only supports a single format: JSON.
+
 # Group Shelters
-Shelters related resources of the **GoToPaws API**
+Get the list of Shelters
 
 ## Shelters Collection [/shelters]
 ### List all shelters [GET]
 + Response 200 (application/json)
-
-        [{
-            "id":"TX1218",
-            "name":"Austin Pets Alive!",
-            "phone":"512 961 6519",
-            "state":"TX",
-            "city":"Austin",
-            "zip":"78704"
-        },{
-            "id":"CA5340",
-            "name":"Rocket Dog Rescue",
-            "phone":"415 786 5566",
-            "state":"CA",
-            "city":"San Francisco",
-            "zip":"94132"
-        },{
-            "id":"NY2900",
-            "name":"ASPCA",
-            "phone":"212 876 7700",
-            "state":"NY",
-            "city":"New York",
-            "zip":"10128"
-        }]
+    + Headers
+    
+        ```
+        Link: <http://private-300ca-nsaid.apiary-mock.com/shelters>
+        Accept-Language: <en-us>
+        ```
+    + Body
+        ```
+        {
+            shelters: [
+                {
+                    "id":"TX1218",
+                    "name":"Austin Pets Alive!",
+                    "phone":"512 961 6519",
+                    "state":"TX",
+                    "city":"Austin",
+                    "zip":"78704"
+                },
+                {
+                    "id":"CA5340",
+                    "name":"Rocket Dog Rescue",
+                    "phone":"415 786 5566",
+                    "state":"CA",
+                    "city":"San Francisco",
+                    "zip":"94132"
+                },
+                {
+                    "id":"NY2900",
+                    "name":"ASPCA",
+                    "phone":"212 876 7700",
+                    "state":"NY",
+                    "city":"New York",
+                    "zip":"10128"
+                }
+            ]
+        }
+        ```
 
 ## Shelter [/shelters/{id}]
 A single Shelter object with all its details
 
 + Parameters
-    + id (required, `TX1218`) ...`id` of the Shelter to perform action with. Has example value.
+    + id (required, string, `TX1218`) ...`id` of the Shelter to perform action with. Has example value.
 
 ### Retrieve a Shelter [GET]
 + Response 200 (application/json)
