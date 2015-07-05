@@ -1,0 +1,4 @@
+%2F%2F
+[Shelter]1-*[Pet]
+[Pet]*-1[City]
+[City]1-*[Shelter]
