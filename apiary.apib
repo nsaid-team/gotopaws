@@ -25,8 +25,7 @@ Get the list of Shelters
 ### List all Shelters [GET]
 + Response 200 (application/json)
 
-        {
-            "shelters": [
+            [
                 {
                     "id":"TX1218",
                     "name":"Austin Pets Alive!",
@@ -52,28 +51,25 @@ Get the list of Shelters
                     "zip":"10128"
                 }
             ]
-        }
 
 ## Shelter [/shelters/{id}]
 
 A single Shelter object with all its details
 
 + Parameters
-    + id (required, string, `TX1218`) ...`id` of the Shelter to perform action with. Has example value.
+    + id (required, string, {id}) ...`id` of the Shelter to perform action with. Has example value.
 
 ### Get Shelter by id [GET]
 + Response 200 (application/json)
     
-        {
-            "shelters" : {
+            {
                 "id":"TX1218",
                 "name":"Austin Pets Alive!",
                 "phone":"512 961 6519",
                 "state":"TX",
                 "city":"Austin",
                 "zip":"78704"
-            }
-        }
+            },
 
 + Response 404 (application/json)
 
