@@ -22,7 +22,7 @@ Our version of the API, only supports a single format: JSON.
 Get the list of Shelters
 
 ## Shelters Collection [/shelters]
-### List all shelters [GET]
+### List all Shelters [GET]
 + Response 200 (application/json)
     + Headers
     
@@ -68,8 +68,7 @@ A single Shelter object with all its details
 + Parameters
     + id (required, string, `TX1218`) ...`id` of the Shelter to perform action with. Has example value.
 
-### Retrieve a Shelter [GET]
-+ Response 200 (application/json)
+### Get Shelter by id [GET]
 
     + Header
 
@@ -85,6 +84,13 @@ A single Shelter object with all its details
                 "city":"Austin",
                 "zip":"78704"
             }
+    
+    + Response 200 (application/json)
+        {
+            "results": {
+                "id": "TX1218"
+            }
+        }
 
 + Response 404 (application/json)
 
