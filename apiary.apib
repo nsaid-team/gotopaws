@@ -24,14 +24,7 @@ Get the list of Shelters
 ## Shelters Collection [/shelters]
 ### List all Shelters [GET]
 + Response 200 (application/json)
-    + Headers
-    
-        ```
-        Link: <http://private-300ca-nsaid.apiary-mock.com/shelters>
-        Accept-Language: <en-us>
-        ```
-    + Body
-        ```
+
         {
             "shelters": [
                 {
@@ -60,20 +53,15 @@ Get the list of Shelters
                 }
             ]
         }
-        ```
 
 ## Shelter [/shelters/{id}]
+
 A single Shelter object with all its details
 
 + Parameters
     + id (required, string, `TX1218`) ...`id` of the Shelter to perform action with. Has example value.
 
 ### Get Shelter by id [GET]
-
-    + Header
-
-            X-My-Header: The Value
-
     + Response 200 (application/json)
     
         {
