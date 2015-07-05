@@ -1,4 +1,7 @@
 %2F%2F
+[Shelter|id;name;pets;city;state;phone;address;email]
+[Pet|id;type;shelter;city;longevity;popularity;name;breed;age;size;pic]
+[City|id;name;shelter;pets;state;population;pic;parks]
 [Shelter]1-*[Pet]
 [Pet]*-1[City]
 [City]1-*[Shelter]
