@@ -23,8 +23,11 @@ urlpatterns = [
     url(r'^test/$', views.test),
     url(r'^$', views.home),
     url(r'^Home.html$', views.home),
+    url(r'^Shelters.html$', views.shelters),
+    url(r'^Pets.html$', views.pets),
+    url(r'^Cities.html$', views.cities),
     url(r'^About.html$', views.about),
     url(r'^Cats.html$', views.cats),
     url(r'^Dogs.html$', views.dogs),
-    url(r'^Shelters.html$', views.shelters),
+    url(r'^Shelter_APA.html$', views.shelter_apa),
 ]

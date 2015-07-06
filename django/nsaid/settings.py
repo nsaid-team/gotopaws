@@ -56,7 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            '/home/gotopaws/html stuff',
+            '../html',
         ],
         'APP_DIRS': False,
         'OPTIONS': {
@@ -105,5 +105,5 @@ STATIC_URL = '/bootstrap-3.3.5-dist/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
-    '/home/gotopaws/html stuff/bootstrap-3.3.5-dist',
+    '../html/bootstrap-3.3.5-dist',
 )
