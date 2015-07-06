@@ -1,0 +1,1 @@
+{"pets":[{"id":"001","petstype":"cats","shelterid":"TX1120","city":"Dallas","zip_code":"75370","state":"TX"},{"id":"002","petstype":"dogs","shelterid":"CA792","city":"San Francisco","zip_code":"94141","state":"CA"},{"id":"003","petstype":"birds","shelterid":"NJ775","city":"Woodbridge","zip_code":" 07095","state":"NJ"}]}
