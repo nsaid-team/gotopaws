@@ -26,32 +26,30 @@ Our version of the API, only supports a single format: JSON.
 
         {
             "shelters":
-                [
-                    {
-                    "id":"TX1218",
-                    "name":"Austin Pets Alive!",
-                    "phone":"512 961 6519",
-                        "state":"TX",
-                        "city":"Austin",
-                        "zip":"78704"
-                    },
-                    {
-                        "id":"CA5340",
-                        "name":"Rocket Dog Rescue",
-                        "phone":"415 786 5566",
-                        "state":"CA",
-                        "city":"San Francisco",
-                        "zip":"94132"
-                    },
-                    {
-                        "id":"NY2900",
-                        "name":"ASPCA",
-                        "phone":"212 876 7700",
-                        "state":"NY",
-                        "city":"New York",
-                        "zip":"10128"
-                    }
-                ]
+            [
+                {
+                    "id":"TX1120",
+                    "name":"Cat Matchers",
+                    "petstype":"cats",
+                    "city":"Dallas",
+                    "state":"TX",
+                    "phone":"972 458 7877"
+                },{
+                    "id":"CA792",
+                    "name":"Grateful Dogs Rescue",
+                    "petstype":"dogs",
+                    "city":"San Francisco",
+                    "state":"CA",
+                    "phone":"415 587 1121"
+                },{
+                    "id":"NJ775",
+                    "name":"Lonely Grey Rescue",
+                    "petstype":"birds",
+                    "city":"Woodbridge",
+                    "state":"NJ",
+                    "phone":"732 585 5559"
+                }
+            ]
         }
 
 ## Shelter [/shelters/{id}]
@@ -59,19 +57,12 @@ Our version of the API, only supports a single format: JSON.
 A single Shelter object with all its details
 
 + Parameters
-    + id (required, string,`TX1218` ) ...`id` of the Shelter to perform action with. Has example value.
+    + id (required, string,`` ) ...`id` of the Shelter to perform action with. Has example value.
 
 ### Get Shelter by id [GET]
 + Response 200 (application/json)
     
-            {
-                "id":"TX1218",
-                "name":"Austin Pets Alive!",
-                "phone":"512 961 6519",
-                "state":"TX",
-                "city":"Austin",
-                "zip":"78704"
-            }
+           
             
 + Response 404 (application/json)
 
