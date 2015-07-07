@@ -22,13 +22,13 @@ class Test (TestCase) :
     def test_pet1 (self) :
 
         p = Pet.objects.create(
-            petsid = "24306492"
-            name = "Amigo"
-            age = "Adult"
-            size = "S"
-            breed = "Chihuahua"
-            shelter = "TX1148"
-            city = "Austin"
+            petsid = "24306492",
+            name = "Amigo",
+            age = "Adult",
+            size = "S",
+            breed = "Chihuahua",
+            shelter = "TX1148",
+            city = "Austin",
             pic_url = "picurl")
 
         self.assertTrue(type(p) == Pet)
