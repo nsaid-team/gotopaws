@@ -118,7 +118,7 @@ class Test (TestCase) :
             state = "TX"
             phone = "512 636 8473"
             email = "hound@dogs.org"
-            hours = "9:00am- 5:00pm"
+            hours = "9:00am- 5:00pm")
 
         self.assertTrue(type(s) == Shelter)
         self.assertEqual(s.shelterid, "TX500")
@@ -140,7 +140,7 @@ class Test (TestCase) :
             state = "TX"
             phone = "512 978 0500"
             email = "hound@dogs.org"
-            hours = "9:00am- 5:00pm"
+            hours = "9:00am- 5:00pm")
 
         self.assertTrue(type(s) == Shelter)
         self.assertEqual(s.shelterid, "TX500")
@@ -162,7 +162,7 @@ class Test (TestCase) :
             address = "4151 McKinney Ave"
             state = "TX"
             country = "US"
-            vet_url = "veturl"
+            vet_url = "veturl")
 
         self.assertTrue(type(s) == City)
         self.assertEqual(c.name, "Dallas")
@@ -190,7 +190,7 @@ class Test (TestCase) :
             address = "7300 Ranch Road 2222"
             state = "TX"
             country = "US"
-            vet_url = "veturl"
+            vet_url = "veturl")
 
         self.assertTrue(type(s) == City)
         self.assertEqual(c.name, "Austin")
