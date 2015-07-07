@@ -34,7 +34,6 @@ script:
     - bash travis.bash
     - make check
 
-
 # ignore push events to this branch
 branches:
   only:
