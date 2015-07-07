@@ -35,7 +35,7 @@
 
 </head>
 
-<body ng-controller ="SheltersTable as shelter">
+<body>
 
     <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
@@ -112,9 +112,10 @@
         </style>
         <p> test 1 </p>
               {{"Hello"}}
-        <div > 
+        <div ng-controller="ShelterTable as shelter"> 
+            table goes here
 
-             <shelter-table></shelter-table>
+             <ng-repeat="key in shelter.data.all_shelters" shelter-table></shelter-table>
         </div>
 
            
