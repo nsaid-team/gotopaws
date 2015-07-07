@@ -39,4 +39,5 @@ manage.py: manage.py
 tests.out: tests.py
 	cd django
 	./manage.py test
+	cd ..
 
