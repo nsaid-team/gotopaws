@@ -20,8 +20,8 @@ class Test (TestCase) :
 
 	def test_pet1 (self) :
 
-		p = Pet.objects.create(
-			petsid = "24306492"
+        p = Pet.objects.create(
+            petsid = "24306492"
             name = "Amigo"
             age = "Adult"
             size = "S"
@@ -165,7 +165,6 @@ class Test (TestCase) :
 
         self.assertTrue(type(s) == City)
         self.assertEqual(c.name, "Dallas")
-		self.assertEqual(c.address, "4151 McKinney Ave")
         self.assertEqual(c.state, "TX")
         self.assertEqual(c.city, "US")
         self.assertEqual(s.vet_url, "veturl")
@@ -180,7 +179,6 @@ class Test (TestCase) :
 
         self.assertTrue(type(s) == City)
         self.assertEqual(c.name, "San Francisco")
-		self.assertEqual(c.address, "1207 Ninth Ave")
         self.assertEqual(c.state, "CA")
         self.assertEqual(c.city, "US")
         self.assertEqual(s.vet_url, "veturl")
@@ -195,7 +193,6 @@ class Test (TestCase) :
 
         self.assertTrue(type(s) == City)
         self.assertEqual(c.name, "Austin")
-		self.assertEqual(c.address, "7300 Ranch Road 2222")
         self.assertEqual(c.state, "TX")
         self.assertEqual(c.city, "US")
         self.assertEqual(s.vet_url, "veturl")
