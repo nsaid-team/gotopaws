@@ -12,12 +12,12 @@ class Pet(models.Model):
 
     petsid = models.CharField(primary_key=True)
     name = models.CharField(max_length=100)
-    age = models.CharField(max_lenght=20)
-    size = models.CharField(max_lenght=20)
-    breed = models.CharField(max_lenght=100)
+    age = models.CharField(max_length=20)
+    size = models.CharField(max_length=20)
+    breed = models.CharField(max_length=100)
     shelter = models.ForeignKey(Shelter)
     city = models.ForeignKey(City)
-    pic_url = models.CharField(max_lenght=500)
+    pic_url = models.CharField(max_length=500)
     
     def __str__ (self):
         return self.petsid
@@ -58,7 +58,7 @@ class City(models.Model):
     The __str__ method is used to return the concatenated city and state.
     """
 
-    name = models.CharField(max_lenght=100)
+    name = models.CharField(max_length=100)
     state = models.CharField(max_length=300)
     country = models.CharField(max_length=100)
     vet_url = models.CharField(max_length=500)
