@@ -1,0 +1,441 @@
+commit 207576a53c3d86184d6b5b341cef25d07e03270c
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 6 16:54:40 2015 -0500
+
+    Update apiary.apib
+
+commit 88778b987d082f38012dcda8a5a7beced4f937f1
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Mon Jul 6 15:34:18 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 893afd5bc42f4a53eccc4f6b60a8ddf93e55b408
+Merge: 151f452 edd8630
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Mon Jul 6 12:09:36 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 151f452e873fb8227fb9cd37206f662b2e07182d
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Mon Jul 6 12:09:04 2015 -0500
+
+    adding an illustrative, simplified, jsonlint-verified, 3 pet/3 shelter/3 city data set
+
+commit edd863000d2dcca4b74400e255c0e642a8e91c03
+Merge: 716fd51 d4a515e
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Mon Jul 6 05:02:30 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 716fd512931f70b867329d109654dd7b001f05d0
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Mon Jul 6 04:57:24 2015 -0500
+
+    adding site map, which contains all the same data all the Plurals_Page.jpg files
+
+commit d4a515ef0ab9bb65596a464665c6b4801e0dd622
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 6 04:33:29 2015 -0500
+
+    Delete README.txt
+
+commit fa3ad8ba015d622d1f8a5dfe847c115a7dfb2a02
+Author: nelmiux <npererar@utexas.edu>
+Date:   Mon Jul 6 04:29:19 2015 -0500
+
+    Udated
+
+commit e6add15c4e79c2c86e86835339b9d06c54ea92a2
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sun Jul 5 22:57:59 2015 -0500
+
+    adding sort buttons following Downing's comments on piazza
+
+commit e0671f574cbeacdf2bc8c8a0c1828d49d9c98154
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sun Jul 5 22:11:19 2015 -0500
+
+    Create README.txt
+
+commit 3bdda3e76a901a75fb3749b54098f64bf5a6d337
+Merge: 61122b9 4f95821
+Author: nelmiux <npererar@utexas.edu>
+Date:   Sun Jul 5 22:09:05 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 61122b984ad4a67ac878be972278584ee2a76a15
+Author: nelmiux <npererar@utexas.edu>
+Date:   Sun Jul 5 22:08:54 2015 -0500
+
+    Page Structure Added
+
+commit 4f958212e2ceb7cf54641d7f56b64f603c267782
+Merge: 3328c1a 3bb1347
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Sun Jul 5 21:49:53 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 3328c1af5aa3094d41912711fa7e7579eb1cff5d
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Sun Jul 5 21:49:35 2015 -0500
+
+    adding datasets
+
+commit 3bb1347b73dc5cc1ce61199d63d3a7644e9ee2d3
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sun Jul 5 21:45:55 2015 -0500
+
+    Update README.txt
+
+commit d43be8a20dd41206b564e10706feb7063648a782
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sun Jul 5 21:44:40 2015 -0500
+
+    Update README.txt
+
+commit 59668404abbcea7bd075b70eed60a26843f20042
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sun Jul 5 21:43:51 2015 -0500
+
+    Update README.txt
+
+commit 25271f224c4703ffb3e4bc75c1151d4ad31ed994
+Merge: e3b69c0 bd64736
+Author: nelmiux <npererar@utexas.edu>
+Date:   Sun Jul 5 21:41:55 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit e3b69c0d69dd03ed12cdf036640084654b392133
+Author: nelmiux <npererar@utexas.edu>
+Date:   Sun Jul 5 21:41:46 2015 -0500
+
+    Collected Data Updated
+
+commit bd647363b1d8e5e6563c0709108a79acb1fc9da8
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sun Jul 5 21:28:02 2015 -0500
+
+    Update README.txt
+
+commit 2817e1eee292a7c51b16d83d2650df9cf41574a5
+Author: nelmiux <npererar@utexas.edu>
+Date:   Sun Jul 5 21:20:36 2015 -0500
+
+    Collected Data Updated
+
+commit d4cd45f21b223e48df19126995192ca150ec3c78
+Author: nelmiux <npererar@utexas.edu>
+Date:   Sun Jul 5 21:11:14 2015 -0500
+
+    Data Collected Updated
+
+commit 99c4e9b2df6e4b69f6f755ddd941539965636a14
+Author: nelmiux <npererar@utexas.edu>
+Date:   Sun Jul 5 20:54:33 2015 -0500
+
+    Collected Data Updated
+
+commit c0582798934870dea10c697cdb0bdfec513f847e
+Merge: d232880 0d329f5
+Author: nelmiux <npererar@utexas.edu>
+Date:   Sun Jul 5 19:48:37 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit d23288019c606a8aacfac18303c33e8a09a01196
+Author: nelmiux <npererar@utexas.edu>
+Date:   Sun Jul 5 19:48:28 2015 -0500
+
+    Shelters Data Added
+
+commit 0d329f5d90384f54eb0bcedb97f3952afed0c2bd
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 19:14:16 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 77d467a18922d0b274ea8a88f7f218f33425d893
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 19:14:09 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 28f7202c642c373a287d2caecfe9cfeb90a564b5
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 19:13:58 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 85f71b485e8a7ac1ef7a6b01c5a7e63428c7e73d
+Merge: b34523d 920a946
+Author: nelmiux <npererar@utexas.edu>
+Date:   Sun Jul 5 19:08:28 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit b34523d7efd50fbe3b6e923495c1de1f11cfef50
+Author: nelmiux <npererar@utexas.edu>
+Date:   Sun Jul 5 19:08:14 2015 -0500
+
+    Adding Shelters info to JSON
+
+commit 920a94687b73d67a5a6c9ba0104477bdd3e85874
+Merge: 397102d 57bfffa
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Sun Jul 5 16:54:51 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 397102d7dee1f6c4f70b6a53f59e5ef06d760dc7
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Sun Jul 5 16:54:34 2015 -0500
+
+    added master plan documentation
+
+commit 57bfffafc0666a878f600446f7edb487ec2000bd
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Sun Jul 5 16:43:36 2015 -0500
+
+    updated Pets page
+
+commit cade66a9b2691745ed53f613da019be7bb189b1f
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Sun Jul 5 16:23:33 2015 -0500
+
+    apa page updated info
+
+commit 26243d0134ad5a5f5bd9061b606a82fe6e0a73d0
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Sun Jul 5 16:05:21 2015 -0500
+
+    cities page and austin page
+
+commit a47f8d941ab194aecc3eb5db77286b0ecc7a6d4e
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Sun Jul 5 15:44:47 2015 -0500
+
+    Updated URLs to new HTML files
+
+commit 71e81f5066ae3a1b1556bdeecba124dceccbfd8c
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Sun Jul 5 14:29:44 2015 -0500
+
+    APA shelter page laid out
+
+commit 1b2eb2be4845ee09c2aea0b925dc9e8e671cca15
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Sun Jul 5 14:14:49 2015 -0500
+
+    adding Nelma's attributes to the database models
+
+commit ae8dc61041bb556467839467453e042578ecd1ff
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Sun Jul 5 13:51:53 2015 -0500
+
+    .png and source markup for a yuml diagram of our models
+
+commit 6c770dd58a46ef9b9d6180198f8a725d457f52a6
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Sun Jul 5 13:39:30 2015 -0500
+
+    now with limit=3 like it should have been, not limit=2 like it was
+
+commit 88d48ade5ad3166f0e562c03bd708e1896d7f9e5
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Sun Jul 5 13:36:50 2015 -0500
+
+    resubmitting, this time with limit=3 like it should have been
+
+commit 39f8e8fad9659eee3683c5784e1b1bf3f59f7f1c
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Sun Jul 5 13:10:09 2015 -0500
+
+    wrapped everything in main/create functions
+
+commit fe9263d4ddbfe4be84b64b4b5d1d20f457330465
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Sun Jul 5 12:51:00 2015 -0500
+
+    added readme explaining how data was generated. removed austin_vetrinarian_dataset which was an incomplete intermediate I was going to use to create city_dataset
+
+commit 1c4cbe5cf038d84864edb2eca7ece30a6a28878e
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Sun Jul 5 11:04:01 2015 -0500
+
+    Added city dataset. For austin/sa/houston, and for vet/groomer/park, lists three examples of each
+
+commit 4387edb0dd3b2e0adf78d72eacc78971d8fc2c01
+Merge: a3ce26a c9697d3
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Sun Jul 5 10:59:05 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit a3ce26a7b0f5356fc73d8d978baac160c2fe76be
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Sun Jul 5 10:58:31 2015 -0500
+
+    adding utility script to scrape yelp api for 3 vets/groomers/parks each from austin/sa/houston and dump it in a .json file
+
+commit c9697d3bb3a495a3c57078a7309cc9f871db0ee8
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 05:45:08 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit fd395378f206c5ec19ab1b69a84ac827c2ef5743
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 05:40:24 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit b8bdfbf54d7457c35b40e717a729941a5a547e07
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 05:33:44 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit ad909972b7e98445fb3ce7bc42529bc6760f218a
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 05:29:02 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 41893e5e1c4565d356c6223018ec2958c65063f4
+Merge: 69329ac 4f08b7d
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Sat Jul 4 22:54:28 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 69329aca8a194960c9390ff5c6b387ff18dd310e
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Sat Jul 4 22:53:02 2015 -0500
+
+    adding this to the repo so I can copy paste it in to jsonlint and get a lineending/tabbed copy to look over
+
+commit 4f08b7da1e326208d0fb1446f2ecdd27aacdc2fa
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sat Jul 4 20:09:32 2015 -0500
+
+    Delete Untitled Document
+
+commit d688c5cb305360565ae220348bbcc8941dba0af9
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sat Jul 4 20:04:57 2015 -0500
+
+    Update README.md
+
+commit 687549753378af882237996b75139d9327ef4d39
+Author: nelmiux <npererar@utexas.edu>
+Date:   Sat Jul 4 20:02:49 2015 -0500
+
+    Adding Travis to dev
+
+commit 0547dc810ed6e1257fdef84d4c0ced6fdc1e4701
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Sat Jul 4 19:20:46 2015 -0500
+
+    added About,Pets,and Cities File
+
+commit 017209ec38e1d107029826d19d7eaab50be009e3
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Sat Jul 4 18:49:50 2015 -0500
+
+    Adding the unfiltered shelter and animal data sets
+
+commit dcc3b963887286ffd87acac0f796550d09127d39
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Sat Jul 4 18:32:46 2015 -0500
+
+    added scratch folder
+
+commit 8d4ef171de5fcdadf4392aeefc6ec9a9c64be32d
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Sat Jul 4 18:31:41 2015 -0500
+
+    added scratch folder
+
+commit 00e9a8a60352d297a7f69eef4746b835b4623411
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Sat Jul 4 18:27:16 2015 -0500
+
+    merge with master
+
+commit d341ce40680092542807709d4b5ff2fd958bebe4
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Sat Jul 4 18:19:57 2015 -0500
+
+    added html folder
+
+commit bde3b534d6ae8b514f72032b694dbb6db1cc93a8
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Sat Jul 4 18:18:32 2015 -0500
+
+    html stuff removed
+
+commit 7132ac82c8ad8125ae921f3924dd2238f2fb7241
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Fri Jul 3 19:36:28 2015 -0500
+
+    Delete dev-branch
+
+commit ca012cec317347319cecd5aef754487d04eb17f2
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Fri Jul 3 19:36:08 2015 -0500
+
+    Create dev-branch
+
+commit 19c45507414b6c0a9fbd2e0cf98e9a31c75fd9e5
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Fri Jul 3 15:28:16 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit a7a7dcd9b599cd2a82d2ed49fd3d201a95d2d508
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Fri Jul 3 15:18:21 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit dd2c14cac7a4ea9bdd3823e356f6020ec795ece6
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Fri Jul 3 14:42:22 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 4babbdad46b3d07bed417ce87a53c226035c14b7
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Thu Jul 2 21:05:31 2015 -0500
+
+    made a folder
+
+commit 48b8a09d0118ab53dc14485e688b07ad053b00e1
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Thu Jul 2 21:01:35 2015 -0500
+
+    we have buttons
+
+commit 0df9d6255b796b9f9cefa1acd5eaff3dcf74347e
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Thu Jul 2 19:05:15 2015 -0500
+
+    basic template
+
+commit c43cc06a2c618b38b7d188c9915fe27818e30a5b
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Wed Jul 1 23:27:21 2015 -0500
+
+    empty change to test Slack integration
+
+commit 6886eb8766d881027e1e87310f9b25f3d2ec0620
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Wed Jul 1 22:35:39 2015 -0500
+
+    stub readme file
