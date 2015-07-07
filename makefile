@@ -1,4 +1,4 @@
-﻿FILES :=                            				\
+FILES :=                            				\
     	.travis.yml                     			\
     	manage.py                       			\
     	apiary.apib 						\
