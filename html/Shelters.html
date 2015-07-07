@@ -90,11 +90,11 @@
             <div class="col-md-8">
                   <img class="img-responsive" src="bootstrap-3.3.5-dist/img/Shelters/ShelterBG.JPG" alt="">
             </div>
-            {{shelter.loaded}}
-            <div class="col-md-4" ng-repeat="key in shelter.data.all_shelters">
+           
+            <div class="col-md-4">
                 <h3>{{"hi"}}</h3>
-                <h3>{{key["name"]}}</h3>
-                <h3>{{key["location"]}}</h3>
+                <h3></h3>
+                <h3></h3>
                 <ul>
                     <li>Lorem Ipsum</li>
                     <li>Dolor Sit Amet</li>
@@ -105,7 +105,32 @@
 
         </div>
         <!-- /.row -->
+        <style>
+            table, td  {
+              border: 1px solid grey;
+              border-collapse: collapse;
+              padding: 5px;
+            }
+        </style>
 
+   
+            <table>
+                 <tr>
+                   <td> {{"Name"}}</td>
+                   <td> {{"City"}}</td>
+                   <td> {{"State"}}</td>
+                   <td> {{"Phone"}}</td>
+                   <td> {{"Email"}}</td>
+                </tr>
+        
+                <tr   ng-repeat="key in shelter.data.all_shelters">
+                   <td> {{key.name.$t}}</td>
+                   <td> {{key.city.$t}}</td>
+                   <td> {{key.state.$t}}</td>
+                   <td> {{key.phone.$t}}</td>
+                   <td> {{key.email.$t}}</td>
+                </tr>
+            </table>
 
         <!-- Related Projects Row -->
         <div class="row">
