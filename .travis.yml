@@ -14,9 +14,7 @@ install:
   - pip install coverage
   - sudo apt-get install python-numpy
   - "sudo pip install -r dependencies.txt"
-  - sudo apt-get install python3-pip
-  - pip3 install requests
-  - sudo apt-get install python3-requests
+  - python -m pip install requests
 
 before_script:
   - psql -c 'create database testdb;' -U postgres
