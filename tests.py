@@ -4,6 +4,7 @@
 # imports
 # -------
 
+import requests, json
 from django.test import TestCase, Client
 from django.test.utils import setup_test_environment
 from models import Pet, Shelter, City
@@ -202,42 +203,42 @@ class Test (TestCase) :
 	# ----
 
 	def setUp (self) :
-	    self.c = Client()
+        base_url = "http://private-300ca-nsaid.apiary-mock.com/"
 
 	def test_api_pet_1 (self) :
-	    response = self.c.get('/pets/0123/')
+	    response = requests.get(base_url + 'pets/0123')
 	    self.assertEqual(response.status_code,404)
 
 	def test_api_pet_2 (self) :
-	    response = self.c.get('/pets/0123')
+	    response = requests.get(base_url + '/pets/0123')
 	    self.assertEqual(response.status_code,301)
 
 	def test_api_pet_3 (self) :
-	    response = self.c.get('/pets/')
+	    response = requests.get(base_url + '/pets/')
 	    self.assertEqual(response.status_code,200)
 
 	def test_api_shelter_1 (self) :
-	    response = self.c.get('/shelters/4567/')
+	    response = requests.get(base_url + '/shelters/4567/')
 	    self.assertEqual(response.status_code,404)
         
     def test_api_shelter_2 (self) :
-	    response = self.c.get('/shelters/4567')
+	    response = requests.get(base_url + '/shelters/4567')
 	    self.assertEqual(response.status_code,301)
 
 	def test_api_shelter_3 (self) :
-	    response = self.c.get('/shelters/')
+	    response = requests.get(base_url + '/shelters/')
 	    self.assertEqual(response.status_code,200)
 
 	def test_api_city_1 (self) :
-	    response = self.c.get('/cities/89A/')
+	    response = requests.get(base_url + '/cities/89A/')
 	    self.assertEqual(response.status_code,404)
         
     def test_api_city_2 (self) :
-	    response = self.c.get('/cities/89A')
+	    response = requests.get(base_url + '/cities/89A')
 	    self.assertEqual(response.status_code,301)
 
 	def test_api_city_3 (self) :
-	    response = self.c.get('/cities/')
+	    response = requests.get(base_url + '/cities/')
 	    self.assertEqual(response.status_code,200)
         
 # ----
