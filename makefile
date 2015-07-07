@@ -37,5 +37,6 @@ manage.py: manage.py
 	/usr/bin/env python3 manage.py syncdb
 
 tests.out: tests.py
+	cd django
 	./manage.py test
 
