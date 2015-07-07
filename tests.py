@@ -210,22 +210,14 @@ class Test (TestCase) :
 	    self.assertEqual(response.status_code,404)
 
 	def test_api_pet_2 (self) :
-	    response = requests.get(base_url + '/pets/0123')
-	    self.assertEqual(response.status_code,301)
-
-	def test_api_pet_3 (self) :
 	    response = requests.get(base_url + '/pets/')
 	    self.assertEqual(response.status_code,200)
 
 	def test_api_shelter_1 (self) :
 	    response = requests.get(base_url + '/shelters/4567/')
 	    self.assertEqual(response.status_code,404)
-        
-    def test_api_shelter_2 (self) :
-	    response = requests.get(base_url + '/shelters/4567')
-	    self.assertEqual(response.status_code,301)
 
-	def test_api_shelter_3 (self) :
+	def test_api_shelter_2 (self) :
 	    response = requests.get(base_url + '/shelters/')
 	    self.assertEqual(response.status_code,200)
 
@@ -233,11 +225,7 @@ class Test (TestCase) :
 	    response = requests.get(base_url + '/cities/89A/')
 	    self.assertEqual(response.status_code,404)
         
-    def test_api_city_2 (self) :
-	    response = requests.get(base_url + '/cities/89A')
-	    self.assertEqual(response.status_code,301)
-
-	def test_api_city_3 (self) :
+	def test_api_city_2 (self) :
 	    response = requests.get(base_url + '/cities/')
 	    self.assertEqual(response.status_code,200)
         
