@@ -112,7 +112,7 @@
         </style>
         <p> test 1 </p>
               {{"Hello"}}
-        <div ng-controller="ShelterTable as shelter"> 
+        <div ng-controller="ShelterTable as shelter" ng-include = "../../shelter-table.html"> 
             <table ng-repeat="key in shelter.data.all_shelters" >
 
              <shelter-table></shelter-table>
