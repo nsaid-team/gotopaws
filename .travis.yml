@@ -14,6 +14,8 @@ install:
   - pip install coverage
   - sudo apt-get install python-numpy
   - "sudo pip install -r dependencies.txt"
+  - sudo apt-get install python3-pip
+  - pip3 install requests
   - sudo apt-get install python3-requests
 
 before_script:
