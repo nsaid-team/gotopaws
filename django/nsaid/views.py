@@ -35,5 +35,5 @@ def dogs(request):
     return HttpResponse(template.render())
 
 def shelter_apa(request):
-    template = loader.get_template('Shelter_APA.html')]
+    template = loader.get_template('Shelter_APA.html')
     return HttpResponse(template.render())
