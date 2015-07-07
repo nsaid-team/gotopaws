@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app = "sheltersPage" lang="en">
+<html lang="en">
 
 <head>
 
@@ -35,7 +35,7 @@
 
 </head>
 
-<body>
+<body  ng-app = "sheltersPage">
 
     <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
@@ -112,26 +112,26 @@
         </style>
         <p> test 1 </p>
               {{"Hello"}}
-        <div ng-controller="ShelterTable as shelter" ng-include = "'../../shelter-table.html'"> 
-            <table ng-repeat="key in shelter.data.all_shelters" >
-
-                     <tr>
-                        <td> Name  </td>
-                        <td> City  </td>
-                        <td> State </td>
-                        <td> Phone </td>
-                        <td> Email </td>
-                     </tr>
-                    <tr >
-                       <td> {{key.name.$t}}</td>
-                       <td> {{key.city.$t}}</td>
-                       <td> {{key.state.$t}}</td>
-                       <td> {{key.phone.$t}}</td>
-                       <td> {{key.email.$t}}</td>
-                    </tr>
-
-             <shelter-table></shelter-table>
-         </table>
+        <div ng-controller="ShelterTable as shelter" ng-include = "'boostrap-3.3.5-dist/js/shelter-table.html'" > 
+            <h1>{{shelter.loaded}}</h1>
+            <table >
+              
+                 <tr>
+                    <td> Name  </td>
+                    <td> City  </td>
+                    <td> State </td>
+                    <td> Phone </td>
+                    <td> Email </td>
+                 </tr>
+                <tr >
+                   <td> {{key.name.$t}}</td>
+                   <td> {{key.city.$t}}</td>
+                   <td> {{key.state.$t}}</td>
+                   <td> {{key.phone.$t}}</td>
+                   <td> {{key.email.$t}}</td>
+                </tr>
+                <!--<shelter-table></shelter-table> -->
+            </table>
         </div>
 
            
