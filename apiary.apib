@@ -21,7 +21,14 @@ Our API only supports the JSON format.
         { "all_pets":
             [
                 {
-                    "test":"test"
+                    "petsid":"A4856",
+                    "name":"Sari",
+                    "age":"Adult",
+                    "size":"S",
+                    "breed":"Russian Blue",
+                    "shelter":"TX154",
+                    "city":"Houston",
+                    "pic_url":"http://photos.petfinder.com/photos/pets/20758336/3/?bust=1314882859&width=60&-pnt.jpg"
                 },
                 {
                     "etc..." : "more"
@@ -39,12 +46,20 @@ Our API only supports the JSON format.
         { "all_shelters":
             [
                 {
-                    "test":"test"
+                    "id":"TX1218",
+                    "name":"Austin Pets Alive!",
+                    "address1":"1156 West Cesar Chavez",
+                    "city":"Austin",
+                    "state":"TX",
+                    "phone":"512 961 6519",
+                    "email":"adopt@austinpetsalive.org",
+                    "pets":["32251618"]
                 },
                 {
                     "etc..." : "more"
                 }
-        ]
+            ]
+        }
 
 # Group Cities
 
@@ -53,15 +68,21 @@ Our API only supports the JSON format.
 ### Get list of all Cities [GET]
 + Response 200 (application/json)
 
-        { "all_cities":
-            [
+        {
+            "all_cities": [
                 {
-                    "test":"test"
+                    "name": "Austin",
+                    "state": "TX",
+                    "country": "US",
+                    "shelters": ["TX1218"],
+                    "pets": ["32251618"],
+                    "vet_url": "http://www.yelp.com/biz/corner-vet-austin-3"
                 },
                 {
                     "etc..." : "more"
                 }
-        ]
+            ]
+        }
 
 
 + Response 404 (application/json)
