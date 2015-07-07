@@ -13,6 +13,7 @@ before_script:
   - pip install --upgrade pip
   - pip install coverage
   - sudo apt-get install python-numpy
+  - sudo pip3 install requests --upgrade
   - psql -c 'create database testdb;' -U postgres
   - uname -a
   - printenv
