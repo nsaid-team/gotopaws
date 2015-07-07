@@ -35,7 +35,7 @@
 
 </head>
 
-<body>
+<body ng-controller ="SheltersTable as shelter">
 
     <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
@@ -67,7 +67,7 @@
         </div>
     </nav>
 
-    
+
     <!-- Page Content -->
     <div class="container">
 
@@ -97,9 +97,11 @@
                     <li>Consectetur</li>
                     <li>Adipiscing Elit</li>
                 </ul>
-            </div>
+            </div> 
 
         </div>
+        <br>
+        <br>
         <!-- /.row -->
         <style>
             table, td  {
@@ -108,12 +110,14 @@
               padding: 5px;
             }
         </style>
+        <p> test 1 </p>
+              {{"Hello"}}
+        <div > 
 
-   
-            <div ng-controller="ShelterController as shelter"> 
-                <shelter-table></shelter-table>
-            </div>
+             <shelter-table></shelter-table>
+        </div>
 
+           
         <!-- Related Projects Row -->
         <div class="row">
 
