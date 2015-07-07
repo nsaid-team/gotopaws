@@ -1,87 +1,72 @@
 FORMAT: 1A
 HOST: http://private-300ca-nsaid.apiary-mock.com/
 
-# GotoPaws Database API
+# GotoPaws
+GotoPaws is an API allowing queries of the gotopaws.me data.
 
-Below you will find a current list of the available methods on our website API.
-
-## Useful Link
+## Useful Links
 * [GitHub Developer Team](https://github.com/nsaid-team)
-* [API Support](http://docs.nsaid.apiary.io/)
-
-## Resources
-
-+ [Shelters](<http://private-300ca-nsaid.apiary-mock.com/shelters)
-+ [Pets](<http://private-300ca-nsaid.apiary-mock.com/pets)
-+ [Cities](<http://private-300ca-nsaid.apiary-mock.com/cities)
+* [API Support](http://docs.gotopaws1.apiary.io)
 
 ## Response Format
-Our version of the API, only supports a single format: JSON.
+Our API only supports the JSON format.
 
-# Group Shelters
+# Group Pets
 
-## Shelters Collection [/shelters]
-### Get List of all Shelters [GET]
+## Pets Collection [/pets/]
+
+### Get list of all Pets [GET]
 + Response 200 (application/json)
 
-        {
-            "shelters":
+        { "all_pets":
             [
                 {
-                    "id":"TX1218",
-                    "name":"Austin Pets Alive!",
-                    "address1":"1156 West Cesar Chavez",
-                    "city":"Austin",
-                    "state":"TX",
-                    "phone":"512 961 6519",
-                    "email":"adopt@austinpetsalive.org",
-                    "pets":["32251618"]
-                },{
-                    "id":"CA1287",
-                    "name":"Muttville Senior Dog Rescue",
-                    "address1":"255 Alabama St",
-                    "city":"San Francisco",
-                    "state":"CA",
-                    "phone":"415 842 0320",
-                    "email":"adoption@muttville.org",
-                    "pets":["32607766"]
-                },{
-                    "id":"TX154",
-                    "name":"Homeless Pet Placement League",
-                    "address1":"P. O. Box 273027",
-                    "city":"Houston",
-                    "state":"TX",
-                    "phone":"713 862 7387",
-                    "email":"hppl@hppl.org",
-                    "pets":["20758336"]
+                    "test":"test"
+                },
+                {
+                    "etc..." : "more"
                 }
             ]
         }
 
-## Shelter [/shelters/{id}]
+# Group Shelters
 
-A single Shelter object with all its details
+## Shelters Collection [/shelters/]
 
-+ Parameters
-    + id (required, string,`` ) ...`id` of the Shelter to perform action with. Has example value.
-
-### Get Shelter by id [GET]
+### Get list of all Shelters [GET]
 + Response 200 (application/json)
-    
-           
-            
+
+        { "all_shelters":
+            [
+                {
+                    "test":"test"
+                },
+                {
+                    "etc..." : "more"
+                }
+        ]
+
+# Group Cities
+
+## Cities Collection [/cities/]
+
+### Get list of all Cities [GET]
++ Response 200 (application/json)
+
+        { "all_cities":
+            [
+                {
+                    "test":"test"
+                },
+                {
+                    "etc..." : "more"
+                }
+        ]
+
+
 + Response 404 (application/json)
 
     + Body
     
-            {"name":"Not Found", "value":"404", "description":"Shelter does not exist"}
-
-# Group Pets
-Pets related resources of the **GoToPaws API**
-
-## Pets Collection [/pets]
-### Get List all pets [GET]
-+ Response 200 (application/json)
-
-
+            {"name" : "Not Found", "value":"404", "description":"Resource does not exist"}
         
