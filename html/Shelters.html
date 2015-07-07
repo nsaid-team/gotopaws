@@ -115,6 +115,20 @@
         <div ng-controller="ShelterTable as shelter" ng-include = "'../../shelter-table.html'"> 
             <table ng-repeat="key in shelter.data.all_shelters" >
 
+                     <tr>
+                        <td> Name  </td>
+                        <td> City  </td>
+                        <td> State </td>
+                        <td> Phone </td>
+                        <td> Email </td>
+                     </tr>
+                    <tr >
+                       <td> {{key.name.$t}}</td>
+                       <td> {{key.city.$t}}</td>
+                       <td> {{key.state.$t}}</td>
+                       <td> {{key.phone.$t}}</td>
+                       <td> {{key.email.$t}}</td>
+                    </tr>
 
              <shelter-table></shelter-table>
          </table>
