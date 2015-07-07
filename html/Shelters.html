@@ -35,7 +35,7 @@
 
 </head>
 
-<body ng-controller="ShelterController as shelter">
+<body>
 
  <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top topnav" role="navigation">
@@ -114,23 +114,9 @@
         </style>
 
    
-            <table>
-                 <tr>
-                   <td> {{"Name"}}</td>
-                   <td> {{"City"}}</td>
-                   <td> {{"State"}}</td>
-                   <td> {{"Phone"}}</td>
-                   <td> {{"Email"}}</td>
-                </tr>
-        
-                <tr   ng-repeat="key in shelter.data.all_shelters">
-                   <td> {{key.name.$t}}</td>
-                   <td> {{key.city.$t}}</td>
-                   <td> {{key.state.$t}}</td>
-                   <td> {{key.phone.$t}}</td>
-                   <td> {{key.email.$t}}</td>
-                </tr>
-            </table>
+            <div ng-controller="ShelterController as shelter"> 
+                <shelter-table></shelter-table>
+            </div>
 
         <!-- Related Projects Row -->
         <div class="row">
