@@ -37,7 +37,5 @@ manage.py: manage.py
 	/usr/bin/env python3 manage.py syncdb
 
 tests.out: tests.py
-	coverage3 run    --branch tests.py >  tests.out 2>&1
-	coverage3 report -m                      >> tests.out
-	cat tests.out
+	./manage.py test
 
