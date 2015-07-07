@@ -5,16 +5,14 @@
 # -------
 
 import requests, json
-from unittest import unittest
-from django.test import TestCase
-from django.test.utils import setup_test_environment
+import unittest
 from models import Pet, Shelter, City
 
 # -----------
 # test
 # -----------
 
-class Test (TestCase) :
+class Test (unittest.TestCase) :
 
     # ----
     # Pet Model
