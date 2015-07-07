@@ -1,7 +1,4 @@
 from django.db import models
-from django.contrib.auth.models import User
-from django.utils.html import format_html
-
 
     # -------------
     # Pet_model
