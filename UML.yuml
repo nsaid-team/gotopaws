@@ -1,0 +1,4 @@
+// GoToPaws Class Diagram
+[City|+name: string;+state: string;+country: string;+vet_url: string{bg:skyblue}]1..1-1..*[Pet|+petsid: string;+name: string;+age: string;+size: string;+breed: string;+shelter: string;+city: string;+pic_url: string{bg:sandybrown}], 
+[City]1..1-1..*[Shelter|+shelterid: string;+name: string;+address: string; +city: string;+state: string; +phone: string;+email: string;+hours: string{bg:palegreen}]
+[Pet]1..*-1..1[Shelter]
