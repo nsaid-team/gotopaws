@@ -5,7 +5,6 @@
 # -------
 
 import requests, json
-from django.conf import settings
 import unittest
 from models import Pet, Shelter, City
 
@@ -18,7 +17,6 @@ class Test (unittest.TestCase) :
     # ----
     # Pet Model
     # ----
-    settings.configure()
     def test_pet1 (self) :
 
         p = Pet.objects.create(
