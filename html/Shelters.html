@@ -113,9 +113,10 @@
         <p> test 1 </p>
               {{"Hello"}}
         <div ng-controller="ShelterTable as shelter"> 
-            table goes here
+            <table ng-repeat="key in shelter.data.all_shelters" >
 
-             <ng-repeat="key in shelter.data.all_shelters" shelter-table></shelter-table>
+             <shelter-table></shelter-table>
+         </table>
         </div>
 
            
