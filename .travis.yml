@@ -9,12 +9,14 @@ before_install:
   - sudo apt-get update
 
 # install dependencies
-install: "sudo pip install -r dependencies.txt"
-
-before_script:
-  - sudo pip install --upgrade pip
-  - sudo pip install coverage
+install:
+  - pip install --upgrade pip
+  - pip install coverage
   - sudo apt-get install python-numpy
+  - "sudo pip install -r dependencies.txt"
+  - sudo pip install requests
+
+before_install:
   - psql -c 'create database testdb;' -U postgres
   - uname -a
   - printenv
