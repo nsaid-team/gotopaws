@@ -55,14 +55,13 @@ class Shelter(models.Model):
 
 class City(models.Model):
     """
-    The model contains a name, address, state, country, and vet_url 
+    The model contains a name, state, country, and vet_url 
     The list of pets in a city is handled by Pet having a foreign key Pet.city.
     The list of shelters in a city is handled by Shelter having a foreign key Shelter.city. 
     The __str__ method is used to return the concatenated city and state.
     """
 
     name = models.CharField(max_lenght=100)
-    address = models.CharField(max_length=200)
     state = models.CharField(max_length=300)
     country = models.CharField(max_length=100)
     vet_url = models.CharField(max_length=500)
