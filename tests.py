@@ -176,7 +176,7 @@ class Test (TestCase) :
             address = "1207 Ninth Ave"
             state = "CA"
             country = "US"
-            vet_url = "veturl"
+            vet_url = "veturl")
 
         self.assertTrue(type(s) == City)
         self.assertEqual(c.name, "San Francisco")
