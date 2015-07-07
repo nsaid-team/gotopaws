@@ -43,13 +43,13 @@ class Test (TestCase) :
     def test_pet2 (self) :
 
         p = Pet.objects.create(
-            petsid = "32151337"
-            name = "Tita"
-            age = "Senior"
-            size = "L"
-            breed = "Applehead Siamese"
-            shelter = "TX1334"
-            city = "Austin"
+            petsid = "32151337",
+            name = "Tita",
+            age = "Senior",
+            size = "L",
+            breed = "Applehead Siamese",
+            shelter = "TX1334",
+            city = "Austin",
             pic_url = "picurl")
 
         self.assertTrue(type(p) == Pet)
@@ -64,13 +64,13 @@ class Test (TestCase) :
     def test_pet3 (self) :
 
         p = Pet.objects.create(
-            petsid = "18620461"
-            name = "Little John II"
-            age = "Baby"
-            size = "M"
-            breed = "Tabby"
-            shelter = "TX1222"
-            city = "Austin"
+            petsid = "18620461",
+            name = "Little John II",
+            age = "Baby",
+            size = "M",
+            breed = "Tabby",
+            shelter = "TX1222",
+            city = "Austin",
             pic_url = "picurl")
 
         self.assertTrue(type(p) == Pet)
@@ -89,13 +89,13 @@ class Test (TestCase) :
     def test_shelter1 (self) :
 
         s = Shelter.objects.create(
-            shelterid = "TX1218"
-            name = "Austin Pets Alive!"
-            address = "1156 West Cesar Chavez"
-            city = "Austin"
-            state = "TX"
-            phone = "512 961 6519"
-            email = "adopt@austinpetsalive.org"
+            shelterid = "TX1218",
+            name = "Austin Pets Alive!",
+            address = "1156 West Cesar Chavez",
+            city = "Austin",
+            state = "TX",
+            phone = "512 961 6519",
+            email = "adopt@austinpetsalive.org",
             hours = "10:00am- 6:00pm")
 
         self.assertTrue(type(s) == Shelter)
@@ -111,13 +111,13 @@ class Test (TestCase) :
     def test_shelter2 (self) :
 
         s = Shelter.objects.create(
-            shelterid = "TX500"
-            name = "Hound Rescue"
-            address = "Lakeline Petsmart 11066 Pecan Park Blvd, Cedar Park"
-            city = "Austin"
-            state = "TX"
-            phone = "512 636 8473"
-            email = "hound@dogs.org"
+            shelterid = "TX500",
+            name = "Hound Rescue",
+            address = "Lakeline Petsmart 11066 Pecan Park Blvd, Cedar Park",
+            city = "Austin",
+            state = "TX",
+            phone = "512 636 8473",
+            email = "hound@dogs.org",
             hours = "9:00am- 5:00pm")
 
         self.assertTrue(type(s) == Shelter)
@@ -133,13 +133,13 @@ class Test (TestCase) :
     def test_shelter3 (self) :
 
         s = Shelter.objects.create(
-            shelterid = "TX514"
-            name = "Austin Animal Center"
-            address = "7201 Levander Loop"
-            city = "Austin"
-            state = "TX"
-            phone = "512 978 0500"
-            email = "hound@dogs.org"
+            shelterid = "TX514",
+            name = "Austin Animal Center",
+            address = "7201 Levander Loop",
+            city = "Austin",
+            state = "TX",
+            phone = "512 978 0500",
+            email = "hound@dogs.org",
             hours = "9:00am- 5:00pm")
 
         self.assertTrue(type(s) == Shelter)
@@ -158,10 +158,10 @@ class Test (TestCase) :
 
     def test_city1 (self) :
         c = State.objects.create(
-            name = "Dallas"
-            address = "4151 McKinney Ave"
-            state = "TX"
-            country = "US"
+            name = "Dallas",
+            address = "4151 McKinney Ave",
+            state = "TX",
+            country = "US",
             vet_url = "veturl")
 
         self.assertTrue(type(s) == City)
@@ -172,10 +172,10 @@ class Test (TestCase) :
         
     def test_city2 (self) :
         c = State.objects.create(
-            name = "San Francisco"
-            address = "1207 Ninth Ave"
-            state = "CA"
-            country = "US"
+            name = "San Francisco",
+            address = "1207 Ninth Ave",
+            state = "CA",
+            country = "US",
             vet_url = "veturl")
 
         self.assertTrue(type(s) == City)
@@ -186,10 +186,10 @@ class Test (TestCase) :
         
     def test_city3 (self) :
         c = State.objects.create(
-            name = "Austin"
-            address = "7300 Ranch Road 2222"
-            state = "TX"
-            country = "US"
+            name = "Austin",
+            address = "7300 Ranch Road 2222",
+            state = "TX",
+            country = "US",
             vet_url = "veturl")
 
         self.assertTrue(type(s) == City)
