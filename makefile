@@ -37,6 +37,6 @@ manage.py: manage.py
 	/usr/bin/env python3 manage.py syncdb
 
 tests.out: tests.py
-	coverage run --source='.' manage.py test tests
+	coverage run tests.py
 	coverage report -m
 
