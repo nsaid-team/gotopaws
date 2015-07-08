@@ -40,6 +40,8 @@ script:
     - ls -al
     - touch IDB.log
     - ls -al
+    - PYTHONPATH="${PYTHONPATH}:/nsaid/"
+    - export PYTHONPATH
     - make test
     - ls -al
     - bash travis.bash
