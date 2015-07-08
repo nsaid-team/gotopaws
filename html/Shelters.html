@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+{% verbatim %}
+
 <html lang="en">
 
 <head>
@@ -18,12 +20,12 @@
     <link href="bootstrap-3.3.5-dist/css/portfolio-item.css" rel="stylesheet">
 
     <!-- AngularJS -->
-    <script src="bootstrap-3.3.5-dist/js/angular.min.js"></script>
-    <script src="bootstrap-3.3.5-dist/js/shelters.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+    <script type="text/javascript"  src="bootstrap-3.3.5-dist/js/shelters.js"></script>
 
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -34,8 +36,13 @@
     <![endif]-->
 
 </head>
-
-<body  ng-app = "sheltersPage">
+<body  ng-app ="sheltersPage">
+  <script>
+      angular.module('sheltersPage',[])
+        .controller('ShelterTable', function()){
+          this.value= "working";
+        });
+  </script>
 
     <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
@@ -74,7 +81,7 @@
         <!-- Portfolio Item Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Shelters
+                <h1 class="page-header">Shelter
                 </h1>
             </div>
         </div>
@@ -110,30 +117,27 @@
               padding: 5px;
             }
         </style>
-        <p> test 1 </p>
+        <div ng-controller="ShelterTable as test">
+          <table class = "testShelter">
+            <tr>
+              <thn> Value </th>
+            </tr>
+            <tr>
+              <td>{{test.value}}</td>
+            </tr>
+          </table>
+      
               {{"Hello"}}
-        <div ng-controller="ShelterTable as shelter" ng-include = "'boostrap-3.3.5-dist/js/shelter-table.html'" > 
+              
+              {{"I'm in verbatim"}}
+        <div ng-controller="ShelterTable2 as shelter" ng-include = "'boostrap-3.3.5-dist/js/shelter-table.html'" > 
             <h1>{{shelter.loaded}}</h1>
             <table >
               
-                 <tr>
-                    <td> Name  </td>
-                    <td> City  </td>
-                    <td> State </td>
-                    <td> Phone </td>
-                    <td> Email </td>
-                 </tr>
-                <tr >
-                   <td> {{key.name.$t}}</td>
-                   <td> {{key.city.$t}}</td>
-                   <td> {{key.state.$t}}</td>
-                   <td> {{key.phone.$t}}</td>
-                   <td> {{key.email.$t}}</td>
-                </tr>
-                <!--<shelter-table></shelter-table> -->
+                <shelter-table></shelter-table> 
             </table>
         </div>
-
+        
            
         <!-- Related Projects Row -->
         <div class="row">
@@ -188,4 +192,6 @@
 
 </body>
 
+
 </html>
+{% endverbatim %}
