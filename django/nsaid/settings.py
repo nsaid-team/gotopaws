@@ -15,7 +15,6 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
@@ -56,7 +55,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            '/home/gotopaws/html',
+            '../html',
         ],
         'APP_DIRS': False,
         'OPTIONS': {
@@ -105,5 +104,5 @@ STATIC_URL = '/bootstrap-3.3.5-dist/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
-    '/home/gotopaws/html/bootstrap-3.3.5-dist',
+    '../html/bootstrap-3.3.5-dist',
 )

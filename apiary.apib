@@ -1,4 +1,93 @@
+FORMAT: 1A
+HOST: http://private-300ca-nsaid.apiary-mock.com/
+
+# GotoPaws
+GotoPaws is an API allowing queries of the gotopaws.me data.
+
+## Useful Links
+* [GitHub Developer Team](https://github.com/nsaid-team)
+* [API Support](http://docs.gotopaws1.apiary.io)
+
+## Response Format
+Our API only supports the JSON format.
+
+# Group Pets
+
+## Pets Collection [/pets/]
+
+### Get list of all Pets [GET]
++ Response 200 (application/json)
+
+        { "all_pets":
+            [
+                {
+                    "petsid":"A4856",
+                    "name":"Sari",
+                    "age":"Adult",
+                    "size":"S",
+                    "breed":"Russian Blue",
+                    "shelter":"TX154",
+                    "city":"Houston",
+                    "pic_url":"http://photos.petfinder.com/photos/pets/20758336/3/?bust=1314882859&width=60&-pnt.jpg"
+                },
+                {
+                    "etc..." : "more"
+                }
+            ]
+        }
+
+# Group Shelters
+
+## Shelters Collection [/shelters/]
+
+### Get list of all Shelters [GET]
++ Response 200 (application/json)
+
+        { "all_shelters":
+            [
+                {
+                    "id":"TX1218",
+                    "name":"Austin Pets Alive!",
+                    "address1":"1156 West Cesar Chavez",
+                    "city":"Austin",
+                    "state":"TX",
+                    "phone":"512 961 6519",
+                    "email":"adopt@austinpetsalive.org",
+                    "pets":["32251618"]
+                },
+                {
+                    "etc..." : "more"
+                }
+            ]
+        }
+
+# Group Cities
+
+## Cities Collection [/cities/]
+
+### Get list of all Cities [GET]
++ Response 200 (application/json)
+
+        {
+            "all_cities": [
+                {
+                    "name": "Austin",
+                    "state": "TX",
+                    "country": "US",
+                    "shelters": ["TX1218"],
+                    "pets": ["32251618"],
+                    "vet_url": "http://www.yelp.com/biz/corner-vet-austin-3"
+                },
+                {
+                    "etc..." : "more"
+                }
+            ]
+        }
 
 
++ Response 404 (application/json)
 
+    + Body
+    
+            {"name" : "Not Found", "value":"404", "description":"Resource does not exist"}
         

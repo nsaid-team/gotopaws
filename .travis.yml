@@ -3,17 +3,27 @@ language: python
 python:
   - "3.4"
 
+sudo: required
+
+env:
+  - DB=mysql
+
 before_install:
   - sudo apt-get update
 
 # install dependencies
-install: "pip install -r dependencies.txt"
-
-before_script:
+install:
   - pip install --upgrade pip
   - pip install coverage
   - sudo apt-get install python-numpy
-  - psql -c 'create database testdb;' -U postgres
+  - "pip install -r dependencies.txt"
+  - pip install PyMySQL
+  - pip install --allow-all-external mysql-connector-python
+  - python -m pip install requests
+  - pip install djutils
+
+before_script:
+  - mysql -e 'create database test;' -u travis
   - uname -a
   - printenv
   - pip3 --version
@@ -31,7 +41,6 @@ script:
     - ls -al
     - bash travis.bash
     - make check
-
 
 # ignore push events to this branch
 branches:

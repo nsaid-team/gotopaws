@@ -1,0 +1,453 @@
+{
+    "all_cities": [
+        {
+            "name": "Austin",
+            "state": "TX",
+            "shelters": [
+                "TX1218"
+            ],
+            "pets": [
+                "32251618"
+            ],
+            "vets": [
+                {
+                    "display_phone": "+1-512-236-8000",
+                    "url": "http://www.yelp.com/biz/corner-vet-austin-3",
+                    "name": "Corner Vet",
+                    "review_count": 33,
+                    "rating": 5,
+                    "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+                    "location": {
+                        "postal_code": "78702",
+                        "city": "Austin",
+                        "neighborhoods": [
+                            "East Austin"
+                        ],
+                        "country_code": "US",
+                        "geo_accuracy": 9.5,
+                        "coordinate": {
+                            "latitude": 30.255115,
+                            "longitude": -97.717759
+                        },
+                        "address": [
+                            "2400 E Cesar Chavez St",
+                            "Ste 100"
+                        ],
+                        "state_code": "TX",
+                        "display_address": [
+                            "2400 E Cesar Chavez St",
+                            "Ste 100",
+                            "East Austin",
+                            "Austin, TX 78702"
+                        ]
+                    },
+                    "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/xCxfLWCr1ecIDGPvYuMCVw/ms.jpg",
+                    "categories": [
+                        [
+                            "Veterinarians",
+                            "vet"
+                        ]
+                    ],
+                    "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+                    "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+                    "id": "corner-vet-austin-3",
+                    "mobile_url": "http://m.yelp.com/biz/corner-vet-austin-3",
+                    "is_closed": false,
+                    "is_claimed": true,
+                    "phone": "5122368000",
+                    "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/W9fllH267gqpRXcCnwtXlg/ms.jpg",
+                    "snippet_text": "You are dumb if you don't take your pet to the corner vet.  \n\nThese people know their shit, have excellent bedside manner, and are all around awesome humans..."
+                },
+                {
+                    "display_phone": "+1-512-386-1065",
+                    "url": "http://www.yelp.com/biz/south-park-animal-hospital-austin",
+                    "name": "South Park Animal Hospital",
+                    "review_count": 165,
+                    "rating": 5,
+                    "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+                    "location": {
+                        "postal_code": "78748",
+                        "city": "Austin",
+                        "geo_accuracy": 8,
+                        "country_code": "US",
+                        "coordinate": {
+                            "latitude": 30.1721706,
+                            "longitude": -97.8012238
+                        },
+                        "address": [
+                            "615 W Slaughter Ln",
+                            "Ste 121"
+                        ],
+                        "state_code": "TX",
+                        "display_address": [
+                            "615 W Slaughter Ln",
+                            "Ste 121",
+                            "Austin, TX 78748"
+                        ]
+                    },
+                    "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/5TOwP8szFlV510BjnIh0OA/ms.jpg",
+                    "categories": [
+                        [
+                            "Veterinarians",
+                            "vet"
+                        ]
+                    ],
+                    "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+                    "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+                    "id": "south-park-animal-hospital-austin",
+                    "mobile_url": "http://m.yelp.com/biz/south-park-animal-hospital-austin",
+                    "is_closed": false,
+                    "is_claimed": true,
+                    "phone": "5123861065",
+                    "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/OFHxpqSlStWYZ3g8cDipBA/ms.jpg",
+                    "snippet_text": "I have had nothing but great experiences with all the staff members of South Park Animal Hospital. They are friendly, professional, efficient, and are..."
+                },
+                {
+                    "display_phone": "+1-512-476-9191",
+                    "url": "http://www.yelp.com/biz/austin-vet-hospital-austin-2",
+                    "name": "Austin Vet Hospital",
+                    "review_count": 50,
+                    "rating": 4.5,
+                    "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+                    "location": {
+                        "postal_code": "78722",
+                        "city": "Austin",
+                        "geo_accuracy": 9.5,
+                        "country_code": "US",
+                        "coordinate": {
+                            "latitude": 30.305191448,
+                            "longitude": -97.71224293850001
+                        },
+                        "address": [
+                            "4701 N IH-35"
+                        ],
+                        "state_code": "TX",
+                        "display_address": [
+                            "4701 N IH-35",
+                            "Austin, TX 78722"
+                        ]
+                    },
+                    "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/3_j0EqxIxVBsF5HkJZnkIg/ms.jpg",
+                    "categories": [
+                        [
+                            "Veterinarians",
+                            "vet"
+                        ]
+                    ],
+                    "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+                    "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+                    "id": "austin-vet-hospital-austin-2",
+                    "mobile_url": "http://m.yelp.com/biz/austin-vet-hospital-austin-2",
+                    "is_closed": false,
+                    "is_claimed": true,
+                    "phone": "5124769191",
+                    "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/qtzcygYazz98nxL1I3u9FQ/ms.jpg",
+                    "snippet_text": "They have been taking care of my cat for about two years now, and it's been going great. He's and indoor,  FIV+ cat, and they do a great job answering..."
+                }
+            ]
+        },
+        {
+            "name": "San Francisco",
+            "state": "CA",
+            "shelters": [
+                "CA1287"
+            ],
+            "pets": [
+                "32607766"
+            ],
+            "vets": [
+                {
+                    "display_phone": "+1-415-931-8312",
+                    "url": "http://www.yelp.com/biz/san-francisco-pet-hospital-san-francisco",
+                    "name": "San Francisco Pet Hospital",
+                    "review_count": 188,
+                    "rating": 4.5,
+                    "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+                    "location": {
+                        "postal_code": "94117",
+                        "city": "San Francisco",
+                        "neighborhoods": [
+                            "NoPa"
+                        ],
+                        "country_code": "US",
+                        "geo_accuracy": 9.5,
+                        "cross_streets": "Divisadero St & Broderick St",
+                        "address": [
+                            "1371 Fulton St"
+                        ],
+                        "coordinate": {
+                            "latitude": 37.7766402746421,
+                            "longitude": -122.439274095199
+                        },
+                        "state_code": "CA",
+                        "display_address": [
+                            "1371 Fulton St",
+                            "NoPa",
+                            "San Francisco, CA 94117"
+                        ]
+                    },
+                    "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/_DDXYjXPDniNIA9TxpOLuA/ms.jpg",
+                    "categories": [
+                        [
+                            "Veterinarians",
+                            "vet"
+                        ]
+                    ],
+                    "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+                    "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+                    "id": "san-francisco-pet-hospital-san-francisco",
+                    "mobile_url": "http://m.yelp.com/biz/san-francisco-pet-hospital-san-francisco",
+                    "is_closed": false,
+                    "is_claimed": true,
+                    "phone": "4159318312",
+                    "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/3_6ss0tHfiKve9QLpaRziw/ms.jpg",
+                    "snippet_text": "5 stars for SF Pet hospital isn't enough!\nMy 14 year old cat, Titan got sick from a digestion issue. I brought him to SF Pet Hospital. The staff and vets..."
+                },
+                {
+                    "display_phone": "+1-415-237-2058",
+                    "url": "http://www.yelp.com/biz/vetpronto-mobile-veterinarians-san-francisco",
+                    "name": "VetPronto - Mobile Veterinarians",
+                    "review_count": 79,
+                    "rating": 5,
+                    "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+                    "location": {
+                        "postal_code": "94114",
+                        "city": "San Francisco",
+                        "neighborhoods": [
+                            "SoMa"
+                        ],
+                        "country_code": "US",
+                        "geo_accuracy": 9.5,
+                        "coordinate": {
+                            "latitude": 37.7749295,
+                            "longitude": -122.4194155
+                        },
+                        "address": [],
+                        "state_code": "CA",
+                        "display_address": [
+                            "SoMa",
+                            "San Francisco, CA 94114"
+                        ]
+                    },
+                    "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/enkAIziHNPIDIE4_dBz7Pw/ms.jpg",
+                    "categories": [
+                        [
+                            "Veterinarians",
+                            "vet"
+                        ]
+                    ],
+                    "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+                    "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+                    "id": "vetpronto-mobile-veterinarians-san-francisco",
+                    "mobile_url": "http://m.yelp.com/biz/vetpronto-mobile-veterinarians-san-francisco",
+                    "is_closed": false,
+                    "is_claimed": true,
+                    "phone": "4152372058",
+                    "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/tRyTOQHlfauW5KDjZS9TMA/ms.jpg",
+                    "snippet_text": "We had the BEST experience with VetPronto. There was something wrong with my little Yorkshire Terrier so we asked VetPronto to come take a look at him. Not..."
+                },
+                {
+                    "display_phone": "+1-415-861-5725",
+                    "url": "http://www.yelp.com/biz/all-pets-hospital-san-francisco",
+                    "name": "All Pets Hospital",
+                    "review_count": 227,
+                    "rating": 4,
+                    "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+                    "location": {
+                        "postal_code": "94103",
+                        "city": "San Francisco",
+                        "neighborhoods": [
+                            "Mission"
+                        ],
+                        "country_code": "US",
+                        "geo_accuracy": 8,
+                        "cross_streets": "Erie St & 14th St",
+                        "address": [
+                            "269 S Van Ness Ave"
+                        ],
+                        "coordinate": {
+                            "latitude": 37.768921,
+                            "longitude": -122.417526
+                        },
+                        "state_code": "CA",
+                        "display_address": [
+                            "269 S Van Ness Ave",
+                            "Mission",
+                            "San Francisco, CA 94103"
+                        ]
+                    },
+                    "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/Gl6jWKd4XvWugHr4piDhaA/ms.jpg",
+                    "categories": [
+                        [
+                            "Veterinarians",
+                            "vet"
+                        ]
+                    ],
+                    "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+                    "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+                    "id": "all-pets-hospital-san-francisco",
+                    "mobile_url": "http://m.yelp.com/biz/all-pets-hospital-san-francisco",
+                    "is_closed": false,
+                    "is_claimed": true,
+                    "phone": "4158615725",
+                    "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/zuZtCMZJwHqP0RDo682ZtQ/ms.jpg",
+                    "snippet_text": "It's difficult to find a good vet who will see guinea pigs in the city, but thankfully a friend recommended Dr. Gillespie! She's been looking after our..."
+                }
+            ]
+        },
+        {
+            "name": "Houston",
+            "state": "TX",
+            "shelters": [
+                "TX154"
+            ],
+            "pets": [
+                "20758336"
+            ],
+            "vets": [
+                {
+                    "display_phone": "+1-713-528-4900",
+                    "url": "http://www.yelp.com/biz/midtown-veterinary-hospital-houston",
+                    "name": "Midtown Veterinary Hospital",
+                    "review_count": 42,
+                    "rating": 5,
+                    "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+                    "location": {
+                        "postal_code": "77006",
+                        "city": "Houston",
+                        "neighborhoods": [
+                            "Montrose"
+                        ],
+                        "country_code": "US",
+                        "geo_accuracy": 8,
+                        "coordinate": {
+                            "latitude": 29.738945,
+                            "longitude": -95.397171
+                        },
+                        "address": [
+                            "1434 W Alabama St"
+                        ],
+                        "state_code": "TX",
+                        "display_address": [
+                            "1434 W Alabama St",
+                            "Montrose",
+                            "Houston, TX 77006"
+                        ]
+                    },
+                    "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/7L_SF6a5bTEH-UepSDJSVg/ms.jpg",
+                    "categories": [
+                        [
+                            "Veterinarians",
+                            "vet"
+                        ]
+                    ],
+                    "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+                    "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+                    "id": "midtown-veterinary-hospital-houston",
+                    "mobile_url": "http://m.yelp.com/biz/midtown-veterinary-hospital-houston",
+                    "is_closed": false,
+                    "is_claimed": true,
+                    "phone": "7135284900",
+                    "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/odgEikPDoxcnvMzSi6gWPw/ms.jpg",
+                    "snippet_text": "I never cared to leave Yelp reviews (always view them though) but I am so satisfied with the care, I am compelled to inform people like myself of my..."
+                },
+                {
+                    "display_phone": "+1-713-343-9909",
+                    "url": "http://www.yelp.com/biz/bayou-city-veterinary-hospital-houston",
+                    "name": "Bayou City Veterinary Hospital",
+                    "review_count": 37,
+                    "rating": 4.5,
+                    "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+                    "location": {
+                        "postal_code": "77007",
+                        "city": "Houston",
+                        "neighborhoods": [
+                            "Washington Corridor",
+                            "Rice Military",
+                            "The Heights"
+                        ],
+                        "country_code": "US",
+                        "geo_accuracy": 8,
+                        "coordinate": {
+                            "latitude": 29.770857,
+                            "longitude": -95.408913
+                        },
+                        "address": [
+                            "4720 Washington Ave",
+                            "Ste D"
+                        ],
+                        "state_code": "TX",
+                        "display_address": [
+                            "4720 Washington Ave",
+                            "Ste D",
+                            "Washington Corridor",
+                            "Houston, TX 77007"
+                        ]
+                    },
+                    "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/Dv0ogf6HHwluRxSiSRkJFw/ms.jpg",
+                    "categories": [
+                        [
+                            "Veterinarians",
+                            "vet"
+                        ]
+                    ],
+                    "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+                    "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+                    "id": "bayou-city-veterinary-hospital-houston",
+                    "mobile_url": "http://m.yelp.com/biz/bayou-city-veterinary-hospital-houston",
+                    "is_closed": false,
+                    "is_claimed": false,
+                    "phone": "7133439909",
+                    "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/JR_7aOHVty9jWRqlDVDxCg/ms.jpg",
+                    "snippet_text": "My tapeworm infested pup and I were able to make an appointment as early as the next day to be seen here.  I booked online and later was called to confirm..."
+                },
+                {
+                    "display_phone": "+1-713-802-2366",
+                    "url": "http://www.yelp.com/biz/washington-heights-veterinary-clinic-houston",
+                    "name": "Washington Heights Veterinary Clinic",
+                    "review_count": 42,
+                    "rating": 4.5,
+                    "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+                    "location": {
+                        "postal_code": "77007",
+                        "city": "Houston",
+                        "neighborhoods": [
+                            "The Heights"
+                        ],
+                        "country_code": "US",
+                        "geo_accuracy": 8,
+                        "coordinate": {
+                            "latitude": 29.774755,
+                            "longitude": -95.382339
+                        },
+                        "address": [
+                            "2324 Shearn St"
+                        ],
+                        "state_code": "TX",
+                        "display_address": [
+                            "2324 Shearn St",
+                            "The Heights",
+                            "Houston, TX 77007"
+                        ]
+                    },
+                    "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/kazzFb3l6KW53rdbY3Auhg/ms.jpg",
+                    "categories": [
+                        [
+                            "Veterinarians",
+                            "vet"
+                        ]
+                    ],
+                    "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+                    "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+                    "id": "washington-heights-veterinary-clinic-houston",
+                    "mobile_url": "http://m.yelp.com/biz/washington-heights-veterinary-clinic-houston",
+                    "is_closed": false,
+                    "is_claimed": true,
+                    "phone": "7138022366",
+                    "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/ZRSdgIZEQLxCENEHZUvLqA/ms.jpg",
+                    "snippet_text": "Great staff that is competent, helpful and above all caring towards your fur baby and his or her needs.\n\nBoth the vet tech and vet were thorough and..."
+                }
+            ]
+        }
+    ]
+}
