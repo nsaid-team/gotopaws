@@ -7,7 +7,6 @@
 import requests, json
 import unittest
 from nsaid.models import *
-from models.models import *
 
 # -----------
 # test
