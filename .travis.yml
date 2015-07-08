@@ -14,7 +14,7 @@ install:
   - pip install coverage
   - sudo apt-get install python-numpy
   - "pip install -r dependencies.txt"
-  - apt-get install mysql-server
+  - apt-get install mysql-server-5.6
   - python -m pip install requests
   - pip install djutils
 
