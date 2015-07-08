@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'nsaid.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql.connector.django',
         'NAME': 'mydb',
         'USER': 'myuser',
         'PASSWORD': 'mypassword',
