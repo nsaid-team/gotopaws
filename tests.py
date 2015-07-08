@@ -15,72 +15,53 @@ from models import Pet, Shelter, City
 class Test (unittest.TestCase) :
 
     # ----
-    # Pet Model
+    # City Model
     # ----
-    def test_pet1 (self) :
 
-        p = Pet.objects.create(
-            petsid = "24306492",
-            name = "Amigo",
-            age = "Adult",
-            size = "S",
-            breed = "Chihuahua",
-            shelter = "TX1148",
-            city = "Austin",
-            pic_url = "picurl")
+    def test_city1 (self) :
+        c = State.objects.create(
+            name = "Dallas",
+            address = "4151 McKinney Ave",
+            state = "TX",
+            country = "US",
+            vet_url = "veturl")
 
-        self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.petsid, "24306492")
-        self.assertEqual(p.name, "Amigo")
-        self.assertEqual(p.age, "Adult")
-        self.assertEqual(p.size, "S")
-        self.assertEqual(p.breed, "Chihuahua")
-        self.assertEqual(p.shelter, "TX1148")
-        self.assertEqual(p.city, "Austin")
+        self.assertTrue(type(s) == City)
+        self.assertEqual(c.name, "Dallas")
+        self.assertEqual(c.state, "TX")
+        self.assertEqual(c.city, "US")
+        self.assertEqual(s.vet_url, "veturl")
         
-    def test_pet2 (self) :
+    def test_city2 (self) :
+        c = State.objects.create(
+            name = "San Francisco",
+            address = "1207 Ninth Ave",
+            state = "CA",
+            country = "US",
+            vet_url = "veturl")
 
-        p = Pet.objects.create(
-            petsid = "32151337",
-            name = "Tita",
-            age = "Senior",
-            size = "L",
-            breed = "Applehead Siamese",
-            shelter = "TX1334",
-            city = "Austin",
-            pic_url = "picurl")
+        self.assertTrue(type(s) == City)
+        self.assertEqual(c.name, "San Francisco")
+        self.assertEqual(c.state, "CA")
+        self.assertEqual(c.city, "US")
+        self.assertEqual(s.vet_url, "veturl")
+        
+    def test_city3 (self) :
+        c = State.objects.create(
+            name = "Austin",
+            address = "7300 Ranch Road 2222",
+            state = "TX",
+            country = "US",
+            vet_url = "veturl")
 
-        self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.petsid, "32151337")
-        self.assertEqual(p.name, "Tita")
-        self.assertEqual(p.age, "Senior")
-        self.assertEqual(p.size, "L")
-        self.assertEqual(p.breed, "Applehead Siamese")
-        self.assertEqual(p.shelter, "TX1334")
-        self.assertEqual(p.city, "Austin")
-    
-    def test_pet3 (self) :
+        self.assertTrue(type(s) == City)
+        self.assertEqual(c.name, "Austin")
+        self.assertEqual(c.state, "TX")
+        self.assertEqual(c.city, "US")
+        self.assertEqual(s.vet_url, "veturl")
 
-        p = Pet.objects.create(
-            petsid = "18620461",
-            name = "Little John II",
-            age = "Baby",
-            size = "M",
-            breed = "Tabby",
-            shelter = "TX1222",
-            city = "Austin",
-            pic_url = "picurl")
 
-        self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.petsid, "18620461")
-        self.assertEqual(p.name, "Little John II")
-        self.assertEqual(p.age, "Baby")
-        self.assertEqual(p.size, "M")
-        self.assertEqual(p.breed, "Tabby")
-        self.assertEqual(p.shelter, "TX1222")
-        self.assertEqual(p.city, "Austin")
-    
-    # ----
+# ----
     # Shelter Model
     # ----
 
@@ -150,52 +131,74 @@ class Test (unittest.TestCase) :
         self.assertEqual(s.email, "animal.customerservice@austintexas.gov")
         self.assertEqual(s.hours, "11:00 am - 7:00 pm")
 
+
     # ----
-    # City Model
+    # Pet Model
     # ----
 
-    def test_city1 (self) :
-        c = State.objects.create(
-            name = "Dallas",
-            address = "4151 McKinney Ave",
-            state = "TX",
-            country = "US",
-            vet_url = "veturl")
+    def test_pet1 (self) :
 
-        self.assertTrue(type(s) == City)
-        self.assertEqual(c.name, "Dallas")
-        self.assertEqual(c.state, "TX")
-        self.assertEqual(c.city, "US")
-        self.assertEqual(s.vet_url, "veturl")
+        p = Pet.objects.create(
+            petsid = "24306492",
+            name = "Amigo",
+            age = "Adult",
+            size = "S",
+            breed = "Chihuahua",
+            shelter = "TX1148",
+            city = "Austin",
+            pic_url = "picurl")
+
+        self.assertTrue(type(p) == Pet)
+        self.assertEqual(p.petsid, "24306492")
+        self.assertEqual(p.name, "Amigo")
+        self.assertEqual(p.age, "Adult")
+        self.assertEqual(p.size, "S")
+        self.assertEqual(p.breed, "Chihuahua")
+        self.assertEqual(p.shelter, "TX1148")
+        self.assertEqual(p.city, "Austin")
         
-    def test_city2 (self) :
-        c = State.objects.create(
-            name = "San Francisco",
-            address = "1207 Ninth Ave",
-            state = "CA",
-            country = "US",
-            vet_url = "veturl")
+    def test_pet2 (self) :
 
-        self.assertTrue(type(s) == City)
-        self.assertEqual(c.name, "San Francisco")
-        self.assertEqual(c.state, "CA")
-        self.assertEqual(c.city, "US")
-        self.assertEqual(s.vet_url, "veturl")
-        
-    def test_city3 (self) :
-        c = State.objects.create(
-            name = "Austin",
-            address = "7300 Ranch Road 2222",
-            state = "TX",
-            country = "US",
-            vet_url = "veturl")
+        p = Pet.objects.create(
+            petsid = "32151337",
+            name = "Tita",
+            age = "Senior",
+            size = "L",
+            breed = "Applehead Siamese",
+            shelter = "TX1334",
+            city = "Austin",
+            pic_url = "picurl")
 
-        self.assertTrue(type(s) == City)
-        self.assertEqual(c.name, "Austin")
-        self.assertEqual(c.state, "TX")
-        self.assertEqual(c.city, "US")
-        self.assertEqual(s.vet_url, "veturl")
+        self.assertTrue(type(p) == Pet)
+        self.assertEqual(p.petsid, "32151337")
+        self.assertEqual(p.name, "Tita")
+        self.assertEqual(p.age, "Senior")
+        self.assertEqual(p.size, "L")
+        self.assertEqual(p.breed, "Applehead Siamese")
+        self.assertEqual(p.shelter, "TX1334")
+        self.assertEqual(p.city, "Austin")
+    
+    def test_pet3 (self) :
 
+        p = Pet.objects.create(
+            petsid = "18620461",
+            name = "Little John II",
+            age = "Baby",
+            size = "M",
+            breed = "Tabby",
+            shelter = "TX1222",
+            city = "Austin",
+            pic_url = "picurl")
+
+        self.assertTrue(type(p) == Pet)
+        self.assertEqual(p.petsid, "18620461")
+        self.assertEqual(p.name, "Little John II")
+        self.assertEqual(p.age, "Baby")
+        self.assertEqual(p.size, "M")
+        self.assertEqual(p.breed, "Tabby")
+        self.assertEqual(p.shelter, "TX1222")
+        self.assertEqual(p.city, "Austin")
+    
     # ----
     # API Tests
     # ----
@@ -203,15 +206,15 @@ class Test (unittest.TestCase) :
     def setUp (self) :
         base_url = "http://private-300ca-nsaid.apiary-mock.com/"
 
-    def test_api_pet_1 (self) :
-        response = requests.get(base_url + 'pets/0123')
+def test_api_city_1 (self) :
+        response = requests.get(base_url + '/cities/89A/')
         self.assertEqual(response.status_code,404)
 
-    def test_api_pet_2 (self) :
-        response = requests.get(base_url + '/pets/')
+    def test_api_city_2 (self) :
+        response = requests.get(base_url + '/cities/')
         self.assertEqual(response.status_code,200)
 
-    def test_api_shelter_1 (self) :
+ def test_api_shelter_1 (self) :
         response = requests.get(base_url + '/shelters/4567/')
         self.assertEqual(response.status_code,404)
 
@@ -219,12 +222,12 @@ class Test (unittest.TestCase) :
         response = requests.get(base_url + '/shelters/')
         self.assertEqual(response.status_code,200)
 
-    def test_api_city_1 (self) :
-        response = requests.get(base_url + '/cities/89A/')
+    def test_api_pet_1 (self) :
+        response = requests.get(base_url + 'pets/0123')
         self.assertEqual(response.status_code,404)
 
-    def test_api_city_2 (self) :
-        response = requests.get(base_url + '/cities/')
+    def test_api_pet_2 (self) :
+        response = requests.get(base_url + '/pets/')
         self.assertEqual(response.status_code,200)
 
 # ----
