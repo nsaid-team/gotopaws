@@ -206,7 +206,7 @@ class Test (unittest.TestCase) :
     def setUp (self) :
         base_url = "http://private-300ca-nsaid.apiary-mock.com/"
 
-def test_api_city_1 (self) :
+    def test_api_city_1 (self) :
         response = requests.get(base_url + '/cities/89A/')
         self.assertEqual(response.status_code,404)
 
@@ -214,7 +214,7 @@ def test_api_city_1 (self) :
         response = requests.get(base_url + '/cities/')
         self.assertEqual(response.status_code,200)
 
- def test_api_shelter_1 (self) :
+    def test_api_shelter_1 (self) :
         response = requests.get(base_url + '/shelters/4567/')
         self.assertEqual(response.status_code,404)
 
