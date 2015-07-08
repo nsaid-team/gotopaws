@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'nsaid.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql.connector.django',
         'OPTIONS': {
             'read_default_file': 'BASE_DIR/db.cnf',
         },
