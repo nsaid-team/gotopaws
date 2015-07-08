@@ -18,12 +18,12 @@ install:
   - sudo apt-get install python-numpy
   - "pip install -r dependencies.txt"
   - pip install PyMySQL
-  - pip install --allow-all-external mysql-connector-python
+  - pip3.4 install --user https://dev.mysql.com/get/Downloads/Connector-Python/mysql-connector-python-2.0.1.tar.gz
   - python -m pip install requests
   - pip install djutils
 
 before_script:
-  - mysql -e 'create database test;' -u travis
+  - mysql -e 'create database myapp_test;'
   - uname -a
   - printenv
   - pip3 --version
