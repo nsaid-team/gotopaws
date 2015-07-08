@@ -12,13 +12,13 @@ class City(models.Model):
     The __str__ method is used to return the concatenated city and state.
     """
 
-    name = models.CharField(max_length=100)
+    name = models.CharField(default = '0', primary_key=True)
     state = models.CharField(max_length=300)
     country = models.CharField(max_length=100)
     vet_url = models.CharField(max_length=500)
 
     def __str__ (self):
-        return self.name + " " + self.state
+        return self.name
 
 
     # ------------
