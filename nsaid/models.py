@@ -16,7 +16,10 @@ class City(models.Model):
     state = models.CharField(max_length=300)
     country = models.CharField(max_length=100)
     vet_url = models.CharField(max_length=500)
-
+    
+    class Meta:
+        app_label = 'City'
+        
     def __str__ (self):
         return self.name
 
@@ -41,6 +44,9 @@ class Shelter(models.Model):
     email = models.CharField(max_length=100)
     hours = models.CharField(max_length=200)
 
+    class Meta:
+        app_label = 'Shelter'
+    
     def __str__ (self):
         return self.shelterid
 
@@ -63,6 +69,9 @@ class Pet(models.Model):
     shelter = models.ForeignKey(Shelter)
     city = models.ForeignKey(City, related_name='city')
     pic_url = models.CharField(max_length=500)
+    
+    class Meta:
+        app_label = 'Pet'
     
     def __str__ (self):
         return self.petsid
