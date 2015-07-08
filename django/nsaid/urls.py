@@ -30,4 +30,12 @@ urlpatterns = [
     url(r'^Cats.html$', views.cats),
     url(r'^Dogs.html$', views.dogs),
     url(r'^Shelter_APA.html$', views.shelter_apa),
+    url(r'^Cat_Sari.html$', views.cat_sari),
+    url(r'^Dog_Earl.html$', views.dog_earl),
+    url(r'^Dog_Rangel.html$', views.dog_Rangel),
+    url(r'^Shelter_HPPL.html$', views.shelter_HPPL),
+    url(r'^Shelter_Muttville.html$', views.shelter_Muttville),
+    url(r'^City_Austin.html$', views.city_Austin),
+    url(r'^City_SF.html$', views.city_SF),
+    url(r'^City_Houston.html$', views.city_Houston),
 ]

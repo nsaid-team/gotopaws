@@ -37,3 +37,37 @@ def dogs(request):
 def shelter_apa(request):
     template = loader.get_template('Shelter_APA.html')
     return HttpResponse(template.render())
+
+
+def cat_sari(request):
+    template = loader.get_template('Cat_Sari.html')
+    return HttpResponse(template.render())
+
+def dog_earl(request):
+    template = loader.get_template('Dog_Earl.html')
+    return HttpResponse(template.render())
+
+def dog_Rangel(request):
+    template = loader.get_template('Dog_Rangel.html')
+    return HttpResponse(template.render())
+
+def shelter_HPPL(request):
+    template = loader.get_template('Shelter_HPPL.html')
+    return HttpResponse(template.render())
+
+def shelter_Muttville(request):
+    template = loader.get_template('Shelter_Muttville.html')
+    return HttpResponse(template.render())
+
+
+def city_Austin(request):
+    template = loader.get_template('City_Austin.html')
+    return HttpResponse(template.render())
+
+def city_Houston(request):
+    template = loader.get_template('City_Houston.html')
+    return HttpResponse(template.render())
+
+def city_SF(request):
+    template = loader.get_template('City_SF.html')
+    return HttpResponse(template.render())
