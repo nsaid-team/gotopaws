@@ -32,10 +32,10 @@ class Shelter(models.Model):
     The __str__ method is used to return the shelterid identifier.
     """
     
-    shelterid = models.CharField(primary_key=True)
+    shelterid = models.CharField(defualt = '0', primary_key=True)
     name = models.CharField(max_length=300)
     address = models.CharField(max_length=200)
-    city = models.ForeignKey(City)
+    city = models.ForeignKey(City, related_name='city')
     state = models.CharField(max_length=50)
     phone = models.CharField(max_length=50)
     email = models.CharField(max_length=100)
@@ -55,13 +55,13 @@ class Pet(models.Model):
     The __str__ method is used to return the petid identifier.
     """
 
-    petsid = models.CharField(primary_key=True)
+    petsid = models.CharField(defualt = '0', primary_key=True)
     name = models.CharField(max_length=100)
     age = models.CharField(max_length=20)
     size = models.CharField(max_length=20)
     breed = models.CharField(max_length=100)
-    shelter = models.ForeignKey(Shelter)
-    city = models.ForeignKey(City)
+    shelter = models.ForeignKey(Shelter, related_name='shelter')
+    city = models.ForeignKey(City, related_name='city')
     pic_url = models.CharField(max_length=500)
     
     def __str__ (self):
