@@ -15,6 +15,7 @@ install:
   - sudo apt-get install python-numpy
   - "pip install -r dependencies.txt"
   - pip install PyMySQL
+  - pip install --allow-all-external mysql-connector-python
   - python -m pip install requests
   - pip install djutils
 
