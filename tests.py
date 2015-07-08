@@ -203,31 +203,28 @@ class Test (unittest.TestCase) :
     # API Tests
     # ----
 
-    def setUp (self) :
-        base_url = "http://private-300ca-nsaid.apiary-mock.com/"
-
     def test_api_city_1 (self) :
-        response = requests.get(base_url + '/cities/89A/')
+        response = requests.get('http://private-300ca-nsaid.apiary-mock.com/cities/89A/')
         self.assertEqual(response.status_code,404)
 
     def test_api_city_2 (self) :
-        response = requests.get(base_url + '/cities/')
+        response = requests.get('http://private-300ca-nsaid.apiary-mock.com/cities/')
         self.assertEqual(response.status_code,200)
 
     def test_api_shelter_1 (self) :
-        response = requests.get(base_url + '/shelters/4567/')
+        response = requests.get('http://private-300ca-nsaid.apiary-mock.com/shelters/4567/')
         self.assertEqual(response.status_code,404)
 
     def test_api_shelter_2 (self) :
-        response = requests.get(base_url + '/shelters/')
+        response = requests.get('http://private-300ca-nsaid.apiary-mock.com/shelters/')
         self.assertEqual(response.status_code,200)
 
     def test_api_pet_1 (self) :
-        response = requests.get(base_url + 'pets/0123')
+        response = requests.get('http://private-300ca-nsaid.apiary-mock.com/pets/0123')
         self.assertEqual(response.status_code,404)
 
     def test_api_pet_2 (self) :
-        response = requests.get(base_url + '/pets/')
+        response = requests.get('http://private-300ca-nsaid.apiary-mock.com/pets/')
         self.assertEqual(response.status_code,200)
 
 # ----
