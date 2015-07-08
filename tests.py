@@ -6,7 +6,7 @@
 
 import requests, json
 import unittest
-from models import Pet, Shelter, City
+from nsaid.models import *
 
 # -----------
 # test
