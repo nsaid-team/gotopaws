@@ -3,6 +3,8 @@ language: python
 python:
   - "3.4"
 
+services: MySQL
+
 sudo: required
 
 env:
@@ -17,8 +19,7 @@ install:
   - pip install coverage
   - sudo apt-get install python-numpy
   - "pip install -r dependencies.txt"
-  - pip install PyMySQL
-  - pip3.4 install --user https://dev.mysql.com/get/Downloads/Connector-Python/mysql-connector-python-2.0.1.tar.gz
+  - pip3.4 install https://dev.mysql.com/get/Downloads/Connector-Python/mysql-connector-python-2.0.1.tar.gz
   - python -m pip install requests
   - pip install djutils
 
