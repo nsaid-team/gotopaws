@@ -2,4 +2,5 @@
 database = gotopawsdb
 host = localhost
 user = root
+password = secureservernsaid
 default-character-set = utf8
