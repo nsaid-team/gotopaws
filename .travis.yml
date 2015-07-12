@@ -25,8 +25,8 @@ install:
   - pip install djutils
 
 before_script:
-  - mysql -e 'create database myapp_test;'
-  - python manage.py migrate 
+  - mysql -e 'create database nsaid_test;'
+  - python3 manage.py migrate 
   - python manage.py syncdb --noinput
   - uname -a
   - printenv
