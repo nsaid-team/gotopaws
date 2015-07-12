@@ -83,9 +83,9 @@ WSGI_APPLICATION = 'nsaid.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mysql.connector.django',
-        'NAME': 'myapp_test',
+        'NAME': 'my',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'secureservernsaid',
     }
 }
 
