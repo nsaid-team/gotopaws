@@ -17,9 +17,9 @@ class City(models.Model):
     country = models.CharField(max_length=100)
     vet_url = models.CharField(max_length=500)
     
-    class Meta:
-        app_label = 'City'
-        
+    #class Meta:
+    #    app_label = 'City'
+    #    
     def __str__ (self):
         return self.name
 
