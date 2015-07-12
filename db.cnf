@@ -1,5 +1,5 @@
 [client]
-database = gotopawsdb
+database = nsaid
 host = localhost
 user = root
 password = secureservernsaid
