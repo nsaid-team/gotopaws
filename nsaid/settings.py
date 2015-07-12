@@ -94,7 +94,7 @@ DATABASES = {
         'ENGINE': 'mysql.connector.django',
         'NAME': 'nsaid',
         'USER': 'root',
-        'PASSWORD': 'secureservernsaid',
+        'PASSWORD': '',
     }
 }
 
