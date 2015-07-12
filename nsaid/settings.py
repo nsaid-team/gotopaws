@@ -40,9 +40,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.contenttypes',
     'nsaid',
-    'City',
-    'Shelter',
-    'Pet',
     'django_nose'
 )
 
