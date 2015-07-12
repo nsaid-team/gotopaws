@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SETTINGS_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 PROJECT_PATH = os.path.join(SETTINGS_DIR, BASE_DIR) 
 PROJECT_PATH = os.path.abspath(PROJECT_PATH)
-TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'html')
+TEMPLATE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
