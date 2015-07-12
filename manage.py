@@ -1,4 +1,4 @@
-#!/home/nsaid/virtualenvs/py3env/bin/python3.4
+#!/usr/bin/env python
 import os
 import sys
 
