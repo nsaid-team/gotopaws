@@ -30,7 +30,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = (
@@ -40,7 +39,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.contenttypes',
-    'nsaid'
+    'nsaid',
+    'django_nose'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -55,6 +55,15 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'nsaid.urls'
+
+# Use nose to run all tests
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+# Tell nose to measure coverage on the 'foo' and 'bar' apps
+NOSE_ARGS = [
+    '--with-coverage',
+    '--cover-package=foo,bar',
+]
 
 TEMPLATES = [
     {
