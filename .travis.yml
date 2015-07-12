@@ -16,6 +16,7 @@ before_install:
 # install dependencies
 install:
   - pip install --upgrade pip
+  - pip install django-nose
   - pip install coverage
   - sudo apt-get install python-numpy
   - "pip install -r dependencies.txt"
@@ -27,7 +28,6 @@ before_script:
   - mysql -e 'create database myapp_test;'
   - python manage.py makemigrations
   - python manage.py syncdb --noinput
-  - pip install django-nose
   - uname -a
   - printenv
   - pip3 --version
