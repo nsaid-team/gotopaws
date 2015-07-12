@@ -120,5 +120,5 @@ STATIC_URL = '/bootstrap-3.3.5-dist/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
-    '../html/bootstrap-3.3.5-dist',
+    '/html/bootstrap-3.3.5-dist',
 )
