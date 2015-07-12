@@ -14,8 +14,8 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-SETTINGS_DIR = os.path.dirname(__file__)
-PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir) 
+SETTINGS_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+PROJECT_PATH = os.path.join(SETTINGS_DIR, BASE_DIR) 
 PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'html')
 
