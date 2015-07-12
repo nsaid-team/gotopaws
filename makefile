@@ -38,4 +38,6 @@ manage.py: manage.py
 
 tests.out: tests.py
 	/usr/bin/env python3 manage.py test --with-coverage
+	coverage combine
+	coverage report
 
