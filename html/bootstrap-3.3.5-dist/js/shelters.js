@@ -1,7 +1,21 @@
 function(){
-    var app = angular.module("sheltersPage", []);
+    var app = angular.module("sheltersPage2", []);
 
-    app.controller("ShelterTable", ['$http', function ($http) {
+
+    app.controller("Test controller", function($scope) {
+        $scope.value = "working";
+
+    });
+    
+    app.controller("ShelterTest", function(){
+        this.value = "working";
+    });
+
+
+
+
+
+    app.controller("ShelterTable2", ['$http', function ($http) {
       var dict = this;
       this.loaded = false;
       dict.data = {"all_shelters": 
@@ -52,17 +66,17 @@ function(){
                     }]
     };
 
-    $http.get("3x3x3_shelters_dataset.json").success(function(load){
+    $http.get('"3x3x3_shelters_dataset.json"').success(function(load){
       dict.data = load;
       dict.loaded = true;
     });
   }]);
 /* directive
 */
-    app.directive('shelterTable', function(){
+    app.directive('shelterTable2', function(){
       return{
         restrict: 'E',
-        templateUrl: "shelter-table.html"
+        templateUrl: '"shelter-table.html"'
       };
     });
 };

@@ -3,7 +3,12 @@ language: python
 python:
   - "3.4"
 
+services: MySQL
+
 sudo: required
+
+env:
+  - DB=mysql
 
 before_install:
   - sudo apt-get update
@@ -14,11 +19,14 @@ install:
   - pip install coverage
   - sudo apt-get install python-numpy
   - "pip install -r dependencies.txt"
+  - pip install git+https://github.com/multiplay/mysql-connector-python
   - python -m pip install requests
   - pip install djutils
 
 before_script:
-  - psql -c 'create database testdb;' -U postgres
+  - mysql -e 'create database myapp_test;'
+  - python manage.py makemigrations
+  - python manage.py syncdb --noinput
   - uname -a
   - printenv
   - pip3 --version
@@ -32,6 +40,8 @@ script:
     - ls -al
     - touch IDB.log
     - ls -al
+    - PYTHONPATH="${PYTHONPATH}:/nsaid/"
+    - export PYTHONPATH
     - make test
     - ls -al
     - bash travis.bash

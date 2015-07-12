@@ -1,0 +1,5 @@
+[client]
+database = myapp_test
+host = localhost
+user = root
+default-character-set = utf8
