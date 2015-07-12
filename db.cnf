@@ -2,5 +2,4 @@
 database = myapp_test
 host = localhost
 user = root
-password = 
 default-character-set = utf8
