@@ -23,7 +23,6 @@ class Test (unittest.TestCase) :
     def test_city1 (self) :
         c = City.objects.create(
             name = "Dallas",
-            address = "4151 McKinney Ave",
             state = "TX",
             country = "US",
             vet_url = "veturl",
@@ -41,7 +40,6 @@ class Test (unittest.TestCase) :
     def test_city2 (self) :
         c = City.objects.create(
             name = "San Francisco",
-            address = "1207 Ninth Ave",
             state = "CA",
             country = "US",
             vet_url = "veturl",
@@ -59,7 +57,6 @@ class Test (unittest.TestCase) :
     def test_city3 (self) :
         c = City.objects.create(
             name = "Austin",
-            address = "7300 Ranch Road 2222",
             state = "TX",
             country = "US",
             vet_url = "veturl",
