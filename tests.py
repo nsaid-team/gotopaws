@@ -149,6 +149,8 @@ class Test (unittest.TestCase) :
             pet_age = "Adult",
             pet_size = "S",
             pet_breed = "Chihuahua",
+            pet_shelter = "TX1218",
+            pet_city = "Dallas",
             pet_pic_url = "picurl")
 
         self.assertTrue(type(p) == Pet)
@@ -157,6 +159,8 @@ class Test (unittest.TestCase) :
         self.assertEqual(p.pet_age, "Adult")
         self.assertEqual(p.pet_size, "S")
         self.assertEqual(p.pet_breed, "Chihuahua")
+        self.assertEqual(p.pet_shelter, "TX1218")
+        self.assertEqual(p.pet_city, "Dallas")
         
     def test_pet2 (self) :
 
@@ -166,6 +170,8 @@ class Test (unittest.TestCase) :
             pet_age = "Senior",
             pet_size = "L",
             pet_breed = "Applehead Siamese",
+            pet_shelter = "CA500",
+            pet_city = "San Francisco",
             pet_pic_url = "picurl")
 
         self.assertTrue(type(p) == Pet)
@@ -174,6 +180,8 @@ class Test (unittest.TestCase) :
         self.assertEqual(p.pet_age, "Senior")
         self.assertEqual(p.pet_size, "L")
         self.assertEqual(p.pet_breed, "Applehead Siamese")
+        self.assertEqual(p.pet_shelter, "CA500")
+        self.assertEqual(p.pet_city, "San Francisco")
     
     def test_pet3 (self) :
 
@@ -183,6 +191,8 @@ class Test (unittest.TestCase) :
             pet_age = "Baby",
             pet_size = "M",
             pet_breed = "Tabby",
+            pet_shelter = "TX514",
+            pet_city = "Austin",
             pet_pic_url = "picurl")
 
         self.assertTrue(type(p) == Pet)
@@ -191,6 +201,8 @@ class Test (unittest.TestCase) :
         self.assertEqual(p.pet_age, "Baby")
         self.assertEqual(p.pet_size, "M")
         self.assertEqual(p.pet_breed, "Tabby")
+        self.assertEqual(p.pet_shelter, "TX514")
+        self.assertEqual(p.pet_city, "Austin")
     
     
     # ----
