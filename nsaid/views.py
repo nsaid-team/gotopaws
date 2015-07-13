@@ -12,7 +12,7 @@ def home(request):
     return HttpResponse(template.render())
 
 def shelters(request):
-    template = loader.get_template('Shelter.html')
+    template = loader.get_template('Shelters.html')
     return HttpResponse(template.render())
     #context = Shelter.object.raw('SELECT * FROM nsaid_shelter')
 #return render(request, 'Shelter_Page.html', context)
