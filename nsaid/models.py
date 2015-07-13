@@ -74,7 +74,7 @@ class Pet(models.Model):
     pet_breed = models.CharField(max_length=100)
     pet_shelter = models.ForeignKey(Shelter, related_name = 'pet_shelter')
     pet_city = models.ForeignKey(City, related_name='pet_city')
-    pic_url = models.CharField(max_length=500)
+    pet_pic_url = models.CharField(max_length=500)
     
     """
     class Meta:

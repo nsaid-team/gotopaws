@@ -22,54 +22,54 @@ class Test (unittest.TestCase) :
 
     def test_city1 (self) :
         c = City.objects.create(
-            name = "Dallas",
-            state = "TX",
-            country = "US",
-            vet_url = "veturl",
-            groomer_url = "groomerurl",
-            park_url = "parkurl",)
+            city_name = "Dallas",
+            city_state = "TX",
+            city_country = "US",
+            city_vet_url = "veturl",
+            city_groomer_url = "groomerurl",
+            city_park_url = "parkurl",)
 
         self.assertTrue(type(s) == City)
-        self.assertEqual(c.name, "Dallas")
-        self.assertEqual(c.state, "TX")
-        self.assertEqual(c.city, "US")
-        self.assertEqual(s.vet_url, "veturl")
-        self.assertEqual(s.groomer_url, "groomerurl")
-        self.assertEqual(s.park_url, "parkurl")
+        self.assertEqual(c.city_name, "Dallas")
+        self.assertEqual(c.city_state, "TX")
+        self.assertEqual(c.city_country, "US")
+        self.assertEqual(s.city_vet_url, "veturl")
+        self.assertEqual(s.city_groomer_url, "groomerurl")
+        self.assertEqual(s.city_park_url, "parkurl")
         
     def test_city2 (self) :
         c = City.objects.create(
-            name = "San Francisco",
-            state = "CA",
-            country = "US",
-            vet_url = "veturl",
-            groomer_url = "groomerurl",
-            park_url = "parkurl")
+            city_name = "San Francisco",
+            city_state = "CA",
+            city_country = "US",
+            city_vet_url = "veturl",
+            city_groomer_url = "groomerurl",
+            city_park_url = "parkurl")
 
         self.assertTrue(type(s) == City)
-        self.assertEqual(c.name, "San Francisco")
-        self.assertEqual(c.state, "CA")
-        self.assertEqual(c.city, "US")
-        self.assertEqual(s.vet_url, "veturl")
-        self.assertEqual(s.groomer_url, "groomerurl")
-        self.assertEqual(s.park_url, "parkurl")
+        self.assertEqual(c.city_name, "San Francisco")
+        self.assertEqual(c.city_state, "CA")
+        self.assertEqual(c.city_country, "US")
+        self.assertEqual(s.city_vet_url, "veturl")
+        self.assertEqual(s.city_groomer_url, "groomerurl")
+        self.assertEqual(s.city_park_url, "parkurl")
         
     def test_city3 (self) :
         c = City.objects.create(
-            name = "Austin",
-            state = "TX",
-            country = "US",
-            vet_url = "veturl",
-            groomer_url = "groomerurl",
-            park_url = "parkurl")
+            city_name = "Austin",
+            city_state = "TX",
+            city_country = "US",
+            city_vet_url = "veturl",
+            city_groomer_url = "groomerurl",
+            city_park_url = "parkurl")
 
         self.assertTrue(type(s) == City)
-        self.assertEqual(c.name, "Austin")
-        self.assertEqual(c.state, "TX")
-        self.assertEqual(c.city, "US")
-        self.assertEqual(s.vet_url, "veturl")
-        self.assertEqual(s.groomer_url, "groomerurl")
-        self.assertEqual(s.park_url, "parkurl")
+        self.assertEqual(c.city_name, "Austin")
+        self.assertEqual(c.city_state, "TX")
+        self.assertEqual(c.city_country, "US")
+        self.assertEqual(s.city_vet_url, "veturl")
+        self.assertEqual(s.city_groomer_url, "groomerurl")
+        self.assertEqual(s.city_park_url, "parkurl")
 
 
     # ----
@@ -79,62 +79,62 @@ class Test (unittest.TestCase) :
     def test_shelter1 (self) :
 
         s = Shelter.objects.create(
-            shelterid = "TX1218",
-            name = "Austin Pets Alive!",
-            address = "1156 West Cesar Chavez",
-            state = "TX",
-            phone = "512 961 6519",
-            email = "adopt@austinpetsalive.org",
-            hours = "10:00am- 6:00pm")
+            shelter_id = "TX1218",
+            shelter_name = "Austin Pets Alive!",
+            shelter_address = "1156 West Cesar Chavez",
+            shelter_state = "TX",
+            shelter_phone = "512 961 6519",
+            shelter_email = "adopt@austinpetsalive.org",
+            shelter_hours = "10:00am- 6:00pm")
 
         self.assertTrue(type(s) == Shelter)
-        self.assertEqual(s.shelterid, "TX1218")
-        self.assertEqual(s.name, "Austin Pets Alive!")
-        self.assertEqual(s.address, "1156 West Cesar Chavez")
-        self.assertEqual(s.state, "TX")
-        self.assertEqual(s.phone, "512 961 6519")
-        self.assertEqual(s.email, "adopt@austinpetsalive.org")
-        self.assertEqual(s.hours, "10:00am- 6:00pm")
+        self.assertEqual(s.shelter_id, "TX1218")
+        self.assertEqual(s.shelter_name, "Austin Pets Alive!")
+        self.assertEqual(s.shelter_address, "1156 West Cesar Chavez")
+        self.assertEqual(s.shelter_state, "TX")
+        self.assertEqual(s.shelter_phone, "512 961 6519")
+        self.assertEqual(s.shelter_email, "adopt@austinpetsalive.org")
+        self.assertEqual(s.shelter_hours, "10:00am- 6:00pm")
 
     def test_shelter2 (self) :
 
         s = Shelter.objects.create(
-            shelterid = "TX500",
-            name = "Hound Rescue",
-            address = "Lakeline Petsmart 11066 Pecan Park Blvd, Cedar Park",
-            state = "TX",
-            phone = "512 636 8473",
-            email = "hound@dogs.org",
-            hours = "9:00am- 5:00pm")
+            shelter_id = "TX500",
+            shelter_name = "Hound Rescue",
+            shelter_address = "Lakeline Petsmart 11066 Pecan Park Blvd, Cedar Park",
+            shelter_state = "TX",
+            shelter_phone = "512 636 8473",
+            shelter_email = "hound@dogs.org",
+            shelter_hours = "9:00am- 5:00pm")
 
         self.assertTrue(type(s) == Shelter)
-        self.assertEqual(s.shelterid, "TX500")
-        self.assertEqual(s.name, "Hound Rescue")
-        self.assertEqual(s.address, "Lakeline Petsmart 11066 Pecan Park Blvd, Cedar Park")
-        self.assertEqual(s.state, "TX")
-        self.assertEqual(s.phone, "512 636 8473")
-        self.assertEqual(s.email, "hound@dogs.org")
-        self.assertEqual(s.hours, "9:00am- 5:00pm")
+        self.assertEqual(s.shelter_id, "TX500")
+        self.assertEqual(s.shelter_name, "Hound Rescue")
+        self.assertEqual(s.shelter_address, "Lakeline Petsmart 11066 Pecan Park Blvd, Cedar Park")
+        self.assertEqual(s.shelter_state, "TX")
+        self.assertEqual(s.shelter_phone, "512 636 8473")
+        self.assertEqual(s.shelter_email, "hound@dogs.org")
+        self.assertEqual(s.shelter_hours, "9:00am- 5:00pm")
         
     def test_shelter3 (self) :
 
         s = Shelter.objects.create(
-            shelterid = "TX514",
-            name = "Austin Animal Center",
-            address = "7201 Levander Loop",
-            state = "TX",
-            phone = "512 978 0500",
-            email = "hound@dogs.org",
-            hours = "9:00am- 5:00pm")
+            shelter_id = "TX514",
+            shelter_name = "Austin Animal Center",
+            shelter_address = "7201 Levander Loop",
+            shelter_state = "TX",
+            shelter_phone = "512 978 0500",
+            shelter_email = "hound@dogs.org",
+            shelter_hours = "9:00am- 5:00pm")
 
         self.assertTrue(type(s) == Shelter)
-        self.assertEqual(s.shelterid, "TX500")
-        self.assertEqual(s.name, "Hound Rescue")
-        self.assertEqual(s.address, "Lakeline Petsmart 11066 Pecan Park Blvd, Cedar Park")
-        self.assertEqual(s.state, "TX")
-        self.assertEqual(s.phone, "512 636 8473")
-        self.assertEqual(s.email, "animal.customerservice@austintexas.gov")
-        self.assertEqual(s.hours, "11:00 am - 7:00 pm")
+        self.assertEqual(s.shelter_id, "TX500")
+        self.assertEqual(s.shelter_name, "Hound Rescue")
+        self.assertEqual(s.shelter_address, "Lakeline Petsmart 11066 Pecan Park Blvd, Cedar Park")
+        self.assertEqual(s.shelter_state, "TX")
+        self.assertEqual(s.shelter_phone, "512 636 8473")
+        self.assertEqual(s.shelter_email, "animal.customerservice@austintexas.gov")
+        self.assertEqual(s.shelter_hours, "11:00 am - 7:00 pm")
 
 
     # ----
@@ -144,53 +144,54 @@ class Test (unittest.TestCase) :
     def test_pet1 (self) :
 
         p = Pet.objects.create(
-            petsid = "24306492",
-            name = "Amigo",
-            age = "Adult",
-            size = "S",
-            breed = "Chihuahua",
-            pic_url = "picurl")
+            pet_id = "24306492",
+            pet_name = "Amigo",
+            pet_age = "Adult",
+            pet_size = "S",
+            pet_breed = "Chihuahua",
+            pet_pic_url = "picurl")
 
         self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.petsid, "24306492")
-        self.assertEqual(p.name, "Amigo")
-        self.assertEqual(p.age, "Adult")
-        self.assertEqual(p.size, "S")
-        self.assertEqual(p.breed, "Chihuahua")
+        self.assertEqual(p.pet_id, "24306492")
+        self.assertEqual(p.pet_name, "Amigo")
+        self.assertEqual(p.pet_age, "Adult")
+        self.assertEqual(p.pet_size, "S")
+        self.assertEqual(p.pet_breed, "Chihuahua")
         
     def test_pet2 (self) :
 
         p = Pet.objects.create(
-            petsid = "32151337",
-            name = "Tita",
-            age = "Senior",
-            size = "L",
-            breed = "Applehead Siamese",
-            pic_url = "picurl")
+            pet_id = "32151337",
+            pet_name = "Tita",
+            pet_age = "Senior",
+            pet_size = "L",
+            pet_breed = "Applehead Siamese",
+            pet_pic_url = "picurl")
 
         self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.petsid, "32151337")
-        self.assertEqual(p.name, "Tita")
-        self.assertEqual(p.age, "Senior")
-        self.assertEqual(p.size, "L")
-        self.assertEqual(p.breed, "Applehead Siamese")
+        self.assertEqual(p.pet_id, "32151337")
+        self.assertEqual(p.pet_name, "Tita")
+        self.assertEqual(p.pet_age, "Senior")
+        self.assertEqual(p.pet_size, "L")
+        self.assertEqual(p.pet_breed, "Applehead Siamese")
     
     def test_pet3 (self) :
 
         p = Pet.objects.create(
-            petsid = "18620461",
-            name = "Little John II",
-            age = "Baby",
-            size = "M",
-            breed = "Tabby",
-            pic_url = "picurl")
+            pet_id = "18620461",
+            pet_pet_name = "Little John II",
+            pet_age = "Baby",
+            pet_size = "M",
+            pet_breed = "Tabby",
+            pet_pic_url = "picurl")
 
         self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.petsid, "18620461")
-        self.assertEqual(p.name, "Little John II")
-        self.assertEqual(p.age, "Baby")
-        self.assertEqual(p.size, "M")
-        self.assertEqual(p.breed, "Tabby")
+        self.assertEqual(p.pet_id, "18620461")
+        self.assertEqual(p.pet_name, "Little John II")
+        self.assertEqual(p.pet_age, "Baby")
+        self.assertEqual(p.pet_size, "M")
+        self.assertEqual(p.pet_breed, "Tabby")
+    
     
     # ----
     # API Tests
