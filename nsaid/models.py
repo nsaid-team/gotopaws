@@ -16,6 +16,8 @@ class City(models.Model):
     state = models.CharField(max_length=300)
     country = models.CharField(max_length=100)
     vet_url = models.CharField(max_length=500)
+    groomer_url = models.CharField(max_length=500)
+    park_url = models.CharField(max_length=500)
     
     """
     class Meta:
