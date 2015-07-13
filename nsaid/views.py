@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.template import loader
-from models.py import *
+#from models.py import *
 
 
 def test(request):
