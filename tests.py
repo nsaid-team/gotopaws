@@ -29,7 +29,7 @@ class Test (unittest.TestCase) :
             city_groomer_url = "groomerurl",
             city_park_url = "parkurl",)
 
-        self.assertTrue(type(s) == City)
+        self.assertTrue(type(c) == City)
         self.assertEqual(c.city_name, "Dallas")
         self.assertEqual(c.city_state, "TX")
         self.assertEqual(c.city_country, "US")
@@ -46,7 +46,7 @@ class Test (unittest.TestCase) :
             city_groomer_url = "groomerurl",
             city_park_url = "parkurl")
 
-        self.assertTrue(type(s) == City)
+        self.assertTrue(type(c) == City)
         self.assertEqual(c.city_name, "San Francisco")
         self.assertEqual(c.city_state, "CA")
         self.assertEqual(c.city_country, "US")
@@ -63,7 +63,7 @@ class Test (unittest.TestCase) :
             city_groomer_url = "groomerurl",
             city_park_url = "parkurl")
 
-        self.assertTrue(type(s) == City)
+        self.assertTrue(type(c) == City)
         self.assertEqual(c.city_name, "Austin")
         self.assertEqual(c.city_state, "TX")
         self.assertEqual(c.city_country, "US")
