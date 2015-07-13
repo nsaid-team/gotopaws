@@ -1,8 +1,14 @@
-body { 
-    margin:0; 
-    padding:20px; 
-    font:13px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
-    }
+body,
+html {
+    width: 100%;
+    height: 100%;
+     background: url(../img/All/dog-ball.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+}  
     
 /* ---- Some Resets ---- */
 
