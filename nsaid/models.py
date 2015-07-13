@@ -9,7 +9,7 @@ class City(models.Model):
     The model contains a name, state, country, and vet_url 
     The list of pets in a city is handled by Pet having a foreign key Pet.city.
     The list of shelters in a city is handled by Shelter having a foreign key Shelter.city. 
-    The __str__ method is used to return the concatenated city and state.
+    The __str__ method is used to return the city.
     """
 
     name = models.CharField(max_length=200)
@@ -42,7 +42,7 @@ class Shelter(models.Model):
     shelterid = models.CharField(max_length=50)
     shelter_name = models.CharField(max_length=300)
     address = models.CharField(max_length=200)
-    shelter_city = models.ForeignKey(City)
+    shelter_city = models.ForeignKey(City, related_name = 'shelter_city')
     shelter_state = models.CharField(max_length=50)
     phone = models.CharField(max_length=50)
     email = models.CharField(max_length=100)
@@ -72,8 +72,8 @@ class Pet(models.Model):
     age = models.CharField(max_length=20)
     size = models.CharField(max_length=20)
     breed = models.CharField(max_length=100)
-    pet_shelter = models.ForeignKey(Shelter)
-    pet_city = models.ForeignKey(City, related_name='city')
+    pet_shelter = models.ForeignKey(Shelter, related_name = 'pet_shelter')
+    pet_city = models.ForeignKey(City, related_name='pet_city')
     pic_url = models.CharField(max_length=500)
     
     """
