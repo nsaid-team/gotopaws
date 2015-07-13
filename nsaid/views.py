@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.template import loader
+#from models.py import *
 
 
 def test(request):
@@ -11,8 +12,8 @@ def home(request):
     return HttpResponse(template.render())
 
 def shelters(request):
-    template = loader.get_template('Shelters.html')
-    return HttpResponse(template.render())
+    context = Shelter.object.raw('SELECT * FROM nsaid_shelter')
+    return render(request, 'Shelter_Page.html', context)
 
 def pets(request):
     template = loader.get_template('Pets.html')
@@ -69,3 +70,15 @@ def city_Houston(request):
 def city_SF(request):
     template = loader.get_template('City_SF.html')
     return HttpResponse(template.render())
+
+#def pet(request, pet_id):
+#    context = {'pet_id': pet_id}
+#    return render(request, 'Pet_Page.html', context)
+
+#def shelter(request, shelter_id):
+#    context = {'shelter_id': shelter_id}
+#    return render(request, 'Shelter_Page.html', context)
+
+#def city(request, city_id):
+#    context = {'city_id': city_id}
+#    return render(request, 'City_Page.html', context)
