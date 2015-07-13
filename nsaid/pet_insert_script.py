@@ -35,5 +35,5 @@ pet_list = [
 
 for d in pet_list:
     q = 0
-    q = Pet(petsid=d["petsid"], name=d["name"], age=d["age"], size=d["size"], breed=d["breed"], shelter=d["shelter"], city=d["city"], pic_url=d["pic_url"])
+    q = Pet(petsid=d["petsid"], pet_name=d["name"], age=d["age"], size=d["size"], breed=d["breed"], pet_shelter=d["shelter"], pet_city=d["city"], pic_url=d["pic_url"])
     q.save()

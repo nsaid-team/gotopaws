@@ -33,5 +33,5 @@ shelter_list = [
 
 for d in shelter_list:
     q = 0
-    q = Shelter(shelterid=d["id"], name=d["name"], address=d["address1"], city=d["city"], state=d["state"], phone=d["phone"], email=d["email"])
+    q = Shelter(shelterid=d["id"], shelter_name=d["name"], address=d["address1"], shelter_city=d["city"], shelter_state=d["state"], phone=d["phone"], email=d["email"])
     q.save()

@@ -40,10 +40,10 @@ class Shelter(models.Model):
     """
     
     shelterid = models.CharField(max_length=50)
-    name = models.CharField(max_length=300)
+    shelter_name = models.CharField(max_length=300)
     address = models.CharField(max_length=200)
-    city = models.ForeignKey(City)
-    state = models.CharField(max_length=50)
+    shelter_city = models.ForeignKey(City)
+    shelter_state = models.CharField(max_length=50)
     phone = models.CharField(max_length=50)
     email = models.CharField(max_length=100)
     hours = models.CharField(max_length=200)
@@ -68,12 +68,12 @@ class Pet(models.Model):
     """
 
     petsid = models.CharField(max_length=50)
-    name = models.CharField(max_length=100)
+    pet_name = models.CharField(max_length=100)
     age = models.CharField(max_length=20)
     size = models.CharField(max_length=20)
     breed = models.CharField(max_length=100)
-    shelter = models.ForeignKey(Shelter)
-    city = models.ForeignKey(City, related_name='city')
+    pet_shelter = models.ForeignKey(Shelter)
+    pet_city = models.ForeignKey(City, related_name='city')
     pic_url = models.CharField(max_length=500)
     
     """
