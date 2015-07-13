@@ -1,7 +1,6 @@
-from nsaid.models import Pet 
-
-pet_list = [
-    {
+{ "all_pets":
+    [
+        {
             "petsid":"A4856",
             "name":"Sari",
             "age":"Adult",
@@ -29,12 +28,7 @@ pet_list = [
             "breed":"German Shepherd Dog",
             "shelter":"TX1218",
             "city":"Austin",
-            "pic_url":"http://photos.petfinder.com/photos/pets/32251618/1/?bust=1435667817&width=60&-pnt.jpg"
-    }
-]
-
-for d in pet_list:
-    q = 0
-    q = Pet(petsid=d["petsid"], pet_name=d["name"], age=d["age"], size=d["size"], breed=d["breed"], pet_shelter=d["shelter"], pet_city=d["city"], pic_url=d["pic_url"])
-    q.save()
-print(Pet.objects.all())
+            "pic_url":""
+        }
+    ]
+}
