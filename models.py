@@ -9,15 +9,15 @@ class City(models.Model):
     The model contains a name, state, country, and vet_url 
     The list of pets in a city is handled by Pet having a foreign key Pet.city.
     The list of shelters in a city is handled by Shelter having a foreign key Shelter.city. 
-    The __str__ method is used to return the concatenated city and state.
+    The __str__ method is used to return the city.
     """
 
-    name = models.CharField(max_length=200)
-    state = models.CharField(max_length=300)
-    country = models.CharField(max_length=100)
-    vet_url = models.CharField(max_length=500)
-    groomer_url = models.CharField(max_length=500)
-    park_url = models.CharField(max_length=500)
+    city_name = models.CharField(max_length=200)
+    city_state = models.CharField(max_length=300)
+    city_country = models.CharField(max_length=100)
+    city_vet_url = models.CharField(max_length=500)
+    city_groomer_url = models.CharField(max_length=500)
+    city_park_url = models.CharField(max_length=500)
     
     """
     class Meta:
@@ -25,7 +25,7 @@ class City(models.Model):
     """
         
     def __str__ (self):
-        return self.name
+        return self.city_name
 
 
     # ------------
@@ -39,14 +39,14 @@ class Shelter(models.Model):
     The __str__ method is used to return the shelterid identifier.
     """
     
-    shelterid = models.CharField(max_length=50)
+    shelter_id = models.CharField(max_length=50)
     shelter_name = models.CharField(max_length=300)
-    address = models.CharField(max_length=200)
-    shelter_city = models.ForeignKey(City)
+    shelter_address = models.CharField(max_length=200)
+    shelter_city = models.ForeignKey(City, related_name = 'shelter_city')
     shelter_state = models.CharField(max_length=50)
-    phone = models.CharField(max_length=50)
-    email = models.CharField(max_length=100)
-    hours = models.CharField(max_length=200)
+    shelter_phone = models.CharField(max_length=50)
+    shelter_email = models.CharField(max_length=100)
+    shelter_hours = models.CharField(max_length=200)
     
     """
     class Meta:
@@ -54,7 +54,7 @@ class Shelter(models.Model):
     """
     
     def __str__ (self):
-        return self.shelterid
+        return self.shelter_id
 
 
     # -------------
@@ -67,14 +67,14 @@ class Pet(models.Model):
     The __str__ method is used to return the petid identifier.
     """
 
-    petsid = models.CharField(max_length=50)
+    pet_id = models.CharField(max_length=50)
     pet_name = models.CharField(max_length=100)
-    age = models.CharField(max_length=20)
-    size = models.CharField(max_length=20)
-    breed = models.CharField(max_length=100)
-    pet_shelter = models.ForeignKey(Shelter)
-    pet_city = models.ForeignKey(City, related_name='city')
-    pic_url = models.CharField(max_length=500)
+    pet_age = models.CharField(max_length=20)
+    pet_size = models.CharField(max_length=20)
+    pet_breed = models.CharField(max_length=100)
+    pet_shelter = models.ForeignKey(Shelter, related_name = 'pet_shelter')
+    pet_city = models.ForeignKey(City, related_name='pet_city')
+    pet_pic_url = models.CharField(max_length=500)
     
     """
     class Meta:
@@ -82,4 +82,4 @@ class Pet(models.Model):
     """
     
     def __str__ (self):
-        return self.petsid
+        return self.pet_id

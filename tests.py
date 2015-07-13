@@ -179,7 +179,7 @@ class Test (unittest.TestCase) :
 
         p = Pet.objects.create(
             pet_id = "18620461",
-            pet_pet_name = "Little John II",
+            pet_name = "Little John II",
             pet_age = "Baby",
             pet_size = "M",
             pet_breed = "Tabby",
