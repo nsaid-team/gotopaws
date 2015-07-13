@@ -25,7 +25,7 @@ class City(models.Model):
     """
         
     def __str__ (self):
-        return self.name
+        return self.city_name
 
 
     # ------------
@@ -54,7 +54,7 @@ class Shelter(models.Model):
     """
     
     def __str__ (self):
-        return self.shelterid
+        return self.shelter_id
 
 
     # -------------
@@ -82,4 +82,4 @@ class Pet(models.Model):
     """
     
     def __str__ (self):
-        return self.petsid
+        return self.pet_id
