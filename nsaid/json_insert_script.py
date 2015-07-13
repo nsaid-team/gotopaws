@@ -21,38 +21,38 @@ pet_dict_list = pet_dict["all_pets"]
 
 for c in city_dict_list:
 	#print(c["name"])
-	cq = City(name=c["name"],
-		state=c["state"],
-		country=c["country"],
-		vet_url=c["vet_url"],
-		groomer_url=c["groomer_url"],
-		park_url=c["park_url"]
+	cq = City(city_name=c["name"],
+		city_state=c["state"],
+		city_country=c["country"],
+		city_vet_url=c["vet_url"],
+		city_groomer_url=c["groomer_url"],
+		city_park_url=c["park_url"]
 		)
 	cq.save()
 
 for s in shelter_dict_list:
 	#print(s["name"])
-	sq = Shelter(shelterid=s["id"],
+	sq = Shelter(shelter_id=s["id"],
 		shelter_name=s["name"],
-		address=s["address1"],
+		shelter_address=s["address1"],
 		shelter_city=s["city"],
 		shelter_state=s["state"],
-		phone=s["phone"],
-		email=s["email"],
-		hours=s["hours"]
+		shelter_phone=s["phone"],
+		shelter_email=s["email"],
+		shelter_hours=s["hours"]
 		)
 	sq.save()
 
 for p in pet_dict_list:
 	#print(p["name"])
-	pq = Pet(petsid=p["petsid"],
+	pq = Pet(pet_id=p["petsid"],
 		pet_name=p["name"],
-		age=p["age"],
-		size=p["size"],
-		breed=p["breed"],
+		pet_age=p["age"],
+		pet_size=p["size"],
+		pet_breed=p["breed"],
 		pet_shelter=p["shelter"],
 		pet_city=p["city"],
-		pic_url=p["pic_url"]
+		pet_pic_url=p["pic_url"]
 		)
 	pq.save()
 
