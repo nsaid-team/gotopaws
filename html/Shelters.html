@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
 
     <meta charset="utf-8">
@@ -10,14 +11,15 @@
     <meta name="author" content="">
     <!--3 Col Portfolio - Start Bootstrap Template -->
     <title> GoToPaws </title>
-
+    <script type="text/javascript" src="{{ STATIC_URL }}js/angular.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/sortable.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/shelters.js"></script>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="bootstrap-3.3.5-dist/css/shelter-table.css" rel="stylesheet">
-    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/sortable.js"></script>
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,7 +29,10 @@
 
 </head>
 
-<body>
+
+<body ng-app="sheltersPage">
+    [["Test eval 1"]]<br>
+    {{"Test eval 2"}}
 
  <!-- Navigation -->
     <nav class="navbar navbar-inverse" role="navigation">
@@ -104,7 +109,8 @@
 
                     <!--Table for Shelters -->
 
-                <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0">
+                <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0" ng-controller="ShelterTable as Shelter">
+                    [[Shelter.loaded]]
                     <thead>  
                       <tr>
                             <th>Logo:</th>
@@ -116,14 +122,17 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                      
+                      <tr ng-repeat="shelter in Shelter.data.all_shelters">
                             <td><img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/APA_logo.jpg" alt="Austin Pets Alive!"  height="42" width="42"></td>
-                            <td><a href="Shelter_APA.html">Austin Pets Alive!</a></td>
-                            <td> Austin </td>
-                            <td> TX </td>
-                            <td> 512-961-6519 </td>
-                            <td> info@austinpetsalive.org </td>
+                            <td><a href="Shelter_APA.html">[[shelter.name.$t]]</a></td>
+                            <td> [[shelter.city.$t]] </td>
+                            <td> [[shelter.state.$t]]</td>
+                            <td> [[shelter.phone.$t]] </td>
+                            <td> [[shelter.email.$t]]</td>
                       </tr>
+                      
+                      <!--
                       <tr>
                             <td> <img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/muttville_logo_small.jpg" alt=""  height="42" width="42"> </td>
                             <td>  <a href="Shelter_Muttville.html">Muttville Senior Dog Rescue </a></td>
@@ -140,6 +149,7 @@
                             <td> 713-862-7387</td>
                             <td> hppl@hppl.org </td>
                       </tr>
+                        -->
                     </tbody>
                 </table>         
 
@@ -168,5 +178,7 @@
     <script src="js/bootstrap.min.js"></script>
 
 </body>
+
+
 
 </html>
