@@ -82,6 +82,7 @@ class Test (unittest.TestCase) :
             shelter_id = "TX1218",
             shelter_name = "Austin Pets Alive!",
             shelter_address = "1156 West Cesar Chavez",
+            shelter_city = "Dallas",
             shelter_state = "TX",
             shelter_phone = "512 961 6519",
             shelter_email = "adopt@austinpetsalive.org",
@@ -91,6 +92,7 @@ class Test (unittest.TestCase) :
         self.assertEqual(s.shelter_id, "TX1218")
         self.assertEqual(s.shelter_name, "Austin Pets Alive!")
         self.assertEqual(s.shelter_address, "1156 West Cesar Chavez")
+        self.assertEqual(s.shelter_city, "Dallas")
         self.assertEqual(s.shelter_state, "TX")
         self.assertEqual(s.shelter_phone, "512 961 6519")
         self.assertEqual(s.shelter_email, "adopt@austinpetsalive.org")
@@ -102,6 +104,7 @@ class Test (unittest.TestCase) :
             shelter_id = "TX500",
             shelter_name = "Hound Rescue",
             shelter_address = "Lakeline Petsmart 11066 Pecan Park Blvd, Cedar Park",
+            shelter_city = "San Francisco",
             shelter_state = "TX",
             shelter_phone = "512 636 8473",
             shelter_email = "hound@dogs.org",
@@ -111,6 +114,7 @@ class Test (unittest.TestCase) :
         self.assertEqual(s.shelter_id, "TX500")
         self.assertEqual(s.shelter_name, "Hound Rescue")
         self.assertEqual(s.shelter_address, "Lakeline Petsmart 11066 Pecan Park Blvd, Cedar Park")
+        self.assertEqual(s.shelter_city, "San Francisco")
         self.assertEqual(s.shelter_state, "TX")
         self.assertEqual(s.shelter_phone, "512 636 8473")
         self.assertEqual(s.shelter_email, "hound@dogs.org")
@@ -122,6 +126,7 @@ class Test (unittest.TestCase) :
             shelter_id = "TX514",
             shelter_name = "Austin Animal Center",
             shelter_address = "7201 Levander Loop",
+            shelter_city = "Austin",
             shelter_state = "TX",
             shelter_phone = "512 978 0500",
             shelter_email = "hound@dogs.org",
@@ -131,6 +136,7 @@ class Test (unittest.TestCase) :
         self.assertEqual(s.shelter_id, "TX500")
         self.assertEqual(s.shelter_name, "Hound Rescue")
         self.assertEqual(s.shelter_address, "Lakeline Petsmart 11066 Pecan Park Blvd, Cedar Park")
+        self.assertEqual(s.shelter_city, "Austin")
         self.assertEqual(s.shelter_state, "TX")
         self.assertEqual(s.shelter_phone, "512 636 8473")
         self.assertEqual(s.shelter_email, "animal.customerservice@austintexas.gov")
