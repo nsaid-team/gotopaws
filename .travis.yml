@@ -26,8 +26,8 @@ install:
 
 before_script:
   - mysql -e 'create database nsaid;'
-  - python manage.py makemigrations
-  - python manage.py syncdb --noinput
+  - python manage.py makemigrations --merge --noinput
+  - python manage.py migrate
   - uname -a
   - printenv
   - pip3 --version
