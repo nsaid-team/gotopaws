@@ -26,7 +26,7 @@ app.controller("ShelterTable",  function ($http) {
   this.data = {};
 
 
-    $http.get("/gotopaws/html/bootstrap-3.3.5-dist/js/3x3x3_shelters_dataset.json").success(function(load){
+    $http.get("bootstrap-3.3.5-dist/js/3x3x3_shelters_dataset.json").success(function(load){
       dict.data = load;
       dict.loaded = true;
     });
