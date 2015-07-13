@@ -8,6 +8,7 @@ import requests, json
 import unittest
 from nsaid.models import *
 import coverage
+import nose
 
 # -----------
 # test
