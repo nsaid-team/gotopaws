@@ -23,44 +23,59 @@ class Test (unittest.TestCase) :
     def test_city1 (self) :
         c = City.objects.create(
             name = "Dallas",
+            address = "4151 McKinney Ave",
             state = "TX",
             country = "US",
-            vet_url = "veturl")
+            vet_url = "veturl",
+            groomer_url = "groomerurl",
+            park_url = "parkurl",)
 
         self.assertTrue(type(s) == City)
         self.assertEqual(c.name, "Dallas")
         self.assertEqual(c.state, "TX")
         self.assertEqual(c.city, "US")
         self.assertEqual(s.vet_url, "veturl")
+        self.assertEqual(s.groomer_url, "groomerurl")
+        self.assertEqual(s.park_url, "parkurl")
         
     def test_city2 (self) :
         c = City.objects.create(
             name = "San Francisco",
+            address = "1207 Ninth Ave",
             state = "CA",
             country = "US",
-            vet_url = "veturl")
+            vet_url = "veturl",
+            groomer_url = "groomerurl",
+            park_url = "parkurl")
 
         self.assertTrue(type(s) == City)
         self.assertEqual(c.name, "San Francisco")
         self.assertEqual(c.state, "CA")
         self.assertEqual(c.city, "US")
         self.assertEqual(s.vet_url, "veturl")
+        self.assertEqual(s.groomer_url, "groomerurl")
+        self.assertEqual(s.park_url, "parkurl")
         
     def test_city3 (self) :
         c = City.objects.create(
             name = "Austin",
+            address = "7300 Ranch Road 2222",
             state = "TX",
             country = "US",
-            vet_url = "veturl")
+            vet_url = "veturl",
+            groomer_url = "groomerurl",
+            park_url = "parkurl")
 
         self.assertTrue(type(s) == City)
         self.assertEqual(c.name, "Austin")
         self.assertEqual(c.state, "TX")
         self.assertEqual(c.city, "US")
         self.assertEqual(s.vet_url, "veturl")
+        self.assertEqual(s.groomer_url, "groomerurl")
+        self.assertEqual(s.park_url, "parkurl")
 
 
-# ----
+    # ----
     # Shelter Model
     # ----
 
