@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -8,15 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>1 Col Portfolio - Start Bootstrap Template</title>
+    <!--3 Col Portfolio - Start Bootstrap Template -->
+    <title> GoToPaws </title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="./bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="./bootstrap-3.3.5-dist/css/1-col-portfolio.css" rel="stylesheet">
-
+    <link href="bootstrap-3.3.5-dist/css/table-format.css" rel="stylesheet">
+    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/sortable.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,65 +65,47 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Cities
-                    <small>Texas</small>
+                    <!--<small>Texas</small>-->
                 </h1>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Project One -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="bootstrap-3.3.5-dist/img/Cities/Austin.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>Austin</h3>
-                <h4>Live Music Capitol of the World</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                <a class="btn btn-primary" href="City_Austin.html">View City <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
+    <!-- Table -->
+    <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0">
+        <thead>  
+            <tr>
+                <th class="unsortable">      </th>
+                <th>City: </th>
+                <th>State:</th>
+                <th>Motto: </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img class="img-responsive" src="bootstrap-3.3.5-dist/img/Cities/Austin.jpg" alt=""  height="42" width="42"></td>
+                <td><a href="City_Austin.html">Austin</a></td>
+                <td> TX </td>
+                <td> Live Music Capital of the World</td>
+            </tr>
+            <tr>
+                <td><img class="img-responsive" src="bootstrap-3.3.5-dist/img/Cities/san-franc.jpg" alt=""  height="42" width="42"> </td>
+                <td>  <a href="City_SF.html">San Francisco</a></td>
+                <td> CA</td>
+                <td> Gold in peace, iron in war</td>                 
+            </tr>
+            <tr>
+                <td><img class="img-responsive" src="bootstrap-3.3.5-dist/img/Cities/Houston.jpg" alt="" height="50" width="50"></td>
+                <td>  <a href="City_Houston.html"> Houston </a></td>
+                <td> Texas </td>
+                <td> Space City</td>
+            </tr>
+        </tbody>
+     </table>         
 
-        <hr>
+     <hr>
 
-        <!-- Project Two -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="bootstrap-3.3.5-dist/img/Cities/san-franc.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>San Francisco</h3>
-                <h4>Gold in peace, iron in war</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-                <a class="btn btn-primary" href="City_SF.html">View City <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
 
-        <hr>
-
-        <!-- Project Three -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="bootstrap-3.3.5-dist/img/Cities/Houston.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>Houston</h3>
-                <h4>Space City</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-                <a class="btn btn-primary" href="City_Houston.html">View City <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
 
         
         <!-- Pagination -->

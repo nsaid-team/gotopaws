@@ -8,15 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Portfolio Item - Start Bootstrap Template</title>
+    <!--3 Col Portfolio - Start Bootstrap Template -->
+    <title> GoToPaws </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="bootstrap-3.3.5-dist/css/portfolio-item.css" rel="stylesheet">
-
+    <link href="bootstrap-3.3.5-dist/css/table-format.css" rel="stylesheet">
+    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/sortable.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,8 +66,8 @@
         <!-- Portfolio Item Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Portfolio Item
-                    <small>Item Subheading</small>
+                <h1 class="page-header">Visit a shelter
+                   <!-- <small>Item Subheading</small> -->
                 </h1>
             </div>
         </div>
@@ -81,46 +82,66 @@
 
             <div class="col-md-4">
                 <h3>Project Description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-                <h3>Project Details</h3>
+                <p>Looking to adopt? Check the shelters around your area.</h3>
                 <ul>
-                    <li>Lorem Ipsum</li>
-                    <li>Dolor Sit Amet</li>
-                    <li>Consectetur</li>
-                    <li>Adipiscing Elit</li>
+                    <li>Shelters</li>
+                    <li>Location</li>
+                    <li>Contact Information</li>
                 </ul>
             </div>
 
         </div>
+        <br>
         <!-- /.row -->
-
 
         <!-- Related Projects Row -->
         <div class="row">
 
+
             <div class="col-lg-12">
-                <h3 class="page-header">Related Projects</h3>
+                <h3 class="page-header">Find a shelter:</h3>
             </div>
 
-            <div class="col-sm-4 col-xs-6">
-                <a href="Shelter_APA.html">
-                    <img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/APA_logo.jpg" alt="Austin Pets Alive!">
-                </a>
-            </div>
+                    <!--Table for Shelters -->
 
-            <div class="col-sm-4 col-xs-6">
-                <a href="Shelter_Muttville.html">
-                    <img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/muttville_logo_small.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-4 col-xs-6">
-                <a href="Shelter_HPPL.html">
-                    <img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/hppl_small_logo.jpeg" alt="">
-                </a>
-            </div>
-
-         
+                <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0">
+                    <thead>  
+                      <tr>
+                            <th>Logo:</th>
+                            <th>Name:</th>
+                            <th>City: </th>
+                            <th>State:</th>
+                            <th>Phone:</th>
+                            <th>E-mail:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                            <td><img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/APA_logo.jpg" alt="Austin Pets Alive!"  height="42" width="42"></td>
+                            <td><a href="Shelter_APA.html">Austin Pets Alive!</a></td>
+                            <td> Austin </td>
+                            <td> TX </td>
+                            <td> 512-961-6519 </td>
+                            <td> info@austinpetsalive.org </td>
+                      </tr>
+                      <tr>
+                            <td> <img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/muttville_logo_small.jpg" alt=""  height="42" width="42"> </td>
+                            <td>  <a href="Shelter_Muttville.html">Muttville Senior Dog Rescue </a></td>
+                            <td> San Francisco</td>
+                            <td> CA</td>
+                            <td> 415-272-4172</td>
+                            <td> info@muttville.org</td>                 
+                     </tr>
+                      <tr>
+                            <td><img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/hppl_small_logo.jpeg" alt="" height="42" width="42"></td>
+                            <td> <a href="Shelter_HPPL.html"> Homeless Pet Placement League </a></td>
+                            <td> Houston</td>
+                            <td> Texas </td>
+                            <td> 713-862-7387</td>
+                            <td> hppl@hppl.org </td>
+                      </tr>
+                    </tbody>
+                </table>         
 
         </div>
         <!-- /.row -->
