@@ -8,7 +8,7 @@ var app = angular.module('sheltersPage', [], function($interpolateProvider) {
 app.controller("ShelterTable",  function ($http) {
   var dict = this;
   this.loaded = false;
-  this.data = {"name":"empty"};
+  this.data = {};
 
   this.set_dict = function(val){
     this.data = {};
