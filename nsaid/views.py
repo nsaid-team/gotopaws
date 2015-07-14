@@ -14,10 +14,10 @@ def home(request):
     return HttpResponse(template.render())
 
 def shelters(request):
-    shelters_list = Shelter.objects.all()
-    extra_context = {"shelters_list": shelters_list}
-    context = {"shelters_id": shelters_list[shelter_id]}
-    return render_to_response("Shelters.html", context)
+    ShelterObjects = Shelter.objects.all()
+    shelters_list = sorted([shelter.shelter_id for shelter in ShelterObjects])
+    return render_to_response("Shelters.html", shelters_list)
+    
 """
 def shelters(request):
     template = loader.get_template('Shelters.html')
