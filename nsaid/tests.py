@@ -12,7 +12,7 @@ from nsaid.models import *
 # test
 # -----------
 
-class Test (unittest.TestCase) :
+class Test (TestCase) :
     
     # ----
     # City Model
