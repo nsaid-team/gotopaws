@@ -9,9 +9,9 @@
             "state":"TX",
             "phone":"512 961 6519",
             "email":"adopt@austinpetsalive.org",
-	    "hours":"9 to 5",
-	    "pic": "bootstrap-3.3.5-dist/img/Shelters/APA_logo.jpg",
-	    "url": "Shelter_APA.html"
+            "hours":"9 to 5",
+            "pic": "bootstrap-3.3.5-dist/img/Shelters/APA_logo.jpg",
+            "url": "Shelter_APA.html"
         },{
             "id":"CA1287",
             "name":"Muttville Senior Dog Rescue",
@@ -20,9 +20,9 @@
             "state":"CA",
             "phone":"415 842 0320",
             "email":"adoption@muttville.org",
-	    "hours":"9 to 5",
-	    "pic": "bootstrap-3.3.5-dist/img/Shelters/muttville_logo_small.jpg",
-	    "url": "Shelter_Muttville.html"
+            "hours":"9 to 5",
+            "pic": "bootstrap-3.3.5-dist/img/Shelters/muttville_logo_small.jpg",
+            "url": "Shelter_Muttville.html"
         },{
             "id":"TX154",
             "name":"Homeless Pet Placement League",
@@ -31,9 +31,9 @@
             "state":"TX",
             "phone":"713 862 7387",
             "email":"hppl@hppl.org",
-	    "hours":"9 to 5",
-	    "pic": "bootstrap-3.3.5-dist/img/Shelters/hppl_small_logo.jpeg",
-	    "url": "Shelter_HPPL.html"
+            "hours":"9 to 5",
+            "pic": "bootstrap-3.3.5-dist/img/Shelters/hppl_small_logo.jpeg",
+            "url": "Shelter_HPPL.html"
         }
     ]
 }
