@@ -10,7 +10,9 @@
             "city":"Houston",
             "pic_url":"http://photos.petfinder.com/photos/pets/20758336/3/?bust=1314882859&width=60&-pnt.jpg",
             "pic_large":"bootstrap-3.3.5-dist/img/Pets/sari.jpg",
-            "url": "Cat_Sari.html"
+            "url": "Cat_Sari.html",
+            "shelter_url": "Shelter_HPPL.html",
+            "city_url":"City_Houston.html"
         },
         {
             "petsid":"27958804",
@@ -22,7 +24,9 @@
             "city":"San Francisco",
             "pic_url":"http://photos.petfinder.com/photos/pets/32607766/1/?bust=1435783518&width=60&-pnt.jpg",
              "pic_large":"bootstrap-3.3.5-dist/img/Pets/earl.jpg",
-            "url": "Dog_Earl.html"
+            "url": "Dog_Earl.html",
+            "shelter_url": "Shelter_Muttville.html",
+            "city_url":"City_SF.html"
         },
         {
             "petsid":"27921188",
@@ -34,7 +38,9 @@
             "city":"Austin",
             "pic_url":"",
             "pic_large":"bootstrap-3.3.5-dist/img/Pets/rangel.jpg",
-            "url": "Dog_Rangel.html"
+            "url": "Dog_Rangel.html",
+            "shelter_url": "Shelter_APA.html",
+            "city_url":"City_Austin.html"
         }
     ]
 }
