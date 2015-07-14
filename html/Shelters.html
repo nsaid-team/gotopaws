@@ -117,9 +117,7 @@
                       <tr>
                             <th class="unsortable" >Logo:
                             <th>Name:</th>
-                            {% for shelter_name in shelters_list %}
-                                <li><a href="" id="nav_font">{{shelter_name}}</a></li>
-                            {% endfor %}
+                            
                             <th>City: </th>
                             <th>State:</th>
                             <th>Phone:</th>
@@ -127,6 +125,10 @@
                       </tr>
                     </thead>
                     <tbody>
+                      <tr {% for shelter_name in shelters_list %}
+                                <li><a href="" id="nav_font">{{shelter_name}}</a></li>
+                        {% endfor %}>
+                      
                       
                      <!--   <tr ng-repeat="shelter in Shelter.data">
                             <td><img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/APA_logo.jpg" alt="Austin Pets Alive!"  height="42" width="42"></td>
