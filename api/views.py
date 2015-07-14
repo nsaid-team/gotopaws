@@ -4,10 +4,9 @@ from django.shortcuts import render
 
 from rest_framework import status
 from rest_framework.decorators import api_view
-from rest_framework.response import Response
-#from models import *
+from django.http import HttpResponse
 from nsaid.models import Pet
-from api.serializers import PetSerializer
+import json
 
 # Create your views here.
 
@@ -17,21 +16,24 @@ def pet_list(request):
     """
     List all pets, maybe later create a new pet
     """
-    pets_list = Pet.objects.all()
-    #for name in pets_list:
-    #    print(name.pet_name)
-    #    print(name.pet_shelter)
     if request.method == 'GET':
         #petcheck = Pet(pet_id="asdf",pet_name="figaro",pet_age="12",pet_size="big",pet_breed="mutt",pet_shelter="my house",pet_city="austin")
-        petcheck = pets_list[0]
-        #petcheck.save()
         pet_list = Pet.objects.all()
-        #serializer = PetSerializer(pet_list)
-        context = {"pet_list" : pet_list}
-        serializer = PetSerializer((petcheck))
-        #return Response(serializer.data) 
-        return Response(context)
-        #return Response(petcheck.pet_name) 
+
+        info = {}
+        for pet_obj in pet_list:
+            pet_info = {}
+            pet_info["pet_id"]      = pet_obj.pet_id
+            pet_info["pet_name"]    = pet_obj.pet_name
+            pet_info["pet_age"]     = pet_obj.pet_age
+            pet_info["pet_size"]    = pet_obj.pet_size
+            pet_info["pet_breed"]   = pet_obj.pet_breed
+            pet_info["pet_shelter"] = pet_obj.pet_shelter
+            pet_info["pet_city"]    = pet_obj.pet_city
+            pet_info["pet_pic_url"] = pet_obj.pet_pic_url
+            info[pet_obj.pet_id] = pet_info
+        return HttpResponse(json.dumps(info), content_type="application/json")
+
     #elif request.method == 'POST':
     #    pass
 
