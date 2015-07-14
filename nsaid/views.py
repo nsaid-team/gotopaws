@@ -15,7 +15,7 @@ def home(request):
 
 def shelters(request):
     shelters_list = Shelter.objects.all()
-    context = {"shelter_list": shelters_list}
+    context = {"shelters_list": shelters_list}
     return render_to_response("Shelters.html", context)
     
 """
