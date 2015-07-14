@@ -110,20 +110,16 @@
                 <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0" ng-controller="ShelterTable as Shelter">
                   
 
-                    <!-- [[Shelter.set_dict(dict)]]   ?????????  -->
                     <br>
                     
                     <thead>  
                       <tr>
                             <th class="unsortable" >Logo:   
-                                <script type="text/ng-template">
-                                    <div>var dict = {{shelters_list}};</div>
-                                    <div>[[ Shelter.set_dict(dict) ]];</div>
-                                </script>
+                        
 
                                 
                               
-                                [[ Shelter.loaded ]]  </th>
+                            </th>
                             <th>Name:</th>
                             <th>City: </th>
                             <th>State:</th>
@@ -135,11 +131,11 @@
                       
                       <tr ng-repeat="shelter in Shelter.data">
                             <td><img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/APA_logo.jpg" alt="Austin Pets Alive!"  height="42" width="42"></td>
-                            <td><a href="Shelter_APA.html">[[shelter.name + shelter]]</a></td>
-                            <td> [[shelter.city]] </td>
-                            <td> [[shelter.state]]</td>
-                            <td> [[shelter.phone]] </td>
-                            <td> [[shelter.email]]</td>
+                            <td><a href="Shelter_APA.html">{{shelters_list.name}}/a></td>
+                            <td> {{shelters_list.city}} </td>
+                            <td> {{shelters_list.state}}</td>
+                            <td> {{shelters_list.phone}}</td>
+                            <td> {{shelters_list.email}}</td>
                       </tr>
                       
                       <!--
