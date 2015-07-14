@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from django.template import loader
-#from models.py import *
+from django.shortcuts import render
+from django.db import connection
+from . import models
 
 
 def test(request):
@@ -13,9 +15,10 @@ def home(request):
 
 def shelters(request):
     template = loader.get_template('Shelters.html')
-    return HttpResponse(template.render())
-    #context = Shelter.object.raw('SELECT * FROM nsaid_shelter')
-#return render(request, 'Shelter_Page.html', context)
+    cursor = connection.cursor()
+    cursor.execute('SELECT * FROM nsaid_shelter')
+    context = {"shelters_list": cursor.fetchall()}
+    return render(request, 'Shelters.html', context)
 
 def pets(request):
     template = loader.get_template('Pets.html')
