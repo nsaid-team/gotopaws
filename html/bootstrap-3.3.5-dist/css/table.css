@@ -1,28 +1,8 @@
 
-body,html{
-    width: 100%;
-    height: 100%;
-     background: url(../img/All/cat.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	color: white;
-}
-
-img{
-
-}
-
-.table-img{
-	 
-	 height:20%; 
-	 width:20%;
-}
-
 /* ---- Some Resets ---- */
 
-p,caption{
+p,
+table, caption, td, tr, th {
     margin:0;
     padding:0;
     font-weight:normal;
@@ -49,15 +29,7 @@ caption {
     padding-bottom:10px;
     }
     
-table td{
-	 font-size:20px;
-     padding:5px;
-     border:1px solid #fff;
-     width: 10%;
-     border-width:0 1px 1px 0;
-
-}
-
+table td,
 table th {
      font-size:20px;
      padding:5px;
@@ -100,8 +72,3 @@ thead th {
     tbody tr.odd td { 
         background:#bcd9e1;
         }
-
-      
-
-        
-
