@@ -5,7 +5,7 @@ from django.shortcuts import render
 from rest_framework import status
 from rest_framework.decorators import api_view
 from django.http import HttpResponse
-from nsaid.models import Pet
+from nsaid.models import Pet, Shelter
 import json
 
 # Create your views here.
@@ -38,6 +38,30 @@ def pet_list(request):
     #    pass
 
     # 6:04
+
+@api_view(['GET'])
+def shelter_list(request):
+    """
+    List all shelters, maybe later create?
+    """
+    if request.method == 'GET':
+        shelter_list = Shelter.objects.all()
+        info = {}
+        for shelter_obj in shelter_list:
+            shelter_info = {}
+            shelter_info["shelter_id"]      = shelter_obj.shelter_id
+            shelter_info["shelter_name"]    = shelter_obj.shelter_name
+            shelter_info["shelter_address"] = shelter_obj.shelter_address
+            shelter_info["shelter_city"]    = shelter_obj.shelter_city
+            shelter_info["shelter_state"]   = shelter_obj.shelter_state
+            shelter_info["shelter_phone"]   = shelter_obj.shelter_phone
+            shelter_info["shelter_email"]   = shelter_obj.shelter_email
+            shelter_info["shelter_hours"]   = shelter_obj.shelter_hours
+            shelter_info["shelter_pic"]     = shelter_obj.shelter_pic
+            shelter_info["shelter_url"]     = shelter_obj.shelter_url
+            info[shelter_obj.shelter_id] = shelter_info
+        return HttpResponse(json.dumps(info), content_type="application/json")
+ 
 
 # @api_view(['GET', 'PUT', 'DELETE'])
 @api_view(['GET'])
