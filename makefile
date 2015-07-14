@@ -34,4 +34,4 @@ IDB.log:
 	git log > IDB.log
 
 tests.out:
-	./manage.py test nsaid.tests
+	python3 manage.py test nsaid.tests
