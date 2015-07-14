@@ -39,7 +39,7 @@ urlpatterns = [
     url(r'^City_SF.html$', views.city_SF),
     url(r'^City_Houston.html$', views.city_Houston),
     #RESTful API
-    url(r'^api/', include(PetResource().urls)),
-    url(r'^api/', include(ShelterResource().urls)),
-    url(r'^api/', include(CityResource().urls)),
+    #url(r'^api/', include(PetResource().urls)),
+    #url(r'^api/', include(ShelterResource().urls)),
+    #url(r'^api/', include(CityResource().urls)),
 ]
