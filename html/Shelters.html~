@@ -83,14 +83,16 @@
                   <img class="img-responsive" src="bootstrap-3.3.5-dist/img/Shelters/ShelterBG.JPG" alt="">
             </div>
 
-            <div class="col-md-4">
-                <h3>About Shelters:</h3>
-                <p>Looking to adopt? Check the shelters around your area.</h3>
-                <ul>
-                    <li>Shelters</li>
-                    <li>Location</li>
-                    <li>Contact Information</li>
-                </ul>
+            <div class="col-md-4" >
+				<div class="text-box">
+                	<h3>About Shelters:</h3>
+                	<p>Looking to adopt? Check the shelters around your area.</h3>
+                	<ul>
+                   	 	<li>Shelters</li>
+                    	<li>Location</li>
+                    	<li>Contact Information</li>
+               	 	</ul>
+				</div>
             </div>
 
         </div>
@@ -108,14 +110,13 @@
                     <!--Table for Shelters -->
 
                 <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0" ng-controller="ShelterTable as Shelter">
-                  
-
-                    <!-- [[Shelter.set_dict(dict)]]   ?????????  -->
-                    <br>
+                    [["sanity check"]]
+                    [[Shelter.set_dict({{shelters_list}})]]  <!-- ????????? -->
+                    [[Shelter.loaded]]<br>
                     
                     <thead>  
                       <tr>
-                            <th class="unsortable" >Logo:
+                            <th class="unsortable" >Logo: </th>
                             <th>Name:</th>
                             <th>City: </th>
                             <th>State:</th>
@@ -124,23 +125,34 @@
                       </tr>
                     </thead>
                     <tbody>
-                     {% for shelter in shelters_list %} 
-                        <tr >
-                            <td><img class="img-responsive portfolio-item" src={{shelter.shelter_pic}} alt="Austin Pets Alive!"  height="42" width="42"></td>
-                            <td><a href={{shelter.shelter_url}} id="nav_font">{{shelter.shelter_name}}</a></td>
-                            <td>{{shelter.shelter_city}}</td>
-                            <td>{{shelter.shelter_state}}</td>
-                            <td>{{shelter.shelter_phone}}</td>
-                            <td>{{shelter.shelter_email}}</td>
-                        </tr> 
+                      
+                      <tr ng-repeat="shelter in Shelter.data">
+                            <td><img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/APA_logo.jpg" alt="Austin Pets Alive!"  height="42" width="42"></td>
+                            <td><a href="Shelter_APA.html">[[shelter.name]]</a></td>
+                            <td> [[shelter.city]] </td>
+                            <td> [[shelter.state]]</td>
+                            <td> [[shelter.phone]] </td>
+                            <td> [[shelter.email]]</td>
+                      </tr>
+                      
                       <!--
-                        <tr>
-                            <td><img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/muttville_logo_small.jpg" alt=""  height="42" width="42"> </td>
-                        </tr> 
-                        <tr>
-                            <td><img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/hppl_small_logo.jpeg" alt="" height="42" width="42"></td>-->
-                    {% endfor %}</tr>
-                        
+                      <tr>
+                            <td> <img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/muttville_logo_small.jpg" alt=""  height="42" width="42"> </td>
+                            <td>  <a href="Shelter_Muttville.html">Muttville Senior Dog Rescue </a></td>
+                            <td> San Francisco</td>
+                            <td> CA</td>
+                            <td> 415-272-4172</td>
+                            <td> info@muttville.org</td>                 
+                     </tr>
+                      <tr>
+                            <td><img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/hppl_small_logo.jpeg" alt="" height="42" width="42"></td>
+                            <td> <a href="Shelter_HPPL.html"> Homeless Pet Placement League </a></td>
+                            <td> Houston</td>
+                            <td> Texas </td>
+                            <td> 713-862-7387</td>
+                            <td> hppl@hppl.org </td>
+                      </tr>
+                        -->
                     </tbody>
                 </table>         
 

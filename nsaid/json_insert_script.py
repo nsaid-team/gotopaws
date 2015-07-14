@@ -39,7 +39,9 @@ for s in shelter_dict_list:
 		shelter_state=s["state"],
 		shelter_phone=s["phone"],
 		shelter_email=s["email"],
-		shelter_hours=s["hours"]
+		shelter_hours=s["hours"],
+		shelter_pic=s["pic"],
+		shelter_url=s["url"]
 		)
 	sq.save()
 
