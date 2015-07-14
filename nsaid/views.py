@@ -30,8 +30,8 @@ def shelters(request):
     #context = {"shelters_list": cursor.fetchall()}
     #context = ({'name': mydb.shelter_name, 'city': mydb.shelter_city, 'state': mydb.shelter_state, 'phone': mydb.shelter_phone, 'email': mydb.shelter_email})
     #context = {"shelters_list": dict_list}
-    context = {"shelters_list": mydb}
-    return render_to_response('Shelters.html', context)
+    #context = {"shelters_list": mydb}
+    #return render_to_response('Shelters.html', context)
    # return render_to_response('Shelters.html', context, request) #use to see local variables in error handler
 
 def pets(request):
