@@ -4,6 +4,7 @@ FILES :=                            				\
     	apiary.apib 						\
 	IDB.log             					\
     	models.html						\
+    	UML.pdf							\
     
 all:
 
