@@ -21,6 +21,7 @@ install:
   - sudo apt-get install python-numpy
   - "pip install -r dependencies.txt"
   - pip install git+https://github.com/multiplay/mysql-connector-python
+  - pip install git+https://github.com/django-tastypie/django-tastypie
   - python -m pip install requests
   - pip install djutils
 
