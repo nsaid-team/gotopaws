@@ -1,0 +1,11 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+     background: url(../img/All/dog-ball.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+  
