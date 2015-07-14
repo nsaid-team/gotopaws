@@ -34,5 +34,5 @@ IDB.log:
 	git log > IDB.log
 
 tests.out: tests.py
-	python -m unittest discover -s nsaid
+	python -m unittest discover -s nsaid test
 	./manage.py test 
