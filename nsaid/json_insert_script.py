@@ -26,7 +26,9 @@ for c in city_dict_list:
 		city_country=c["country"],
 		city_vet_url=c["vet_url"],
 		city_groomer_url=c["groomer_url"],
-		city_park_url=c["park_url"]
+		city_park_url=c["park_url"],
+        city_pic=c["pic"],
+        city_url=c["url"]
 		)
 	cq.save()
 
@@ -54,7 +56,9 @@ for p in pet_dict_list:
 		pet_breed=p["breed"],
 		pet_shelter=p["shelter"],
 		pet_city=p["city"],
-		pet_pic_url=p["pic_url"]
+		pet_pic_url=p["pic_url"],
+        pet_pic_large=p["pic_large"],
+        pet_url=p["url"]
 		)
 	pq.save()
 
