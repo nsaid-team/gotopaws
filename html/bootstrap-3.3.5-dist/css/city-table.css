@@ -10,13 +10,10 @@ body,html{
 	color: white;
 }
 
-html{
-
-}
 
 img{
-	 height:42%; 
-	 width:42%;
+	 height:20%; 
+	 width:20%;
 }
 
 /* ---- Some Resets ---- */
