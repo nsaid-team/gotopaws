@@ -6,17 +6,18 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	color:white;
+	color: black;
 }
 
-div .text-box{
-	background: rgba(222, 229, 255, 0.4);
+div.text-box{
+    background-color: rgba(238, 233, 255, .7);
     width: 100%;
-	height: auto;
-    padding: 25px;
-	margin-top: 5%;
-	margin-bottom: 5%;
-	color:black;
+    height:100%;
+    margin-top:7%;
+    margin-bottom: 5%;
+    margin-right: 25%;
+    font-size:14px;
+
 }
   
 /* ---- Some Resets ---- */

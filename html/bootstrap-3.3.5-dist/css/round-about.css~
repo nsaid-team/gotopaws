@@ -12,9 +12,11 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	color: black;
+	color:black;
 }
+html{
 
+}
 
 .img-center {
 	width: 45%;
@@ -31,8 +33,8 @@ div.text-box{
 	height:100%;
 	margin-top:5%;
 	margin-bottom: 5%;
-	margin-right: 25%;
-	font-size:12px;
+	margin-left: 25%;
+	font-size:12xp;
 
 }
 
