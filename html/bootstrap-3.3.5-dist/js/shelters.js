@@ -13,7 +13,7 @@ app.controller("ShelterTable",  function ($http) {
   this.set_dict = function(val){
     dict.data = {};
     var temp = {};
-  };
+  
     
 
   //   for (var i = 0, len = val.length; i < len; i++) {
@@ -29,8 +29,10 @@ app.controller("ShelterTable",  function ($http) {
   //       dict.data[val[i][0]] = temp;
 
   //   }
-  //   dict.loaded = true;
-  // };
+  dict.loaded = true;
+
+  };
+ 
 });
 /*
     $http.get("bootstrap-3.3.5-dist/js/3x3x3_shelters_dataset.json").success(function(load){
