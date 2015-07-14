@@ -3,7 +3,7 @@
 from tastypie.authorization import Authorization
 from tastypie import fields
 from tastypie.resources import ModelResource
-from models.import *
+from models import *
 #from wc_app.prettyPrint import *
 from tastypie.constants import *
 from django.conf.urls import *
