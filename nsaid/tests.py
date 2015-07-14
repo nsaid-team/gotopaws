@@ -115,7 +115,7 @@ class Test (unittest.TestCase) :
         c = City.objects.create(
             city_name = "Totally a real city",
             city_state = "Denial",
-            city_country = " USA",
+            city_country = "USA",
             city_vet_url = "www.totallyrealvets.com",
             city_groomer_url = "www.alsorealgroomers.net",
             city_park_url = "www.bestparkever.gov",)
@@ -131,164 +131,110 @@ class Test (unittest.TestCase) :
     def test_city7 (self) :
         
         c = City.objects.create(
-            city_name = " ",
-            city_state = " ",
-            city_country = " ",
-            city_vet_url = " ",
-            city_groomer_url = " ",
-            city_park_url = " ",)
+            city_name = "Phase 2",
+            city_state = "Almost Done",
+            city_country = "CS 373",
+            city_vet_url = "gotopaws.me",
+            city_groomer_url = "gotopaws.me",
+            city_park_url = "gotopaws.me",)
 
         self.assertTrue(type(c) == City)
-        self.assertEqual(c.city_name, " ")
-        self.assertEqual(c.city_state, " ")
-        self.assertEqual(c.city_country, " ")
-        self.assertEqual(c.city_vet_url, " ")
-        self.assertEqual(c.city_groomer_url, " ")
-        self.assertEqual(c.city_park_url, " ")
+        self.assertEqual(c.city_name, "Phase 2")
+        self.assertEqual(c.city_state, "Almost Done")
+        self.assertEqual(c.city_country, "CS 373")
+        self.assertEqual(c.city_vet_url, "gotopaws.me")
+        self.assertEqual(c.city_groomer_url, "gotopaws.me")
+        self.assertEqual(c.city_park_url, "gotopaws.me")
         
     def test_city8 (self) :
         
         c = City.objects.create(
-            city_name = " ",
-            city_state = " ",
-            city_country = " ",
-            city_vet_url = " ",
-            city_groomer_url = " ",
-            city_park_url = " ",)
+            city_name = "New York",
+            city_state = "New York",
+            city_country = "US",
+            city_vet_url = "vet url",
+            city_groomer_url = "groomer url",
+            city_park_url = "park url",)
 
         self.assertTrue(type(c) == City)
-        self.assertEqual(c.city_name, " ")
-        self.assertEqual(c.city_state, " ")
-        self.assertEqual(c.city_country, " ")
-        self.assertEqual(c.city_vet_url, " ")
-        self.assertEqual(c.city_groomer_url, " ")
-        self.assertEqual(c.city_park_url, " ")
+        self.assertEqual(c.city_name, "New York")
+        self.assertEqual(c.city_state, "New York")
+        self.assertEqual(c.city_country, "US")
+        self.assertEqual(c.city_vet_url, "vet url")
+        self.assertEqual(c.city_groomer_url, "groomer url")
+        self.assertEqual(c.city_park_url, "park url")
         
     def test_city9 (self) :
         
         c = City.objects.create(
-            city_name = " ",
-            city_state = " ",
-            city_country = " ",
-            city_vet_url = " ",
-            city_groomer_url = " ",
-            city_park_url = " ",)
+            city_name = "Testing for city with a really long name that should not break the database",
+            city_state = "Texas",
+            city_country = "USA",
+            city_vet_url = "vet url",
+            city_groomer_url = "groomer url",
+            city_park_url = "park url",)
 
         self.assertTrue(type(c) == City)
-        self.assertEqual(c.city_name, " ")
-        self.assertEqual(c.city_state, " ")
-        self.assertEqual(c.city_country, " ")
-        self.assertEqual(c.city_vet_url, " ")
-        self.assertEqual(c.city_groomer_url, " ")
-        self.assertEqual(c.city_park_url, " ")
+        self.assertEqual(c.city_name, "Testing for city with a really long name that should not break the database")
+        self.assertEqual(c.city_state, "Texas")
+        self.assertEqual(c.city_country, "USA")
+        self.assertEqual(c.city_vet_url, "vet url")
+        self.assertEqual(c.city_groomer_url, "groomer url")
+        self.assertEqual(c.city_park_url, "park url")
         
     def test_city10 (self) :
         
         c = City.objects.create(
-            city_name = " ",
-            city_state = " ",
-            city_country = " ",
-            city_vet_url = " ",
-            city_groomer_url = " ",
-            city_park_url = " ",)
+            city_name = "Testing state name length",
+            city_state = "Really long state name that the database should handle just fine",
+            city_country = "USA",
+            city_vet_url = "vet url",
+            city_groomer_url = "groomer url",
+            city_park_url = "park url",)
 
         self.assertTrue(type(c) == City)
-        self.assertEqual(c.city_name, " ")
-        self.assertEqual(c.city_state, " ")
-        self.assertEqual(c.city_country, " ")
-        self.assertEqual(c.city_vet_url, " ")
-        self.assertEqual(c.city_groomer_url, " ")
-        self.assertEqual(c.city_park_url, " ")
+        self.assertEqual(c.city_name, "Testing state name length")
+        self.assertEqual(c.city_state, "Really long state name that the database should handle just fine")
+        self.assertEqual(c.city_country, "USA")
+        self.assertEqual(c.city_vet_url, "vet url")
+        self.assertEqual(c.city_groomer_url, "groomer url")
+        self.assertEqual(c.city_park_url, "park url")
         
     def test_city11 (self) :
         
         c = City.objects.create(
-            city_name = " ",
-            city_state = " ",
-            city_country = " ",
-            city_vet_url = " ",
-            city_groomer_url = " ",
-            city_park_url = " ",)
+            city_name = "Country Length",
+            city_state = "Test",
+            city_country = "Country with a really unnecessarily long name to be put in the database",
+            city_vet_url = "another vet url ",
+            city_groomer_url = "groomer url",
+            city_park_url = "best park ever url",)
 
         self.assertTrue(type(c) == City)
-        self.assertEqual(c.city_name, " ")
-        self.assertEqual(c.city_state, " ")
-        self.assertEqual(c.city_country, " ")
-        self.assertEqual(c.city_vet_url, " ")
-        self.assertEqual(c.city_groomer_url, " ")
-        self.assertEqual(c.city_park_url, " ")
+        self.assertEqual(c.city_name, "Country Length")
+        self.assertEqual(c.city_state, "Test")
+        self.assertEqual(c.city_country, "Country with a really unnecessarily long name to be put in the database")
+        self.assertEqual(c.city_vet_url, "another vet url")
+        self.assertEqual(c.city_groomer_url, "groomer url")
+        self.assertEqual(c.city_park_url, "best park ever url")
         
     def test_city12 (self) :
         
         c = City.objects.create(
-            city_name = " ",
-            city_state = " ",
-            city_country = " ",
-            city_vet_url = " ",
-            city_groomer_url = " ",
-            city_park_url = " ",)
+            city_name = "Url",
+            city_state = "Length",
+            city_country = "Test",
+            city_vet_url = "really really really long url that should be easily handled by the database without any problems.com",
+            city_groomer_url = "ditto",
+            city_park_url = "another url",)
 
         self.assertTrue(type(c) == City)
-        self.assertEqual(c.city_name, " ")
-        self.assertEqual(c.city_state, " ")
-        self.assertEqual(c.city_country, " ")
-        self.assertEqual(c.city_vet_url, " ")
-        self.assertEqual(c.city_groomer_url, " ")
-        self.assertEqual(c.city_park_url, " ")
-        
-    def test_city13 (self) :
-        
-        c = City.objects.create(
-            city_name = " ",
-            city_state = " ",
-            city_country = " ",
-            city_vet_url = " ",
-            city_groomer_url = " ",
-            city_park_url = " ",)
-
-        self.assertTrue(type(c) == City)
-        self.assertEqual(c.city_name, " ")
-        self.assertEqual(c.city_state, " ")
-        self.assertEqual(c.city_country, " ")
-        self.assertEqual(c.city_vet_url, " ")
-        self.assertEqual(c.city_groomer_url, " ")
-        self.assertEqual(c.city_park_url, " ")
-        
-    def test_city14 (self) :
-        
-        c = City.objects.create(
-            city_name = " ",
-            city_state = " ",
-            city_country = " ",
-            city_vet_url = " ",
-            city_groomer_url = " ",
-            city_park_url = " ",)
-
-        self.assertTrue(type(c) == City)
-        self.assertEqual(c.city_name, " ")
-        self.assertEqual(c.city_state, " ")
-        self.assertEqual(c.city_country, " ")
-        self.assertEqual(c.city_vet_url, " ")
-        self.assertEqual(c.city_groomer_url, " ")
-        self.assertEqual(c.city_park_url, " ")
-        
-    def test_city15 (self) :
-        
-        c = City.objects.create(
-            city_name = " ",
-            city_state = " ",
-            city_country = " ",
-            city_vet_url = " ",
-            city_groomer_url = " ",
-            city_park_url = " ",)
-
-        self.assertTrue(type(c) == City)
-        self.assertEqual(c.city_name, " ")
-        self.assertEqual(c.city_state, " ")
-        self.assertEqual(c.city_country, " ")
-        self.assertEqual(c.city_vet_url, " ")
-        self.assertEqual(c.city_groomer_url, " ")
-        self.assertEqual(c.city_park_url, " ")
+        self.assertEqual(c.city_name, "Url")
+        self.assertEqual(c.city_state, "Length")
+        self.assertEqual(c.city_country, "Test")
+        self.assertEqual(c.city_vet_url, "really really really long url that should be easily handled by the database without any problems.com")
+        self.assertEqual(c.city_groomer_url, "ditto")
+        self.assertEqual(c.city_park_url, "another url")
 
     # ----
     # Shelter Model
@@ -385,245 +331,134 @@ class Test (unittest.TestCase) :
     def test_shelter5 (self) :
 
         s = Shelter.objects.create(
-            shelter_id = " ",
-            shelter_name = " ",
-            shelter_address = " ",
-            shelter_city = " ",
-            shelter_state = " ",
-            shelter_phone = " ",
-            shelter_email = " ",
-            shelter_hours = " ")
+            shelter_id = "CA765",
+            shelter_name = "Animal Shelter",
+            shelter_address = "1234 Shelter Dr.",
+            shelter_city = "Sacramento",
+            shelter_state = "CA",
+            shelter_phone = "123 456 7890",
+            shelter_email = "shelter.email@internet.google",
+            shelter_hours = "4-5 Weekends Only")
 
         self.assertTrue(type(s) == Shelter)
-        self.assertEqual(s.shelter_id, " ")
-        self.assertEqual(s.shelter_name, " ")
-        self.assertEqual(s.shelter_address, " ")
-        self.assertEqual(s.shelter_city, " ")
-        self.assertEqual(s.shelter_state, " ")
-        self.assertEqual(s.shelter_phone, " ")
-        self.assertEqual(s.shelter_email, " ")
-        self.assertEqual(s.shelter_hours, " ")
+        self.assertEqual(s.shelter_id, "CA765")
+        self.assertEqual(s.shelter_name, "Animal Shelter")
+        self.assertEqual(s.shelter_address, "1234 Shelter Dr.")
+        self.assertEqual(s.shelter_city, "Sacramento")
+        self.assertEqual(s.shelter_state, "CA")
+        self.assertEqual(s.shelter_phone, "123 456 7890")
+        self.assertEqual(s.shelter_email, "shelter.email@internet.google")
+        self.assertEqual(s.shelter_hours, "4-5 Weekends Only")
         
     def test_shelter6 (self) :
 
         s = Shelter.objects.create(
-            shelter_id = " ",
-            shelter_name = " ",
-            shelter_address = " ",
-            shelter_city = " ",
-            shelter_state = " ",
-            shelter_phone = " ",
-            shelter_email = " ",
-            shelter_hours = " ")
+            shelter_id = "129802",
+            shelter_name = "Turtle Pond",
+            shelter_address = "UT Austin",
+            shelter_city = "Austin",
+            shelter_state = "TX",
+            shelter_phone = "1 800 TURTLE",
+            shelter_email = "turtle.pond@ut.austin",
+            shelter_hours = "all day")
 
         self.assertTrue(type(s) == Shelter)
-        self.assertEqual(s.shelter_id, " ")
-        self.assertEqual(s.shelter_name, " ")
-        self.assertEqual(s.shelter_address, " ")
-        self.assertEqual(s.shelter_city, " ")
-        self.assertEqual(s.shelter_state, " ")
-        self.assertEqual(s.shelter_phone, " ")
-        self.assertEqual(s.shelter_email, " ")
-        self.assertEqual(s.shelter_hours, " ")
+        self.assertEqual(s.shelter_id, "129802")
+        self.assertEqual(s.shelter_name, "Turtle Pond")
+        self.assertEqual(s.shelter_address, "UT Austin")
+        self.assertEqual(s.shelter_city, "Austin")
+        self.assertEqual(s.shelter_state, "TX")
+        self.assertEqual(s.shelter_phone, "1 800 TURTLE")
+        self.assertEqual(s.shelter_email, "turtle.pond@ut.austin")
+        self.assertEqual(s.shelter_hours, "all day")
         
     def test_shelter7 (self) :
 
         s = Shelter.objects.create(
-            shelter_id = " ",
-            shelter_name = " ",
-            shelter_address = " ",
-            shelter_city = " ",
-            shelter_state = " ",
-            shelter_phone = " ",
-            shelter_email = " ",
-            shelter_hours = " ")
+            shelter_id = "TX192837",
+            shelter_name = "Pet Shelter for Pets",
+            shelter_address = "Shelter Barkway",
+            shelter_city = "Austin",
+            shelter_state = "TX",
+            shelter_phone = "574839",
+            shelter_email = "email@internets.com",
+            shelter_hours = "9-5")
 
         self.assertTrue(type(s) == Shelter)
-        self.assertEqual(s.shelter_id, " ")
-        self.assertEqual(s.shelter_name, " ")
-        self.assertEqual(s.shelter_address, " ")
-        self.assertEqual(s.shelter_city, " ")
-        self.assertEqual(s.shelter_state, " ")
-        self.assertEqual(s.shelter_phone, " ")
-        self.assertEqual(s.shelter_email, " ")
-        self.assertEqual(s.shelter_hours, " ")
+        self.assertEqual(s.shelter_id, "TX192837")
+        self.assertEqual(s.shelter_name, "Pet Shelter for Pets")
+        self.assertEqual(s.shelter_address, "Shelter Barkway")
+        self.assertEqual(s.shelter_city, "Austin")
+        self.assertEqual(s.shelter_state, "TX")
+        self.assertEqual(s.shelter_phone, "574839")
+        self.assertEqual(s.shelter_email, "email@internets.com")
+        self.assertEqual(s.shelter_hours, "9-5")
         
     def test_shelter8 (self) :
 
         s = Shelter.objects.create(
-            shelter_id = " ",
-            shelter_name = " ",
-            shelter_address = " ",
-            shelter_city = " ",
-            shelter_state = " ",
-            shelter_phone = " ",
-            shelter_email = " ",
-            shelter_hours = " ")
+            shelter_id = "TEST104",
+            shelter_name = "Test Shelter",
+            shelter_address = "Infinity Cir.",
+            shelter_city = "New York",
+            shelter_state = "NY",
+            shelter_phone = "1 800 800",
+            shelter_email = "test@shelter",
+            shelter_hours = "9-5")
 
         self.assertTrue(type(s) == Shelter)
-        self.assertEqual(s.shelter_id, " ")
-        self.assertEqual(s.shelter_name, " ")
-        self.assertEqual(s.shelter_address, " ")
-        self.assertEqual(s.shelter_city, " ")
-        self.assertEqual(s.shelter_state, " ")
-        self.assertEqual(s.shelter_phone, " ")
-        self.assertEqual(s.shelter_email, " ")
-        self.assertEqual(s.shelter_hours, " ")
+        self.assertEqual(s.shelter_id, "TEST104")
+        self.assertEqual(s.shelter_name, "Test Shelter")
+        self.assertEqual(s.shelter_address, "Infinity Cir.")
+        self.assertEqual(s.shelter_city, "New York")
+        self.assertEqual(s.shelter_state, "NY")
+        self.assertEqual(s.shelter_phone, "1 800 800")
+        self.assertEqual(s.shelter_email, "test@shelter")
+        self.assertEqual(s.shelter_hours, "9-5")
         
     def test_shelter9 (self) :
 
         s = Shelter.objects.create(
-            shelter_id = " ",
-            shelter_name = " ",
-            shelter_address = " ",
-            shelter_city = " ",
-            shelter_state = " ",
-            shelter_phone = " ",
-            shelter_email = " ",
-            shelter_hours = " ")
+            shelter_id = "IDLENGHTTEST1234567890",
+            shelter_name = "Really Long Name That Should Fit In The Database",
+            shelter_address = "1234567890 Really Long Street Name Dr. St.",
+            shelter_city = "Very Long City Name To Test The Database And Its Ability To Handle Long Names",
+            shelter_state = "Nevada",
+            shelter_phone = "1 023 843 3534",
+            shelter_email = "unit@tests",
+            shelter_hours = "12-12")
 
         self.assertTrue(type(s) == Shelter)
-        self.assertEqual(s.shelter_id, " ")
-        self.assertEqual(s.shelter_name, " ")
-        self.assertEqual(s.shelter_address, " ")
-        self.assertEqual(s.shelter_city, " ")
-        self.assertEqual(s.shelter_state, " ")
-        self.assertEqual(s.shelter_phone, " ")
-        self.assertEqual(s.shelter_email, " ")
-        self.assertEqual(s.shelter_hours, " ")
+        self.assertEqual(s.shelter_id, "IDLENGHTTEST1234567890")
+        self.assertEqual(s.shelter_name, "Really Long Name That Should Fit In The Database")
+        self.assertEqual(s.shelter_address, "1234567890 Really Long Street Name Dr. St.")
+        self.assertEqual(s.shelter_city, "Very Long City Name To Test The Database And Its Ability To Handle Long Names")
+        self.assertEqual(s.shelter_state, "Nevada")
+        self.assertEqual(s.shelter_phone, "1 023 843 3534")
+        self.assertEqual(s.shelter_email, "unit@tests")
+        self.assertEqual(s.shelter_hours, "12-12")
         
     def test_shelter10 (self) :
 
         s = Shelter.objects.create(
-            shelter_id = " ",
-            shelter_name = " ",
-            shelter_address = " ",
-            shelter_city = " ",
-            shelter_state = " ",
-            shelter_phone = " ",
-            shelter_email = " ",
-            shelter_hours = " ")
+            shelter_id = "ID54321",
+            shelter_name = "Long Attribute Test",
+            shelter_address = "1405 Database",
+            shelter_city = "Django City",
+            shelter_state = "Unusually Long State Name For A State",
+            shelter_phone = "1 234 567 8901 2345 67890",
+            shelter_email = "really.long.email.for.a.shelter.to.have@unit.tests.nsaid.me",
+            shelter_hours = "1:30 to 9:35 MWF and 2:03 to 3:31 TTH")
 
         self.assertTrue(type(s) == Shelter)
-        self.assertEqual(s.shelter_id, " ")
-        self.assertEqual(s.shelter_name, " ")
-        self.assertEqual(s.shelter_address, " ")
-        self.assertEqual(s.shelter_city, " ")
-        self.assertEqual(s.shelter_state, " ")
-        self.assertEqual(s.shelter_phone, " ")
-        self.assertEqual(s.shelter_email, " ")
-        self.assertEqual(s.shelter_hours, " ")
-        
-    def test_shelter11 (self) :
-
-        s = Shelter.objects.create(
-            shelter_id = " ",
-            shelter_name = " ",
-            shelter_address = " ",
-            shelter_city = " ",
-            shelter_state = " ",
-            shelter_phone = " ",
-            shelter_email = " ",
-            shelter_hours = " ")
-
-        self.assertTrue(type(s) == Shelter)
-        self.assertEqual(s.shelter_id, " ")
-        self.assertEqual(s.shelter_name, " ")
-        self.assertEqual(s.shelter_address, " ")
-        self.assertEqual(s.shelter_city, " ")
-        self.assertEqual(s.shelter_state, " ")
-        self.assertEqual(s.shelter_phone, " ")
-        self.assertEqual(s.shelter_email, " ")
-        self.assertEqual(s.shelter_hours, " ")
-        
-    def test_shelter12 (self) :
-
-        s = Shelter.objects.create(
-            shelter_id = " ",
-            shelter_name = " ",
-            shelter_address = " ",
-            shelter_city = " ",
-            shelter_state = " ",
-            shelter_phone = " ",
-            shelter_email = " ",
-            shelter_hours = " ")
-
-        self.assertTrue(type(s) == Shelter)
-        self.assertEqual(s.shelter_id, " ")
-        self.assertEqual(s.shelter_name, " ")
-        self.assertEqual(s.shelter_address, " ")
-        self.assertEqual(s.shelter_city, " ")
-        self.assertEqual(s.shelter_state, " ")
-        self.assertEqual(s.shelter_phone, " ")
-        self.assertEqual(s.shelter_email, " ")
-        self.assertEqual(s.shelter_hours, " ")
-        
-    def test_shelter13 (self) :
-
-        s = Shelter.objects.create(
-            shelter_id = " ",
-            shelter_name = " ",
-            shelter_address = " ",
-            shelter_city = " ",
-            shelter_state = " ",
-            shelter_phone = " ",
-            shelter_email = " ",
-            shelter_hours = " ")
-
-        self.assertTrue(type(s) == Shelter)
-        self.assertEqual(s.shelter_id, " ")
-        self.assertEqual(s.shelter_name, " ")
-        self.assertEqual(s.shelter_address, " ")
-        self.assertEqual(s.shelter_city, " ")
-        self.assertEqual(s.shelter_state, " ")
-        self.assertEqual(s.shelter_phone, " ")
-        self.assertEqual(s.shelter_email, " ")
-        self.assertEqual(s.shelter_hours, " ")
-        
-    def test_shelter14 (self) :
-
-        s = Shelter.objects.create(
-            shelter_id = " ",
-            shelter_name = " ",
-            shelter_address = " ",
-            shelter_city = " ",
-            shelter_state = " ",
-            shelter_phone = " ",
-            shelter_email = " ",
-            shelter_hours = " ")
-
-        self.assertTrue(type(s) == Shelter)
-        self.assertEqual(s.shelter_id, " ")
-        self.assertEqual(s.shelter_name, " ")
-        self.assertEqual(s.shelter_address, " ")
-        self.assertEqual(s.shelter_city, " ")
-        self.assertEqual(s.shelter_state, " ")
-        self.assertEqual(s.shelter_phone, " ")
-        self.assertEqual(s.shelter_email, " ")
-        self.assertEqual(s.shelter_hours, " ")
-        
-    def test_shelter15 (self) :
-
-        s = Shelter.objects.create(
-            shelter_id = " ",
-            shelter_name = " ",
-            shelter_address = " ",
-            shelter_city = " ",
-            shelter_state = " ",
-            shelter_phone = " ",
-            shelter_email = " ",
-            shelter_hours = " ")
-
-        self.assertTrue(type(s) == Shelter)
-        self.assertEqual(s.shelter_id, " ")
-        self.assertEqual(s.shelter_name, " ")
-        self.assertEqual(s.shelter_address, " ")
-        self.assertEqual(s.shelter_city, " ")
-        self.assertEqual(s.shelter_state, " ")
-        self.assertEqual(s.shelter_phone, " ")
-        self.assertEqual(s.shelter_email, " ")
-        self.assertEqual(s.shelter_hours, " ")
-
+        self.assertEqual(s.shelter_id, "ID54321")
+        self.assertEqual(s.shelter_name, "Long Attribute Test")
+        self.assertEqual(s.shelter_address, "1405 Database")
+        self.assertEqual(s.shelter_city, "Django City")
+        self.assertEqual(s.shelter_state, "Unusually Long State Name For A State")
+        self.assertEqual(s.shelter_phone, "1 234 567 8901 2345 67890")
+        self.assertEqual(s.shelter_email, "really.long.email.for.a.shelter.to.have@unit.tests.nsaid.me")
+        self.assertEqual(s.shelter_hours, "1:30 to 9:35 MWF and 2:03 to 3:31 TTH")
 
     # ----
     # Pet Model
@@ -716,234 +551,128 @@ class Test (unittest.TestCase) :
     def test_pet5 (self) :
 
         p = Pet.objects.create(
-            pet_id = " ",
-            pet_name = " ",
-            pet_age = " ",
-            pet_size = " ",
-            pet_breed = " ",
-            pet_shelter = " ",
-            pet_city = " ",
-            pet_pic_url = " ")
+            pet_id = "72727272",
+            pet_name = "Alexander",
+            pet_age = "Adult",
+            pet_size = "M",
+            pet_breed = "Homo Sapien",
+            pet_shelter = "UT",
+            pet_city = "Austin",
+            pet_pic_url = "awesomepic.url")
 
         self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.pet_id, " ")
-        self.assertEqual(p.pet_name, " ")
-        self.assertEqual(p.pet_age, " ")
-        self.assertEqual(p.pet_size, " ")
-        self.assertEqual(p.pet_breed, " ")
-        self.assertEqual(p.pet_shelter, " ")
-        self.assertEqual(p.pet_city, " ")
+        self.assertEqual(p.pet_id, "72727272")
+        self.assertEqual(p.pet_name, "Alexander")
+        self.assertEqual(p.pet_age, "Adult")
+        self.assertEqual(p.pet_size, "M")
+        self.assertEqual(p.pet_breed, "Homo Sapien")
+        self.assertEqual(p.pet_shelter, "UT")
+        self.assertEqual(p.pet_city, "Austin")
     
     def test_pet6 (self) :
 
         p = Pet.objects.create(
-            pet_id = " ",
-            pet_name = " ",
-            pet_age = " ",
-            pet_size = " ",
-            pet_breed = " ",
-            pet_shelter = " ",
-            pet_city = " ",
-            pet_pic_url = " ")
+            pet_id = "626",
+            pet_name = "Stitch",
+            pet_age = "Young",
+            pet_size = "S",
+            pet_breed = "Alien",
+            pet_shelter = "Disneyland",
+            pet_city = "Disneyland",
+            pet_pic_url = "stich.instagram")
 
         self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.pet_id, " ")
-        self.assertEqual(p.pet_name, " ")
-        self.assertEqual(p.pet_age, " ")
-        self.assertEqual(p.pet_size, " ")
-        self.assertEqual(p.pet_breed, " ")
-        self.assertEqual(p.pet_shelter, " ")
-        self.assertEqual(p.pet_city, " ")
+        self.assertEqual(p.pet_id, "626")
+        self.assertEqual(p.pet_name, "Stitch")
+        self.assertEqual(p.pet_age, "Young")
+        self.assertEqual(p.pet_size, "S")
+        self.assertEqual(p.pet_breed, "Alien")
+        self.assertEqual(p.pet_shelter, "Disneyland")
+        self.assertEqual(p.pet_city, "Disneyland")
     
     def test_pet7 (self) :
 
         p = Pet.objects.create(
-            pet_id = " ",
-            pet_name = " ",
-            pet_age = " ",
-            pet_size = " ",
-            pet_breed = " ",
-            pet_shelter = " ",
-            pet_city = " ",
-            pet_pic_url = " ")
+            pet_id = "1234567890",
+            pet_name = "Mr. Fluffy",
+            pet_age = "Baby",
+            pet_size = "L",
+            pet_breed = "Fuzzball",
+            pet_shelter = "Shelter",
+            pet_city = "Austin",
+            pet_pic_url = "pet pic url")
 
         self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.pet_id, " ")
-        self.assertEqual(p.pet_name, " ")
-        self.assertEqual(p.pet_age, " ")
-        self.assertEqual(p.pet_size, " ")
-        self.assertEqual(p.pet_breed, " ")
-        self.assertEqual(p.pet_shelter, " ")
-        self.assertEqual(p.pet_city, " ")
+        self.assertEqual(p.pet_id, "1234567890")
+        self.assertEqual(p.pet_name, "Mr. Fluffy")
+        self.assertEqual(p.pet_age, "Baby")
+        self.assertEqual(p.pet_size, "L")
+        self.assertEqual(p.pet_breed, "Fuzzball")
+        self.assertEqual(p.pet_shelter, "Austin")
+        self.assertEqual(p.pet_city, "pet pic url")
     
     def test_pet8 (self) :
 
         p = Pet.objects.create(
-            pet_id = " ",
-            pet_name = " ",
-            pet_age = " ",
-            pet_size = " ",
-            pet_breed = " ",
-            pet_shelter = " ",
-            pet_city = " ",
+            pet_id = "19283746",
+            pet_name = "Pet McPetson",
+            pet_age = "Senior",
+            pet_size = "L",
+            pet_breed = "Walrus",
+            pet_shelter = "Super Shelter",
+            pet_city = "Washington D. C.",
             pet_pic_url = " ")
 
         self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.pet_id, " ")
-        self.assertEqual(p.pet_name, " ")
-        self.assertEqual(p.pet_age, " ")
-        self.assertEqual(p.pet_size, " ")
-        self.assertEqual(p.pet_breed, " ")
-        self.assertEqual(p.pet_shelter, " ")
-        self.assertEqual(p.pet_city, " ")
+        self.assertEqual(p.pet_id, "19283746")
+        self.assertEqual(p.pet_name, "Pet McPetson")
+        self.assertEqual(p.pet_age, "Senior")
+        self.assertEqual(p.pet_size, "L")
+        self.assertEqual(p.pet_breed, "Walrus")
+        self.assertEqual(p.pet_shelter, "Super Shelter")
+        self.assertEqual(p.pet_city, "Washington D. C.")
     
     def test_pet9 (self) :
 
         p = Pet.objects.create(
-            pet_id = " ",
-            pet_name = " ",
-            pet_age = " ",
-            pet_size = " ",
-            pet_breed = " ",
-            pet_shelter = " ",
-            pet_city = " ",
+            pet_id = "Pet ID Length Test Is Here",
+            pet_name = "Really Long and Complicated Name for A Pet",
+            pet_age = "12034 Days Old",
+            pet_size = "Enormous",
+            pet_breed = "Poodle",
+            pet_shelter = "Shelter of Pets",
+            pet_city = "Austin",
             pet_pic_url = " ")
 
         self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.pet_id, " ")
-        self.assertEqual(p.pet_name, " ")
-        self.assertEqual(p.pet_age, " ")
-        self.assertEqual(p.pet_size, " ")
-        self.assertEqual(p.pet_breed, " ")
-        self.assertEqual(p.pet_shelter, " ")
-        self.assertEqual(p.pet_city, " ")
+        self.assertEqual(p.pet_id, "Pet ID Length Test Is Here")
+        self.assertEqual(p.pet_name, "Really Long and Complicated Name for A Pet")
+        self.assertEqual(p.pet_age, "12034 Days Old")
+        self.assertEqual(p.pet_size, "Enormous")
+        self.assertEqual(p.pet_breed, "Poodle")
+        self.assertEqual(p.pet_shelter, "Shelter of Pets")
+        self.assertEqual(p.pet_city, "Austin")
     
     def test_pet10 (self) :
 
         p = Pet.objects.create(
-            pet_id = " ",
-            pet_name = " ",
-            pet_age = " ",
-            pet_size = " ",
-            pet_breed = " ",
-            pet_shelter = " ",
-            pet_city = " ",
-            pet_pic_url = " ")
+            pet_id = "101",
+            pet_name = "More Length Tests",
+            pet_age = "Baby",
+            pet_size = "S",
+            pet_breed = "American Purebred Mix of German Shepard and a Tiger",
+            pet_shelter = "Long Name Shelter for Pets that like to test databases",
+            pet_city = "Animal City where the names are long and the databases are awesome",
+            pet_pic_url = "url for the pet that has all the pictures with really long url names")
 
         self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.pet_id, " ")
-        self.assertEqual(p.pet_name, " ")
-        self.assertEqual(p.pet_age, " ")
-        self.assertEqual(p.pet_size, " ")
-        self.assertEqual(p.pet_breed, " ")
-        self.assertEqual(p.pet_shelter, " ")
-        self.assertEqual(p.pet_city, " ")
-    
-    def test_pet11 (self) :
-
-        p = Pet.objects.create(
-            pet_id = " ",
-            pet_name = " ",
-            pet_age = " ",
-            pet_size = " ",
-            pet_breed = " ",
-            pet_shelter = " ",
-            pet_city = " ",
-            pet_pic_url = " ")
-
-        self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.pet_id, " ")
-        self.assertEqual(p.pet_name, " ")
-        self.assertEqual(p.pet_age, " ")
-        self.assertEqual(p.pet_size, " ")
-        self.assertEqual(p.pet_breed, " ")
-        self.assertEqual(p.pet_shelter, " ")
-        self.assertEqual(p.pet_city, " ")
-    
-    def test_pet12 (self) :
-
-        p = Pet.objects.create(
-            pet_id = " ",
-            pet_name = " ",
-            pet_age = " ",
-            pet_size = " ",
-            pet_breed = " ",
-            pet_shelter = " ",
-            pet_city = " ",
-            pet_pic_url = " ")
-
-        self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.pet_id, " ")
-        self.assertEqual(p.pet_name, " ")
-        self.assertEqual(p.pet_age, " ")
-        self.assertEqual(p.pet_size, " ")
-        self.assertEqual(p.pet_breed, " ")
-        self.assertEqual(p.pet_shelter, " ")
-        self.assertEqual(p.pet_city, " ")
-    
-    def test_pet13 (self) :
-
-        p = Pet.objects.create(
-            pet_id = " ",
-            pet_name = " ",
-            pet_age = " ",
-            pet_size = " ",
-            pet_breed = " ",
-            pet_shelter = " ",
-            pet_city = " ",
-            pet_pic_url = " ")
-
-        self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.pet_id, " ")
-        self.assertEqual(p.pet_name, " ")
-        self.assertEqual(p.pet_age, " ")
-        self.assertEqual(p.pet_size, " ")
-        self.assertEqual(p.pet_breed, " ")
-        self.assertEqual(p.pet_shelter, " ")
-        self.assertEqual(p.pet_city, " ")
-    
-    def test_pet14 (self) :
-
-        p = Pet.objects.create(
-            pet_id = " ",
-            pet_name = " ",
-            pet_age = " ",
-            pet_size = " ",
-            pet_breed = " ",
-            pet_shelter = " ",
-            pet_city = " ",
-            pet_pic_url = " ")
-
-        self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.pet_id, " ")
-        self.assertEqual(p.pet_name, " ")
-        self.assertEqual(p.pet_age, " ")
-        self.assertEqual(p.pet_size, " ")
-        self.assertEqual(p.pet_breed, " ")
-        self.assertEqual(p.pet_shelter, " ")
-        self.assertEqual(p.pet_city, " ")
-    
-    def test_pet15 (self) :
-
-        p = Pet.objects.create(
-            pet_id = " ",
-            pet_name = " ",
-            pet_age = " ",
-            pet_size = " ",
-            pet_breed = " ",
-            pet_shelter = " ",
-            pet_city = " ",
-            pet_pic_url = " ")
-
-        self.assertTrue(type(p) == Pet)
-        self.assertEqual(p.pet_id, " ")
-        self.assertEqual(p.pet_name, " ")
-        self.assertEqual(p.pet_age, " ")
-        self.assertEqual(p.pet_size, " ")
-        self.assertEqual(p.pet_breed, " ")
-        self.assertEqual(p.pet_shelter, " ")
-        self.assertEqual(p.pet_city, " ")
-    
+        self.assertEqual(p.pet_id, "101")
+        self.assertEqual(p.pet_name, "More Length Tests")
+        self.assertEqual(p.pet_age, "Baby")
+        self.assertEqual(p.pet_size, "S")
+        self.assertEqual(p.pet_breed, "American Purebred Mix of German Shepard and a Tiger")
+        self.assertEqual(p.pet_shelter, "Long Name Shelter for Pets that like to test databases")
+        self.assertEqual(p.pet_city, "Animal City where the names are long and the databases are awesome")
     
     # ----
     # API Tests
