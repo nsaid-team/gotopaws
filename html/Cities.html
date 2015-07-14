@@ -12,7 +12,7 @@
      {% load static from staticfiles %}
     <script type="text/javascript" src="{% static "js/angular.min.js" %}"></script>
     <script type="text/javascript" src="{% static "js/sortable.js" %}"></script>
-    <script type="text/javascript" src="{% static  "js/shelters.js" %}"></script>
+    <script type="text/javascript" src="{% static  "js/citys.js" %}"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
 
 </head>
 
-<body ng-app="citiesPage">
+<body>
 
     <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
@@ -44,7 +44,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="Home.html">Home</a></li>
                 <li ><a href="Pets.html">Pets</a></li>
-                <li><a href="Shelters.html">Shelters</a></li>
+                <li><a href="citys.html">citys</a></li>
                 <li  class="active"><a href="Cities.html">Cities</a></li>
                 <li><a href="About.html">About</a></li>
             </ul>
@@ -76,36 +76,34 @@
 
 
     <!-- Table -->
-    <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0" ng-controller="CityTable as City">
-        <thead>  
+
+    <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0" >
+                  
+                    <!-- [[City.set_dict(dict)]]   ?????????  -->
+         <br>
+                    
+         <thead>  
             <tr>
-                <th class="unsortable">      </th>
-                <th>City: </th>
-                <th>State:</th>
+                <th class="unsortable" >Picture:
+                <th>Name:</th>
+                <th>State: </th>
+                <th>Country:</th>
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="city in City.data.all_cities">
-                <td><img class="img-responsive" src="bootstrap-3.3.5-dist/img/Cities/Austin.jpg" alt=""  height="42" width="42"></td>
-                <td><a href="City_Austin.html">[[city.name]]</a></td>
-                <td> [[city.state]]</td>
-            </tr>
-            <!-- tr>
-                <td><img class="img-responsive" src="bootstrap-3.3.5-dist/img/Cities/san-franc.jpg" alt=""  height="42" width="42"> </td>
-                <td>  <a href="City_SF.html">San Francisco</a></td>
-                <td> CA</td>
-                <td> Gold in peace, iron in war</td>                 
-            </tr>
-            <tr>
-                <td><img class="img-responsive" src="bootstrap-3.3.5-dist/img/Cities/Houston.jpg" alt="" height="50" width="50"></td>
-                <td>  <a href="City_Houston.html"> Houston </a></td>
-                <td> Texas </td>
-                <td> Space City</td>
-            </tr-->
+            {% for city in cities_list %} 
+            <tr >
+                <td><img class="img-responsive portfolio-item" src={{city.city_pic}} alt="city" ></td>
+                <td><a href={{city.city_url}} id="nav_font">{{city.city_name}}</a></td>
+                <td>{{city.city_state}}</td>
+                <td>{{city.city_country}}</td>
+             </tr>
+        {% endfor %}</tr>
+                        
         </tbody>
-     </table>         
+    </table>          
 
-     <hr>
+    <hr>
 
 
 
