@@ -206,7 +206,7 @@ class Test (unittest.TestCase) :
             city_name = "Country Length",
             city_state = "Test",
             city_country = "Country with a really unnecessarily long name to be put in the database",
-            city_vet_url = "another vet url ",
+            city_vet_url = "another vet url",
             city_groomer_url = "groomer url",
             city_park_url = "best park ever url",)
 
@@ -608,8 +608,8 @@ class Test (unittest.TestCase) :
         self.assertEqual(p.pet_age, "Baby")
         self.assertEqual(p.pet_size, "L")
         self.assertEqual(p.pet_breed, "Fuzzball")
-        self.assertEqual(p.pet_shelter, "Austin")
-        self.assertEqual(p.pet_city, "pet pic url")
+        self.assertEqual(p.pet_shelter, "Shelter")
+        self.assertEqual(p.pet_city, "Austin")
     
     def test_pet8 (self) :
 
