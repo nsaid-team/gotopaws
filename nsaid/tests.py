@@ -6,7 +6,7 @@
 
 import requests, json
 from django.test import TestCase
-from models import *
+from nsaid.models import *
 
 # -----------
 # test
