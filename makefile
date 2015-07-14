@@ -4,6 +4,7 @@ FILES :=                            				\
     	apiary.apib 						\
 	IDB.log             					\
     	models.html						\
+    	UML.pdf							\
     
 all:
 
@@ -31,6 +32,6 @@ IDB.log:
 	git log > IDB.log
 
 tests.out:
-	python3 manage.py test nsaid/
+	# python3 manage.py test nsaid/
 	coverage run manage.py test nsaid/
-	coverage report
+	coverage report -m nsaid/tests.py nsaid/models.py
