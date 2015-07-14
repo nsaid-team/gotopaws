@@ -101,21 +101,21 @@ class Test (unittest.TestCase) :
     def test_shelter2 (self) :
 
         s = Shelter.objects.create(
-            shelter_id = "TX500",
+            shelter_id = "CA500",
             shelter_name = "Hound Rescue",
             shelter_address = "Lakeline Petsmart 11066 Pecan Park Blvd, Cedar Park",
             shelter_city = "San Francisco",
-            shelter_state = "TX",
+            shelter_state = "CA",
             shelter_phone = "512 636 8473",
             shelter_email = "hound@dogs.org",
             shelter_hours = "9:00am- 5:00pm")
 
         self.assertTrue(type(s) == Shelter)
-        self.assertEqual(s.shelter_id, "TX500")
+        self.assertEqual(s.shelter_id, "CA500")
         self.assertEqual(s.shelter_name, "Hound Rescue")
         self.assertEqual(s.shelter_address, "Lakeline Petsmart 11066 Pecan Park Blvd, Cedar Park")
         self.assertEqual(s.shelter_city, "San Francisco")
-        self.assertEqual(s.shelter_state, "TX")
+        self.assertEqual(s.shelter_state, "CA")
         self.assertEqual(s.shelter_phone, "512 636 8473")
         self.assertEqual(s.shelter_email, "hound@dogs.org")
         self.assertEqual(s.shelter_hours, "9:00am- 5:00pm")
@@ -129,16 +129,16 @@ class Test (unittest.TestCase) :
             shelter_city = "Austin",
             shelter_state = "TX",
             shelter_phone = "512 978 0500",
-            shelter_email = "hound@dogs.org",
-            shelter_hours = "9:00am- 5:00pm")
+            shelter_email = "animal.customerservice@austintexas.gov",
+            shelter_hours = "11:00 am - 7:00 pm")
 
         self.assertTrue(type(s) == Shelter)
         self.assertEqual(s.shelter_id, "TX514")
         self.assertEqual(s.shelter_name, "Austin Animal Center")
-        self.assertEqual(s.shelter_address, "Lakeline Petsmart 11066 Pecan Park Blvd, Cedar Park")
+        self.assertEqual(s.shelter_address, "7201 Levander Loop")
         self.assertEqual(s.shelter_city, "Austin")
         self.assertEqual(s.shelter_state, "TX")
-        self.assertEqual(s.shelter_phone, "512 636 8473")
+        self.assertEqual(s.shelter_phone, "512 978 0500")
         self.assertEqual(s.shelter_email, "animal.customerservice@austintexas.gov")
         self.assertEqual(s.shelter_hours, "11:00 am - 7:00 pm")
 
