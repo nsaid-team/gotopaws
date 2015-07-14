@@ -13,8 +13,8 @@ class City(models.Model):
     The __str__ method is used to return the city.
     """
 
-    city_name = models.CharField(max_length=200) # text field
-    city_state = models.CharField(max_length=300) # text field
+    city_name = models.CharField(max_length=300) # text field
+    city_state = models.CharField(max_length=200) # text field
     city_country = models.CharField(max_length=100) # text field
     city_vet_url = models.CharField(max_length=500) # external link
     city_groomer_url = models.CharField(max_length=500) # external link
