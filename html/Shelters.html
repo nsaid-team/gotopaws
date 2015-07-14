@@ -143,8 +143,8 @@
                       <tr>
                       <p>The categories are:</p>
                       <ul>
-                          {% for shelter_id in shelter_list %}
-                            <li><a href="" id="nav_font">{{shelter_list.Shelter}}</a></li>
+                          {% for shelter_name in sheltersByAlpha %}
+                            <li><a href="" id="nav_font">{{sheltersByAlpha.shelter_name}}</a></li>
                           {% endfor %}
                       </ul>
                      
