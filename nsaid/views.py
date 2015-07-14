@@ -15,7 +15,7 @@ def home(request):
 
 def shelters(request):
     ShelterObjects = Shelter.objects.all()
-    sheltersByAlpha = sorted([shelter.shelter_name for shelter in ShelterObjects])
+    sheltersByAlpha = sorted([shelter.shelter_id for shelter in ShelterObjects])
     return render_to_response("Shelters.html", sheltersByAlpha)
     
 """
