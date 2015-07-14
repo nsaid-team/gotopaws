@@ -27,8 +27,10 @@ def pet_list(request):
         #petcheck.save()
         pet_list = Pet.objects.all()
         #serializer = PetSerializer(pet_list)
+        context = {"pet_list" : pet_list}
         serializer = PetSerializer((petcheck))
-        return Response(serializer.data) 
+        #return Response(serializer.data) 
+        return Response(context)
         #return Response(petcheck.pet_name) 
     #elif request.method == 'POST':
     #    pass
