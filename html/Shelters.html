@@ -124,10 +124,15 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr> 
-                        <td>
-                                <li><a href="" id="nav_font">{{shelters_list.shelter_name}}</a></li>
-                        </td></tr>
+                        <!--<tr> 
+                         <td>{% for shelter_name in shelters_list %}
+                                 <li><a href="" id="nav_font">{{shelter_name}}</a></li>
+-                            {% endfor %}</td>
++                            {% endfor %}</td></tr>-->
+                       
+                        {% for shelter_name in shelters_list %}
+                            <tr><td><li><a href="" id="nav_font">{{shelter_name}}</a></li></td></tr>
++                       {% endfor %}
                         <tr>
                         <td>
                                 <li><a href="" id="nav_font">{{shelter_name}}</a></li>
