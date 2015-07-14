@@ -10,6 +10,9 @@
 		"groomer_url": "www.google.com",
 		"park_url": "www.google.com",
 		"pic": "bootstrap-3.3.5-dist/img/Cities/Austin.jpg",
+		"vet_pic": "bootstrap-3.3.5-dist/img/Cities/austin_vet.jpg",
+		"park_pic": "bootstrap-3.3.5-dist/img/Cities/austin_park.jpg",
+		"groomer_pic": "bootstrap-3.3.5-dist/img/Cities/austin_groomer.jpg",
             	"url": "City_Austin.html"
             },
             {
@@ -22,6 +25,9 @@
 		"groomer_url": "www.google.com",
 		"park_url": "www.google.com",
 		"pic": "bootstrap-3.3.5-dist/img/Cities/san-franc.jpg",
+		"vet_pic": "bootstrap-3.3.5-dist/img/Cities/san-franc_vet.jpg",
+		"park_pic": "bootstrap-3.3.5-dist/img/Cities/san-franc_park.jpg",
+		"groomer_pic": "bootstrap-3.3.5-dist/img/Cities/san-franc_groomer.jpg",
             	"url": "City_SF.html"
             },
             {
@@ -34,6 +40,9 @@
 		"groomer_url": "www.google.com",
 		"park_url": "www.google.com",
 		"pic": "bootstrap-3.3.5-dist/img/Cities/Houston.jpg",
+		"vet_pic": "bootstrap-3.3.5-dist/img/Cities/houston_vet.jpg",
+		"park_pic": "bootstrap-3.3.5-dist/img/Cities/houston_park.jpg",
+		"groomer_pic": "bootstrap-3.3.5-dist/img/Cities/houston_groomer.jpg",
             	"url": "City_Houston.html"
             }
         ]
