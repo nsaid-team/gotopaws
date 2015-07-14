@@ -36,7 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.contenttypes',
     'nsaid',
-    'django_nose'
+    'django_nose',
+    'tastypie'
 )
 
 MIDDLEWARE_CLASSES = (
