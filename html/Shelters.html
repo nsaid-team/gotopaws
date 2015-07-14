@@ -115,14 +115,11 @@
                     
                     <thead>  
                       <tr>
-                            <!--<th class="unsortable" >Logo:  {{shelters_list}} <br>[["sanity check"]]
-                                <script type="text/javascript">
-                                    var dict = {{shelters_list}};
-                                </script>
-                                [[ Shelter.set_dict('{{shelters_list}}') ]]<br>
-                                [[ Shelter.loaded ]] <br>
-                                [[ Shelter.data ]] </th>
+                            <th class="unsortable" >Logo:
                             <th>Name:</th>
+                            {% for shelter_name in shelters_list %}
+                                <li><a href="" id="nav_font">{{shelter_name}}</a></li>
+                            {% endfor %}
                             <th>City: </th>
                             <th>State:</th>
                             <th>Phone:</th>
@@ -141,12 +138,6 @@
                       </tr> --> 
                       
                       <tr>
-                      <ul>
-                        <p>The categories are:</p> 
-                          {% for shelter_name in shelters_list %}
-                            <li><a href="" id="nav_font">{{shelter_name}}</a></li>
-                          {% endfor %}
-                      </ul>
                      
                            <!--  <td> <img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/muttville_logo_small.jpg" alt=""  height="42" width="42"> </td>
                             <td>  <a href="Shelter_Muttville.html">Muttville Senior Dog Rescue </a></td>
