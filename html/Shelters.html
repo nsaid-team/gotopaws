@@ -32,9 +32,6 @@
 
 
 <body ng-app="sheltersPage">
-    [["Test eval 1"]]<br>
-    {{"Test eval 2"}}
-
  <!-- Navigation -->
     <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
@@ -87,7 +84,7 @@
             </div>
 
             <div class="col-md-4">
-                <h3>Project Description</h3>
+                <h3>About Shelters:</h3>
                 <p>Looking to adopt? Check the shelters around your area.</h3>
                 <ul>
                     <li>Shelters</li>
@@ -111,10 +108,12 @@
                     <!--Table for Shelters -->
 
                 <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0" ng-controller="ShelterTable as Shelter">
+                    [[Shelter.setter({{context}})]]  <!-- ????????? -->
+                    [[data.loaded]]<br>
                     
                     <thead>  
                       <tr>
-                            <th>Logo: [[Shelter.loaded]]</th>
+                            <th class="unsortable" >Logo: </th>
                             <th>Name:</th>
                             <th>City: </th>
                             <th>State:</th>
@@ -124,13 +123,13 @@
                     </thead>
                     <tbody>
                       
-                      <tr ng-repeat="shelter in Shelter.data.all_shelters">
+                      <tr ng-repeat="shelter in Shelter.data">
                             <td><img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/APA_logo.jpg" alt="Austin Pets Alive!"  height="42" width="42"></td>
-                            <td><a href="Shelter_APA.html">[[shelter.name.$t]]</a></td>
-                            <td> [[shelter.city.$t]] </td>
-                            <td> [[shelter.state.$t]]</td>
-                            <td> [[shelter.phone.$t]] </td>
-                            <td> [[shelter.email.$t]]</td>
+                            <td><a href="Shelter_APA.html">[[shelter.name]]</a></td>
+                            <td> [[shelter.city]] </td>
+                            <td> [[shelter.state]]</td>
+                            <td> [[shelter.phone]] </td>
+                            <td> [[shelter.email]]</td>
                       </tr>
                       
                       <!--

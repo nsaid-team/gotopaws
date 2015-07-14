@@ -5,31 +5,35 @@ var app = angular.module('sheltersPage', [], function($interpolateProvider) {
 });
 
 
-
-
-app.controller("Test controller", function($scope) {
-    $scope.value = "working";
-
-});
-
-app.controller("ShelterTest", function(){
-    this.value = "working";
-});
-
-
-
-
-
 app.controller("ShelterTable",  function ($http) {
   var dict = this;
   this.loaded = false;
   this.data = {};
 
+  this.setter = function(dictionary){
+    dict.data = {};
+    var temp = {}
+    for each (shelter in dictionary){
+        dict.data[shelter[0]] = temp;
+   
+        temp['id']= shelter[1];
+        temp['name']= shelter[2];
+        temp['address']= shelter[3];
+        temp['city'] = shelter[4];
+        temp['state']= shelter[5];
+        temp['phone']= shelter[6];
+        temp['email']=shelter[7];
+        temp['hours']=shelter[8];
+        dict.loaded = true;
+    }
+  };
 
+/*
     $http.get("bootstrap-3.3.5-dist/js/3x3x3_shelters_dataset.json").success(function(load){
       dict.data = load;
       dict.loaded = true;
     });
+*/
 });
 
 /* directive

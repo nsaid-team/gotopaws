@@ -10,14 +10,16 @@
     <meta name="author" content="">
     <!--3 Col Portfolio - Start Bootstrap Template -->
     <title> GoToPaws </title>
+    {% load static from staticfiles %}
+    <script type="text/javascript" src="{% static "js/angular.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/sortable.js" %}"></script>
+    <script type="text/javascript" src="{% static  "js/shelters.js" %}"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="bootstrap-3.3.5-dist/css/pet-table.css" rel="stylesheet">
-    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/sortable.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,7 +29,7 @@
 
 </head>
 
-<body>
+<body ng-app="citiesPage">
 
     <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
@@ -59,10 +61,10 @@
         </div>
     </nav>
 
-  <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0">
+  <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0" ng-controller="PetTable as Pet">>
     <thead>  
       <tr>
-            <th>Picture:</th>
+            <th class="unsortable">Picture:</th>
             <th>Name:</th>
             <th>Cat/Dog: </th>
             <th>Age:</th>
@@ -74,18 +76,18 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr ng-repeat="pet in Pet.data.all_pets">
             <td> <img class="img-responsive" src="http://photos.petfinder.com/photos/pets/32251618/1/?bust=1435667817&width=60&-pnt.jpg" alt=""></td>
-            <td><a href="Dog_Rangel.html">Rangel </a></td>
-            <td> Dog </td>
-            <td> Young </td>
-            <td> Male </td>
-            <td> large </td>
-            <td> German Shepherd Dog  </td>
-            <td> Austin Pets Alive </td>
-            <td> Austin </td>
+            <td><a href="Dog_Rangel.html">[[pet.name.$t]] </a></td>
+            <td> [[pet.animal.$t]] </td>
+            <td> [[pet.age.$t]]</td>
+            <td> [[pet.sex.$t]]</td>
+            <td> [[pet.size.$t]] </td>
+            <td> [[pet.breeds.breed.$t]]  </td>
+            <td> [[pet.shelter.$t]] </td>
+            <td> [[pet.city.$t]]</td>
       </tr>
-      <tr>
+      <!--tr>
             <td> <img class="img-responsive" src="http://photos.petfinder.com/photos/pets/32607766/1/?bust=1435783518&width=60&-pnt.jpg" alt=""> </td>
             <td> <a href="Dog_Earl.html">Earl </a></td>
             <td> Dog </td>
@@ -106,7 +108,7 @@
             <td> Russian Blue </td>
             <td> Homeless Pet Placement League </td>
             <td> Houston</td>
-      </tr>
+      </tr-->
     </tbody>
 </table>
 
