@@ -9,6 +9,8 @@
                 "vet_url": "http://www.yelp.com/biz/corner-vet-austin-3",
 		"groomer_url": "www.google.com",
 		"park_url": "www.google.com"
+		"pic": "bootstrap-3.3.5-dist/img/Cities/Austin.jpg",
+            	"url": "City_Austin.html"
             },
             {
                 "name": "San Francisco",
@@ -19,6 +21,8 @@
                 "vet_url":"http://www.yelp.com/biz/san-francisco-pet-hospital-san-francisco",
 		"groomer_url": "www.google.com",
 		"park_url": "www.google.com"
+		"pic": "bootstrap-3.3.5-dist/img/Cities/san-franc.jpg",
+            	"url": "City_SF.html"
             },
             {
                 "name": "Houston",
@@ -29,6 +33,8 @@
                 "vet_url":"http://www.yelp.com/biz/midtown-veterinary-hospital-houston",
 		"groomer_url": "www.google.com",
 		"park_url": "www.google.com"
+		"pic": "bootstrap-3.3.5-dist/img/Cities/Houston.jpg",
+            	"url": "City_Houston.html"
             }
         ]
 }
