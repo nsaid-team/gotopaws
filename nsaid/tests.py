@@ -7,12 +7,14 @@
 import requests, json
 from django.test import TestCase
 from nsaid.models import *
+import unittest
+import coverage
 
 # -----------
 # test
 # -----------
 
-class Test (TestCase) :
+class Test (unittest.TestCase) :
     
     # ----
     # City Model
