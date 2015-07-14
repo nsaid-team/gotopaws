@@ -143,7 +143,9 @@
                       <tr>
                       <p>The categories are:</p>
                       <ul>
-                          <li><a href="" id="nav_font">{{context.shelter_id}}</a></li>
+                          {% for Shelter in shelter_list %}
+                            <li><a href="" id="nav_font">{{shelter_list.Shelter}}</a></li>
+                          {% endfor %}
                       </ul>
                      
                            <!--  <td> <img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/muttville_logo_small.jpg" alt=""  height="42" width="42"> </td>
