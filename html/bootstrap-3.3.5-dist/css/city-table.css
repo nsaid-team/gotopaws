@@ -45,7 +45,15 @@ caption {
     padding-bottom:10px;
     }
     
-table td,
+table td{
+	 font-size:20px;
+     padding:5px;
+     border:1px solid #fff;
+     width: 10%;
+     border-width:0 1px 1px 0;
+
+}
+
 table th {
      font-size:20px;
      padding:5px;
