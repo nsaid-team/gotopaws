@@ -16,7 +16,7 @@ def home(request):
 def shelters(request):
     shelters_list = Shelter.objects.all()
     extra_context = {"shelters_list": shelters_list}
-    context = {"shelters_id": shelters_list[shelter_id]}
+    context = {"shelters_id": shelters_list['shelter_id']}
     return render_to_response("Shelters.html", context)
 """
 def shelters(request):
