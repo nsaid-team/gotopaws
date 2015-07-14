@@ -14,16 +14,16 @@ class City(models.Model):
     """
 
     city_name = models.CharField(max_length=300) # text field
-    city_state = models.CharField(max_length=200) # text field
-    city_country = models.CharField(max_length=100) # text field
-    city_vet_url = models.CharField(max_length=500) # external link
-    city_groomer_url = models.CharField(max_length=500) # external link
-    city_park_url = models.CharField(max_length=500) # external link
-    city_pic = models.CharField(max_length=500) # reference to picture of city
-    city_vet_pic = models.CharField(max_length=500) # reference to picture of vet in city
-    city_park_pic = models.CharField(max_length=500) # reference to picture of park in city
-    city_groomer_pic = models.CharField(max_length=500) # reference to picture of groomer in city
-    city_url = models.CharField(max_length=500) # link to the City_Page
+    city_state = models.CharField(max_length=50) # text field
+    city_country = models.CharField(max_length=200) # text field
+    city_vet_url = models.CharField(max_length=1000) # external link
+    city_groomer_url = models.CharField(max_length=1000) # external link
+    city_park_url = models.CharField(max_length=1000) # external link
+    city_pic = models.CharField(max_length=1000) # reference to picture of city
+    city_vet_pic = models.CharField(max_length=1000) # reference to picture of vet in city
+    city_park_pic = models.CharField(max_length=1000) # reference to picture of park in city
+    city_groomer_pic = models.CharField(max_length=1000) # reference to picture of groomer in city
+    city_url = models.CharField(max_length=1000) # link to the City_Page
     
     """
     class Meta:
@@ -47,12 +47,12 @@ class Shelter(models.Model):
     
     shelter_id = models.CharField(max_length=50) # id from petfinder
     shelter_name = models.CharField(max_length=300) # text field
-    shelter_address = models.CharField(max_length=200) # text field
+    shelter_address = models.CharField(max_length=1000) # text field
     #shelter_city = models.ForeignKey(City, related_name = 'shelter_city')
-    shelter_city = models.CharField(max_length=200) # text field
+    shelter_city = models.CharField(max_length=300) # text field
     shelter_state = models.CharField(max_length=50) # text field
     shelter_phone = models.CharField(max_length=50) # text field
-    shelter_email = models.CharField(max_length=100) # text field
+    shelter_email = models.CharField(max_length=200) # text field
     shelter_hours = models.CharField(max_length=200) # text field
     shelter_pic = models.CharField(max_length=1000) # logo picture of shelter
     shelter_url = models.CharField(max_length=1000) # link to Shelter_Page
@@ -78,19 +78,19 @@ class Pet(models.Model):
     """
 
     pet_id = models.CharField(max_length=50) # pet id from petfinder
-    pet_name = models.CharField(max_length=100) # text field
-    pet_age = models.CharField(max_length=20) # text field
-    pet_size = models.CharField(max_length=20) # text field
-    pet_breed = models.CharField(max_length=100) # text field
+    pet_name = models.CharField(max_length=300) # text field
+    pet_age = models.CharField(max_length=50) # text field
+    pet_size = models.CharField(max_length=50) # text field
+    pet_breed = models.CharField(max_length=200) # text field
     #pet_shelter = models.ForeignKey(Shelter, related_name = 'pet_shelter')
-    pet_shelter = models.CharField(max_length=50) # shelter id from petfinder
+    pet_shelter = models.CharField(max_length=300) # shelter id from petfinder
     #pet_city = models.ForeignKey(City, related_name='pet_city')
-    pet_city = models.CharField(max_length=200) # text field
-    pet_pic_url = models.CharField(max_length=500) # thumbnail-ish picture of pet
-    pet_pic_large = models.CharField(max_length=500) # larger picture of pet
-    pet_url = models.CharField(max_length=500) # link to Pet_Page
-    pet_shelter_url = models.CharField(max_length=500) # link to Shelter_Page
-    pet_city_url = models.CharField(max_length=500) # link to City_Page
+    pet_city = models.CharField(max_length=300) # text field
+    pet_pic_url = models.CharField(max_length=1000) # thumbnail-ish picture of pet
+    pet_pic_large = models.CharField(max_length=1000) # larger picture of pet
+    pet_url = models.CharField(max_length=1000) # link to Pet_Page
+    pet_shelter_url = models.CharField(max_length=1000) # link to Shelter_Page
+    pet_city_url = models.CharField(max_length=1000) # link to City_Page
     
     """
     class Meta:
