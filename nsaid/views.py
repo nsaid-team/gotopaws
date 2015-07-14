@@ -1,8 +1,9 @@
 from django.http import HttpResponse
 from django.template import loader
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 from django.db import connection
 from . import models
+from nsaid.models import *
 
 
 def test(request):
@@ -15,10 +16,17 @@ def home(request):
 
 def shelters(request):
     template = loader.get_template('Shelters.html')
+    mydb = Shelter.objects.all()
     cursor = connection.cursor()
     cursor.execute('SELECT * FROM nsaid_shelter')
-    context = {"shelters_list": cursor.fetchall()}
-    return render(request, 'Shelters.html', context)
+    list = cursor.fetchall()
+    #dict_list = [dict(zip(('id', 'name', 'address', 'city', 'state', 'phone', 'email', 'hours'), l for l in list))]
+    #context = {"shelters_list": cursor.fetchall()}
+    #context = ({'name': mydb.shelter_name, 'city': mydb.shelter_city, 'state': mydb.shelter_state, 'phone': mydb.shelter_phone, 'email': mydb.shelter_email})
+    #context = {"shelters_list": dict_list}
+    context = {"shelters_list": mydb}
+    return render_to_response('Shelters.html', context)
+   # return render_to_response('Shelters.html', context, request) #use to see local variables in error handler
 
 def pets(request):
     template = loader.get_template('Pets.html')

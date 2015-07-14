@@ -18,7 +18,7 @@ from django.conf.urls import patterns, include, url
 from django.conf import settings
 from . import views
 from django.contrib import admin
-from api import *
+#from . import api
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
@@ -41,7 +41,7 @@ urlpatterns = [
     url(r'^City_SF.html$', views.city_SF),
     url(r'^City_Houston.html$', views.city_Houston),
     #RESTful API
-    url(r'^api/', include(PetResource().urls)),
+    #url(r'^api/', include(PetResource().urls)),
     #url(r'^api/', include(ShelterResource().urls)),
     #url(r'^api/', include(CityResource().urls)),
 ]

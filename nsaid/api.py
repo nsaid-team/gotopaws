@@ -1,5 +1,5 @@
-#!/bin/env python
 
+"""
 from tastypie.authorization import Authorization
 from tastypie import fields
 from tastypie.resources import ModelResource
@@ -7,11 +7,18 @@ from . import models
 #from wc_app.prettyPrint import *
 from tastypie.constants import *
 from django.conf.urls import *
+"""
 
+from models import Pet
+#from nsaid.models import Pet
+from tastypie.resources import ModelResource
+
+"""
 class PetResource(ModelResource):
     class Meta:
         queryset = Pet.objects.all()
         resource_name = 'pets'
+        settings.configure()
         authorization = Authorization()
         serializer = PrettyJSONSerializer()
         filtering = {
@@ -25,5 +32,9 @@ class PetResource(ModelResource):
 
     def determine_format(self, request):
         return "application/json"
+"""
 
-    
+class PetResource(ModelResource):
+    class Meta:
+        queryset = Pet.objects.all()
+        resource_name = 'pets'
