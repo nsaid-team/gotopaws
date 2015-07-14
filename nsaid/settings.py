@@ -37,7 +37,6 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'nsaid',
     'rest_framework',
-    'api'
 )
 
 MIDDLEWARE_CLASSES = (
