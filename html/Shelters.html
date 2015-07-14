@@ -120,7 +120,7 @@
                             <th>City: </th>
                             <th>State:</th>
                             <th>Phone:</th>
-                            <th>E-mail:</th>--> 
+                            <th>E-mail:</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -128,35 +128,26 @@
                          <td>{% for shelter_name in shelters_list %}
                                  <li><a href="" id="nav_font">{{shelter_name}}</a></li>
                             {% endfor %}</td></tr>-->
-                       
-                        {% for shelter_name in shelters_list %}
-                            <tr><td><li><a href="" id="nav_font">{{shelter_name}}</a></li></td></tr>
-                        {% endfor %}
-                        <tr>
-                        <td>
-                                <li><a href="" id="nav_font">{{shelter_name}}</a></li>
-                        </td></tr>
                       
-                      
-                     <!--   <tr ng-repeat="shelter in Shelter.data">
-                            <td><img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/APA_logo.jpg" alt="Austin Pets Alive!"  height="42" width="42"></td>
-                            <td><a href="Shelter_APA.html">[[shelter.name]]</a></td>
-                            <td> [[shelter.city]] </td>
-                            <td> [[shelter.state]]</td>
-                            <td> [[shelter.phone]] </td>
-                            <td> [[shelter.email]]</td>
-                      </tr> --> 
+                     <tr >
+                        <td><img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/APA_logo.jpg" alt="Austin Pets Alive!"  height="42" width="42"></td>
+                        <td><a href="Shelter_APA.html">[[shelter.name]]</a></td>
+                        <td> [[shelter.city]] </td>
+                        <td> [[shelter.state]]</td>
+                        <td> [[shelter.phone]] </td>
+                        <td> [[shelter.email]]</td>
+                      </tr> 
                       
                       <tr>
                      
-                           <!--  <td> <img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/muttville_logo_small.jpg" alt=""  height="42" width="42"> </td>
+                           <td> <img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/muttville_logo_small.jpg" alt=""  height="42" width="42"> </td>
                             <td>  <a href="Shelter_Muttville.html">Muttville Senior Dog Rescue </a></td>
                             <td> San Francisco</td>
                             <td> CA</td>
                             <td> 415-272-4172</td>
-                            <td> info@muttville.org</td>     -->             
+                            <td> info@muttville.org</td>  
                      </tr> 
-                      <!-- <tr>
+                      <tr>
                             <td><img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/hppl_small_logo.jpeg" alt="" height="42" width="42"></td>
                             <td> <a href="Shelter_HPPL.html"> Homeless Pet Placement League </a></td>
                             <td> Houston</td>
@@ -164,7 +155,13 @@
                             <td> 713-862-7387</td>
                             <td> hppl@hppl.org </td>
                       </tr>
-                         -->
+                      {% for shelter_name in shelters_list %}
+                            <tr><td><li><a href="" id="nav_font">{{shelter_name}}</a></li></td></tr>
+                        {% endfor %}
+                        <tr>
+                        <td>
+                                <li><a href="" id="nav_font">{{shelter_name}}</a></li>
+                        </td></tr>
                     </tbody>
                 </table>         
 
