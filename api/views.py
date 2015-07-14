@@ -5,7 +5,7 @@ from django.shortcuts import render
 from rest_framework import status
 from rest_framework.decorators import api_view
 from django.http import HttpResponse
-from nsaid.models import Pet, Shelter
+from nsaid.models import Pet, Shelter, City
 import json
 
 # Create your views here.
@@ -61,7 +61,26 @@ def shelter_list(request):
             shelter_info["shelter_url"]     = shelter_obj.shelter_url
             info[shelter_obj.shelter_id] = shelter_info
         return HttpResponse(json.dumps(info), content_type="application/json")
- 
+
+@api_view(['GET'])
+def city_list(request):
+    """
+    List all cities, maybe later create?
+    """
+    if request.method == 'GET':
+        city_list = City.objects.all()
+        info = {}
+        for city_obj in city_list:
+            city_info = {}
+            city_info["city_name"]        = city_obj.city_name
+            city_info["city_state"]       = city_obj.city_state
+            city_info["city_country"]     = city_obj.city_country
+            city_info["city_vet_url"]     = city_obj.city_vet_url
+            city_info["city_groomer_url"] = city_obj.city_vet_url
+            city_info["city_park_url"]    = city_obj.city_park_url
+            info[str(city_obj.city_name + '_' + city_obj.city_state)] = city_info
+        return HttpResponse(json.dumps(info), content_type="application/json")
+
 
 # @api_view(['GET', 'PUT', 'DELETE'])
 @api_view(['GET'])
