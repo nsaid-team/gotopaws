@@ -16,12 +16,10 @@ before_install:
 # install dependencies
 install:
   - pip install --upgrade pip
-  - pip install django-nose
   - pip install coverage
   - sudo apt-get install python-numpy
   - "pip install -r dependencies.txt"
   - pip install git+https://github.com/multiplay/mysql-connector-python
-  - pip install git+https://github.com/django-tastypie/django-tastypie
   - python -m pip install requests
   - pip install djutils
 
@@ -35,7 +33,6 @@ before_script:
   - pip3 freeze
   - python3 --version
   - coverage3 --version
-  - python3 -c "import numpy; print(numpy.__version__)"
 
 script:
     - date
