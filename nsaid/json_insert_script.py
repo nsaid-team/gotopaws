@@ -46,7 +46,8 @@ for s in shelter_dict_list:
 		shelter_email=s["email"],
 		shelter_hours=s["hours"],
 		shelter_pic=s["pic"],
-		shelter_url=s["url"]
+		shelter_url=s["url"],
+        shelter_city_url=s["city_url"]
 		)
 	sq.save()
 
@@ -61,7 +62,9 @@ for p in pet_dict_list:
 		pet_city=p["city"],
 		pet_pic_url=p["pic_url"],
         pet_pic_large=p["pic_large"],
-        pet_url=p["url"]
+        pet_url=p["url"],
+        pet_shelter_url=p["shelter_url"],
+        pet_city_url=p["city_url"]
 		)
 	pq.save()
 
