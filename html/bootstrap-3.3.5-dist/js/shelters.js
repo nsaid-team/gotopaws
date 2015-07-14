@@ -12,7 +12,7 @@ app.controller("ShelterTable",  function ($http) {
 
   this.set_dict = function(val){
     dict.data = {};
-    var temp = {}
+    var temp = {};
     for each (shelter in val){
         dict.data[shelter[0]] = temp;
    
