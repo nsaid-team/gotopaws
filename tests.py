@@ -33,9 +33,9 @@ class Test (unittest.TestCase) :
         self.assertEqual(c.city_name, "Dallas")
         self.assertEqual(c.city_state, "TX")
         self.assertEqual(c.city_country, "US")
-        self.assertEqual(s.city_vet_url, "veturl")
-        self.assertEqual(s.city_groomer_url, "groomerurl")
-        self.assertEqual(s.city_park_url, "parkurl")
+        self.assertEqual(c.city_vet_url, "veturl")
+        self.assertEqual(c.city_groomer_url, "groomerurl")
+        self.assertEqual(c.city_park_url, "parkurl")
         
     def test_city2 (self) :
         c = City.objects.create(
@@ -50,9 +50,9 @@ class Test (unittest.TestCase) :
         self.assertEqual(c.city_name, "San Francisco")
         self.assertEqual(c.city_state, "CA")
         self.assertEqual(c.city_country, "US")
-        self.assertEqual(s.city_vet_url, "veturl")
-        self.assertEqual(s.city_groomer_url, "groomerurl")
-        self.assertEqual(s.city_park_url, "parkurl")
+        self.assertEqual(c.city_vet_url, "veturl")
+        self.assertEqual(c.city_groomer_url, "groomerurl")
+        self.assertEqual(c.city_park_url, "parkurl")
         
     def test_city3 (self) :
         c = City.objects.create(
@@ -67,9 +67,9 @@ class Test (unittest.TestCase) :
         self.assertEqual(c.city_name, "Austin")
         self.assertEqual(c.city_state, "TX")
         self.assertEqual(c.city_country, "US")
-        self.assertEqual(s.city_vet_url, "veturl")
-        self.assertEqual(s.city_groomer_url, "groomerurl")
-        self.assertEqual(s.city_park_url, "parkurl")
+        self.assertEqual(c.city_vet_url, "veturl")
+        self.assertEqual(c.city_groomer_url, "groomerurl")
+        self.assertEqual(c.city_park_url, "parkurl")
 
 
     # ----
