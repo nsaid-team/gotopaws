@@ -140,16 +140,19 @@
                             <td> [[shelter.email]]</td>
                       </tr>
                       
-                      <!--
                       <tr>
-                            <td> <img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/muttville_logo_small.jpg" alt=""  height="42" width="42"> </td>
+                      
+                      {% for category in categories %}
+                        <td><li><a href="{{ shelters_list.base_url }}" id="nav_font">{{ shelters_list.name }}</a></li>
+                        </td>{% endfor %}
+                           <!--  <td> <img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/muttville_logo_small.jpg" alt=""  height="42" width="42"> </td>
                             <td>  <a href="Shelter_Muttville.html">Muttville Senior Dog Rescue </a></td>
                             <td> San Francisco</td>
                             <td> CA</td>
                             <td> 415-272-4172</td>
-                            <td> info@muttville.org</td>                 
+                            <td> info@muttville.org</td>     -->             
                      </tr>
-                      <tr>
+                      <!-- <tr>
                             <td><img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/hppl_small_logo.jpeg" alt="" height="42" width="42"></td>
                             <td> <a href="Shelter_HPPL.html"> Homeless Pet Placement League </a></td>
                             <td> Houston</td>
@@ -157,7 +160,7 @@
                             <td> 713-862-7387</td>
                             <td> hppl@hppl.org </td>
                       </tr>
-                        -->
+                         -->
                     </tbody>
                 </table>         
 
