@@ -11,7 +11,8 @@
             "email":"adopt@austinpetsalive.org",
             "hours":"9 to 5",
             "pic": "bootstrap-3.3.5-dist/img/Shelters/APA_logo.jpg",
-            "url": "Shelter_APA.html"
+            "url": "Shelter_APA.html",
+            "city_url":"City_Austin.html"
         },{
             "id":"CA1287",
             "name":"Muttville Senior Dog Rescue",
@@ -22,7 +23,8 @@
             "email":"adoption@muttville.org",
             "hours":"9 to 5",
             "pic": "bootstrap-3.3.5-dist/img/Shelters/muttville_logo_small.jpg",
-            "url": "Shelter_Muttville.html"
+            "url": "Shelter_Muttville.html",
+            "city_url":"City_SF.html"
         },{
             "id":"TX154",
             "name":"Homeless Pet Placement League",
@@ -33,7 +35,8 @@
             "email":"hppl@hppl.org",
             "hours":"9 to 5",
             "pic": "bootstrap-3.3.5-dist/img/Shelters/hppl_small_logo.jpeg",
-            "url": "Shelter_HPPL.html"
+            "url": "Shelter_HPPL.html",
+            "city_url":"City_Houston.html"
         }
     ]
 }
