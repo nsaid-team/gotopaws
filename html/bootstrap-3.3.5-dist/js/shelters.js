@@ -10,10 +10,10 @@ app.controller("ShelterTable",  function ($http) {
   this.loaded = false;
   this.data = {};
 
-  this.setter = function(dictionary){
+  this.set_dict = function(val){
     dict.data = {};
     var temp = {}
-    for each (shelter in dictionary){
+    for each (shelter in val){
         dict.data[shelter[0]] = temp;
    
         temp['id']= shelter[1];
