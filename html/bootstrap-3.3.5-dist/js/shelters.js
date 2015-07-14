@@ -10,9 +10,9 @@ app.controller("ShelterTable",  function ($http) {
   this.loaded = false;
   this.data = {"name":"empty"};
 
-  this.set_dict = function(val){
-    dict.data = {};
-    var temp = {};
+  // this.set_dict = function(val){
+  //   dict.data = {};
+  //   var temp = {};
     
 
   //   for (var i = 0, len = val.length; i < len; i++) {
