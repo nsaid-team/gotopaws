@@ -33,4 +33,4 @@ IDB.log:
 tests.out:
 	python3 manage.py test nsaid/
 	coverage run manage.py test nsaid/
-	coverage report -m tests.py models.py
+	coverage report -m nsaid/ tests.py models.py
