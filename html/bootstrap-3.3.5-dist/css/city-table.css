@@ -10,8 +10,11 @@ body,html{
 	color: white;
 }
 
-
 img{
+	
+}
+
+.table-img{
 	 height:42%; 
 	 width:42%;
 }
