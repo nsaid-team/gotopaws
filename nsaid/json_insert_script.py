@@ -28,6 +28,9 @@ for c in city_dict_list:
 		city_groomer_url=c["groomer_url"],
 		city_park_url=c["park_url"],
         city_pic=c["pic"],
+        city_vet_pic=c["vet_pic"],
+        city_park_pic=c["park_pic"],
+        city_groomer_pic=c["groomer_pic"],
         city_url=c["url"]
 		)
 	cq.save()
