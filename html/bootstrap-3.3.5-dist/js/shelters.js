@@ -13,17 +13,26 @@ app.controller("ShelterTable",  function ($http) {
   this.set_dict = function(val){
     dict.data = {};
     var temp = {};
-    for each (var shelter in val){
-        temp['id']= shelter[1];
-        temp['name']= shelter[2];
-        temp['address']= shelter[3];
-        temp['city'] = shelter[4];
-        temp['state']= shelter[5];
-        temp['phone']= shelter[6];
-        temp['email']=shelter[7];
-        temp['hours']=shelter[8];
+    
 
-        dict.data[shelter[0]] = temp;
+    for (var i = 0, len = val.length; i < len; i++) {
+        temp['id']= val[i][1];
+        temp['name']= val[i][2];
+        temp['address']= val[i][3];
+        temp['city'] = val[i][4];
+        temp['state']= val[i][5];
+        temp['phone']= val[i][6];
+        temp['email']=val[i][7];
+        temp['hours']=val[i][8];
+
+        dict.data[val[i][0]] = temp;
+
+    }
+
+
+    for each (var shelter in val){
+        
+
     }
     dict.loaded = true;
 
