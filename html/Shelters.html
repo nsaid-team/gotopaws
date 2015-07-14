@@ -116,15 +116,13 @@
                     <thead>  
                       <tr>
                             <th class="unsortable" >Logo:   
-                                
-                                    [[dict = 
-                                    {{shelters_list}}
-                                    ;""]]
-                                    [[Shelter.set_dict(dict)]]
-                                
+                                <script type="text/ng-template">
+                                    <div>var dict = {{shelters_list}};</div>
+                                    <div>[[ Shelter.set_dict(dict) ]];</div>
+                                </script>
 
                                 
-                                <!-- [[ Shelter.set_dict(dict) ]] -->
+                                [[ Shelter.set_dict(dict) ]]
                                 [[ Shelter.loaded ]]  </th>
                             <th>Name:</th>
                             <th>City: </th>
