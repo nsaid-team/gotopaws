@@ -12,13 +12,15 @@
      {% load static from staticfiles %}
     <script type="text/javascript" src="{% static "js/angular.min.js" %}"></script>
     <script type="text/javascript" src="{% static "js/sortable.js" %}"></script>
-    <script type="text/javascript" src="{% static  "js/citys.js" %}"></script>
+    <script type="text/javascript" src="{% static  "js/cities.js" %}"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="bootstrap-3.3.5-dist/css/city-table.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/table.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/city-body.css" rel="stylesheet">
+      <script type="text/javascript" src="bootstrap-3.3.5-dist/js/style-table.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -94,7 +96,7 @@
         <tbody>
             {% for city in cities_list %} 
             <tr >
-                <td><img  class="img-responsive portfolio-item" src="{{city.city_pic}}" alt="city" ></td>
+                <td><img  class="img-responsive portfolio-item" src="{{city.city_pic}}" alt="city" height="42" width="42"></td>
                 <td><a href={{city.city_url}} id="nav_font">{{city.city_name}}</a></td>
                 <td>{{city.city_state}}</td>
                 <td>{{city.city_country}}</td>
