@@ -142,8 +142,8 @@
                       
                       <tr>
                       
-                      {% for category in categories %}
-                        <td><a href="{{ shelters_list.base_url }}" id="nav_font">{{ shelters_list.name }}</a>
+                      {% for shelter_name in shelters_list %}
+                        <td><a href="{{ shelters_list.shelter_name}}" id="nav_font">{{ shelters_list.shelter_name }}</a>
                         </td>{% endfor %}
                            <!--  <td> <img class="img-responsive portfolio-item" src="bootstrap-3.3.5-dist/img/Shelters/muttville_logo_small.jpg" alt=""  height="42" width="42"> </td>
                             <td>  <a href="Shelter_Muttville.html">Muttville Senior Dog Rescue </a></td>
