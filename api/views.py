@@ -29,8 +29,9 @@ def pet_list(request):
         #serializer = PetSerializer(pet_list)
         context = {"pet_list" : pet_list}
         serializer = PetSerializer((petcheck))
+        #####HtmlToReturn += "<div class=\"col-lg-4 col-sm-6 col-xs-12\"><a href=/api/pets" + Pet.objects.get(name=pet_name) + "\" class=\"thumbnail img-responsive\"><div class=\"homepage\"><h2>" + state +  "</h2></a></div></div>"
         #return Response(serializer.data) 
-        return Response(context)
+        #####return render(request, 'http://gotopaws.me/api/pets/', {"HTML" : HtmlToReturn})
         #return Response(petcheck.pet_name) 
     #elif request.method == 'POST':
     #    pass
