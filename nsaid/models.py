@@ -26,7 +26,7 @@ class City(models.Model):
     """
         
     def __str__ (self):
-        return self.city_name
+        return str(self.city_name + '_' + self.city_state)
 
 
     # ------------
