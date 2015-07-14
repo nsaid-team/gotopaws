@@ -13,8 +13,7 @@ app.controller("ShelterTable",  function ($http) {
   this.set_dict = function(val){
         dict.data = {};
         var temp = {};
-        dict.loaded = true;
-    return dict.data;
+        this.loaded = true;
 
   };
  
