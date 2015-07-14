@@ -5,9 +5,8 @@
 # -------
 
 import requests, json
-import unittest
+from django.test import TestCase
 from models import *
-import coverage
 
 # -----------
 # test
