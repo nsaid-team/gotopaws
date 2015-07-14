@@ -101,14 +101,18 @@ def pet_list(request):
         info = {}
         for pet_obj in pet_list:
             pet_info = {}
-            pet_info["pet_id"]      = pet_obj.pet_id
-            pet_info["pet_name"]    = pet_obj.pet_name
-            pet_info["pet_age"]     = pet_obj.pet_age
-            pet_info["pet_size"]    = pet_obj.pet_size
-            pet_info["pet_breed"]   = pet_obj.pet_breed
-            pet_info["pet_shelter"] = pet_obj.pet_shelter
-            pet_info["pet_city"]    = pet_obj.pet_city
-            pet_info["pet_pic_url"] = pet_obj.pet_pic_url
+            pet_info["pet_id"]          = pet_obj.pet_id
+            pet_info["pet_name"]        = pet_obj.pet_name
+            pet_info["pet_age"]         = pet_obj.pet_age
+            pet_info["pet_size"]        = pet_obj.pet_size
+            pet_info["pet_breed"]       = pet_obj.pet_breed
+            pet_info["pet_shelter"]     = pet_obj.pet_shelter
+            pet_info["pet_city"]        = pet_obj.pet_city
+            pet_info["pet_pic_url"]     = pet_obj.pet_pic_url
+            pet_info["pet_pic_large"]   = pet_obj.pet_pic_large
+            pet_info["pet_url"]         = pet_obj.pet_url
+            pet_info["pet_shelter_url"] = pet_obj.pet_shelter_url
+            pet_info["pet_city_url"]    = pet_obj.pet_city_url
             info[pet_obj.pet_id] = pet_info
         return HttpResponse(json.dumps(info), content_type="application/json")
 
@@ -122,16 +126,17 @@ def shelter_list(request):
         info = {}
         for shelter_obj in shelter_list:
             shelter_info = {}
-            shelter_info["shelter_id"]      = shelter_obj.shelter_id
-            shelter_info["shelter_name"]    = shelter_obj.shelter_name
-            shelter_info["shelter_address"] = shelter_obj.shelter_address
-            shelter_info["shelter_city"]    = shelter_obj.shelter_city
-            shelter_info["shelter_state"]   = shelter_obj.shelter_state
-            shelter_info["shelter_phone"]   = shelter_obj.shelter_phone
-            shelter_info["shelter_email"]   = shelter_obj.shelter_email
-            shelter_info["shelter_hours"]   = shelter_obj.shelter_hours
-            shelter_info["shelter_pic"]     = shelter_obj.shelter_pic
-            shelter_info["shelter_url"]     = shelter_obj.shelter_url
+            shelter_info["shelter_id"]       = shelter_obj.shelter_id
+            shelter_info["shelter_name"]     = shelter_obj.shelter_name
+            shelter_info["shelter_address" ] = shelter_obj.shelter_address
+            shelter_info["shelter_city"]     = shelter_obj.shelter_city
+            shelter_info["shelter_state"]    = shelter_obj.shelter_state
+            shelter_info["shelter_phone"]    = shelter_obj.shelter_phone
+            shelter_info["shelter_email"]    = shelter_obj.shelter_email
+            shelter_info["shelter_hours"]    = shelter_obj.shelter_hours
+            shelter_info["shelter_pic"]      = shelter_obj.shelter_pic
+            shelter_info["shelter_url"]      = shelter_obj.shelter_url
+            shelter_info["shelter_city_url"] = shelter_obj.shelter_city_url
             info[shelter_obj.shelter_id] = shelter_info
         return HttpResponse(json.dumps(info), content_type="application/json")
 
@@ -151,6 +156,11 @@ def city_list(request):
             city_info["city_vet_url"]     = city_obj.city_vet_url
             city_info["city_groomer_url"] = city_obj.city_vet_url
             city_info["city_park_url"]    = city_obj.city_park_url
+            city_info["city_pic"]           = city_obj.city_pic
+            city_info["city_vet_pic"]       = city_obj.city_vet_pic
+            city_info["city_park_pic"]      = city_obj.city_park_pic
+            city_info["city_groomer_pic"]   = city_obj.city_groomer_pic
+            city_info["city_url"]           = city_obj.city_url
             info[str(city_obj.city_name + '_' + city_obj.city_state)] = city_info
         return HttpResponse(json.dumps(info), content_type="application/json")
 
