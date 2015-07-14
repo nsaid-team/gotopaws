@@ -56,6 +56,7 @@ class Shelter(models.Model):
     shelter_hours = models.CharField(max_length=200) # text field
     shelter_pic = models.CharField(max_length=1000) # logo picture of shelter
     shelter_url = models.CharField(max_length=1000) # link to Shelter_Page
+    shelter_city_url = models.CharField(max_length=1000)# link to City_Page
     
     """
     class Meta:
@@ -88,6 +89,8 @@ class Pet(models.Model):
     pet_pic_url = models.CharField(max_length=500) # thumbnail-ish picture of pet
     pet_pic_large = models.CharField(max_length=500) # larger picture of pet
     pet_url = models.CharField(max_length=500) # link to Pet_Page
+    pet_shelter_url = models.CharField(max_length=500) # link to Shelter_Page
+    pet_city_url = models.CharField(max_length=500) # link to City_Page
     
     """
     class Meta:
