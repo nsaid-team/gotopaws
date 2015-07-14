@@ -4,10 +4,7 @@ FILES :=                            				\
     	apiary.apib 						\
 	IDB.log             					\
     	models.html						\
-    	Report.pdf						\
-    	tests.out						\
-    	tests.py						\
-
+    
 all:
 
 check:
