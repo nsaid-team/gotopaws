@@ -544,9 +544,9 @@ class Test (unittest.TestCase) :
         self.assertEqual(p.pet_name, "")
         self.assertEqual(p.pet_age, "")
         self.assertEqual(p.pet_size, "")
-        self.assertEqual(p.pet_breed, "Empty Case Test")
-        self.assertEqual(p.pet_shelter, "Foreign Key")
-        self.assertEqual(p.pet_city, "")
+        self.assertEqual(p.pet_breed, "")
+        self.assertEqual(p.pet_shelter, "Empty Case Test")
+        self.assertEqual(p.pet_city, "Foreign Key")
     
     def test_pet5 (self) :
 
