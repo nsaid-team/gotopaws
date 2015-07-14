@@ -76,14 +76,17 @@ def city_SF(request):
     template = loader.get_template('City_SF.html')
     return HttpResponse(template.render())
 
-#def pet(request, pet_id):
-#    context = {'pet_id': pet_id}
-#    return render(request, 'Pet_Page.html', context)
+def pet_template(request, id):
+    pet = Pet.object.filter(pet_id = id)
+    context = {'pet': pet}
+    return render(request, 'Pet_Page.html', context)
 
-#def shelter(request, shelter_id):
-#    context = {'shelter_id': shelter_id}
-#    return render(request, 'Shelter_Page.html', context)
+def shelter_template(request, id):
+    shelter = Shelter.objects.filter(shelter_id = id)
+    context = {'shelter_id': shelter}
+    return render(request, 'Shelter_Template.html', context)
 
-#def city(request, city_id):
-#    context = {'city_id': city_id}
-#    return render(request, 'City_Page.html', context)
+def city_template(request, id):
+    city = City.object.filter(city_id = id)
+    context = {'city_id': city}
+    return render(request, 'City_Page.html', context)
