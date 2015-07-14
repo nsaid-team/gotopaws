@@ -17,30 +17,16 @@ def shelters(request):
     shelters_list = Shelter.objects.all()
     context = {"shelters_list": shelters_list}
     return render_to_response("Shelters.html", context)
-    
-"""
-def shelters(request):
-    template = loader.get_template('Shelters.html')
-    mydb = Shelter.objects.all()
-    cursor = connection.cursor()
-    cursor.execute('SELECT * FROM nsaid_shelter')
-    list = cursor.fetchall()
-"""
-    #dict_list = [dict(zip(('id', 'name', 'address', 'city', 'state', 'phone', 'email', 'hours'), l for l in list))]
-    #context = {"shelters_list": cursor.fetchall()}
-    #context = ({'name': mydb.shelter_name, 'city': mydb.shelter_city, 'state': mydb.shelter_state, 'phone': mydb.shelter_phone, 'email': mydb.shelter_email})
-    #context = {"shelters_list": dict_list}
-    #context = {"shelters_list": mydb}
-    #return render_to_response('Shelters.html', context)
-   # return render_to_response('Shelters.html', context, request) #use to see local variables in error handler
 
 def pets(request):
-    template = loader.get_template('Pets.html')
-    return HttpResponse(template.render())
+    pets_list = Pet.objects.all()
+    context = {"pets_list": pets_list}
+    return render_to_response("Pets.html", context)
 
 def cities(request):
-    template = loader.get_template('Cities.html')
-    return HttpResponse(template.render())
+    cities_list = City.objects.all()
+    context = {"cities_list": cities_list}
+    return render_to_response("Cities.html", context)
 
 def about(request):
     template = loader.get_template('About.html')
