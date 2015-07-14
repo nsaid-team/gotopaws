@@ -20,6 +20,9 @@ class City(models.Model):
     city_groomer_url = models.CharField(max_length=500) # external link
     city_park_url = models.CharField(max_length=500) # external link
     city_pic = models.CharField(max_length=500) # reference to picture of city
+    city_vet_pic = models.CharField(max_length=500) # reference to picture of vet in city
+    city_park_pic = models.CharField(max_length=500) # reference to picture of park in city
+    city_groomer_pic = models.CharField(max_length=500) # reference to picture of groomer in city
     city_url = models.CharField(max_length=500) # link to the City_Page
     
     """
