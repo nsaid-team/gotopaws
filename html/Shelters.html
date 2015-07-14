@@ -117,7 +117,6 @@
                       <tr>
                             <th class="unsortable" >Logo:
                             <th>Name:</th>
-                            
                             <th>City: </th>
                             <th>State:</th>
                             <th>Phone:</th>
@@ -125,9 +124,10 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr {% for shelter_name in shelters_list %}
+                      <tr></tr> 
+                        <td>{% for shelter_name in shelters_list %}
                                 <li><a href="" id="nav_font">{{shelter_name}}</a></li>
-                        {% endfor %}>
+                            {% endfor %}</td>
                       
                       
                      <!--   <tr ng-repeat="shelter in Shelter.data">
