@@ -134,7 +134,7 @@ class Test (unittest.TestCase) :
 
         self.assertTrue(type(s) == Shelter)
         self.assertEqual(s.shelter_id, "TX514")
-        self.assertEqual(s.shelter_name, "Hound Rescue")
+        self.assertEqual(s.shelter_name, "Austin Animal Center")
         self.assertEqual(s.shelter_address, "Lakeline Petsmart 11066 Pecan Park Blvd, Cedar Park")
         self.assertEqual(s.shelter_city, "Austin")
         self.assertEqual(s.shelter_state, "TX")
