@@ -14,9 +14,9 @@ def home(request):
     return HttpResponse(template.render())
 
 def shelters(request):
-    objs = Shelter.objects.all()
-    shelters_list = {"shelters": objs}
-    return render_to_response("Shelters.html", shelters_list)
+    shelters_list = Shelter.objects.all()
+    context = {"shelter_list": shelters_list}
+    return render_to_response("Shelters.html", context)
     
 """
 def shelters(request):
