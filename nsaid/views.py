@@ -15,8 +15,8 @@ def home(request):
 
 def shelters(request):
     ShelterObjects = Shelter.objects.all()
-    shelter_list = sorted([shelter.shelter_id for shelter in ShelterObjects])
-    return render_to_response("Shelters.html", shelter_list)
+    shelters_list = sorted([shelter.shelter_id for shelter in ShelterObjects])
+    return render_to_response("Shelters.html", shelters_list)
     
 """
 def shelters(request):
