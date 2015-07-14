@@ -33,5 +33,5 @@ models.html: models.py
 IDB.log:
 	git log > IDB.log
 
-tests.out: tests.py
+tests.out:
 	./manage.py test nsaid.tests
