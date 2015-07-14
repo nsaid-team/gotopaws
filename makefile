@@ -37,5 +37,5 @@ manage.py: manage.py
 	/usr/bin/env python3 manage.py syncdb
 
 tests.out: tests.py
-	/usr/bin/env python3 manage.py --source=nsaid test
+	/usr/bin/env python3 manage.py test nsaid.models
 
