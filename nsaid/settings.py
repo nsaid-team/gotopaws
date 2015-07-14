@@ -60,6 +60,7 @@ TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 NOSE_ARGS = [
     '--with-coverage',
     '--cover-package=nsaid.models'
+    '--cover-tests'
 ]
 
 TEMPLATES = [
