@@ -28,29 +28,21 @@ app.controller("ShelterTable",  function ($http) {
         dict.data[val[i][0]] = temp;
 
     }
-
-
-    for each (var shelter in val){
-        
-
-    }
     dict.loaded = true;
-
   };
-
+});
 /*
     $http.get("bootstrap-3.3.5-dist/js/3x3x3_shelters_dataset.json").success(function(load){
       dict.data = load;
       dict.loaded = true;
     });
 */
-});
-
 /* directive
-*/
+
 app.directive('shelterTable2', function(){
   return{
     restrict: 'E',
     templateUrl: '"shelter-table.html"'
   };
 });
+*/
