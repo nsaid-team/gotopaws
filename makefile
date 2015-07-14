@@ -33,9 +33,6 @@ models.html: models.py
 IDB.log:
 	git log > IDB.log
 
-manage.py: manage.py
-	/usr/bin/env python3 manage.py syncdb
-
 tests.out: tests.py
-	./manage.py test nsaid/
-
+	python -m unittest discover -s nsaid
+	./manage.py test 
