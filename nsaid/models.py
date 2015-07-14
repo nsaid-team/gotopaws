@@ -49,6 +49,8 @@ class Shelter(models.Model):
     shelter_phone = models.CharField(max_length=50)
     shelter_email = models.CharField(max_length=100)
     shelter_hours = models.CharField(max_length=200)
+    shelter_pic = models.CharField(max_length=1000)
+    shelter_url = models.CharField(max_length=1000)
     
     """
     class Meta:
