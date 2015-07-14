@@ -11,10 +11,11 @@ body,html{
 }
 
 img{
-	
+
 }
 
 .table-img{
+	 margin-bottom: 25px;
 	 height:42%; 
 	 width:42%;
 }
