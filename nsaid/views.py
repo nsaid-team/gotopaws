@@ -15,11 +15,17 @@ def home(request):
     return HttpResponse(template.render())
 
 def shelters(request):
+    shelters_list = Shelter.objects.all()
+    extra_context = {"shelters_list": shelters_list}
+    return render_to_response("Shelters.html", extra_context)
+"""
+def shelters(request):
     template = loader.get_template('Shelters.html')
     mydb = Shelter.objects.all()
     cursor = connection.cursor()
     cursor.execute('SELECT * FROM nsaid_shelter')
     list = cursor.fetchall()
+"""
     #dict_list = [dict(zip(('id', 'name', 'address', 'city', 'state', 'phone', 'email', 'hours'), l for l in list))]
     #context = {"shelters_list": cursor.fetchall()}
     #context = ({'name': mydb.shelter_name, 'city': mydb.shelter_city, 'state': mydb.shelter_state, 'phone': mydb.shelter_phone, 'email': mydb.shelter_email})
