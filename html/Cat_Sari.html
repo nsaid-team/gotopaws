@@ -9,104 +9,126 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Shop Homepage - Start Bootstrap Template</title>
+    <!--Shop Homepage - Start Bootstrap Template -->
+    <title>GoToPaws</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="bootstrap-3.3.5-dist/css/shop-homepage.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/full-slider.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <![endif]-->
 
-</head>
+    </head>
 
-<body>
+    <body>
 
 
-    <nav class="navbar navbar-inverse" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="Home.html">Home</a></li>
-                <li  class="active"><a href="Pets.html">Pets</a></li>
-                <li><a href="Shelters.html">Shelters</a></li>
-                <li ><a href="Cities.html">Cities</a></li>
-                <li><a href="About.html">About</a></li>
-            </ul>
-            <div class="col-sm-3 col-md-3 pull-right">
-                <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search" name="q">
-                        <div class="input-group-btn">
-                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                        </div>
-                    </div>
-                </form>
-            </div>        
-        </div>
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-
-            <div class="col-md-9">
-
-                <div class="row carousel-holder">
-
-                    <div class="col-md-12">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img class="slide-image" src="http://photos.petfinder.com/photos/pets/20758336/3/?bust=1314882859&width=60&-pnt.jpg" alt="">
-                                </div>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="Home.html">Home</a></li>
+                    <li  class="active"><a href="Pets.html">Pets</a></li>
+                    <li><a href="Shelters.html">Shelters</a></li>
+                    <li ><a href="Cities.html">Cities</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+                <div class="col-sm-3 col-md-3 pull-right">
+                    <form class="navbar-form" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="q">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                             </div>
-                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
                         </div>
+                    </form>
+                </div>        
+            </div>
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container">
+
+    <div class="col-md-6">
+
+             <!-- Carousel
+                ================================================== -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img class="first-slide" src="bootstrap-3.3.5-dist/img/Pets/sari.jpg"  alt="First slide">
+                      <div class="container">
+                        <div class="carousel-caption">
+                         
+                      
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="second-slide" src="bootstrap-3.3.5-dist/img/Pets/sari1.jpg"  alt="Second slide">
+                      <div class="container">
+                        <div class="carousel-caption">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="third-slide" src="bootstrap-3.3.5-dist/img/Pets/sari3.jpg"  alt="Third slide">
+                      <div class="container">
+                        <div class="carousel-caption">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div><!-- /.carousel -->
+            </div>
+                <div class="col-md-6">
+                    <div class ="text-box">
+
+                        <h4><b>Sari</b></h4><!-- Simon's info in "https://www.petfinder.com/petdetail/30847108/" -->
+                        <p><b>Age:</b> Adult </p>
+                        <p><b>Sex:</b> Female </p>
+                        <p><b>Size:</b> Small</p>
+                        <p><b>Breed:</b> Russian Blue </p>
+                        <p><b>Shelter:</b><a href="Shelter_HPPL.html"> Homeless Pet Placement League</a> </p>
+                        <p><b>City:</b><a href="City_Houston.html"> Houston</a></p>
+
+
+
+                        <h3>Bio:</h3> <!--http://www.austinpetsalive.org/adopt/available-dog-details/?ID=28151962#-->
+                        <p>The name Sari means princess and that is what I want to be. I am a fairly independent girl so I can be your one and only to adore or I do get along well with calm and gentle cats. I am easy going and don't make many demands (except I do like some yummy treats).   During the day, I like to look out the window from a nice cat tree perch and I like to sleep on a comfy bed.  I am not a super lap cat but I enjoy being close to a human at the end of the day, snuggling in for the night.  Currently, I have not been around young children or dogs. My dob is March 1, 2011.</p>
+
                     </div>
 
-                </div>
 
-                <div class="row">
-
-                    <h4><b>Sari</b></h4><!-- Simon's info in "https://www.petfinder.com/petdetail/30847108/" -->
-                    <p><b>Age:</b> Adult </p>
-                    <p><b>Sex:</b> Female </p>
-                    <p><b>Size:</b> Small</p>
-                    <p><b>Breed:</b> Russian Blue </p>
-                    <p><b>Shelter:</b> Homeless Pet Placement League </p>
-                    <p><b>City:</b> Houston</p>
-                  
-
-
-                         <h3>Bio:</h3> <!--http://www.austinpetsalive.org/adopt/available-dog-details/?ID=28151962#-->
-                        <p>The name Sari means princess and that is what I want to be. I am a fairly independent girl so I can be your one and only to adore or I do get along well with calm and gentle cats. I am easy going and donÃ¢Â€Â™t make many demands (except I do like some yummy treats).   During the day, I like to look out the window from a nice cat tree perch and I like to sleep on a comfy bed.  I am not a super lap cat but I enjoy being close to a human at the end of the day, snuggling in for the night.  Currently, I have not been around young children or dogs. My dob is March 1, 2011.</p>
-
-    
-
-            
 
                     
 
@@ -114,32 +136,36 @@
 
             </div>
 
+
+
         </div>
 
     </div>
-    <!-- /.container -->
 
-    <div class="container">
+</div>
+<!-- /.container -->
 
-        <hr>
+<div class="container">
 
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; NSAID 2015</p>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-    </div>
-    <!-- /.container -->
+</div>
+<!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+<!-- jQuery -->
+<script src="bootstrap-3.3.5-dist/js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 
 </body>
 

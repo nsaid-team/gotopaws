@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -8,15 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>1 Col Portfolio - Start Bootstrap Template</title>
+    <!--3 Col Portfolio - Start Bootstrap Template -->
+    <title> GoToPaws </title>
+     {% load static from staticfiles %}
+    <script type="text/javascript" src="{% static "js/angular.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/sortable.js" %}"></script>
+    <script type="text/javascript" src="{% static  "js/cities.js" %}"></script>
 
     <!-- Bootstrap Core CSS -->
-    <link href="./bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="./bootstrap-3.3.5-dist/css/1-col-portfolio.css" rel="stylesheet">
-
+    <link href="bootstrap-3.3.5-dist/css/table.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/city-body.css" rel="stylesheet">
+      <script type="text/javascript" src="bootstrap-3.3.5-dist/js/style-table.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,65 +69,49 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Cities
-                    <small>Texas</small>
+                    <!--<small>Texas</small>-->
                 </h1>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Project One -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="bootstrap-3.3.5-dist/img/Cities/Austin.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>Austin</h3>
-                <h4>Live Music Capitol of the World</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                <a class="btn btn-primary" href="City_Austin.html">View City <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
 
-        <hr>
+    <!-- Table -->
 
-        <!-- Project Two -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="bootstrap-3.3.5-dist/img/Cities/san-franc.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>San Francisco</h3>
-                <h4>Gold in peace, iron in war</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-                <a class="btn btn-primary" href="City_SF.html">View City <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
+    <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0" >
+        
+         <br>
+                    
+         <thead>  
+            <tr>
+                <th class="unsortable" >Picture:
+                <th>Name:</th>
+                <th>State: </th>
+                <th>Country:</th>
+                <th>Vet:</th>
+                <th>Park:</th>
+                <th>Groomer:</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for city in cities_list %} 
+            <tr >
+                <td><img  class="img-responsive portfolio-item" src="{{city.city_pic}}" alt="city" height="60" width="60"></td>
+                <td><a href={{city.city_url}} id="nav_font">{{city.city_name}}</a></td>
+                <td>{{city.city_state}}</td>
+                <td>{{city.city_country}}</td>
+                <td><a href="{{city.city_vet_url}}"> <img  class="img-responsive portfolio-item" src="{{city.city_vet_pic}}" alt="cities"  height="42" width="42"> {{city.city_name}} vet</a></td>
+                <td><a href="{{city.city_park_url}}"> <img  class="img-responsive portfolio-item"src="{{city.city_park_pic}}" alt="cities"  height="42" width="42">{{city.city_name}} park </a></td>
+                <td><a href="{{city.city_groomer_url}}"> <img  class="img-responsive portfolio-item" src="{{city.city_groomer_pic}}" alt="cities"  height="42" width="42">{{city.city_name}} groomer </a></td>
+             </tr>
+        {% endfor %}</tr>
+                        
+        </tbody>
+    </table >          
 
-        <hr>
+    <hr>
 
-        <!-- Project Three -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="bootstrap-3.3.5-dist/img/Cities/Houston.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>Houston</h3>
-                <h4>Space City</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-                <a class="btn btn-primary" href="City_Houston.html">View City <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
 
-        <hr>
 
         
         <!-- Pagination -->
@@ -162,7 +150,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; NSAID 2015</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -171,11 +159,11 @@
     </div>
     <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+   <!-- jQuery -->
+<script src="bootstrap-3.3.5-dist/js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 
 </body>
 

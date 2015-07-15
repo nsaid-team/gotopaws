@@ -8,140 +8,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>3 Col Portfolio - Start Bootstrap Template</title>
+    <!--3 Col Portfolio - Start Bootstrap Template -->
+    <title> GoToPaws </title>
+    {% load static from staticfiles %}
+    <script type="text/javascript" src="{% static "js/angular.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/sortable.js" %}"></script>
+    <script type="text/javascript" src="{% static  "js/shelters.js" %}"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="bootstrap-3.3.5-dist/css/3-col-portfolio.css" rel="stylesheet">
-    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <link href="bootstrap-3.3.5-dist/css/table.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/pet-body.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <![endif]-->
 
 </head>
 
-<body>
+    <body>
 
-
-    <nav class="navbar navbar-inverse" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="Home.html">Home</a></li>
-                <li  class="active"><a href="Pets.html">Pets</a></li>
-                <li><a href="Shelters.html">Shelters</a></li>
-                <li ><a href="Cities.html">Cities</a></li>
-                <li><a href="About.html">About</a></li>
-            </ul>
-            <div class="col-sm-3 col-md-3 pull-right">
-                <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search" name="q">
-                        <div class="input-group-btn">
-                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="Home.html">Home</a></li>
+                    <li  class="active"><a href="Pets.html">Pets</a></li>
+                    <li><a href="Shelters.html">Shelters</a></li>
+                    <li ><a href="Cities.html">Cities</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+                <div class="col-sm-3 col-md-3 pull-right">
+                    <form class="navbar-form" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="q">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
                         </div>
-                    </div>
-                </form>
-            </div>        
-        </div>
-    </nav>
+                    </form>
+                </div>        
+            </div>
+        </nav>
+        
+        <div class="container">
 
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Page Header -->
+            <!-- Page Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Adopt a Pet
+                <h1 class="page-header">Pets
+                    <!--<small>Texas</small>-->
                 </h1>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Projects Row -->
-        <div class="row">
 
-        <div class="col-sm-4 col-lg-4 col-md-4">
-            <div class="thumbnail">
-                <img class="img-responsive" src="http://photos.petfinder.com/photos/pets/32251618/1/?bust=1435667817&width=60&-pnt.jpg" alt="">
-                <div class="caption">
-                    <h4><a href="Dog_Rangel.html">Rangel</a></h4><!-- Trent "https://www.petfinder.com/petdetail/31505135/" -->
-                    <p><b>Age:</b> Yount</p>
-                    <p><b>Sex:</b> Male</p>
-                    <p><b>Size:</b>large</p>
-                    <p><b>Breed:</b> German Shepherd Dog </p>
-                    <p><b>Shelter:</b> Austin Pets Alive</p>
-                    <p><b>City:</b> Austin</p>
-                </div>
-            </div>
-        </div>
+        <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0" >
+            <thead>  
+                <tr>
+                    <th class="unsortable">Picture:</th>
+                    <th>Name:</th>
+                    <th>Age:</th>
+                    <th>Sex:</th>
+                    <th>Size:</th>
+                    <th>Breed:</th>
+                    <th>Shelter:</th>      
+                    <th>City</th> 
+                </tr>
+            </thead>
+            <tbody>
+               {% for pet in pets_list %} 
+               <tr >
+                <td><img class="img-responsive portfolio-item" src={{pet.pet_pic_url}} alt="shelters"  height="42" width="42"></td>
+                <!--td><a href="/Shelters/{{shelter.shelter_id}}" id="nav_font">{{shelter.shelter_name}}</a></td-->
+                <td><a href={{pet.pet_url}} id="nav_font">{{pet.pet_name}}</a></td>
+                <td>{{pet.pet_age}}</td>
+                <td>{{pet.pet_sex}}</td>
+                <td>{{pet.pet_size}}</td>
+                <td>{{pet.pet_breed}}</td>
+                <td><a href="{{pet.pet_shelter_url}}">{{pet.pet_shelter}}</a></td>
+                <td><a href="{{pet.pet_city_url}}">{{pet.pet_city}}</a></td>
+                
+                </tr>
+            {% endfor %}
 
-        <div class="col-sm-4 col-lg-4 col-md-4">
-            <div class="thumbnail">
-                <img class="img-responsive" src="http://photos.petfinder.com/photos/pets/32607766/1/?bust=1435783518&width=60&-pnt.jpg" alt="">
-                <div class="caption">
-                    <h4><a href="Dog_Earl.html">Earl</a></h4><!-- Zoey's info in "https://www.petfinder.com/petdetail/32480632/" -->
-                    <p><b>Age:</b> Senior</p>
-                    <p><b>Sex:</b> Male</p>
-                    <p><b>Size:</b> Medium</p>
-                    <p><b>Breed:</b> Poodle </p>
-                    <p><b>Shelter:</b> Muttville Senior Dog Rescue </p>
-                    <p><b>City:</b>San Francisco</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="col-sm-4 col-lg-4 col-md-4">
-            <div class="thumbnail">
-                <img class="img-responsive" src="http://photos.petfinder.com/photos/pets/20758336/3/?bust=1314882859&width=60&-pnt.jpg" alt="">
-                <div class="caption">
-                    <h4><a href="Cat_Sari.html">Sari</a></h4><!-- Simon's info in "https://www.petfinder.com/petdetail/30847108/" -->
-                    <p><b>Age:</b> Adult </p>
-                    <p><b>Sex:</b> Female </p>
-                    <p><b>Size:</b> Small</p>
-                    <p><b>Breed:</b> Russian Blue </p>
-                    <p><b>Shelter:</b> Homeless Pet Placement League </p>
-                    <p><b>City:</b> Houston</p>
-                </div>
-            </div>
-        </div>
-        </div>
-        <!-- /.row -->
 
-        <hr>
+    </tbody>
+</table>
 
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
 
+<hr>
+
+
+
+
+<!-- Pagination -->
+<div class="row text-center">
+    <div class="col-lg-12">
+        <ul class="pagination">
+            <li>
+                <a href="#">&laquo;</a>
+            </li>
+            <li class="active">
+                <a href="#">1</a>
+            </li>
+            <li>
+                <a href="#">2</a>
+            </li>
+            <li>
+                <a href="#">3</a>
+            </li>
+            <li>
+                <a href="#">4</a>
+            </li>
+            <li>
+                <a href="#">5</a>
+            </li>
+            <li>
+                <a href="#">&raquo;</a>
+            </li>
+        </ul>
     </div>
-    <!-- /.container -->
+</div>
+<!-- /.row -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+<hr>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- Footer -->
+<footer>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>Copyright &copy; NSAID 2015</p>
+        </div>
+    </div>
+    <!-- /.row -->
+</footer>
+
+ </div>
+
+
+<!-- jQuery -->
+<script src="bootstrap-3.3.5-dist/js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 
 </body>
 

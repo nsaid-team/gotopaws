@@ -4,10 +4,8 @@ FILES :=                            				\
     	apiary.apib 						\
 	IDB.log             					\
     	models.html						\
-    	Report.pdf						\
-    	tests.out						\
-    	tests.py						\
-
+    	UML.pdf							\
+    
 all:
 
 check:
@@ -27,15 +25,14 @@ config:
 
 test: tests.out
 
-models.html: models.py
+models.html: nsaid/models.py
 	pydoc3 -w models
 
 IDB.log:
 	git log > IDB.log
 
-manage.py: manage.py
-	/usr/bin/env python3 manage.py syncdb
-
-tests.out: tests.py
-	/usr/bin/env python3 manage.py test
+tests.out:
+	coverage3 run manage.py test nsaid/ >  nsaid/tests.out 2>&1
+	coverage3 report -m  nsaid/tests.py nsaid/models.py  >> nsaid/tests.out
+	cat nsaid/tests.out
 

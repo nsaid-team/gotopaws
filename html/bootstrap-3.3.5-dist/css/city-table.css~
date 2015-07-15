@@ -1,0 +1,137 @@
+body{
+    width: 100%;
+    height: 100%;
+     background: url(../img/All/dog-copy.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	color: white;
+}
+
+html{
+
+}
+
+img{
+	width: 25%;
+	height: 50%;
+}
+
+/* ---- Some Resets ---- */
+
+p,caption{
+    margin:0;
+    padding:0;
+    font-weight:normal;
+    }
+
+/* ---- Paragraphs ---- */
+
+p {
+    margin-bottom:15px;
+    }
+
+  
+/* ---- Table ---- */
+
+table {
+    border-collapse: collapse; 
+	 text-align: left;
+	 width: 100%;
+    }
+    
+caption {
+    text-align:left;
+    font-size:15px;
+    padding-bottom:10px;
+    }
+    
+table td,
+table th {
+     padding: 20px 13px; 
+}
+        
+table thead th {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #007FBD), color-stop(1, #BFE6FF) );
+	background:-moz-linear-gradient( center top, #007FBD 5%, #BFE6FF 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007FBD', endColorstr='#BFE6FF');
+	background-color:#007FBD;
+	color:#FFFFFF; 
+	font-size: 15px; 
+	font-weight: bold; 
+	border-left: 0px solid #0070A8
+}
+
+table tbody td { 
+	color: #00557F; 
+	font-size: 12px;
+	font-weight: normal;
+	background: #E1EEf4;
+}
+ 
+tbody .alt td{
+    text-align:left;
+    background: #E1EEf4; 
+	color: #00557F;
+}    
+
+
+table tfoot td div {
+	 border-top: 1px solid #006699;
+	background: #E1EEf4;
+}
+
+table tfoot td { 
+	padding: 0; 
+	font-size: 12px 
+}
+
+table tfoot td div{ 
+	padding: 4px;
+}
+
+table tfoot td ul { 
+	margin: 0; 
+	padding:0; 
+	list-style: none; 
+	text-align: right; 
+}
+
+table tfoot  li {
+	 display: inline;
+}
+
+table tfoot li a {
+	text-decoration: none;
+	display: inline-block; 
+	padding: 2px 8px; 
+	margin: 1px;
+	color: #FFFFFF;
+	border: 1px solid #216ED1;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px; 
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00A5F7), color-stop(1, #4B88BD) );
+	background:-moz-linear-gradient( center top, #00A5F7 5%, #4B88BD 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00A5F7', endColorstr='#4B88BD');
+	background-color:#00A5F7;
+
+ }
+
+ table tfoot ul.active, table tfoot ul a:hover {
+	text-decoration: none;
+	border-color: #ADD9FF; 
+	color: #FFFFFF; 
+	background: none; 
+	background-color:#B1DBFF;
+}
+
+div.dhtmlx_window_active, div.dhx_modal_cover_dv { 
+	position: fixed !important;
+
+ } 
+      
+
+        
+

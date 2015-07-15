@@ -1,0 +1,13 @@
+.......................................
+----------------------------------------------------------------------
+Ran 39 tests in 0.425s
+
+OK
+Creating test database for alias 'default'...
+Destroying test database for alias 'default'...
+Name           Stmts   Miss  Cover   Missing
+--------------------------------------------
+nsaid/models      46      3    93%   34, 67, 102
+nsaid/tests      347      1    99%   714
+--------------------------------------------
+TOTAL            393      4    99%   

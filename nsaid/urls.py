@@ -13,10 +13,11 @@ Including another URLconf
     1. Add an import:  from blog import urls as blog_urls
     2. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
-from django.conf.urls import include, url
-from django.contrib import admin
 
+from django.conf.urls import patterns, include, url
+from django.conf import settings
 from . import views
+from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
@@ -30,4 +31,24 @@ urlpatterns = [
     url(r'^Cats.html$', views.cats),
     url(r'^Dogs.html$', views.dogs),
     url(r'^Shelter_APA.html$', views.shelter_apa),
+    url(r'^Cat_Sari.html$', views.cat_sari),
+    url(r'^Dog_Earl.html$', views.dog_earl),
+    url(r'^Dog_Rangel.html$', views.dog_Rangel),
+    url(r'^Shelter_HPPL.html$', views.shelter_HPPL),
+    url(r'^Shelter_Muttville.html$', views.shelter_Muttville),
+    url(r'^City_Austin.html$', views.city_Austin),
+    url(r'^City_SF.html$', views.city_SF),
+    url(r'^City_Houston.html$', views.city_Houston),
+    #RESTful API
+    #url(r'^api/', include('api.urls')),
+    #url(r'^api/', include(ShelterResource().urls)),
+    #url(r'^api/', include(CityResource().urls)),
+
+    #url(r'^Pets/(?P<id>[\w-]+)$', views.pet_template),
+    #url(r'^Shelters/(?P<id>[\w-]+)$', views.shelter_template),
+    #url(r'^Cities/(?P<id>[\w-]+)$', views.city_template),
+    url(r'^api/pets/$', views.pet_list),
+    url(r'^api/shelters/$', views.shelter_list),
+    url(r'^api/cities/$', views.city_list),
+
 ]
