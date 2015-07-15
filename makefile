@@ -25,7 +25,7 @@ config:
 
 test: tests.out
 
-models.html: models.py
+models.html: nsaid/models.py
 	pydoc3 -w models
 
 IDB.log:
