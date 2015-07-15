@@ -32,10 +32,6 @@ IDB.log:
 	git log > IDB.log
 
 tests.out:
-	# python3 manage.py test nsaid/
-	#coverage run manage.py test nsaid/
-	#coverage report -m nsaid/tests.py nsaid/models.py
-	#cat nsaid/tests.out
 	coverage3 run manage.py test nsaid/ >  nsaid/tests.out 2>&1
 	coverage3 report -m  nsaid/tests.py nsaid/models.py  >> nsaid/tests.out
 	cat nsaid/tests.out
