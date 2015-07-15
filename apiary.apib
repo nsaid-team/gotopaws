@@ -18,23 +18,26 @@ Our API only supports the JSON format.
 ### Get list of all Pets [GET]
 + Response 200 (application/json)
 
-        { "all_pets":
-            [
-                {
-                    "petsid":"A4856",
-                    "name":"Sari",
-                    "age":"Adult",
-                    "size":"S",
-                    "breed":"Russian Blue",
-                    "shelter":"TX154",
-                    "city":"Houston",
-                    "pic_url":"http://photos.petfinder.com/photos/pets/20758336/3/?bust=1314882859&width=60&-pnt.jpg"
-                },
-                {
-                    "etc..." : "more"
-                }
-            ]
+        {
+            "27921188": {
+                "pet_size": "L",
+                "pet_shelter": "TX1218",
+                "pet_pic_large": "bootstrap-3.3.5-dist/img/Pets/rangel.jpg",
+                "pet_pic_url": "",
+                "pet_url": "Dog_Rangel.html",
+                "pet_age": "Young",
+                "pet_shelter_url": "Shelter_APA.html",
+                "pet_breed": "German Shepherd Dog",
+                "pet_name": "Rangel",
+                "pet_city_url": "City_Austin.html",
+                "pet_id": "27921188",
+                "pet_city": "Austin"
+            },
+            "etc..." : {
+                "more attributes..." : "more",
+            }
         }
+
 
 # Group Shelters
 
@@ -43,22 +46,23 @@ Our API only supports the JSON format.
 ### Get list of all Shelters [GET]
 + Response 200 (application/json)
 
-        { "all_shelters":
-            [
-                {
-                    "id":"TX1218",
-                    "name":"Austin Pets Alive!",
-                    "address1":"1156 West Cesar Chavez",
-                    "city":"Austin",
-                    "state":"TX",
-                    "phone":"512 961 6519",
-                    "email":"adopt@austinpetsalive.org",
-                    "pets":["32251618"]
-                },
-                {
-                    "etc..." : "more"
-                }
-            ]
+        {
+            "TX1218": {
+                "shelter_email": "adopt@austinpetsalive.org",
+                "shelter_city_url": "City_Austin.html",
+                "shelter_phone": "512 961 6519",
+                "shelter_city": "Austin",
+                "shelter_url": "Shelter_APA.html",
+                "shelter_state": "TX",
+                "shelter_id": "TX1218",
+                "shelter_pic": "bootstrap-3.3.5-dist/img/Shelters/APA_logo.jpg",
+                "shelter_hours": "9 to 5",
+                "shelter_address": "1156 West Cesar Chavez",
+                "shelter_name": "Austin Pets Alive!"
+            },
+            {
+                "etc..." : "more"
+            }
         }
 
 # Group Cities
@@ -69,19 +73,22 @@ Our API only supports the JSON format.
 + Response 200 (application/json)
 
         {
-            "all_cities": [
-                {
-                    "name": "Austin",
-                    "state": "TX",
-                    "country": "US",
-                    "shelters": ["TX1218"],
-                    "pets": ["32251618"],
-                    "vet_url": "http://www.yelp.com/biz/corner-vet-austin-3"
-                },
-                {
-                    "etc..." : "more"
-                }
-            ]
+            "San Francisco_CA": {
+                "city_vet_url": "http://www.yelp.com/biz/san-francisco-pet-hospital-san-francisco",
+                "city_country": "US",
+                "city_state": "CA",
+                "city_park_pic": "bootstrap-3.3.5-dist/img/Cities/san-franc_park.jpg",
+                "city_groomer_url": "http://www.yelp.com/biz/san-francisco-pet-hospital-san-francisco",
+                "city_park_url": "www.google.com",
+                "city_name": "San Francisco",
+                "city_vet_pic": "bootstrap-3.3.5-dist/img/Cities/san-franc_vet.jpg",
+                "city_groomer_pic": "bootstrap-3.3.5-dist/img/Cities/san-franc_groomer.jpg",
+                "city_url": "City_SF.html",
+                "city_pic": "bootstrap-3.3.5-dist/img/Cities/san-franc.jpg"
+            },
+            "etc..." : {
+                "more"
+            }
         }
 
 
