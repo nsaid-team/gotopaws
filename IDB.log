@@ -1,3 +1,3695 @@
+commit 74ce47b899b49b745746f3fdbb7f96a72a0443f2
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 20:40:00 2015 -0500
+
+    pets page
+
+commit 14086c7cdced368f853c89983f29af84fa879749
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 20:30:37 2015 -0500
+
+    pets page
+
+commit 2ed9fd063479d9d25518201389f89ae6c9d5dfdd
+Merge: 5777ab6 cea8a78
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Wed Jul 15 01:28:39 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 5777ab6bfce2c1e77329ab7a2a67bbe0164d5577
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Wed Jul 15 01:28:36 2015 +0000
+
+    new and improved api tests
+
+commit cea8a78ec7164b620dc00ee4b2461fef220bfd01
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Tue Jul 14 20:18:17 2015 -0500
+
+    pet list call supports sex field
+
+commit 58971cf3446cd6b8452a932e58077ab4be639531
+Merge: 50b25f3 c2ccb4e
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 20:17:20 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 50b25f38d6db25c1b2619c4abcbfd6630365868d
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 20:16:53 2015 -0500
+
+    margin maps
+
+commit c2ccb4e832ef3559440993b26fada2bc2fad08c8
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Wed Jul 15 01:16:05 2015 +0000
+
+    support for sex field
+
+commit d61c6d7261ca40844a576162b0d5302dd83c7db0
+Merge: 58a3ae3 f16749d
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Wed Jul 15 01:13:38 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit f16749d9f3603e07191c1deff63c32e6c64d4279
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 20:11:02 2015 -0500
+
+    background image fix and copyright footer
+
+commit aed1cc9448b545c79a17ac7a0eddd0c70133b4f3
+Author: Nelma Perera Rodriguez <npererar@cs.utexas.edu>
+Date:   Tue Jul 14 20:09:49 2015 -0500
+
+    UML Graph Fixed
+
+commit 58a3ae33284c05241ca12d5e970c55fb88f9e20e
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Wed Jul 15 01:07:43 2015 +0000
+
+    support for sex field
+
+commit 73a64eae4d4e76d45574d196f622dd7cb599c309
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 19:51:05 2015 -0500
+
+    google maps
+
+commit 9cb5942d1c6214a3d1aea6778e3dd76840268c41
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 18:50:19 2015 -0600
+
+    Update Pets.json
+
+commit c8275a4487281ba6e9b2f5dbfa2050e410c22b3a
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 18:49:19 2015 -0600
+
+    Update models.py
+
+commit 54d0668ad74762849f281ac5716849e190d7674a
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 18:21:51 2015 -0600
+
+    Delete Cities.zip
+
+commit 5024f1dd7194a3cdafb4328b60e16a88171498b0
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 19:20:42 2015 -0500
+
+    Delete tests.py
+
+commit bba1045b527dfa93c7949ced706397e50d0a1978
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 19:20:24 2015 -0500
+
+    Delete models.py
+
+commit 84ba69b453224fd41b1c9011ed455b1e6130c0de
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 18:20:01 2015 -0600
+
+    Update Pets.json
+
+commit 5ed82118c2c6cfa246a827fd9282d88005a0eb45
+Author: Dany <dany@ubuntu.ubuntu-domain>
+Date:   Tue Jul 14 19:15:39 2015 -0600
+
+    images
+
+commit 43b1e958f01113d8d29b95c8b11c52ce6e7a6d90
+Merge: 84e3515 d84d14e
+Author: Dany <dany@ubuntu.ubuntu-domain>
+Date:   Tue Jul 14 19:15:16 2015 -0600
+
+    WIP on dev-branch: 84e3515 Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit d84d14e778481503b0d10bdebde35d9df7b219ad
+Author: Dany <dany@ubuntu.ubuntu-domain>
+Date:   Tue Jul 14 19:15:16 2015 -0600
+
+    index on dev-branch: 84e3515 Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 84e351591d3847743940343c8f8b96571fbeec55
+Merge: 1238aae 5cb72c2
+Author: Dany <dany@ubuntu.ubuntu-domain>
+Date:   Tue Jul 14 19:08:28 2015 -0600
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 1238aae133e7d28f10f725b598e2fd1b5c8624b2
+Author: Dany <dany@ubuntu.ubuntu-domain>
+Date:   Tue Jul 14 19:07:03 2015 -0600
+
+    groomer,parks and vets pictures and urls
+
+commit 5cb72c2232771ec4f1a758ca0a91b9ab238c84ed
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Tue Jul 14 19:07:49 2015 -0500
+
+    latest phase 2 models reflected
+
+commit 3231e621cb4d916156f6f70250214bbb727ef2f5
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 19:07:22 2015 -0500
+
+    pagination
+
+commit 8e5bab4cbb1e28e8b3ffd7d55c0ee008c4b3ae9d
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 19:07:05 2015 -0500
+
+    Update makefile
+
+commit d9ce5233bff28ca1db59d6f808e6292fb81ef923
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 19:03:29 2015 -0500
+
+    Update makefile
+
+commit ad2a84151669ed2317a953d2128094ce1bb26310
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 19:02:33 2015 -0500
+
+    Update makefile
+
+commit 5d6b60a08f06a8b5b6e27abacdfe8d30dcbbde36
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 18:00:42 2015 -0600
+
+    Update Cities.json
+
+commit a624ba971030fc8f32d0bc7196d08ce506f5fe04
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 19:00:08 2015 -0500
+
+    js html updates
+
+commit 8af132aecc348df0c7395c6b9fa2461ab3c6d4e2
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 18:58:04 2015 -0500
+
+    Update makefile
+
+commit cea44602d3f0986643a55eaaf2b1cc3afc18024a
+Merge: 2bab9db 1fcc3d8
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 23:54:02 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 2bab9db1fd1b2f917357a6cb3d7398d42cb46b75
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 23:54:00 2015 +0000
+
+    api now spits out new attributes
+
+commit 1fcc3d86f4ae63b1904301f222eea317b8ace24c
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 18:52:45 2015 -0500
+
+    Update makefile
+
+commit 4057792dbd293f1f1ee12ae84a88b66ecf50e7dd
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 17:51:33 2015 -0600
+
+    Update Cities.json
+
+commit 047a09cdab30db547f8f3677327d71860fc3fc3b
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 18:48:37 2015 -0500
+
+    Update .travis.yml
+
+commit 633b40573f3981d6e8c0ebc813f5591cea5fa2cc
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 18:47:17 2015 -0500
+
+    Update dependencies.txt
+
+commit 859e52105b1f62762f3f171d6f0a53d056114244
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 18:46:51 2015 -0500
+
+    Update dependencies.txt
+
+commit 0f1f06fad9a18664971bc36a4dd22e87b7c0f710
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 17:44:32 2015 -0600
+
+    Update Cities.json
+
+commit 097a84b68feda0c1dee0d64c8691af9c678a5a87
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 18:43:12 2015 -0500
+
+    Update dependencies.txt
+
+commit 61ca22e5dd7d072ac24fba4487d99accd1e016c7
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 18:43:03 2015 -0500
+
+    Update dependencies.txt
+
+commit ed09f83d6f88f2f947f6d7139b317d03d13858a8
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 17:42:13 2015 -0600
+
+    Update Cities.json
+
+commit a725acc9ea14b344e45ad9c17e9d5469573dd48d
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 18:38:19 2015 -0500
+
+    Update makefile
+
+commit 97adc43bbc1c7e7fc95f8fa8838c032fa6f12c39
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 17:34:47 2015 -0600
+
+    links for parks and groomers
+
+commit 2911c257780c24dd42b2c780ff2d960c972cf728
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 18:34:07 2015 -0500
+
+    Update makefile
+
+commit c69459fa5da3ef23e2a396f6fc07239195f4863f
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 18:30:52 2015 -0500
+
+    Update makefile
+
+commit a82fa099c873753f2bb543f09b71d5e473fc2bff
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 18:26:05 2015 -0500
+
+    Update makefile
+
+commit fc8f0bc5c0bdc8e6dfa368e5d1684c2b8e27622b
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 18:24:09 2015 -0500
+
+    js html updates
+
+commit d24b4338073cba99e2c1879d0333ef495b9f812e
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 18:22:03 2015 -0500
+
+    Update makefile
+
+commit 9bc12e28e234ecd75ab7c60ad9baa3c85f6c8f89
+Merge: b7f42e5 0949b17
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 23:19:53 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit b7f42e50904bcdc3136831a8f5b0e9a1b9262f24
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 23:19:29 2015 +0000
+
+    new fields, bruh
+
+commit 0949b17175c89a826e78db11e137e79b459436a4
+Merge: 9dbfbd9 87171f0
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 18:14:40 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 9dbfbd97cd9747b25df4132406ac05bb425e293a
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 18:14:28 2015 -0500
+
+    dog earl casousel
+
+commit 87171f07d64ad77193e883a3413bfd813f0ca769
+Author: Nelma Perera Rodriguez <npererar@cs.utexas.edu>
+Date:   Tue Jul 14 18:14:14 2015 -0500
+
+    UML Pic Added
+
+commit a94754fc16928310e7d2537bd4e857cdc1b7caca
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 18:07:55 2015 -0500
+
+    Updated variable lengths in models
+
+commit ee5702f468cb8938738fdab6b9643a8ee94dc42f
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 18:07:39 2015 -0500
+
+    Update makefile
+
+commit 2db2d4178cdc904631efc6ad46f3ad368baed098
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 18:06:37 2015 -0500
+
+    Fixed Typos in tests
+
+commit a0bd89145c25476f0f8d8f2429752682229cae9d
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 18:02:55 2015 -0500
+
+    Fixed Typos in tests
+
+commit f4a1ad77c54a5c41dc9215da690a47f2905e068b
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 16:53:55 2015 -0600
+
+    links for shelter and city
+
+commit 50e9c573fab1a8c95e4148b906eaeda63fa3f4a0
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 16:52:02 2015 -0600
+
+    links to cities
+
+commit 3af4dbc4dcacab1556796d5f4a65c84961594af5
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 16:50:55 2015 -0600
+
+    link to page for pets and shelters
+
+commit f4931c789649ff37f2f9cdfa3913acd9e6165362
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 17:49:02 2015 -0500
+
+    Added Everyone's Unit Tests
+
+commit cd45f4ca007615eadf0d7888904f69e1a7202b5d
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 17:48:37 2015 -0500
+
+    Update settings.py
+
+commit 744143fa1203c39b48ee51659ad41b82835c3921
+Author: Nelma Perera Rodriguez <npererar@cs.utexas.edu>
+Date:   Tue Jul 14 17:44:33 2015 -0500
+
+    Deleted no Needed api Folder
+
+commit 3fe94149a7a1b1fd2249c1bfda379158f6d89ac7
+Merge: 7978299 e490f57
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 22:35:43 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 797829998a2cbfaf7ddce369b8681eb8bf47c442
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 22:35:39 2015 +0000
+
+    rolling api app in to nsaid
+
+commit e490f5772714a6f6ec185bf9b4982cc1e614a8bc
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 17:23:46 2015 -0500
+
+    html design improved
+
+commit abb3f56f26123e3a19959dc0bd8d974d8fce8ea2
+Author: Nelma Perera Rodriguez <npererar@cs.utexas.edu>
+Date:   Tue Jul 14 17:09:06 2015 -0500
+
+    UML Updated
+
+commit ea00116ab88bda71cbacfa96d3ee3d07c240449a
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 21:44:59 2015 +0000
+
+    removing apps.py
+
+commit 0ae473206545097f4ad0b45b88410c3236f4eecb
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 21:34:07 2015 +0000
+
+    empty change to start Travis
+
+commit 4f967ed62f5bf811532a0e4fe9976dbee6559fe8
+Merge: 2db1be5 1a08c28
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 21:30:28 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 2db1be5c768356b85ef06e62bf198db76dcd30c7
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 21:30:22 2015 +0000
+
+    trying to fix Travis
+
+commit 1a08c28fde3cd0c27f326876feebd0173fb2e687
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 16:19:32 2015 -0500
+
+    pictures are wrong
+
+commit 4f239386b7e7efccbd4e89c813ab97d906981708
+Merge: 9ef0519 1938e00
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 16:16:02 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 9ef05199f667cf76d4ef2c12dc2e597455343dba
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 16:15:39 2015 -0500
+
+    pictures are wrong
+
+commit 1938e001c55a0201483f550bb833d4afb9517990
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Tue Jul 14 16:10:33 2015 -0500
+
+    Update models.py
+
+commit 298aedaf66829eecf606631bf50ef41a677c19b5
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 16:08:32 2015 -0500
+
+    pictures are wrong
+
+commit 66e67f3512d39d76d7bebaca0dc91bbf2dc668b7
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 16:06:05 2015 -0500
+
+    no comment
+
+commit e184adabe87f3122878ee63f42e9775000834352
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 16:04:48 2015 -0500
+
+    Added unit tests and framework for future tests
+
+commit 9b9e8dbd50082d5f436bdc258c7f9e8be1a5f892
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 16:04:03 2015 -0500
+
+    no comment
+
+commit 04a184a086521e8afe8af143617c132f18b7d2e4
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 16:03:11 2015 -0500
+
+    no comment
+
+commit b359b194f9f3049a3f2561bd7621d8b8a305c9f5
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 16:00:10 2015 -0500
+
+    no comment
+
+commit 24a166db8ff9a5463e9d8484035e60acff255a73
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 15:56:44 2015 -0500
+
+    no comment
+
+commit dd8339bdd2675c0c283a9b4e042dd571b0983491
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 15:55:15 2015 -0500
+
+    no comment
+
+commit 8c916e2d693037d6f7966425aa04e821d2db99c9
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 15:52:53 2015 -0500
+
+    no comment
+
+commit ae95b45b7bc4bf7930950fa1161f693ee9e0b9c7
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 15:48:53 2015 -0500
+
+    no comment
+
+commit 682249db3b325c12a0cb3f3e8aacd3741f4adced
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 15:46:45 2015 -0500
+
+    no comment
+
+commit 795514ee0d1206a48ffea7f689cbd7cfd2cd5540
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 15:36:41 2015 -0500
+
+    no comment
+
+commit 8b3156cf1f3c519207e4262fac097881cf80d6c3
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 20:25:19 2015 +0000
+
+    adding fields
+
+commit 1fe76ac3fe613fe363f4fc5369508eed0296df4e
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Tue Jul 14 15:10:59 2015 -0500
+
+    Update models.py
+
+commit c5815f5e9db804ccf955de130eb841a354faaef0
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Tue Jul 14 14:58:44 2015 -0500
+
+    Update Cities.json
+
+commit 1d1003f69f21de54532635f095d5b9f14cfb0d8e
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 19:41:22 2015 +0000
+
+    handling new fields
+
+commit 769112157300097de94dc472fa0b4d2f7b35994c
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 14:23:14 2015 -0500
+
+    Update Pets.json
+
+commit bcbc2d7688be94ce0857efe9767b0db8ddb2a387
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 14:23:04 2015 -0500
+
+    Update Pets.json
+
+commit 1230aa4f0491dcb5dfe89a7e540cbd9f623bcf5a
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 14:21:20 2015 -0500
+
+    Update Cities.json
+
+commit e7cf6063a7d0fb6f3db55b5f68b32d594e2830cf
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 14:18:17 2015 -0500
+
+    pictures and urls added for cities
+
+commit 734aba0381f6e5c0a96df9134acccb56293afeb4
+Merge: f50fbc7 71ff773
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 19:15:46 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit f50fbc7423e56ba59d1e95376f069fb979412bed
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 19:15:39 2015 +0000
+
+    added views and urls for generic pages
+
+commit 71ff773f5594c6491c4ba195b8f9a2e92b78ef49
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 14:14:07 2015 -0500
+
+    shelter url
+
+commit 23860be3001662d4dd5325a2d943c11f5a51565c
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 14:07:51 2015 -0500
+
+    shelter url
+
+commit 50c841704f6796a32e9409227206cdda827e4725
+Merge: 736a7c0 c0206cd
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 14:06:09 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 736a7c077fd80173be3dba10d3b05cd1522bba25
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 14:05:52 2015 -0500
+
+    shelter url
+
+commit c0206cd240946689d15547965fe7a176b18a20d3
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Tue Jul 14 14:05:48 2015 -0500
+
+    adding links to static pages and some more pics per Daniela's request
+
+commit 093a9ea78f6655d10dbea7127684c7ab2dbc7488
+Merge: 8433934 fb4e7f7
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 18:40:51 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 8433934a4dddbde19a1496d4f6c0029469be5e3b
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 18:40:47 2015 +0000
+
+    added cities list api call
+
+commit fb4e7f79e223ae8fec791dc027e6d912e2aa9a5a
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Tue Jul 14 13:38:52 2015 -0500
+
+    Update models.py
+
+commit 2a36f09b5dd1cffcc1653f454537988d1aef7094
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 13:34:33 2015 -0500
+
+    fix table
+
+commit fb7a1765e7ef9eb0aa2421e28fd008fff07a2b27
+Merge: 8a49a68 0a06da5
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 13:33:01 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 8a49a688b85831e3461f3526afc8b4ac8c73b63b
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 13:32:39 2015 -0500
+
+    fix table
+
+commit 0a06da52a02dff5fce7e348aba259780ce677471
+Merge: afc3bb6 39de55e
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 18:27:36 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 39de55e8f1f14e16b448a78428b296fce438cf6b
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 13:27:05 2015 -0500
+
+    pictures missing for pets
+
+commit afc3bb6e55b43b5b021ecc39fb48369dc8bae005
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 18:26:28 2015 +0000
+
+    added shelter list api call
+
+commit 4a1d53ed550a4ec551eac3393ce75910212acbc2
+Merge: 7dc0549 be96cec
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 13:15:10 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 7dc05499b940dcb1582f62dbb665819e95a943a2
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 13:14:55 2015 -0500
+
+    formating backgrounds
+
+commit 3dfa18f691208742d233b60b0fcfb6d91cbfddea
+Author: Dany <dany@ubuntu.ubuntu-domain>
+Date:   Tue Jul 14 12:54:30 2015 -0600
+
+    recover some css files
+
+commit be96cecf98879ba71ba257da6f2477e71a68fe02
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 18:13:21 2015 +0000
+
+    format correct
+
+commit 17da61f6101d1d7ca1ae83253513ec4d25aabf16
+Merge: ce906e6 edcc9da
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 17:52:25 2015 +0000
+
+    pet list api call works
+
+commit ce906e6945dfaae706f88e6a6441e9bba5a58100
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 17:39:29 2015 +0000
+
+    all pets api call WORRRRRRRKS
+
+commit edcc9dac2f67fc4a72675dc245adc440e558430a
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Tue Jul 14 06:40:07 2015 -0500
+
+    Update views.py
+
+commit fea7078c35d7f5c792fa79013574e1b4c852b19c
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Tue Jul 14 06:27:44 2015 -0500
+
+    Update views.py
+
+commit 1e906b00e91bfd625bab5d28c21e78ed86847890
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 06:18:13 2015 -0500
+
+    Update Shelters.html
+
+commit 2d7c8d7b1c3d50f906e49d0e17b2d0f75a1290e2
+Merge: 69acf24 2f273bd
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 11:17:05 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 69acf24ddf6fa8ea098fc97aa35d0d04a8e8e916
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 11:17:01 2015 +0000
+
+    added api app
+
+commit 2f273bdbf95230ffd78dbfc27774fd72c35104f2
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 06:16:59 2015 -0500
+
+    Update views.py
+
+commit 10de2a6f12d558e394b64bba0663b8a8968f06b0
+Merge: d193fbf c7982c6
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 11:15:10 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit d193fbfcb34f157e2c2ef963383b6c2e7c238b5c
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 11:15:05 2015 +0000
+
+    adding api app
+
+commit c7982c6f03ba67711c7b3a1bcb94bda7f1f79d8a
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 06:14:36 2015 -0500
+
+    Update Shelters.html
+
+commit 232508a8f0e49ccc3fe7bfe6606dd73da79b2fe7
+Author: Dany <dany@ubuntu.ubuntu-domain>
+Date:   Tue Jul 14 06:12:12 2015 -0600
+
+    correct files?
+
+commit f8bbc362c3a4a82c7dd10a9aa695c8e3fbc18c4e
+Author: Dany <dany@ubuntu.ubuntu-domain>
+Date:   Tue Jul 14 06:09:57 2015 -0600
+
+    trying to recover files
+
+commit 037958e42c9c8a56ba0771e67687adb29fae375d
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 05:52:42 2015 -0500
+
+    Update Shelters.html
+
+commit 6e1978c6dcc157ad54f4c1d95fcb3b4cb10ff71c
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 10:51:30 2015 +0000
+
+    adding pic and url fields
+
+commit 10938314eed2d37a112e7ea20b6a7f5b6763dcde
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 05:37:35 2015 -0500
+
+    Update Shelters.json
+
+commit c55a54a081596dbf0cdbdd9caf90cea03c0fc673
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 05:37:17 2015 -0500
+
+    Update Shelters.json
+
+commit 03dda07a60bfcaca554e214dde486d27337d108c
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 05:36:49 2015 -0500
+
+    Update Shelters.json
+
+commit 177a06a7732406d9ec93380b52be8d723a8c3191
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 05:30:59 2015 -0500
+
+    Update models.py
+
+commit 97d17db290459ad7e3b0af7e292fd6ada40420a3
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 05:20:48 2015 -0500
+
+    Update Shelters.html
+
+commit 9aeaa078eb03f505130d8b6e28ac9239f367a434
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 05:19:58 2015 -0500
+
+    Update Shelters.html
+
+commit d68a7c61d5fa37824f8dbe67306fc85ad74c0356
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 05:18:37 2015 -0500
+
+    Update Shelters.html
+
+commit a0e239a33f845fb8a521a3dfbe90cad20f28fb8f
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 04:54:16 2015 -0500
+
+    Update Shelters.html
+
+commit 8bd5bc89d20f7de32aef35c408f70e28e6d676d7
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 04:48:37 2015 -0500
+
+    Update Shelters.html
+
+commit 764cc9d5f912bb30af76d27afc02de6c086dc87e
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 04:47:29 2015 -0500
+
+    Update Shelters.html
+
+commit b14f07d6933cde95a4621d4c775a6452debe9db6
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 04:45:25 2015 -0500
+
+    Update Shelters.html
+
+commit 967414b69715839edf57db154bc1fbbaa4521c00
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 04:44:09 2015 -0500
+
+    Update Shelters.html
+
+commit d654dfa70f2fa7ad7d70f87ea355b982ade886f4
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 04:34:53 2015 -0500
+
+    Update Shelters.html
+
+commit 4e0cc59ef494c879f232ba65a3bd8497fed5b9f6
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 04:32:27 2015 -0500
+
+    Update Shelters.html
+
+commit 2c691ea90174f0a0a7cdc62ec4479e50a2ae8691
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 04:30:17 2015 -0500
+
+    Update Shelters.html
+
+commit 0712551902123bd882e5cb375c7196cc0b08ae8f
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 04:27:38 2015 -0500
+
+    Update Shelters.html
+
+commit 92f48667ae724f91209145f9ac7bd6ad55fc23bb
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 04:25:41 2015 -0500
+
+    Update Shelters.html
+
+commit deea0e14129dedb0ad308a3a223f851f6fe91ca1
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 04:15:05 2015 -0500
+
+    Update Shelters.html
+
+commit ae9bb0bf400767d37266b9ac8dd4ee17ee70ab1e
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 04:13:42 2015 -0500
+
+    Update Shelters.html
+
+commit a0bf2248a33fb98f43d0512e3858213a3669735a
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 04:07:46 2015 -0500
+
+    Update Shelters.html
+
+commit e0385973bdef5f6a6398ae4189610c575d60bb4a
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 04:06:45 2015 -0500
+
+    Update Shelters.html
+
+commit 69029cd3fb97769656dfde5c0156a1ec5176cb36
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 04:03:24 2015 -0500
+
+    Update Shelters.html
+
+commit 583ef727f5df7745acb0b3cc98b604d5b0708cdf
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:59:54 2015 -0500
+
+    Update Shelters.html
+
+commit a4dc1e08d42adc2c6140130b31100579483668d8
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:58:41 2015 -0500
+
+    Update Shelters.html
+
+commit 97d8d38c23eb0d5cdad4427eecd7d323c6b7d38d
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:54:55 2015 -0500
+
+    Update Shelters.html
+
+commit e29c9cfa1ef246b2d477eef4b2e9b69a68e171d8
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:53:15 2015 -0500
+
+    Update Shelters.html
+
+commit eb71d1838aaf43564aab258b15804b6813ab19ed
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:50:03 2015 -0500
+
+    Update Shelters.html
+
+commit 3d7d4bba49f0de452a2f6738b73ce06878c3f604
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:47:43 2015 -0500
+
+    Update Shelters.html
+
+commit 5ef09511900788e484f91dd4da9afa348de4eaa0
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:45:22 2015 -0500
+
+    Update Shelters.html
+
+commit bfd81b4d08082fac6767dba3247b4839a4a125bc
+Merge: 97d4872 e59c061
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 08:44:16 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 97d487286e453f5e0f367e9597bf3e730861b652
+Author: sfmorris <sfmorris@gmail.com>
+Date:   Tue Jul 14 08:43:26 2015 +0000
+
+    removing tastypie
+
+commit e59c061cc80c7e3897e1d7c8eed167e0b1f81256
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:40:05 2015 -0500
+
+    Update Shelters.html
+
+commit d6bfd77aa9fca97f0bb5b6cd2b4bcd2a569751ec
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:37:23 2015 -0500
+
+    Update Shelters.html
+
+commit acc380366bf83fc5732d61ab08985246297c0704
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:33:30 2015 -0500
+
+    Update Shelters.html
+
+commit aaae8f9179991659bc823c2720444443ff7f5c39
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:31:57 2015 -0500
+
+    Update views.py
+
+commit 674b2e7424bb6284f91415e0fd67ed37979051af
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:31:34 2015 -0500
+
+    Update Shelters.html
+
+commit b5acd836f44790f5504948c7457009356867805a
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:31:04 2015 -0500
+
+    Update views.py
+
+commit 5f64f31e56bf1cceb457388dcaee45e0c93a7028
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:24:12 2015 -0500
+
+    Update Shelters.html
+
+commit 8ffce3e7d380fd89717970534eae49ba18c1f89f
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:22:58 2015 -0500
+
+    Update views.py
+
+commit 67e46bca60ec6cc45a60c5ed7a6e2684c039cdce
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:19:18 2015 -0500
+
+    Update Shelters.html
+
+commit 8c159479200753a6ac4ff107dc7786b1df3e68c3
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:18:06 2015 -0500
+
+    Update views.py
+
+commit e7c18247c95113700f3c6dd7ab5a765386c72454
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:16:17 2015 -0500
+
+    Update Shelters.html
+
+commit 34b8684b7bb3c9b51ccbddd1774ed55d381dab6b
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:12:57 2015 -0500
+
+    Update Shelters.html
+
+commit 2529b7bad5b4ee4e8cc875b5df6a204105f0e077
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:10:27 2015 -0500
+
+    Update Shelters.html
+
+commit cf4592527829a2cc5b4c0cff92d82fdfb722eeaf
+Merge: 991ad90 10947b0
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 03:06:52 2015 -0500
+
+    removed merge conflicts
+
+commit 991ad90a439e6fcf70c3e9f523c104c530e1e96b
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:51:36 2015 -0500
+
+    js fix
+
+commit 10947b0b8f7ccef8e52358457cc5731a6b87b87c
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 07:48:38 2015 +0000
+
+    fixing file
+
+commit 220c542fc3b3bfd0ce753c7c4343c76b1978f407
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:46:06 2015 -0500
+
+    Update Shelters.html
+
+commit 3599df561179e13586bc60e9a0c5de99d76dce8e
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:44:21 2015 -0500
+
+    Update Shelters.html
+
+commit c7a8bed39fde87f2da5817d82159f48d1d493979
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:42:35 2015 -0500
+
+    Update views.py
+
+commit b69008b63a2c659a1874633d0c47ec60a136bdf8
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:41:42 2015 -0500
+
+    Update views.py
+
+commit 5052dd40540fafc25df061d69fa7cceba6b5ca2e
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:40:37 2015 -0500
+
+    Update views.py
+
+commit b84fb315dd8e512a1a57b9b169e4297ec9211360
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:38:31 2015 -0500
+
+    Update Shelters.html
+
+commit 19e8131d2737a0ee6310b37e5545570e325694b1
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:37:13 2015 -0500
+
+    Update views.py
+
+commit d9ac0df8a62186349e620ee5f00fac6137b9fbd2
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:13:55 2015 -0500
+
+    Update Shelters.html
+
+commit 20e8b6ed17d8e787bc0aeb780b05f7b228774dc3
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:11:55 2015 -0500
+
+    Update views.py
+
+commit 90f3cb26ff72f7c086270f9cf7ed4bad930877d5
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:11:13 2015 -0500
+
+    Update Shelters.html
+
+commit 5db0b7acde161d6ae301cf75a1798d795a735cfc
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:06:47 2015 -0500
+
+    Update Shelters.html
+
+commit 73bebf936f493204461db6bf82287f21390c151c
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:05:16 2015 -0500
+
+    Update views.py
+
+commit 921ba5ed496a40a9615c5773ebb4f0365bc592b7
+Merge: 4f9461c 946469f
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:03:44 2015 -0500
+
+    Merge commit 'stash' into dev-branch
+
+commit 946469ff72627535260bdb386febb50a352214c0
+Merge: 6ebde3a c3124ca
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:03:38 2015 -0500
+
+    WIP on dev-branch: 6ebde3a js fix
+
+commit c3124ca70f79beaa47517bbf2ea212ba0bc8f179
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:03:38 2015 -0500
+
+    index on dev-branch: 6ebde3a js fix
+
+commit 4f9461cfd4f87c50f446ed68ec5033676880beb5
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 02:01:33 2015 -0500
+
+    Update Shelters.html
+
+commit 6ebde3a54a2fce6380664519138745c8a83afa05
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 01:59:50 2015 -0500
+
+    js fix
+
+commit c631ea9d7034c089492c5173888b8900ec0bbcbb
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 01:58:53 2015 -0500
+
+    Update views.py
+
+commit ccb95d68a1e9012f86a5449997bb03abc7778358
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 01:53:39 2015 -0500
+
+    Update views.py
+
+commit 382f5649d4c488ae6e789c5f908cc90c9d77d265
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 01:52:54 2015 -0500
+
+    Update views.py
+
+commit 84d80bd9f8fbc2c4cecab2fb7b9c11ec57b901e5
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 01:51:20 2015 -0500
+
+    Update views.py
+
+commit 6be2ff4c85d2a29d1298a59bec96bf56f064615d
+Merge: b49de57 33fc871
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 06:48:11 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit b49de5724ede7f33309bb745ca230eca6e32cc77
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 06:46:43 2015 +0000
+
+    updated views and urls
+
+commit 33fc8713caab3f51dc046727f9927345a9906d61
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 01:43:36 2015 -0500
+
+    Update makefile
+
+commit 075f2f7304fb743758251919c7b0ec640a44a9b2
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 01:43:15 2015 -0500
+
+    js fix
+
+commit 216344ac4b108ec3a0ff48ad6c7491f79592486f
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 01:35:49 2015 -0500
+
+    js fix
+
+commit eabc9c5737c39c9f52f29f4324d2b619e9c9afb4
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 01:31:45 2015 -0500
+
+    js fix
+
+commit ca726f444f630af5fa4de6253d6afc0c28206aa2
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 01:27:37 2015 -0500
+
+    js fix
+
+commit b79472f11959678e9151175c2e962d464d1082f7
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 01:16:55 2015 -0500
+
+    Update makefile
+
+commit 978dfb2bea44d1504f3e9f56e2d6d682bcb436c6
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 01:15:44 2015 -0500
+
+    Update tests.py
+
+commit 818d9bc8f8f080d842662d7ed3b08f10e75221b0
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 01:13:20 2015 -0500
+
+    js fix
+
+commit 1de38548a3fe38348b4f8d2a52ce27d4ba507c45
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 01:11:58 2015 -0500
+
+    js fix
+
+commit dfbdb51f4ddedfedeb9373635ea2c7273502573b
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 01:04:37 2015 -0500
+
+    js fix
+
+commit 3a15dc5dae268d6caf3796fbfefdb162ce2090d3
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 01:01:33 2015 -0500
+
+    js fix
+
+commit df5b972eb98953d29538da52e4c6469de7d2727e
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 00:51:44 2015 -0500
+
+    js fix
+
+commit cbe2258048ee6c9a5c17e49f759c75e2b98ef685
+Merge: 8a91918 53745d3
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 00:37:43 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 8a91918fbe9fbf6b7c6829f51a8377c8c83e9dc3
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 00:37:32 2015 -0500
+
+    js fixes
+
+commit 53745d32c6e380f65e66a9b5f3bf163daeae5ce5
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 00:37:25 2015 -0500
+
+    Update tests.py
+
+commit 314b3ae7a079ebcec8ebc4d749b36f5fe55a4d9c
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 00:34:16 2015 -0500
+
+    js fixes
+
+commit 5774592c4cccdc6082ffdc81f8c6aae4a1bd7e84
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 00:29:14 2015 -0500
+
+    js fixes
+
+commit 2b97060c12616c4e5d0c2fe39a2b2d17d37ade2b
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 00:28:49 2015 -0500
+
+    Update tests.py
+
+commit b007fefb05ef85b89224a184a1561e96d467ef36
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 00:19:49 2015 -0500
+
+    Update makefile
+
+commit 15502c45ffd6fe88c0e1ce773b8b46c584dfc738
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 00:17:20 2015 -0500
+
+    js fixes
+
+commit 1d6ae23915179567b88144aa8e8f872f585c8ebb
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 00:16:16 2015 -0500
+
+    js fixes
+
+commit 04ea375cdae857d4252033deebbee3ff72e0633a
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 00:13:20 2015 -0500
+
+    js fixes
+
+commit a4a8461ca46b8b26523e82a193c8a4c1577a8781
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 00:11:30 2015 -0500
+
+    js fixes
+
+commit b2172764d4c4c41b0a9057b8bfd15a263abc3f9b
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 00:09:50 2015 -0500
+
+    js fixes
+
+commit cfc57115168e77a878a229a92856898964f8c070
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 00:08:49 2015 -0500
+
+    js fixes
+
+commit 3587281053a54614070d7fbf15b8c9df0f91ffc2
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 00:08:33 2015 -0500
+
+    Update makefile
+
+commit 0014f1446622553d2bfd5ab553175e651afe1c45
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 00:07:50 2015 -0500
+
+    js fixes
+
+commit 5a5ed913771f9a03b22ea13e1d6354d8b7d9cc67
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 00:04:49 2015 -0500
+
+    js fixes
+
+commit b8113e5bbf135bdcb9e617f6c13501cd475dd426
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 00:03:22 2015 -0500
+
+    Update tests.py
+
+commit b7d98765d8936d1aae6e7de488d9d0fc475cb6a6
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 00:01:39 2015 -0500
+
+    Update makefile
+
+commit 96fab3b0cb4e432e8c4be253dc9a36b55c60c1a5
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 00:00:40 2015 -0500
+
+    js fixes
+
+commit 540b252c3cdfddf2b6a842ac3b314de9958ad31b
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 00:00:11 2015 -0500
+
+    Update tests.py
+
+commit 0997bc2fd1dfccfbaa631e4c61bf96bff7f46b27
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 23:59:16 2015 -0500
+
+    js fixes
+
+commit 7a803d11fe8e689799abae2e3890f65dbdae4e6e
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 23:56:33 2015 -0500
+
+    Update settings.py
+
+commit 1fb2848211e40324d40d8ff6cde47fdc470e5a5b
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 23:55:08 2015 -0500
+
+    js fixes
+
+commit b78b9f81a8c975d5745cfd79a90f286db87a638c
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 23:53:05 2015 -0500
+
+    js fixes
+
+commit 5a11f46d96bbba735bf77059ed135e3e17bbea1e
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 23:51:52 2015 -0500
+
+    js fixes
+
+commit 2402890570c9d984e214fd16a3fbaf298693520f
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 23:49:21 2015 -0500
+
+    js fixes
+
+commit 9b103f6721042fa67806c1d29cf4de96c3fd96cc
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 23:46:54 2015 -0500
+
+    js fixes
+
+commit 5c841ecccfcd664f09e824f0602eefac1f7c6956
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 23:38:07 2015 -0500
+
+    Update makefile
+
+commit 2f13f60b56143c5b5a6f084d2e607762905b1020
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 23:34:44 2015 -0500
+
+    Update makefile
+
+commit e49a517ae70e52ef923f4657bdc8bf9f91b2c8ab
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 23:34:09 2015 -0500
+
+    Update makefile
+
+commit 77dd0be7893279b45337725ca805fa2c6a4560db
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 23:31:56 2015 -0500
+
+    js fixes
+
+commit 779d714ba18d370b8c6dfb6747f5641ce8f568f0
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 23:30:07 2015 -0500
+
+    js fixes
+
+commit a11d5a56ce7ea944dce5bbb63f398bb5daaca466
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 23:26:58 2015 -0500
+
+    Update dependencies.txt
+
+commit 5a9eb6797ca4afb75a797570ae8cfa5d9228059f
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 23:26:40 2015 -0500
+
+    Update .travis.yml
+
+commit 8f982aa3662f53422d98aa10eccc10a30a4574d6
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 23:20:41 2015 -0500
+
+    js fixes
+
+commit ab87799152636a98d8c1e27c90a6eaac653ee229
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 23:18:48 2015 -0500
+
+    js fixes
+
+commit 466fd58ea63add3b959d27be91216adcbf59a5c8
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 23:16:21 2015 -0500
+
+    js fixes
+
+commit 37d67a08585b00e058f0796d32aac35b02b6610f
+Merge: bdd961a e4ac1ad
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Mon Jul 13 23:13:47 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit bdd961a0250a14d1cdd5a7ace572550ecfaff9cb
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Mon Jul 13 23:13:44 2015 -0500
+
+    fixed import problem
+
+commit e4ac1ad99e43bc6624efd23d448035168c492360
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 23:09:58 2015 -0500
+
+    Update makefile
+
+commit 8f2b2a78efab2db666b9fcde06e1139520e3062b
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 23:08:53 2015 -0500
+
+    Update makefile
+
+commit 7ef65e8ba26764274f81cddd49d36cdadc8c22be
+Merge: 660fd9c ae5af30
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 23:07:22 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 660fd9c39a4fad5fa0acf8fe77e4fad6d17fbcda
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 23:07:07 2015 -0500
+
+    js fixes
+
+commit ae5af3045502dacea75f333e8936668e2f3824da
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 23:03:41 2015 -0500
+
+    Update makefile
+
+commit 2bc9b013f5071b3a707c7b6e033ccb2965da9120
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 23:02:02 2015 -0500
+
+    Update settings.py
+
+commit 5996f957fc5a9504454a1ace0b4a6325344e44d6
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 23:01:57 2015 -0500
+
+    Update makefile
+
+commit e6c350e19d3f1cfa5a3ef0d14db82e5267ef39dc
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:59:13 2015 -0500
+
+    js fixes
+
+commit 13dbe5296b588115fb7a1eff9daf97ab669a498f
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:57:26 2015 -0500
+
+    js fixes
+
+commit 04c2379dd373fde1ebac8778e6b55b126b24381c
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:55:57 2015 -0500
+
+    js fixes
+
+commit 025e8146b3b402da706377ad000d82bebaf51f2c
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 22:54:16 2015 -0500
+
+    Update makefile
+
+commit 034169cbeb38323a690d4b93bc866d9901b6fecc
+Merge: 22102ad d930261
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Mon Jul 13 22:53:25 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 22102ad57e1360e06652b0f19bbb562a3cb00064
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Mon Jul 13 22:53:10 2015 -0500
+
+    fixing import syntax error
+
+commit d9302614da4bb6d60ecfa16a0e893f11278a05aa
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:51:07 2015 -0500
+
+    js fixes
+
+commit 38a347bdd41787797d2583710eba2a69295f304a
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 22:50:47 2015 -0500
+
+    Delete tests.py
+
+commit d910a3be626df67880f153a200d04bdbf02b3e26
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:49:26 2015 -0500
+
+    js fixes
+
+commit 1765873bfff0a5ed929c16aada2791829a723050
+Merge: 963071e 4385502
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Mon Jul 13 22:48:26 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 963071ed25f5467c9a92f91c7824a989034b83d4
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Mon Jul 13 22:48:23 2015 -0500
+
+    importing PetResource from api
+
+commit 43855025ec42a36e33887d64779d95b2d79f89d4
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 22:46:09 2015 -0500
+
+    Update makefile
+
+commit f82a0b67e09ad224abe16a8a34ace5b6e51eb352
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:43:38 2015 -0500
+
+    js fixes
+
+commit bd7d7e48d8095acf6a9d50246210dd62c7f028b2
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:42:07 2015 -0500
+
+    js fixes
+
+commit 311578d7fa66bf7b631bad6b5c9655b93275cb76
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 22:40:34 2015 -0500
+
+    Update makefile
+
+commit 86ab937c06d2c144a1f7123a416a964e335358b9
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:39:47 2015 -0500
+
+    js fixes
+
+commit ec3c55897f8f89d516262aec5bb7a0f530156f33
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:38:28 2015 -0500
+
+    js fixes
+
+commit 7d161ff9772fe8994ca640663813fe5b8bb06e6b
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 22:37:33 2015 -0500
+
+    Update dependencies.txt
+
+commit 73ec1b2edc02e66816311494e3c1000a4e18793c
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:37:20 2015 -0500
+
+    js fixes
+
+commit 776b59315977b95b8ac37ad8b63aef540a390953
+Merge: eda5af4 0b3b292
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:34:44 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 0b3b292ee4b4c8612912c464cd842cf00223cb91
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Mon Jul 13 22:34:18 2015 -0500
+
+    Update dependencies.txt
+
+commit eda5af44dfb155bde7a4a37ee2e9e3ce88fcd1e8
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:34:14 2015 -0500
+
+    js fixes
+
+commit dcd12452d5ff6734661ac013ceefff84f1e0cd13
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:33:20 2015 -0500
+
+    js fixes
+
+commit 45f0a1bd1670fcf041c8d9ee64f11b3cb69bc05c
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:30:41 2015 -0500
+
+    js fixes
+
+commit affd2a574c04e52f5e97a42e899733f77a821a79
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Mon Jul 13 22:30:33 2015 -0500
+
+    Update models.py
+
+commit ecf252bad809900d91b44b088ff171d54d938f70
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:25:01 2015 -0500
+
+    js fixes
+
+commit 400f6a5f6eb8439f25dadbaa7e434a97e45f85a9
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 22:24:01 2015 -0500
+
+    Create tests.py
+
+commit 4e922cf4d40d30889b946c61e42664ffa0c743e4
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:22:47 2015 -0500
+
+    js fixes
+
+commit a179ac972641d65d7ddae0dada24d1eb8d08b333
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Mon Jul 13 22:22:14 2015 -0500
+
+    added PetResource url
+
+commit e794b590d9a2a40a5481cc56ac0b81d05fffc31e
+Merge: dbee17f e7062b4
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Mon Jul 13 22:20:42 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit dbee17f725eadf22439f74f219db08920f8a936a
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Mon Jul 13 22:20:12 2015 -0500
+
+    added PetResource
+
+commit e7062b417af7ca027dc7540991d820943ce810a8
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:20:05 2015 -0500
+
+    js fixes
+
+commit 515621754d379efee8cd27f7b71fbbdf788f019a
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 22:18:26 2015 -0500
+
+    Update makefile
+
+commit dcc1e834e1070d98659124d02a8a4307b3459a9c
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:17:58 2015 -0500
+
+    js fixes
+
+commit 8ba4691e17880b1c42520769a9da33ed837cb38d
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 03:16:18 2015 +0000
+
+    Updated views.py
+
+commit 196bb754dbfa6a3e8deb64d1401ebc2f5c4b375a
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 22:09:03 2015 -0500
+
+    Delete models.py
+
+commit 4e52dfe8bd2dfd83766bdb6cc87cc284098bdfb4
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 22:08:11 2015 -0500
+
+    js fixes
+
+commit daa173151b6ec5383732de3f364a4154cde1f094
+Merge: 933fb81 67fe505
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 03:06:03 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 67fe505164ee011c14dd1d0d1ac9e5dff1e41858
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 22:05:11 2015 -0500
+
+    Update makefile
+
+commit 933fb81a68e12c02c2dac507f0ab93e6c375cdbc
+Merge: c214f42 f8b1a08
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 03:04:02 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit c214f42b1b8f0a1ddae5d7bb1160c0ba70eceef0
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 14 03:03:27 2015 +0000
+
+    add tastypie to installed_apps
+
+commit f8b1a086757156bb507a711a44b74602e3d792d0
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 22:00:29 2015 -0500
+
+    Update settings.py
+
+commit 50301e3642a2cf9b7b67b6fe1d4df8e015f691af
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 21:57:24 2015 -0500
+
+    js fixes
+
+commit aea9d788dbda168743eb8970b654d2dd31c57d3f
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 21:56:28 2015 -0500
+
+    Update settings.py
+
+commit 40aac017bec25676d8159f14efee347a783a3f7b
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 21:55:11 2015 -0500
+
+    js fixes
+
+commit 308c53264625a23ced84402eb782982d77046bb9
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 21:49:34 2015 -0500
+
+    js fixes
+
+commit 9aca0170e3b46bd8cd9311a49ffb3818519b1822
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 21:48:33 2015 -0500
+
+    Update settings.py
+
+commit ea92784d9fb76842f9072015d86c032aa0908994
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 21:45:23 2015 -0500
+
+    js fixes
+
+commit 7c74912f4f5660ab01d111b01ed50497ef3d02cc
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 21:44:31 2015 -0500
+
+    Update settings.py
+
+commit e3e70df3d3aa4f081c3c0c740429e59c54be4245
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Mon Jul 13 21:43:09 2015 -0500
+
+    Update urls.py
+
+commit 786b33bda9bcdfa0b7da07562ed901c299497ee7
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 21:41:49 2015 -0500
+
+    js fixes
+
+commit 0f10ee2cc27535179fb87d633d435d623e52d87a
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 21:41:06 2015 -0500
+
+    Update settings.py
+
+commit 0e0cb4c29edf4a59e20ed7a5b93a088ec479e554
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 21:40:11 2015 -0500
+
+    Update settings.py
+
+commit d9b1ecc47a75a51157c80a20aa69ec61e5c48874
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Mon Jul 13 21:37:51 2015 -0500
+
+    adding api urlpatterns
+
+commit 4e9c19c8c6684a9c8ac1e8979f39c5def3924585
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 21:37:27 2015 -0500
+
+    context switch
+
+commit 31b906d65655ec83643d83bc01f3e506c780e3b7
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 21:30:42 2015 -0500
+
+    Update settings.py
+
+commit 006e1d960e451a429b9c2d65f333388f32fc239b
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 21:28:47 2015 -0500
+
+    context data
+
+commit cab7d7285802a208162ca36585f779ebad2629d9
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 21:25:07 2015 -0500
+
+    Update settings.py
+
+commit 8afe6d6ea8f9fcd4b7c9f629a37624764ee9027d
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 21:23:25 2015 -0500
+
+    Update tests.py
+
+commit 48fe578dced702f1613286d112ae32fc2cbc8f74
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 20:46:01 2015 -0500
+
+    Update tests.py
+
+commit 4bfb7ce6efb3c2f1323c6fbe9f12d600c01ff41e
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 20:40:22 2015 -0500
+
+    Update tests.py
+
+commit 108f565defbc4a45050b98e232dd655d1f87c56d
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 20:37:09 2015 -0500
+
+    Update tests.py
+
+commit 7582578251bc7368a70552dd202d3e1449c2aa55
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 20:35:35 2015 -0500
+
+    Update tests.py
+
+commit 6755834bbd9ce2e8fc01efe95bd9033cd5405dd8
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 18:47:01 2015 -0500
+
+    Fixed typo
+
+commit 6828816c3245adfb7d351e461f191e4256c37648
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 18:46:31 2015 -0500
+
+    Another commenting out needed
+
+commit f703492968baf1fc221d7a4f9ca703b3d8c9ae2d
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 18:44:26 2015 -0500
+
+    Commented out for now
+
+commit 6b8e7bb899c51602dfc2ffa39d5787151cc21471
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 18:43:23 2015 -0500
+
+    Missing import
+
+commit 4ec3eeb25a66ca640aa9633d6e747d579d861b75
+Merge: 41cd633 57ab483
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 18:41:56 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 41cd633c162425e89d208b569fedcf57f0bfe9a2
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 18:41:34 2015 -0500
+
+    get diff url
+
+commit 57ab483a4876d6bff958deb1b8c3e29a00d42835
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 18:41:28 2015 -0500
+
+    Sending database info as context
+
+commit 1eb6ccdf6fa0facfe97c66844a5f077a51ab69ab
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 18:39:13 2015 -0500
+
+    Update tests.py
+
+commit 500687c7ffb363fdd317bc8e9b541d18b632313d
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 18:35:01 2015 -0500
+
+    json path changed
+
+commit 0b33306f9204773ee6a43c752898f72615171ed8
+Merge: 996f766 90cede8
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 18:34:32 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 996f766aa0d1cbf7f3a8d57b4da36341b0118fea
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 18:32:10 2015 -0500
+
+    static syntax html 4
+
+commit 90cede8a3a05b609111d3562701c7b43c050a9e9
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 18:29:30 2015 -0500
+
+    Update tests.py
+
+commit f17f858c021785645545f11462c2807f461b4d39
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 18:25:58 2015 -0500
+
+    static syntax html 3
+
+commit be66f1398c446ce449634a94fb8bbafc9b85dd07
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 18:23:36 2015 -0500
+
+    static syntax html 2
+
+commit 8c3efcd90ad04723397b9663189d7bb7d5f963d6
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 18:21:30 2015 -0500
+
+    static syntax html
+
+commit 34fb69d99f3209db05853934c426475af3d2eb6a
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 18:11:56 2015 -0500
+
+    javascript push
+
+commit 088a6c26290e5eb695c088fe6b0e14e8ff8fe298
+Merge: ac9e344 6c910aa
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 23:01:19 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit ac9e344c3fa9e482ac1fad479cbe43435e6a99bc
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 23:01:14 2015 +0000
+
+    standardizing attribute names
+
+commit 6c910aae7c8957fdb27049a78f35fec981a1f726
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 18:00:58 2015 -0500
+
+    Update tests.py
+
+commit a6cf27ccd86ea70e5efaea873e29b900cbf87ca2
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 17:57:05 2015 -0500
+
+    Update .travis.yml
+
+commit de5cb280e5168f1f05d99c6433c95efda79be53f
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 22:53:06 2015 +0000
+
+    no more pyc files in git
+
+commit 3890dd8b9c0330a964c6f46089dcd59eaf862c51
+Merge: 8911d4c cf1f157
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 22:50:48 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 8911d4c01f282bad92a5a7ae2fb2b2f36f6fdf21
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 22:50:31 2015 +0000
+
+    clearing old migrations
+
+commit cf1f157930389fed230538438532677759c630c6
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 17:49:00 2015 -0500
+
+    Update tests.py
+
+commit 17458721db3dcfde73c2fae51ccf251d0935812e
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 17:47:08 2015 -0500
+
+    Update models.py
+
+commit 8796762a7d5d7f880e350bbe2b1853076d4c7c4a
+Merge: 39bbf42 ab0e75e
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 22:43:32 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit ab0e75ebc4d5b6420641892cb3e6356db8784f19
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 17:43:15 2015 -0500
+
+    Update models.py
+
+commit 39bbf4289f868a2a61165e53fcb0528e24e8a752
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 22:42:56 2015 +0000
+
+    standardizing attribute names
+
+commit a003bbbf850d7e01b4d0b6b5e7e6b6ad953505a7
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 17:42:10 2015 -0500
+
+    Update models.py
+
+commit 5f215d78576da4fa44c0e2dde863c2c18c7523cd
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 17:41:55 2015 -0500
+
+    Update tests.py
+
+commit a075623833fab3956b0f7db92b87b6cacbbc1000
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 22:38:12 2015 +0000
+
+    standardizing attribute names
+
+commit 349d04e49b2871131018453c55452ccbba564ad4
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 17:19:46 2015 -0500
+
+    Update models.py
+
+commit c7e4fc6b11a3c75762984c1a2d0e74801996c3ed
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 17:09:57 2015 -0500
+
+    Update .travis.yml
+
+commit d11bc5ab06d3ffe1dc517145f8ec759ad1f083e1
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 17:00:33 2015 -0500
+
+    Update .travis.yml
+
+commit 1465c9a7bd031f6b25d1cf7d5db6d71be6c5ce2e
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 16:57:07 2015 -0500
+
+    Update .travis.yml
+
+commit bbde31690ad2da02a01d27a5ea25f30279706b76
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 16:53:21 2015 -0500
+
+    Renamed test_insert_script.py
+
+commit 8153b9752ec54c0262542ebaaf102f2a1cdaa4eb
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 13 16:50:14 2015 -0500
+
+    added background pic
+
+commit fe188adf4401efcfbbbbd237da4cecbaaf169c2f
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 16:45:36 2015 -0500
+
+    Update tests.py
+
+commit 764d04f3e788f61542b2b5c488ed32c55723c3fd
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 16:43:51 2015 -0500
+
+    Update settings.py
+
+commit 6b384f0d8704f373099494d749334677d6f1f885
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 16:37:19 2015 -0500
+
+    Delete db.cnf
+
+commit f37c19847286100b67fbde277692b39329e15286
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 16:36:15 2015 -0500
+
+    Update models.py
+
+commit 22f6da0706b7030045a3556c9e77d028baebd779
+Merge: 5296356 322d063
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 21:20:55 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 5296356fad36e5240a8d9433a9ca94f158af5b92
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 21:20:43 2015 +0000
+
+    populate db with stub data
+
+commit 322d06356fedbdb1781d5ea719f97b337396a8d2
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 16:18:44 2015 -0500
+
+    Update tests.py
+
+commit 98fafd230abc38d9216b12e50ed350e6813f29e2
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 13 16:00:54 2015 -0500
+
+    Update .travis.yml
+
+commit a2bafc30458ab5bd026bd2c11b9954ae2a4c66e3
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 06:26:19 2015 +0000
+
+    removed constraints
+
+commit 9329834e6b0170331dc6f079160ebb5c3c7f2bae
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 06:13:22 2015 +0000
+
+    renamed colliding attributes breaking insert_script.py files
+
+commit 2e2079074947d47b7ea4ca0459da4282d19450a2
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 06:01:19 2015 +0000
+
+    adding to the _real_ models.py
+
+commit 4c3b753b796231aa9aff7c1d510cacaff2ea25b3
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 05:48:32 2015 +0000
+
+    adding groomer_url and park_url to _insert_script
+
+commit a8ff10942cbc50ff175e57c9ca937e63906faea7
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 05:19:12 2015 +0000
+
+    adding groomer_url and park_url
+
+commit c5d85b1ef49fb816ea261c82d10d92275db36bd9
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 02:41:28 2015 +0000
+
+    removed stray .pyc files
+
+commit daffdefe240ab12c3a2b38c5eb0dda230b31f9e5
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Sun Jul 12 20:39:36 2015 -0500
+
+    created different tables.css per model
+
+commit 4cd53789e0288769c02e817e59c2f8a7121f921e
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Sun Jul 12 20:31:38 2015 -0500
+
+    Change design for tables
+
+commit dfc72d12b4bc62c20098c48a856ac41d1f0c158a
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sun Jul 12 19:34:09 2015 -0500
+
+    Update tests.py
+
+commit 23c6e6b163429c1d3d3243cb4e749235e9e2dbc3
+Merge: 8afd5e9 0fcf5c2
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Sun Jul 12 19:25:15 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 8afd5e924f9dfb914aa7a251b3dbad8563438d74
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Sun Jul 12 19:24:59 2015 -0500
+
+    Created tables and made them sortable
+
+commit 0fcf5c2cf56d2828a783a022f302e8f8a434c068
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Mon Jul 13 00:19:42 2015 +0000
+
+    adding scripts and migrations
+
+commit 82b54535306a4a9f30d4a381243b5dfe536be5b2
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sun Jul 12 18:36:51 2015 -0500
+
+    Update models.py
+
+commit 950137c8c6138f5e34c0461f3873655ed508e740
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sun Jul 12 18:33:15 2015 -0500
+
+    Update .travis.yml
+
+commit a8f3a3b3ba9f13b901d3528532a8ce08ea2964f3
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sun Jul 12 18:29:48 2015 -0500
+
+    Update .travis.yml
+
+commit 6a699c865c8778e8e7901db6f3be92d66ed965dd
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sun Jul 12 18:25:56 2015 -0500
+
+    Update settings.py
+
+commit 8c6d6381bfb3992612b6da8a5db4ee9fa78fbc44
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sun Jul 12 18:20:36 2015 -0500
+
+    Update models.py
+
+commit 63ad96c624f8e9d3fe5cb15a40466c7e3a13770d
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sun Jul 12 18:00:27 2015 -0500
+
+    Update models.py
+
+commit 07fe1a1ccf71f9b4fc4081bcc918722e5a3fca2b
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sun Jul 12 17:57:50 2015 -0500
+
+    Update settings.py
+
+commit ec871b8e3bd82c82a241bb26cd61d2e2994e50ae
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sun Jul 12 17:57:17 2015 -0500
+
+    Update settings.py
+
+commit 6b1e196c1b595ef3c058c20aaaa696fb2f2ed273
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Sun Jul 12 16:45:50 2015 -0500
+
+    Moving script
+
+commit 42b4a1f1345b4c42cf1690b7710dd943c4f965eb
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Sun Jul 12 16:43:09 2015 -0500
+
+    Adding script to populate database
+
+commit 714c170e7f7719fac4ecbbb28432ba432f520999
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sun Jul 12 15:36:24 2015 -0500
+
+    Update .travis.yml
+
+commit 8716b5792f9bda2e233bf641c5b999d8d29a90da
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sun Jul 12 15:31:49 2015 -0500
+
+    Update .travis.yml
+
+commit bf763bbb8821f17199ae5d89e21c48f47ec8a7e3
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sun Jul 12 15:22:42 2015 -0500
+
+    Update .travis.yml
+
+commit 88b72c7a617838a0ae0dce1b71e676e2be95b9f4
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sun Jul 12 15:17:00 2015 -0500
+
+    Update db.cnf
+
+commit 8aa09232750931f56ae8c464f204afa2e04019c3
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sun Jul 12 15:16:31 2015 -0500
+
+    Update settings.py
+
+commit 5cbadcbf1230fe2451996963239a5b771ec5c45c
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Sun Jul 12 14:19:03 2015 -0500
+
+    Updated directory paths
+
+commit 553ccf1d3764e9bd342e31be325d851a2f7bf8b2
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Sun Jul 12 14:15:35 2015 -0500
+
+    Updating directory
+
+commit b67a55250591b89ff93cf3719c58ec9367b4e4ec
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Sun Jul 12 14:14:30 2015 -0500
+
+    Updated directory
+
+commit 527a8c6842239aca08466f4c38402d4aa3da3608
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Sun Jul 12 14:12:38 2015 -0500
+
+    Updated directory for html files
+
+commit 00205a7dcb0955509b4bcea311a6f88035cdc661
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Sun Jul 12 13:47:17 2015 -0500
+
+    Added missing views and urls
+
+commit e634d98a6884d1071c07f2a09e1c1edf4d064a2c
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sun Jul 12 01:04:46 2015 -0500
+
+    Update settings.py
+
+commit 3ef6d1a2f1c2b64c21dd90716af9b4dfb3602432
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sun Jul 12 01:01:09 2015 -0500
+
+    Update settings.py
+
+commit ea0de49e65b0a78dc5e6cd396288ba25b32cf06d
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sun Jul 12 00:58:45 2015 -0500
+
+    Update settings.py
+
+commit a5b4bc609042dcbc6ce8823b46bdf503e9c7d6d7
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sun Jul 12 00:54:44 2015 -0500
+
+    Update settings.py
+
+commit 34d75c90d816e24a595e2251acdb15e08fd96cce
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sun Jul 12 00:32:32 2015 -0500
+
+    Update db.cnf
+
+commit 03ed6af475c41d337e01a380fafc2e7a04e67057
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sun Jul 12 00:27:36 2015 -0500
+
+    Update .travis.yml
+
+commit 1eeeeb576cb9052be88db1c871e714ab05e0f62d
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sun Jul 12 00:04:08 2015 -0500
+
+    Update manage.py
+
+commit f26091d739795367445ea7ad047519dc03df57d9
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sun Jul 12 00:03:28 2015 -0500
+
+    Update manage.py
+
+commit 37c355ecbf87b9ba810dd58250d8a1dea5c5a37d
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sat Jul 11 23:58:48 2015 -0500
+
+    Update makefile
+
+commit e61692a1eccd86ad4dd09cc38b9a11d84a471398
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sat Jul 11 23:50:46 2015 -0500
+
+    Update settings.py
+
+commit 9df696924ab7faa54edfb35b06ee9b26d8c2af62
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sat Jul 11 23:49:06 2015 -0500
+
+    Update settings.py
+
+commit f257169052e5c39eeec07b54c034d3a89a485559
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sat Jul 11 23:46:40 2015 -0500
+
+    Update settings.py
+
+commit e604813559b5780c321166751a8cbcaac9c2172d
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sat Jul 11 23:46:02 2015 -0500
+
+    Update settings.py
+
+commit 0090de19a69347baf0a79c54092a2982b174281a
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sat Jul 11 23:45:28 2015 -0500
+
+    Update settings.py
+
+commit 4bc7ec668685305923ffd5c868f1166b1a67db87
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sat Jul 11 23:44:56 2015 -0500
+
+    Update settings.py
+
+commit 89114e9efabc36a972fed52d61e8777946f1770a
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sat Jul 11 23:39:57 2015 -0500
+
+    Update settings.py
+
+commit 34e9c810df5418a5fb1bbdf058bc6e1941952bdc
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sat Jul 11 23:00:28 2015 -0500
+
+    Delete db.sqlite3
+
+commit fdee364e0f3334702089b8bd547ce6c3ef8311a2
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sat Jul 11 22:57:33 2015 -0500
+
+    Update tests.py
+
+commit ba35c19e7331334c60fa9177e339003e1512432a
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sat Jul 11 22:55:52 2015 -0500
+
+    Update db.cnf
+
+commit 7a14fb4de2f420265f6064772d0a0c5e6ed3370a
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sat Jul 11 22:50:29 2015 -0500
+
+    Update makefile
+
+commit f1c051136b1786e12bbbe5463f6d7565fc3d9730
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sat Jul 11 22:49:14 2015 -0500
+
+    Update settings.py
+
+commit 226583c4c66105614297dc23ee0a0d6657776a8b
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sat Jul 11 22:45:51 2015 -0500
+
+    Update .travis.yml
+
+commit 72e246c8c3f2b03a57af185a5967c156213b9335
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sat Jul 11 22:21:28 2015 -0500
+
+    Update settings.py
+
+commit 71d7ad00ee167d8dfe11111ace9de971c56651ee
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sat Jul 11 22:19:10 2015 -0500
+
+    Update settings.py
+
+commit 6749acc5d52ba2b7fe1906de3f09742d371b6b6d
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sat Jul 11 21:38:40 2015 -0500
+
+    Update manage.py
+
+commit 007d7ea43fa0b0bbf3c9887f564d31bfbf956b87
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sat Jul 11 21:35:23 2015 -0500
+
+    Update manage.py
+
+commit 65ccb84f8f74d86a1894fddb37bda0e2b0eeba1c
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sat Jul 11 21:25:47 2015 -0500
+
+    Update manage.py
+
+commit 441f2fff9a7b6f6667688649ee054575dfed83c5
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sat Jul 11 21:22:28 2015 -0500
+
+    explicitly use virtualenv python3.4
+
+commit 91f6ae71b564c6e1b175f209ad6de88e95d3dfbf
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sat Jul 11 20:40:59 2015 -0500
+
+    Update manage.py
+
+commit 24841f1c3741d8c715e076b24c43a31ffd13582d
+Merge: d6d88e1 0599b50
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Sun Jul 12 00:58:35 2015 +0000
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit d6d88e1da9f76805672e87b89b43cb3cace9fefd
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Sun Jul 12 00:58:03 2015 +0000
+
+    removing nonstandardly-located django folder
+
+commit 0599b50e6fbacb203908c8e73d7a4146f12708ad
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sat Jul 11 19:04:36 2015 -0500
+
+    Update db.cnf
+
+commit a75378c03ae0f24b2416a15277e03179439f98df
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sat Jul 11 19:04:27 2015 -0500
+
+    Update db.cnf
+
+commit 1fc6150634c12741027c26896c0a0ac170935e67
+Author: nelmiux <npererar@utexas.edu>
+Date:   Wed Jul 8 01:07:52 2015 -0500
+
+    Updated
+
+commit 3db40404178c416700c03ba556ab3dc40cd6a9d2
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Wed Jul 8 00:52:28 2015 -0500
+
+    Update .travis.yml
+
+commit 6222e9f986588c7da1fad420c549132cf81c247b
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Wed Jul 8 00:51:21 2015 -0500
+
+    Update tests.py
+
+commit 7e272f93ef42380bc0d930a38924f19a2290bc3b
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Wed Jul 8 00:34:04 2015 -0500
+
+    Update .travis.yml
+
+commit 37297dbeb26b6ffe284cbeec4959e5c6e196e7aa
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Wed Jul 8 00:11:21 2015 -0500
+
+    Update .travis.yml
+
+commit e758b2e7e9c5c09ed24c0285d6d5c4e412e61406
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Wed Jul 8 00:06:55 2015 -0500
+
+    Update .travis.yml
+
+commit 261b0befb7fd45030cf254ba0d6b593cb927aa52
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 23:55:39 2015 -0500
+
+    Update tests.py
+
+commit 1898818f499d9c3709af60d07ab3aa91e7aa1d00
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 23:54:20 2015 -0500
+
+    Update tests.py
+
+commit 7584c395e12d3f4ffa97bd6cb11c25c88820c75e
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 23:48:33 2015 -0500
+
+    Update tests.py
+
+commit ea262a8d53fd3d7a39c0d59d28a88dd6c3b6f6bf
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 23:45:35 2015 -0500
+
+    Update tests.py
+
+commit 764ce216e7fca9103a20b3d7cd34bd8cc71a3a84
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 23:42:07 2015 -0500
+
+    Update tests.py
+
+commit 2fa6b5f166960e7eaa8ef50c1eba781b0846e675
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 23:40:43 2015 -0500
+
+    Updated
+
+commit 47d6978fe5d2908d2fcb0da319e1938e209cc002
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 23:38:12 2015 -0500
+
+    Update tests.py
+
+commit 572c5732eebe270e2fca40e2cdfc50d6def01885
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 23:31:55 2015 -0500
+
+    Update tests.py
+
+commit 386bcc24235a63336acd2e7e20e0ec10555cec39
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 23:29:25 2015 -0500
+
+    Update models.py
+
+commit e10f98e51d8c736aa8f644cf8ebc7a76e7800287
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 23:21:00 2015 -0500
+
+    Update tests.py
+
+commit e28eee2907a12bd7903a111e1c92dc2575077492
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 23:17:10 2015 -0500
+
+    Update models.py
+
+commit 6b26efdf05964231d062b1812d5bd3cb47cc74dc
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 23:12:53 2015 -0500
+
+    Update models.py
+
+commit 938306b9f391cd8b4290b54d17b825064e6598a2
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 23:01:54 2015 -0500
+
+    Update models.py
+
+commit ddb9389dab6822c302326afc3b3107c2aa7f3374
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 22:57:01 2015 -0500
+
+    Update models.py
+
+commit 8f105b3714cc745aea3e76beb8afaf5fc90c0bfa
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 22:52:07 2015 -0500
+
+    Update models.py
+
+commit c8c7f6caa643b740f6b8038a37cb728d3636e068
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 22:33:46 2015 -0500
+
+    Update .travis.yml
+
+commit 780b6bf20d18f0d3afbc452e4ed2bbdb44438e79
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 22:20:50 2015 -0500
+
+    Update .travis.yml
+
+commit 17604d9fea514b38dc6418f82e0bc05c7b5661f8
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 22:16:29 2015 -0500
+
+    Update settings.py
+
+commit fb07ff0bb00ee13dd5c51fe48f0803b4ab793d06
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 22:15:17 2015 -0500
+
+    Update .travis.yml
+
+commit 93fcdd55f7c71913fded2351aaea32d7a27b4569
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 21:45:00 2015 -0500
+
+    Update settings.py
+
+commit 9b880d2e156d3a356c88c3f0b9da8a3c71139c37
+Merge: 676211a ae9d2ef
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Tue Jul 7 21:42:13 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 676211a5f99c2230b332c0010b0df1c0353730b9
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Tue Jul 7 21:41:58 2015 -0500
+
+    html push
+
+commit ae9d2ef856a175632159e9f3922c068084ca63f9
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 21:41:23 2015 -0500
+
+    Update .travis.yml
+
+commit 12009ab452446f327c2a9505057655915a96c238
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 21:40:42 2015 -0500
+
+    finish about
+
+commit 238607fa52e6bd94861c85a7744774d7f7752cc3
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 21:34:13 2015 -0500
+
+    Update settings.py
+
+commit f3de3e4d095253862d51b2c369463fee1ed80e0e
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 21:27:41 2015 -0500
+
+    Update settings.py
+
+commit 82fdf602c8544e6145e71dd07184c63e73e8ffc6
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 7 21:23:17 2015 -0500
+
+    Added my picture
+
+commit c22734cd3ee42b85c1fe7c0426ee8134c31b3689
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 21:17:16 2015 -0500
+
+    Update settings.py
+
+commit a156ac95255eb9a90a6e60d6dff9667836055093
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 21:16:30 2015 -0500
+
+    Update .travis.yml
+
+commit 0fe03ba15b1a3851ef3ac8ca9a76cc3a5442886d
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 21:08:52 2015 -0500
+
+    done with pets
+
+commit 1156b0b15d4160c78f14f06ceb0323ca7eee4224
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 21:06:34 2015 -0500
+
+    Update .travis.yml
+
+commit c6e6ae7af4d990839add6a55477a2e1c061ab78f
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Tue Jul 7 21:03:20 2015 -0500
+
+    html update
+
+commit aef814725d023f06a2cbd51623fcd139485a8cf2
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 20:56:24 2015 -0500
+
+    Update .travis.yml
+
+commit 06dfb72660ea3bdbca62c5d27bca745c8ef8b5b7
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 20:54:44 2015 -0500
+
+    Update dependencies.txt
+
+commit 6dc419673a93d6f70d77dc0c0e79518f5f550d98
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 20:54:32 2015 -0500
+
+    Update .travis.yml
+
+commit 89d8ec2add0149fa846fc21afc48f5ce6d76b975
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 20:48:48 2015 -0500
+
+    Update .travis.yml
+
+commit 995456f44c16f4879085b70dfd352a867a07f30b
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 20:48:31 2015 -0500
+
+    Update dependencies.txt
+
+commit 7c3b9b21662ab4617c6ca326a1144c50d6ccc431
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 20:46:25 2015 -0500
+
+    Update .travis.yml
+
+commit c17a78a70367250dba646044d0aea63324fbbada
+Merge: cecabdc c2898ba
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 20:41:31 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit c2898bac23861cb3030656e18e8144a82cf0f456
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 20:41:17 2015 -0500
+
+    Update .travis.yml
+
+commit cecabdcc73e6e8fbcbf9a4910ed8cf6f3cb0cb2d
+Merge: d9ffde1 9febee6
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 20:41:11 2015 -0500
+
+    almost done with pets
+
+commit 9febee6f41c9c0a46d50ee7e12f5c43dce2e4c2d
+Merge: 81f8512 f79af77
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 20:37:51 2015 -0500
+
+    WIP on dev-branch: 81f8512 template done for About
+
+commit f79af77c53d08ea8c5582672e97d19b997630b1c
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 20:37:51 2015 -0500
+
+    index on dev-branch: 81f8512 template done for About
+
+commit d9ffde1e0dff4190fb7326be6f4bf3cf8839e030
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Tue Jul 7 20:33:53 2015 -0500
+
+    style fixed on about.html
+
+commit 3e9184eb9b9b777e0efcf1f119161af947bc6718
+Merge: 32fe97c 98ef923
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Tue Jul 7 20:32:02 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+    
+    merge
+    :wq
+
+commit 98ef92339a0a79360c15e23371152adec601a18a
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 20:31:47 2015 -0500
+
+    Create db.cnf
+
+commit 32fe97c1f13ae8cc2a8b3e24e3aa32f550faf2ab
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Tue Jul 7 20:31:45 2015 -0500
+
+    static html made cities shelters
+
+commit ee9a36916af23592876c356d60da327f6d69f925
+Merge: b22940e 1d71578
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Tue Jul 7 20:30:36 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 1d7157899d5f9ec69c96b90c547ed778d5d45abb
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 20:30:14 2015 -0500
+
+    Update settings.py
+
+commit b22940efadd5009cbdbcbfd741c032d96332c8e3
+Merge: 8784780 c9818df
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Tue Jul 7 20:30:13 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 8784780665793c775c450232a123bbf262cb8800
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Tue Jul 7 20:29:49 2015 -0500
+
+    fleshed out team metrics/bios/etc
+
+commit c9818df62f89bbd4de434fccb3c5cdde798a1bc0
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 20:26:07 2015 -0500
+
+    pic
+
+commit 56f6b327f683c9761f44091e7423dc26254af64a
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 20:01:37 2015 -0500
+
+    Update settings.py
+
+commit 81f8512a9ee70286ec70b5af63255135959620cc
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 19:44:01 2015 -0500
+
+    template done for About
+
+commit 71d325f5791b88d642062f130d4fa1846f4885e5
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 19:37:21 2015 -0500
+
+    Update tests.py
+
+commit b469f6c8004cb8056b53496a17cee2866a583197
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 19:26:49 2015 -0500
+
+    Update settings.py
+
+commit d2c54bef176a6003cd9ae3af1dcfa9bf67c2d3bd
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 19:20:49 2015 -0500
+
+    Update models.py
+
+commit 813a308a8895dff1d0b9ec8dab88145d50aa836e
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 19:16:24 2015 -0500
+
+    About needs pictures
+
+commit 24e7cb51bd7337b328baa63b03e3efcfcc50f02b
+Merge: c46e8cb 65384f4
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 19:10:35 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit c46e8cb26656dd4bb1761f99180a3241eac70e9c
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 19:10:29 2015 -0500
+
+    Testing
+
+commit 65384f4f6a7039e82e5cf1030cc96e1b96e816cd
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 18:47:55 2015 -0500
+
+    Update settings.py
+
+commit dac83c7691da17670206e0a0be8b97979e5f0320
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 18:39:55 2015 -0500
+
+    Update settings.py
+
+commit 44fa683d168e1e27644ff1540cdf0ea48fe74afa
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 18:33:05 2015 -0500
+
+    Update models.py
+
+commit bc6a669ff8e5264fab723a215593100f31fca207
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 18:22:38 2015 -0500
+
+    Update models.py
+
+commit 501f68a5745bdfc8eced71c7ff84efd196cec47f
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 18:11:16 2015 -0500
+
+    Testing
+
+commit 16c0a0a2b6eca692a8627d93c6e31d227eefbacf
+Merge: 91e8691 34c1d24
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 18:10:27 2015 -0500
+
+    Testing
+
+commit 91e86913a299ea3c6089d6c2d70d5de8048c3907
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 18:09:40 2015 -0500
+
+    Testing
+
+commit 34c1d24254a46c90e3535839cb5da95dd4a60ad4
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 17:59:43 2015 -0500
+
+    Delete manage.py
+
+commit 809683691a5dc2b629c101669721246e6d579550
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 17:41:38 2015 -0500
+
+    Update manage.py
+
+commit f044ea2584ff8d574de29c856c0527b78591fc59
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 17:24:08 2015 -0500
+
+    Update makefile
+
+commit 2fe2cfb06edf591c9dde60df85f4c795cd0260b6
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 17:19:25 2015 -0500
+
+    Updated
+
+commit 0a14c2d0a32a084ab0d0306ae8f6804644198dda
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 17:18:10 2015 -0500
+
+    Update makefile
+
+commit 8e34e521a47934e9c45e37a21ca7ab74de2701b6
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 17:10:51 2015 -0500
+
+    pic
+
+commit 5083fd01637bd2aeccad4a779e729d08b196df33
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 17:03:10 2015 -0500
+
+    Update makefile
+
+commit 769d3b41cd4ac16e4240d1dae100710933fc490d
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 17:02:43 2015 -0500
+
+    Update makefile
+
+commit faa2bf0cf905fccd534cc611ee18725821081fe4
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 16:50:46 2015 -0500
+
+    Update makefile
+
+commit 7bc76b773927f269acbc5e6b876f4b3fa7406a62
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 7 16:49:44 2015 -0500
+
+    Removed import that was causing an error
+
+commit b457593f702215ad1f2a9bfb91d1b91ef225d328
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 16:49:34 2015 -0500
+
+    Update tests.py
+
+commit 82d19d9d1e1ebe33fa976a24dcb4fce4175e3658
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 16:49:02 2015 -0500
+
+    Update models.py
+
+commit 2d2da65e413f1a25addcdbb872cea3faaae9d047
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 16:44:07 2015 -0500
+
+    moved an html file'
+
+commit c84e890f96702708af8d18e57fa2a0e0675c4127
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 16:42:19 2015 -0500
+
+    Update tests.py
+
+commit 5999d3185473fc315fb6a96ef103191ad08ba579
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 16:25:45 2015 -0500
+
+    Update wsgi.py
+
+commit 06ffca85063658b10e6bdcad9916b9c6d1587807
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 16:23:07 2015 -0500
+
+    Update manage.py
+
+commit 7054b0c7616c8356c478525adec8799809fea339
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 16:22:25 2015 -0500
+
+    Update settings.py
+
+commit 9d2f44c626954781bc1a5b1e8546cff968510a88
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 16:19:07 2015 -0500
+
+    Update settings.py
+
+commit 304f5759e6dea2bc940d9c129a3a8f02ab9e9ba3
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 16:09:12 2015 -0500
+
+    Update models.py
+
+commit 42a515186627324c87a060948903ca76cfd85b68
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 16:04:21 2015 -0500
+
+    Update settings.py
+
+commit 5a1b4e1a4f7afc67d44b7c4e54898ac6b4f324ad
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Tue Jul 7 16:01:15 2015 -0500
+
+    adding profile pic for about page
+
+commit 4e2919ce6072de29e1845ccfcfdc26a14a0f126d
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 15:54:16 2015 -0500
+
+    table
+
+commit 9d3a7f5cc4b9583274902cb91da023769e89ffbe
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 15:52:27 2015 -0500
+
+    testing table again
+
+commit 33deeab80eb31805be4e679060ba90843baaeca8
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 15:50:10 2015 -0500
+
+    testing table
+
+commit 3cfa0e7385cc7aac24f79b1a6bfb059b445d19e3
+Merge: 66f8186 cd6d652
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 15:45:39 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit 66f818639295952e93dd9522577692b23eba3303
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 15:45:11 2015 -0500
+
+    not showing
+
+commit cd6d652215a0ff8ab9ce0126d097a0ce291bfbc6
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 15:42:57 2015 -0500
+
+    Update .travis.yml
+
+commit 24ebd5f1a82305410b65e2946f11d4d7c06f518c
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 15:40:32 2015 -0500
+
+    still not printing the table
+
+commit aa35e76e4e0a9d51c97d33ebfe9deaf8d3ff4c93
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 15:37:29 2015 -0500
+
+    still not printing the table
+
+commit d2e14993488a6dae3005199bb2b857a43b4f94ad
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 15:32:46 2015 -0500
+
+    printing table?
+
+commit 5b505695a699f6d2f4802fa0cbfd92dd5ff2c676
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 15:12:06 2015 -0500
+
+    Update models.py
+
+commit c2ddaf2fa8f19fa9267c705a7f198cc8b84b64ba
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 14:59:07 2015 -0500
+
+    redid the navbar and home
+
+commit b038cf1aebc56b0da011af0bd6983b1924de9a96
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 14:51:06 2015 -0500
+
+    Update tests.py
+
+commit 5029900b8f0e91adfe557db96d6afacb621b4ae5
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 14:44:03 2015 -0500
+
+    Update .travis.yml
+
+commit a26ecaea3d696185f658ea71df944e3dbc216c7a
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 14:41:57 2015 -0500
+
+    Update dependencies.txt
+
+commit c51607fb4d6a38d35acb327b518239087e883afd
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Tue Jul 7 14:40:58 2015 -0500
+
+    moving to standard python unittest per django 1.8 documentation
+
+commit 297a032327d3a15be4420a8b0e894bba1ff1dea6
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Tue Jul 7 14:28:55 2015 -0500
+
+    reordering imports to see if the django.utils or django.test modules are not installed too
+
+commit a6b097d9051f71b976a6aac6f00c5a1e6a0e2b2b
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 7 14:22:07 2015 -0500
+
+    Fixed typo in views.py
+
+commit 7ab25a713ab60c4025052960c9ac218a9de1f950
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 7 14:14:25 2015 -0500
+
+    Added django-coverage
+
+commit c958d3d1086052779d12654aaa6d18a3fac8738c
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 7 14:09:07 2015 -0500
+
+    Removed incorrect dependency
+
+commit 8bcb874fc1a5ad98bf33d4f432d7327f311021a8
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Tue Jul 7 13:52:41 2015 -0500
+
+    after pull commit
+
+commit 4e8b3db2a83f923bb974b754e9911c13e76509c2
+Merge: aa89e61 52bb345
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Tue Jul 7 13:50:34 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+    
+    js has been updated
+
+commit aa89e61a68aa5c71e912e0d2d82edc5aa9cf45c8
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Tue Jul 7 13:50:29 2015 -0500
+
+    shelter js worked on
+
+commit 52bb345098776213abc36d6578f67c72daf398ff
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 7 13:39:37 2015 -0500
+
+    Fixed type in dependencies
+
+commit 2bac0fa2985dc98528231821b3e89b0233135f9c
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 7 13:31:46 2015 -0500
+
+    Updating travis.yml and dependencies
+
+commit 1f95d8730284bb7b13047584faffbb5c736bb699
+Merge: 248a399 ddc8d59
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Tue Jul 7 12:57:43 2015 -0500
+
+    Fixing conflicts in dev-branch for merge
+
+commit 248a39969acd74c6515151eaec52aa575ac3bc2b
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 05:11:27 2015 -0500
+
+    Update makefile
+
+commit edf331e780a4cba869d3cfbd43d11265731c2756
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 05:07:50 2015 -0500
+
+    Update .travis.yml
+
+commit 2607ed987ba159ce95020cd8fe5569b072642fbd
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 05:06:44 2015 -0500
+
+    Update .travis.yml
+
+commit dc0bfbfa8b69fcdd4152e55cbadd034b4388ab18
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 05:02:26 2015 -0500
+
+    Update makefile
+
+commit ed2fcef93f371bee033f06ee5f6587aaaaa50eba
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 04:58:02 2015 -0500
+
+    Update makefile
+
+commit d2a155207df24a7bef4b7132fa7974f55985e671
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 04:55:51 2015 -0500
+
+    Update dependencies.txt
+
+commit 122f3328f2784ea44e14833f89fb86b1a41f896c
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 04:48:48 2015 -0500
+
+    Tests Done
+
+commit 5f61a5920a67404198f254445c77de26ad59d435
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 04:26:34 2015 -0500
+
+    Tests Done
+
+commit 310662a7a6381e8c75f8b68b33853b81b1b87654
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 04:18:29 2015 -0500
+
+    Update .travis.yml
+
+commit 64791e25325ab2a52a1c0565f3f34ec8babfa72a
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 04:13:32 2015 -0500
+
+    Update .travis.yml
+
+commit 4fa5d3122121fa54cab42df7c38d9baf0386fd0a
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 03:52:04 2015 -0500
+
+    Update .travis.yml
+
+commit 41610c7ae62b0a40fb5d9ecc6576d9fb9a2d9373
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 03:43:16 2015 -0500
+
+    Update .travis.yml
+
+commit 12a07702709310e71dce64e88ced8c2dd201d6f3
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 03:39:23 2015 -0500
+
+    Update .travis.yml
+
+commit 18f2a824001edca7015919751584c395120254dc
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 03:37:37 2015 -0500
+
+    Update .travis.yml
+
+commit ddc8d59307096e4c5be8df46eede2931ab3f9628
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 03:31:26 2015 -0500
+
+    Update dependencies.txt
+
+commit cfb1604056dd3156bc8144e368ba186b13ec17af
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 03:28:48 2015 -0500
+
+    Update .travis.yml
+
+commit 0e153d3e3866db3d2f43e905afcc328a49866f24
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 03:28:36 2015 -0500
+
+    Update dependencies.txt
+
+commit cef2558d37626c55dcff7c30d58c6974a5d5f0dd
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 03:20:13 2015 -0500
+
+    Update .travis.yml
+
+commit 74b1b940902250aea34c9debbffeca3d57742f14
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 03:07:47 2015 -0500
+
+    Update .travis.yml
+
+commit 9e13b9ab0b79b4555d32f7650faeb170358e651a
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 03:06:56 2015 -0500
+
+    Update .travis.yml
+
+commit 9f0b1c07e68865b600b584ac62dc04fa22294682
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 02:48:09 2015 -0500
+
+    Update .travis.yml
+
+commit d79ca916f9323e9e63915b876fa279753db68fa2
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 02:47:33 2015 -0500
+
+    Update .travis.yml
+
+commit 0ac1147e85f1a11b4580f7ad3dab9edf197c3b27
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 02:45:11 2015 -0500
+
+    Update .travis.yml
+
+commit fc2e5140b75b4e90c015b4a5532a9abc97202b4c
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 7 02:44:50 2015 -0500
+
+    working on sorting
+
+commit 83ef56a55adf9e239051b988ee18f5455b48fbf9
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 02:39:51 2015 -0500
+
+    Update .travis.yml
+
+commit 2754e8ae645b7890c52087c85cff1a7d56eb76fe
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 7 02:35:53 2015 -0500
+
+    Update .travis.yml
+
+commit 1ca262276c249ef45a48aa4cab1cc57cbaac0ba1
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Tue Jul 7 02:31:15 2015 -0500
+
+    better examples of json objects returned
+
+commit 50512934229e043a3e18599b14031dd2f2487e68
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 02:26:13 2015 -0500
+
+    Testing
+
+commit f326aff10c11411526c2afecbd290c607b221a43
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 02:23:24 2015 -0500
+
+    Testing
+
+commit 6adfd2e4c7e49cfb7134852c6cd6c99194dd0f97
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Tue Jul 7 02:23:13 2015 -0500
+
+    even more simplified dataset
+
+commit d1c753601b0928f3fe0a696285d1a8055cb50f55
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 02:15:46 2015 -0500
+
+    Indentation Fixed
+
+commit f10f12afc94688c3513d765f3bf05cf3e03aad3c
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 02:14:48 2015 -0500
+
+    Indentation Fixed
+
+commit 2f23e31ceab9c25274f8f9ae0638697be9374a7f
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 02:12:26 2015 -0500
+
+    Indentation Fixed
+
+commit 73f3a9866d4620815c5ac129fb2334f5e17f0a5f
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Tue Jul 7 01:48:44 2015 -0500
+
+    adding in an extra cat tests.out, because make test doesn't seem to be doing it when it dies
+
+commit b7b7cbd87d50ef2746e15a3138d9964c1c7d311e
+Author: nelmiux <npererar@utexas.edu>
+Date:   Tue Jul 7 01:20:37 2015 -0500
+
+    UML Done
+
+commit d2bbdd1790fe8d5bd678a352d58ad1b9242b78d4
+Merge: d724fb4 a782273
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Tue Jul 7 00:43:08 2015 -0500
+
+    Merge branch 'master' of https://github.com/nsaid-team/gotopaws
+
+commit d724fb4bdc660d5cfc30a920685ec053a065d3e4
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Tue Jul 7 00:42:16 2015 -0500
+
+    readding files, I see no delete history for these
+
+commit 3cf58b5a5ce63ceb763e10d1551ab1a08b115860
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Tue Jul 7 00:30:15 2015 -0500
+
+    javascript kinda working
+
+commit a1c35a7035d18320c369cfb08e9e672f1cd5de63
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Tue Jul 7 00:21:28 2015 -0500
+
+    fleshing out api call documentation
+
+commit 7256640d37b59bd60795a233add1db319eac28c5
+Author: nelmiux <npererar@utexas.edu>
+Date:   Mon Jul 6 23:53:23 2015 -0500
+
+    Tests Updated
+
+commit 62925261932d5605926299912e8b575864b35e89
+Author: nelmiux <npererar@utexas.edu>
+Date:   Mon Jul 6 22:39:41 2015 -0500
+
+    Tests Updated
+
+commit a782273e0b2c7176a6391eedfb35461ac32f84ee
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Mon Jul 6 22:29:21 2015 -0500
+
+    html test on django?
+
+commit 881fce9921af9ac160023a246c3ce5ca1600933c
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Mon Jul 6 22:19:19 2015 -0500
+
+    update test.html
+
+commit bd54680d1d463f4c8be0aabde2744d86dee6176b
+Merge: e241794 406574a
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 6 22:07:22 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit e2417949440bc3ce9ad731884842c46c6bf92835
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Mon Jul 6 22:07:01 2015 -0500
+
+    testing javascript
+
+commit 406574aefb5738ce3bcce06c24224fbdb152fe6c
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Mon Jul 6 22:06:28 2015 -0500
+
+    Update tests.py
+
+commit 01324eee9b7abe5a4e48fe2de606b6538135703e
+Author: nelmiux <npererar@utexas.edu>
+Date:   Mon Jul 6 22:02:42 2015 -0500
+
+    Updated
+
+commit 802f9288424f747aa6336f541c4b7f6b54f42dc9
+Merge: e15281e 8e92e74
+Author: nelmiux <npererar@utexas.edu>
+Date:   Mon Jul 6 22:02:13 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit e15281e7f77f7085a08a72f9763e898ff41c45c1
+Author: nelmiux <npererar@utexas.edu>
+Date:   Mon Jul 6 22:02:05 2015 -0500
+
+    Tests Done
+
+commit 8e92e7477706ff419472fa4f91588f9126a40eb9
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Mon Jul 6 21:48:20 2015 -0500
+
+    removing bogus City.address data member
+
+commit 2d2386d78269fa05b8b9e1a9808d2165a7dc4261
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Mon Jul 6 19:34:45 2015 -0500
+
+    got some help from Aseal explaining what this should look like, I'm open to changing the data members though so that they line up with the UML and unit tests -- this was just thrown together quickly
+
+commit 72ab0d19c46db317a7144212304e0cc1b8e65e12
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Mon Jul 6 17:54:09 2015 -0500
+
+    stub models.html folder in repo to keep from breaking grading script
+
+commit d4f89a98619c3a11862ae3bec3c685ebb5d83e10
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Mon Jul 6 17:52:40 2015 -0500
+
+    initial checkin of IDB.log
+
 commit 207576a53c3d86184d6b5b341cef25d07e03270c
 Author: Nelma Perera <npererar@utexas.edu>
 Date:   Mon Jul 6 16:54:40 2015 -0500
@@ -172,6 +3864,12 @@ Date:   Sun Jul 5 19:13:58 2015 -0500
 
     Transferring blueprint from apiary.io
 
+commit 329cceab4642c69eb987d8426db83eb644024f7a
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Sun Jul 5 19:12:49 2015 -0500
+
+    Update apiary.apib
+
 commit 85f71b485e8a7ac1ef7a6b01c5a7e63428c7e73d
 Merge: b34523d 920a946
 Author: nelmiux <npererar@utexas.edu>
@@ -307,6 +4005,108 @@ Date:   Sun Jul 5 05:29:02 2015 -0500
 
     Transferring blueprint from apiary.io
 
+commit d37ff22843f5d65d2c5d0b433fafaf1448517bd9
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 05:28:45 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 6a70dbf50bd2fbd7df853f41996ea2434545fb6a
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 05:26:18 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit da3152f2715a472df61fb029e00268153d3cd889
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 04:45:39 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 4169de43207bda9c3ab38a368788d2a2beb6adfb
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 04:29:41 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit ddf31713f50d939c4c4fe44248aa319bab1df663
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 04:23:08 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 6305460cc980d7cb3c80dc6daf8f63d310331248
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 04:21:20 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 102a1aee354efdfd08b3fe7bce5c091edd1e8f49
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 04:13:39 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 63dfbb26cbc3e9dae61319191b774103b60ce946
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 04:08:25 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 6941eafa37a1da2631821b2c50d76e8d82260bf2
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 04:08:05 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 98cf7e673b91a1c4f85023c715cf11aaeed90aa3
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 04:07:39 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit d17dfbbd81b5ace820b57dae396ec694fba07dfa
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 03:58:06 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 7317b3f35deb4bdb67c414abe0409860c837e4a6
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 03:33:33 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 8d6a8606266552503e8ba425038f6ca5b70fbee4
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 03:30:42 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit a1e0f0e7e38e0b5957542a3ac50f1f1a98caf50a
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 02:17:07 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 52bf3ad13f19bb2d851b7fd535b0f0a6f716ef9a
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sun Jul 5 01:35:10 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 5a84a83bf73c7f4875474defbf25cb1de2a2bd30
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sat Jul 4 23:25:55 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 59531cb5289d9fbf57c0c39174e9fe8ecd617775
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sat Jul 4 22:58:55 2015 -0500
+
+    Transferring blueprint from apiary.io
+
 commit 41893e5e1c4565d356c6223018ec2958c65063f4
 Merge: 69329ac 4f08b7d
 Author: Samuel Morris <sfmorris@gmail.com>
@@ -319,6 +4119,24 @@ Author: Samuel Morris <sfmorris@gmail.com>
 Date:   Sat Jul 4 22:53:02 2015 -0500
 
     adding this to the repo so I can copy paste it in to jsonlint and get a lineending/tabbed copy to look over
+
+commit d53702c413bb0db1177c4b1363ce5149875ab13c
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sat Jul 4 22:51:19 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 395641211311cea1bb4f33ca77c5912337cba2bb
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sat Jul 4 21:29:09 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 26564bf44a219bf8ddff3b44afa114d24e19fc48
+Author: Nelma Perera <npererar@cs.utexas.edu>
+Date:   Sat Jul 4 21:28:10 2015 -0500
+
+    Transferring blueprint from apiary.io
 
 commit 4f08b7da1e326208d0fb1446f2ecdd27aacdc2fa
 Author: Nelma Perera <npererar@utexas.edu>
@@ -368,6 +4186,24 @@ Date:   Sat Jul 4 18:27:16 2015 -0500
 
     merge with master
 
+commit 5797457d145adc7019630f7c28ebc76b650eb3fb
+Author: User <alexander.adams.mail@gmail.com>
+Date:   Sat Jul 4 23:24:52 2015 +0000
+
+    updated django for new folder name
+
+commit 5b8cace56088b537a30970ba8d5108db8a853284
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Sat Jul 4 18:22:04 2015 -0500
+
+    added html folder
+
+commit 6c320c0d01ab65cfa22309f318d2516366754c0c
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Sat Jul 4 18:21:10 2015 -0500
+
+    removed html stuff
+
 commit d341ce40680092542807709d4b5ff2fd958bebe4
 Author: daniela-reyes <danielareyes174@utexas.edu>
 Date:   Sat Jul 4 18:19:57 2015 -0500
@@ -380,6 +4216,169 @@ Date:   Sat Jul 4 18:18:32 2015 -0500
 
     html stuff removed
 
+commit d8c0196641b503e2e45207d7b51cb550d0655bd2
+Merge: afdd6a3 efbfc48
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Sat Jul 4 17:58:17 2015 -0500
+
+    Merge pull request #21 from nsaid-team/DevVM
+    
+    Merging DevVM to Master
+
+commit efbfc481fa88177f722aeea23665e540b5b579b9
+Author: User <alexander.adams.mail@gmail.com>
+Date:   Sat Jul 4 22:28:08 2015 +0000
+
+    Updated Django to accept new html files
+
+commit afdd6a33234bd65737ed8f4c9919fd481621f66d
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sat Jul 4 17:22:46 2015 -0500
+
+    Update .travis.yml
+
+commit 38143b37758b8faf3e15449dee2b7a91bd426692
+Merge: 6033420 43899be
+Author: User <alexander.adams.mail@gmail.com>
+Date:   Sat Jul 4 21:53:28 2015 +0000
+
+    Merge branch 'html' of https://github.com/nsaid-team/gotopaws into DevVM
+    
+    Getting the most recent html files to integrate into Django
+
+commit 43899be9828ee519653605f6d1bbd94d9688756a
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Sat Jul 4 16:43:15 2015 -0500
+
+    Got template for models and Home page
+
+commit ca72e55e26c111133e04408bb5b27a0d0b3edeb2
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Sat Jul 4 15:59:07 2015 -0500
+
+    Update .travis.yml
+
+commit 603342073bf6898ca3b9ce5e9e31aeb6f9198ebf
+Merge: 708aa00 9f37d2b
+Author: User <alexander.adams.mail@gmail.com>
+Date:   Sat Jul 4 20:37:00 2015 +0000
+
+    Merge branch 'html' of https://github.com/nsaid-team/gotopaws into DevVM
+
+commit 708aa004bed10963e7e34e5f992fd62dc4d3c0f5
+Merge: 169e1a1 e92e43d
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Sat Jul 4 15:33:31 2015 -0500
+
+    Merge pull request #18 from nsaid-team/master
+    
+    Syncing DevVM branch with Master
+
+commit e92e43df52fc7e801915a0353f7653111e84f5fb
+Merge: a8b306d 169e1a1
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Sat Jul 4 15:13:59 2015 -0500
+
+    Merge pull request #17 from nsaid-team/DevVM
+    
+    Dev vm
+
+commit 169e1a1fb117f244526563e75cc2511bbb8e0034
+Author: User <alexander.adams.mail@gmail.com>
+Date:   Sat Jul 4 19:58:38 2015 +0000
+
+    Added html functionality
+
+commit 6e5b30ea47fef927ffd5e45ad5fe7eb2f2a6e466
+Author: User <alexander.adams.mail@gmail.com>
+Date:   Sat Jul 4 18:40:16 2015 +0000
+
+    Moved all django files into a sub directory
+
+commit a8b306d1f08de542ce8bf10f0d38d0ce29753bf9
+Author: nelmiux <npererar@utexas.edu>
+Date:   Fri Jul 3 21:32:48 2015 -0500
+
+    Create tests.py
+
+commit 4ff49357a53dca5d00cf806ed5e028e9d3b39d79
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Fri Jul 3 21:29:33 2015 -0500
+
+    Update README.md
+
+commit 97d3b62d632fdcdad758aaf9fd87c20c7d346a5b
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Fri Jul 3 21:29:19 2015 -0500
+
+    Update README.md
+
+commit a65139da921a20bcf4231035bcc4d456fac38780
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Fri Jul 3 21:26:23 2015 -0500
+
+    Rename README.rst to README.md
+
+commit 70273c2692e5d6cca442f814ce35da55969be660
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Fri Jul 3 21:26:06 2015 -0500
+
+    Update README.rst
+
+commit 32aa74e718546281e8c649cebdf84c97c1e87958
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Fri Jul 3 21:13:14 2015 -0500
+
+    Rename README.md to README.rst
+
+commit 1c8df9075f5558b03a921d7c5ceb3b3f855e124f
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Fri Jul 3 21:11:58 2015 -0500
+
+    Update README.md
+
+commit 8ac5faf5751583a3ebb44154007657f5c85e66e7
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Fri Jul 3 21:06:39 2015 -0500
+
+    Update README.md
+
+commit 4407a6159e68f3995b1472b4758a3ca779453c57
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Fri Jul 3 21:01:42 2015 -0500
+
+    Update makefile
+
+commit d0fe637e2cde26f60f7b7d799020b912513db252
+Author: nelmiux <npererar@utexas.edu>
+Date:   Fri Jul 3 20:59:16 2015 -0500
+
+    Create makefile
+
+commit 3e7ce769d185e7516523d2458a963863057360d1
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Fri Jul 3 20:41:15 2015 -0500
+
+    Update .travis.yml
+
+commit 0caa487b8560b4f13324f23e8e353bfa1fe3149f
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Fri Jul 3 20:07:31 2015 -0500
+
+    Create travis.bash
+
+commit 14b9d38541a0cc2bb1a6ac3772a6f88ddeb06fba
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Fri Jul 3 20:03:27 2015 -0500
+
+    Create dependencies.txt
+
+commit d0a4911597e499c10b406cc981199c61037c5c15
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Fri Jul 3 19:58:49 2015 -0500
+
+    Create .travis.yml
+
 commit 7132ac82c8ad8125ae921f3924dd2238f2fb7241
 Author: Nelma Perera <npererar@utexas.edu>
 Date:   Fri Jul 3 19:36:28 2015 -0500
@@ -391,6 +4390,18 @@ Author: Nelma Perera <npererar@utexas.edu>
 Date:   Fri Jul 3 19:36:08 2015 -0500
 
     Create dev-branch
+
+commit 9f37d2b3435339cff2b03c4f48580f90198137d9
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Fri Jul 3 16:59:18 2015 -0500
+
+    end of day
+
+commit 42920e4ffacb85328ab88a90b83af8a9e90ac8b1
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Fri Jul 3 15:45:28 2015 -0500
+
+    four carousel good
 
 commit 19c45507414b6c0a9fbd2e0cf98e9a31c75fd9e5
 Author: Nelma Perera <npererar@cs.utexas.edu>
@@ -409,6 +4420,18 @@ Author: Nelma Perera <npererar@cs.utexas.edu>
 Date:   Fri Jul 3 14:42:22 2015 -0500
 
     Transferring blueprint from apiary.io
+
+commit bc28ce8f44316ea14c3f40d583141d7469c6ddbd
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Fri Jul 3 19:31:25 2015 +0000
+
+    Created Django project
+
+commit bd0236bdbbb9780f31bb4a4d4692061a7df187ad
+Author: icsmith <icsmith@cs.utexas.edu>
+Date:   Fri Jul 3 14:29:00 2015 -0500
+
+    html stuff on old repo
 
 commit 4babbdad46b3d07bed417ce87a53c226035c14b7
 Author: daniela-reyes <danielareyes174@utexas.edu>
