@@ -56,6 +56,7 @@ for p in pet_dict_list:
 	pq = Pet(pet_id=p["petsid"],
 		pet_name=p["name"],
 		pet_age=p["age"],
+        pet_sex=p["sex"],
 		pet_size=p["size"],
 		pet_breed=p["breed"],
 		pet_shelter=p["shelter"],
