@@ -14,12 +14,17 @@
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background-color: #777;
 }
-.carousel-inner > .item > img {
-  position: absolute;
-  height: 500px;
-  width: 500px; 
-  min-width: 100%;
 
+
+.carousel-inner > .item > img {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 500px;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
