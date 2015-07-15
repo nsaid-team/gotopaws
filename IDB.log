@@ -1,3 +1,46 @@
+commit 4b781d267d1a84a1a9967ee98d3c6c3970a57e94
+Author: alexanderadams <alexander.adams.mail@gmail.com>
+Date:   Wed Jul 15 02:04:32 2015 +0000
+
+    added models documentation
+
+commit fe7f6f71d0e4176666fac1f4a29de6797551af9f
+Author: Sam Morris <sfmorris@gmail.com>
+Date:   Tue Jul 14 21:02:18 2015 -0500
+
+    Create models.py
+
+commit ac2a9203b978ff90ed677d0f5140cf23da3ba67b
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 20:55:42 2015 -0500
+
+    about page stats
+
+commit 05f4dc98f70916226a3460d7a4903eda2101ad7c
+Author: Nelma Perera <npererar@utexas.edu>
+Date:   Tue Jul 14 20:52:58 2015 -0500
+
+    Update makefile
+
+commit d4e9458287f6ba3965d0502e17734f1d437de4ef
+Merge: efdd8b3 08314c0
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Tue Jul 14 20:46:45 2015 -0500
+
+    Merge branch 'dev-branch' of https://github.com/nsaid-team/gotopaws into dev-branch
+
+commit efdd8b3da781623e3913d34a3a0407ab7500cec7
+Author: Samuel Morris <sfmorris@gmail.com>
+Date:   Tue Jul 14 20:46:19 2015 -0500
+
+    new log
+
+commit 08314c06d92addeb2721b6257233578fe14182f2
+Author: daniela-reyes <danielareyes174@utexas.edu>
+Date:   Tue Jul 14 20:46:13 2015 -0500
+
+    html clean up
+
 commit 74ce47b899b49b745746f3fdbb7f96a72a0443f2
 Author: daniela-reyes <danielareyes174@utexas.edu>
 Date:   Tue Jul 14 20:40:00 2015 -0500
