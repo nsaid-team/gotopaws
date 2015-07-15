@@ -80,6 +80,7 @@ class Pet(models.Model):
     pet_id = models.CharField(max_length=50) # pet id from petfinder
     pet_name = models.CharField(max_length=300) # text field
     pet_age = models.CharField(max_length=50) # text field
+    pet_sex = models.CharField(max_length=50) # text field
     pet_size = models.CharField(max_length=50) # text field
     pet_breed = models.CharField(max_length=200) # text field
     #pet_shelter = models.ForeignKey(Shelter, related_name = 'pet_shelter')
