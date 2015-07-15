@@ -104,6 +104,7 @@ def pet_list(request):
             pet_info["pet_id"]          = pet_obj.pet_id
             pet_info["pet_name"]        = pet_obj.pet_name
             pet_info["pet_age"]         = pet_obj.pet_age
+            pet_info["pet_sex"]         = pet_obj.pet_sex
             pet_info["pet_size"]        = pet_obj.pet_size
             pet_info["pet_breed"]       = pet_obj.pet_breed
             pet_info["pet_shelter"]     = pet_obj.pet_shelter
