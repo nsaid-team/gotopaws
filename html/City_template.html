@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+A template for GoToPaws city landing pages.
+ -->
+    <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>GoToPaws</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% STATIC_URL %}css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% STATIC_URL %}css/3-col-portfolio.css" rel="stylesheet">
+    <link href="{% STATIC_URL %}css/city_page.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <!-- Navigation -->
+    <div ng-app = "GoToPaws">
+        <!-- Navbar expansion -->
+        <nav-bar></nav-bar>
+
+        <div class="heading">
+            <h1>{{city.city_name}}</h1>
+            <p> {{city.city_motto}}</p>
+        </div>
+
+        <body>
+
+
+            <div class="container">
+                <!-- Text box expansion with AngularJS. camelCase to hyphen-words is ON PURPOSE -->
+                <city-shelters></city-shelters>
+                <hr class="summary-divider" />
+
+                <city-pets></city-pets>
+
+                <hr class="summary-divider" />
+                <city-vets></city-vets>
+
+                <!-- EMBED CITY SPECIFIC MAP HERE -->
+                <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=30.2672%2C-97.7431&key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg" allowfullscreen></iframe>
+                <hr />
+
+                <footer>
+                    <p>Copyright &copy; NSAID 2015</p>
+                </footer>
+            </div>
+        </div>
+
+
+        <!-- jQuery -->
+        <script src="{% STATIC_URL %}js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="{% STATIC_URL %}js/bootstrap.min.js"></script>
+        <!-- Custom AngularJS -->
+        <script src="{% STATIC_URL %}js/templates.js"></script>
+
+    </body>
+    </html>
