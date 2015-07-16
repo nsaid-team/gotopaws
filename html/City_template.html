@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app = "GoToPaws">
 <!-- 
 A template for GoToPaws city landing pages.
- -->
-    <head>
+-->
+<head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +20,12 @@ A template for GoToPaws city landing pages.
     <!-- Custom CSS -->
     <link href="{% STATIC_URL %}css/3-col-portfolio.css" rel="stylesheet">
     <link href="{% STATIC_URL %}css/city_page.css" rel="stylesheet">
+    
+    <!-- Custom AngularJS -->
+    {% load static from staticfiles %}
+    <script type="text/javascript" src="{% static "js/angular.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/templates.js" %}"></script>
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,46 +36,47 @@ A template for GoToPaws city landing pages.
 
     </head>
     <!-- Navigation -->
-    <div ng-app = "GoToPaws">
-        <!-- Navbar expansion -->
-        <nav-bar></nav-bar>
+    
+    <!-- Navbar expansion -->
+    <nav-bar></nav-bar>
 
-        <div class="heading">
-            <h1>{{city.city_name}}</h1>
-            <p> {{city.city_motto}}</p>
+    <div class="heading">
+        <h1>{{city.city_name}}</h1>
+        <p> {{city.city_motto}}</p>
+    </div>
+
+    <body>
+
+
+        <div class="container">
+            <!-- Text box expansion with AngularJS. camelCase to hyphen-words is ON PURPOSE -->
+            <city-shelters></city-shelters>
+            <hr class="summary-divider" />
+
+            <city-pets></city-pets>
+
+            <hr class="summary-divider" />
+            <city-vets></city-vets>
+
+            <!-- EMBED CITY SPECIFIC MAP HERE -->
+            <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=30.2672%2C-97.7431&key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg" allowfullscreen></iframe>
+            <hr />
+
+            <footer>
+                <p>Copyright &copy; NSAID 2015</p>
+            </footer>
         </div>
+        
 
-        <body>
-
-
-            <div class="container">
-                <!-- Text box expansion with AngularJS. camelCase to hyphen-words is ON PURPOSE -->
-                <city-shelters></city-shelters>
-                <hr class="summary-divider" />
-
-                <city-pets></city-pets>
-
-                <hr class="summary-divider" />
-                <city-vets></city-vets>
-
-                <!-- EMBED CITY SPECIFIC MAP HERE -->
-                <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=30.2672%2C-97.7431&key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg" allowfullscreen></iframe>
-                <hr />
-
-                <footer>
-                    <p>Copyright &copy; NSAID 2015</p>
-                </footer>
-            </div>
-        </div>
-
+        
+        {% load static from staticfiles %}
 
         <!-- jQuery -->
-        <script src="{% STATIC_URL %}js/jquery.js"></script>
+        <script src="{% static "js/jquery.js" %}"></script>
 
         <!-- Bootstrap Core JavaScript -->
-        <script src="{% STATIC_URL %}js/bootstrap.min.js"></script>
-        <!-- Custom AngularJS -->
-        <script src="{% STATIC_URL %}js/templates.js"></script>
+        <script src="{% static "js/bootstrap.min.js" %}"></script>
+        
 
     </body>
     </html>
