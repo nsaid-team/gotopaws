@@ -80,19 +80,19 @@ def city_SF(request):
     return HttpResponse(template.render())
 
 def pet_template(request, id):
-    pet = Pet.object.filter(pet_id = id)
+    pet = Pet.objects.filter(pet_id = id)
     context = {'pet': pet}
-    return render(request, 'Pet_Page.html', context)
+    return render(request, 'Pet_Template.html', context)
 
 def shelter_template(request, id):
     shelter = Shelter.objects.filter(shelter_id = id)
     context = {'shelter_id': shelter}
     return render(request, 'Shelter_Template.html', context)
 
-def city_template(request, id):
-    city = City.object.filter(city_id = id)
+def city_template(request, name):
+    city = City.objects.filter(city_name = name)
     context = {'city_id': city}
-    return render(request, 'City_Page.html', context)
+    return render(request, 'City_template.html', context)
 
 @api_view(['GET'])
 def pet_list(request):

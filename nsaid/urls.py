@@ -44,9 +44,9 @@ urlpatterns = [
     #url(r'^api/', include(ShelterResource().urls)),
     #url(r'^api/', include(CityResource().urls)),
 
-    #url(r'^Pets/(?P<id>[\w-]+)$', views.pet_template),
-    #url(r'^Shelters/(?P<id>[\w-]+)$', views.shelter_template),
-    #url(r'^Cities/(?P<id>[\w-]+)$', views.city_template),
+    url(r'^Pets/(?P<id>[\w-]+)$', views.pet_template),
+    url(r'^Shelters/(?P<id>[\w-]+)$', views.shelter_template),
+    url(r'^Cities/(?P<name>[\w-]+)$', views.city_template),
     url(r'^api/pets/$', views.pet_list),
     url(r'^api/shelters/$', views.shelter_list),
     url(r'^api/cities/$', views.city_list),
