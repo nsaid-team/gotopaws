@@ -56,17 +56,15 @@ A template for GoToPaws city landing pages.
 
         <div class="container">
             <!-- Text box expansion with AngularJS. camelCase to hyphen-words is ON PURPOSE -->
-<script id="template/mixed-ng-snipped.html" type="text/ng-template">
-           {{ {% verbatim %}<city-shelters></city-shelters>{% endverbatim %} }}
-</script>            
+            <city-shelters></city-shelters>
             <hr class="summary-divider" />
-<script id="template/mixed-ng-snipped.html" type="text/ng-template">
-            <city-pets></city-pets>
-</script>
+
+            <city-pets ></city-pets>
+
             <hr class="summary-divider" />
-     <script id="template/mixed-ng-snipped.html" type="text/ng-template">       
-           {% verbatim %} <city-vets></city-vets> {% endverbatim %}
-</script>
+            
+            <city-vets></city-vets>
+
             <!-- EMBED CITY SPECIFIC MAP HERE -->
             <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=30.2672%2C-97.7431&key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg" allowfullscreen></iframe>
             <hr />
