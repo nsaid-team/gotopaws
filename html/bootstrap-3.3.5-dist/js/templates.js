@@ -4,7 +4,7 @@ var app = angular.module("GoToPaws", []);
 app.directive('navBar', function(){
   return{
     restrict: 'E',
-    templateUrl: '"static/Navbar.html"'
+    templateUrl: '"bootstrap-3.3.5-dist/templates/Navbar.html"'
   };
 });
 
