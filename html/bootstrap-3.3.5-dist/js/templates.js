@@ -4,14 +4,14 @@ var app = angular.module("GoToPaws", []);
 app.directive('navBar', function(){
   return{
     restrict: 'E',
-    templateUrl: '"Navbar.html"'
+    templateUrl: '"static/Navbar.html"'
   };
 });
 
 app.directive('cityShelters', function(){
   return{
     restrict: 'E',
-    templateUrl: 'static("/templates/Shelter_fill.html")'
+    templateUrl: '"static/templates/Shelter_fill.html"'
   };
 });
 
