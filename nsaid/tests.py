@@ -683,8 +683,8 @@ class Test (unittest.TestCase) :
         self.assertEqual(response.status_code,404)
 
     def test_api_city_2 (self) :
-        response = requests.get('http://private-93df0-gotopaws1.apiary-mock.com/cities/')
-        self.assertEqual(response.status_code,200)
+        response = requests.get('http://gotopaws.me/cities')
+        self.assertEqual(response.status_code,404)
     
     def test_api_city_3 (self) :
         response = requests.get('http://gotopaws.me/api/cities/')
