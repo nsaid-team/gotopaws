@@ -24,6 +24,6 @@ app.directive('cityPets', function(){
 app.directive('cityVets', function(){
   return{
     restrict: 'E',
-    templateUrl: '{% static "templates/Vet_fill.html" %}'
+    templateUrl: '{% url {% static "templates/Vet_fill.html" %}%}'
   };
 });
