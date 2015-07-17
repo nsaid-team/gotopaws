@@ -90,8 +90,8 @@ def shelter_template(request, id):
     return render(request, 'Shelter_Template.html', context)
 
 def city_template(request, name):
-    city = City.objects.filter(city_name = "Austin")
-    context = {'city': city}
+    city = City.objects.filter(city_name = name)
+    context = {'city': city[0]}
     return render(request, 'City_template.html', context)
 
 @api_view(['GET'])
