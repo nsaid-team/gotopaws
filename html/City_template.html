@@ -50,7 +50,10 @@ A template for GoToPaws city landing pages.
         <h1>{{city.city_name}}</h1>
         <p> {{city.city_motto}}</p>
         {{city}} This is city<br>
-        {{context}}This is context
+        {{context}}This is context<br>
+        {{city.city.city_name}}This is double city<br>
+        {{city[0]}} this is city[0] <br>
+        {{city[0].city_name}} this is city[0].city_name
    
 
     <body>
