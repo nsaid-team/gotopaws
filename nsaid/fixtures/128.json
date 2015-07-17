@@ -1,0 +1,33 @@
+[
+    {
+        "model" : "nsaid.City",
+        "pk" : 1,
+        "fields" : {
+            "city_name": "Austin",
+            "city_state": "TX",
+            "city_country": "US",
+            "city_vet_url": "http://www.yelp.com/biz/corner-vet-austin-3"
+            }
+    },
+    {
+        "model" : "nsaid.City",
+        "pk" : 2,
+        "fields" : {
+            "city_name": "San Francisco",
+            "city_state": "CA",
+            "city_country": "US",
+            "city_vet_url":"http://www.yelp.com/biz/san-francisco-pet-hospital-san-francisco"
+            }
+    },
+    {
+        "model" : "nsaid.City",
+        "pk" : 3,
+        "fields" : {
+            "city_name": "Houston",
+            "city_state": "TX",
+            "city_country": "US",
+            "city_vet_url":"http://www.yelp.com/biz/midtown-veterinary-hospital-houston"
+            }
+    }
+]
+
