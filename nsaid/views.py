@@ -90,7 +90,7 @@ def shelter_template(request, id):
     return render(request, 'Shelter_Template.html', context)
 
 def city_template(request, name):
-    city = City.objects.filter(city_name = name)
+    city = City.objects.filter(city_name = "Austin")
     context = {'city': city}
     return render(request, 'City_template.html', context)
 
