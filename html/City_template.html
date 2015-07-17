@@ -31,10 +31,10 @@ A template for GoToPaws city landing pages.
     var STATIC_URL = 'bootstrap-3.3.5-dist';
     function static(path) {
         return STATIC_URL + path;}
-    </script>
+        </script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -47,9 +47,9 @@ A template for GoToPaws city landing pages.
     <nav-bar ></nav-bar>
 
     
-        <h1>{{city.city_name}}</h1>
-        <p> {{city.city_motto}}</p>
-   
+    <h1>{{city.city_name}}</h1>
+    <p> {{city.city_motto}}</p>
+    
 
     <body>
 
@@ -57,17 +57,61 @@ A template for GoToPaws city landing pages.
         <div class="container">
             <!-- Text box expansion with AngularJS. camelCase to hyphen-words is ON PURPOSE -->
 
-            <city-shelters></city-shelters>
+            <div class="summary">
+
+                <h2 class="summary-heading">Shelters <span class="text-muted">in {{city.city_name}}</span></h2>
+
+                {% for shelter in city.shelters_list %}
+
+                <a href="{{shelter.shelter_url}}"><img class="summary-image img-suqare img-responsive pull-right" alt="{{shelter.shelter_name}}" src="{{shelter.shelter_pic}}"></a>
+
+                
+                <h3> {{shelter.shelter_name}} </h3>
+                <div class="text-box">
+                    <p class="lead">
+                       
+
+                        {{shelter.shelter_description}}
+                        
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+
 
             <hr class="summary-divider" />
 
-            {% verbatim %}
-            <city-pets ></city-pets>
-            {% endverbatim %}
+            <div class="summary">
+                
+                <h2 class="summary-heading">Pets <span class="text-muted">in {{city.city_name}}</span></h2>
+                {% for pet in city.pets_list %}
+                <a href ="{{pet.pet_url}}"><img class="summary-image img-suqare img-responsive pull-left" alt= "{{pet.pet_name}}" src="{{pet.pet_pic}}"></a>
+
+                <div class="text-box">
+                    <p class="lead">
+                        Info or no info?
+                    </p>
+                </div>
+                {% endfor %}
+                
+            </div>
 
             <hr class="summary-divider" />
             
-            <city-vets></city-vets>
+            <div class="summary">
+                <h2 class="summary-heading">Vets <span class="text-muted">in {{city.city_name}}</span>
+                </h2>
+                {% for vet in city.vets_list %}
+
+                <a href ="{{vet.vet_url}}"><img class="summary-image img-suqare img-responsive pull-right" alt="{{vet.vet_name}}" src="{{vet.vet_pic}}"></a>
+
+                <div class="text-box">
+                    <p class="lead">
+                        {{vet.vet_description}}
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
 
             <!-- EMBED CITY SPECIFIC MAP HERE -->
             <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=30.2672%2C-97.7431&key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg" allowfullscreen></iframe>
