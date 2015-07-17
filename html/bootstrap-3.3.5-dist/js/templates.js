@@ -4,7 +4,7 @@ var app = angular.module("GoToPaws", []);
 app.directive('navBar', function(){
   return{
     restrict: 'E',
-    templateUrl: 'bootsrap-3.3.5-dist/templates/Navbar.html'
+    templateUrl: '/bootstrap-3.3.5-dist/templates/Navbar.html'
   };
 });
 
@@ -18,7 +18,7 @@ app.directive('cityShelters', function(){
 app.directive('cityPets', function(){
   return{
     restrict: 'E',
-    templateUrl: 'bootsrap-3.3.5-dist/templates/Pet_fill.html'
+    templateUrl: '/bootstrap-3.3.5-dist/templates/Pet_fill.html'
   };
 });
 
