@@ -81,13 +81,13 @@ def city_SF(request):
 
 def pet_template(request, id):
     pet = Pet.objects.filter(pet_id = id)
-    context = {'pet': pet}
-    return render(request, 'Pet_Template.html', context)
+    context = {'pet': pet[0]}
+    return render(request, 'Pet_template.html', context)
 
 def shelter_template(request, id):
     shelter = Shelter.objects.filter(shelter_id = id)
-    context = {'shelter_id': shelter}
-    return render(request, 'Shelter_Template.html', context)
+    context = {'shelter': shelter[0]}
+    return render(request, 'Shelter_template.html', context)
 
 def city_template(request, name):
     city = City.objects.filter(city_name = name)
