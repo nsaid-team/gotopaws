@@ -1,4 +1,7 @@
-var app = angular.module("GoToPaws", []);
+var app = angular.module("GoToPaws", [], function($interpolateProvider) {
+    $interpolateProvider.startSymbol('[[');
+    $interpolateProvider.endSymbol(']]');
+});
 
 
 app.directive('navBar', function(){
