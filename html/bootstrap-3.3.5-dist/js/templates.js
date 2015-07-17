@@ -11,7 +11,7 @@ app.directive('navBar', function(){
 app.directive('cityShelters', function(){
   return{
     restrict: 'E',
-    templateUrl: '/bootstrap-3.3.5/templates/Shelter_fill.html'
+    templateUrl: '/bootstrap-3.3.5-dist/templates/Shelter_fill.html'
   };
 });
 
@@ -25,6 +25,6 @@ app.directive('cityPets', function(){
 app.directive('cityVets', function(){
   return{
     restrict: 'E',
-    templateUrl: '/bootstrap-3.3.5/templates/Vet_fill.html'
+    templateUrl: '/bootstrap-3.3.5-dist/templates/Vet_fill.html'
   };
 });
