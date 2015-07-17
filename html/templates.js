@@ -17,7 +17,7 @@ app.directive('cityShelters', function(){
 app.directive('cityPets', function(){
   return{
     restrict: 'E',
-    templateUrl: '{% static "templates/Pet_fill.html" %}'
+    templateUrl: 'Pet_fill.html"'
   };
 });
 
