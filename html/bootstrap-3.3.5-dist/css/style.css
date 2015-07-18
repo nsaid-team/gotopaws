@@ -29,10 +29,9 @@ tr:nth-of-type(odd) {
 	background: #bcd9e1; 
 }
 th { 
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #007FBD ), color-stop(1, #BFE6FF ) );
-	background:-moz-linear-gradient( center top, #007FBD  5%, #BFE6FF  100% );
-	background-color:#007FBD ; 
+	background: #66a9bd;
 	color:#FFFFFF ; 
+	border-left: 0px solid #0070A8
 	font-weight: bold; 
 }
 
