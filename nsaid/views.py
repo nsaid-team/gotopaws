@@ -9,7 +9,7 @@ from datetime import datetime
 from elasticsearch import Elasticsearch
 import requests
 import json
-import urllib2
+import urllib
 
 
 def test(request):
@@ -92,7 +92,7 @@ def shelter_template(request, id):
     shelter = Shelter.objects.filter(shelter_id = id)
     address = shelter[0].address1 + "," + shelter[0].city + "," + shelter[0].state
     url="https://maps.googleapis.com/maps/api/geocode/json?address=%s" % address.replace(" ", "+")
-    response = urllib2.urlopen(url)
+    response = urllib.request.urlopen(url)
     jsongeocode = response.read()
     context = {'shelter': shelter[0], 'map_json': jsongeocode}
     return render(request, 'Shelter_template.html', context)
