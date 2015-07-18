@@ -1,20 +1,14 @@
-div {
-    width: 200px;
-    height: 200px;
-    display: block;
-    position: relative;
-}
-
-div::after {
-    content: "";
+body{
+    width: 100%;
+    height: 100%;
     background: url(../img/All/bg_search1.jpg) no-repeat center center;*/
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	color: white;
 }
 
 div.text-box{
