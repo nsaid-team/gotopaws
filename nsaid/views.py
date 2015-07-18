@@ -100,7 +100,10 @@ def shelter_template(request, id):
 def city_template(request, name):
     city = City.objects.filter(city_name = name)
     context = {'city': city[0]}
-    return render(request, 'City_template.html', context)
+    response = render(request, 'City_template.html', context)
+    response['Access-Control-Allow-Origin'] = XS_SHARING_ALLOWED_ORIGINS
+    response['Access-Control-Allow-Methods'] = ['POST','GET','OPTIONS', 'PUT', 'DELETE']
+    return response
 
 @api_view(['GET'])
 def pet_list(request):
