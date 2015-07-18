@@ -6,6 +6,8 @@ from nsaid.models import *
 from rest_framework import status
 from rest_framework.decorators import api_view
 import json
+from datetime import datetime
+from elasticsearch import Elasticsearch
 
 
 def test(request):
@@ -167,10 +169,15 @@ def city_list(request):
 
 def search (request):
     q = request.GET.get('q')
-    d = {}
-    
+    es = Elasticsearch()
+    res = es.search(index="gtp_index", doc_type="city", body={"query": {"match": {"content": q}}})
+    """
+    print("%d documents found" % res['hits']['total'])
+    for doc in res['hits']['hits']:
+        print("%s) %s" % (doc['_id'], doc['_source']['content']))
+    """
 
-    return render_to_response('search/search.html', d)
+    return render_to_response('search/search.html', res)
     """
     context = RequestContext(request)
     context_dict = {}
