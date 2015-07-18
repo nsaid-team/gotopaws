@@ -60,7 +60,7 @@ var app2 = angular.module("mapModule", [], function(){});
     $scope.test = "Hola";
     var loc = $location.path;
     delete $http.defaults.headers.common['X-Requested-With'];
-    $http.get("nsaid.me/Cities/Austin/json").success(function(data) {
+    $http.get("Austin/json").success(function(data) {
       $scope.results = data;
       console.log(data);
     }).error(function(data, status) {
