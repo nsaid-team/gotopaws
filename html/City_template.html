@@ -47,10 +47,10 @@ A template for GoToPaws city landing pages.
     <p> {{city.city_motto}}</p>
 
 
-        <div id="ahhh" ng-controller ='MyCtrl'>
+        <div id="ahhh" ng-controller ='MyCtrl as ctrl'>
 
             [{data[0].city_name}]
-            [{data.city_state}]
+            [{ctrl.data.city_state}]
             [{test}] test1<br>
  
         </div>

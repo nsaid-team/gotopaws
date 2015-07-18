@@ -62,7 +62,7 @@ var app2 = angular.module("mapModule", [], function(){});
       $scope.results = data;
       console.log(data);
     }).error(function(data, status) {
-      temp.data = data[0] || "Request failed";
+      temp.data = data || "Request failed";
       $scope.status = status;
       console.log(data);
     });
