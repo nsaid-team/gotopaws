@@ -1,7 +1,9 @@
 var app = angular.module("GoToPaws", ['mapModule'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('[[');
     $interpolateProvider.endSymbol(']]');
-});
+}).run(function($rootScope, $location) {
+    $rootScope.location = $location;
+});;
 
 
 app.directive('navBar', function(){
