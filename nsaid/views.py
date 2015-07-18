@@ -199,7 +199,7 @@ def search (request):
     results_list = {}
     for hit in rs['hits']['hits']:
         try:
-            results_list += hit["_source"]
+            results_list[hit] = {hit["_source"]:hit["_source"].value}
         except: 
             break
 
