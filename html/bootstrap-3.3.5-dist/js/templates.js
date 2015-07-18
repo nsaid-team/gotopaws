@@ -56,12 +56,13 @@ var app2 = angular.module("mapModule", [], function(){});
 
   app.controller('MyCtrl', ['$scope', '$http',  function($scope, $http) {
     $scope.test = "Hola";
+    var temp = this;
     delete $http.defaults.headers.common['X-Requested-With'];
     $http.get("json").success(function(data) {
       $scope.results = data;
       console.log(data);
     }).error(function(data, status) {
-      $scope.data = data[0] || "Request failed";
+      temp.data = data[0] || "Request failed";
       $scope.status = status;
       console.log(data);
     });
