@@ -51,11 +51,12 @@ A template for GoToPaws city landing pages.
     <h1>{{city.city_name}}</h1>
     <p> {{city.city_motto}}</p>
     
-    
+    {% verbatim %}
         <div ng-controller ="MyCtrl as ctrl">
             [[ctrl.test]]<br>
             [[ctrl.data]]
         </div>
+    {% endverbatim %}
     
 
     <body>
