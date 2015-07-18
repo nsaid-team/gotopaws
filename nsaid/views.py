@@ -114,7 +114,7 @@ def shelter_json(request, id):
 
 def city_template(request, name):
     city = City.objects.filter(city_name = name)
-    context = {'city': city[0], 'city_shelter_list' : list(Shelter.objects.all()[0], Shelter.objects.all()[1])}
+    context = {'city': city[0], 'city_shelter_list' : [Shelter.objects.all()[0], Shelter.objects.all()[1]]}
     return render(request, 'City_template.html', context)
     
 def city_json(request, name):
