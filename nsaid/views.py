@@ -8,6 +8,7 @@ from rest_framework.decorators import api_view
 import json
 from datetime import datetime
 from elasticsearch import Elasticsearch
+import requests
 
 
 def test(request):
