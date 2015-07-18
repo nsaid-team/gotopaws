@@ -196,7 +196,7 @@ def search (request):
     q = request.GET.get('q')
     es = Elasticsearch()
     rs = es.search(index="gtp_index", body={"query": {"match": {"title": q}}})
-    results_list = []
+    results_list = {}
     for hit in rs['hits']['hits']:
         try:
             results_list += hit["_source"]
