@@ -184,13 +184,13 @@ def search (request):
     results_list = []
     scroll_size = rs['hits']['total']
     while (scroll_size > 0):
-    try:
-        scroll_id = rs['_scroll_id']
-        rs = es.scroll(scroll_id=scroll_id, scroll='60s')
-        results_list += rs['hits']['hits']
-        scroll_size = len(rs['hits']['hits'])
-    except: 
-        break
+        try:
+            scroll_id = rs['_scroll_id']
+            rs = es.scroll(scroll_id=scroll_id, scroll='60s')
+            results_list += rs['hits']['hits']
+            scroll_size = len(rs['hits']['hits'])
+        except: 
+            break
 
     context = {"results_list": results_list}     
 
