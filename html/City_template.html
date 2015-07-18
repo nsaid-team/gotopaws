@@ -28,11 +28,6 @@ A template for GoToPaws city landing pages.
 
     
 
-    <script type="text/javascript">
-    var STATIC_URL = 'bootstrap-3.3.5-dist';
-    function static(path) {
-        return STATIC_URL + path;}
-        </script>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,14 +45,13 @@ A template for GoToPaws city landing pages.
     
     <h1>{{city.city_name}}</h1>
     <p> {{city.city_motto}}</p>
-        [[GoToPaws.run()]] [["I am trying to run GoToPaws"]]
-        [[location.path() + "location path"]]
+
 
         <div id="ahhh" ng-controller ='MyCtrl'>
-            [[MyCtrl.data[1]]] data1<br>
-            [[data[0]]]
-            [[test]] test1<br>
-            [[MyCtrl.test]]
+            [{MyCtrl.data[0]}] data1<br>
+            [{data[0]}]
+            [{test}] test1<br>
+            [{MyCtrl.test}]
         </div>
 
     
