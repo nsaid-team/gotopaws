@@ -33,11 +33,7 @@ app.directive('cityVets', function(){
 });
 
 
-var app2 = angular.module("mapModule", [], function($interpolateProvider) {
-
-    $interpolateProvider.startSymbol('[[');
-    $interpolateProvider.endSymbol(']]');
-});
+var app2 = angular.module("mapModule", [], function(){});
 
 // app2.controller("MapController", function{
   
