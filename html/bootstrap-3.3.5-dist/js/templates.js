@@ -34,7 +34,7 @@ app.directive('cityVets', function(){
 
 
 var app2 = angular.module("mapModule", [], function($interpolateProvider) {
- stash
+
     $interpolateProvider.startSymbol('[[');
     $interpolateProvider.endSymbol(']]');
 });
