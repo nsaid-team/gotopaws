@@ -25,6 +25,8 @@ A template for GoToPaws city landing pages.
     <!-- Custom AngularJS -->
     <script type="text/javascript" src='{% static "js/angular.min.js" %}'></script>
     <script type="text/javascript" src='{% static "js/templates.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/googlemap.js" %}'></script>
+
     
 
     <script type="text/javascript">
@@ -49,6 +51,14 @@ A template for GoToPaws city landing pages.
     
     <h1>{{city.city_name}}</h1>
     <p> {{city.city_motto}}</p>
+    
+    
+    <div ng-app ="mapModule">
+        <div ng-controller ="MyCtrl as controller">
+            [[controller.test]]<br>
+            [[controller.data[0]]]
+        </div>
+    </div>
     
 
     <body>
