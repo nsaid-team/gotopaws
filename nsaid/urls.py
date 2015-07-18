@@ -50,5 +50,6 @@ urlpatterns = [
     url(r'^api/pets/$', views.pet_list),
     url(r'^api/shelters/$', views.shelter_list),
     url(r'^api/cities/$', views.city_list),
+    url(r'^search/$', views.search, name='search'),
 
 ]

@@ -165,3 +165,16 @@ def city_list(request):
             info[str(city_obj.city_name + '_' + city_obj.city_state)] = city_info
         return HttpResponse(json.dumps(info), content_type="application/json")
 
+def search (request):
+    q = request.GET.get('q')
+    d = {}
+    
+
+    return render_to_response('search/search.html', d)
+    """
+    context = RequestContext(request)
+    context_dict = {}
+    if request.method == 'GET':
+        form = SearchForm(request.GET)
+        if form.is_valid():
+    """
