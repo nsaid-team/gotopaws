@@ -182,13 +182,6 @@ def search (request):
             "match": {"_all": q }
         }
     }
-    response = requests.post('http://127.0.0.1:9200/gtp_index/_search?pretty=true', data=json.dumps(data))
+    response = requests.post('http://nsaid.me/gtp_index/_search?pretty=true', data=json.dumps(data))
 
-    return render_to_response('search/search.html', response)
-    """
-    context = RequestContext(request)
-    context_dict = {}
-    if request.method == 'GET':
-        form = SearchForm(request.GET)
-        if form.is_valid():
-    """
+    return render_to_response('search/search.html', response.json())
