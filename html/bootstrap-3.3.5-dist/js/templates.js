@@ -55,6 +55,7 @@ var app2 = angular.module("mapModule", [], function(){});
 
 
   app.controller('MyCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
+    console.log($location.path);
     $scope.currentUrl = $location.path;
     $scope.test = "Hola";
     delete $http.defaults.headers.common['X-Requested-With'];
