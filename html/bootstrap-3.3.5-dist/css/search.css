@@ -14,7 +14,7 @@ body:after{
     height: 100%;
     z-index: 1;
     opacity: 0.6;
-    background-image: url(../img/All/bg_search1.jpg) no-repeat center center;*/
+    background: url(../img/All/bg_search1.jpg) no-repeat center center;*/
     background-repeat: no-repeat;
     background-position: 50% 0;
     -ms-background-size: cover;
