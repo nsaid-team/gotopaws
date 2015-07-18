@@ -196,26 +196,25 @@ def search (request):
     q = request.GET.get('q')
     es = Elasticsearch()
     rs = es.search(index='gtp_index', 
-               scroll='60s', 
-               size=100, 
-               body={
-                 "fields" : ["title", "subtitle", "url", "shelters_text", "pets_text", "vets_text"],
-                   "query" : {
-                     "match": {"_all": q }
-                   }
-               }
+                body={
+                    "query": {
+                        "template": {
+                            "query": { "match": { "text": "{{query_string}}" }},
+                            "params" : {
+                                "query_string" : q
+                            }
+                        }
+                    }
+                }
     )
     results_list = []
-    scroll_size = rs['hits']['total']
-    while (scroll_size > 0):
+    for hit in rs['hits']['hits']:
         try:
-            scroll_id = rs['_scroll_id']
-            rs = es.scroll(scroll_id=scroll_id, scroll='60s')
-            results_list += rs['hits']['hits']
-            scroll_size = len(rs['hits']['hits'])
+            results_list += hit["_source"]
         except: 
             break
 
     context = {"results_list": results_list}     
 
+    #return HttpResponse(json.dumps(context), content_type="application/json")
     return render_to_response('search/search.html', context)
