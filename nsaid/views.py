@@ -170,14 +170,20 @@ def city_list(request):
 def search (request):
     q = request.GET.get('q')
     es = Elasticsearch()
-    res = es.search(index="gtp_index", doc_type="city", body={"query": {"match": q}})
+    #res = es.search(index="gtp_index", doc_type="city", body={"query": {"match": q}})
     """
     print("%d documents found" % res['hits']['total'])
     for doc in res['hits']['hits']:
         print("%s) %s" % (doc['_id'], doc['_source']['content']))
     """
+    data = {
+        "query": {
+            "query_string": { "query": q }
+        }
+    }
+    response = requests.post('http://127.0.0.1:9200/gtp_index/_search', data=json.dumps(data))
 
-    return render_to_response('search/search.html', res)
+    return render_to_response('search/search.html', response.json())
     """
     context = RequestContext(request)
     context_dict = {}
