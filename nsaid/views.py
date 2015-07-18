@@ -102,10 +102,11 @@ def shelter_template(request, id):
 def city_template(request, name):
     city = City.objects.filter(city_name = name)
     context = {'city': city[0]}
-    response = render(request, 'City_template.html', context)
-    response['Access-Control-Allow-Origin'] = settings.XS_SHARING_ALLOWED_ORIGINS
-    response['Access-Control-Allow-Methods'] = ['POST','GET','OPTIONS', 'PUT', 'DELETE']
-    return response
+    return render(request, 'City_template.html', context)
+    
+def city_json(request, name):
+    city = serializers.serialize('json', City.objects.filter(city_name = name))
+    return HttpResponse(city, mimetype='application/json')
 
 @api_view(['GET'])
 def pet_list(request):
