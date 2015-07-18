@@ -19,6 +19,10 @@ table {
 	width: 100%; 
 	border-collapse: collapse; 
 }
+
+tbody{
+	background:#91c5d4;
+}
 /* Zebra striping */
 tr:nth-of-type(odd) { 
 	background: #bcd9e1; 
