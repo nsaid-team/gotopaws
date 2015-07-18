@@ -90,6 +90,10 @@ def pet_template(request, id):
     pet = Pet.objects.filter(pet_id = id)
     context = {'pet': pet[0]}
     return render(request, 'Pet_template.html', context)
+    
+def pet_json(request, id):
+    pet = serializers.serialize('json', Pet.objects.filter(pet_id = id))
+    return HttpResponse(pet)
 
 def shelter_template(request, id):
     shelter = Shelter.objects.filter(shelter_id = id)
@@ -99,6 +103,14 @@ def shelter_template(request, id):
     jsongeocode = response.read()
     context = {'shelter': shelter[0], 'map_json': jsongeocode}
     return render(request, 'Shelter_template.html', context)
+    
+def shelter_json(request, id):
+    shelter = Shelter.objects.filter(shelter_id = id)
+    address = shelter[0].address1 + "," + shelter[0].city + "," + shelter[0].state
+    url="https://maps.googleapis.com/maps/api/geocode/json?address=%s" % address.replace(" ", "+")
+    response = urllib.request.urlopen(url)
+    jsongeocode = response.read()
+    return HttpResponse([serializers.serialize('json', shelter), jsongeocode])
 
 def city_template(request, name):
     city = City.objects.filter(city_name = name)
