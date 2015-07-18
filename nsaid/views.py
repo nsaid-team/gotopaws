@@ -195,7 +195,7 @@ def city_list(request):
 def search (request):
     q = request.GET.get('q')
     es = Elasticsearch()
-    rs = es.search(index="gtp_index", body={"query": {"match": {"text": q}}})
+    rs = es.search(index="gtp_index", body={"query": {"match": {"title": q}}})
     results_list = []
     for hit in rs['hits']['hits']:
         try:
@@ -203,6 +203,7 @@ def search (request):
         except: 
             break
 
-    context = {"results_list": results_list}     
+    context = {"results_list": results_list} 
+    print(context)    
     #return HttpResponse(json.dumps(context), content_type="application/json")
     return render_to_response('search/search.html', context)
