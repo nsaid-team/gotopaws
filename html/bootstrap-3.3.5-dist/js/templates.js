@@ -1,9 +1,7 @@
 var app = angular.module("GoToPaws", ['mapModule'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('[[');
     $interpolateProvider.endSymbol(']]');
-}).run(function($rootScope, $location) {
-    $rootScope.location = $location;
-});;
+});
 
 
 app.directive('navBar', function(){
@@ -56,9 +54,8 @@ var app2 = angular.module("mapModule", [], function(){});
 
 
 
-  app.controller('MyCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
+  app.controller('MyCtrl', ['$scope', '$http',  function($scope, $http) {
     $scope.test = "Hola";
-    var loc = $location.path;
     delete $http.defaults.headers.common['X-Requested-With'];
     $http.get("json").success(function(data) {
       $scope.results = data;
