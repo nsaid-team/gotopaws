@@ -39,21 +39,21 @@ var app2 = angular.module("mapModule", [], function($interpolateProvider) {
     $interpolateProvider.endSymbol(']]');
 });
 
-app2.controller("MapController", function{
+// app2.controller("MapController", function{
   
-  geocoder = new google.maps.Geocoder();
-  geocoder.geocode({ 'address': address }, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      map.setCenter(results[0].geometry.location);
-      var marker = new google.maps.Marker({
-      map: map,
-      position: results[0].geometry.location
-    })}
-    });
+//   geocoder = new google.maps.Geocoder();
+//   geocoder.geocode({ 'address': address }, function(results, status) {
+//     if (status == google.maps.GeocoderStatus.OK) {
+//       map.setCenter(results[0].geometry.location);
+//       var marker = new google.maps.Marker({
+//       map: map,
+//       position: results[0].geometry.location
+//     })}
+//     });
 
 
 
-});
+// });
 
 
 
