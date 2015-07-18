@@ -170,7 +170,7 @@ def city_list(request):
 def search (request):
     q = request.GET.get('q')
     es = Elasticsearch()
-    res = es.search(index="gtp_index", doc_type="city", body={"query": {"match": {"content": q}}})
+    res = es.search(index="gtp_index", doc_type="city", body={"query": {"match": q}})
     """
     print("%d documents found" % res['hits']['total'])
     for doc in res['hits']['hits']:
