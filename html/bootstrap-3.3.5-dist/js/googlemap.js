@@ -1,5 +1,6 @@
-var app = angular.module("mapModule" []);
-
+var app = angular.module("mapModule" [], function($interpolateProvider) {
+    $interpolateProvider.startSymbol('[[');
+    $interpolateProvider.endSymbol(']]');
 app.controller("MapController", function{
 	
 	geocoder = new google.maps.Geocoder();

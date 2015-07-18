@@ -52,14 +52,14 @@ A template for GoToPaws city landing pages.
     <h1>{{city.city_name}}</h1>
     <p> {{city.city_motto}}</p>
     
-    {% verbatim %}
+    
     <div ng-app ="mapModule">
         <div ng-controller ="MyCtrl as controller">
-            {{controller.test}}<br>
-            {{controller.data[0]}}
+            [[controller.test]]<br>
+            [[controller.data[0]]]
         </div>
     </div>
-    {% endverbatim %}
+    
 
     <body>
 
