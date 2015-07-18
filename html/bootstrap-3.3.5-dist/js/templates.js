@@ -57,11 +57,10 @@ var app2 = angular.module("mapModule", [], function(){});
 
 
   app.controller('MyCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
-    console.log($location.path);
-    $scope.currentUrl = $location.path;
     $scope.test = "Hola";
+    var loc = location.path();
     delete $http.defaults.headers.common['X-Requested-With'];
-    $http.get(currentUrl + '/json').success(function(data) {
+    $http.get(loc + '/json').success(function(data) {
       $scope.results = data;
       console.log(data);
     }).error(function(data, status) {
