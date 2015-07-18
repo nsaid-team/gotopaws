@@ -182,6 +182,6 @@ def search (request):
             "match": {"_all": q }
         }
     }
-    response = requests.post('http://nsaid.me/gtp_index/_search?pretty=true', data=json.dumps(data))
+    response = requests.post('http://nsaid.me:9200/gtp_index/_search?pretty=true', data=json.dumps(data))
 
     return render_to_response('search/search.html', response.json())
