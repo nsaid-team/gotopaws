@@ -21,15 +21,18 @@ table {
 }
 
 tbody{
-	background:#91c5d4;
+	background: #E1EEf4 ; 
+	color: #00557F ; 
 }
 /* Zebra striping */
 tr:nth-of-type(odd) { 
 	background: #bcd9e1; 
 }
 th { 
-	background: #333; 
-	color: white; 
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #007FBD ), color-stop(1, #BFE6FF ) );
+	background:-moz-linear-gradient( center top, #007FBD  5%, #BFE6FF  100% );
+	background-color:#007FBD ; 
+	color:#FFFFFF ; 
 	font-weight: bold; 
 }
 
