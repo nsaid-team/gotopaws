@@ -1,7 +1,7 @@
 body{
     width: 100%;
     height: 100%;
-    background: url(../img/All/bg_search1.jpg) no-repeat center center;
+    /*background: url(../img/All/bg_search1.jpg) no-repeat center center;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
