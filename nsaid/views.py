@@ -179,10 +179,10 @@ def search (request):
     """
     data = {
         "query": {
-            "query_string": { "query": "q" }
+            "match": {"_all": q }
         }
     }
-    response = requests.post('http://127.0.0.1:9200/gtp_index/_search', data=json.dumps(data))
+    response = requests.post('http://127.0.0.1:9200/gtp_index/_search?pretty=true', data=json.dumps(data))
 
     return render_to_response('search/search.html', response)
     """
