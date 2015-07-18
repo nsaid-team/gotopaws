@@ -33,11 +33,11 @@ app.directive('cityVets', function(){
 });
 
 
-var app = angular.module("mapModule" [], function($interpolateProvider) {
+var app2 = angular.module("mapModule" [], function($interpolateProvider) {
     $interpolateProvider.startSymbol('[[');
     $interpolateProvider.endSymbol(']]');
 
-app.controller("MapController", function{
+app2.controller("MapController", function{
   
   geocoder = new google.maps.Geocoder();
   geocoder.geocode({ 'address': address }, function(results, status) {
@@ -55,7 +55,7 @@ app.controller("MapController", function{
 
 
 
-  app.controller('MyCtrl', ['$scope', '$http', function($scope, $http) {
+  app2.controller('MyCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.currentUrl = $location.path;
     $scope.test = "Hola";
     delete $http.defaults.headers.common['X-Requested-With'];
