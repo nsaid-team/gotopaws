@@ -3,7 +3,7 @@
 	padding: 0;
 }
 body { 
-	background: #ff3300;
+	background: url(../img/All/cat.jpg) no-repeat center center;
 	font: 14px/1.4 Georgia, Serif; 
 }
 #page-wrap {
