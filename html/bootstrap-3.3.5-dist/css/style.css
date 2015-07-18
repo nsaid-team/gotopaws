@@ -1,9 +1,9 @@
 * { 
 	margin: 0; 
 	padding: 0;
-	background: #ff3300;
 }
 body { 
+	background: #ff3300;
 	font: 14px/1.4 Georgia, Serif; 
 }
 #page-wrap {
