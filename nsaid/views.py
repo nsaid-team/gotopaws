@@ -103,7 +103,7 @@ def city_template(request, name):
     city = City.objects.filter(city_name = name)
     context = {'city': city[0]}
     response = render(request, 'City_template.html', context)
-    response['Access-Control-Allow-Origin'] = XS_SHARING_ALLOWED_ORIGINS
+    response['Access-Control-Allow-Origin'] = settings.XS_SHARING_ALLOWED_ORIGINS
     response['Access-Control-Allow-Methods'] = ['POST','GET','OPTIONS', 'PUT', 'DELETE']
     return response
 
