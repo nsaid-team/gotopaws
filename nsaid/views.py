@@ -107,7 +107,7 @@ def city_template(request, name):
     
 def city_json(request, name):
     city = serializers.serialize('json', City.objects.filter(city_name = name))
-    return HttpResponse(city, mimetype='application/json')
+    return HttpResponse(city)
 
 @api_view(['GET'])
 def pet_list(request):
