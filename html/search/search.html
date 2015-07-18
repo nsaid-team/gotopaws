@@ -67,9 +67,11 @@
     </nav>
 
     <div class="text-box">
-        <p>
-            {{query_string.q}} 
-        </p>
+        {% for results in results_list %} 
+            <tr>
+                <td><a href={{results.url}} id="nav_font">{{results.title}}</a></td>
+            </tr>
+        {% endfor %}</tr>
     </div>
 
 </body>

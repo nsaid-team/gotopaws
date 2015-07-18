@@ -171,17 +171,27 @@ def city_list(request):
 def search (request):
     q = request.GET.get('q')
     es = Elasticsearch()
-    #res = es.search(index="gtp_index", doc_type="city", body={"query": {"match": q}})
-    """
-    print("%d documents found" % res['hits']['total'])
-    for doc in res['hits']['hits']:
-        print("%s) %s" % (doc['_id'], doc['_source']['content']))
-    """
-    data = {
-        "query": {
-            "match": {"_all": q }
-        }
-    }
-    response = requests.post('http://nsaid.me:9200/gtp_index/search/', data=json.dumps(data))
+    rs = es.search(index='gtp_index', 
+               scroll='60s', 
+               size=100, 
+               body={
+                 "fields" : ["title", "subtitle", "url", "shelters_text", "pets_text", "vets_text"],
+                   "query" : {
+                     "match": {"_all": q }
+                   }
+               }
+    )
+    results_list = []
+    scroll_size = rs['hits']['total']
+    while (scroll_size > 0):
+    try:
+        scroll_id = rs['_scroll_id']
+        rs = es.scroll(scroll_id=scroll_id, scroll='60s')
+        results_list += rs['hits']['hits']
+        scroll_size = len(rs['hits']['hits'])
+    except: 
+        break
 
-    return render_to_response('search/search.html', response.json())
+    context = {"results_list": results_list}     
+
+    return render_to_response('search/search.html', context)
