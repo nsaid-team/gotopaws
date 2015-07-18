@@ -1,4 +1,4 @@
-var app = angular.module("GoToPaws", [], function($interpolateProvider) {
+var app = angular.module("GoToPaws", ["mapModule"], function($interpolateProvider) {
     $interpolateProvider.startSymbol('[[');
     $interpolateProvider.endSymbol(']]');
 });
