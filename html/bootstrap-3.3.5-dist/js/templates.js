@@ -33,9 +33,10 @@ app.directive('cityVets', function(){
 });
 
 
-var app2 = angular.module("mapModule" [], function($interpolateProvider) {
+var app2 = angular.module('mapModule', [], function($interpolateProvider) {
     $interpolateProvider.startSymbol('[[');
     $interpolateProvider.endSymbol(']]');
+});
 
 app2.controller("MapController", function{
   
@@ -46,6 +47,7 @@ app2.controller("MapController", function{
       var marker = new google.maps.Marker({
       map: map,
       position: results[0].geometry.location
+    })}
     });
 
 
