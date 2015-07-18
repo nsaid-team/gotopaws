@@ -5,10 +5,11 @@ from django.db import connection
 from nsaid.models import *
 from rest_framework import status
 from rest_framework.decorators import api_view
-import json
 from datetime import datetime
 from elasticsearch import Elasticsearch
 import requests
+import json
+import urllib2
 
 
 def test(request):
@@ -89,7 +90,11 @@ def pet_template(request, id):
 
 def shelter_template(request, id):
     shelter = Shelter.objects.filter(shelter_id = id)
-    context = {'shelter': shelter[0]}
+    address = shelter[0].address1 + "," + shelter[0].city + "," + shelter[0].state
+    url="https://maps.googleapis.com/maps/api/geocode/json?address=%s" % address.replace(" ", "+")
+    response = urllib2.urlopen(url)
+    jsongeocode = response.read()
+    context = {'shelter': shelter[0], 'map_json': jsongeocode}
     return render(request, 'Shelter_template.html', context)
 
 def city_template(request, name):
