@@ -66,10 +66,10 @@
         </div>
     </nav>
 
-    <div>
+    <div "text-box">
         {% for results in results_list %} 
             <tr>
-                <td><a href={{results.fields.url}} id="nav_font">{{results.fields}}</a></td>
+                <td>{{results.fields}}</td>
             </tr>
         {% endfor %}</tr>
     </div>
