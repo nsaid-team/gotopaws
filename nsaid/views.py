@@ -2,6 +2,9 @@ from django.http import HttpResponse
 from django.template import loader
 from django.shortcuts import render, render_to_response
 from django.db import connection
+from django.conf import settings
+from django.core import serializers
+from django import http
 from nsaid.models import *
 from rest_framework import status
 from rest_framework.decorators import api_view
@@ -9,7 +12,7 @@ from datetime import datetime
 from elasticsearch import Elasticsearch
 import requests
 import json
-import urllib2
+import urllib
 
 
 def test(request):
@@ -92,7 +95,7 @@ def shelter_template(request, id):
     shelter = Shelter.objects.filter(shelter_id = id)
     address = shelter[0].address1 + "," + shelter[0].city + "," + shelter[0].state
     url="https://maps.googleapis.com/maps/api/geocode/json?address=%s" % address.replace(" ", "+")
-    response = urllib2.urlopen(url)
+    response = urllib.request.urlopen(url)
     jsongeocode = response.read()
     context = {'shelter': shelter[0], 'map_json': jsongeocode}
     return render(request, 'Shelter_template.html', context)
@@ -101,6 +104,10 @@ def city_template(request, name):
     city = City.objects.filter(city_name = name)
     context = {'city': city[0]}
     return render(request, 'City_template.html', context)
+    
+def city_json(request, name):
+    city = serializers.serialize('json', City.objects.filter(city_name = name))
+    return HttpResponse(city)
 
 @api_view(['GET'])
 def pet_list(request):
