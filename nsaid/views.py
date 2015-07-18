@@ -204,6 +204,5 @@ def search (request):
             break
 
     context = {"results_list": results_list}     
-    print({context})
     #return HttpResponse(json.dumps(context), content_type="application/json")
     return render_to_response('search/search.html', context)
