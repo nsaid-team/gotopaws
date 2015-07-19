@@ -16,6 +16,7 @@ body, html{
     -moz-box-shadow: 13px 13px 18px #8c8c8c;
     -webkit-box-shadow: 13px 13px 18px #8c8c8c;
     box-shadow: 13px 13px 18px #8c8c8c;
+    font-color:black;
     width: 90%;
     height:70%;
     margin-top:5%;
@@ -23,17 +24,55 @@ body, html{
     margin-right: 5%;
     margin-left: 5%;
 }
-.text {
-    font-size:16px;
+
+h3 {
+    display: block;
+    font-size:1.5em;
     text-align: justify;
-    margin-top:0%;
-    margin-bottom: 2%;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-top:2em;
+    margin-bottom: 0em;
+    margin-right: 0.67em;
+    margin-left: 0.5em;
+    font-weight: bold;
+}
+
+h4 {
+    display: block;
+    font-size:1.2em;
+    text-align: justify;
+    margin-top:0em;
+    margin-bottom: 0.67em;
+    margin-right: 0.67em;
+    margin-left: 0.7em;
+    font-weight: bold;
+    color: rgb(0,0,0);
+}
+
+h5 {
+    display: block;
+    font-size:1em;
+    text-align: justify;
+    margin-top:0em;
+    margin-bottom: 0.67em;
+    margin-right: 0.67em;
+    margin-left: 0.7em;
+    font-weight: bold;
+    color: rgb(255,255,255);
+}
+
+p {
+    display: block;
+    font-size:1em;
+    text-align: justify;
+    margin-top:0em;
+    margin-bottom: 0.67em;
+    margin-right: 0.67em;
+    margin-left: 0.7em;
+    color: rgb(0,0,0);
 }
 
 footer {
-    position:fixed; /* added */
+    position:fixed; 
     height: 15%;
     bottom:-60px; /* added - fix to bottom */
     left:0; /* added -for full width */

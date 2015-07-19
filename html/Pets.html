@@ -11,18 +11,18 @@
     <!--3 Col Portfolio - Start Bootstrap Template -->
     <title> GoToPaws </title>
     {% load static from staticfiles %}
+    <script type="text/javascript" src="{% static "js/angular.min.js" %}"></script>
     <script type="text/javascript" src="{% static "js/sortable.js" %}"></script>
-
-    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/jquery-responsiveTables.css" />
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
-    <script> window.jQuery || document.write('<script src="bootstrap-3.3.5-dist/js/jquery-1.10.2.min.js" type="text/javascript"><\/script>')</script>
-    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/jquery-responsiveTables.js"></script>
-    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/jquery.responsiveText.js"></script>
+    <script type="text/javascript" src="{% static  "js/shelters.js" %}"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <!-- Custom CSS -->
+    <link href="bootstrap-3.3.5-dist/css/table.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/pet-body.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,41 +31,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('.responsive').not('table').responsiveText();
-        $('table.responsive').responsiveTables();
-      });
-    </script>
-    <style type="text/css">
-      body {margin:0; padding:20px; font-family: 'Average Sans', sans-serif; font-size:16px; font-weight:normal; line-height:1.5; background:#589283; color:#fff; text-shadow:2px 2px 2px #3F6558;}
-      a, a:link, a:visited {color:#fff;text-decoration: none;border-bottom:1px dashed #3F6558;-webkit-transition:border-color 0.3s ease-in;}
-      a:hover, a:focus {border-bottom:1px dashed #fff;}
-      h1, h2, h3, p {text-align:center;}
-      h1, h2, h3 {padding: 0 0.1em;}
-      h1[data-scrollable] { line-height: 1.85; }
-      .heading {margin-top:0.25em;font-family:'Pacifico', sans-serif; text-shadow:0.1em 0.1em 2px #3F6558;}
-      .subheading {font-weight:normal;}
-      .button {margin:2em 0;}
-      .button a {background:#3F6558;padding:0.4em 1em;border:none;border-radius:10px;}
-      .clearfix {clear:both;}
-      .space {margin:5em 0;}
-      table {
-        border: 1px solid #3F6558;
-        margin-bottom: 20px;
-      }
-      thead tr th {
-        background: #3F6558;
-      }
-      th, td {
-        padding: 0 10px;
-      }
-      tbody th, tbody td {
-        border: 1px solid #3F6558;
-      }
-    </style>
 </head>
-<body>
+
+    <body>
 
         <nav class="navbar navbar-inverse" role="navigation">
             <div class="navbar-header">
@@ -97,7 +65,7 @@
             </div>
         </nav>
         
-       
+        <div class="container">
 
             <!-- Page Heading -->
         <div class="row">
@@ -109,43 +77,45 @@
         </div>
         <!-- /.row -->
 
-        <table  class="responsive sortable" data-min="11" data-max="30"  id="anyid" cellpadding="0" cellspacing="0" >
+        <div class="table-responsive"> 
+        <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0" >
             <thead>  
                 <tr>
-                    <th class="unsortable" valign="middle">Picture:</th>
-                    <th valign="middle">Name:</th>
-                    <th valign="middle">Age:</th>
-                    <th valign="middle">Sex:</th>
-                    <th valign="middle">Size:</th>
-                    <th valign="middle">Breed:</th>
-                    <th valign="middle">Shelter:</th>      
-                    <th valign="middle">City</th> 
+                    <th class="unsortable">Picture:</th>
+                    <th>Name:</th>
+                    <th>Age:</th>
+                    <th>Sex:</th>
+                    <th>Size:</th>
+                    <th>Breed:</th>
+                    <th>Shelter:</th>      
+                    <th>City</th> 
                 </tr>
             </thead>
             <tbody>
                {% for pet in pets_list %} 
                <tr >
-                <td valign="middle"><img class="responsive portfolio-item" src={{pet.pet_pic_url}} alt="shelters"  height="42" width="42"></td>
+                <td></td>
                 <!--td><a href="/Shelters/{{shelter.shelter_id}}" id="nav_font">{{shelter.shelter_name}}</a></td-->
-                <td valign="middle"><a href={{pet.pet_url}} id="nav_font">{{pet.pet_name}}</a></td>
-                <td valign="middle">{{pet.pet_age}}</td>
-                <td valign="middle">{{pet.pet_sex}}</td>
-                <td valign="middle">{{pet.pet_size}}</td>
-                <td valign="middle">{{pet.pet_breed}}</td>
-                <td valign="middle"><a href="{{pet.pet_shelter_url}}">{{pet.pet_shelter}}</a></td>
-                <td valign="middle"><a href="{{pet.pet_city_url}}">{{pet.pet_city}}</a></td>
+                <td><a href={{pet.pet_url}} id="nav_font">{{pet.pet_name}}</a></td>
+                <td>{{pet.pet_age}}</td>
+                <td>{{pet.pet_sex}}</td>
+                <td>{{pet.pet_size}}</td>
+                <td>{{pet.pet_breed}}</td>
+                <td><a href="{{pet.pet_shelter_url}}">{{pet.pet_shelter}}</a></td>
+                <td><a href="{{pet.pet_city_url}}">{{pet.pet_city}}</a></td>
                 
                 </tr>
             {% endfor %}
-        </tbody>
-        </table>
-        </div>
+
+            </tbody>
+            </table>
+            </div>
 
 
 <hr>
 
 
- <div class="container">
+
 
 <!-- Pagination -->
 <div class="row text-center">
@@ -198,20 +168,6 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 
-
-   <script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-17121602-5']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
 </body>
 
 </html>
