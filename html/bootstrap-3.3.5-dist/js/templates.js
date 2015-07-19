@@ -68,7 +68,7 @@ var app2 = angular.module("mapModule", [], function(){});
     });
 
     geocoder = new google.maps.Geocoder();
-    geocoder.geocode({ results[0]: address }, function(results2, status) {
+    geocoder.geocode({ results[0].city_name: address }, function(results2, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       map.setCenter(results2[0].geometry.location);
       var marker = new google.maps.Marker({
