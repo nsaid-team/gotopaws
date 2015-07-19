@@ -38,10 +38,9 @@ p {
 
 #footer {
     clear: both;
-    position: relative;
-    z-index: 10;
+    position: absolute;
     height: 1em;
-    margin-top: -3em;
+    bottom: 0;
 }
 
 h1,
