@@ -210,6 +210,7 @@ def search (request):
                         { "match": { "pets_text":       q }},
                         { "match": { "vets_text":       q }},
                     ]
+                }
             },
             "highlight": {
                 "fields" : {
