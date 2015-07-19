@@ -78,7 +78,7 @@ A template for GoToPaws city landing pages.
 
                 {% for shelter in city_shelter_list %}
 
-                <a href="{{shelter.shelter_url}}"><img class="summary-image img-suqare img-responsive pull-right" alt="{{shelter.shelter_name}}" src="{{shelter.shelter_pic}}"></a>
+                <a href="{{shelter.shelter_url}}"><img class="summary-image img-suqare img-responsive pull-right" alt="{{shelter.shelter_name}}" src="/{{shelter.shelter_pic_url}}"></a>
 
                 
                 <h3> {{shelter.shelter_name}} </h3>
@@ -127,7 +127,7 @@ A template for GoToPaws city landing pages.
                 </div>
                 {% endfor %}
             </div>
-            <img src="https://maps.googleapis.com/maps/api/staticmap?center={{city.city_name}},{{city.city_state}}&zoom=12&size=400x200">
+            <img src="https://maps.googleapis.com/maps/api/staticmap?center={{city.city_name}},{{city.city_state}}&zoom=13&size=400x200">
 
             <!-- https://www.google.com/maps/preview/@<latitude>,<longitude>,<zoom level>z -->
             <div ng-controller ="MyCtrl" id="map"> 
