@@ -4,6 +4,7 @@ html{
     min-height:100%;
     max-width:100%;
     color:white;
+    background: url(../img/All/bg_search1.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -11,7 +12,6 @@ html{
 }
 
 body {
-    background: url(../img/All/bg_search1.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
