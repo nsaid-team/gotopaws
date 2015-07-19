@@ -85,6 +85,8 @@ var app2 = angular.module("mapModule", [], function(){});
       title:"Fast marker"
      });
     }
+
+    google.maps.event.addDomListener(window,'load', initialize);
  
 
 
