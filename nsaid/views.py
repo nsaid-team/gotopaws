@@ -195,12 +195,26 @@ def city_list(request):
 def search (request):
     q = request.GET.get('q')
     es = Elasticsearch()
-    rs = es.search(index="gtp_index", body={
-        "multi_match" : {
-        "query":    q,
-        "fields": [ "title", "subtitle","*_text" ]
+    rs = es.search(index="gtp_index", body=
+        {
+            "query": {
+                "bool": {
+                    "must": [
+                        {
+                            "match": {
+                                "title": q
+                            }
+                        },
+                        {
+                            "match": {
+                                "shelters_text": q
+                            }
+                        }
+                    ]
+                }
+            }
         }
-    })
+    )
     results = {}
     results_list = []
     for hit in rs['hits']['hits']:
