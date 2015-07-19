@@ -62,14 +62,16 @@ var app2 = angular.module("mapModule", [], function(){});
       $scope.results = data;
       temp.results = data;
       console.log(data);
+      initialize();
     }).error(function(data, status) {
       $scope.data = data || "Request failed";
       $scope.status = status;
       console.log(data);
     });
+  }]);
 
 
-
+    function initialize(){
      var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
      var myOptions = {
          zoom: 4,
@@ -82,11 +84,12 @@ var app2 = angular.module("mapModule", [], function(){});
           map: map,
       title:"Fast marker"
      });
+ 
 
 
 
 
-}]);
+
 
 
 
