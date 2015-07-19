@@ -198,9 +198,9 @@ def search (request):
     rs = es.search(index="gtp_index", body={
         "multi_match" : {
         "query":    q,
-        "fields": [ "title", "subtitle","*_text" ]
+        "fields": [ "*" ]
         }
-  })
+    })
     results = {}
     results_list = []
     for hit in rs['hits']['hits']:
