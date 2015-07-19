@@ -233,14 +233,20 @@ def search (request):
                 results['shelters_text'] = hit['highlight']['shelters_text'][0]
                 results['shelters_text'] = results['shelters_text'].replace("<em>", "<strong><em>")
                 results['shelters_text'] = results['shelters_text'].replace("</em>", "</em></strong>")
+            else :
+                results['shelters_text'] = None
             if 'pets_text' in hit['highlight'] :
                 results['pets_text'] = hit['highlight']['pets_text'][0]
                 results['pets_text'] = results['pets_text'].replace("<em>", "<strong><em>")
                 results['pets_text'] = results['pets_text'].replace("</em>", "</em></strong>")
+            else :
+                results['pets_text'] = None
             if 'vets_text' in hit['highlight'] :
                 results['vets_text'] = hit['highlight']['vets_text'][0]
                 results['vets_text'] = results['vets_text'].replace("<em>", "<strong><em>")
                 results['vets_text'] = results['vets_text'].replace("</em>", "</em></strong>")
+            else :
+                results['vets_text'] = None
             results['title'] = hit["_source"]['title']
             if 'title' in hit['highlight']:
                 results['title'] = hit['highlight']['title'][0]
@@ -251,7 +257,7 @@ def search (request):
                 results['subtitle'] = hit['highlight']['subtitle'][0]
                 results['subtitle'] = results['subtitle'].replace("<em>", "<strong><em>")
                 results['subtitle'] = results['subtitle'].replace("</em>", "</em></strong>")
-            results_list.append({'title':results['title'], 'subtitle':results['subtitle'], 'vets_text':results['vets_text']})
+            results_list.append({'title':results['title'], 'subtitle':results['subtitle'], 'vets_text':results['vets_text'], 'pets_text': results['pets_text'], 'shelters_text': results['shelters_text']})
     context = {"results_list": results_list} 
     print({context})
     return render_to_response('search/search.html', context)
