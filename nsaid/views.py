@@ -277,5 +277,5 @@ def external_api (request) :
         api_json = response.read()
         response_list.append(api_json)
     context = {"response_list": response_list}
-    return render_to_response("extapi.html", context)
+    return render_to_response('extapi.html', context)
     
