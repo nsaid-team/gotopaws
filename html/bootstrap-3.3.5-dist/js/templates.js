@@ -81,7 +81,7 @@ var app2 = angular.module("mapModule", [], function(){});
     
 
 
-    var address = this.results[0].fields.city_name +", "+ this.results[0].fields.city_state;
+    var address = this.results[0].fields.city_name;
     geocoder.geocode( { 'address': address}, function(results2, status) {
       if (status == google.maps.GeocoderStatus.OK) {
         map.setCenter(results2[0].geometry.location);
