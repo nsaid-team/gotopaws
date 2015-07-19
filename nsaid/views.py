@@ -200,12 +200,12 @@ def search (request):
     results_list = []
     for hit in rs['hits']['hits']:
         try:
-            results[int(hit['_id'])] = hit["_source"]
+            results[hit["_source"].keys] = hit["_source"]
             results_list.append(results)
         except: 
             break
 
     context = {"results_list": results_list} 
-    #print({context})    
+    print({context})    
     #return HttpResponse(json.dumps(context), content_type="application/json")
     return render_to_response('search/search.html', context)
