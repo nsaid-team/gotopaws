@@ -1,30 +1,49 @@
-/*!
- * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-body,
 html {
-     background: url(../img/All/dog-and-cat.jpg);
-     /* Image is centered vertically and horizontally at all times */
-  background-position: center center;
-  
-  /* Image doesn't repeat */
-  background-repeat: no-repeat;
-  
-  /* Makes the image fixed in the viewport so that it doesn't move when 
-     the content height is greater than the image height */
-  background-attachment: fixed;
-  
-  /* This is what makes the background image rescale based on its container's size */
-  background-size: cover;
-  
-  /* Pick a solid background color that will be displayed while the background image is loading */
-  background-color:#464646;
+    background: url(../img/All/dog-and-cat.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+    min-height: 100%;
+    height: 101%;
 }
 
-body,
+body {
+    background:transparent;
+    min-height: 100%;
+    height: 100%;
+}
+
+#container {height: 100%;}
+
+body > #container { height: auto; min-height: 100%; }
+
+#content { padding-bottom: 3em; }
+
+small {
+    color: rgb(255,255,255);
+}
+
+p {
+    display: block;
+    font-size:1em;
+    text-align: justify;
+    margin-top:0em;
+    margin-bottom: 0.67em;
+    margin-right: 0.67em;
+    margin-left: 0.7em;
+    color: rgb(0,0,0);
+}
+
+#footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 1em;
+    margin-top: -3em;
+}
+
 h1,
 h2,
 h3,
@@ -32,7 +51,29 @@ h4,
 h5,
 h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+}
+
+h3 {
+    display: block;
+    font-size:1.5em;
+    text-align: justify;
+    margin-top:2em;
+    margin-bottom: 0em;
+    margin-right: 0.67em;
+    margin-left: 0.5em;
+    font-weight: bold;
+}
+
+h4 {
+    display: block;
+    font-size:1.2em;
+    text-align: justify;
+    margin-top:0em;
+    margin-bottom: 0.67em;
+    margin-right: 0.67em;
+    margin-left: 0.7em;
+    font-weight: bold;
+    color: rgb(0,0,0);
 }
 
 
@@ -148,14 +189,14 @@ h6 {
     margin-top: 0;
 }
 
-@media(max-width:1199px) {
+@media(max-width:100%) {
     ul.banner-social-buttons {
         float: left;
         margin-top: 15px;
     }
 }
 
-@media(max-width:767px) {
+@media(max-width:100%) {
     .banner h2 {
         margin: 0;
         text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
@@ -175,8 +216,4 @@ h6 {
 
 footer {
     padding: 50px 0;
-}
-
-p.copyright {
-    margin: 15px 0 0;
 }
