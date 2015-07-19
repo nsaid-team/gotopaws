@@ -65,7 +65,7 @@ p {
 }
 
 footer {
-    position: relative;
+    position: absolute;
     vertical-align:bottom;
 
     bottom:-40px; /* added - fix to bottom */
