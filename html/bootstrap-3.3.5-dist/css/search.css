@@ -10,9 +10,9 @@ body, html{
     color:white;
 }
 
-div.text-box{
-    background-color: rgba(255,  255,  255,  0.6);*/
-    color: rgba(255,  255,  255,  0.6);
+.text-box{
+    background-color: rgba(255,  255,  255,  0.8);*/
+    color: rgba(255,  255,  255,  0.8);
     -moz-box-shadow: 10px 10px 5px #636363;
     -webkit-box-shadow: 10px 10px 5px #636363;
     box-shadow: 10px 10px 5px #636363;
