@@ -5,7 +5,7 @@ import sys
 import json
 import pprint
 
-def create():
+def create_city_file():
     """
     returns a dict 
     """
@@ -41,5 +41,25 @@ def create():
 
     session.close()
 
+def get_valid_shelters(city_list):
+    """
+    given a list of cities, query petfinder for all shelters in the city and only filter through
+    if they have certain fields filled and if their city matches for simplicity. list < 25 for simplicity too.
+    return the list of verified cities
+    """
+    return['TX21', 'TX1051',]
+
+def build_pets_info(valid_shelter_list):
+    """
+    given a list of shelters, query the top 25 pets
+    return the pet info in a json string suitable for printing to Pets.json
+    """
+    return '[{"model":"nsaid.Pet", "pk":10, "fields":{"pet_name":"Gracie"}}]'
+
 if __name__ == "__main__" :
-    create()
+    #create_city_file()
+    city_list = ['Austin+TX', 'Houston+TX',]
+    valid_shelter_list = get_valid_shelters(city_list)
+    pets_info = build_pets_info(valid_shelter_list)
+
+        
