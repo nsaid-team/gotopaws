@@ -256,5 +256,5 @@ def search (request):
             break
 
     context = {"results_list": results_list} 
-    #print({context})
+    print({context})
     return render_to_response('search/search.html', context)
