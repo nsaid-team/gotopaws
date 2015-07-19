@@ -69,30 +69,20 @@ var app2 = angular.module("mapModule", [], function(){});
     });
 
 
-    var geocoder = new google.maps.Geocoder();
-    var map;
-  
-    var latlng = new google.maps.LatLng(-34.397, 150.644);
-    var mapOptions = {
-      zoom: 8,
-      center: latlng};
-    
-    map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-    
 
+     var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+     var myOptions = {
+         zoom: 4,
+         center: myLatlng,
+         mapTypeId: google.maps.MapTypeId.ROADMAP
+         }
+      map = new google.maps.Map(document.getElementById("map"), myOptions);
+      var marker = new google.maps.Marker({
+          position: myLatlng, 
+          map: map,
+      title:"Fast marker"
+     });
 
-    var address = 'this.results[0].fields.city_name';
-    geocoder.geocode( { 'address': address}, function(results2, status) {
-      if (status == google.maps.GeocoderStatus.OK) {
-        map.setCenter(results2[0].geometry.location);
-        var marker = new google.maps.Marker({
-            map: map,
-            position: results2[0].geometry.location
-        });
-      } else {
-        alert("Geocode was not successful for the following reason: " + status);
-      }
-    });
 
 
 

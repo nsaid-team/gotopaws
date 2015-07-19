@@ -26,7 +26,8 @@ A template for GoToPaws city landing pages.
     <script type="text/javascript" src='{% static "js/angular.min.js" %}'></script>
     <script type="text/javascript" src='{% static "js/templates.js" %}'></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
    
 
 
@@ -125,9 +126,11 @@ A template for GoToPaws city landing pages.
                 {% endfor %}
             </div>
 
+            <div id="map">    </div>
+
             <!-- EMBED CITY SPECIFIC MAP HERE -->
-            <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=30.2672%2C-97.7431&key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg" allowfullscreen></iframe>
-            <hr />
+            <!-- <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=30.2672%2C-97.7431&key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg" allowfullscreen></iframe>
+            <hr /> -->
 
   
   </body>
