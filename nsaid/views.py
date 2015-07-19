@@ -244,17 +244,13 @@ def search (request):
     results = {}
     results_list = []
     for hit in rs['hits']['hits']:
-        try:
-            results['title'] = hit["_source"]['title']
-            results['subtitle'] = hit["_source"]['subtitle']
-            results['url'] = hit["_source"]['url']
-            results['shelters_text'] = hit['highlight']['shelters_text'][0]
-            results['pets_text'] = hit['highlight']['pets_text'][0]
-            results['vets_text'] = hit['highlight']['vets_text'][0]
-            results_list.append(results)
-        except: 
-            break
-
+        results['title'] = hit["_source"]['title']
+        results['subtitle'] = hit["_source"]['subtitle']
+        results['url'] = hit["_source"]['url']
+        results['shelters_text'] = hit['highlight']['shelters_text'][0]
+        results['pets_text'] = hit['highlight']['pets_text'][0]
+        results['vets_text'] = hit['highlight']['vets_text'][0]
+        results_list.append(results)
     context = {"results_list": results_list} 
     print({context})
     return render_to_response('search/search.html', context)
