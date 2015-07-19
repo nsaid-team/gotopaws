@@ -75,8 +75,7 @@ p {
 
 footer {
     position: relative;
-    margin-top: -7.5em;
     vertical-align:bottom; 
-    bottom:0; /* added - fix to bottom */
+    bottom:-7.5em; /* added - fix to bottom */
     left:0; /* added -for full width */
 }
