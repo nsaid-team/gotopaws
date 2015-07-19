@@ -245,6 +245,7 @@ def search (request):
     results_list = []
     for hit in rs['hits']['hits']:
         try:
+            results_list.append(hit["_source['title']"])
             results_list.append(hit["highlight"])
         except: 
             break
