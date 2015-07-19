@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.template import loader
+from django.template import loader, Template, Context
 from django.shortcuts import render, render_to_response
 from django.db import connection
 from django.conf import settings
@@ -113,8 +113,10 @@ def shelter_json(request, id):
     return HttpResponse([serializers.serialize('json', shelter), jsongeocode])
 
 def city_template(request, name):
-    city = City.objects.filter(city_name = name)
-    context = {'city': city[0], 'city_shelter_list' : [Shelter.objects.all()[0], Shelter.objects.all()[1]]}
+    name_city, name_state = name.split('_')
+    city = City.objects.filter(city_name = name_city, city_state = name_state)
+    city_shelter_list = Shelter.objects.filter(shelter_city = name_city, shelter_state = name_state)
+    context = {'city': city[0], 'city_shelter_list' : city_shelter_list}
     return render(request, 'City_template.html', context)
     
 def city_json(request, name):
