@@ -16,7 +16,10 @@ head {
 }
 
 #text-box{
-    margin: 1% auto; 
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right:auto; 
     padding: 10px; 
     background-color: rgba(255,  255,  255,  0.9);
     -moz-box-shadow: 0 0 20px black; 
@@ -68,6 +71,6 @@ footer {
     position: absolute;
     vertical-align:bottom;
 
-    bottom:-40px; /* added - fix to bottom */
+    bottom:0; /* added - fix to bottom */
     left:0; /* added -for full width */
 }
