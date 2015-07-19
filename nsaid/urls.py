@@ -54,5 +54,5 @@ urlpatterns = [
     url(r'^api/shelters/$', views.shelter_list),
     url(r'^api/cities/$', views.city_list),
     url(r'^search/$', views.search, name='search'),
-    url(r'^extapi$', views.external_api),
+    url(r'^extapi/$', views.external_api),
 ]
