@@ -88,31 +88,31 @@
         <!-- /.row -->
 
 
-        <table align="center" class="responsive sortable " data-min="11" data-max="30"  id="anyid" cellpadding="0" cellspacing="0" >
+        <table  class="responsive sortable " data-min="11" data-max="30"  id="anyid" cellpadding="0" cellspacing="0" >
             <thead>  
                 <tr>
-                    <th class="unsortable">Picture:</th>
-                    <th>Name:</th>
-                    <th>Age:</th>
-                    <th>Sex:</th>
-                    <th>Size:</th>
-                    <th>Breed:</th>
-                    <th>Shelter:</th>      
-                    <th>City</th> 
+                    <th class="unsortable" valign="middle">Picture:</th>
+                    <th valign="middle">Name:</th>
+                    <th valign="middle">Age:</th>
+                    <th valign="middle">Sex:</th>
+                    <th valign="middle">Size:</th>
+                    <th valign="middle">Breed:</th>
+                    <th valign="middle">Shelter:</th>      
+                    <th valign="middle">City</th> 
                 </tr>
             </thead>
             <tbody>
                {% for pet in pets_list %} 
                <tr >
-                <td><img class="img-responsive portfolio-item" src={{pet.pet_pic_url}} alt="shelters"  height="42" width="42"></td>
+                <td valign="middle"><img class="img-responsive portfolio-item" src={{pet.pet_pic_url}} alt="shelters"  height="42" width="42"></td>
                 <!--td><a href="/Shelters/{{shelter.shelter_id}}" id="nav_font">{{shelter.shelter_name}}</a></td-->
-                <td><a href={{pet.pet_url}} id="nav_font">{{pet.pet_name}}</a></td>
-                <td>{{pet.pet_age}}</td>
-                <td>{{pet.pet_sex}}</td>
-                <td>{{pet.pet_size}}</td>
-                <td>{{pet.pet_breed}}</td>
-                <td><a href="{{pet.pet_shelter_url}}">{{pet.pet_shelter}}</a></td>
-                <td><a href="{{pet.pet_city_url}}">{{pet.pet_city}}</a></td>
+                <td valign="middle"><a href={{pet.pet_url}} id="nav_font">{{pet.pet_name}}</a></td>
+                <td valign="middle">{{pet.pet_age}}</td>
+                <td valign="middle">{{pet.pet_sex}}</td>
+                <td valign="middle">{{pet.pet_size}}</td>
+                <td valign="middle">{{pet.pet_breed}}</td>
+                <td valign="middle"><a href="{{pet.pet_shelter_url}}">{{pet.pet_shelter}}</a></td>
+                <td valign="middle"><a href="{{pet.pet_city_url}}">{{pet.pet_city}}</a></td>
                 
                 </tr>
             {% endfor %}
