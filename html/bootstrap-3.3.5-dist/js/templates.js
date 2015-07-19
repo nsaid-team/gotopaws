@@ -68,7 +68,7 @@ var app2 = angular.module("mapModule", [], function(){});
     });
 
 
-    var geocoder = new google.maps.Geocoder();;
+    var geocoder = new google.maps.Geocoder();
     var map;
   
     var latlng = new google.maps.LatLng(-34.397, 150.644);
