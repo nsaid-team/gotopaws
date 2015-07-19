@@ -13,9 +13,9 @@ body, html{
 .text-box{
     background-color: rgba(255,  255,  255,  0.8);*/
     color: rgba(255,  255,  255,  0.8);
-    -moz-box-shadow: 10px 10px 5px #636363;
-    -webkit-box-shadow: 10px 10px 5px #636363;
-    box-shadow: 10px 10px 5px #636363;
+    -moz-box-shadow: 13px 13px 18px #8c8c8c;
+    -webkit-box-shadow: 13px 13px 18px #8c8c8c;
+    box-shadow: 13px 13px 18px #8c8c8c;
     width: 90%;
     height:70%;
     margin-top:5%;
