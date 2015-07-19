@@ -209,8 +209,7 @@ def search (request):
                         { "match": { "shelters_text":   q }},
                         { "match": { "pets_text":       q }},
                         { "match": { "vets_text":       q }},
-                    ],
-                    "tie_breaker": 0.3
+                    ]
                 }
             },
             "highlight": {
