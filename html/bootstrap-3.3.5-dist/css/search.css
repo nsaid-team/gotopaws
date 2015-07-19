@@ -5,7 +5,7 @@ body{
     width: 100%;
     height: 100%;
     min-height:100%;
-    background-image: url(../img/All/bg_search1.jpg) no-repeat center center;
+    background: url(../img/All/bg_search1.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -13,10 +13,10 @@ body{
 	color: white;
 }
 
-.text-box{
+div .text-box{
     background-color: rgba(255,  255,  255,  0.6);
     background: rgba(255,  255,  255,  0.6);
-    color: rgba(255,  255,  255,  0.6)
+    color: rgba(255,  255,  255,  0.6);
     width: 100%;
     height:70%;
     margin-top:2%;
@@ -28,7 +28,7 @@ body{
     text-align: justify;
 }
 
-.text {
+div .text {
     margin-top:5%;
     margin-bottom: 5%;
     margin-right: 5%;
