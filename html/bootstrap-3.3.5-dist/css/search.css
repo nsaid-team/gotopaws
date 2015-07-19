@@ -18,7 +18,7 @@ body, html{
     box-shadow: 13px 13px 18px #8c8c8c;
     font-color:black;
     width: 90%;
-    height:70%;
+    height:80%;
     margin-top:5%;
     margin-bottom: 5%;
     margin-right: 5%;
@@ -71,7 +71,7 @@ p {
 }
 
 footer {
-    position:fixed; 
+    position:relative; 
     height: 15%;
     bottom:-90px; /* added - fix to bottom */
     left:0; /* added -for full width */
