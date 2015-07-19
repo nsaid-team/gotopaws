@@ -23,11 +23,10 @@ div.text-box{
     margin-right: 5%;
     margin-left: 5%;
 }
-
-div.text {
+.text {
     font-size:16px;
     text-align: justify;
-    margin-top:30%;
+    margin-top:5%;
     margin-bottom: 2%;
     margin-right: 2%;
     margin-left: 2%;
