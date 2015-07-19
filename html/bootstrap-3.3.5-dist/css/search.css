@@ -73,7 +73,7 @@ p {
 footer {
     position:relative; 
     height: 15%;
-    bottom:-90px; /* added - fix to bottom */
+    bottom:-20px; /* added - fix to bottom */
     left:0; /* added -for full width */
     right:0; /* added -for full width */
 }
