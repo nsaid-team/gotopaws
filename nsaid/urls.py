@@ -39,6 +39,7 @@ urlpatterns = [
     url(r'^austin$', views.city_Austin),
     url(r'^sf$', views.city_SF),
     url(r'^houston$', views.city_Houston),
+    url(r'^extapi$', views.external_api),
     #RESTful API
     #url(r'^api/', include('api.urls')),
     #url(r'^api/', include(ShelterResource().urls)),
@@ -54,5 +55,4 @@ urlpatterns = [
     url(r'^api/shelters/$', views.shelter_list),
     url(r'^api/cities/$', views.city_list),
     url(r'^search/$', views.search, name='search'),
-    url(r'^extapi$', views.external_api),
 ]
