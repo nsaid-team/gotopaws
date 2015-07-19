@@ -7,18 +7,15 @@ html {
     overflow-x: hidden;
 }
 
-div.text-box{
-    background-color: rgba(255,  255,  255,  0.8);
-    color: rgba(255,  255,  255,  0.8);
-    -moz-box-shadow: 13px 13px 18px #8c8c8c;
-    -webkit-box-shadow: 13px 13px 18px #8c8c8c;
-    box-shadow: 13px 13px 18px #8c8c8c;
+#text-box{
+    margin: 4% auto; 
+    padding: 20px; 
+    background: rgba(255,  255,  255,  0.8);
+    -moz-box-shadow: 0 0 20px black; 
+    -webkit-box-shadow: 0 0 20px black; 
+    box-shadow: 0 0 20px black;
     width: 90%;
     height:80%;
-    margin-top:4%;
-    margin-bottom: 4%;
-    margin-right: 4%;
-    margin-left: 4%;
 }
 
 h3 {
