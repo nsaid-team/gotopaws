@@ -5,13 +5,8 @@ html {
     min-height:100%;
 }
 
-body {
-    padding-bottom: 9em;
-}
-
-
 div.background {
-    background: url(../img/All/bg_search1.jpg) no-repeat center center fixed;
+    background: url(../img/All/bg_search1.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
