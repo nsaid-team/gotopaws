@@ -16,21 +16,21 @@ div.text-box{
     -moz-box-shadow: 10px 10px 5px #636363;
     -webkit-box-shadow: 10px 10px 5px #636363;
     box-shadow: 10px 10px 5px #636363;
-    width: 100%;
+    width: 70%;
     height:70%;
-    margin-top:2%;
+    margin-top:0%;
     margin-bottom: 5%;
     margin-right: 5%;
     margin-left: 5%;
 }
 
-div .text {
+div.text {
     font-size:16px;
     text-align: justify;
-    margin-top:5%;
-    margin-bottom: 5%;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-top:10%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
 }
 
 footer {
