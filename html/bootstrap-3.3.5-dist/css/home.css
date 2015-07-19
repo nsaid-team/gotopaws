@@ -73,6 +73,15 @@ h4 {
     margin-right: 0.67em;
     margin-left: 0.7em;
     font-weight: bold;
+    color: rgb(255,255,255);
+}
+
+h5 {
+    font-family: "Lato";
+    display: block;
+    font-size:1.5em;
+    text-align: justify;
+    font-weight: bold;
     color: rgb(0,0,0);
 }
 
@@ -212,8 +221,4 @@ h4 {
     ul.banner-social-buttons > li:last-child {
         margin-bottom: 0;
     }
-}
-
-footer {
-    padding: 50px 0;
 }
