@@ -5,7 +5,7 @@ import sys
 import json
 import pprint
 
-def create_city_file():
+def create_city_file(city_list):
     """
     returns a dict 
     """
@@ -21,7 +21,7 @@ def create_city_file():
     session = rauth.OAuth1Session(consumer_key = consumer_key, consumer_secret = consumer_secret, access_token = token, access_token_secret = token_secret)
     biz_list = []
 
-    for location in ("austin+tx", "san+antonio+tx", "houston+tx"):
+    for location in (city_list):
         params["location"] = location
         for term in ("veterinarian", "pet+groomer", "dog+park"):
             params["term"] = term
@@ -41,25 +41,19 @@ def create_city_file():
 
     session.close()
 
-def get_valid_shelters(city_list):
+def shelters_per_city(city):
     """
-    given a list of cities, query petfinder for all shelters in the city and only filter through
-    if they have certain fields filled and if their city matches for simplicity. list < 25 for simplicity too.
-    return the list of verified cities
+    given a city, find <25 shelters associated with it and only include them if their city field matches
+    return the list of shelter objects
     """
-    return['TX21', 'TX1051',]
-
-def build_pets_info(valid_shelter_list):
-    """
-    given a list of shelters, query the top 25 pets
-    return the pet info in a json string suitable for printing to Pets.json
-    """
-    return '[{"model":"nsaid.Pet", "pk":10, "fields":{"pet_name":"Gracie"}}]'
 
 if __name__ == "__main__" :
-    #create_city_file()
-    city_list = ['Austin+TX', 'Houston+TX',]
-    valid_shelter_list = get_valid_shelters(city_list)
-    pets_info = build_pets_info(valid_shelter_list)
-
-        
+    city_list = ["austin+tx", "san+antonio+tx", "houston+tx", "san+francisco+ca", "dallas+tx", "el+paso+tx", "new+orleans+la"]
+    #create_city_file(city_list)
+    master_spc = []
+    for city in city_list:
+        spc = shelters_per_city(city)
+        master_spc += spc
+    for shelter in master_spc:
+        # grab a bunch of pets, only if their city name matches a city
+    # drop any empty shelters?
