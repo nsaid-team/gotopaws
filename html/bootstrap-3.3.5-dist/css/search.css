@@ -16,7 +16,7 @@ div.text-box{
     -moz-box-shadow: 10px 10px 5px #636363;
     -webkit-box-shadow: 10px 10px 5px #636363;
     box-shadow: 10px 10px 5px #636363;
-    width: 70%;
+    width: 80%;
     height:70%;
     margin-top:0%;
     margin-bottom: 5%;
@@ -27,7 +27,7 @@ div.text-box{
 div.text {
     font-size:16px;
     text-align: justify;
-    margin-top:10%;
+    margin-top:30%;
     margin-bottom: 2%;
     margin-right: 2%;
     margin-left: 2%;
@@ -36,7 +36,7 @@ div.text {
 footer {
     position:fixed; /* added */
     height: 15%;
-    bottom:-40px; /* added - fix to bottom */
+    bottom:-60px; /* added - fix to bottom */
     left:0; /* added -for full width */
     right:0; /* added -for full width */
 }
