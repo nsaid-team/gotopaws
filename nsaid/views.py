@@ -207,7 +207,22 @@ def search (request):
                         },
                         {
                             "match": {
+                                "subtitle": q
+                            }
+                        },
+                        {
+                            "match": {
                                 "shelters_text": q
+                            }
+                        },
+                        {
+                            "match": {
+                                "pets_text": q
+                            }
+                        },
+                        {
+                            "match": {
+                                "vets_text": q
                             }
                         }
                     ]
