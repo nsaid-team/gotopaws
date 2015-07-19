@@ -251,7 +251,7 @@ def search (request):
                 results['subtitle'] = hit['highlight']['subtitle'][0]
                 results['subtitle'] = results['subtitle'].replace("<em>", "<strong><em>")
                 results['subtitle'] = results['subtitle'].replace("</em>", "</em></strong>")
-            results_list.append({'title':results['title'], 'subtitle':results['subtitle'], 'vets_text':results['vets_text'])
+            results_list.append({'title':results['title'], 'subtitle':results['subtitle'], 'vets_text':results['vets_text']})
     context = {"results_list": results_list} 
     print({context})
     return render_to_response('search/search.html', context)
