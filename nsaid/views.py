@@ -240,6 +240,7 @@ def search (request):
             }
         }
     )
+
     results = {}
     results_list = []
     for hit in rs['hits']['hits']:
