@@ -2,9 +2,7 @@
 Table sorting script  by Joost de Valk, check it out at http://www.joostdevalk.nl/code/sortable-table/.
 Based on a script from http://www.kryogenix.org/code/browser/sorttable/.
 Distributed under the MIT license: http://www.kryogenix.org/code/browser/licence.html .
-
 Copyright (c) 1997-2007 Stuart Langridge, Joost de Valk.
-
 Version 1.5.7
 */
 

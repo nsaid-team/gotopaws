@@ -25,13 +25,14 @@ A template for GoToPaws city landing pages.
     <!-- Custom AngularJS -->
     <script type="text/javascript" src='{% static "js/angular.min.js" %}'></script>
     <script type="text/javascript" src='{% static "js/templates.js" %}'></script>
+
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+   
+
+
     
 
-    <script type="text/javascript">
-    var STATIC_URL = 'bootstrap-3.3.5-dist';
-    function static(path) {
-        return STATIC_URL + path;}
-        </script>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,6 +50,20 @@ A template for GoToPaws city landing pages.
     
     <h1>{{city.city_name}}</h1>
     <p> {{city.city_motto}}</p>
+    {{city_shelter_list}}
+
+
+        <div id="ahhh" ng-controller ='MyCtrl as ctrl'>
+
+            <!-- [{results}]<br> -->
+       
+            [{results[0].fields.city_state}]
+            [{results[1].fields.city_shelter_list}]
+            
+ 
+ 
+        </div>
+
     
 
     <body>
@@ -61,7 +76,7 @@ A template for GoToPaws city landing pages.
 
                 <h2 class="summary-heading">Shelters <span class="text-muted">in {{city.city_name}}</span></h2>
 
-                {% for shelter in city.shelters_list %}
+                {% for shelter in city_shelter_list %}
 
                 <a href="{{shelter.shelter_url}}"><img class="summary-image img-suqare img-responsive pull-right" alt="{{shelter.shelter_name}}" src="{{shelter.shelter_pic}}"></a>
 
@@ -113,13 +128,31 @@ A template for GoToPaws city landing pages.
                 {% endfor %}
             </div>
 
+            <div ng-controller ="MyCtrl" id="map"> 
+            <script>
+            google.maps.event.addDomListener(window,'load', initialize);
+            </script>
             <!-- EMBED CITY SPECIFIC MAP HERE -->
-            <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=30.2672%2C-97.7431&key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg" allowfullscreen></iframe>
-            <hr />
+            </div>
 
-            <footer>
-                <p>Copyright &copy; NSAID 2015</p>
-            </footer>
+            <hr />   
+
+            
+
+  
+  </body>
+</html>
+
+            <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; NSAID 2015/p>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </footer>
         </div>
 
 

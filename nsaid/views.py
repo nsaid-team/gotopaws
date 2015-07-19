@@ -1,8 +1,9 @@
 from django.http import HttpResponse
-from django.template import loader
+from django.template import loader, Template, Context
 from django.shortcuts import render, render_to_response
 from django.db import connection
 from django.conf import settings
+from django.core import serializers
 from django import http
 from nsaid.models import *
 from rest_framework import status
@@ -86,26 +87,44 @@ def city_SF(request):
     return HttpResponse(template.render())
 
 def pet_template(request, id):
-    pet = Pet.objects.filter(pet_id = id)
+    s, p = id.split('_')
+    pet = Pet.objects.filter(pet_shelter = s, pet_id = p)
     context = {'pet': pet[0]}
     return render(request, 'Pet_template.html', context)
+    
+def pet_json(request, id):
+    pet = serializers.serialize('json', Pet.objects.filter(pet_id = id))
+    return HttpResponse(pet)
 
 def shelter_template(request, id):
     shelter = Shelter.objects.filter(shelter_id = id)
-    address = shelter[0].address1 + "," + shelter[0].city + "," + shelter[0].state
+    address = shelter[0].shelter_address + "," + shelter[0].shelter_city + "," + shelter[0].shelter_state
     url="https://maps.googleapis.com/maps/api/geocode/json?address=%s" % address.replace(" ", "+")
     response = urllib.request.urlopen(url)
     jsongeocode = response.read()
     context = {'shelter': shelter[0], 'map_json': jsongeocode}
     return render(request, 'Shelter_template.html', context)
+    
+def shelter_json(request, id):
+    shelter = Shelter.objects.filter(shelter_id = id)
+    address = shelter[0].shelter_address + "," + shelter[0].shelter_city + "," + shelter[0].shelter_state
+    url="https://maps.googleapis.com/maps/api/geocode/json?address=%s" % address.replace(" ", "+")
+    response = urllib.request.urlopen(url)
+    jsongeocode = response.read()
+    return HttpResponse([serializers.serialize('json', shelter), jsongeocode])
 
 def city_template(request, name):
-    city = City.objects.filter(city_name = name)
-    context = {'city': city[0]}
-    response = render(request, 'City_template.html', context)
-    response['Access-Control-Allow-Origin'] = settings.XS_SHARING_ALLOWED_ORIGINS
-    response['Access-Control-Allow-Methods'] = ['POST','GET','OPTIONS', 'PUT', 'DELETE']
-    return response
+    name_city, name_state = name.split('_')
+    #city = City.objects.filter(city_name = name_city, city_state = name_state)
+    city = City.objects.filter(city_name = name_city, city_state = name_state)
+    city_shelter_list = Shelter.objects.filter(shelter_city = name_city, shelter_state = name_state)
+    context = {'city': city[0], 'city_shelter_list' : city_shelter_list}
+    return render(request, 'City_template.html', context)
+    
+def city_json(request, name):
+    name_city, name_state = name.split('_')
+    city = serializers.serialize('json', City.objects.filter(city_name = name_city, city_state = name_state))
+    return HttpResponse(city)
 
 @api_view(['GET'])
 def pet_list(request):
@@ -181,27 +200,51 @@ def city_list(request):
 def search (request):
     q = request.GET.get('q')
     es = Elasticsearch()
-    rs = es.search(index='gtp_index', 
-               scroll='60s', 
-               size=100, 
-               body={
-                 "fields" : ["title", "subtitle", "url", "shelters_text", "pets_text", "vets_text"],
-                   "query" : {
-                     "match": {"_all": q }
-                   }
-               }
+    rs = es.search(index="gtp_index", body=
+        {
+            "query": {
+                "bool": {
+                    "should": [
+                        {
+                            "match": {
+                                "title": q
+                            }
+                        },
+                        {
+                            "match": {
+                                "subtitle": q
+                            }
+                        },
+                        {
+                            "match": {
+                                "shelters_text": q
+                            }
+                        },
+                        {
+                            "match": {
+                                "pets_text": q
+                            }
+                        },
+                        {
+                            "match": {
+                                "vets_text": q
+                            }
+                        }
+                    ]
+                }
+            }
+        }
     )
+    results = {}
     results_list = []
-    scroll_size = rs['hits']['total']
-    while (scroll_size > 0):
+    for hit in rs['hits']['hits']:
         try:
-            scroll_id = rs['_scroll_id']
-            rs = es.scroll(scroll_id=scroll_id, scroll='60s')
-            results_list += rs['hits']['hits']
-            scroll_size = len(rs['hits']['hits'])
+            #results[hit["_source"]] = hit["_source"]
+            results_list.append(hit["_source"])
         except: 
             break
 
-    context = {"results_list": results_list}     
-
+    context = {"results_list": results_list} 
+    #print({context})    
+    #return HttpResponse(json.dumps(context), content_type="application/json")
     return render_to_response('search/search.html', context)

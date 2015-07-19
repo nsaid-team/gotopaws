@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--3 Col Portfolio - Start Bootstrap Template -->
-    <title> GoToPaws </title>
-     {% load static from staticfiles %}
+<head>
+    <meta charset='UTF-8'>
+
+    <title>GoToPaws</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       {% load static from staticfiles %}
     <script type="text/javascript" src="{% static "js/angular.min.js" %}"></script>
     <script type="text/javascript" src="{% static "js/sortable.js" %}"></script>
     <script type="text/javascript" src="{% static  "js/cities.js" %}"></script>
@@ -18,21 +17,87 @@
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="bootstrap-3.3.5-dist/css/table.css" rel="stylesheet">
+
     <link href="bootstrap-3.3.5-dist/css/city-body.css" rel="stylesheet">
-    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/style-table.js"></script>
 
-    <!--tab logo -->
-    <link rel="icon" type="image/png" href="bootstrap-3.3.5-dist/img/All/favicon-32x32.png" sizes="32x32" />
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/style.css">
 
+    <!--[if !IE]><!-->
+    <style>
 
+    /*
+    Max width before this PARTICULAR table gets nasty
+    This query will take effect for any screen smaller than 760px
+    and also iPads specifically.
+    */
+    @media
+    only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px)  {
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        /* Force table to not be like tables anymore */
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tr { border: 1px solid #ccc; }
+
+        td {
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 50%;
+        }
+
+        td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        /*
+        Label the data
+        */
+        td:nth-of-type(1):before { content: "Picture:"; }
+        td:nth-of-type(2):before { content: "Name:"; }
+        td:nth-of-type(3):before { content: "State:"; }
+        td:nth-of-type(4):before { content: "Country:"; }
+        td:nth-of-type(5):before { content: "Vet:"; }
+        td:nth-of-type(6):before { content: "Park:"; }
+        td:nth-of-type(7):before { content: "Groomer:"; }
+    }
+
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+        body {
+            padding: 0;
+            margin: 0;
+            width: 320px; }
+        }
+
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        body {
+            width: 495px;
+        }
+    }
+
+    </style>
+    <!--<![endif]-->
 
 </head>
 
@@ -68,36 +133,23 @@
         </div>
     </nav>
 
-    <!-- Page Content -->
-    <div class="container">
+    <div id="page-wrap">
 
-        <!-- Page Heading -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Cities
-                    <!--<small>Texas</small>-->
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
-
-
-    <!-- Table -->
+    <h1>Cities </h1>
+    <hr>
+    <br>
 
     <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0" >
-        
-         <br>
-                    
-         <thead>  
-            <tr>
-                <th class="unsortable" >Picture:
-                <th>Name:</th>
-                <th>State: </th>
-                <th>Country:</th>
-                <th>Vet:</th>
-                <th>Park:</th>
-                <th>Groomer:</th>
-            </tr>
+        <thead>
+        <tr>
+            <th class="unsortable" >Picture: </th>
+            <th>Name:</th>
+            <th>State: </th>
+            <th>Country:</th>
+            <th>Vet:</th>
+            <th>Park:</th>
+            <th>Groomer:</th>
+        </tr>
         </thead>
         <tbody>
             {% for city in cities_list %} 
@@ -109,18 +161,12 @@
                 <td><a href="{{city.city_vet_url}}"> <img  class="img-responsive portfolio-item" src="{{city.city_vet_pic}}" alt="cities"  height="42" width="42"> {{city.city_name}} vet</a></td>
                 <td><a href="{{city.city_park_url}}"> <img  class="img-responsive portfolio-item"src="{{city.city_park_pic}}" alt="cities"  height="42" width="42">{{city.city_name}} park </a></td>
                 <td><a href="{{city.city_groomer_url}}"> <img  class="img-responsive portfolio-item" src="{{city.city_groomer_pic}}" alt="cities"  height="42" width="42">{{city.city_name}} groomer </a></td>
-             </tr>
-        {% endfor %}</tr>
-                        
+            </tr>
+            {% endfor %}
         </tbody>
-    </table >          
+    </table>
 
-    <hr>
-
-
-
-        
-        <!-- Pagination -->
+            <!-- Pagination -->
         <div class="row text-center">
             <div class="col-lg-12">
                 <ul class="pagination">
@@ -148,10 +194,9 @@
                 </ul>
             </div>
         </div>
-        <!-- /.row -->
 
         <hr>
-
+        
         <!-- Footer -->
         <footer>
             <div class="row">
@@ -162,15 +207,71 @@
             <!-- /.row -->
         </footer>
 
+
     </div>
-    <!-- /.container -->
 
-   <!-- jQuery -->
-<script src="bootstrap-3.3.5-dist/js/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-
+ <style type="text/css" style="display: none !important;">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    #demo-top-bar {
+        text-align: left;
+        background: #222;
+        position: relative;
+        zoom: 1;
+        width: 100% !important;
+        z-index: 6000;
+        padding: 20px 0 20px;
+    }
+    #demo-bar-inside {
+        width: 960px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+    }
+    #demo-bar-buttons {
+        padding-top: 10px;
+        float: right;
+    }
+    #demo-bar-buttons a {
+        font-size: 12px;
+        margin-left: 20px;
+        color: white;
+        margin: 2px 0;
+        text-decoration: none;
+        font: 14px "Lucida Grande", Sans-Serif !important;
+    }
+    #demo-bar-buttons a:hover,
+    #demo-bar-buttons a:focus {
+        text-decoration: underline;
+    }
+    #demo-bar-badge {
+        display: inline-block;
+        width: 302px;
+        padding: 0 !important;
+        margin: 0 !important;
+        background-color: transparent !important;
+    }
+    #demo-bar-badge a {
+        display: block;
+        width: 100%;
+        height: 38px;
+        border-radius: 0;
+        bottom: auto;
+        margin: 0;
+        background: url(/images/examples-logo.png) no-repeat;
+        background-size: 100%;
+        overflow: hidden;
+        text-indent: -9999px;
+    }
+    #demo-bar-badge:before, #demo-bar-badge:after {
+        display: none !important;
+    }
+</style>
 </body>
 
 </html>

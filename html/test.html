@@ -8,9 +8,20 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/style.css">
-    {% load static from staticfiles %}
+       {% load static from staticfiles %}
+    <script type="text/javascript" src="{% static "js/angular.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/sortable.js" %}"></script>
     <script type="text/javascript" src="{% static  "js/cities.js" %}"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="bootstrap-3.3.5-dist/css/table.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/city-body.css" rel="stylesheet">
+    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/style-table.js"></script>
+
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/style.css">
 
     <!--[if !IE]><!-->
     <style>
@@ -61,7 +72,7 @@
         Label the data
         */
         td:nth-of-type(1):before { content: "Name:"; }
-        td:nth-of-type(2):before { content: "State: "; }
+        td:nth-of-type(2):before { content: "State:"; }
         td:nth-of-type(3):before { content: "Country:"; }
         td:nth-of-type(4):before { content: "Vet:"; }
         td:nth-of-type(5):before { content: "Park:"; }
@@ -92,38 +103,51 @@
 
 <body>
 
-<div id="demo-top-bar">
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="Home.html">Home</a></li>
+                <li ><a href="Pets.html">Pets</a></li>
+                <li><a href="Shelters.html">Shelters</a></li>
+                <li  class="active"><a href="Cities.html">Cities</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+            <div class="col-sm-3 col-md-3 pull-right">
+                <form class="navbar-form" role="search" action="/search/">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>        
+        </div>
+    </nav>
 
-  <div id="demo-bar-inside">
-
-    <h2 id="demo-bar-badge">
-      <a href="/">CSS-Tricks Example</a>
-    </h2>
-
-    <div id="demo-bar-buttons">
-      <a class='header-button' href='/responsive-data-tables/'>&larr; Back to Article</a> <a class='header-button' href='/examples/'>More Demos &rarr;</a>    </div>
-
-  </div>
-
-</div>
     <div id="page-wrap">
 
-    <h1>Responsive Table</h1>
+    <h1>Cities</h1>
+    <br>
 
-    <p>Go to <a href="index.php">Non-Responsive Table</a></p>
-
-    <p>This is the exact same table, only has @media queries applied to is so that when the screen is too narrow, it reformats (via only CSS) to make each row a bit like it's own table. This makes for much more repetition and vertical space needed, but it fits within the horizontal space, so only natural vertical scrolling is needed to explore the data.</p>
-
-    <table>
+    <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0" >
         <thead>
         <tr>
-              <th class="unsortable" >Picture:</th>
-                <th>Name:</th>
-                <th>State: </th>
-                <th>Country:</th>
-                <th>Vet:</th>
-                <th>Park:</th>
-                <th>Groomer:</th>
+            <th class="unsortable" >Picture: </th>
+            <th>Name:</th>
+            <th>State: </th>
+            <th>Country:</th>
+            <th>Vet:</th>
+            <th>Park:</th>
+            <th>Groomer:</th>
         </tr>
         </thead>
         <tbody>
@@ -136,19 +160,42 @@
                 <td><a href="{{city.city_vet_url}}"> <img  class="img-responsive portfolio-item" src="{{city.city_vet_pic}}" alt="cities"  height="42" width="42"> {{city.city_name}} vet</a></td>
                 <td><a href="{{city.city_park_url}}"> <img  class="img-responsive portfolio-item"src="{{city.city_park_pic}}" alt="cities"  height="42" width="42">{{city.city_name}} park </a></td>
                 <td><a href="{{city.city_groomer_url}}"> <img  class="img-responsive portfolio-item" src="{{city.city_groomer_pic}}" alt="cities"  height="42" width="42">{{city.city_name}} groomer </a></td>
-             </tr>
-            {% endfor %}
-            <tr>
-              <td>The</td>
-              <td>Tick</td>
-              <td>Crimefighter Sorta</td>
-              <td>Blue</td>
-              <td>Wars</td>
-              <td>John Smith</td>
-              <td>July 19, 1968</td>
             </tr>
+            {% endfor %}
         </tbody>
     </table>
+
+            <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
 
     </div>
 

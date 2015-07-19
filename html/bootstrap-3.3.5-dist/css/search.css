@@ -1,26 +1,76 @@
-body{
-    width: 100%;
-    height: 100%;
-    background: url(../img/All/bg_search1.jpg) no-repeat center center;*/
-    opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
+html{
+    color:white;
+    background: url(../img/All/bg_search1.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	color: white;
 }
 
-div.text-box{
-    background-color: rgba(145, 197, 212, .4);
+body {
     width: 100%;
-    height:100%;
-    margin-top:30%;
+    height: 100%;
+    min-height:100%;
     margin-bottom: 5%;
-    margin-right: 25%;
-    font-size:16px;
-    color: black;
-    text-align: justify;
-
 }
-  
+
+.text-box{
+    background-color: rgba(255,  255,  255,  0.8);*/
+    color: rgba(255,  255,  255,  0.8);
+    -moz-box-shadow: 13px 13px 18px #8c8c8c;
+    -webkit-box-shadow: 13px 13px 18px #8c8c8c;
+    box-shadow: 13px 13px 18px #8c8c8c;
+    font-color:black;
+    width: 90%;
+    height:80%;
+    margin-top:5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+h3 {
+    display: block;
+    font-size:1.5em;
+    text-align: justify;
+    margin-top:2em;
+    margin-bottom: 0em;
+    margin-right: 0.67em;
+    margin-left: 0.5em;
+    font-weight: bold;
+}
+
+h4 {
+    display: block;
+    font-size:1.2em;
+    text-align: justify;
+    margin-top:0em;
+    margin-bottom: 0.67em;
+    margin-right: 0.67em;
+    margin-left: 0.7em;
+    font-weight: bold;
+    color: rgb(0,0,0);
+}
+
+small {
+    color: rgb(255,255,255);
+}
+
+p {
+    display: block;
+    font-size:1em;
+    text-align: justify;
+    margin-top:0em;
+    margin-bottom: 0.67em;
+    margin-right: 0.67em;
+    margin-left: 0.7em;
+    color: rgb(0,0,0);
+}
+
+footer {
+    position:relative;
+    vertical-align:bottom; 
+    bottom:0; /* added - fix to bottom */
+    left:0; /* added -for full width */
+    right:0; /* added -for full width */
+}
