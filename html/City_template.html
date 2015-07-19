@@ -76,7 +76,7 @@ A template for GoToPaws city landing pages.
 
                 <h2 class="summary-heading">Shelters <span class="text-muted">in {{city.city_name}}</span></h2>
 
-                {% for shelter in city.shelters_list %}
+                {% for shelter in city_shelters_list %}
 
                 <a href="{{shelter.shelter_url}}"><img class="summary-image img-suqare img-responsive pull-right" alt="{{shelter.shelter_name}}" src="{{shelter.shelter_pic}}"></a>
 
