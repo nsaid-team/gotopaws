@@ -261,3 +261,10 @@ def search (request):
     context = {"results_list": results_list} 
     #print({context})
     return render_to_response('search/search.html', context)
+
+def hat_fancy(request):
+    url = "http://hatfancy.me/api/" + identifier + "/"
+    response = urllib.request.urlopen(url)
+    api_json = response.read()
+    return HttpResponse(api_json)
+    
