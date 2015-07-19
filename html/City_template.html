@@ -127,8 +127,8 @@ A template for GoToPaws city landing pages.
                 </div>
                 {% endfor %}
             </div>
-            <img src="http://maps.google.com/?q=29.7631,-95.3631">
-            
+            <img src="https://maps.googleapis.com/maps/api/staticmap?center={{city.city_name}},{{city.city_state}}&zoom=13&size=400x200">
+
             <!-- https://www.google.com/maps/preview/@<latitude>,<longitude>,<zoom level>z -->
             <div ng-controller ="MyCtrl" id="map"> 
             <script>
