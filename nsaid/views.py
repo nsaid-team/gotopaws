@@ -116,7 +116,7 @@ def shelter_json(request, identifier):
 def city_template(request, identifier):
     identifier_city, identifier_state = identifier.split('_')
     city = City.objects.filter(city_name = identifier_city, city_state = identifier_state)
-    city_shelter_list = Shelter.objects.filter(shelter_city = name_city, shelter_state = name_state)
+    city_shelter_list = Shelter.objects.filter(shelter_city = identifier_city, shelter_state = identifier_state)
     context = {'city': city[0], 'city_shelter_list' : city_shelter_list}
     return render(request, 'City_template.html', context)
     
