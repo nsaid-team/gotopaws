@@ -203,7 +203,7 @@ def search (request):
         {
             "query": {
                 "bool": {
-                    "should": [
+                    "must": [
                         {
                             "match": {
                                 "title": q
@@ -245,15 +245,19 @@ def search (request):
     results = {}
     results_list = []
     titles_list = []
-    for hit in rs['hits']['hits']:  
+    for hit in rs['hits']['hits']:
         if hit["_source"]['title'] not in titles_list :
             titles_list.append(hit["_source"]['title'])
             results['title'] = hit["_source"]['title']
-            results['title'] = results['title'].replace("<em>", "<strong><em>")
-            results['title'] = results['title'].replace("</em>", "</em></strong>")
+            if 'title' in hit['highlight']:
+                results['title'] = hit['highlight']['title'][0]
+                results['title'] = results['title'].replace("<em>", "<strong><em>")
+                results['title'] = results['title'].replace("</em>", "</em></strong>")
             results['subtitle'] = hit["_source"]['subtitle']
-            results['subtitle'] = results['subtitle'].replace("<em>", "<strong><em>")
-            results['subtitle'] = results['subtitle'].replace("</em>", "</em></strong>")
+            if 'subtitle' in hit['highlight']:
+                results['subtitle'] = hit['highlight']['subtitle'][0]
+                results['subtitle'] = results['subtitle'].replace("<em>", "<strong><em>")
+                results['subtitle'] = results['subtitle'].replace("</em>", "</em></strong>")
             results['url'] = hit["_source"]['url']
             if 'shelters_text' in hit['highlight']:
                 results['shelters_text'] = hit['highlight']['shelters_text'][0]
