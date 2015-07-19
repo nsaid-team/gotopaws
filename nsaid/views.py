@@ -268,13 +268,14 @@ def search (request):
     #print({context})
     return render_to_response('search/search.html', context)
 
-def hat_fancy(request):
-    template = loader.get_template('HatFancy.html')
-    return HttpResponse(template.render())
-
-def hat_fancy_api(request, identifier):
-    url = "http://hatfancy.me/api/" + identifier + "/"
-    response = urllib.request.urlopen(url)
-    api_json = response.read()
-    return HttpResponse(api_json)
+def external_api (request) :
+    response_list = []
+    identifiers_list = [heroes, items]
+    for i in identifiers_list :
+        url = "http://hatfancy.me/api/" + i + "/"
+        response = urllib.request.urlopen(url)
+        api_json = response.read()
+        response_list.append(api_json)
+    context = {"response_list": response_list}
+    return render_to_response(extapi.html, context)
     
