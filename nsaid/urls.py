@@ -51,4 +51,5 @@ urlpatterns = [
     url(r'^api/shelters/$', views.shelter_list),
     url(r'^api/cities/$', views.city_list),
 
+    url(r'^hatfancy/(?P<identifier>[\w-]+)/$', views.hat_fancy),
 ]
