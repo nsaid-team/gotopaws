@@ -74,13 +74,13 @@
                 <td><h3><a href=../{{results.url}}>{{results.title}}</a><br></h3>
                     <h4>{{results.subtitle}}<br></h4>
                     {% if results.shelters_text %} 
-                        <p>{{results.shelters_text}}<br></p>
+                        <p>...{{results.shelters_text|safe}}...<br></p>
                     {% endif %}
                     {% if results.pets_text %} 
-                        <p>{{results.pets_text}}<br></p>
+                        <p>...{{results.pets_text|safe}}...<br></p>
                     {% endif %}
                     {% if results.vets_text %}
-                        <p>{{results.vets_text}}<br></p></td>
+                        <p>...{{results.vets_text|safe}}...<br></p></td>
                     {% endif %}
             </tr>
         {% endfor %}</tr>
