@@ -234,6 +234,8 @@ def search (request):
             },
             "highlight": {
                 "fields" : {
+                    'title': {}
+                    'subtitle': {}
                     "*_text" : {}
 
                 }
@@ -244,8 +246,12 @@ def search (request):
     results = {}
     results_list = []
     for hit in rs['hits']['hits']:
-        results['title'] = hit["_source"]['title'] 
+        results['title'] = hit["_source"]['title']
+        if 'title' in hit['highlight']:
+            results['title'] = hit['highlight']['title'][0]
         results['subtitle'] = hit["_source"]['subtitle']
+        if 'subtitle' in hit['highlight']:
+            results['subtitle'] = hit['highlight']['subtitle'][0]
         results['url'] = hit["_source"]['url']
         if 'shelters_text' in hit['highlight']:
             results['shelters_text'] = hit['highlight']['shelters_text'][0]

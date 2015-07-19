@@ -71,8 +71,8 @@
 
         {% for results in results_list %} 
             <tr>
-                <td><h3><a href=../{{results.url}}>{{results.title}}</a><br></h3>
-                    <h4>{{results.subtitle}}<br></h4>
+                <td><h3><a href=../{{results.url}}>{{results.title|safe}}</a><br></h3>
+                    <h4>{{results.subtitle|safe}}<br></h4>
                     {% if results.shelters_text %} 
                         <p>...{{results.shelters_text|safe}}...<br></p>
                     {% endif %}
