@@ -200,7 +200,7 @@ def search (request):
     results_list = []
     for hit in rs['hits']['hits']:
         try:
-            results[hit['_id']] = hit["_source"]
+            results[int(hit['_id'])] = hit["_source"]
             results_list.append(results)
         except: 
             break
