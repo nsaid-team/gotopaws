@@ -69,7 +69,7 @@
     <div class="text-box">
         {% for results in results_list %} 
             <tr>
-                <td><a href=../{{results.url}}>{{results.title}}</a></td>
+                <td><a href=../{{results.{{forloop.counter}}.url}}>{{results.{{forloop.counter}}.title}}</a></td>
             </tr>
         {% endfor %}</tr>
     </div>
