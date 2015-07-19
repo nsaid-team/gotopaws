@@ -201,7 +201,7 @@ def search (request):
     for hit in rs['hits']['hits']:
         try:
             results[hit['_id']] = hit["_source"]
-            results_list += dict(results)
+            results_list.append(results)
         except: 
             break
 
