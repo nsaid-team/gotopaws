@@ -50,6 +50,7 @@ A template for GoToPaws city landing pages.
     
     <h1>{{city.city_name}}</h1>
     <p> {{city.city_motto}}</p>
+    {{city_shelter_list[0].shelter_name}}
 
 
         <div id="ahhh" ng-controller ='MyCtrl as ctrl'>
@@ -57,7 +58,7 @@ A template for GoToPaws city landing pages.
             <!-- [{results}]<br> -->
        
             [{results[0].fields.city_state}]
-            [{results[1].fields.shelter_name}]
+            [{results[1].fields.city_shelter_list}]
             
  
  
