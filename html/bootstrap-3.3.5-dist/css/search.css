@@ -60,6 +60,7 @@ p {
 
 footer {
     position:fixed; /* added */
+    color: rgb(255,255,255);
     height: 15%;
     bottom:-60px; /* added - fix to bottom */
     left:0; /* added -for full width */
