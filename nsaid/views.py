@@ -227,32 +227,32 @@ def search (request):
     results_list = []
     titles_list = []
     #for hit in rs['hits']['hits']:
-        if hit["_source"]['title'] not in titles_list :
-            titles_list.append(hit["_source"]['title'])  
-            results['url'] = hit["_source"]['url']
-            if 'shelters_text' in hit['highlight']:
-                results['shelters_text'] = hit['highlight']['shelters_text'][0]
-                results['shelters_text'] = results['shelters_text'].replace("<em>", "<strong><em>")
-                results['shelters_text'] = results['shelters_text'].replace("</em>", "</em></strong>")
-            if 'pets_text' in hit['highlight'] :
-                results['pets_text'] = hit['highlight']['pets_text'][0]
-                results['pets_text'] = results['pets_text'].replace("<em>", "<strong><em>")
-                results['pets_text'] = results['pets_text'].replace("</em>", "</em></strong>")
-            if 'vets_text' in hit['highlight'] :
-                results['vets_text'] = hit['highlight']['vets_text'][0]
-                results['vets_text'] = results['vets_text'].replace("<em>", "<strong><em>")
-                results['vets_text'] = results['vets_text'].replace("</em>", "</em></strong>")
-            results['title'] = hit["_source"]['title']
-            if 'title' in hit['highlight']:
-                results['title'] = hit['highlight']['title'][0]
-                results['title'] = results['title'].replace("<em>", "<strong><em>")
-                results['title'] = results['title'].replace("</em>", "</em></strong>")
-            results['subtitle'] = hit["_source"]['subtitle']
-            if 'subtitle' in hit['highlight']:
-                results['subtitle'] = hit['highlight']['subtitle'][0]
-                results['subtitle'] = results['subtitle'].replace("<em>", "<strong><em>")
-                results['subtitle'] = results['subtitle'].replace("</em>", "</em></strong>")
-            results_list.append(results)
+    if hit["_source"]['title'] not in titles_list :
+        titles_list.append(hit["_source"]['title'])  
+        results['url'] = hit["_source"]['url']
+        if 'shelters_text' in hit['highlight']:
+            results['shelters_text'] = hit['highlight']['shelters_text'][0]
+            results['shelters_text'] = results['shelters_text'].replace("<em>", "<strong><em>")
+            results['shelters_text'] = results['shelters_text'].replace("</em>", "</em></strong>")
+        if 'pets_text' in hit['highlight'] :
+            results['pets_text'] = hit['highlight']['pets_text'][0]
+            results['pets_text'] = results['pets_text'].replace("<em>", "<strong><em>")
+            results['pets_text'] = results['pets_text'].replace("</em>", "</em></strong>")
+        if 'vets_text' in hit['highlight'] :
+            results['vets_text'] = hit['highlight']['vets_text'][0]
+            results['vets_text'] = results['vets_text'].replace("<em>", "<strong><em>")
+            results['vets_text'] = results['vets_text'].replace("</em>", "</em></strong>")
+        results['title'] = hit["_source"]['title']
+        if 'title' in hit['highlight']:
+            results['title'] = hit['highlight']['title'][0]
+            results['title'] = results['title'].replace("<em>", "<strong><em>")
+            results['title'] = results['title'].replace("</em>", "</em></strong>")
+        results['subtitle'] = hit["_source"]['subtitle']
+        if 'subtitle' in hit['highlight']:
+            results['subtitle'] = hit['highlight']['subtitle'][0]
+            results['subtitle'] = results['subtitle'].replace("<em>", "<strong><em>")
+            results['subtitle'] = results['subtitle'].replace("</em>", "</em></strong>")
+        results_list.append(results)
     context = {"results_list": results_list} 
     print({context})
     return render_to_response('search/search.html', context)
