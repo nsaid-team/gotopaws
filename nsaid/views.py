@@ -245,8 +245,9 @@ def search (request):
     results = {}
     results_list = []
     for hit in rs['hits']['hits']:
-        if hit["_source"]['title'] not in results_list :
+        if hit["_source"]['title'] not in titles :
             results['title'] = hit["_source"]['title']
+            titles += hit["_source"]['title']
             if 'title' in hit['highlight']:
                 results['title'] = hit['highlight']['title'][0]
                 results['title'] = results['title'].replace("<em>", "<strong><em>");
