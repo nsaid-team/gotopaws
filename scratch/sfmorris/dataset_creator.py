@@ -7,7 +7,7 @@ import pprint
 
 def create_city_file(city_list):
     """
-    returns a dict 
+    returns a success code for printing a city json file 
     """
 
     params = {}
@@ -46,14 +46,52 @@ def shelters_per_city(city):
     given a city, find <25 shelters associated with it and only include them if their city field matches
     return the list of shelter objects
     """
+    # query petfinder using shelters.find
+    # parse the json as a list of shelter objects
+    # later, do filtering
+    # return it
+    return []
+
+def shelter_validate(city, attribute, shelter_list):
+    """
+    given a city name, "san+antonio+tx", filter out the elements of shelter_list where their attribute does not match
+    trying several comparisons (case insensitive, etc)
+    """
+    # do some filtering, don't just return shelter_list
+    return shelter_list
+
+def pets_per_shelter(shelter):
+    """
+    given a shelter (json object)
+    query for all pets associated with a shelter
+    return a list of pets (json objects)
+    """
+    return []
+
+def pet_validate(city_name, state_name, city_attribute, state_attribute, pet_list):
+    """
+    given pet_list a list of json objects
+    filter out instances where city/state don't match
+    return a list of json objects
+    """
+    return pet_list
+    
 
 if __name__ == "__main__" :
-    city_list = ["austin+tx", "san+antonio+tx", "houston+tx", "san+francisco+ca", "dallas+tx", "el+paso+tx", "new+orleans+la"]
     #create_city_file(city_list)
-    master_spc = []
+    #city_list = ["austin+tx", "san+antonio+tx", "houston+tx", "san+francisco+ca", "dallas+tx", "el+paso+tx", "new+orleans+la"]
+
+    city_list = ["austin+tx", "san+antonio+tx"]
+    master_shelters = []
     for city in city_list:
-        spc = shelters_per_city(city)
-        master_spc += spc
-    for shelter in master_spc:
-        # grab a bunch of pets, only if their city name matches a city
+        #shelters = shelter_validate(city, "shelter_city", shelters_per_city(city))
+        shelters = shelters_per_city(city)
+        master_shelters += shelters
+    master_pets = []
+    for shelter in master_shelters:
+        #pets = pet_validate(city.city_name, city.city_state, "pet_city", "pet_state", pets_per_shelter(shelter))
+        pets = pets_per_shelter(shelter)
     # drop any empty shelters?
+
+
+
