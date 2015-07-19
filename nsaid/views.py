@@ -86,18 +86,18 @@ def city_SF(request):
     template = loader.get_template('City_SF.html')
     return HttpResponse(template.render())
 
-def pet_template(request, id):
-    s, p = id.split('_')
+def pet_template(request, identifier):
+    s, p = identifier.split('_')
     pet = Pet.objects.filter(pet_shelter = s, pet_id = p)
     context = {'pet': pet[0]}
     return render(request, 'Pet_template.html', context)
     
-def pet_json(request, id):
-    pet = serializers.serialize('json', Pet.objects.filter(pet_id = id))
+def pet_json(request, identifier):
+    pet = serializers.serialize('json', Pet.objects.filter(pet_id = identifier))
     return HttpResponse(pet)
 
-def shelter_template(request, id):
-    shelter = Shelter.objects.filter(shelter_id = id)
+def shelter_template(request, identifier):
+    shelter = Shelter.objects.filter(shelter_id = identifier)
     address = shelter[0].shelter_address + "," + shelter[0].shelter_city + "," + shelter[0].shelter_state
     url="https://maps.googleapis.com/maps/api/geocode/json?address=%s" % address.replace(" ", "+")
     response = urllib.request.urlopen(url)
@@ -105,25 +105,24 @@ def shelter_template(request, id):
     context = {'shelter': shelter[0], 'map_json': jsongeocode}
     return render(request, 'Shelter_template.html', context)
     
-def shelter_json(request, id):
-    shelter = Shelter.objects.filter(shelter_id = id)
+def shelter_json(request, identifier):
+    shelter = Shelter.objects.filter(shelter_id = identifier)
     address = shelter[0].shelter_address + "," + shelter[0].shelter_city + "," + shelter[0].shelter_state
     url="https://maps.googleapis.com/maps/api/geocode/json?address=%s" % address.replace(" ", "+")
     response = urllib.request.urlopen(url)
     jsongeocode = response.read()
     return HttpResponse([serializers.serialize('json', shelter), jsongeocode])
 
-def city_template(request, name):
-    name_city, name_state = name.split('_')
-    #city = City.objects.filter(city_name = name_city, city_state = name_state)
-    city = City.objects.filter(city_name = name_city, city_state = name_state)
+def city_template(request, identifier):
+    identifier_city, identifier_state = identifier.split('_')
+    city = City.objects.filter(city_name = identifier_city, city_state = identifier_state)
     city_shelter_list = Shelter.objects.filter(shelter_city = name_city, shelter_state = name_state)
     context = {'city': city[0], 'city_shelter_list' : city_shelter_list}
     return render(request, 'City_template.html', context)
     
-def city_json(request, name):
-    name_city, name_state = name.split('_')
-    city = serializers.serialize('json', City.objects.filter(city_name = name_city, city_state = name_state))
+def city_json(request, identifier):
+    identifier_city, identifier_state = identifier.split('_')
+    city = serializers.serialize('json', City.objects.filter(city_name = identifier_city, city_state = identifier_state))
     return HttpResponse(city)
 
 @api_view(['GET'])
