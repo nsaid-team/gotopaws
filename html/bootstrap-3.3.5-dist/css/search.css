@@ -26,12 +26,12 @@ body, html{
 }
 h3 {
     display: block;
-    font-size:2em;
+    font-size:1.5em;
     text-align: justify;
-    margin-top:0.8em;
+    margin-top:1em;
     margin-bottom: 0em;
     margin-right: 0.67em;
-    margin-left: 0.4\5em;
+    margin-left: 0.5em;
     font-weight: bold;
 }
 
