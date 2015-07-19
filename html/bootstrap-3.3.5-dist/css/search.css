@@ -11,6 +11,9 @@ body {
     background:transparent;
 }
 
+head {
+    position:fixed;
+}
 
 #text-box{
     margin: 1% auto; 
