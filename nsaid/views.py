@@ -196,10 +196,12 @@ def search (request):
     q = request.GET.get('q')
     es = Elasticsearch()
     rs = es.search(index="gtp_index", body={"query": {"match": {"title": q}}})
-    results_list = {}
+    results = {}
+    results_list = []
     for hit in rs['hits']['hits']:
         try:
-            results_list[hit['_id']] = hit["_source"]
+            results[hit['_id']] = hit["_source"]
+            results_list += results
         except: 
             break
 
