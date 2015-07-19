@@ -245,8 +245,13 @@ def search (request):
     results_list = []
     for hit in rs['hits']['hits']:
         try:
-            results_list.append(hit["_source['title']"])
-            results_list.append(hit["highlight"])
+            results['title'] = hit["_source"]['title']
+            results['subtitle'] = hit["_source"]['subtitle']
+            results['url'] = hit["_source"]['url']
+            results['shelters_text'] = hit['highlight']['shelters_text'][0]
+            results['pets_text'] = hit['highlight']['pets_text'][0]
+            results['vets_text'] = hit['highlight']['vets_text'][0]
+            results_list.append(results)
         except: 
             break
 
