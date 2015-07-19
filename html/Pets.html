@@ -12,8 +12,6 @@
     <title> GoToPaws </title>
     {% load static from staticfiles %}
     <script type="text/javascript" src="{% static "js/sortable.js" %}"></script>
-    
-
 
     <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/jquery-responsive-tables.css" />
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
@@ -24,8 +22,6 @@
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-
-
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,7 +36,19 @@
         $('table.responsive').responsiveTables();
       });
     </script>
-        <style type="text/css">
+    <style type="text/css">
+      body {margin:0; padding:20px; font-family: 'Average Sans', sans-serif; font-size:16px; font-weight:normal; line-height:1.5; background:#589283; color:#fff; text-shadow:2px 2px 2px #3F6558;}
+      a, a:link, a:visited {color:#fff;text-decoration: none;border-bottom:1px dashed #3F6558;-webkit-transition:border-color 0.3s ease-in;}
+      a:hover, a:focus {border-bottom:1px dashed #fff;}
+      h1, h2, h3, p {text-align:center;}
+      h1, h2, h3 {padding: 0 0.1em;}
+      h1[data-scrollable] { line-height: 1.85; }
+      .heading {margin-top:0.25em;font-family:'Pacifico', sans-serif; text-shadow:0.1em 0.1em 2px #3F6558;}
+      .subheading {font-weight:normal;}
+      .button {margin:2em 0;}
+      .button a {background:#3F6558;padding:0.4em 1em;border:none;border-radius:10px;}
+      .clearfix {clear:both;}
+      .space {margin:5em 0;}
       table {
         border: 1px solid #3F6558;
         margin-bottom: 20px;
