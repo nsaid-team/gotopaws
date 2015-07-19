@@ -60,6 +60,7 @@ var app2 = angular.module("mapModule", [], function(){});
     delete $http.defaults.headers.common['X-Requested-With'];
     $http.get("json").success(function(data) {
       $scope.results = data;
+      temp.results = data;
       console.log(data);
     }).error(function(data, status) {
       $scope.data = data || "Request failed";
@@ -80,7 +81,7 @@ var app2 = angular.module("mapModule", [], function(){});
     
 
 
-    var address = document.getElementById("results[0].city_name").value;
+    var address = this.results[0].city_name;
     geocoder.geocode( { 'address': address}, function(results2, status) {
       if (status == google.maps.GeocoderStatus.OK) {
         map.setCenter(results2[0].geometry.location);
