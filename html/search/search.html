@@ -65,9 +65,23 @@
     </nav>
 
     <div id="text-box">
+        {% if not results_list %}
+            <h3>Not Results Found</h3>
+        {% endif %}
+
         {% for results in results_list %} 
             <tr>
-                <td><h3><a href=../{{results.url}}>{{results.title}}</a><br></h3><h4>{{results.subtitle}}<br></h4><p>{{results.shelters_text}}<br></p><p>{{results.pets_text}}<br></p><p>{{results.vets_text}}<br></p></td>
+                <td><h3><a href=../{{results.url}}>{{results.title}}</a><br></h3>
+                    <h4>{{results.subtitle}}<br></h4>
+                    {% if results.shelters_text %} 
+                        <p>{{results.shelters_text}}<br></p>
+                    {% endif %}
+                    {% if results.pets_text %} 
+                        <p>{{results.pets_text}}<br></p>
+                    {% endif %}
+                    {% if results.vets_text %}
+                        <p>{{results.vets_text}}<br></p></td>
+                    {% endif %}
             </tr>
         {% endfor %}</tr>
     </div>
@@ -84,5 +98,4 @@
     </div>
 </footer>
 </div>
-
 </html>
