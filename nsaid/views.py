@@ -231,6 +231,12 @@ def search (request):
                         }
                     ]
                 }
+            },
+            "highlight": {
+                "fields" : {
+                    "about" : {}
+
+                }
             }
         }
     )
