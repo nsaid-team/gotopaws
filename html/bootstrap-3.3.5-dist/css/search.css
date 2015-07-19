@@ -7,6 +7,10 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    background:transparent;
+}
+
 
 #text-box{
     margin: 1% auto; 
