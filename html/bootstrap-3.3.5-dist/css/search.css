@@ -24,13 +24,27 @@ body, html{
     margin-right: 5%;
     margin-left: 5%;
 }
-.text {
-    font-size:16px;
+h3 {
+    display: block;
+    font-size:4em;
     text-align: justify;
-    margin-top:0%;
-    margin-bottom: 2%;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-top:0.67em;
+    margin-bottom: 0em;
+    margin-right: 0.67em;
+    margin-left: 0.67em;
+    font-weight: bold;
+}
+
+h4 {
+    display: block;
+    font-size:2em;
+    text-align: justify;
+    margin-top:0em;
+    margin-bottom: 0.67em;
+    margin-right: 0.67em;
+    margin-left: 0.67em;
+    font-weight: bold;
+    font-color:black;
 }
 
 footer {
