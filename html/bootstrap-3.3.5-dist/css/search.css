@@ -49,6 +49,7 @@ h4 {
 }
 
 small {
+    text-align: center;
     color: rgb(255,255,255);
 }
 
@@ -57,15 +58,16 @@ p {
     font-size:1em;
     text-align: justify;
     margin-top:0em;
-    margin-bottom: 2em;
+    margin-bottom: 0.67em;
     margin-right: 0.67em;
     margin-left: 0.7em;
     color: rgb(0,0,0);
 }
 
 footer {
-    position:relative; 
-    bottom:-20px; /* added - fix to bottom */
+    position:relative;
+    vertical-align:bottom; 
+    bottom:0; /* added - fix to bottom */
     left:0; /* added -for full width */
     right:0; /* added -for full width */
 }
