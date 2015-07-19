@@ -28,6 +28,24 @@
             "city_country": "US",
             "city_vet_url":"http://www.yelp.com/biz/midtown-veterinary-hospital-houston"
             }
+    },
+    {
+        "model" : "nsaid.Pet",
+        "fields" : {
+            "pet_id"            : "asdf",
+            "pet_name"          : "Figaro",
+            "pet_age"           : "7",
+            "pet_sex"           : "M",
+            "pet_size"          : "Large",
+            "pet_breed"         : "brown and handsome",
+            "pet_shelter"       : "TX21",
+            "pet_city"          : "Austin",
+            "pet_pic_url"       : "http://img4.wikia.nocookie.net/__cb20100630233057/disney/images/c/c1/FigaroAnnoyed.jpg",
+            "pet_pic_large"     : "http://img4.wikia.nocookie.net/__cb20100630233057/disney/images/c/c1/FigaroAnnoyed.jpg",
+            "pet_url"           : "www.google.com",
+            "pet_shelter_url"   : "www.google.com",
+            "pet_city_url"      : "www.google.com"
+        }
     }
 ]
 
