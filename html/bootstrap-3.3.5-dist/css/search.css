@@ -7,10 +7,11 @@ html {
     overflow-x: hidden;
 }
 
+
 #text-box{
-    margin: 4% auto; 
+    margin: 1% auto; 
     padding: 20px; 
-    background: rgba(255,  255,  255,  0.8);
+    background-color: rgba(255,  255,  255,  0.8);
     -moz-box-shadow: 0 0 20px black; 
     -webkit-box-shadow: 0 0 20px black; 
     box-shadow: 0 0 20px black;
@@ -58,7 +59,8 @@ p {
 
 footer {
     position: relative;
-    vertical-align:bottom; 
+    vertical-align:bottom;
+
     bottom:-7.5em; /* added - fix to bottom */
     left:0; /* added -for full width */
 }
