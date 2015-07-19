@@ -125,6 +125,12 @@ def city_json(request, identifier):
     city = serializers.serialize('json', City.objects.filter(city_name = identifier_city, city_state = identifier_state))
     return HttpResponse(city)
 
+def about(request):
+    template = loader.get_template('About.html')
+    return HttpResponse(template.render())
+
+
+
 @api_view(['GET'])
 def pet_list(request):
     if request.method == 'GET':
