@@ -70,7 +70,7 @@ p {
 }
 
 footer {
-    position:absolute; 
+    position:relative; 
     bottom:0; 
     clear:both;  
     left:0;
