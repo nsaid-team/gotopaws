@@ -5,6 +5,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
     overflow-x: hidden;
+    height: 100%;
 }
 
 body {
@@ -69,9 +70,10 @@ p {
 }
 
 footer {
-    position: relative;
-    vertical-align:bottom;
-
-    bottom:0; /* added - fix to bottom */
-    left:0; /* added -for full width */
+    position:absolute; 
+    bottom:0; 
+    clear:both; 
+    height:2px; 
+    background:#000;
+    left:0;
 }
