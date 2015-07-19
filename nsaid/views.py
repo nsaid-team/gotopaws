@@ -201,36 +201,9 @@ def search (request):
     es = Elasticsearch()
     rs = es.search(index="gtp_index", body=
         {
-            "query": {
-                "bool": {
-                    "must": [
-                        {
-                            "match": {
-                                "title": q
-                            }
-                        },
-                        {
-                            "match": {
-                                "subtitle": q
-                            }
-                        },
-                        {
-                            "match": {
-                                "shelters_text": q
-                            }
-                        },
-                        {
-                            "match": {
-                                "pets_text": q
-                            }
-                        },
-                        {
-                            "match": {
-                                "vets_text": q
-                            }
-                        }
-                    ]
-                }
+            "multi_match" : {
+                "query": q,
+                "fields" : [ "title", "subtitle", "*_text" ]        
             },
             "highlight": {
                 "fields" : {
