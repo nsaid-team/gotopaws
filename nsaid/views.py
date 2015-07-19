@@ -234,10 +234,9 @@ def search (request):
             },
             "highlight": {
                 "fields" : {
-                    'title': {}
-                    'subtitle': {}
+                    'title': {},
+                    'subtitle': {},
                     "*_text" : {}
-
                 }
             }
         }
