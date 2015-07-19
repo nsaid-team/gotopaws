@@ -18,6 +18,8 @@ body {
 
 body > #container { height: auto; min-height: 100%; }
 
+#content { padding-bottom: 5em; }
+
 #text-box{
     margin-top: 1%;
     margin-bottom: 5%;
