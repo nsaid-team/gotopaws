@@ -16,6 +16,7 @@ body, html{
     -moz-box-shadow: 13px 13px 18px #8c8c8c;
     -webkit-box-shadow: 13px 13px 18px #8c8c8c;
     box-shadow: 13px 13px 18px #8c8c8c;
+    font-color:black;
     width: 90%;
     height:70%;
     margin-top:5%;
