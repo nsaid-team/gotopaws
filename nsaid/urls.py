@@ -22,6 +22,7 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^test/$', views.test),
+    url(r'^$', views.home),
     url(r'^home$', views.home),
     url(r'^shelters$', views.shelters),
     url(r'^pets$', views.pets),
@@ -54,5 +55,4 @@ urlpatterns = [
     url(r'^api/cities/$', views.city_list),
     url(r'^search/$', views.search, name='search'),
 
-    url(r'^hatfancy/(?P<identifier>[\w-]+)/$', views.hat_fancy),
 ]
