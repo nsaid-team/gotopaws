@@ -227,7 +227,7 @@ def search (request):
                         }
                     ]
                 }
-            }
+            },
             "highlight" : {
                 "fields" : {
                     "*_text" : {}
