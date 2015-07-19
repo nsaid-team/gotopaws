@@ -13,7 +13,9 @@ body{
 	color: white;
 }
 
-div .text-box{
+.text-box{
+    background: rgba(255,  255,  255,  0.6);
+    color: rgba(255,  255,  255,  0.6);
     background-color: rgba(255,255,255, 0.6);
     width: 100%;
     height:60%;
