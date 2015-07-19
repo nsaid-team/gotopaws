@@ -73,7 +73,7 @@ p {
 footer {
     position:fixed; 
     height: 15%;
-    bottom:-60px; /* added - fix to bottom */
+    bottom:-90px; /* added - fix to bottom */
     left:0; /* added -for full width */
     right:0; /* added -for full width */
 }
