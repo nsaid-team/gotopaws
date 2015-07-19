@@ -27,10 +27,9 @@ div .text-box{
 }
 
 footer {
-    position:relative; /* added */
+    position:fixed; /* added */
     height: 15%;
     bottom:0; /* added - fix to bottom */
     left:0; /* added -for full width */
     right:0; /* added -for full width */
 }
-  
