@@ -1,4 +1,8 @@
-html {height: 100%;width: 100%;}
+html {
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+}
 
 body {
     width: 100%;
@@ -69,7 +73,7 @@ p {
 }
 
 footer {
-    position:relative;
+    position:absolute;
     vertical-align:bottom; 
     bottom:0; /* added - fix to bottom */
     left:0; /* added -for full width */
