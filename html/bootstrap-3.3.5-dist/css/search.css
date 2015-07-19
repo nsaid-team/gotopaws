@@ -6,7 +6,7 @@ html {
 }
 
 div.background {
-    background: url(../img/All/bg_search1.jpg) no-repeat center center;
+    background: url(../img/All/bg_search1.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -14,11 +14,6 @@ div.background {
     min-height:100%;
     width: 100%;
     height: 100%S;
-    
-    /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 .text-box{
