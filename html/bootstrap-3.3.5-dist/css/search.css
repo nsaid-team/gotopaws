@@ -70,8 +70,9 @@ p {
 }
 
 footer {
-    position:relative; 
-    bottom:0; 
-    clear:both;  
-    left:0;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
 }
