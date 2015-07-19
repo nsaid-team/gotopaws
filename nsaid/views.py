@@ -114,13 +114,15 @@ def shelter_json(request, id):
 
 def city_template(request, name):
     name_city, name_state = name.split('_')
+    #city = City.objects.filter(city_name = name_city, city_state = name_state)
     city = City.objects.filter(city_name = name_city, city_state = name_state)
     city_shelter_list = Shelter.objects.filter(shelter_city = name_city, shelter_state = name_state)
     context = {'city': city[0], 'city_shelter_list' : city_shelter_list}
     return render(request, 'City_template.html', context)
     
 def city_json(request, name):
-    city = serializers.serialize('json', City.objects.filter(city_name = name))
+    name_city, name_state = name.split('_')
+    city = serializers.serialize('json', City.objects.filter(city_name = name_city, city_state = name_state))
     return HttpResponse(city)
 
 @api_view(['GET'])
