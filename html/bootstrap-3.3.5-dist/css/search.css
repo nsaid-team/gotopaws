@@ -72,8 +72,6 @@ p {
 footer {
     position:absolute; 
     bottom:0; 
-    clear:both; 
-    height:2px; 
-    background:#000;
+    clear:both;  
     left:0;
 }
