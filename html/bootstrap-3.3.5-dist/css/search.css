@@ -48,6 +48,18 @@ h4 {
     color: rgb(0,0,0);
 }
 
+h5 {
+    display: block;
+    font-size:1em;
+    text-align: justify;
+    margin-top:0em;
+    margin-bottom: 0.67em;
+    margin-right: 0.67em;
+    margin-left: 0.7em;
+    font-weight: bold;
+    color: rgb(255,255,255);
+}
+
 p {
     display: block;
     font-size:1em;
@@ -60,8 +72,7 @@ p {
 }
 
 footer {
-    position:fixed;
-    color: white;  
+    position:fixed; 
     height: 15%;
     bottom:-60px; /* added - fix to bottom */
     left:0; /* added -for full width */
