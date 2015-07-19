@@ -26,7 +26,7 @@ body, html{
 }
 h3 {
     display: block;
-    font-size:4em;
+    font-size:2em;
     text-align: justify;
     margin-top:0.67em;
     margin-bottom: 0em;
@@ -37,14 +37,14 @@ h3 {
 
 h4 {
     display: block;
-    font-size:2em;
+    font-size:1em;
     text-align: justify;
     margin-top:0em;
     margin-bottom: 0.67em;
     margin-right: 0.67em;
     margin-left: 0.67em;
     font-weight: bold;
-    font-color:black;
+    color: rgb(0,0,0);
 }
 
 footer {
