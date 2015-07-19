@@ -247,11 +247,11 @@ def search (request):
         results['title'] = hit["_source"]['title'] 
         results['subtitle'] = hit["_source"]['subtitle']
         results['url'] = hit["_source"]['url']
-        if hit['highlight']['shelters_text'][0] :
+        if 'shelters_text' in hit['highlight']:
             results['shelters_text'] = hit['highlight']['shelters_text'][0]
-        if hit['highlight']['pets_text'][0] :
+        if 'pets_text' in hit['highlight'] :
             results['pets_text'] = hit['highlight']['pets_text'][0]
-        if hit['highlight']['vets_text'][0] :
+        if 'vets_text' in hit['highlight'] :
             results['vets_text'] = hit['highlight']['vets_text'][0]
         results_list.append(results)
     context = {"results_list": results_list} 
