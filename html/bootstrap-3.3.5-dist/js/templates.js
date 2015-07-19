@@ -89,4 +89,4 @@ var app2 = angular.module("mapModule", [], function(){});
 }]);
 
 
-google.maps.event.addDomListener(window,'load', initialize);
+
