@@ -5,7 +5,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
     overflow-x: hidden;
-    height: 105%;
+    height: 103%;
 }
 
 body {
@@ -80,6 +80,6 @@ p {
     clear: both;
     position: relative;
     z-index: 10;
-    height: 3em;
+    height: 1em;
     margin-top: -3em;
 }
