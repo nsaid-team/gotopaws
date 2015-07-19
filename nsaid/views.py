@@ -245,7 +245,7 @@ def search (request):
     results = {}
     results_list = []
     titles_list = []
-    for hit in rs['hits']['hits']:
+    for hit in rs['hits']['hits']:  
         if hit["_source"]['title'] not in titles_list :
             titles_list.append(hit["_source"]['title'])
             results['title'] = hit["_source"]['title']
