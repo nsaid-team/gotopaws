@@ -9,10 +9,11 @@ html {
 
 body {
     background:transparent;
+    min-height: 100%
 }
 
 head {
-    position:fixed;
+    position: fixed;
 }
 
 #text-box{
