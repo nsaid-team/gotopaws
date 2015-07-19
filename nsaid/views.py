@@ -270,7 +270,7 @@ def search (request):
 
 def external_api (request) :
     response_list = []
-    identifiers_list = ['heroes', 'items']
+    identifiers_list = ['heroes', 'items', 'sets']
     for i in identifiers_list :
         url = "http://hatfancy.me/api/" + i + "/"
         response = urllib.request.urlopen(url)
