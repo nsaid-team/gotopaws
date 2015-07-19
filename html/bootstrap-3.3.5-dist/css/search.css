@@ -16,7 +16,7 @@ div.background {
 }
 
 .text-box{
-    /*background-color: rgba(255,  255,  255,  0.8);*/
+    background-color: rgba(255,  255,  255,  0.8);*/
     color: rgba(255,  255,  255,  0.8);
     -moz-box-shadow: 13px 13px 18px #8c8c8c;
     -webkit-box-shadow: 13px 13px 18px #8c8c8c;
