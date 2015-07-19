@@ -68,11 +68,9 @@
 
     <div class="text-box">
         {% for results in results_list %} 
-            <div class="text">
-                <tr>
-                    <td><a href=../{{results.url}}>{{results.title}}</a><br>{{results.subtitle}}</td>
-                </tr>
-            </div>
+            <tr>
+                <td><h3><a href=../{{results.url}}>{{results.title}}</a></h3><br><h4>{{results.subtitle}}</h4></td>
+            </tr>
         {% endfor %}</tr>
     </div>
 </body>
