@@ -227,14 +227,6 @@ def search (request):
                         }
                     ]
                 }
-<<<<<<< HEAD
-=======
-            },
-            "highlight" : {
-                "fields" : {
-                    "*_text" : {}
-                }
->>>>>>> origin/dev-branch
             }
         }
     )
