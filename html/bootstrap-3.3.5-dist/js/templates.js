@@ -74,10 +74,10 @@ var app2 = angular.module("mapModule", [], function(){});
     var latlng = new google.maps.LatLng(-34.397, 150.644);
     var mapOptions = {
       zoom: 8,
-      center: latlng
+      center: latlng};
     
     map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-    }
+    
 
 
     var address = document.getElementById("results[0].city_name").value;
@@ -86,7 +86,7 @@ var app2 = angular.module("mapModule", [], function(){});
         map.setCenter(results2[0].geometry.location);
         var marker = new google.maps.Marker({
             map: map,
-            position: results[0].geometry.location
+            position: results2[0].geometry.location
         });
       } else {
         alert("Geocode was not successful for the following reason: " + status);
