@@ -199,7 +199,7 @@ def search (request):
         {
             "query": {
                 "bool": {
-                    "must": [
+                    "should": [
                         {
                             "match": {
                                 "title": q
