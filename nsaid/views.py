@@ -209,7 +209,8 @@ def search (request):
                         { "match": { "shelters_text":   q }},
                         { "match": { "pets_text":       q }},
                         { "match": { "vets_text":       q }},
-                    ]
+                    ],
+                    "tie_breaker": 0.3
                 }
             },
             "highlight": {
@@ -225,7 +226,7 @@ def search (request):
     results = {}
     results_list = []
     titles_list = []
-    for hit in rs['hits']['hits']:
+    #for hit in rs['hits']['hits']:
         if hit["_source"]['title'] not in titles_list :
             titles_list.append(hit["_source"]['title'])  
             results['url'] = hit["_source"]['url']
