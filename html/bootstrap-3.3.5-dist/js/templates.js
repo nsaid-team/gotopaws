@@ -84,6 +84,7 @@ var app2 = angular.module("mapModule", [], function(){});
           map: map,
       title:"Fast marker"
      });
+    }
  
 
 
