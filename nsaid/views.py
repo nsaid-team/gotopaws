@@ -262,7 +262,7 @@ def search (request):
     #print({context})
     return render_to_response('search/search.html', context)
 
-def hat_fancy(request):
+def hat_fancy(request, identifier):
     url = "http://hatfancy.me/api/" + identifier + "/"
     response = urllib.request.urlopen(url)
     api_json = response.read()
