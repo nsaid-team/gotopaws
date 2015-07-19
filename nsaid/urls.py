@@ -55,5 +55,6 @@ urlpatterns = [
     url(r'^api/cities/$', views.city_list),
     url(r'^search/$', views.search, name='search'),
 
-    url(r'^extapi$', views.hat_fancy),
+    url(r'^extapi/$', views.hat_fancy),
+    url(r'^extapi/(?P<identifier>[\w-]+)/$', views.hat_fancy_api),
 ]
