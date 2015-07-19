@@ -234,7 +234,7 @@ def search (request):
             },
             "highlight": {
                 "fields" : {
-                    "about" : {}
+                    "*_text" : {}
 
                 }
             }
