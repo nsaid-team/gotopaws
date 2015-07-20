@@ -277,7 +277,7 @@ def external_api (request) :
         response = urllib.request.urlopen(url).read().decode("utf-8")
         api_json = json.loads(response)
         response_dict[i] = api_json
-        response_list.append(response_dict[i])
+        response_list.append({i:response_dict[i]})
     context = {"response_list": response_list}
     print({context})
     return render_to_response('extapi.html', context)
