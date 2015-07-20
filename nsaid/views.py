@@ -275,7 +275,7 @@ def external_api (request) :
     for i in identifiers_list :
         url = "http://hatfancy.me/api/" + i + "/"
         response = urllib.request.urlopen(url).read().decode("utf-8")
-        api_json = json.loads(response.read())
+        api_json = json.loads(response)
         response_dict[i] = api_json
         response_list.append(response_dict[i])
     context = {"response_list": response_list}
