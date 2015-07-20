@@ -28,6 +28,12 @@
 
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" href="dist/tablesaw.css">
+
+    <!--[if lt IE 9]><script src="dependencies/respond.js"></script><!--<![endif]-->
+    <script src="dist/dependencies/jquery.js"></script>
+    <script src="dist/tablesaw.js"></script>
+
 </head>
 
 <div id="container">
@@ -102,39 +108,34 @@
         <!-- Related Projects Row -->
         <div class="row">
 
-
             <div class="col-lg-12">
                 <h3 class="page-header">Find a shelter:</h3>
             </div>
 
                     <!--Table for Shelters -->
-                <div class="table-responsive"> 
-                <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0" >
-                    <br>
-                    
-                    <thead>  
-                      <tr>
-                            <th class="unsortable" >Logo:
-                            <th>Name:</th>
-                            <th>City: </th>
-                            <th>State:</th>
-                            <th>Phone:</th>
-                            <th>E-mail:</th>
-                      </tr>
-                    </thead>
+                <div class="docs-main"> 
+                <table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-sortable data-tablesaw-sortable-switch data-tablesaw-minimap data-tablesaw-mode-switch>
+                    <thead> 
+                        <tr>
+                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Name</th>
+                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">City</th>
+                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">State</th>
+                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1"><abbr title="Rotten Tomato Rating">Phone</abbr></th>
+                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">E-mail</th>
+                        </tr>
+                    </thead> 
                     <tbody>
                      {% for shelter in shelters_list %} 
                         <tr >
-                            <td><img class="img-responsive portfolio-item" src={{shelter.shelter_pic}} alt="shelters"  height="42" width="42"></td>
-                            <!--td><a href="/Shelters/{{shelter.shelter_id}}" id="nav_font">{{shelter.shelter_name}}</a></td-->
-                            <td><a href={{shelter.shelter_url}} id="nav_font">{{shelter.shelter_name}}</a></td>
-                            <td><a href="{{shelter.shelter_city_url}}">{{shelter.shelter_city}}</a></td>
-                            <td>{{shelter.shelter_state}}</td>
-                            <td>{{shelter.shelter_phone}}</td>
-                            <td>{{shelter.shelter_email}}</td>
+                            <td class="title"><img class="img-responsive portfolio-item" src={{shelter.shelter_pic}} alt="shelters"  height="42" width="42"></td>
+                            <td class="title"><img class="img-responsive portfolio-item" src={{shelter.shelter_pic}} alt="shelters"  height="42" width="42"></td>
+                            <td class="title"><a href={{shelter.shelter_url}} id="nav_font">{{shelter.shelter_name}}</a></td>
+                            <td class="title"><a href="{{shelter.shelter_city_url}}">{{shelter.shelter_city}}</a></td>
+                            <td class="title">{{shelter.shelter_state}}</td>
+                            <td class="title">{{shelter.shelter_phone}}</td>
+                            <td class="title">{{shelter.shelter_email}}</td>
                         </tr>
-                    {% endfor %}</tr>
-                        
+                    {% endfor %}</tr> 
                     </tbody>
                 </table>         
             </div>
