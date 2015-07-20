@@ -279,6 +279,6 @@ def external_api (request) :
         response_dict[i] = api_json
         response_list.append(response_dict[i])
     context = {"response_list": response_list}
-    print({context})
+    #print({context})
     return render_to_response('extapi.html', context)
     
