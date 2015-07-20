@@ -135,8 +135,8 @@
                         <p><b>Sex:</b> {{pet.pet_sex}}</p>
                         <p><b>Size:</b> {{pet.pet_size}}</p>
                         <p><b>Breed:</b> {{pet.pet_breed}} </p>
-                        <p><b>Shelter:</b><a href="{{pet.pet_shelter_url}}"><div class= "shelter">{{pet.pet_shelter}}</div> </a></p>
-                        <p><b>City:</b><a href="{{pet.pet_city_url}}"> {{pet.pet_city}}</a></p>
+                        <p><a href ="{{pet.pet_shelter_url}}">{{pet.pet_shelter_name}} </a></p>
+                        <p><b>City:</b><a href="{{pet.pet_city_urlized}}"> {{pet.pet_city}}</a></p>
 
 
 
@@ -151,8 +151,8 @@
   width="600"
   height="450"
   frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/search?key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg
-    &q={{pet.pet_shelter_name.split|join:"+"}}" allowfullscreen>
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg
+    &q={{pet.pet_shelter_name.split|join:"+"}},{{pet.pet_city.split|join:"+"}}" allowfullscreen>
 </iframe>
        
 <!-- 
