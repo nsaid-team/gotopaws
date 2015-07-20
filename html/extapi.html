@@ -2,12 +2,18 @@
 <html lang="en">
 
 <head>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="/ie9.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+    <![endif]-->
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title> Welcome to GoToPaws! </title>
+    
+    <title> GoToPaws External API </title>
 
     <!--Tab Logo -->
     <link rel="icon" type="image/png" href="bootstrap-3.3.5-dist/img/All/favicon-32x32.png" sizes="32x32" />
@@ -16,105 +22,111 @@
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="bootstrap-3.3.5-dist/css/search.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/pet-body.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="bootstrap-3.3.5-dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+      
+    <!-- jQuery -->
+    <script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+      
+    <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.js"></script>
+    <script src="https://cdn.datatables.net/responsive/1.0.6/js/dataTables.responsive.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/1.0.6/css/dataTables.responsive.css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" language="javascript" class="init">
+        $(document).ready(function() {
+            $('#table_id').DataTable( {
+                responsive: true
+            } );
+        } );
+    </script>
 
 </head>
 
 <div id="container">
 <div id="content">
-<body>
-    <nav class="navbar navbar-inverse" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="home">Home</a></li>
-                <li><a href="pets">Pets</a></li>
-                <li><a href="shelters">Shelters</a></li>
-                <li ><a href="cities">Cities</a></li>
-                <li ><a class = "active" href="extapi">External API</a></li>
-                <li ><a href="about">About</a></li>
-            </ul>
-            <div class="col-sm-3 col-md-3 pull-right">
-                <form class="navbar-form" role="search" action="/search/">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search" name="q">
-                        <div class="input-group-btn">
-                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+    <body>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="home"><strong>Home</strong></a></li>
+                    <li><a href="pets"><strong>Pets</strong></a></li>
+                    <li><a href="shelters"><strong>Shelters</strong></a></li>
+                    <li><a href="cities"><strong>Cities</strong></a></li>
+                    <li class="active"><a href="extapi"><strong>External API</strong></a></li>
+                    <li><a href="about"><strong>About</strong></a></li>
+                </ul>
+                <div class="col-sm-3 col-md-3 pull-right">
+                    <form class="navbar-form" role="search" action="/search/">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="q">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
                         </div>
-                    </div>
-                </form>
-            </div>        
+                    </form>
+                </div>        
+            </div>
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container">
+            <!-- Portfolio Item Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">External API</h1>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="row">
+                <table id="table_id" class="display responsive no-wrap" width="100%">
+                    <thead>  
+                        <tr>
+                            <td>Name           </td>
+                            <td>Type           </td>
+                            <td>Strength       </td>
+                            <td>Agility        </td>
+                            <td>Intelligence   </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       {% for response in response_list %} 
+                            <tr >
+                                <!--<td align="center"><align="middle>"-->
+                                <td>response.items.name</td>
+                                <td>response.items.slot</td> 
+                                <td>response.items.rarity</td>
+                                <td>response.items.item_set</td>
+                                <td>response.items.hero</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <hr> 
+            </div>
         </div>
-    </nav>
-
-    <div class="text-box">
-        {% if not response_list %}
-            <h3><i>Not Data Found in the External API</i></h3>
-            <p></p>
-            <p></p>
-        {% endif %}
-            <table>
-                <tr>
-                <td>Name:  </td>
-                <td>Type: </td>
-                <td>Strength: </td>
-                <td>Agility: </td>
-                <td>Intelligence: <td>
-
-            </tr>
-<!--         {% for character in response_list.0 %} 
-            <tr>
-                <td>{{character.name}}</td>
-                <td>{{character.type}}</td>
-                <td>{{character.strength}}</td>
-                <td>{{character.agility}}</td>
-                <td>{{character.intelligence}}<td>
-
-            </tr>
-        {% endfor %} -->
-
-            </table>
-
-   <!--      <table>
-            <tr>
-            <td>Name :</td>
-            <td>Slot: </td>
-            <td>Rarity: </td>
-            <td>Item Set:</td>
-            <td>Hero: </td>
-        </tr>
-        {% for item in response_list.1 %}
-        <tr>
-            <td>{{item.name}}</td>
-            <td>{{item.slot}}</td>
-            <td>{{item.rarity}}</td>
-            <td>{{item.item_set}}</td>
-            <td>{{item.hero}}</td>
-        </tr>
-        {% endfor %}
-    </table> -->
-
-</div>
-
-</body>
+    </body>
 </div>
 </div>
 <!-- Footer -->

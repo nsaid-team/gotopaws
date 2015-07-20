@@ -270,12 +270,14 @@ def search (request):
 
 def external_api (request) :
     response_list = []
+    response_dict = {}
     identifiers_list = ['heroes', 'items', 'sets']
     for i in identifiers_list :
         url = "http://hatfancy.me/api/" + i + "/"
         response = urllib.request.urlopen(url)
         api_json = response.read()
-        response_list.append(api_json)
+        response_dict[i] = api_json
+        response_list.append(response_dict[i])
     context = {"response_list": response_list}
     return render_to_response('extapi.html', context)
     
