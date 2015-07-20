@@ -116,14 +116,15 @@
                         </tr>
                     </thead>
                     <tbody>
-                       {% for response in response_list.items %} 
+                       {% for response in response_list %} 
                             <tr >
                                 <!--<td align="center"><align="middle>"-->
-                                <td>{{response.name}}</td>
+                                <td>{{response}}</td>
+                                <!--<td>{{response.name}}</td>
                                 <td>{{response.slot}}</td> 
                                 <td>{{response.rarity}}</td>
                                 <td>{{response.item_set}}</td>
-                                <td>{{response.hero}}</td>
+                                <td>{{response.hero}}</td>-->
                             </tr>
                         {% endfor %}
                     </tbody>
