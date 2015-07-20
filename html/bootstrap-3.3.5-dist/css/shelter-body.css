@@ -86,7 +86,7 @@ h5 {
 
 div.text-box{
     background-color: rgba(145, 197, 212, .4);
-    width: 100%;
+    width: 90%;
     height:100%;
     margin-top:7%;
     margin-bottom: 5%;
@@ -95,7 +95,6 @@ div.text-box{
     font-size:16px;
     color: black;
     text-align: justify;
-
 }
   
 .topnav {
