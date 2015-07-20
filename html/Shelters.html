@@ -34,8 +34,10 @@
       
     <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.js"></script>
+    <script src="https://cdn.datatables.net/responsive/1.0.6/js/dataTables.responsive.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/1.0.6/css/dataTables.responsive.css">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
@@ -44,8 +46,10 @@
     <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" language="javascript" class="init">
-        $(document).ready( function () {
-            $('#table_id').DataTable();
+        $(document).ready(function() {
+            $('#table_id').DataTable( {
+                responsive: true
+            } );
         } );
     </script>
 
