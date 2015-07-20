@@ -23,6 +23,7 @@ body > #container { height: auto; min-height: 100%; }
 
 small {
     color: rgb(255,255,255);
+    text-align: center;
 }
 
 p {
@@ -41,7 +42,6 @@ p {
     position: absolute;
     height: 1em;
     bottom: 2%;
-    text-align: center;
 }
 
 h1,
