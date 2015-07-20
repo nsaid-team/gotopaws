@@ -83,7 +83,7 @@ h5 {
     margin: 0 0 0 0;
 }
 
-#text-box{
+.text-box{
     background-color: rgba(145, 197, 212, .4);
     width: 100%;
     height:100%;
