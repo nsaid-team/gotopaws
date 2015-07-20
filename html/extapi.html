@@ -73,14 +73,14 @@
         {% endif %}
             <table>
                 <tr>
-                <td>Name: {{response_list.0}} </td>
+                <td>Name:  </td>
                 <td>Type: </td>
                 <td>Strength: </td>
                 <td>Agility: </td>
                 <td>Intelligence: <td>
 
             </tr>
-        {% for character in response_list %} 
+        {% for character in response_list.0 %} 
             <tr>
                 <td>{{character.name}}</td>
                 <td>{{character.type}}</td>
@@ -101,7 +101,7 @@
             <td>Item Set:</td>
             <td>Hero: </td>
         </tr>
-        {% for item in response_list %}
+        {% for item in response_list.0 %}
         <tr>
             <td>{{item.name}}</td>
             <td>{{item.slot}}</td>
