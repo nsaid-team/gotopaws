@@ -13,7 +13,7 @@ class City(models.Model):
     The __str__ method is used to return the city.
     """
 
-    city_urlized = models.CharField(max_length=300)
+    #city_urlized = models.CharField(max_length=300)
     city_name = models.CharField(max_length=300) # text field
     city_state = models.CharField(max_length=50) # text field
     city_country = models.CharField(max_length=200) # text field
@@ -52,15 +52,15 @@ class Shelter(models.Model):
     #shelter_city = models.ForeignKey(City, related_name = 'shelter_city')
     shelter_city = models.CharField(max_length=300) # text field
     shelter_state = models.CharField(max_length=50) # text field
-    shelter_lattitude = models.CharField(max_length=50) # text field
-    shelter_longitude = models.CharField(max_length=50) # text field
+    #shelter_lattitude = models.CharField(max_length=50) # text field
+    #shelter_longitude = models.CharField(max_length=50) # text field
     shelter_phone = models.CharField(max_length=50) # text field
     shelter_email = models.CharField(max_length=200) # text field
     shelter_hours = models.CharField(max_length=200) # text field
     shelter_pic = models.CharField(max_length=1000) # logo picture of shelter
     shelter_url = models.CharField(max_length=1000) # link to Shelter_Page
     shelter_city_url = models.CharField(max_length=1000) # link to City_Page
-    shelter_blurb = models.CharField(max_length=1000) # blurb from yelp or google
+    #shelter_blurb = models.CharField(max_length=1000) # blurb from yelp or google
     
     """
     class Meta:
