@@ -117,11 +117,11 @@
                     </thead>
                     <tbody>
                        {% for response in response_list %}
-                            {% if "heroes" in response.key %}
+                            {% if "heroes" in response %}
                                 <tr >
                                     <!--<td align="center"><align="middle>"-->
                                     <!--<td>{{response}}</td>-->
-                                    <td>{{response.name}}</td>
+                                    <td>{{response.heroes}}</td>
                                     <!--<td>{{response.slot}}</td> 
                                     <td>{{response.rarity}}</td>
                                     <td>{{response.item_set}}</td>
