@@ -117,7 +117,6 @@
                     </thead>
                     <tbody>
                        {% for response in response_list %}
-                            {% if "heroes" in response %}
                                 <tr >
                                     <!--<td align="center"><align="middle>"-->
                                     <!--<td>{{response}}</td>-->
@@ -127,7 +126,6 @@
                                     <td>{{response.item_set}}</td>
                                     <td>{{response.hero}}</td>-->
                                 </tr>
-                            {% endif %}
                         {% endfor %}
                     </tbody>
                 </table>
