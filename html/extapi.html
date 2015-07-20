@@ -119,13 +119,11 @@
                        {% for response in response_list %} 
                             <tr >
                                 <!--<td align="center"><align="middle>"-->
-                                {% if response == 'items' %}
-                                    <td>{{response.name}}</td>
-                                    <td>{{response.slot}}</td> 
-                                    <td>{{response.rarity}}</td>
-                                    <td>{{response.item_set}}</td>
-                                    <td>{{response.hero}}</td>
-                                {% endif %}
+                                <td>{{response.items.name}}</td>
+                                <td>{{response.items.slot}}</td> 
+                                <td>{{response.items.rarity}}</td>
+                                <td>{{response.items.item_set}}</td>
+                                <td>{{response.items.hero}}</td>
                             </tr>
                         {% endfor %}
                     </tbody>
