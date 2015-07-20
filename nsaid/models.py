@@ -91,7 +91,7 @@ class Pet(models.Model):
     pet_shelter = models.CharField(max_length=300) # shelter id from petfinder
     #pet_city = models.ForeignKey(City, related_name='pet_city')
     pet_city = models.CharField(max_length=300) # text field
-    pet_state = models.CharField(max_length=50)
+    #pet_state = models.CharField(max_length=50)
     pet_pic_url = models.CharField(max_length=1000) # thumbnail-ish picture of pet
     pet_pic_large = models.CharField(max_length=1000) # larger picture of pet
     pet_url = models.CharField(max_length=1000) # link to Pet_Page
