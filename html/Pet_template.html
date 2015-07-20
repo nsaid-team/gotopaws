@@ -144,15 +144,15 @@
                     </div>
 
                 </div>
-{{ user.name.split|join:"_" }}
+
 
 
 <iframe
   width="600"
   height="450"
   frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg
-    &q={{pet.pet_shelter.split|join:"+"}}" allowfullscreen>
+  src="https://www.google.com/maps/embed/v1/search?key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg
+    &q={{pet.pet_shelter_name.split|join:"+"}}" allowfullscreen>
 </iframe>
        
 <!-- 
@@ -204,10 +204,10 @@
 <!-- /.container -->
 
 <!-- jQuery -->
-<script src="bootstrap-3.3.5-dist/js/jquery.js"></script>
+<script src="/bootstrap-3.3.5-dist/js/jquery.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 
 </body>
 
