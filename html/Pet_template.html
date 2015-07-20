@@ -152,7 +152,7 @@
   height="450"
   frameborder="0" style="border:0"
   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg
-    &q=Space+Needle,Seattle+WA" allowfullscreen>
+    &q={{pet.pet_shelter.replace(" ","+")}}" allowfullscreen>
 </iframe>
        
 
@@ -167,7 +167,7 @@
         var shelter =  document.getElementById("shelter").innerHTML;
         var res = shelter.replace(" ", "+"); 
         var mapOptions = {
-          search: res,
+          center: res,
           zoom: 8
         };
         var map = new google.maps.Map(document.getElementById('map-canvas'),
