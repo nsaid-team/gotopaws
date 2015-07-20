@@ -1,22 +1,63 @@
 body{
-    background: url(../img/All/dog-leaf.jpg);
-    
-     /* Image is centered vertically and horizontally at all times */
-    background-position: center center;
-  
-    /* Image doesn't repeat */
-    background-repeat: no-repeat;
-     
-    /* Makes the image fixed in the viewport so that it doesn't move when 
-     the content height is greater than the image height */
-    background-attachment: fixed;
-  
-    /* This is what makes the background image rescale based on its container's size */
+    background: url(../img/All/dog-leaf.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-  
-    /* Pick a solid background color that will be displayed while the background image is loading */
-    background-color:#464646;
-	color: white;
+    overflow: hidden;
+    min-height: 100%;
+    height: 100%;
+}
+
+body {
+    background:transparent;
+    min-height: 100%;
+    height: 100%;
+}
+
+#container {height: 100%;}
+
+body > #container { height: auto; min-height: 100%; }
+
+#content { padding-bottom: 3em; }
+
+small {
+    color: rgb(255,255,255);
+}
+
+p {
+    display: block;
+    font-size:1em;
+    text-align: justify;
+    margin-top:0em;
+    margin-bottom: 0.67em;
+    margin-right: 0.67em;
+    margin-left: 0.7em;
+    color: rgb(0,0,0);
+}
+
+#footer {
+    clear: both;
+    position: absolute;
+    height: 1em;
+    bottom: 2%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h5 {
+    font-family: "Lato";
+    font-size:1.1em;
+    text-align: justify;
+    font-weight: bold;
+    margin: 0 0 0 0;
 }
 
 div.text-box{

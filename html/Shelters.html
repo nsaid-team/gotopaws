@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    
     <!--3 Col Portfolio - Start Bootstrap Template -->
-    <title> GoToPaws </title>
+    <title> GoToPaws Shelters </title>
     {% load static from staticfiles %}
     <script type="text/javascript" src="bootstrap-3.3.5-dist/js/angular.min.js"></script>
     <script type="text/javascript" src="{% static "js/sortable.js" %}"></script>
@@ -25,6 +22,9 @@
      <script type="text/javascript" src="bootstrap-3.3.5-dist/js/style-table.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="/ie9.css" />
+    <![endif]-->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -32,9 +32,9 @@
 
 </head>
 
-
+<div id="container">
+<div id="content">
 <body>
- <!-- Navigation -->
     <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -46,12 +46,13 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="home">Home</a></li>
-                <li ><a href="pets">Pets</a></li>
-                <li  class="active"><a href="shelters">Shelters</a></li>
-                <li ><a href="cities">Cities</a></li>
-                <li ><a href="extapi">External API</a></li>
-                <li><a href="about">About</a></li>
+
+                <li><a href="home"><h5>Home</h5></a></li>
+                <li><a href="pets"><h5>Pets</h5></a></li>
+                <li class="active"><a href="shelters"><h5>Shelters</h5></a></li>
+                <li ><a href="cities"><h5>Cities</h5></a></li>
+                <li ><a href="extapi"><h5>External API</h5></a></li>
+                <li><a href="about"><h5>About</h5></a></li>
             </ul>
             <div class="col-sm-3 col-md-3 pull-right">
                 <form class="navbar-form" role="search" action="/search/">
@@ -148,9 +149,6 @@
 
         <hr>
 
-
-
-        
         <!-- Pagination -->
         <div class="row text-center">
             <div class="col-lg-12">
@@ -182,17 +180,6 @@
         <!-- /.row -->
 
         <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; NSAID 2015</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
-
     </div>
     <!-- /.container -->
 
@@ -201,9 +188,17 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-
 </body>
-
-
-
+</div>
+</div>
+<!-- Footer -->
+<div id="footer">
+<footer>
+    <div class="row">
+        <div class="col-lg-12">
+            <small>Copyright &copy; NSAID 2015</small>
+        </div>
+    </div>
+</footer>
+</div>
 </html>
