@@ -8,6 +8,17 @@
         <link rel="stylesheet" type="text/css" href="/ie9.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
     <![endif]-->
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="/DataTables-1.10.7/media/css/jquery.dataTables.css">
+      
+    <!-- jQuery -->
+    <script type="text/javascript" charset="utf8" src="/DataTables-1.10.7/media/js/jquery.js"></script>
+      
+    <!-- DataTables -->
+    <script type="text/javascript" charset="utf8" src="/DataTables-1.10.7/media/js/jquery.dataTables.js"></script>
+
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,11 +39,12 @@
 
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="dist/tablesaw.css">
 
-    <!--[if lt IE 9]><script src="dependencies/respond.js"></script><!--<![endif]-->
-    <script src="dist/dependencies/jquery.js"></script>
-    <script src="dist/tablesaw.js"></script>
+    <script type="text/javascript">    
+        $(document).ready( function () {
+            $('#table_id').DataTable();
+        } );
+    </script>
 
 </head>
 
@@ -104,7 +116,6 @@
         </div>
         <br>
         <!-- /.row -->
-
         <!-- Related Projects Row -->
         <div class="row">
 
@@ -113,28 +124,31 @@
             </div>
 
                     <!--Table for Shelters -->
-                <div class="docs-main"> 
-                <table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-sortable data-tablesaw-sortable-switch data-tablesaw-minimap data-tablesaw-mode-switch>
-                    <thead> 
-                        <tr>
-                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Name</th>
-                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">City</th>
-                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">State</th>
-                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1"><abbr title="Rotten Tomato Rating">Phone</abbr></th>
-                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">E-mail</th>
-                        </tr>
-                    </thead> 
+                <div class="table-responsive"> 
+                <table id="table_id" class="display">
+                    
+                    <thead>  
+                      <tr>
+                            <th>Logo:</th>
+                            <th>Name:</th>
+                            <th>City: </th>
+                            <th>State:</th>
+                            <th>Phone:</th>
+                            <th>E-mail:</th>
+                      </tr>
+                    </thead>
                     <tbody>
                      {% for shelter in shelters_list %} 
                         <tr >
-                            <td class="title"><img class="img-responsive portfolio-item" src={{shelter.shelter_pic}} alt="shelters"  height="42" width="42"></td>
-                            <td class="title"><a href={{shelter.shelter_url}} id="nav_font">{{shelter.shelter_name}}</a></td>
-                            <td class="title"><a href="{{shelter.shelter_city_url}}">{{shelter.shelter_city}}</a></td>
-                            <td class="title">{{shelter.shelter_state}}</td>
-                            <td class="title">{{shelter.shelter_phone}}</td>
-                            <td class="title">{{shelter.shelter_email}}</td>
+                            <td><img class="img-responsive portfolio-item" src={{shelter.shelter_pic}} alt="shelters"  height="42" width="42"></td>
+                            <td><a href={{shelter.shelter_url}} id="nav_font">{{shelter.shelter_name}}</a></td>
+                            <td><a href="{{shelter.shelter_city_url}}">{{shelter.shelter_city}}</a></td>
+                            <td>{{shelter.shelter_state}}</td>
+                            <td>{{shelter.shelter_phone}}</td>
+                            <td>{{shelter.shelter_email}}</td>
                         </tr>
-                    {% endfor %}</tr> 
+                    {% endfor %}</tr>
+                        
                     </tbody>
                 </table>         
             </div>
@@ -176,9 +190,6 @@
         <hr>
     </div>
     <!-- /.container -->
-
-<!-- jQuery -->
-<script src="bootstrap-3.3.5-dist/js/jquery.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
