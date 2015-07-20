@@ -42,6 +42,7 @@ p {
     position: relative;
     height: 1em;
     bottom: 0;
+    text-align: center;
 }
 
 h1,
