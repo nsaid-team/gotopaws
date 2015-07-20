@@ -100,6 +100,11 @@
             <!-- /.row -->
 
             <div class="row">
+                {% if not response_list %}
+                    <h3><i>Not Results Found</i></h3>
+                    <p></p>
+                    <p></p>
+                {% endif %}
                 <table id="table_id" class="display responsive no-wrap" width="100%">
                     <thead>  
                         <tr>
@@ -114,11 +119,13 @@
                        {% for response in response_list %} 
                             <tr >
                                 <!--<td align="center"><align="middle>"-->
-                                <td>{{response.1.name}}</td>
-                                <td>{{response.1.slot}}</td> 
-                                <td>{{response.1.rarity}}</td>
-                                <td>{{response.1.item_set}}</td>
-                                <td>{{response.1.hero}}</td>
+                                {% if response == 'items' %}
+                                    <td>{{response.name}}</td>
+                                    <td>{{response.slot}}</td> 
+                                    <td>{{response.rarity}}</td>
+                                    <td>{{response.item_set}}</td>
+                                    <td>{{response.hero}}</td>
+                                {% endif %}
                             </tr>
                         {% endfor %}
                     </tbody>
