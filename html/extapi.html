@@ -80,7 +80,7 @@
                 <td>Intelligence: <td>
 
             </tr>
-        {% for character in response_list[0] %} 
+        {% for character in response_list %} 
             <tr>
                 <td>{{character.name}}</td>
                 <td>{{character.type}}</td>
@@ -101,7 +101,7 @@
             <td>Item Set:</td>
             <td>Hero: </td>
         </tr>
-        {% for item in response_list[1] %}
+        {% for item in response_list %}
         <tr>
             <td>{{item.name}}</td>
             <td>{{item.slot}}</td>
