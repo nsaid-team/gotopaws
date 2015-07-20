@@ -270,6 +270,7 @@ def search (request):
 
 def external_api (request) :
     response_list = []
+    l = []
     response_dict = {}
     identifiers_list = ['heroes', 'items', 'sets']
     for i in identifiers_list :
@@ -277,7 +278,8 @@ def external_api (request) :
         response = urllib.request.urlopen(url).read().decode("utf-8")
         api_json = json.loads(response)
         response_dict[i] = api_json
-        response_list.append({i:response_dict[i]})
+        l.append({i:response_dict[i]})
+        response_list.append(l)
     context = {"response_list": response_list}
     #print({context})
     return render_to_response('extapi.html', context)
