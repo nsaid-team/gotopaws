@@ -270,7 +270,7 @@ def search (request):
 
 def external_api (request) :
     response_list = []
-    l = [][]
+    l = [[]]
     j = 0
     response_dict = {}
     identifiers_list = ['heroes', 'items', 'sets']
