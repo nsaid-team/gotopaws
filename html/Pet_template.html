@@ -75,7 +75,7 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
 
 
                    {% if pet.pet_pic_list.length %}
@@ -84,18 +84,18 @@
              <div id="myCarousel" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
               <ol class="carousel-indicators">
-                 
+
                 {% for i in pet.pet_pic_list.length|get_range %}
                 <li data-target="#myCarousel" data-slide-to="{{i}}"></li>
                 {% empty %}
                 no pictures
                 {% endfor %}
             </ol>
-            
+
 
             <div class="carousel-inner" role="listbox">
 
-             
+
                 {% for pic in pet.pet_pic_list %}
                 <div class="item">
                   <img class="first-slide" src="{{pic}}"  alt="">
@@ -103,10 +103,11 @@
                     <div class="carousel-caption">
                     </div>
                 </div>
-            </div>
-            {% empty %}
+                {% empty %}
             no pictures
             {% endfor %}
+            </div>
+            
 
             <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -118,7 +119,7 @@
             </a>
         </div><!-- /.carousel -->
 
-        
+
     </div>
     {% else %}
     <div class ="container">
@@ -129,7 +130,7 @@
 
 </div>
 <div class="col-md-8">
- 
+
 
     <div class = "text-box">
         {{pet.pet_bio}}
@@ -140,7 +141,7 @@
 <div class="row">
 
     <div class="col-md-12">
-        
+
         <div class = "text-box">
             <h4><b>{{pet.pet_name}}</b></h4><!-- Zoey's info in "https://www.petfinder.com/petdetail/32480632/" -->
             <p><b>Age:</b> {{pet.pet_age}}</p>
