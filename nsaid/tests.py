@@ -194,7 +194,7 @@ class Test (unittest.TestCase) :
         
         c = City.objects.create(
             city_name = "Testing state name length",
-            city_state = "Really long state name that the database should handle just fine",
+            city_state = "Really long state name",
             city_country = "USA",
             city_vet_url = "vet url",
             city_groomer_url = "groomer url",
@@ -202,7 +202,7 @@ class Test (unittest.TestCase) :
 
         self.assertTrue(type(c) == City)
         self.assertEqual(c.city_name, "Testing state name length")
-        self.assertEqual(c.city_state, "Really long state name that the database should handle just fine")
+        self.assertEqual(c.city_state, "Really long state name")
         self.assertEqual(c.city_country, "USA")
         self.assertEqual(c.city_vet_url, "vet url")
         self.assertEqual(c.city_groomer_url, "groomer url")
