@@ -83,6 +83,12 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': '',
     }
+    'unt_test_db': {
+        'ENGINE': 'mysql.connector.django',
+        'NAME': 'unit_test',
+        'USER': 'root',
+        'PASSWORD': '',
+    }
 }
 
 
