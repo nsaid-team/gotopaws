@@ -45,9 +45,9 @@ urlpatterns = [
     #url(r'^api/', include(ShelterResource().urls)),
     #url(r'^api/', include(CityResource().urls)),
 
-    url(r'^Pets/(?P<identifier>[\w-]+/json)$', views.pet_json),
+    url(r'^Pets/(?P<identifier>[\w-]+)/json$', views.pet_json),
     url(r'^Pets/(?P<identifier>[\w-]+)/$', views.pet_template),
-    url(r'^Shelters/(?P<identifier>[\w-]+/json)$', views.shelter_json),
+    url(r'^Shelters/(?P<identifier>[\w-]+)/json$', views.shelter_json),
     url(r'^Shelters/(?P<identifier>[\w-]+)/$', views.shelter_template),
     url(r'^Cities/(?P<identifier>[\w|\W]+)/json$', views.city_json),
     url(r'^Cities/(?P<identifier>[\w|\W]+)/$', views.city_template),

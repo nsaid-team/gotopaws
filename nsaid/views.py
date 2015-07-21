@@ -102,7 +102,8 @@ def shelter_template(request, identifier):
     url="https://maps.googleapis.com/maps/api/geocode/json?address=%s" % address.replace(" ", "+")
     response = urllib.request.urlopen(url)
     jsongeocode = response.read()
-    context = {'shelter': shelter[0], 'map_json': jsongeocode}
+    pet_list = Pet.objects.filter(pet_shelter = identifier)
+    context = {'shelter': shelter[0], 'map_json': jsongeocode, 'pet_list': pet_list}
     return render(request, 'Shelter_template.html', context)
     
 def shelter_json(request, identifier):
@@ -117,7 +118,8 @@ def city_template(request, identifier):
     identifier_city, identifier_state = identifier.split('_')
     city = City.objects.filter(city_name = identifier_city, city_state = identifier_state)
     city_shelter_list = Shelter.objects.filter(shelter_city = identifier_city, shelter_state = identifier_state)
-    context = {'city': city[0], 'city_shelter_list' : city_shelter_list}
+    pet_list = Pet.objects.filter(pet_city = identifier_city)
+    context = {'city': city[0], 'shelter_list' : city_shelter_list, 'pet_list': pet_list}
     return render(request, 'City_template.html', context)
     
 def city_json(request, identifier):
@@ -270,12 +272,20 @@ def search (request):
 
 def external_api (request) :
     response_list = []
+    temp_list = []
+    list_all = []
+    j = 0
+    response_dict = {}
     identifiers_list = ['heroes', 'items', 'sets']
     for i in identifiers_list :
         url = "http://hatfancy.me/api/" + i + "/"
-        response = urllib.request.urlopen(url)
-        api_json = response.read()
-        response_list.append(api_json)
+        response = urllib.request.urlopen(url).read().decode("utf-8")
+        api_json = json.loads(response)
+        temp_list.append(api_json)
+        list_all.append(temp_list)
+        response_list.append(list_all)
+        temp_list = []
     context = {"response_list": response_list}
+    #print({context})
     return render_to_response('extapi.html', context)
     
