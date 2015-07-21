@@ -42,6 +42,7 @@ def cities(request):
 
 def about(request):
     template = loader.get_template('About.html')
+    print({context})
     return HttpResponse(template.render())
 
 def cats(request):
@@ -142,7 +143,7 @@ def unit_test(request):
     bashCommand = ("coverage3 run ../manage.py test")
     subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
     output = process.communicate()[0]
-    print({context})
+
     return HttpResponse(output.read())
 
 @api_view(['GET'])
