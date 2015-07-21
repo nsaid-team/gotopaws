@@ -117,15 +117,17 @@
                     </thead>
                     <tbody>
                        {% for response in response_list %}
-                            <tr >
-                                <!--<td align="center"><align="middle>"-->
-                                <!--<td>{{response}}</td>-->
-                                <td>{{response.1}}</td>
-                                <!--<td>{{response.slot}}</td> 
-                                <td>{{response.rarity}}</td>
-                                <td>{{response.item_set}}</td>
-                                <td>{{response.hero}}</td>-->
-                            </tr>
+                            {% for it in response.1 %}
+                                <tr >
+                                    <!--<td align="center"><align="middle>"-->
+                                    <!--<td>{{response}}</td>-->
+                                    <td>{{it}}</td>
+                                    <!--<td>{{response.slot}}</td> 
+                                    <td>{{response.rarity}}</td>
+                                    <td>{{response.item_set}}</td>
+                                    <td>{{response.hero}}</td>-->
+                                </tr>
+                            {% endfor %}
                         {% endfor %}
                     </tbody>
                 </table>
