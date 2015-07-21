@@ -37,10 +37,6 @@ def cities(request):
     context = {"cities_list": cities_list}
     return render_to_response("Cities.html", context)
 
-def about(request):
-    template = loader.get_template('About.html')
-    return HttpResponse(template.render())
-
 def pet_template(request, identifier):
     pet = Pet.objects.filter(pet_id = identifier)
     context = {'pet': pet[0]}
