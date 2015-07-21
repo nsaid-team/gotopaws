@@ -48,13 +48,7 @@
         
         <nav-bar></nav-bar>
     </div>
-    <script>
-    window.onload = function(){
-        var elems = document.getElementsByClassName("/home");
-          
-        elems[0].className+=' active';
-    }
-    </script>
+
 
     
 
@@ -118,6 +112,15 @@
 
     </div>
     <!-- /.intro-header -->
+
+    <script>
+    window.onload = function(){
+        var elems = document.getElementsByClassName("/home");
+        if(elems){ 
+            elems[0].className += " active";
+        }
+    }
+    </script>
 <!-- jQuery -->
 <script src="bootstrap-3.3.5-dist/js/jquery.js"></script>
 
