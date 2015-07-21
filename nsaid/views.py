@@ -279,6 +279,7 @@ def external_api (request) :
     results_list = []
     pet_list = []
     item_hero_list = []
+    pet_url = []
     identifiers_list = ['heroes', 'items', 'sets']
     url = "http://nsaid.me/api/pets/"
     our_response = urllib.request.urlopen(url).read().decode("utf-8")
@@ -286,6 +287,7 @@ def external_api (request) :
 
     for t in our_api_json :
         pet_list.append(our_api_json[t]['pet_name'])
+        pet_url.append(our_api_json[t]['pet_url'])
     
     for i in identifiers_list :
         url = "http://hatfancy.me/api/" + i + "/"
@@ -305,7 +307,7 @@ def external_api (request) :
             m = items_list[k]
 
             if ((h['name'] == m['hero']) and (h['name'] not in item_hero_list)) :
-                results_list.append({'hero': h['name'], 'main_item': m['name'], 'main_set': m['item_set'], 'pet': pet_list[ran_num]})
+                results_list.append({'hero': h['name'], 'main_item': m['name'], 'main_set': m['item_set'], 'pet': pet_list[ran_num], 'pet_url': pet_url[ran_num]})
                 item_hero_list.append(m['hero'])
 
     context = {"results_list": results_list}
