@@ -23,7 +23,7 @@ urlpatterns = [
     url(r'^about$', views.about),
     url(r'^extapi$', views.external_api),
     url(r'^search/$', views.search, name='search'),
-    url(r'^unit_test/$', views.unit_test),
+    url(r'^unit_test$', views.unit_test),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.home),
     url(r'^home$', views.home),
