@@ -18,24 +18,19 @@ import subprocess
 from django.core.management import call_command
 from django.core.management import execute_from_command_line
 
-
-def test(request):
-    html = "<html><body>Hey that somehow worked!</body></html>"
-    return HttpResponse(html)
-
 def home(request):
     template = loader.get_template('Home.html')
     return HttpResponse(template.render())
-
-def shelters(request):
-    shelters_list = Shelter.objects.all()
-    context = {"shelters_list": shelters_list}
-    return render_to_response("Shelters.html", context)
 
 def pets(request):
     pets_list = Pet.objects.all()
     context = {"pets_list": pets_list}
     return render_to_response("Pets.html", context)
+
+def shelters(request):
+    shelters_list = Shelter.objects.all()
+    context = {"shelters_list": shelters_list}
+    return render_to_response("Shelters.html", context)
 
 def cities(request):
     cities_list = City.objects.all()
@@ -46,53 +41,8 @@ def about(request):
     template = loader.get_template('About.html')
     return HttpResponse(template.render())
 
-def cats(request):
-    template = loader.get_template('Cats.html')
-    return HttpResponse(template.render())
-
-def dogs(request):
-    template = loader.get_template('Dogs.html')
-    return HttpResponse(template.render())
-
-def shelter_apa(request):
-    template = loader.get_template('Shelter_APA.html')
-    return HttpResponse(template.render())
-
-def cat_sari(request):
-    template = loader.get_template('Cat_Sari.html')
-    return HttpResponse(template.render())
-
-def dog_earl(request):
-    template = loader.get_template('Dog_Earl.html')
-    return HttpResponse(template.render())
-
-def dog_Rangel(request):
-    template = loader.get_template('Dog_Rangel.html')
-    return HttpResponse(template.render())
-
-def shelter_HPPL(request):
-    template = loader.get_template('Shelter_HPPL.html')
-    return HttpResponse(template.render())
-
-def shelter_Muttville(request):
-    template = loader.get_template('Shelter_Muttville.html')
-    return HttpResponse(template.render())
-
-def city_Austin(request):
-    template = loader.get_template('City_Austin.html')
-    return HttpResponse(template.render())
-
-def city_Houston(request):
-    template = loader.get_template('City_Houston.html')
-    return HttpResponse(template.render())
-
-def city_SF(request):
-    template = loader.get_template('City_SF.html')
-    return HttpResponse(template.render())
-
 def pet_template(request, identifier):
-    s, p = identifier.split('_')
-    pet = Pet.objects.filter(pet_shelter = s, pet_id = p)
+    pet = Pet.objects.filter(pet_id = identifier)
     context = {'pet': pet[0]}
     return render(request, 'Pet_template.html', context)
     
@@ -119,10 +69,9 @@ def shelter_json(request, identifier):
     return HttpResponse([serializers.serialize('json', shelter), jsongeocode])
 
 def city_template(request, identifier):
-    identifier_city, identifier_state = identifier.split('_')
-    city = City.objects.filter(city_name = identifier_city, city_state = identifier_state)
-    city_shelter_list = Shelter.objects.filter(shelter_city = identifier_city, shelter_state = identifier_state)
-    pet_list = Pet.objects.filter(pet_city = identifier_city)
+    city = City.objects.filter(city_urlized = identifier)
+    city_shelter_list = Shelter.objects.filter(shelter_city_urlized = identifier)
+    pet_list = Pet.objects.filter(pet_city_urlized = identifier)
     context = {'city': city[0], 'shelter_list' : city_shelter_list, 'pet_list': pet_list}
     return render(request, 'City_template.html', context)
     
@@ -134,11 +83,6 @@ def city_json(request, identifier):
 def about(request):
     template = loader.get_template('About.html')
     return HttpResponse(template.render())
-
-def navbar(request):
-    c = context({'request': request.path})
-    nav = loader.get_template('bootstrap-3.3.5-dist/templates/Navbar.html')
-    return nav.render(c)
 
 def unit_test(request):
     import os, sys

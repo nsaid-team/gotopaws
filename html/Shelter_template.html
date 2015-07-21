@@ -97,7 +97,7 @@
                                 {% for pet in pet_list %}
                              <div class="col-sm-4 col-lg-4 col-md-4">
                                 <div class="thumbnail">
-                                    <img class = "img-responsive" src="bootstrap-3.3.5-dist/img/Pets/rangel.jpg" alt="">
+                                    <img class = "img-responsive" src="{{pet.pet_pic_url}}" alt="">
                                     <div class="caption">
                                         <h4 class="pull-right">
                                         <h4><a href="{{pet.pet_url}}">{{pet.pet_name}}</a>
@@ -141,8 +141,7 @@
   width="600"
   height="450"
   frameborder="0" style="border:0"
-  src='https://www.google.com/maps/embed/v1/search?key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg&q={{shelter.shelter_name.split|join:"+"}}
-    &center,+{{shelter.shelter_city.split|join:"+"}}' allowfullscreen>
+  src='https://www.google.com/maps/embed/v1/search?key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg&q={{shelter.shelter_name.split|join:"+"}}+{{shelter.shelter_city.split|join:"+"}}' allowfullscreen>
 </iframe>
         <hr>
 
