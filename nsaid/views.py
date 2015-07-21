@@ -301,8 +301,8 @@ def external_api (request) :
         if (i == 'sets') :
             sets_list = api_json
 
-    for j in enumerate(heroes_list) :
-        for k in enumerate(items_list) :
+    for j in range(len((heroes_list)) :
+        for k in range(len(items_list)) :
             h = heroes_list[j]
             m = items_list[k]
             if h['name'] == m['hero'] :
