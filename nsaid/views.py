@@ -139,9 +139,10 @@ def navbar(request):
     return nav.render(c)
 
 def unit_test(request):
-    subprocess.Popen("make testonline")
-    f = file.open(testonline.out)
-    return HttpResponse(f)
+    bashCommand = ("rm -f nsaid/testsonline.out\ncoverage3 run manage.py test nsaid/ >  nsaid/tests.out 2>&1\ncoverage3 report -m  nsaid/tests.py nsaid/models.py  >> nsaid/testsonline.out")
+    subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
+    output = process.communicate()[0];
+    return HttpResponse(output)
 
 @api_view(['GET'])
 def pet_list(request):
