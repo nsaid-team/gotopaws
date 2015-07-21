@@ -281,6 +281,13 @@ def external_api (request) :
     pet_list = []
     response_dict = {}
     identifiers_list = ['heroes', 'items', 'sets']
+    url = "http://nsaid.me/api/pets/"
+    our_response = urllib.request.urlopen(url).read().decode("utf-8")
+    our_api_json = json.loads(response)
+
+    for t in our_api_json :
+        pet_list.append(our_api_json[t]['pet_name'])
+    
     for i in identifiers_list :
         url = "http://hatfancy.me/api/" + i + "/"
         response = urllib.request.urlopen(url).read().decode("utf-8")
@@ -291,10 +298,7 @@ def external_api (request) :
             items_list = api_json
         if (i == 'sets') :
             sets_list = api_json
-    pets_list_dicts = Pet.objects.all()
-    mypets = {"pets_list_dicts": pets_list_dicts}
-    for t in mypets["pets_list_dicts"] :
-        pet_list.append(pets_list_dicts[t]['pet_name'])
+    
     ran_num = random.randrange(len(pets_list_dicts))
     for j in enumerate(heroes_list) :
         for k in enumerate(items_list) :
