@@ -67,7 +67,7 @@ A template for GoToPaws city landing pages.
             <div class="summary">
 
                 <h2 class="summary-heading">Shelters <span class="text-muted">in {{city.city_name}}</span></h2>
-
+                <div class="row">
                 {% for shelter in shelter_list %}
                 <div class="container-fluid col-md-3 pull-right">
                 <img class="summary-image img-suqare img-responsive pull-right" alt="{{shelter.shelter_name}}" src="{{shelter.shelter_pic}}" height = "200" width = "200">
@@ -87,6 +87,7 @@ A template for GoToPaws city landing pages.
                     <br>
                 </div>
                 {% endfor %}
+            </div>
             </div>
         </div>
 
