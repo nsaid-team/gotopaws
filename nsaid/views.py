@@ -14,6 +14,7 @@ import requests
 import json
 import urllib
 import random
+import subprocess
 
 
 def test(request):
@@ -132,7 +133,17 @@ def about(request):
     template = loader.get_template('About.html')
     return HttpResponse(template.render())
 
+def navbar(request):
+    c = context({'request': request.path})
+    nav = loader.get_template('bootstrap-3.3.5-dist/templates/Navbar.html')
+    return nav.render(c)
 
+def unit_test(request):
+    bashCommand = ("coverage3 run ../manage.py test")
+    output = serializers.serialize('json', subprocess.check_output(bashCommand.split()))
+    
+
+    return HttpResponse(output)
 
 @api_view(['GET'])
 def pet_list(request):

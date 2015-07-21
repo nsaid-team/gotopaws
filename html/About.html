@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="GoToPaws">
 
 <head>
 
@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <!--Round About - Start Bootstrap Template-->
-    <title>GoToPaws</title>
+    <title>GoToPaws About</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,11 @@
     <link href="bootstrap-3.3.5-dist/css/about.css" rel="stylesheet">
     <link href="./bootstrap-3.3.5-dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/png" href="bootstrap-3.3.5-dist/img/All/favicon-32x32.png" sizes="32x32" />
+
+
+    {% load static from staticfiles %}
+    <script type="text/javascript" src='{% static "js/angular.min.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/templates.js" %}'></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -29,8 +34,11 @@
 </head>
 
 <body>
+    <div ng-controller = "templateController">        
+    <nav-bar></nav-bar>
+    </div>
 
-    <nav class="navbar navbar-inverse" role="navigation">
+  <!--   <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -60,7 +68,7 @@
             </div>             
         </div>
     </nav>
-
+ -->
 
 
 
@@ -215,8 +223,8 @@
                         <li class="member-info"> Total no. of issues: 51</li>
                         <li class="member-info"> Total no. of unit tests: 39</li>
                         <h3> Data </h3>
-                        <li class="member-info"> links to the data sources: <a href="https://www.petfinder.com/developers/api-docs"> https://www.petfinder.com/developers/api-docs</a></li>
-                        <li class="member-info"> how each was scraped: </li>
+                        <li class="member-info"> Data Sources: <a href="https://www.petfinder.com/developers/api-docs"> https://www.petfinder.com/developers/api-docs</a></li>
+                        <li class="member-info"> Scraping Method: </li>
 				</div>
             </div>
 					<div class="col-lg-5 col-sm-pull-6 col-sm-6">
@@ -259,7 +267,12 @@
                             <a href="https://github.com/nsaid-team/gotopaws/wiki" class="btn btn-default btn-lg"><i class="fa fa-github-square fa-fw"></i> <span class="network-name">Github Wiki</span></a>
                         </li>
                         <li>
-                            <a href="https://github.com/nsaid-team/gotopaws/wiki" class="btn btn-default btn-lg"><i class="fa fa-github-square fa-fw"></i> <span class="network-name">Unit Tests</span></a>
+                            <form ng-submit="submit()" ng-controller="ExampleController as ctrl" class="btn btn-default btn-lg"><i class="fa fa-github-square fa-fw"></i> <span class="network-name"></span>
+                             <input type="submit" id="submit" value="Unit Test" />
+                           
+                            <pre>[{list}]</pre>
+                          
+                        </form>
                         </li>
                     </ul>
                 </div>
@@ -271,11 +284,16 @@
 
 
 
+
+
+
+
+
         <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; NSAID 2015/p>
+                    <small>Copyright &copy; NSAID 2015</small>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>

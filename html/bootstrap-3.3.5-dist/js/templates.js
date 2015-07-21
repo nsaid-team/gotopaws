@@ -1,13 +1,12 @@
-var app1 = angular.module("GoToPaws",  function($interpolateProvider) {
+var app1 = angular.module("GoToPaws", []);
+
+app1.config(function($interpolateProvider) {
     $interpolateProvider.startSymbol('[{');
     $interpolateProvider.endSymbol('}]');
-});
-
-
+  });
 
 app1.controller('templateController', function($scope, $location) {
     $scope.isActive = function(route) {
-      console.log(route);
       console.log($location.path());
         return route === $location.path();
     }
@@ -16,12 +15,36 @@ app1.controller('templateController', function($scope, $location) {
 
 
 app1.directive("navBar", function(){
-  console.log("directive");
+
   return{
     restrict: 'E',
     templateUrl: '/bootstrap-3.3.5-dist/templates/Navbar.html'
   };
 });
+
+
+  
+    app1.controller('ExampleController', ['$scope', '$http', function($scope, $http) {
+      $scope.list = [];
+      $scope.text = "Unit Tests";
+      var temp = this;
+      $scope.submit = function() {
+        $scope.list = [];
+       $http.get("/unit_test").success(function(load){
+            $scope.text = load;
+          });
+       
+
+      $scope.list.push(this.text);
+      console.log(this.text);
+      $scope.text = '';
+
+       };
+        
+      
+    }]);
+
+
 
 // app.directive('cityShelters', function(){
 //   return{
