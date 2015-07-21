@@ -7,6 +7,7 @@
 import requests, json
 from django.test import TestCase
 from django.test.utils import *
+from django.db.connection import creation
 from nsaid.models import *
 from unittest import TestLoader, TextTestRunner
 from io import StringIO
@@ -15,9 +16,12 @@ import coverage
 
 def run_unit_tests():
     setup_test_environment()
+    old_name = settings.DATABASE_NAME
+    db = creation.create_test_db()
     test_suite = TestLoader().loadTestsFromTestCase(Test)
     test_stream = StringIO()
     test_runner = TextTestRunner(stream=test_stream).run(test_suite)
+    creation.destroy_test_db(old_name)
     teardown_test_environment()
     return {'results': test_stream.getvalue(), 'status': str(test_runner)}
 
