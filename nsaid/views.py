@@ -292,7 +292,8 @@ def external_api (request) :
         if (i == 'sets') :
             sets_list = api_json
     pets_list_dicts = Pet.objects.all()
-    for t in pets_list_dicts :
+    mypets = {"pets_list_dicts": pets_list_dicts}
+    for t in mypets["pets_list_dicts"] :
         pet_list.append(pets_list_dicts[t]['pet_name'])
     ran_num = random.randrange(len(pets_list_dicts))
     for j in enumerate(heroes_list) :
