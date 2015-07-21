@@ -285,6 +285,6 @@ def external_api (request) :
         response_list.append(list_all)
         temp_list = []
     context = {"response_list": response_list}
-    print({context})
+    #print({context})
     return render_to_response('extapi.html', context)
     
