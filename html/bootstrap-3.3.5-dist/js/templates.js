@@ -27,15 +27,17 @@ app1.directive("navBar", function(){
     app1.controller('ExampleController', ['$scope', '$http', function($scope, $http) {
       $scope.list = [];
       $scope.text = "Unit Tests";
+      var temp = this;
       $scope.submit = function() {
        $http.get("/unit_test").success(function(load){
-            $scope.text = load;
+            temp.text = load;
           });
-        };
+       
 
       $scope.list.push(this.text);
       console.log(this.text);
       $scope.text = '';
+       };
         
       
     }]);
