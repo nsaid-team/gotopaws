@@ -1,1579 +1,182 @@
 [
     {
         "model": "nsaid.Shelter",
-        "pk": 1,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Austin",
-            "shelter_name": "Greyhound Pets of America/Central Texas",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "30.2669",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "855-4Go-Fast",
-            "shelter_state": "TX",
-            "shelter_email": "placement@gpa-centex.org",
-            "shelter_longitude": "-97.7428",
-            "shelter_id": "TX192",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Greyhound Pets of America/Central Texas"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
         "pk": 2,
         "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Austin",
-            "shelter_name": "Small Chance Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "30.2669",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "512-699-7244    ",
-            "shelter_state": "TX",
-            "shelter_email": "info@smallchancerescue.com",
+            "shelter_city_urlized": "austin",
             "shelter_longitude": "-97.7428",
+            "shelter_name": "Small Chance Rescue",
+            "shelter_pic": "http://s3-media3.fl.yelpcdn.com/bphoto/IVs66laHhaH5LYwNXtB0Jg/ms.jpg",
+            "shelter_address": "P.O. Box 10033",
+            "shelter_state": "TX",
+            "shelter_blurb": "Love, love, love this place! I have so much respect for the people who work & volunteer here. They are all doing it for the right reasons, the animals.",
+            "shelter_lattitude": "30.2669",
+            "shelter_phone": "512-699-7244    ",
+            "shelter_city": "Austin",
+            "shelter_hours": "",
+            "shelter_email": "info@smallchancerescue.com",
             "shelter_id": "TX1148",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Small Chance Rescue"
+            "shelter_url": "www.smallchancerescue.com"
         }
     },
     {
         "model": "nsaid.Shelter",
         "pk": 3,
         "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Austin",
-            "shelter_name": "Austin Siamese Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "30.2669",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "512-354-7875  ",
+            "shelter_city_urlized": "san_antonio",
+            "shelter_longitude": "-98.5257",
+            "shelter_name": "Humming for a Loving Forever Home",
+            "shelter_pic": "http://s3-media4.fl.yelpcdn.com/bphoto/w_vEju69IzDUhk0NjYCEQw/ms.jpg",
+            "shelter_address": "1111 not available",
             "shelter_state": "TX",
-            "shelter_email": "loveasiamese@yahoo.com",
-            "shelter_longitude": "-97.7428",
-            "shelter_id": "TX1334",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Austin Siamese Rescue"
+            "shelter_blurb": "Outstanding. Everything is made fresh. Blue cheese dressing is delicious. All steaks and chops are hand cut. \nThe standout is jumbo shrimp. Hands down the...",
+            "shelter_lattitude": "29.4641",
+            "shelter_phone": "email ",
+            "shelter_city": "San Antonio",
+            "shelter_hours": "",
+            "shelter_email": "HummingforaLovingForeverHome@aol.com",
+            "shelter_id": "TX1680",
+            "shelter_url": "www.youtube.com"
         }
     },
     {
         "model": "nsaid.Shelter",
         "pk": 4,
         "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Austin",
-            "shelter_name": "Love-A-Bull",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "30.2669",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "555-555-5555   ",
+            "shelter_city_urlized": "san_antonio",
+            "shelter_longitude": "-98.5716",
+            "shelter_name": "San Antonio Humane Society",
+            "shelter_pic": "http://s3-media2.fl.yelpcdn.com/bphoto/36ZrqozYO-cEoBKVzwc-uQ/ms.jpg",
+            "shelter_address": "4804 Fredericksburg Road",
             "shelter_state": "TX",
-            "shelter_email": "leala@love-a-bull.org",
-            "shelter_longitude": "-97.7428",
-            "shelter_id": "TX1402",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Love-A-Bull"
+            "shelter_blurb": "This is the most clean well kept animal shelter I've ever perused. And even though I'm biased because my pup adopted me here, I can say with confidence that...",
+            "shelter_lattitude": "29.5005",
+            "shelter_phone": "210-226-7461        ",
+            "shelter_city": "San Antonio",
+            "shelter_hours": "",
+            "shelter_email": "adoption@sahumane.org",
+            "shelter_id": "TX295",
+            "shelter_url": "sahumane.org"
         }
     },
     {
         "model": "nsaid.Shelter",
         "pk": 5,
         "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Austin",
-            "shelter_name": "Wee Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "30.2669",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "512-533-9360 ",
+            "shelter_city_urlized": "houston",
+            "shelter_longitude": "-95.3631",
+            "shelter_name": "Basset Buddies Rescue of Texas",
+            "shelter_pic": "http://s3-media3.fl.yelpcdn.com/bphoto/cwZwEF_Izjf1QoyurEqxHg/ms.jpg",
+            "shelter_address": "P.O. Box  130244",
             "shelter_state": "TX",
-            "shelter_email": "info@weerescue.org",
-            "shelter_longitude": "-97.7428",
-            "shelter_id": "TX241",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Wee Rescue"
+            "shelter_blurb": "My fiance and I were thinking about adopting a pet so I looked into friends for life. One day we decided to visit and we were impressed by their facility...",
+            "shelter_lattitude": "29.7631",
+            "shelter_phone": "(281)-657-7347   ",
+            "shelter_city": "Houston",
+            "shelter_hours": "",
+            "shelter_email": "info@bbrtx.org",
+            "shelter_id": "TX1051",
+            "shelter_url": "www.bbrtx.org"
         }
     },
     {
         "model": "nsaid.Shelter",
         "pk": 6,
         "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Austin",
-            "shelter_name": "Cocker Spaniel Rescue of Austin/San Antonio",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "30.2669",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "512-527-9923 ",
+            "shelter_city_urlized": "houston",
+            "shelter_longitude": "-95.3631",
+            "shelter_name": "Texas Collie Rescue, Inc.",
+            "shelter_pic": "",
+            "shelter_address": "",
             "shelter_state": "TX",
-            "shelter_email": "woof@austincockerrescue.org",
-            "shelter_longitude": "-97.7428",
-            "shelter_id": "TX365",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Cocker Spaniel Rescue of Austin/San Antonio"
+            "shelter_blurb": "",
+            "shelter_lattitude": "29.7631",
+            "shelter_phone": "713-545-7408    ",
+            "shelter_city": "Houston",
+            "shelter_hours": "",
+            "shelter_email": "info@texascollierescue.org",
+            "shelter_id": "TX1283",
+            "shelter_url": "www.texascollierescue.org"
         }
     },
     {
         "model": "nsaid.Shelter",
         "pk": 7,
         "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Austin",
-            "shelter_name": "Austin Animal Center",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "30.2654",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "(512)-978-0500 ",
-            "shelter_state": "TX",
-            "shelter_email": "animal.customerservice@austintexas.gov",
-            "shelter_longitude": "-97.7164",
-            "shelter_id": "TX514",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Austin Animal Center"
+            "shelter_city_urlized": "san_francisco",
+            "shelter_longitude": "-122.4183",
+            "shelter_name": "Give Me Shelter Cat Rescue",
+            "shelter_pic": "http://s3-media3.fl.yelpcdn.com/bphoto/I9-Z5YZbuHfxQA994qzSWg/ms.jpg",
+            "shelter_address": "PO Box 411013",
+            "shelter_state": "CA",
+            "shelter_blurb": "I am absolutely amazed by the people who run this organization. Of course, such rescue organizations are run purely by volunteers, but I think that this...",
+            "shelter_lattitude": "37.775",
+            "shelter_phone": "415-810-7284 ",
+            "shelter_city": "San Francisco",
+            "shelter_hours": "",
+            "shelter_email": "info@givemesheltersf.org",
+            "shelter_id": "CA1061",
+            "shelter_url": "www.givemesheltersf.org"
         }
     },
     {
         "model": "nsaid.Shelter",
         "pk": 8,
         "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Austin",
-            "shelter_name": "Jack's Pack",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "30.2458",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "Please email.",
-            "shelter_state": "TX",
-            "shelter_email": "JacksPackTX@aol.com",
-            "shelter_longitude": "-97.766",
-            "shelter_id": "TX298",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Jack's Pack"
+            "shelter_city_urlized": "san_francisco",
+            "shelter_longitude": "-122.4183",
+            "shelter_name": "Persian and Himalayan Cat Rescue",
+            "shelter_pic": "http://s3-media3.fl.yelpcdn.com/bphoto/Qg22qYPy1QTJ07PAkLlHYw/ms.jpg",
+            "shelter_address": "Foster homes in the San Francisco Bay area",
+            "shelter_state": "CA",
+            "shelter_blurb": "4 of my mom's 6 cats came from here. They are amazing. \n\n(the other 2 she won in a carnival and she doesn't like them as much)",
+            "shelter_lattitude": "37.775",
+            "shelter_phone": "(925) 838-1838  ",
+            "shelter_city": "San Francisco",
+            "shelter_hours": "",
+            "shelter_email": "info@persiancats.org",
+            "shelter_id": "CA1063",
+            "shelter_url": "www.persiancats.org"
         }
     },
     {
         "model": "nsaid.Shelter",
         "pk": 9,
         "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Austin",
-            "shelter_name": "Companion Animal Network",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "30.2914",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "Please Email Us!!     ",
-            "shelter_state": "TX",
-            "shelter_email": "can.adoptions@yahoo.com",
-            "shelter_longitude": "-97.7631",
-            "shelter_id": "TX443",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Companion Animal Network"
+            "shelter_city_urlized": "new_orleans",
+            "shelter_longitude": "-90.075",
+            "shelter_name": "Animal Helper",
+            "shelter_pic": "http://s3-media3.fl.yelpcdn.com/bphoto/6aOrfSWMLw7asE_hnPbecw/ms.jpg",
+            "shelter_address": "",
+            "shelter_state": "LA",
+            "shelter_blurb": "Disclaimer: I have only eaten here drunk but I'm pretty sure this place is good no matter what.\n\nBoth times I was wearing white (once during white linen...",
+            "shelter_lattitude": "29.9544",
+            "shelter_phone": "",
+            "shelter_city": "New Orleans",
+            "shelter_hours": "",
+            "shelter_email": "AnimalHelperNewOrleans@gmail.com",
+            "shelter_id": "LA204",
+            "shelter_url": "www.facebook.com"
         }
     },
     {
         "model": "nsaid.Shelter",
         "pk": 10,
         "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Austin",
-            "shelter_name": "Catahoula Rescue Inc.",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "30.3104",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "please email",
-            "shelter_state": "TX",
-            "shelter_email": "info@catahoularescue.com",
-            "shelter_longitude": "-97.7223",
-            "shelter_id": "TX363",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Catahoula Rescue Inc."
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 11,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "Al's Hyde Park Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "30.3104",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "210-218-9289  ",
-            "shelter_state": "TX",
-            "shelter_email": "HydeParkRescue@gmail.com",
-            "shelter_longitude": "-97.7223",
-            "shelter_id": "TX461",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Al's Hyde Park Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 12,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Austin",
-            "shelter_name": "Austin Humane Society",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "30.3309",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "512-646-PETS (7387)",
-            "shelter_state": "TX",
-            "shelter_email": "info@austinhumanesociety.org",
-            "shelter_longitude": "-97.7027",
-            "shelter_id": "TX21",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Austin Humane Society"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 13,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Austin",
-            "shelter_name": "Austin Boxer Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "30.3309",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "512-968-1343  ",
-            "shelter_state": "TX",
-            "shelter_email": "info@austinboxerrescue.com",
-            "shelter_longitude": "-97.7027",
-            "shelter_id": "TX898",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Austin Boxer Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 14,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Austin",
-            "shelter_name": "Austin Sheltie Rescue Inc",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "30.3463",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "512-453-8094",
-            "shelter_state": "TX",
-            "shelter_email": "swig@sbcglobal.net",
-            "shelter_longitude": "-97.7674",
-            "shelter_id": "TX1196",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Austin Sheltie Rescue Inc"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 15,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Austin",
-            "shelter_name": "Relocation Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "30.2553",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "512-247-8969  ",
-            "shelter_state": "TX",
-            "shelter_email": "help@relocationrescue.com",
-            "shelter_longitude": "-97.8519",
-            "shelter_id": "TX1825",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Relocation Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 16,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "Humming for a Loving Forever Home",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.4641",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "email ",
-            "shelter_state": "TX",
-            "shelter_email": "HummingforaLovingForeverHome@aol.com",
-            "shelter_longitude": "-98.5257",
-            "shelter_id": "TX1680",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Humming for a Loving Forever Home"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 17,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "San Antonio Humane Society",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.5005",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "210-226-7461        ",
-            "shelter_state": "TX",
-            "shelter_email": "adoption@sahumane.org",
-            "shelter_longitude": "-98.5716",
-            "shelter_id": "TX295",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "San Antonio Humane Society"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 18,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "Responsible Pet Owners Alliance",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.4878",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "210-PET-CARE ",
-            "shelter_state": "TX",
-            "shelter_email": "NewLeashonLife@ymail.com",
-            "shelter_longitude": "-98.4573",
-            "shelter_id": "TX1046",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Responsible Pet Owners Alliance"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 19,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "4DogSakes",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.4878",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "210-822-0003",
-            "shelter_state": "TX",
-            "shelter_email": "akennel@sbcglobal.net",
-            "shelter_longitude": "-98.4573",
-            "shelter_id": "TX1298",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "4DogSakes"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 20,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "SNIPSA Inc.",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.4878",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "(210) 237-9400  ",
-            "shelter_state": "TX",
-            "shelter_email": "snipsaadoptions@gmail.com",
-            "shelter_longitude": "-98.4573",
-            "shelter_id": "TX988",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "SNIPSA Inc."
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 21,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "Mystery Dog Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.4878",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "210-551-8262",
-            "shelter_state": "TX",
-            "shelter_email": "mysterydogrescue1@yahoo.com",
-            "shelter_longitude": "-98.4573",
-            "shelter_id": "TX1718",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Mystery Dog Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 22,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "Tejas Rescued Pet Adoptions",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.5352",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "210 416-3947 ",
-            "shelter_state": "TX",
-            "shelter_email": "adoption@tejasrescues.org",
-            "shelter_longitude": "-98.4939",
-            "shelter_id": "TX1006",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Tejas Rescued Pet Adoptions"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 23,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "Tracysdogs",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.5352",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "830-438-6066   ",
-            "shelter_state": "TX",
-            "shelter_email": "amber@tracysdogs.com",
-            "shelter_longitude": "-98.4939",
-            "shelter_id": "TX1640",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Tracysdogs"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 24,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "Second Chance Cavy Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.5168",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "210-900-7749  ",
-            "shelter_state": "TX",
-            "shelter_email": "diana.sandlin@gmail.com",
-            "shelter_longitude": "-98.6081",
-            "shelter_id": "TX1774",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Second Chance Cavy Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 25,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "Protecting Animals Within San Antonio",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.5706",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "210-445-8585",
-            "shelter_state": "TX",
-            "shelter_email": "icatyger@aol.com",
-            "shelter_longitude": "-98.5375",
-            "shelter_id": "TX1998",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Protecting Animals Within San Antonio"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 26,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Kirby",
-            "shelter_name": "Kirby Animal Care Services",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.4481",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "210-661-4063  ",
-            "shelter_state": "TX",
-            "shelter_email": "cbanduch@cityofkirby.org",
-            "shelter_longitude": "-98.4016",
-            "shelter_id": "TX1951",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Kirby Animal Care Services"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 27,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "Animal Care Services Division City of San Antonio",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.4079",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "210-207-6666 ",
-            "shelter_state": "TX",
-            "shelter_email": "ACSAdoptions@sanantonio.gov",
-            "shelter_longitude": "-98.6351",
-            "shelter_id": "TX487",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Animal Care Services Division City of San Antonio"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 28,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "San Antonio Pets Alive!",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.4079",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "please use e-mail only  ",
-            "shelter_state": "TX",
-            "shelter_email": "rescueme@sanantoniopetsalive.org",
-            "shelter_longitude": "-98.6351",
-            "shelter_id": "TX1633",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "San Antonio Pets Alive!"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 29,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "Animal Defense League of Texas",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.5425",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "210-655-1481   ",
-            "shelter_state": "TX",
-            "shelter_email": "efernandez@adltexas.org",
-            "shelter_longitude": "-98.4199",
-            "shelter_id": "TX46",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Animal Defense League of Texas"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 30,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "Diamond Dachshund Rescue of Texas",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.5425",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "830-367-5741",
-            "shelter_state": "TX",
-            "shelter_email": "ddrtxinfo@gmail.com",
-            "shelter_longitude": "-98.4199",
-            "shelter_id": "TX725",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Diamond Dachshund Rescue of Texas"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 31,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "Missys Haven Canine Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.3628",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "210-788-7420  ",
-            "shelter_state": "TX",
-            "shelter_email": "Missyshaven45@yahoo.com",
-            "shelter_longitude": "-98.4432",
-            "shelter_id": "TX1863",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Missys Haven Canine Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 32,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "CARE",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.5884",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "6159731161",
-            "shelter_state": "TX",
-            "shelter_email": "adoptions@caretx.org",
-            "shelter_longitude": "-98.5213",
-            "shelter_id": "TX1978",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "CARE"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 33,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Antonio",
-            "shelter_name": "Pause for Paws",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.5832",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "210-378-5373  ",
-            "shelter_state": "TX",
-            "shelter_email": "sallyftutt@gmail.com",
-            "shelter_longitude": "-98.4691",
-            "shelter_id": "TX979",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Pause for Paws"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 34,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Houston",
-            "shelter_name": "Basset Buddies Rescue of Texas",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.7631",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "(281)-657-7347   ",
-            "shelter_state": "TX",
-            "shelter_email": "info@bbrtx.org",
-            "shelter_longitude": "-95.3631",
-            "shelter_id": "TX1051",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Basset Buddies Rescue of Texas"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 35,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Houston",
-            "shelter_name": "CANINE COMPASSION",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.7631",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "caninecompassion@yahoo.co",
-            "shelter_state": "TX",
-            "shelter_email": "caninecompassion@yahoo.com",
-            "shelter_longitude": "-95.3631",
-            "shelter_id": "TX1121",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "CANINE COMPASSION"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 36,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Houston",
-            "shelter_name": "Texas Collie Rescue, Inc.",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.7631",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "713-545-7408    ",
-            "shelter_state": "TX",
-            "shelter_email": "info@texascollierescue.org",
-            "shelter_longitude": "-95.3631",
-            "shelter_id": "TX1283",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Texas Collie Rescue, Inc."
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 37,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Houston",
-            "shelter_name": "Adopt A Rescued Friend",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.7631",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "713-854-1216 ",
-            "shelter_state": "TX",
-            "shelter_email": "info@aarfhouston.org",
-            "shelter_longitude": "-95.3631",
-            "shelter_id": "TX1359",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Adopt A Rescued Friend"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 38,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Houston",
-            "shelter_name": "Barrio Dogs of Houston",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.7631",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "000-00-0000 ",
-            "shelter_state": "TX",
-            "shelter_email": "tauna@barriodogs.org",
-            "shelter_longitude": "-95.3631",
-            "shelter_id": "TX1462",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Barrio Dogs of Houston"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 39,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Houston",
-            "shelter_name": "Homeless Pet Placement League",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.7631",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "(713) 862-7387   ",
-            "shelter_state": "TX",
-            "shelter_email": "hppl@hppl.org",
-            "shelter_longitude": "-95.3631",
-            "shelter_id": "TX154",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Homeless Pet Placement League"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 40,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Houston",
-            "shelter_name": "HOPE (Homeless & Orphaned Pets Endeavor)",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.7631",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "713-622-4673  ",
-            "shelter_state": "TX",
-            "shelter_email": "hope@homelesspets.net",
-            "shelter_longitude": "-95.3631",
-            "shelter_id": "TX170",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "HOPE (Homeless & Orphaned Pets Endeavor)"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 41,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Houston",
-            "shelter_name": "Texas Great Pyrenees Rescue, Inc.",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.7631",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "877-746-9508 Free ",
-            "shelter_state": "TX",
-            "shelter_email": "info@txpyrs.org",
-            "shelter_longitude": "-95.3631",
-            "shelter_id": "TX190",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Texas Great Pyrenees Rescue, Inc."
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 42,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Houston",
-            "shelter_name": "Lone Star Boxer Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.7631",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "713-464-1381",
-            "shelter_state": "TX",
-            "shelter_email": "nnaira12@sbcglobal.net",
-            "shelter_longitude": "-95.3631",
-            "shelter_id": "TX379",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Lone Star Boxer Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 43,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Houston",
-            "shelter_name": "Houston Pets Alive!",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.7631",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "832-786-9310",
-            "shelter_state": "TX",
-            "shelter_email": "info@houstonpetsalive.org",
-            "shelter_longitude": "-95.3631",
-            "shelter_id": "TX1950",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Houston Pets Alive!"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 44,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Houston",
-            "shelter_name": "Freddie's Hope Rescue Ranch",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.7631",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "713-269-1710",
-            "shelter_state": "TX",
-            "shelter_email": "info@freddieshope.org",
-            "shelter_longitude": "-95.3631",
-            "shelter_id": "TX1959",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Freddie's Hope Rescue Ranch"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 45,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Houston",
-            "shelter_name": "FORM Mastiff Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.7931",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "(281)930-0706  ",
-            "shelter_state": "OK",
-            "shelter_email": "mykann@aol.com",
-            "shelter_longitude": "-95.3688",
-            "shelter_id": "OK33",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "FORM Mastiff Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 46,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Houston",
-            "shelter_name": "Tula Bird Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.7931",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "8327183446  ",
-            "shelter_state": "TX",
-            "shelter_email": "luis.tula@perfectfitmeals.com",
-            "shelter_longitude": "-95.3688",
-            "shelter_id": "TX1864",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Tula Bird Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 47,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Francisco",
-            "shelter_name": "Give Me Shelter Cat Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.775",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "415-810-7284 ",
-            "shelter_state": "CA",
-            "shelter_email": "info@givemesheltersf.org",
-            "shelter_longitude": "-122.4183",
-            "shelter_id": "CA1061",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Give Me Shelter Cat Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 48,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Francisco",
-            "shelter_name": "Persian and Himalayan Cat Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.775",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "(925) 838-1838  ",
-            "shelter_state": "CA",
-            "shelter_email": "info@persiancats.org",
-            "shelter_longitude": "-122.4183",
-            "shelter_id": "CA1063",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Persian and Himalayan Cat Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 49,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Francisco",
-            "shelter_name": "Muttville Senior Dog Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.775",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "(415) 272-4172  ",
-            "shelter_state": "CA",
-            "shelter_email": "adoptions@muttville.org",
-            "shelter_longitude": "-122.4183",
-            "shelter_id": "CA1287",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Muttville Senior Dog Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 50,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Francisco",
-            "shelter_name": "Grateful Dogs Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.775",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "(415) 587-1121 ",
-            "shelter_state": "CA",
-            "shelter_email": "info@gratefuldogsrescue.org",
-            "shelter_longitude": "-122.4183",
-            "shelter_id": "CA792",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Grateful Dogs Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 51,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Francisco",
-            "shelter_name": "San Francisco Animal Care and Control",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.7738",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "415-554-6364  ",
-            "shelter_state": "CA",
-            "shelter_email": "acc@sfgov.org",
-            "shelter_longitude": "-122.4114",
-            "shelter_id": "CA326",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "San Francisco Animal Care and Control"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 52,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Francisco",
-            "shelter_name": "All Fur Love",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.7928",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "Please email us ",
-            "shelter_state": "CA",
-            "shelter_email": "falceyp@comcast.net",
-            "shelter_longitude": "-122.4185",
-            "shelter_id": "CA1130",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "All Fur Love"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 53,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Francisco",
-            "shelter_name": "Rocket Dog Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.7493",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "1 415 786-5566  ",
-            "shelter_state": "CA",
-            "shelter_email": "adopt@rocketdogrescue.org",
-            "shelter_longitude": "-122.4153",
-            "shelter_id": "CA534",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Rocket Dog Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 54,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Francisco",
-            "shelter_name": "Family Dog & Puppy Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.7493",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "415 424-8912 ",
-            "shelter_state": "CA",
-            "shelter_email": "adopt@norcalfamilydogrescue.org",
-            "shelter_longitude": "-122.4153",
-            "shelter_id": "CA1726",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Family Dog & Puppy Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 55,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Francisco",
-            "shelter_name": "Wonder Dog Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.7493",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "415.621.DOGS",
-            "shelter_state": "CA",
-            "shelter_email": "linda@wonderdogrescue.org",
-            "shelter_longitude": "-122.4153",
-            "shelter_id": "CA474",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Wonder Dog Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 56,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Francisco",
-            "shelter_name": "Asians for Humans Animals and Nature",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.7798",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "415-221-5733   ",
-            "shelter_state": "CA",
-            "shelter_email": "contact@ahan.org",
-            "shelter_longitude": "-122.4906",
-            "shelter_id": "CA277",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Asians for Humans Animals and Nature"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 57,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Francisco",
-            "shelter_name": "Animal Aware",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.7201",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "415-279-0119 ",
-            "shelter_state": "CA",
-            "shelter_email": "reddo@pacbell.net",
-            "shelter_longitude": "-122.4419",
-            "shelter_id": "CA1832",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Animal Aware"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 58,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Francisco",
-            "shelter_name": "Animal Rights and Rescue Association",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.7446",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "213-300-0697",
-            "shelter_state": "CA",
-            "shelter_email": "animalrescue@protectanimals.com",
-            "shelter_longitude": "-122.481",
-            "shelter_id": "CA1602",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Animal Rights and Rescue Association"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 59,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "San Francisco",
-            "shelter_name": "DogZone Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.7446",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "Please Email Us ",
-            "shelter_state": "CA",
-            "shelter_email": "dogzonerescue@yahoo.com",
-            "shelter_longitude": "-122.481",
-            "shelter_id": "CA2175",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "DogZone Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 60,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Oakland",
-            "shelter_name": "Feral Change",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.8072",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "4155190091  ",
-            "shelter_state": "CA",
-            "shelter_email": "sarah@feralchange.org",
-            "shelter_longitude": "-122.2832",
-            "shelter_id": "CA2289",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Feral Change"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 61,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Emeryville",
-            "shelter_name": "PAW FUND",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.8314",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "510-390-3488   ",
-            "shelter_state": "CA",
-            "shelter_email": "pawfundadopt@aol.com",
-            "shelter_longitude": "-122.2842",
-            "shelter_id": "CA2056",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "PAW FUND"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 62,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Oakland",
-            "shelter_name": "Heartfelt Hound Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.8044",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "510-658-7534  ",
-            "shelter_state": "CA",
-            "shelter_email": "lauriewhoof@yahoo.com",
-            "shelter_longitude": "-122.2697",
-            "shelter_id": "CA1057",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Heartfelt Hound Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 63,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Tiburon",
-            "shelter_name": "Marin Cat Connection",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.8922",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "415/381-1440",
-            "shelter_state": "CA",
-            "shelter_email": "webmaster@marincatconnection.org",
-            "shelter_longitude": "-122.4742",
-            "shelter_id": "CA406",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Marin Cat Connection"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 64,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Berkeley",
-            "shelter_name": "Berkeley Humane",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.8679",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "510-845-7735",
-            "shelter_state": "CA",
-            "shelter_email": "information@berkeleyhumane.org",
-            "shelter_longitude": "-122.297",
-            "shelter_id": "CA280",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Berkeley Humane"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 65,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Berkeley",
-            "shelter_name": "Berkeley Animal Care Services",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.8679",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "(510) 981-6600 ",
-            "shelter_state": "CA",
-            "shelter_email": "afunghi2@ci.berkeley.ca.us",
-            "shelter_longitude": "-122.297",
-            "shelter_id": "CA412",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Berkeley Animal Care Services"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 66,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Alameda",
-            "shelter_name": "Island Cat Resources & Adoption",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "37.7591",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "510-869-2584",
-            "shelter_state": "CA",
-            "shelter_email": "adoption@icraeastbay.org",
-            "shelter_longitude": "-122.2505",
-            "shelter_id": "CA111",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Island Cat Resources & Adoption"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 67,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "New Orleans",
-            "shelter_name": "Advocate & Rescue-Operation Save the Whodatt Fur Babies",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.9544",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "504-430-6730  ",
-            "shelter_state": "LA",
-            "shelter_email": "hcalmes@yahoo.com",
+            "shelter_city_urlized": "new_orleans",
             "shelter_longitude": "-90.075",
+            "shelter_name": "Advocate & Rescue-Operation Save the Whodatt Fur Babies",
+            "shelter_pic": "",
+            "shelter_address": "",
+            "shelter_state": "LA",
+            "shelter_blurb": "",
+            "shelter_lattitude": "29.9544",
+            "shelter_phone": "504-430-6730  ",
+            "shelter_city": "New Orleans",
+            "shelter_hours": "",
+            "shelter_email": "hcalmes@yahoo.com",
             "shelter_id": "LA305",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Advocate & Rescue-Operation Save the Whodatt Fur Babies"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 68,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "New Orleans",
-            "shelter_name": "Companion Pet Adoption",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.9749",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "504-482-8379 ",
-            "shelter_state": "LA",
-            "shelter_email": "gmoises3@aol.com",
-            "shelter_longitude": "-90.085",
-            "shelter_id": "LA38",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Companion Pet Adoption"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 69,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "New Orleans",
-            "shelter_name": "MidCity Veterinary Hospital",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.9749",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "5043048223",
-            "shelter_state": "LA",
-            "shelter_email": "midcityvet@gmail.com",
-            "shelter_longitude": "-90.085",
-            "shelter_id": "LA297",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "MidCity Veterinary Hospital"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 70,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "New Orleans",
-            "shelter_name": "Zeus' Rescues",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.9275",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "5043044718",
-            "shelter_state": "LA",
-            "shelter_email": "zeusrescues@gmail.com",
-            "shelter_longitude": "-90.1013",
-            "shelter_id": "LA322",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Zeus' Rescues"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 71,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "New Orleans",
-            "shelter_name": "Louisiana SPCA",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.9397",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "504.368.5191  ",
-            "shelter_state": "LA",
-            "shelter_email": "info@la-spca.org",
-            "shelter_longitude": "-90.0355",
-            "shelter_id": "LA60",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Louisiana SPCA"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 72,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "New Orleans",
-            "shelter_name": "Holy Cross Hounds",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.9696",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "732-485-6358",
-            "shelter_state": "LA",
-            "shelter_email": "cresposito@gmail.com",
-            "shelter_longitude": "-90.0322",
-            "shelter_id": "LA352",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Holy Cross Hounds"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 73,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Metairie",
-            "shelter_name": "NOLA's Ark Cats",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.9839",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "504-343-3683",
-            "shelter_state": "LA",
-            "shelter_email": "NolasArkCats@yahoo.com",
-            "shelter_longitude": "-90.1528",
-            "shelter_id": "LA262",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "NOLA's Ark Cats"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 74,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Metairie",
-            "shelter_name": "SpayMart, Inc.",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.9839",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "504-454-8200 ",
-            "shelter_state": "LA",
-            "shelter_email": "info@spaymart.org",
-            "shelter_longitude": "-90.1528",
-            "shelter_id": "LA37",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "SpayMart, Inc."
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 75,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Harvey",
-            "shelter_name": "FurEver Pets NOLA",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.8782",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "504-249-0481",
-            "shelter_state": "LA",
-            "shelter_email": "fureverpetsnola@aol.com",
-            "shelter_longitude": "-90.0662",
-            "shelter_id": "LA302",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "FurEver Pets NOLA"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 76,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Metairie",
-            "shelter_name": "VCA Airline Animal Hospital",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.985",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "504-888-0400  ",
-            "shelter_state": "LA",
-            "shelter_email": "au412@vca.com",
-            "shelter_longitude": "-90.1676",
-            "shelter_id": "LA310",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "VCA Airline Animal Hospital"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 77,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Marrero",
-            "shelter_name": "Jefferson Parish Animal Shelter West Bank",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.8712",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "504-349-5111  ",
-            "shelter_state": "LA",
-            "shelter_email": "bbourgeois@jeffparish.net",
-            "shelter_longitude": "-90.1097",
-            "shelter_id": "LA222",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Jefferson Parish Animal Shelter West Bank"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 78,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Marrero",
-            "shelter_name": "Belladoggie Resort Spa for Dogs",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.8712",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "Belladoggie:504-309-9510      ",
-            "shelter_state": "LA",
-            "shelter_email": "patrick.belladoggie@gmail.com",
-            "shelter_longitude": "-90.1097",
-            "shelter_id": "LA246",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Belladoggie Resort Spa for Dogs"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 79,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Avondale",
-            "shelter_name": "NOLA Chinchilla Rescue",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.9166",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "504 912 9143",
-            "shelter_state": "LA",
-            "shelter_email": "nolachinrescue@gmail.com",
-            "shelter_longitude": "-90.1821",
-            "shelter_id": "LA206",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "NOLA Chinchilla Rescue"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 80,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Jefferson",
-            "shelter_name": "Jefferson Parish Animal Shelter East Bank",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.9533",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "(504) 736-6111  ",
-            "shelter_state": "LA",
-            "shelter_email": "EHaywood@jeffparish.net",
-            "shelter_longitude": "-90.2098",
-            "shelter_id": "LA73",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Jefferson Parish Animal Shelter East Bank"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 81,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Metairie",
-            "shelter_name": "Metairie Humane",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.996",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "504 451 2822  ",
-            "shelter_state": "LA",
-            "shelter_email": "joandelah@yahoo.com",
-            "shelter_longitude": "-90.2142",
-            "shelter_id": "LA230",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Metairie Humane"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 82,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Metairie",
-            "shelter_name": "Save-An-Angel",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.996",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "1-504-265-8275 ",
-            "shelter_state": "LA",
-            "shelter_email": "ADOPT@SAVE-AN-ANGEL.ORG",
-            "shelter_longitude": "-90.2142",
-            "shelter_id": "LA265",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "Save-An-Angel"
-        }
-    },
-    {
-        "model": "nsaid.Shelter",
-        "pk": 83,
-        "fields": {
-            "shelter_hours": "9 to 5",
-            "shelter_city": "Violet",
-            "shelter_name": "St. Bernard Parish Animal Control Center",
-            "shelter_url": "www.google.com",
-            "shelter_lattitude": "29.9053",
-            "shelter_pic": "http://images.clipartpanda.com/building-20clipart-buildings2.png",
-            "shelter_phone": "504 278-1534  ",
-            "shelter_state": "LA",
-            "shelter_email": "animalcontrol@sbpg.net",
-            "shelter_longitude": "-89.8983",
-            "shelter_id": "LA09",
-            "shelter_blurb": "coming soon...",
-            "shelter_address": "St. Bernard Parish Animal Control Center"
+            "shelter_url": ""
         }
     }
 ]
