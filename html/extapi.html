@@ -118,13 +118,11 @@
                     <tbody>
                         {% for hero in response_list.0.0.0 %}
                             <tr >
-                                <!--<td align="center"><align="middle>"-->
-                                <!--<td>{{response}}</td>-->
-                                 <td>{{hero.name}}</td>
-                                <!--<td>{{response.slot}}</td> 
-                                <td>{{response.rarity}}</td>
-                                <td>{{response.item_set}}</td>
-                                <td>{{response.hero}}</td>-->
+                                <td>{{hero.name}}</td>
+                                <td>{{hero.type}}</td>
+                                <td>{{hero.strength}}</td>
+                                <td>{{hero.agility}}</td>
+                                <td>{{hero.intelligence}}</td>
                             </tr>
                         {% endfor %}
                     </tbody>
