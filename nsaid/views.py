@@ -140,7 +140,7 @@ def navbar(request):
 
 def unit_test(request):
     bashCommand = ("coverage3 run ../manage.py test")
-    output = subprocess.check_output(bashCommand.split())
+    output = serializers.serialize('json', subprocess.check_output(bashCommand.split()))
     
 
     return HttpResponse(output)
