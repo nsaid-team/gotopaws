@@ -91,8 +91,7 @@ def city_SF(request):
     return HttpResponse(template.render())
 
 def pet_template(request, identifier):
-    s, p = identifier.split('_')
-    pet = Pet.objects.filter(pet_shelter = s, pet_id = p)
+    pet = Pet.objects.filter(pet_id = identifier)
     context = {'pet': pet[0]}
     return render(request, 'Pet_template.html', context)
     
@@ -107,10 +106,9 @@ def shelter_template(request, identifier):
     return render(request, 'Shelter_template.html', context)
     
 def city_template(request, identifier):
-    identifier_city, identifier_state = identifier.split('_')
-    city = City.objects.filter(city_name = identifier_city, city_state = identifier_state)
-    city_shelter_list = Shelter.objects.filter(shelter_city = identifier_city, shelter_state = identifier_state)
-    pet_list = Pet.objects.filter(pet_city = identifier_city)
+    city = City.objects.filter(city_urlized = identifier)
+    city_shelter_list = Shelter.objects.filter(shelter_city_urlized = identifier)
+    pet_list = Pet.objects.filter(pet_city_urlized = identifier)
     context = {'city': city[0], 'shelter_list' : city_shelter_list, 'pet_list': pet_list}
     return render(request, 'City_template.html', context)
 
