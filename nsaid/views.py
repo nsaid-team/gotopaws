@@ -42,7 +42,6 @@ def cities(request):
 
 def about(request):
     template = loader.get_template('About.html')
-    print({context})
     return HttpResponse(template.render())
 
 def cats(request):
