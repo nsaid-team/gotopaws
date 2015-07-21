@@ -37,6 +37,9 @@ p{
     padding-top: 48px;
     padding-bottom: 48px;
 }
+.heading h1{
+    font-size: 5px;
+}
 
 .summary-divider
 {
