@@ -31,7 +31,7 @@ urlpatterns = [
     #url(r'^cats$', views.cats),
     #url(r'^dogs$', views.dogs),
     #url(r'^apa$', views.shelter_apa),
-    url(r'^([\d]+)$', views.pet_template),
+    url(r'^id([\d]+)$', views.pet_template),
     #url(r'^earl$', views.dog_earl),
     #url(r'^rangel$', views.dog_Rangel),
     #url(r'^hppl$', views.shelter_template),
