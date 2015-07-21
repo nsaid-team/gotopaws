@@ -22,19 +22,11 @@ p{
     font-size:80%;
 }
 
-a {
-    color: white;
-    text-shadow: 0px 0px 2px #000, -1px -1px #337DAD, 1px 1px #337DAD;
-}
 
-a:visited {
-color: white;
-}
 
-a:hover {
-color: white;
-}
-
+hr { display: block; height: 1px;
+    border: 0; border-top: 2px solid #C2EBFF;
+    margin: 1em 0; padding: 0; }
 .thumbnail img {
     width: 100%;
 }
@@ -103,5 +95,6 @@ div.text-box{
 
 footer
 {
+    color:white;
     margin: 50px 0;
 }
