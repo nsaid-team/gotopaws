@@ -196,16 +196,20 @@ def create_shelters_file(city_list, shelter_count):
                     print("\nshelter_longitude\n")
                 try:
                     shelter_fields["shelter_pic"] = yelp_query(city, sh["name"]["$t"], "image_url")
-                except Exception as e:
-                    print("\nshelter_pic\n" + str(e))
+                except:
+                    print("\nshelter_pic\n")
                 try:
-                    shelter_fields["shelter_url"] = google_query(sh["name"]["$t"])
-                except Exception as e:
-                    print("\nshelter_url\n" + str(e))
+                    shelter_fields["shelter_external_url"] = google_query(sh["name"]["$t"])
+                except:
+                    print("\nshelter_url\n")
+                try:
+                    shelter_fields["shelter_url"] = sh["id"]["$t"]
+                except:
+                    print("\nshelter_url\n")
                 try:
                     shelter_fields["shelter_blurb"] = yelp_query(city, sh["name"]["$t"], "snippet_text")
-                except Exception as e:
-                    print("\nshelter_blurb\n" + str(e))
+                except:
+                    print("\nshelter_blurb\n")
               
             except Exception as e:
                 # do nothing on KeyError, but don't append an object missing essential attributes to the list
@@ -356,7 +360,7 @@ def petfinder_query(identifier, attribute):
     payload = {"key" : "2933122e170793b4d4b60358e67ecb65", "id" : identifier, "format" : "json"}
     r = requests.get(petfinder_url, params = payload)
     result = r.json()["petfinder"]["pet"][attribute]["$t"]
-    sanitized_result = result.replace('\u00e2\u0080\u0099', "'").replace('\u00e2\u0080\u00a6', '').replace('\u00c2\u00bd', '')
+    sanitized_result = result.replace('\u00e2\u0080\u0099', "'").replace('\u00e2\u0080\u00a6', '').replace('\u00c2\u00bd', '').replace('\n','')
     return sanitized_result
 
 if __name__ == "__main__" :
@@ -369,8 +373,8 @@ if __name__ == "__main__" :
     #print(yelp_query("austin tx", "vetrinarian", "image_url"))
     #print(google_query("Austin pets alive"))
 
-    #create_shelters_file(city_list, 2)
-    #create_pets_file(10)
+    create_shelters_file(city_list, 2)
+    create_pets_file(10)
     
     #create_city_file(city_list)
     #print(petfinder_query(31256107, "description"))
