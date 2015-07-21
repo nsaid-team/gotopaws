@@ -100,12 +100,12 @@ a {
 }
 
 a:visited {
-   color: #001E76;
+   color: white;
 
 }
 
 a:hover{
-color: black;
+color: white;
 }
 
 .description{
