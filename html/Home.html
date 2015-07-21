@@ -114,10 +114,12 @@
     <!-- /.intro-header -->
 
     <script>
-    window.onload = function(){
+   $(window).bind("load", function() {
+   
+
         var elems = document.querySelector(".ghome");
         elems.className += " active";
-    }
+    });
     </script>
 <!-- jQuery -->
 <script src="bootstrap-3.3.5-dist/js/jquery.js"></script>
