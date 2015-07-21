@@ -303,7 +303,9 @@ def external_api (request) :
 
     for j in enumerate(heroes_list) :
         for k in enumerate(items_list) :
-            if heroes_list[j]['name'] == items_list[k]['hero'] :
+            h = heroes_list[j]
+            m = items_list[k]
+            if h['name'] == m['hero'] :
                 results_list.append({'hero': i.name, 'main_item': k.hero, 'main_set': k.item_set, 'pet': pet_list[ran_num]})
 
     context = {"results_list": results_list}
