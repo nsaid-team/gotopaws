@@ -87,21 +87,9 @@ A template for GoToPaws city landing pages.
             <div class="summary">
                 
                 <h2 class="summary-heading">Pets <span class="text-muted">in {{city.city_name}}</span></h2>
-                  <div class="photo">
-                        <ul class="topic">
-                            <li><a class="set" href="#Portraits">Portraits<!--[if gte IE 7]><!--></a><!--<![endif]-->
-                            <!--[if lte IE 6]><table><tr><td><![endif]-->
-                         <ul>
                 {% for pet in pet_list %}
-                <!--a href ="{{pet.pet_url}}"><img class="summary-image img-suqare img-responsive pull-left" alt= "{{pet.pet_name}}" src="{{pet.pet_pic_large}}"></a-->
-                  
-                            <li><a href ="{{pet.pet_url}}"><img src="{{pet.pet_pic_large}}" alt="" title="" /></a></li>
-                        </ul>
-    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
-                             </li>
-                             </ul>
-<br class="clear" />
-</div>
+                <a href ="{{pet.pet_url}}"><img class="summary-image img-suqare img-responsive pull-left" alt= "{{pet.pet_name}}" src="{{pet.pet_pic_large}}"></a>
+
                
                 {% endfor %}
                 
