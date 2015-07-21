@@ -89,12 +89,13 @@ A template for GoToPaws city landing pages.
                 <h2 class="summary-heading">Pets <span class="text-muted">in {{city.city_name}}</span></h2>
                 {% for pet in pet_list %}
                 <!--a href ="{{pet.pet_url}}"><img class="summary-image img-suqare img-responsive pull-left" alt= "{{pet.pet_name}}" src="{{pet.pet_pic_large}}"></a-->
-                <div class="box">
-                     <div class="boxInner">
-                         <img src="{{pet.pet_pic_large}}" />
-                     <div class="titleBox">Butterfly</div>
-                    </div>
-                 </div>
+                    <div class="row">
+                        <div class="col-md-3 portfolio-item">
+                            <a href="#">
+                                 <img class="img-responsive" src="{{pet.pet_pic_large}}" alt="">
+                            </a>
+                         </div>
+                     </div>
 
                
                 {% endfor %}
