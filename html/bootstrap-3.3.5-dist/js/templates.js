@@ -54,39 +54,39 @@ var app2 = angular.module("mapModule", [], function(){});
 
 
 
-  app.controller('MyCtrl', ['$scope', '$http',  function($scope, $http) {
-    $scope.test = "Hola";
-    var temp = this
-    delete $http.defaults.headers.common['X-Requested-With'];
-    $http.get("json").success(function(data) {
-      $scope.results = data;
-      temp.results = data;
-      console.log(data);
-      initialize();
-    }).error(function(data, status) {
-      $scope.data = data || "Request failed";
-      $scope.status = status;
-      console.log(data);
-    });
-  }]);
+  // app.controller('MyCtrl', ['$scope', '$http',  function($scope, $http) {
+  //   $scope.test = "Hola";
+  //   var temp = this
+  //   delete $http.defaults.headers.common['X-Requested-With'];
+  //   $http.get("json").success(function(data) {
+  //     $scope.results = data;
+  //     temp.results = data;
+  //     console.log(data);
+  //     initialize();
+  //   }).error(function(data, status) {
+  //     $scope.data = data || "Request failed";
+  //     $scope.status = status;
+  //     console.log(data);
+  //   });
+  // }]);
 
 
-    function initialize(){
-     var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
-     var myOptions = {
-         zoom: 4,
-         center: myLatlng,
-         mapTypeId: google.maps.MapTypeId.ROADMAP
-         }
-      map = new google.maps.Map(document.getElementById("map"), myOptions);
-      var marker = new google.maps.Marker({
-          position: myLatlng, 
-          map: map,
-      title:"Fast marker"
-     });
-    }
+  //   function initialize(){
+  //    var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+  //    var myOptions = {
+  //        zoom: 4,
+  //        center: myLatlng,
+  //        mapTypeId: google.maps.MapTypeId.ROADMAP
+  //        }
+  //     map = new google.maps.Map(document.getElementById("map"), myOptions);
+  //     var marker = new google.maps.Marker({
+  //         position: myLatlng, 
+  //         map: map,
+  //     title:"Fast marker"
+  //    });
+  //   }
 
-    google.maps.event.addDomListener(window,'load', initialize);
+  //   google.maps.event.addDomListener(window,'load', initialize);
  
 
 

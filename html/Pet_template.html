@@ -135,8 +135,8 @@
                         <p><b>Sex:</b> {{pet.pet_sex}}</p>
                         <p><b>Size:</b> {{pet.pet_size}}</p>
                         <p><b>Breed:</b> {{pet.pet_breed}} </p>
-                        <p><b>Shelter:</b><a href="{{pet.pet_shelter_url}}"><div class= "shelter">{{pet.pet_shelter}}</div> </a></p>
-                        <p><b>City:</b><a href="{{pet.pet_city_url}}"> {{pet.pet_city}}</a></p>
+                        <p><b>Shelter:</b><a href ="{{pet.pet_shelter_url}}"> {{pet.pet_shelter_name}} </a></p>
+                        <p><b>City:</b><a href="http://nsaid.me/{{pet.pet_city_url}}"> {{pet.pet_city}}</a></p>
 
 
 
@@ -144,7 +144,7 @@
                     </div>
 
                 </div>
-{{ user.name.split|join:"_" }}
+
 
 
 <iframe
@@ -152,33 +152,9 @@
   height="450"
   frameborder="0" style="border:0"
   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg
-    &q={{pet.pet_shelter.split|join:"+"}}" allowfullscreen>
+    &q={{pet.pet_shelter_name.split|join:"+"}},{{pet.pet_city.split|join:"+"}}" allowfullscreen>
 </iframe>
        
-<!-- 
-  <style type="text/css">
-      html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
-    </style>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var shelter =  document.getElementById("shelter").innerHTML;
-        var res = shelter.replace(" ", "+"); 
-        var mapOptions = {
-          center: res,
-          zoom: 8
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-  </head>
-  <body>
-<div id="map-canvas"></div>
- -->
 
 
 
@@ -204,10 +180,10 @@
 <!-- /.container -->
 
 <!-- jQuery -->
-<script src="bootstrap-3.3.5-dist/js/jquery.js"></script>
+<script src="/bootstrap-3.3.5-dist/js/jquery.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 
 </body>
 
