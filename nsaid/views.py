@@ -143,7 +143,7 @@ def unit_test(request):
     subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
     output = process.communicate()[0]
 
-    return HttpResponse(output.read())
+    return HttpResponse(str(output.read()))
 
 @api_view(['GET'])
 def pet_list(request):
