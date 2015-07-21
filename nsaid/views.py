@@ -294,9 +294,9 @@ def external_api (request) :
     pets_list_dicts = Pet.objects.all()
     for t in pets_list_dicts :
         pet_list.append(pets_list_dicts[t].pet_name)
-    ran_num = random.randrange(len(pets_list_dicts)
-    for j in enumerate(list(heroes_list)) :
-        for k in enumerate(list(items_list)) :
+    ran_num = random.randrange(len(pets_list_dicts))
+    for j in enumerate(heroes_list) :
+        for k in enumerate(items_list) :
             if i.name == k.hero :
                 results_list.append({'hero': i.name, 'main_item': k.hero, 'main_set': k.item_set, 'pet': pet_list[ran_num]})
 
