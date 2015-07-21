@@ -13,6 +13,7 @@ from elasticsearch import Elasticsearch
 import requests
 import json
 import urllib
+import random
 
 
 def test(request):
