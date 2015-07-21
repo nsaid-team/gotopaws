@@ -101,6 +101,7 @@ class Pet(models.Model):
     pet_shelter_url = models.CharField(max_length=1000) # link to Shelter_Page
     pet_city_url = models.CharField(max_length=1000) # link to City_Page
     pet_shelter_name = models.CharField(max_length=300) # text field
+    pet_bio = models.CharField(max_length=1000) # text field
     
     """
     class Meta:

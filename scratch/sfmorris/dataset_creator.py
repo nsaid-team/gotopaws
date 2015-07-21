@@ -328,6 +328,10 @@ def create_pets_file(pet_count):
                         pet_fields["pet_shelter_name"] = shelter["fields"]["shelter_name"]
                     except:
                         print("pet_shelter_name")
+                    try:
+                        pet_fields["pet_bio"] = petfinder_query(p["id"]["$t"], "description")
+                    except:
+                        print("pet_bio")
                 except Exception as e:
                     #pass
                     print("   problem creating pet " + p["id"]["$t"] + " no photos")
@@ -347,14 +351,19 @@ def create_pets_file(pet_count):
     #rint(json.dumps(fixture_superlist, indent = 4))
     #return fixture_superlist
 
-
+def petfinder_query(identifier, attribute):
+    petfinder_url = "http://api.petfinder.com/pet.get"
+    payload = {"key" : "2933122e170793b4d4b60358e67ecb65", "id" : identifier, "format" : "json"}
+    r = requests.get(petfinder_url, params = payload)
+    result = r.json()["petfinder"]["pet"][attribute]["$t"]
+    return result
 
 if __name__ == "__main__" :
     #city_list = [("austin tx", "austin")] #, "san antonio tx", "houston+tx", "san+francisco+ca", "dallas+tx", "el+paso+tx", "new+orleans+la"]
 
     city_list = [("Austin TX", "austin"), ("San Antonio TX", "san_antonio"), ("Houston TX", "houston"), ("San Francisco CA", "san_francisco"), ("New Orleans LA", "new_orleans")]
     
-    create_cities_file(city_list)
+    #create_cities_file(city_list)
 
     #print(yelp_query("austin tx", "vetrinarian", "image_url"))
     #print(google_query("Austin pets alive"))
@@ -363,4 +372,5 @@ if __name__ == "__main__" :
     #create_pets_file(10)
     
     #create_city_file(city_list)
+    #print(petfinder_query(23293772, "description"))
 
