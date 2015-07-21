@@ -21,14 +21,12 @@ body{
   
   /* Pick a solid background color that will be displayed while the background image is loading */
   background-color:#464646;
-	color:white;
+  color:white;
 }
 
 
 
-.description{
-    
-   
+.description{   
     margin-top: 30px;
     margin-bottom: 30px;
     margin-right: 0px;
@@ -42,4 +40,15 @@ body{
       letter-spacing: -2px;
       font-weight: normal;
     text-shadow:rgba(0,0,0,.9) 3px 7px 5px,rgba(255,255,255,.6) 0 -4px 30px;
+}
+
+
+.img-logo{
+  margin-right: 40px;
+  position: absolute;
+  right: 0px;
+  width: 140px;
+  border:5px solid black;
+  padding: 0px;
+  
 }
