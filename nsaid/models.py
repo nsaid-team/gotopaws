@@ -25,6 +25,7 @@ class City(models.Model):
     city_park_pic = models.CharField(max_length=1000) # reference to picture of park in city
     city_groomer_pic = models.CharField(max_length=1000) # reference to picture of groomer in city
     city_url = models.CharField(max_length=1000) # link to the City_Page
+    city_blurb = models.CharField(max_length=1000) # text field
     
     """
     class Meta:
