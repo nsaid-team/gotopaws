@@ -20,7 +20,7 @@
     
     <script type="text/javascript" src='{% static "js/angular.min.js" %}'></script>
     <script type="text/javascript" src='{% static "js/templates.js" %}'></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-route.js"></script>
+
 
     <!-- Custom Fonts -->
     <link href="bootstrap-3.3.5-dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -43,20 +43,9 @@
 <div id="content">
 <body>
 
-    <div ng-controller = "templateController">
-
         
-        <nav-bar></nav-bar>
-    </div>
-    <script>
-    window.onload = function(){
-        var elems = document.getElementsByClassName("/home");
-          
-        elems[0].className+=' active';
-    }
-    </script>
+        {% include "bootstrap-3.3.5-dist/templates/Navbar.html" %}
 
-    
 
     <!-- <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
@@ -118,6 +107,8 @@
 
     </div>
     <!-- /.intro-header -->
+
+ 
 <!-- jQuery -->
 <script src="bootstrap-3.3.5-dist/js/jquery.js"></script>
 
