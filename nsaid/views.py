@@ -143,7 +143,7 @@ def unit_test(request):
     output = subprocess.check_output(bashCommand.split())
     
 
-    return HttpResponse(str(output.read()))
+    return HttpResponse(output)
 
 @api_view(['GET'])
 def pet_list(request):
