@@ -86,6 +86,7 @@
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                   <!-- Indicators -->
                   <ol class="carousel-indicators">
+                    {% if pet.pet_pic_list %}
                     {% for i in pet.pet_pic_list.length|get_range %}
                     <li data-target="#myCarousel" data-slide-to="{{i}}"></li>
                    {% empty %}
@@ -118,6 +119,9 @@
                     <span class="sr-only">Next</span>
                   </a>
                 </div><!-- /.carousel -->
+                {% else %}
+                <img src = "{{pet.pet_pic_large}}">
+                {% endif %}
             
             </div>
 
