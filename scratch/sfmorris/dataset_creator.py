@@ -356,7 +356,8 @@ def petfinder_query(identifier, attribute):
     payload = {"key" : "2933122e170793b4d4b60358e67ecb65", "id" : identifier, "format" : "json"}
     r = requests.get(petfinder_url, params = payload)
     result = r.json()["petfinder"]["pet"][attribute]["$t"]
-    return result
+    sanitized_result = result.replace('\u00e2\u0080\u0099', "'").replace('\u00e2\u0080\u00a6', '').replace('\u00c2\u00bd', '')
+    return sanitized_result
 
 if __name__ == "__main__" :
     #city_list = [("austin tx", "austin")] #, "san antonio tx", "houston+tx", "san+francisco+ca", "dallas+tx", "el+paso+tx", "new+orleans+la"]
@@ -372,5 +373,5 @@ if __name__ == "__main__" :
     #create_pets_file(10)
     
     #create_city_file(city_list)
-    #print(petfinder_query(23293772, "description"))
+    #print(petfinder_query(31256107, "description"))
 
