@@ -50,7 +50,11 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 h3 {
@@ -74,6 +78,13 @@ h4 {
     margin-left: 0.7em;
     font-weight: bold;
     color: rgb(255,255,255);
+}
+
+.brand-heading {
+    font-size: 40px;
+}
+.intro .intro-body .intro-text {
+    font-size: 18px;
 }
 
 .topnav {
