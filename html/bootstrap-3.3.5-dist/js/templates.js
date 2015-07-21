@@ -29,9 +29,9 @@ app1.directive("navBar", function(){
       $scope.text = "Unit Tests";
       var temp = this;
       $scope.submit = function() {
-        temp.list = [];
+        $scope.list = [];
        $http.get("/unit_test").success(function(load){
-            temp.text = load;
+            $scope.text = load;
           });
        
 
