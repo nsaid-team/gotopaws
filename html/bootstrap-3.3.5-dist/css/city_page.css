@@ -36,6 +36,14 @@ p,h1,h2,h3{
 h3{
     font-size: 190%;
 }
+
+.heading h1{
+    font-size: 90px;
+    margin-left: 110px;
+    /*text-shadow: 0px 0px 3px #fff, -1px -1px #fff, 1px 1px #fff;*/
+}
+
+
 a.shelter-link {
     color: black;
     /*text-shadow: 0px 0px 2px #000, -1px -1px #337DAD, 1px 1px #337DAD;*/
@@ -61,18 +69,13 @@ hr { display: block; height: 1px;
 .heading
 {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     border-radius: 6px;
     padding-right: 60px;
     padding-left: 60px;
    
     padding-top: 48px;
     padding-bottom: 48px;
-}
-.heading h1{
-    font-size: 75px;
-    margin-left: 110px;
-    /*text-shadow: 0px 0px 3px #fff, -1px -1px #fff, 1px 1px #fff;*/
 }
 
 .summary-divider
@@ -102,7 +105,7 @@ hr { display: block; height: 1px;
 
 .summary-heading
 {
-    font-size: 50px;
+    font-size: 55px;
     /*text-shadow: -1px 1px 1px #fff, 0px 0px #fff, 0px 0px #fff;*/
 }
 .text-muted{
