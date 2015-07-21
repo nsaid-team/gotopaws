@@ -134,7 +134,8 @@ def about(request):
     return HttpResponse(template.render())
 
 def navbar(r):
-    return render_to_response("bootstrap-3.3.5-dist/templates/Navbar.html", r)
+    context = {'request': r}
+    return render_to_response("bootstrap-3.3.5-dist/templates/Navbar.html", context)
 
 
 @api_view(['GET'])
