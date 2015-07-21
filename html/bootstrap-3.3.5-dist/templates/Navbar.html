@@ -7,18 +7,14 @@
                 <span class="icon-bar"></span>
             </button>
         </div>
-        <div ng-view></div>
-        <div ng-app="GoToPaws">
-        <div ng-controller = "templateController">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <script>console.log("in navbar")</script>
-                <li ng-class="{'active':isActive('/home')}"><a href="home"><strong>Home</strong></a></li>
-                <li ng-class="{active:isActive('/pets')}"><a href="pets"><strong>Pets</strong></a></li>
-                <li ng-class="{active:isActive('/shelters')}"><a href="shelters"><strong>Shelters</strong></a></li>
-                <li ng-class="{active:isActive('/cities')}"><a href="cities"><strong>Cities</strong></a></li>
-                <li ng-class="{active:isActive('/extapi')}"><a href="extapi"><strong>External API</strong></a></li>
-                <li ng-class="{active:isActive('/about')}"><a href="about"><strong>About</strong></a></li>
+                <li class="active"><a href="home"><strong>Home</strong></a></li>
+                <li><a href="pets"><strong>Pets</strong></a></li>
+                <li><a href="shelters"><strong>Shelters</strong></a></li>
+                <li ><a href="cities"><strong>Cities</strong></a></li>
+                <li ><a href="extapi"><strong>External API</strong></a></li>
+                <li><a href="about"><strong>About</strong></a></li>
             </ul>
             <div class="col-sm-3 col-md-3 pull-right">
                 <form class="navbar-form" role="search" action="/search/">
@@ -31,6 +27,4 @@
                 </form>
             </div>        
         </div>
-    </div>
-    </div>
     </nav>
