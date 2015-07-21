@@ -22,7 +22,6 @@ def test(request):
 
 def home(request):
     template = loader.get_template('Home.html')
-    navbar(request)
     return HttpResponse(template.render())
 
 def shelters(request):
@@ -133,10 +132,10 @@ def about(request):
     template = loader.get_template('About.html')
     return HttpResponse(template.render())
 
-def navbar(r):
-    context = {'request': r}
-    return render_to_response("bootstrap-3.3.5-dist/templates/Navbar.html", context)
-
+def navbar(request):
+    c = context({'request': request.path})
+    nav = loader.get_template('bootstrap-3.3.5-dist/templates/Navbar.html')
+    return nav.render(c)
 
 @api_view(['GET'])
 def pet_list(request):

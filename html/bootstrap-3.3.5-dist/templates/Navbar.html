@@ -1,3 +1,5 @@
+
+
 <nav class="navbar navbar-inverse" role="navigation">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -9,39 +11,19 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            {{request.path_info}} and {{request.path}}
-            {% if 'home' in request.path_info %}
-            <li class="active"><a href="home"><strong>Home</strong></a></li>
-            {% else %}
+         
             <li><a href="home"><strong>Home</strong></a></li>
-            {% endif %}
-            {% if 'pets' in request.path %}
-            <li class="active"><a href="pets"><strong>Pets</strong></a></li>
-            {% else %}
+            
             <li><a href="pets"><strong>Pets</strong></a></li>
-            {% endif %}
-
-
-            {% if 'shelters' in request.path %}
-            <li class="active"><a href="shelters"><strong>Shelters</strong></a></li>
-            {% else %}
+          
             <li ><a href="shelters"><strong>Shelters</strong></a></li>
-            {% endif %}
-            {% if 'cities' in request.path %}
-            <li class="active"><a href="cities"><strong>Cities</strong></a></li>
-            {% else %}
+           
             <li><a href="cities"><strong>Cities</strong></a></li>
-            {% endif %}
-            {% if 'extapi' in request.path %}
-            <li class="active"><a href="extapi"><strong>External API</strong></a></li>
-            {% else %}
+            
             <li><a href="extapi"><strong>External API</strong></a></li>
-            {% endif %}
-            {% if 'about' in request.path %}
-            <li class="active"><a href="about"><strong>About</strong></a></li>
-            {% else %}
+           
             <li><a href="about"><strong>About</strong></a></li>
-            {% endif %}
+            
 
         </ul>
         <div class="col-sm-3 col-md-3 pull-right">
