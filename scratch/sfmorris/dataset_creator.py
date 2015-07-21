@@ -12,7 +12,7 @@ def create_cities_file(city_list_parameter):
     """
 
     fixture_list = []
-    pk = 0
+    pk = 1
     for city_name, city_name_urlized in city_list_parameter:
         fields = {  "city_urlized" : "",
                     "city_name" : "",
