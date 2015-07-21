@@ -27,6 +27,9 @@ a{
     color: white;
 }
 
+img{
+    margin-bottom: 15px;
+}
 div.text-box{
     background-color: rgba(145, 197, 212, .4);
     width: 100%;
