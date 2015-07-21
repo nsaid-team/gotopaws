@@ -40,6 +40,7 @@ urlpatterns = [
     url(r'^sf$', views.city_SF),
     url(r'^houston$', views.city_Houston),
     url(r'^extapi$', views.external_api),
+    url(r'^navbar$', views.navbar),
     #RESTful API
     #url(r'^api/', include('api.urls')),
     #url(r'^api/', include(ShelterResource().urls)),
