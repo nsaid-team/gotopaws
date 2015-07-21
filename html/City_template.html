@@ -28,14 +28,14 @@ A template for GoToPaws city landing pages.
 
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-   
+
 
 
     
 
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -55,7 +55,7 @@ A template for GoToPaws city landing pages.
                 <h1>{{city.city_name}}</h1>
                 <p> {{city.city_motto}}</p>
                 <hr>
-             </div>
+            </div>
         </div>
     </div>
 
@@ -70,71 +70,75 @@ A template for GoToPaws city landing pages.
                 {% for shelter in shelter_list %}
                 <div class="row">
 
-                <div class="col-md-3 pull-right">
-                <img class="summary-image img-suqare img-responsive pull-right" alt="{{shelter.shelter_name}}" src="{{shelter.shelter_pic}}" height = "200" width = "200">
-                </div>
-                
-                <div class="col-md-9 pull-left">
-                <h3><u><a class="shelter-link" href="{{shelter.shelter_url}}"> {{shelter.shelter_name}} </a></u></h3>
-                <br>
-                <div>
-                <div class="container-fluid">
 
-                    <p class="description">
-                        {{shelter.shelter_blurb}}
-                    </p>
+
+                    <div class="col-md-9 pull-left">
+                        <h3><u><a class="shelter-link" href="{{shelter.shelter_url}}"> {{shelter.shelter_name}} </a></u></h3>
+                        <br>
+                        <div>
+
+
+                            <p class="description">
+                                {{shelter.shelter_blurb}}
+                            </p>
+
+
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 pull-right">
+                        <img class="summary-image img-suqare img-responsive pull-right" alt="{{shelter.shelter_name}}" src="{{shelter.shelter_pic}}" height = "200" width = "200">
+                    </div>
+
                 </div>
 
-                    <br>
-                </div>
+                    {% endfor %}
+            
             </div>
-                
-                {% endfor %}
-            </div>
-        </div>
 
 
             <hr class="summary-divider" />
 
             <div class="summary">
-                
+
                 <h2 class="summary-heading">Pets <span class="text-muted">in {{city.city_name}}</span></h2>
                 <div class="row">
-                {% for pet in pet_list %}
-                <!--a href ="{{pet.pet_url}}"><img class="summary-image img-suqare img-responsive pull-left" alt= "{{pet.pet_name}}" src="{{pet.pet_pic_large}}"></a-->
+                    {% for pet in pet_list %}
+                    <!--a href ="{{pet.pet_url}}"><img class="summary-image img-suqare img-responsive pull-left" alt= "{{pet.pet_name}}" src="{{pet.pet_pic_large}}"></a-->
                     
-                        <div class="col-md-3 portfolio-item">
-                            <a href="{{pet.pet_url}}">
-                                 <img class="img-city" src="{{pet.pet_pic_large}}" alt="">
-                            </a>
-                         </div>
-               
-                {% endfor %}
-                  </div>
-                
-            </div>
-        </div>
-        <div class="container">
-
-            <hr class="summary-divider" />
-            
-            <div class="summary">
-                <h2 class="summary-heading">Vets, Parks, and Groomers <span class="text-muted">in {{city.city_name}}</span>
-                </h2>
-                
-
-                <!--a href ="{{city.city_vet_url}}"><img class="summary-image img-suqare img-responsive pull-right" alt="" src="{{city.city_vet_pic}}"></a-->
-                <div class="row">
                     <div class="col-md-3 portfolio-item">
-                                 <a href ="{{city.city_vet_url}}"><img class="img-city" src="{{city.city_vet_pic}}"></a>
-                    </div>
-                     <div class="col-md-3 portfolio-item">
-                                 <a href ="{{city.city_park_url}}"><img class="img-city"src="{{city.city_park_pic}}"></a>
-                    </div>
-                     <div class="col-md-3 portfolio-item">
-                                 <a href ="{{city.city_groomer_url}}"><img class="img-city" src="{{city.city_groomer_pic}}"></a>
-                    </div>
-                </div>
+                        <a href="{{pet.pet_url}}">
+                           <img class="img-city" src="{{pet.pet_pic_large}}" alt="">
+                       </a>
+                   </div>
+
+                   {% endfor %}
+               </div>
+
+           </div>
+       </div>
+       <div class="container">
+
+        <hr class="summary-divider" />
+
+        <div class="summary">
+            <h2 class="summary-heading">Vets, Parks, and Groomers <span class="text-muted">in {{city.city_name}}</span>
+            </h2>
+
+
+            <!--a href ="{{city.city_vet_url}}"><img class="summary-image img-suqare img-responsive pull-right" alt="" src="{{city.city_vet_pic}}"></a-->
+            <div class="row">
+                <div class="col-md-3 portfolio-item">
+                   <a href ="{{city.city_vet_url}}"><img class="img-city" src="{{city.city_vet_pic}}"></a>
+               </div>
+               <div class="col-md-3 portfolio-item">
+                   <a href ="{{city.city_park_url}}"><img class="img-city"src="{{city.city_park_pic}}"></a>
+               </div>
+               <div class="col-md-3 portfolio-item">
+                   <a href ="{{city.city_groomer_url}}"><img class="img-city" src="{{city.city_groomer_pic}}"></a>
+               </div>
+           </div>
 
                 <!--<div class="text-box">
                     <p class="lead">
@@ -151,32 +155,32 @@ A template for GoToPaws city landing pages.
                         <a href ="{{city.city_groomer_url}}"><img src="{{city.city_groomer_pic}}"></a>
                         
                     </p>
-                    </div>-->
-               
-             
+                </div>-->
+
+
             </div>
 
             <hr class="summary-divider" />
             
             
             <iframe
-  width="600"
-  height="450"
-  frameborder="0" style="border:0"
-  src='https://www.google.com/maps/embed/v1/search?key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg
-    &q={{city.city_name.split|join:"+"}}+{{city.city_state.split|join:"+"}}' allowfullscreen>
-</iframe>
+            width="600"
+            height="450"
+            frameborder="0" style="border:0"
+            src='https://www.google.com/maps/embed/v1/search?key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg
+            &q={{city.city_name.split|join:"+"}}+{{city.city_state.split|join:"+"}}' allowfullscreen>
+        </iframe>
 
 
-            <!-- https://www.google.com/maps/preview/@<latitude>,<longitude>,<zoom level>z -->
-       
-            <hr />   
+        <!-- https://www.google.com/maps/preview/@<latitude>,<longitude>,<zoom level>z -->
 
-            
+        <hr />   
 
- 
 
-            <!-- Footer -->
+
+
+
+        <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
@@ -186,19 +190,19 @@ A template for GoToPaws city landing pages.
             </div>
             <!-- /.row -->
         </footer>
-        </div>
+    </div>
 
 
-        
-        {% load static from staticfiles %}
 
-        <!-- jQuery -->
-        <script src="{% static "js/jquery.js" %}"></script>
+    {% load static from staticfiles %}
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="{% static "js/bootstrap.min.js" %}"></script>
-        </div>
-        
+    <!-- jQuery -->
+    <script src="{% static "js/jquery.js" %}"></script>
 
-    </body>
-    </html>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+</div>
+
+
+</body>
+</html>
