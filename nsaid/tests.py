@@ -6,6 +6,7 @@
 
 import requests, json
 from django.test import TestCase
+from django.test.utils import *
 from nsaid.models import *
 from unittest import TestLoader, TextTestRunner
 from io import StringIO
@@ -13,9 +14,11 @@ import unittest
 import coverage
 
 def run_unit_tests():
+    setup_test_environment()
     test_suite = TestLoader().loadTestsFromTestCase(Test)
     test_stream = StringIO()
     test_runner = TextTestRunner(stream=test_stream).run(test_suite)
+    teardown_test_environment()
     return {'results': test_stream.getvalue(), 'status': str(test_runner)}
 
 # -----------
