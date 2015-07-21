@@ -47,6 +47,9 @@ div.text-box{
 
 }
 
+.row{
+    padding-left: 2%;
+}
 
 .pet-name{
     font-size: 170%;
@@ -92,6 +95,3 @@ div.text-box{
     color: #333;
 }
 
-footer {
-    margin: 50px 0;
-}
