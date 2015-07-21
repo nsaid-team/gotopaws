@@ -69,16 +69,20 @@ A template for GoToPaws city landing pages.
                 <h2 class="summary-heading">Shelters <span class="text-muted">in {{city.city_name}}</span></h2>
 
                 {% for shelter in shelter_list %}
-
+                <div class="container-fluid">
                 <img class="summary-image img-suqare img-responsive pull-right" alt="{{shelter.shelter_name}}" src="{{shelter.shelter_pic}}" height = "200" width = "200">
-
+                </div>
                 
                 <h3><u><a class="shelter-link" href="{{shelter.shelter_url}}"> {{shelter.shelter_name}} </a></u></h3>
                 <br>
                 <div>
-                    <p class="text-box">
+                <div class="container-fluid">
+
+                    <p class="description">
                         {{shelter.shelter_blurb}}
                     </p>
+                </div>
+
                     <br>
                 </div>
                 {% endfor %}
@@ -104,6 +108,8 @@ A template for GoToPaws city landing pages.
                   </div>
                 
             </div>
+        </div>
+        <div class="container">
 
             <hr class="summary-divider" />
             
@@ -156,15 +162,14 @@ A template for GoToPaws city landing pages.
     &q={{city.city_name.split|join:"+"}}+{{city.city_state.split|join:"+"}}' allowfullscreen>
 </iframe>
 
+
             <!-- https://www.google.com/maps/preview/@<latitude>,<longitude>,<zoom level>z -->
        
             <hr />   
 
             
 
-  
-  </body>
-</html>
+ 
 
             <!-- Footer -->
         <footer>
@@ -187,6 +192,7 @@ A template for GoToPaws city landing pages.
 
         <!-- Bootstrap Core JavaScript -->
         <script src="{% static "js/bootstrap.min.js" %}"></script>
+        </div>
         
 
     </body>
