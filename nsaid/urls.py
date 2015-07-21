@@ -23,7 +23,6 @@ urlpatterns = [
     url(r'^about$', views.about),
     url(r'^extapi$', views.external_api),
     url(r'^search/$', views.search, name='search'),
-    url(r'^unit_test$', views.unit_test),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.home),
     url(r'^home$', views.home),
@@ -37,6 +36,5 @@ urlpatterns = [
     url(r'^api/pets/$', views.pet_list),
     url(r'^api/shelters/$', views.shelter_list),
     url(r'^api/cities/$', views.city_list),
-    
     url(r'^test/$', views.test),
 ]
