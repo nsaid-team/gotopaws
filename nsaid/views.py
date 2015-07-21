@@ -287,6 +287,8 @@ def external_api (request) :
 
     for t in our_api_json :
         pet_list.append(our_api_json[t]['pet_name'])
+
+    ran_num = random.randrange(len(pet_list))
     
     for i in identifiers_list :
         url = "http://hatfancy.me/api/" + i + "/"
@@ -298,8 +300,7 @@ def external_api (request) :
             items_list = api_json
         if (i == 'sets') :
             sets_list = api_json
-    
-    ran_num = random.randrange(len(pets_list_dicts))
+
     for j in enumerate(heroes_list) :
         for k in enumerate(items_list) :
             if i.name == k.hero :
