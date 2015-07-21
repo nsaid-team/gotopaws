@@ -148,14 +148,16 @@ A template for GoToPaws city landing pages.
             <hr class="summary-divider" />
             
             
-            <img src='https://maps.googleapis.com/maps/api/staticmap?center={{city.city_name.split|join:"+"}},{{city.city_state}}&zoom=13&size=400x200'>
+            <iframe
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src='https://www.google.com/maps/embed/v1/search?key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg
+    &q={{city.city_name.split|join:"+"}}+{{city.city_state.split|join:"+"}}' allowfullscreen>
+</iframe>
 
             <!-- https://www.google.com/maps/preview/@<latitude>,<longitude>,<zoom level>z -->
-            <div ng-controller ="MyCtrl" id="map"> 
-         
-            <!-- EMBED CITY SPECIFIC MAP HERE -->
-            </div>
-
+       
             <hr />   
 
             
