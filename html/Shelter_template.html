@@ -42,15 +42,27 @@
 
     <!-- Page Content -->
     <div class="container">
-
-        <div class="row">
-            <div class="col-md-3">
-                <h1 class="page-header">{{shelter.shelter_name}} <img  src="{{shelter.shelter_pic}}" alt="" align="right"> </h1>
+        <h1 class="page-header">{{shelter.shelter_name}} <img  src="{{shelter.shelter_pic}}" alt="" align="right"> </h1>
                  {{shelter.shelter_address}} {{shelter.shelter_city}}, {{shelter.shelter_state}} <br>
                  {{shelter.shelter_phone}} <br>
                  {{shelter.shelter_hours}} <br>
                  {{shelter.shelter_email}} <br>
-                 <a href="{{shelter.shelter_url}}">{{shelter.shelter_url}}</a><br>
+                 <a href="{{shelter.shelter_url}}">{{shelter.shelter_url}}</a><br> 
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                 <h1 class="page-header">{{shelter.shelter_name}} <img  src="{{shelter.shelter_pic}}" alt="" align="right"> 
+                 {{shelter.shelter_address}} {{shelter.shelter_city}}, {{shelter.shelter_state}} <br>
+                 {{shelter.shelter_phone}} <br>
+                 {{shelter.shelter_hours}} <br>
+                 {{shelter.shelter_email}} <br>
+                 <a href="{{shelter.shelter_url}}">{{shelter.shelter_url}}</a><br> </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
                  <p>{{shelter.shelter_blurb}}</p>       
              </div>
              <div class="row">
