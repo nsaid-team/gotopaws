@@ -304,7 +304,7 @@ def external_api (request) :
             ran_num = random.randrange(len(pet_list))
             h = heroes_list[j]
             m = items_list[k]
-            if h['name'] == m['hero'] :
+            if ((h['name'] == m['hero']) and (h['name'] not in results_list) :
                 results_list.append({'hero': h['name'], 'main_item': m['name'], 'main_set': m['item_set'], 'pet': pet_list[ran_num]})
 
     context = {"results_list": results_list}
