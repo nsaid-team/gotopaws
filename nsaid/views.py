@@ -306,7 +306,7 @@ def external_api (request) :
 
             if ((h['name'] == m['hero']) and (h['name'] not in item_hero_list)) :
                 results_list.append({'hero': h['name'], 'main_item': m['name'], 'main_set': m['item_set'], 'pet': pet_list[ran_num]})
-                item_hero_list.append(m['name'])
+                item_hero_list.append(m['hero'])
 
     context = {"results_list": results_list}
     #print({context})
