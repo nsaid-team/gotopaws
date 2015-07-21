@@ -16,6 +16,7 @@ import urllib
 import random
 import subprocess
 from django.core.management import call_command
+from django.core.management import execute_from_command_line
 
 
 def test(request):
@@ -140,16 +141,30 @@ def navbar(request):
     return nav.render(c)
 
 def unit_test(request):
-    o = call_command('test')
-    s = o.read()
+    import os, sys
+    from django.conf import settings
 
-    """
-    bashCommand = ("coverage3 run ../manage.py test")
-    output = serializers.serialize('json', subprocess.check_output(bashCommand.split()))
-    """
-    
+    DIRNAME = os.path.dirname(__file__)
+    settings.configure(DEBUG = True,
+                       DATABASE_ENGINE = 'sqlite3',
+                       DATABASE_NAME = os.path.join(DIRNAME, 'database.db'),
+                       INSTALLED_APPS = ('django.contrib.auth',
+                                         'django.contrib.contenttypes',
+                                         'django.contrib.sessions',
+                                         'django.contrib.admin',
+                                         'myapp',
+                                         'myapp.tests',))
 
-    return HttpResponse(s)
+
+    from django.test.simple import run_tests
+
+    failures = run_tests(['myapp',], verbosity=1)
+    if failures:
+        test = "FAIL" + str(failures)
+    else :
+        test = "PASS"
+
+    return HttpResponse(test)
 
 @api_view(['GET'])
 def pet_list(request):
