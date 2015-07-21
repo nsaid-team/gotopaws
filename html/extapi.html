@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="GoToPaws">
 
 <head>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -39,6 +39,10 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/1.0.6/css/dataTables.responsive.css">
 
+    {% load static from staticfiles %}
+    <script type="text/javascript" src='{% static "js/angular.min.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/templates.js" %}'></script>
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 
@@ -58,7 +62,13 @@
 <div id="container">
 <div id="content">
     <body>
-        <nav class="navbar navbar-inverse" role="navigation">
+
+    <div ng-controller = "templateController">        
+    <nav-bar></nav-bar>
+    </div>
+
+
+        <!-- <nav class="navbar navbar-inverse" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -87,7 +97,7 @@
                     </form>
                 </div>        
             </div>
-        </nav>
+        </nav> -->
 
         <!-- Page Content -->
         <div class="container">
