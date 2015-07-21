@@ -22,6 +22,19 @@ p{
     font-size:80%;
 }
 
+a {
+    color: white;
+    text-shadow: 0px 0px 2px #000, -1px -1px #337DAD, 1px 1px #337DAD;
+}
+
+a:visited {
+color: white;
+}
+
+a:hover {
+color: white;
+}
+
 .thumbnail img {
     width: 100%;
 }
@@ -42,7 +55,6 @@ p{
     margin-left: 110px;
     text-shadow: 0px 0px 6px #fff, -1px -1px #fff, 1px 1px #fff;
 }
-
 
 .summary-divider
 {
