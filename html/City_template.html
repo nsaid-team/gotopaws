@@ -30,10 +30,6 @@ A template for GoToPaws city landing pages.
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
    
 
-
-    
-
-
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -88,8 +84,13 @@ A template for GoToPaws city landing pages.
                 
                 <h2 class="summary-heading">Pets <span class="text-muted">in {{city.city_name}}</span></h2>
                 {% for pet in pet_list %}
-                <a href ="{{pet.pet_url}}"><img class="summary-image img-suqare img-responsive pull-left" alt= "{{pet.pet_name}}" src="{{pet.pet_pic_large}}"></a>
-
+                <!--a href ="{{pet.pet_url}}"><img class="summary-image img-suqare img-responsive pull-left" alt= "{{pet.pet_name}}" src="{{pet.pet_pic_large}}"></a-->
+                <div class="img">
+                    <a target="_blank" href ="{{pet.pet_url}}">
+                        <img class="summary-image img-suqare img-responsive pull-left" alt= "{{pet.pet_name}}" src="{{pet.pet_pic_large}}">
+                    </a>
+                <div class="desc">Add a description of the image here</div>
+                </div>
                
                 {% endfor %}
                 
