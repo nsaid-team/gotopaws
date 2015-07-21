@@ -273,7 +273,7 @@ def search (request):
 def external_api (request) :
     response_list = []
     heroes_list = []
-    items_all = []
+    items_list = []
     sets_list = []
     results_list = []
     pets_list_dicts = []
