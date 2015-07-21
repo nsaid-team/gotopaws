@@ -14,6 +14,7 @@ import requests
 import json
 import urllib
 import random
+import subproccess
 
 
 def test(request):
@@ -136,6 +137,11 @@ def navbar(request):
     c = context({'request': request.path})
     nav = loader.get_template('bootstrap-3.3.5-dist/templates/Navbar.html')
     return nav.render(c)
+
+def unit_test(request):
+    subprocess.Popen("make testonline")
+    f = file.open(testonline.out)
+    return HttpResponse(f)
 
 @api_view(['GET'])
 def pet_list(request):

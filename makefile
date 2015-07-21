@@ -19,6 +19,7 @@ clean:
 	rm -f  *.pyc
 	rm -f  tests.out
 	rm -rf __pycache__
+	rm -f testonline.out
 
 config:
 	git config -l
@@ -36,3 +37,7 @@ tests.out:
 	coverage3 report -m  nsaid/tests.py nsaid/models.py  >> nsaid/tests.out
 	cat nsaid/tests.out
 
+testonline:
+	rm -f nsaid/testsonline.out
+	coverage3 run manage.py test nsaid/ >  nsaid/tests.out 2>&1
+	coverage3 report -m  nsaid/tests.py nsaid/models.py  >> nsaid/testsonline.out
