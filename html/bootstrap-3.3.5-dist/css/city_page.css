@@ -39,8 +39,10 @@ p{
 }
 .heading h1{
     font-size: 75px;
-     margin-right: 50px;
+    margin-left: 110px;
+    text-shadow: 0px 0px 6px #fff, -1px -1px #fff, 1px 1px #fff;
 }
+
 
 .summary-divider
 {
@@ -65,11 +67,11 @@ p{
 .summary-heading
 {
     font-size: 50px;
-    text-shadow: 0px 0px 3px #fff, -1px -1px #fff, 1px 1px #fff;
+    text-shadow: 0px 0px 6px #fff, -1px -1px #fff, 1px 1px #fff;
 }
 .text-muted{
     color:white;
-    text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;
+    text-shadow: 0px 0px 9px #000, -1px -1px #000, 1px 1px #000;
 }
 
 div.text-box{
