@@ -14,6 +14,7 @@ app.controller('templateController', function($scope, $location) {
 
 
 app.directive('navBar', function(){
+  console.log("directive");
   return{
     restrict: 'E',
     templateUrl: '/bootstrap-3.3.5-dist/templates/Navbar.html'

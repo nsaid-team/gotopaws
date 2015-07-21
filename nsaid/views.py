@@ -301,12 +301,12 @@ def external_api (request) :
         if (i == 'sets') :
             sets_list = api_json
 
-    for j in range(len((heroes_list)) :
+    for j in range(len(heroes_list)) :
         for k in range(len(items_list)) :
             h = heroes_list[j]
             m = items_list[k]
             if h['name'] == m['hero'] :
-                results_list.append({'hero': i.name, 'main_item': k.hero, 'main_set': k.item_set, 'pet': pet_list[ran_num]})
+                results_list.append({'hero': h['name'], 'main_item': m['hero'], 'main_set': m['item_set'], 'pet': pet_list[ran_num]})
 
     context = {"results_list": results_list}
     #print({context})
