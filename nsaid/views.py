@@ -21,15 +21,15 @@ def home(request):
     template = loader.get_template('Home.html')
     return HttpResponse(template.render())
 
-def shelters(request):
-    shelters_list = Shelter.objects.all()
-    context = {"shelters_list": shelters_list}
-    return render_to_response("Shelters.html", context)
-
 def pets(request):
     pets_list = Pet.objects.all()
     context = {"pets_list": pets_list}
     return render_to_response("Pets.html", context)
+
+def shelters(request):
+    shelters_list = Shelter.objects.all()
+    context = {"shelters_list": shelters_list}
+    return render_to_response("Shelters.html", context)
 
 def cities(request):
     cities_list = City.objects.all()
@@ -68,10 +68,9 @@ def shelter_json(request, identifier):
     return HttpResponse([serializers.serialize('json', shelter), jsongeocode])
 
 def city_template(request, identifier):
-    identifier_city, identifier_state = identifier.split('_')
-    city = City.objects.filter(city_name = identifier_city, city_state = identifier_state)
-    city_shelter_list = Shelter.objects.filter(shelter_city = identifier_city, shelter_state = identifier_state)
-    pet_list = Pet.objects.filter(pet_city = identifier_city)
+    city = City.objects.filter(city_urlized = identifier)
+    city_shelter_list = Shelter.objects.filter(shelter_city_urlized = identifier)
+    pet_list = Pet.objects.filter(pet_city_urlized = identifier)
     context = {'city': city[0], 'shelter_list' : city_shelter_list, 'pet_list': pet_list}
     return render(request, 'City_template.html', context)
     
