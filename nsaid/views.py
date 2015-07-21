@@ -17,11 +17,6 @@ import random
 import subprocess
 from django.core.management import call_command
 
-
-def test(request):
-    html = "<html><body>Hey that somehow worked!</body></html>"
-    return HttpResponse(html)
-
 def home(request):
     template = loader.get_template('Home.html')
     return HttpResponse(template.render())
@@ -43,50 +38,6 @@ def cities(request):
 
 def about(request):
     template = loader.get_template('About.html')
-    return HttpResponse(template.render())
-
-def cats(request):
-    template = loader.get_template('Cats.html')
-    return HttpResponse(template.render())
-
-def dogs(request):
-    template = loader.get_template('Dogs.html')
-    return HttpResponse(template.render())
-
-def shelter_apa(request):
-    template = loader.get_template('Shelter_APA.html')
-    return HttpResponse(template.render())
-
-def cat_sari(request):
-    template = loader.get_template('Cat_Sari.html')
-    return HttpResponse(template.render())
-
-def dog_earl(request):
-    template = loader.get_template('Dog_Earl.html')
-    return HttpResponse(template.render())
-
-def dog_Rangel(request):
-    template = loader.get_template('Dog_Rangel.html')
-    return HttpResponse(template.render())
-
-def shelter_HPPL(request):
-    template = loader.get_template('Shelter_HPPL.html')
-    return HttpResponse(template.render())
-
-def shelter_Muttville(request):
-    template = loader.get_template('Shelter_Muttville.html')
-    return HttpResponse(template.render())
-
-def city_Austin(request):
-    template = loader.get_template('City_Austin.html')
-    return HttpResponse(template.render())
-
-def city_Houston(request):
-    template = loader.get_template('City_Houston.html')
-    return HttpResponse(template.render())
-
-def city_SF(request):
-    template = loader.get_template('City_SF.html')
     return HttpResponse(template.render())
 
 def pet_template(request, identifier):
@@ -133,6 +84,7 @@ def about(request):
     template = loader.get_template('About.html')
     return HttpResponse(template.render())
 
+# can we get rid of navbar? -Sam
 def navbar(request):
     c = context({'request': request.path})
     nav = loader.get_template('bootstrap-3.3.5-dist/templates/Navbar.html')
