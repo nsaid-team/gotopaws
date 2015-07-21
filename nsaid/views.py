@@ -139,10 +139,10 @@ def navbar(request):
     return nav.render(c)
 
 def unit_test(request):
-    bashCommand = ("rm -f nsaid/testsonline.out\ncoverage3 run manage.py test nsaid/ >  nsaid/tests.out 2>&1\ncoverage3 report -m  nsaid/tests.py nsaid/models.py  >> nsaid/testsonline.out\ncat nsaid/testsonline.out")
-    subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
-    output = process.communicate()[0];
-    return HttpResponse(output)
+    # bashCommand = ("rm -f nsaid/testsonline.out\ncoverage3 run manage.py test nsaid/ >  nsaid/tests.out 2>&1\ncoverage3 report -m  nsaid/tests.py nsaid/models.py  >> nsaid/testsonline.out\ncat nsaid/testsonline.out")
+    # subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
+    # output = process.communicate()[0];
+    return HttpResponse("output")
 
 @api_view(['GET'])
 def pet_list(request):
