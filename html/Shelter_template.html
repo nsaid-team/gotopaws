@@ -59,46 +59,40 @@
                  <h4><a href="{{shelter.shelter_url}}">{{shelter.shelter_url}}</a></h4>   
                  <hr>  
              </div>
-
-             
-             <p>{{shelter.shelter_blurb}}</p> 
-
-             <hr>
-
-             <div class="row">
-
-                 {% for pet in pet_list %}
-                     <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                             <img class = "img-responsive" src="{{pet.pet_pic_url}}" alt="">
-
-                             <div class="caption">
-                                 <h4 class="pull-right">
-                                 <h4><a href="{{pet.pet_url}}">{{pet.pet_name}}</a></h4>
-                                 <p>
-                                    <p><b>Age:</b> {{pet.pet_age}}</p>              
-                                    <p><b>Gender:</b> {{pet.pet_sex}}</p>                
-                                    <p><b>Size:</b> {{pet.pet_size}}</p>                 
-                                    <p><b>Breed:</b> {{pet.pet_breed}} </p>   
-                                    <p><a href="{{pet.pet_shelter}}"> <b>Shelter:</b> {{pet.pet_shelter_name}}</a></p>
-                                </p>
-                             </div>
-
-                        </div>
-                     </div>
-
-
-                         
-                 {% endfor %}
-                 </div>
-
-                </div> 
-
-            </div>
-
         </div>
 
-    </div>
+         <div class="row">
+            <div class="col-lg-12">
+                 <p>{{shelter.shelter_blurb}}</p> 
+                 <hr>
+            </div>
+         </div>
+
+         <div class="row">
+             {% for pet in pet_list %}
+                 <div class="col-sm-4 col-lg-4 col-md-4">
+                     <div class="thumbnail">
+                        <img class = "img-responsive" src="{{pet.pet_pic_url}}" alt="">
+
+                         <div class="caption">
+                             <h4 class="pull-right">
+                             <h4><a href="{{pet.pet_url}}">{{pet.pet_name}}</a></h4>
+                             <p>
+                                 <p><b>Age:</b> {{pet.pet_age}}</p>              
+                                 <p><b>Gender:</b> {{pet.pet_sex}}</p>                
+                                 <p><b>Size:</b> {{pet.pet_size}}</p>                 
+                                 <p><b>Breed:</b> {{pet.pet_breed}} </p>   
+                                 <p><a href="{{pet.pet_shelter}}"> <b>Shelter:</b> {{pet.pet_shelter_name}}</a></p>
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+
+             {% endfor %}
+         </div>
+   
+
+
     <!-- /.container -->
 
     <div class="container">
