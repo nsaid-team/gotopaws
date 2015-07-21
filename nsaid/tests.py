@@ -8,6 +8,7 @@ import requests, json
 from django.test import TestCase
 from nsaid.models import *
 from unittest import TestLoader, TextTestRunner
+from io import StringIO
 import unittest
 import coverage
 
