@@ -139,14 +139,16 @@ def unit_test(request):
 
     from django.test.simple import run_tests
 
-    failures = run_tests(['nsaid',], verbosity=1)
-    if failures:
-        test = "FAIL" + str(failures)
-    else :
-        f = open('workfile', 'w')
-        test = f.read() 
+    #failures = run_tests(['nsaid',], verbosity=1)
+    #if failures:
+    #    test = "FAIL" + str(failures)
+    #else :
+    #f = open('workfile', 'w')
+    #test = f.read() 
 
-    return HttpResponse(test)
+    test = tests.run_unit_tests()
+    
+    return HttpResponse(test['results'])
 
 @api_view(['GET'])
 def pet_list(request):
