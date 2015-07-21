@@ -95,16 +95,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">External API</h1>
+                    <h1 class="text-box">External API</h1>
                 </div>
             </div>
             <!-- /.row -->
 
             <div class="row">
-                {% if not response_list %}
-                    <h3><i>Not Results Found</i></h3>
-                    <p></p>
-                    <p></p>
-                {% endif %}
                 <table id="table_id" class="display responsive no-wrap" width="100%">
                     <thead>  
                         <tr>
@@ -120,7 +116,7 @@
                                 <td>{{hero.hero}}</td>
                                 <td>{{hero.main_item}}</td>
                                 <td>{{hero.main_set}}</td>
-                                <td>{{hero.pet}}</td>
+                                <td><a href={{hero.pet_url}}>{{hero.pet}}</a></td>
                             </tr>
                         {% endfor %}
                     </tbody>

@@ -1,5 +1,5 @@
 body{
-     background: url(../img/All/dog.jpg);
+     background: url(../img/All/dog2.jpg);
      /* Image is centered vertically and horizontally at all times */
   background-position: center center;
   
@@ -22,19 +22,22 @@ p{
     font-size:80%;
 }
 
-a {
+a.shelter-link {
     color: white;
     text-shadow: 0px 0px 2px #000, -1px -1px #337DAD, 1px 1px #337DAD;
 }
 
-a:visited {
+a:visited.shelter-link {
 color: white;
 }
 
-a:hover {
+a:hover.shelter-link {
 color: white;
 }
 
+hr { display: block; height: 1px;
+    border: 0; border-top: 2px solid #C2EBFF;
+    margin: 1em 0; padding: 0; }
 .thumbnail img {
     width: 100%;
 }
@@ -103,5 +106,6 @@ div.text-box{
 
 footer
 {
+    color:white;
     margin: 50px 0;
 }
