@@ -31,12 +31,12 @@ app1.directive("navBar", function(){
       $scope.submit = function() {
         $scope.list = [];
        $http.get("/test/").success(function(load){
-            $scope.text = load;
+            $scope.text = load.toString();
           });
        
 
       $scope.list.push(this.text);
-      console.log(this.text.toString());
+      console.log(this.text);
       $scope.text = '';
 
        };
