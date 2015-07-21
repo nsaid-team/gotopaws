@@ -26,18 +26,7 @@ p{
     width: 100%;
 }
 
-.heading
-{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 6px;
-    padding-right: 60px;
-    padding-left: 60px;
-    background-color: rgba(145, 197, 212, .4);
-    padding-top: 48px;
-    padding-bottom: 48px;
-    font-size: 300px;
-}
+
 
 .summary-divider
 {
