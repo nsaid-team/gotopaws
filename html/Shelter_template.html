@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="GoToPaws">
 
 <head>
 
@@ -9,14 +9,22 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Shelters</title>
+    <title>{{shelter.shelter_name}}</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    {% load static from staticfiles %}
+      <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/bootstrap-3.3.5-dist/css/indiv-shelters.css" rel="stylesheet">
+     <link href="{% static "css/indiv-shelters.css" %}" rel="stylesheet">
+    <link href="/bootstrap-3.3.5-dist/css/full-slider.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="/bootstrap-3.3.5-dist/img/All/favicon-32x32.png" sizes="32x32" />
+
+    <script type="text/javascript" src='{% static "js/angular.min.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/templates.js" %}'></script>
+
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -28,8 +36,11 @@
 
     <body>
 
+    <div ng-controller = "templateController">        
+    <nav-bar></nav-bar>
+    </div>
      <!-- Navigation -->
-     <nav class="navbar navbar-inverse" role="navigation">
+     <!-- <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -58,7 +69,7 @@
                 </form>
             </div>        
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Page Content -->
     <div class="container">
@@ -130,8 +141,8 @@
   width="600"
   height="450"
   frameborder="0" style="border:0"
-  src='https://www.google.com/maps/embed/v1/place?key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg&q={{shelter.shelter_name.split|join:"+"}}
-    &center={{shelter.shelter_lattitude}},{{shelter.shelter_longitude}}' allowfullscreen>
+  src='https://www.google.com/maps/embed/v1/search?key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg&q={{shelter.shelter_name.split|join:"+"}}
+    &center,+{{shelter.shelter_city.split|join:"+"}}' allowfullscreen>
 </iframe>
         <hr>
 
