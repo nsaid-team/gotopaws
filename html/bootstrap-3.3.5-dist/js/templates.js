@@ -1,9 +1,9 @@
-var app1 = angular.module("GoToPaws",  function($interpolateProvider) {
+var app1 = angular.module("GoToPaws", []);
+
+app1.config(function($interpolateProvider) {
     $interpolateProvider.startSymbol('[{');
     $interpolateProvider.endSymbol('}]');
-});
-
-
+  });
 
 app1.controller('templateController', function($scope, $location) {
     $scope.isActive = function(route) {
