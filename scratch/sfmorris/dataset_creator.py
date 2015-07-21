@@ -259,6 +259,7 @@ def create_pets_file(pet_count):
                 try:
                     thumb = ""
                     big = ""
+                    pet_pic_list = []
                     photo_list = p["media"]["photos"]["photo"]
                     for photo in photo_list:
                         if photo["@id"] == "1":
@@ -266,6 +267,8 @@ def create_pets_file(pet_count):
                                 thumb = photo["$t"]
                             elif photo["@size"] == "x":
                                 big = photo["$t"]
+                        if photo["@size"] == "x" and photo["@id"] in ["1","2","3"]:
+                            pet_pic_list.append(photo["$t"])
                     #print("thumb = " + thumb + " big = " + big + "\n" + str(json.dumps(p, indent = 4)))
                     pet_fields = {}
                     try:
@@ -316,6 +319,10 @@ def create_pets_file(pet_count):
                         pet_fields["pet_pic_large"] = big
                     except:
                         print("pet_pic_large")
+                    try:
+                        pet_fields["pet_pic_list"] = pet_pic_list
+                    except:
+                        print("pet_pic_list")
                     try:
                         pet_fields["pet_url"] = "id" + p["id"]["$t"]
                     except:
@@ -373,7 +380,7 @@ if __name__ == "__main__" :
     #print(yelp_query("austin tx", "vetrinarian", "image_url"))
     #print(google_query("Austin pets alive"))
 
-    create_shelters_file(city_list, 2)
+    #create_shelters_file(city_list, 2)
     create_pets_file(10)
     
     #create_city_file(city_list)

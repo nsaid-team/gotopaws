@@ -98,6 +98,7 @@ class Pet(models.Model):
     pet_state = models.CharField(max_length=50)
     pet_pic_url = models.CharField(max_length=1000) # thumbnail-ish picture of pet
     pet_pic_large = models.CharField(max_length=1000) # larger picture of pet
+    pet_pic_list = models.CharField(max_length=1000)
     pet_url = models.CharField(max_length=1000) # link to Pet_Page
     pet_shelter_url = models.CharField(max_length=1000) # link to Shelter_Page
     pet_city_url = models.CharField(max_length=1000) # link to City_Page
