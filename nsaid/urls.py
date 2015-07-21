@@ -28,7 +28,7 @@ urlpatterns = [
     url(r'^shelters$', views.shelters),
     url(r'^([A-Z][A-Z][\d]+)$', views.shelter_template),
     url(r'^cities$', views.cities),
-    url(r'^([a-z]+)$', views.city_template),
+    url(r'^([a-z_]+)$', views.city_template),
     url(r'^extapi$', views.external_api),
     url(r'^about$', views.about),
     url(r'^search/$', views.search, name='search'),
