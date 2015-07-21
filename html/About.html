@@ -223,8 +223,8 @@
                         <li class="member-info"> Total no. of issues: 51</li>
                         <li class="member-info"> Total no. of unit tests: 39</li>
                         <h3> Data </h3>
-                        <li class="member-info"> links to the data sources: <a href="https://www.petfinder.com/developers/api-docs"> https://www.petfinder.com/developers/api-docs</a></li>
-                        <li class="member-info"> how each was scraped: </li>
+                        <li class="member-info"> Data Sources: <a href="https://www.petfinder.com/developers/api-docs"> https://www.petfinder.com/developers/api-docs</a></li>
+                        <li class="member-info"> Scraping Method: </li>
 				</div>
             </div>
 					<div class="col-lg-5 col-sm-pull-6 col-sm-6">
@@ -267,7 +267,11 @@
                             <a href="https://github.com/nsaid-team/gotopaws/wiki" class="btn btn-default btn-lg"><i class="fa fa-github-square fa-fw"></i> <span class="network-name">Github Wiki</span></a>
                         </li>
                         <li>
-                            <a href="unit_test" class="btn btn-default btn-lg"><i class="fa fa-github-square fa-fw"></i> <span class="glyphicon glyphicon-cog">Unit Tests</span></a>
+                            <form ng-submit="submit()" ng-controller="ExampleController" class="btn btn-default btn-lg"><i class="fa fa-github-square fa-fw"></i> <span class="network-name"></span><input type="text" ng-model="text" name="text" />
+                             <input type="submit" id="submit" value="Unit Test" />
+                            
+                            <pre>[{list}]</pre>
+                        </form>
                         </li>
                     </ul>
                 </div>
@@ -275,6 +279,33 @@
 
         </div>
         <!-- /.container -->
+
+
+
+<script>
+  angular.module('submitExample', function($interpolateProvider) {
+    $interpolateProvider.startSymbol('[{');
+    $interpolateProvider.endSymbol('}]');
+    .controller('ExampleController', ['$scope', '$http', function($scope, $http) {
+      $scope.list = [];
+      $scope.text = "Unit Tests";
+      $scope.submit = function() {
+       $http.get("/unit_test").success(function(load){
+            $scope.text = load;
+          });
+        };
+
+      $scope.list.push(this.text);
+      $scope.text = '';
+        
+      };
+    }]);
+</script>
+<form ng-submit="submit()" ng-controller="ExampleController">
+
+  
+  
+</form>
 
 
 
