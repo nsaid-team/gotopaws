@@ -11,6 +11,7 @@ from django.db import connection
 from nsaid.models import *
 from unittest import TestLoader, TextTestRunner
 from io import StringIO
+from . import settings
 import unittest
 import coverage
 
