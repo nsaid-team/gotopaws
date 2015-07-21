@@ -27,11 +27,12 @@ a{
     color: white;
 }
 
+
 img{
     display: inline-block;
-   
-    width: auto;
-    height: auto;
+    min-width: 200px;
+    width: 30%;
+    height: 30%;
     margin-bottom: 15px;
 }
 div.text-box{
