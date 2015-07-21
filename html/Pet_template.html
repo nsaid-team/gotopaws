@@ -74,19 +74,16 @@
         <!-- Page Content -->
         <div class="container">
 
+            <div class="row">
+            <div class="col-md-4">
 
-
-
-
-
-            <div class="col-md-6">
-
+                 {% if pet.pet_pic_list.length %}
              <!-- Carousel
                 ================================================== -->
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                   <!-- Indicators -->
                   <ol class="carousel-indicators">
-                    {% if pet.pet_pic_list.length %}
+                   
                     {% for i in pet.pet_pic_list.length|get_range %}
                     <li data-target="#myCarousel" data-slide-to="{{i}}"></li>
                    {% empty %}
@@ -119,19 +116,20 @@
                     <span class="sr-only">Next</span>
                   </a>
                 </div><!-- /.carousel -->
-                {% else %}
+
+            
+            </div>
+              {% else %}
                 <div class ="container">
                 <img src = "{{pet.pet_pic_large}}">
                 </div>
                 {% endif %}
-            
-            </div>
 
 
 
 
 
-                <div class="col-md-6">
+                
                     <div class = "text-box">
                         <h4><b>{{pet.pet_name}}</b></h4><!-- Zoey's info in "https://www.petfinder.com/petdetail/32480632/" -->
                         <p><b>Age:</b> {{pet.pet_age}}</p>
@@ -142,12 +140,16 @@
                         <p><b>City:</b><a href="http://nsaid.me/{{pet.pet_city_url}}"> {{pet.pet_city}}</a></p>
 
 
-
-                        
                     </div>
+                </div>
+                        
+                    <div class="col-md-4">
+                   
 
                     <div class = "text-box">
                         {{pet.pet_bio}}
+                    </div>
+
                     </div>
 
                 </div>
