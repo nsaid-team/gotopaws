@@ -36,7 +36,7 @@ app1.directive("navBar", function(){
        
 
       $scope.list.push(this.text);
-      console.log(this.text);
+      console.log(this.text.toString());
       $scope.text = '';
 
        };
