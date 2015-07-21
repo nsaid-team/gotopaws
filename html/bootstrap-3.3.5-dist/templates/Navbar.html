@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
             {{request.path_info}} and {{request.path}}
-            {% if 'home' in HttpRequest.path_info %}
+            {% if 'home' in request.path_info %}
             <li class="active"><a href="home"><strong>Home</strong></a></li>
             {% else %}
             <li><a href="home"><strong>Home</strong></a></li>

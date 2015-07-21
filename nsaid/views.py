@@ -132,6 +132,8 @@ def about(request):
     template = loader.get_template('About.html')
     return HttpResponse(template.render())
 
+def Navbar(request):
+    return render_to_response("bootstrap-3.3.5-dist/templates/Navbar.html", request)
 
 
 @api_view(['GET'])
