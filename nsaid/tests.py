@@ -7,8 +7,15 @@
 import requests, json
 from django.test import TestCase
 from nsaid.models import *
+from unittest import TestLoader, TextTestRunner
 import unittest
 import coverage
+
+def run_unit_tests():
+    test_suite = TestLoader.loadTestsFromTestCase(Test)
+    test_stream = StringIO()
+    test_runner = TextTestRunner(stream=test_stream).run(test_suite)
+    return {'results': test_stream.getvalue(), 'status': str(test_runner)}
 
 # -----------
 # test
