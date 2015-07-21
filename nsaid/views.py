@@ -119,7 +119,7 @@ def city_template(request, identifier):
     city = City.objects.filter(city_name = identifier_city, city_state = identifier_state)
     city_shelter_list = Shelter.objects.filter(shelter_city = identifier_city, shelter_state = identifier_state)
     pet_list = Pet.objects.filter(pet_city = identifier_city)
-    context = {'city': city[0], 'city_shelter_list' : city_shelter_list}
+    context = {'city': city[0], 'shelter_list' : city_shelter_list, 'pet_list': pet_list}
     return render(request, 'City_template.html', context)
     
 def city_json(request, identifier):
