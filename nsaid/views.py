@@ -102,7 +102,8 @@ def shelter_template(request, identifier):
     url="https://maps.googleapis.com/maps/api/geocode/json?address=%s" % address.replace(" ", "+")
     response = urllib.request.urlopen(url)
     jsongeocode = response.read()
-    context = {'shelter': shelter[0], 'map_json': jsongeocode}
+    pet_list = Pet.objects.filter(pet_shelter = identifier)
+    context = {'shelter': shelter[0], 'map_json': jsongeocode, 'pet_list': pet_list}
     return render(request, 'Shelter_template.html', context)
     
 def shelter_json(request, identifier):
