@@ -7,6 +7,8 @@ var app1 = angular.module("GoToPaws",  function($interpolateProvider) {
 
 app1.controller('templateController', function($scope, $location) {
     $scope.isActive = function(route) {
+      console.log(route);
+      console.log($location.path());
         return route === $location.path();
     }
 });
