@@ -283,7 +283,7 @@ def external_api (request) :
     identifiers_list = ['heroes', 'items', 'sets']
     url = "http://nsaid.me/api/pets/"
     our_response = urllib.request.urlopen(url).read().decode("utf-8")
-    our_api_json = json.loads(response)
+    our_api_json = json.loads(our_response)
 
     for t in our_api_json :
         pet_list.append(our_api_json[t]['pet_name'])
