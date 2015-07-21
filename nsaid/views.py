@@ -286,15 +286,15 @@ def external_api (request) :
         response = urllib.request.urlopen(url).read().decode("utf-8")
         api_json = json.loads(response)
         if (i == 'heroes') :
-            heroes_list.append(api_json)
+            heroes_list = api_json
         if (i == 'items') :
-            items_list.append(api_json)
+            items_list = api_json
         if (i == 'sets') :
-            sets_list.append(api_json)
+            sets_list = api_json
     pets_list_dicts = Pet.objects.all()
     for t in pets_list_dicts :
         pet_list.append(pets_list_dicts[t].pet_name)
-    ran_num = random.randrange(pets_list_dicts.len)
+    ran_num = random.randrange(len(pets_list_dicts)
     for j in heroes_list :
         for k in items_list :
             if i.name == k.hero :
