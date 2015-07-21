@@ -272,20 +272,34 @@ def search (request):
 
 def external_api (request) :
     response_list = []
-    temp_list = []
-    list_all = []
-    j = 0
+    heroes_list = []
+    items_all = []
+    sets_list = []
+    results_list = []
+    pets_list_dicts = []
+    pet_list = []
     response_dict = {}
     identifiers_list = ['heroes', 'items', 'sets']
     for i in identifiers_list :
         url = "http://hatfancy.me/api/" + i + "/"
         response = urllib.request.urlopen(url).read().decode("utf-8")
         api_json = json.loads(response)
-        temp_list.append(api_json)
-        list_all.append(temp_list)
-        response_list.append(list_all)
-        temp_list = []
-    context = {"response_list": response_list}
+        if (i == 'heroes') :
+            heroes_list.append(api_json)
+        if (i == 'items') :
+            items_list.append(api_json)
+        if (i == 'sets') :
+            sets_list.append(api_json)
+    pets_list_dicts = Pet.objects.all()
+    for t in pets_list_dicts :
+        pet_list.append(pets_list_dicts[t].pet_name)
+    ran_num = random.randrange(pets_list_dicts.len)
+    for j in heroes_list :
+        for k in items_list :
+            if i.name == k.hero :
+                results_list.append({'hero': i.name, 'main_item': k.hero, 'main_set': k.item_set, 'pet': pet_list[ran_num]})
+
+    context = {"results_list": results_list}
     #print({context})
     return render_to_response('extapi.html', context)
     
