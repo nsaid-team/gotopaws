@@ -88,7 +88,8 @@
                   <ol class="carousel-indicators">
                     {% for i in pet.pet_pic_list.length|get_range %}
                     <li data-target="#myCarousel" data-slide-to="{{i}}"></li>
-                   
+                   {% empty %}
+                   no pictures
                     {% endfor %}
                   </ol>
                   
@@ -104,6 +105,8 @@
                         </div>
                       </div>
                     </div>
+                    {% empty %}
+                   no pictures
                     {% endfor %}
 
                   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
