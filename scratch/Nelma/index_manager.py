@@ -66,36 +66,5 @@ def pets :
 
 
 
-
-    es = elasticsearch.Elasticsearch()  # use default of localhost, port 9200
-    es.index(index='gtp_index', doc_type='city', id=2, body={
-        'title': 'San Francisco, California',
-        'subtitle': 'Gold in peace, iron in war',
-        'url': 'sf',
-        'shelters_text': 'Shelters in San Francisco... It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)',
-        'pets_text': 'Pets in San Francisco... It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)',
-        'vets_text': 'Vets in San Francisco... \"5 stars for SF Pet hospital isn\'t enough!\nMy 14 year old cat, Titan got sick from a digestion issue. I brought him to SF Pet Hospital. The staff and vets...\"'
-    })
-
-def city_3
-
-    es = elasticsearch.Elasticsearch()  # use default of localhost, port 9200
-    es.index(index='gtp_index', doc_type='city', id=3, body={
-        'title': 'Houston, Texas',
-        'subtitle': 'Space City',
-        'url': 'City_Houston.html',
-        'shelters_text': 'Shelters in Houston... It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)',
-        'pets_text': 'Pets in Houston... It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)',
-        'vets_text': 'Vets in Houston... \"5 stars for SF Pet hospital isn\'t enough!\nMy 14 year old cat, Titan got sick from a digestion issue. I brought him to SF Pet Hospital. The staff and vets...\"'
-    })
-
-def pets :
-
-
-
-
-def shelters :
-
-
 if __name__ == "__main__" :
     
