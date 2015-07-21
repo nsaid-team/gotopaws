@@ -122,34 +122,6 @@ def navbar(request):
     nav = loader.get_template('bootstrap-3.3.5-dist/templates/Navbar.html')
     return nav.render(c)
 
-def unit_test(request):
-    import os, sys
-    from django.conf import settings
-
-    DIRNAME = os.path.dirname(__file__)
-    settings.configure(DEBUG = True,
-                       DATABASE_ENGINE = 'mysql.connector.django',
-                       DATABASE_NAME = os.path.join(DIRNAME, 'database.db'),
-                       INSTALLED_APPS = ('django.contrib.auth',
-                                         'django.contrib.contenttypes',
-                                         'django.contrib.sessions',
-                                         'django.contrib.admin',
-                                         'nsaid',
-                                         'nsaid.tests',))
-
-    from django.test.simple import run_tests
-
-    #failures = run_tests(['nsaid',], verbosity=1)
-    #if failures:
-    #    test = "FAIL" + str(failures)
-    #else :
-    #f = open('workfile', 'w')
-    #test = f.read() 
-
-    test = tests.run_unit_tests()
-    return HttpResponse("sanity check")
-    #return HttpResponse(test['results'])
-
 @api_view(['GET'])
 def pet_list(request):
     if request.method == 'GET':
