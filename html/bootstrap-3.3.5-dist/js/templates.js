@@ -1,11 +1,11 @@
-var app = angular.module("GoToPaws",  function($interpolateProvider) {
+var app1 = angular.module("GoToPaws",  function($interpolateProvider) {
     $interpolateProvider.startSymbol('[{');
     $interpolateProvider.endSymbol('}]');
 });
 
 
 
-app.controller('templateController', function($scope, $location) {
+app1.controller('templateController', function($scope, $location) {
     $scope.isActive = function(route) {
         return route === $location.path();
     }
@@ -13,7 +13,7 @@ app.controller('templateController', function($scope, $location) {
 
 
 
-app.directive('navBar', function(){
+app1.directive("navBar", function(){
   console.log("directive");
   return{
     restrict: 'E',
