@@ -115,11 +115,8 @@
 
     <script>
     window.onload = function(){
-        var elems = document.getElementsByClassName("/home");
-        if(elems){ 
-            elems[0].className += " active";
-        }
-    }
+        var elems = querySelector('./home');
+        elems.className += " active";
     </script>
 <!-- jQuery -->
 <script src="bootstrap-3.3.5-dist/js/jquery.js"></script>
