@@ -80,13 +80,13 @@
 
 
             <div class="col-md-6">
-
+                 {% if pet.pet_pic_list.length %}
              <!-- Carousel
                 ================================================== -->
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                   <!-- Indicators -->
                   <ol class="carousel-indicators">
-                    {% if pet.pet_pic_list.length %}
+                   
                     {% for i in pet.pet_pic_list.length|get_range %}
                     <li data-target="#myCarousel" data-slide-to="{{i}}"></li>
                    {% empty %}
