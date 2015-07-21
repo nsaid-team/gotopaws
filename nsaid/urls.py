@@ -52,7 +52,7 @@ urlpatterns = [
     url(r'^shelters/(?P<identifier>[\w-]+)/$', views.shelter_template),
     url(r'^cities/(?P<identifier>[\w|\W]+)/json$', views.city_json),
     #url(r'^cities/(?P<identifier>[\w|\W]+)/$', views.city_template),
-    url(r'^([A-Z][A-Z][\d]+)$', views.city_template),
+    url(r'^([A-Z][A-Z][\d]+)$', views.shelter_template),
     url(r'^api/pets/$', views.pet_list),
     url(r'^api/shelters/$', views.shelter_list),
     url(r'^api/cities/$', views.city_list),
