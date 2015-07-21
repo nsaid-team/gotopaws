@@ -84,12 +84,6 @@ def about(request):
     template = loader.get_template('About.html')
     return HttpResponse(template.render())
 
-# can we get rid of navbar? -Sam
-def navbar(request):
-    c = context({'request': request.path})
-    nav = loader.get_template('bootstrap-3.3.5-dist/templates/Navbar.html')
-    return nav.render(c)
-
 def unit_test(request):
     o = call_command('test')
     s = o.read()
