@@ -139,7 +139,7 @@ def navbar(request):
     return nav.render(c)
 
 def unit_test(request):
-    bashCommand = ("coverage3 run manage.py test nsaid/ >  nsaid/tests.out 2>&1")
+    bashCommand = ("coverage3 run manage.py test >  onlinetests.out 2>&1")
     subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
     output = process.communicate()[0];
     return HttpResponse(output)
