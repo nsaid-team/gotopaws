@@ -42,6 +42,7 @@ def cities(request):
     context = {"cities_list": cities_list}
     return render_to_response("Cities.html", context)
 
+<<<<<<< HEAD
 def about(request):
     template = loader.get_template('About.html')
     return HttpResponse(template.render())
@@ -90,6 +91,8 @@ def city_SF(request):
     template = loader.get_template('City_SF.html')
     return HttpResponse(template.render())
 
+=======
+>>>>>>> afadf72ed8bf5bfbe4ffa969b851fc828f489e84
 def pet_template(request, identifier):
     s, p = identifier.split('_')
     pet = Pet.objects.filter(pet_shelter = s, pet_id = p)
