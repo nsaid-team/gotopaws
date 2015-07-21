@@ -92,7 +92,7 @@ A template for GoToPaws city landing pages.
 
                 <div class="text-box">
                     <p class="lead">
-                        Info or no info?
+                    
                     </p>
                 </div>
                 {% endfor %}
@@ -102,7 +102,7 @@ A template for GoToPaws city landing pages.
             <hr class="summary-divider" />
             
             <div class="summary">
-                <h2 class="summary-heading">Vets <span class="text-muted">in {{city.city_name}}</span>
+                <h2 class="summary-heading">Vets, Parks, and Groomers <span class="text-muted">in {{city.city_name}}</span>
                 </h2>
                 
 
@@ -110,18 +110,32 @@ A template for GoToPaws city landing pages.
 
                 <div class="text-box">
                     <p class="lead">
-                        {{city.vet_description}}
+                        <a href ="{{city.city_vet_url}}"><img src={{"city.city_vet_pic"}}></a>
                     </p>
                 </div>
+                <div class="text-box">
+                    <p class="lead">
+                        <a href ="{{city.city_park_url}}"><img src={{"city.city_park_pic"}}></a>
+                    </p>
+                    </div>
+                    <div class="text-box">
+                    <p class="lead">
+                        <a href ="{{city.city_groomer_url}}"><img src={{"city.city_groomer_pic"}}></a>
+                        
+                    </p>
+                    </div>
+               
              
             </div>
+
+            <hr class="summary-divider" />
+            
+            
             <img src='https://maps.googleapis.com/maps/api/staticmap?center={{city.city_name.split|join:"+"}},{{city.city_state}}&zoom=13&size=400x200'>
 
             <!-- https://www.google.com/maps/preview/@<latitude>,<longitude>,<zoom level>z -->
             <div ng-controller ="MyCtrl" id="map"> 
-            <script>
-            google.maps.event.addDomListener(window,'load', initialize);
-            </script>
+         
             <!-- EMBED CITY SPECIFIC MAP HERE -->
             </div>
 
