@@ -90,8 +90,7 @@ def city_SF(request):
     return HttpResponse(template.render())
 
 def pet_template(request, identifier):
-    s, p = identifier.split('_')
-    pet = Pet.objects.filter(pet_shelter = s, pet_id = p)
+    pet = Pet.objects.filter(pet_id = identifier)
     context = {'pet': pet[0]}
     return render(request, 'Pet_template.html', context)
     
