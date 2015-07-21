@@ -31,7 +31,7 @@ app1.directive("navBar", function(){
       $scope.submit = function() {
         $scope.list = [];
        $http.get("/test/").success(function(load){
-            $scope.text = load.toString();
+            $scope.text = load[0].toString();
           });
        
 
