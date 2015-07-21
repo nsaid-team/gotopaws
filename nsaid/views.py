@@ -21,7 +21,7 @@ from . import tests
 
 
 def test(request):
-    test_results = tests.main()
+    test_results = tests
     return HttpResponse(test_results)
 
 def home(request):
