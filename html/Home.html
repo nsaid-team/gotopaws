@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head ng-app="GoToPaws">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +16,10 @@
 
     <!-- Custom CSS -->
     <link href="bootstrap-3.3.5-dist/css/home.css" rel="stylesheet">
+    <!-- JavaScript -->
+    {% load static from staticfiles %}
+    <script type="text/javascript" src='{% static "js/angular.min.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/templates.js" %}'></script>
 
     <!-- Custom Fonts -->
     <link href="bootstrap-3.3.5-dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -36,8 +40,12 @@
 
 <div id="container">
 <div id="content">
-<body>
-    <nav class="navbar navbar-inverse" role="navigation">
+<body ng-controller="templateController" >
+    <div ng-vew></div>
+    <nav-bar></nav-bar>
+    
+
+    <!-- <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -66,7 +74,7 @@
                 </form>
             </div>        
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Header -->
     <div class="intro-header">

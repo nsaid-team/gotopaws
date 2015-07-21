@@ -4,6 +4,15 @@ var app = angular.module("GoToPaws", ['mapModule'], function($interpolateProvide
 });
 
 
+
+app.controller('templateController', function($scope, $location) {
+    $scope.isActive = function(route) {
+        return route === $location.path();
+    }
+});
+
+
+
 app.directive('navBar', function(){
   return{
     restrict: 'E',
