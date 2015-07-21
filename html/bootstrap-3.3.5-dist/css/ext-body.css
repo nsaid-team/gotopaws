@@ -94,17 +94,17 @@ h5 {
     font-weight: bold;
     color: rgb(0,0,0);
 }
-a {
+a.hatfancy-link {
     color: white;
     /*text-shadow: 0px 0px 2px #000, -1px -1px #337DAD, 1px 1px #337DAD;*/
 }
 
-a:visited {
+a:visited.hatfancy-link  {
    color: white;
 
 }
 
-a:hover{
+a:hover.hatfancy-link {
 color: white;
 }
 
