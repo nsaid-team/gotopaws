@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="GoToPaws">
 
 <head>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title> GoToPaws External API </title>
-
+    
     <!--Tab Logo -->
     <link rel="icon" type="image/png" href="bootstrap-3.3.5-dist/img/All/favicon-32x32.png" sizes="32x32" />
 
@@ -26,7 +26,6 @@
 
     <!-- Custom Fonts -->
     <link href="bootstrap-3.3.5-dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
       
     <!-- jQuery -->
@@ -38,6 +37,10 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/1.0.6/css/dataTables.responsive.css">
+
+    {% load static from staticfiles %}
+    <script type="text/javascript" src='{% static "js/angular.min.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/templates.js" %}'></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
@@ -52,13 +55,18 @@
             } );
         } );
     </script>
-
 </head>
 
 <div id="container">
 <div id="content">
     <body>
-        <nav class="navbar navbar-inverse" role="navigation">
+
+    <div ng-controller = "templateController">        
+    <nav-bar></nav-bar>
+    </div>
+
+
+        <!-- <nav class="navbar navbar-inverse" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -87,7 +95,7 @@
                     </form>
                 </div>        
             </div>
-        </nav>
+        </nav> -->
 
         <!-- Page Content -->
         <div class="container">
@@ -95,18 +103,18 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">External API</h1>
+                    <p>Adopt your favorite Dota 2 hero's companion, and embark on adventures of your own. Learn more about Dota 2 at <a href="http://hatfancy.me">Hat Fancy</a>.</p>
                 </div>
             </div>
-            <!-- /.row -->
 
             <div class="row">
                 <table id="table_id" class="display responsive no-wrap" width="100%">
                     <thead>  
                         <tr>
-                            <td>Hero           </td>
-                            <td>Main Item       </td>
-                            <td>Main Set       </td>
-                            <td>His/Her Pet    </td>
+                            <td>Hero </td>
+                            <td>Main Item </td>
+                            <td>Main Set </td>
+                            <td>Hero's Companion </td>
                         </tr>
                     </thead>
                     <tbody>

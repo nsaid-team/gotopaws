@@ -14,6 +14,8 @@ import requests
 import json
 import urllib
 import random
+import subprocess
+from django.core.management import call_command
 
 
 def test(request):
@@ -136,6 +138,18 @@ def navbar(request):
     c = context({'request': request.path})
     nav = loader.get_template('bootstrap-3.3.5-dist/templates/Navbar.html')
     return nav.render(c)
+
+def unit_test(request):
+    o = call_command('test')
+    s = o.read()
+
+    """
+    bashCommand = ("coverage3 run ../manage.py test")
+    output = serializers.serialize('json', subprocess.check_output(bashCommand.split()))
+    """
+    
+
+    return HttpResponse(s)
 
 @api_view(['GET'])
 def pet_list(request):
