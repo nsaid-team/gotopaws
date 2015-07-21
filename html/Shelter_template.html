@@ -45,6 +45,7 @@
 
         <div class="row">
             <div class="col-lg-12">
+<<<<<<< HEAD
                 <img  src="{{shelter.shelter_pic}}" alt="">
                  <h1 class="page-header">{{shelter.shelter_name}}</h1>
             </div>
@@ -58,14 +59,26 @@
                         <h4>{{shelter.shelter_hours}}</h4>
                             <h4>{{shelter.shelter_email}}</h4>
                                 <h4><a href="{{shelter.shelter_url}}">{{shelter.shelter_url}}</a></h4>
+=======
+
+                <DIV></DIV>
+                 <h1 class="page-header">{{shelter.shelter_name}}<a href="{{shelter.shleter_url}}"> <img  src="{{shelter.shelter_pic}}" alt="" align="right"></a> <br>
+                 {{shelter.shelter_address}} {{shelter.shelter_city}}, {{shelter.shelter_state}} <br>
+                 {{shelter.shelter_phone}} <br>
+                 {{shelter.shelter_hours}} <br>
+                 {{shelter.shelter_email}} <br>
+                 <a href="{{shelter.shelter_url}}">{{shelter.shelter_url}}</a><br></h1>
+
+
+
+
+>>>>>>> c1249082ea013bd450c8831606045bf66b068b0b
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-3">
-                <div class="text-box">
-                 <p>{{shelter.shelter_blurb}}</p>  
-                 </div>     
+                 <p>{{shelter.shelter_blurb}}</p>       
              </div>
              <div class="row">
                  {% for pet in pet_list %}
