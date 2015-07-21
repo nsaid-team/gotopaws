@@ -18,7 +18,7 @@ import coverage
 def run_unit_tests():
     setup_test_environment()
     old_name = settings.DATABASES['default']['NAME']
-    db = connection.creation.create_test_db()
+    db = connection.creation.create_test_db(serialize=False, keepdb=True)
     test_suite = TestLoader().loadTestsFromTestCase(Test)
     test_stream = StringIO()
     test_runner = TextTestRunner(stream=test_stream).run(test_suite)
