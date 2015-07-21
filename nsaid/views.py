@@ -147,8 +147,8 @@ def unit_test(request):
     #test = f.read() 
 
     test = tests.run_unit_tests()
-    
-    return HttpResponse(test['results'])
+    return HttpResponse("sanity check")
+    #return HttpResponse(test['results'])
 
 @api_view(['GET'])
 def pet_list(request):
