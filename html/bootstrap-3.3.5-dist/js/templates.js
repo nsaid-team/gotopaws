@@ -29,6 +29,7 @@ app1.directive("navBar", function(){
       $scope.text = "Unit Tests";
       var temp = this;
       $scope.submit = function() {
+        temp.list = [];
        $http.get("/unit_test").success(function(load){
             temp.text = load;
           });
@@ -37,7 +38,7 @@ app1.directive("navBar", function(){
       $scope.list.push(this.text);
       console.log(this.text);
       $scope.text = '';
-      $scope.list.push("end of function");
+
        };
         
       
