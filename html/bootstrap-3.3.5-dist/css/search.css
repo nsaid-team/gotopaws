@@ -33,6 +33,7 @@ body > #container { height: auto; min-height: 100%; }
     box-shadow: 0 0 20px black;
     width: 90%;
     height:80%;
+    min-height: 80%;
 }
 
 h1,
