@@ -269,9 +269,9 @@
                         <li>
                             <form ng-submit="submit()" ng-controller="ExampleController" class="btn btn-default btn-lg"><i class="fa fa-github-square fa-fw"></i> <span class="network-name"></span><input type="text" ng-model="text" name="text" />
                              <input type="submit" id="submit" value="Unit Test" />
-                            {% verbatim %}
-                            <pre>{{list}}</pre>
-                            {% endverbatim %}
+                           
+                            <pre>[{list}]</pre>
+                          
                         </form>
                         </li>
                     </ul>
@@ -283,23 +283,7 @@
 
 
 
-<script>
-  angular.module('submitExample', [])
-    .controller('ExampleController', ['$scope', '$http', function($scope, $http) {
-      $scope.list = [];
-      $scope.text = "Unit Tests";
-      $scope.submit = function() {
-       $http.get("/unit_test").success(function(load){
-            $scope.text = load;
-          });
-        };
 
-      $scope.list.push(this.text);
-      $scope.text = '';
-        
-      };
-    }]);
-</script>
 
 
 

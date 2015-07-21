@@ -23,6 +23,24 @@ app1.directive("navBar", function(){
   };
 });
 
+
+  
+    app1.controller('ExampleController', ['$scope', '$http', function($scope, $http) {
+      $scope.list = [];
+      $scope.text = "Unit Tests";
+      $scope.submit = function() {
+       $http.get("/unit_test").success(function(load){
+            $scope.text = load;
+          });
+        };
+
+      $scope.list.push(this.text);
+      $scope.text = '';
+        
+      };
+    }]);
+
+
 // app.directive('cityShelters', function(){
 //   return{
 //     restrict: 'E',
