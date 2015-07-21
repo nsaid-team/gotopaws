@@ -42,7 +42,14 @@ div.text-box{
 
 }
 
+#theMap iframe {
+  width:"600";
+  height:"450";
+}
 
+.pet-name{
+    font-size: 170%;
+}
 .slide-image {
     width: 100%;
 }
