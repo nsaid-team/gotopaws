@@ -108,21 +108,19 @@
                 <table id="table_id" class="display responsive no-wrap" width="100%">
                     <thead>  
                         <tr>
-                            <td>Name           </td>
-                            <td>Type           </td>
-                            <td>Strength       </td>
-                            <td>Agility        </td>
-                            <td>Intelligence   </td>
+                            <td>Hero           </td>
+                            <td>Main Item       </td>
+                            <td>Main Set       </td>
+                            <td>His/Her Pet    </td>
                         </tr>
                     </thead>
                     <tbody>
-                        {% for hero in response_list.0.0.0 %}
+                        {% for hero in results_list %}
                             <tr >
-                                <td>{{hero.name}}</td>
-                                <td>{{hero.type}}</td>
-                                <td>{{hero.strength}}</td>
-                                <td>{{hero.agility}}</td>
-                                <td>{{hero.intelligence}}</td>
+                                <td>{{hero.hero}}</td>
+                                <td>{{hero.main_item}}</td>
+                                <td>{{hero.main_set}}</td>
+                                <td>{{hero.pet}}</td>
                             </tr>
                         {% endfor %}
                     </tbody>
