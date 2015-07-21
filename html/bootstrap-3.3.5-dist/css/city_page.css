@@ -24,6 +24,10 @@ p{
 
 }
 
+p.description{
+  color: black;
+}
+
 p,h1,h2,h3{
     font-family: Comic Sans, Comic Sans MS, cursive;
 }
