@@ -272,15 +272,15 @@ def search (request):
     return render_to_response('search/search.html', context)
 
 def external_api (request) :
-    response_list = []
     heroes_list = []
     items_list = []
     sets_list = []
-    results_list = []
     pet_list = []
-    item_hero_list = []
     pet_url = []
+    results_list = []
+    item_hero_list = []
     identifiers_list = ['heroes', 'items', 'sets']
+    
     url = "http://nsaid.me/api/pets/"
     our_response = urllib.request.urlopen(url).read().decode("utf-8")
     our_api_json = json.loads(our_response)
