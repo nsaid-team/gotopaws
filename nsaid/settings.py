@@ -85,17 +85,6 @@ DATABASES = {
     }
 }
 
-import sys
-if 'test' in sys.argv:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'mysql.connector.django',
-            'NAME': 'unit_test',
-            'USER': 'root',
-            'PASSWORD': '',
-        }
-    }
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
