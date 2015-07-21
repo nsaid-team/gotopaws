@@ -21,7 +21,7 @@ from . import tests
 
 
 def test(request):
-    return HttpResponse(tests.run_unit_tests())
+    return HttpResponse(tests.run_unit_tests()['results'])
 
 def home(request):
     template = loader.get_template('Home.html')
