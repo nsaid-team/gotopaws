@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="GoToPaws">
 
 <head>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -23,6 +23,11 @@
 
     <!-- Custom CSS -->
     <link href="bootstrap-3.3.5-dist/css/pet-body.css" rel="stylesheet">
+
+
+    {% load static from staticfiles %}
+    <script type="text/javascript" src='{% static "js/angular.min.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/templates.js" %}'></script>
 
     <!-- Custom Fonts -->
     <link href="bootstrap-3.3.5-dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -58,7 +63,13 @@
 <div id="container">
 <div id="content">
     <body>
-        <nav class="navbar navbar-inverse" role="navigation">
+       
+<!-- Navbar expansion -->
+    <div ng-controller = "templateController">        
+    <nav-bar></nav-bar>
+    </div>
+
+       <!--  <nav class="navbar navbar-inverse" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -88,7 +99,7 @@
                 </div>        
             </div>
         </nav>
-
+ -->
         <!-- Page Content -->
         <div class="container">
             <!-- Portfolio Item Heading -->
