@@ -66,7 +66,7 @@ A template for GoToPaws city landing pages.
 
                 {% for shelter in shelter_list %}
 
-                <img class="summary-image img-suqare img-responsive pull-right" alt="{{shelter.shelter_name}}" src="/{{shelter.shelter_pic}}" height = "200" width = "200">
+                <img class="summary-image img-suqare img-responsive pull-right" alt="{{shelter.shelter_name}}" src="{{shelter.shelter_pic}}" height = "200" width = "200">
 
                 
                 <h3><a class="shelter-link" href="{{shelter.shelter_url}}"> {{shelter.shelter_name}} </a></h3>
@@ -88,7 +88,7 @@ A template for GoToPaws city landing pages.
                 
                 <h2 class="summary-heading">Pets <span class="text-muted">in {{city.city_name}}</span></h2>
                 {% for pet in pets_list %}
-                <a href ="{{pet.pet_url}}"><img class="summary-image img-suqare img-responsive pull-left" alt= "{{pet.pet_name}}" src="{{pet.pet_pic}}"></a>
+                <a href ="{{pet.pet_url}}"><img class="summary-image img-suqare img-responsive pull-left" alt= "{{pet.pet_name}}" src="{{pet.pet_pic_large}}"></a>
 
                 <div class="text-box">
                     <p class="lead">
@@ -106,21 +106,21 @@ A template for GoToPaws city landing pages.
                 </h2>
                 
 
-                <a href ="{{city.vet_url}}"><img class="summary-image img-suqare img-responsive pull-right" alt="{{vet.vet_name}}" src="{{vet.vet_pic}}"></a>
+                <!--a href ="{{city.city_vet_url}}"><img class="summary-image img-suqare img-responsive pull-right" alt="" src="{{city.city_vet_pic}}"></a-->
 
                 <div class="text-box">
                     <p class="lead">
-                        <a href ="{{city.city_vet_url}}"><img src={{"city.city_vet_pic"}}></a>
+                        <a href ="{{city.city_vet_url}}"><img src="{{city.city_vet_pic}}"></a>
                     </p>
                 </div>
                 <div class="text-box">
                     <p class="lead">
-                        <a href ="{{city.city_park_url}}"><img src={{"city.city_park_pic"}}></a>
+                        <a href ="{{city.city_park_url}}"><img src="{{city.city_park_pic}}"></a>
                     </p>
                     </div>
                     <div class="text-box">
                     <p class="lead">
-                        <a href ="{{city.city_groomer_url}}"><img src={{"city.city_groomer_pic"}}></a>
+                        <a href ="{{city.city_groomer_url}}"><img src="{{city.city_groomer_pic}}"></a>
                         
                     </p>
                     </div>
