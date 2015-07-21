@@ -1,5 +1,5 @@
 body{
-     background: url(../img/All/dog3.jpg);
+     background: url(../img/All/dog5.jpg);
      /* Image is centered vertically and horizontally at all times */
   background-position: center center;
   
@@ -116,7 +116,7 @@ div.text-box{
     margin-bottom: 25px;
 }
 
-.img-pets-in-city{
+.img-city{
     margin: 5px;
     padding: 0px;
     border: 5px solid black;

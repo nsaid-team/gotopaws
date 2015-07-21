@@ -93,7 +93,7 @@ A template for GoToPaws city landing pages.
                     
                         <div class="col-md-3 portfolio-item">
                             <a href="{{pet.pet_url}}">
-                                 <img class="img-pets-in-city" src="{{pet.pet_pic_large}}" alt="">
+                                 <img class="img-city" src="{{pet.pet_pic_large}}" alt="">
                             </a>
                          </div>
                
@@ -112,9 +112,13 @@ A template for GoToPaws city landing pages.
                 <!--a href ="{{city.city_vet_url}}"><img class="summary-image img-suqare img-responsive pull-right" alt="" src="{{city.city_vet_pic}}"></a-->
                 <div class="row">
                     <div class="col-md-3 portfolio-item">
-                                 <a href ="{{city.city_vet_url}}"><img src="{{city.city_vet_pic}}"></a>
-                                 <a href ="{{city.city_park_url}}"><img src="{{city.city_park_pic}}"></a>
-                                 <a href ="{{city.city_groomer_url}}"><img src="{{city.city_groomer_pic}}"></a>
+                                 <a href ="{{city.city_vet_url}}"><img class="img-city" src="{{city.city_vet_pic}}"></a>
+                    </div>
+                     <div class="col-md-3 portfolio-item">
+                                 <a href ="{{city.city_park_url}}"><img class="img-city"src="{{city.city_park_pic}}"></a>
+                    </div>
+                     <div class="col-md-3 portfolio-item">
+                                 <a href ="{{city.city_groomer_url}}"><img class="img-city" src="{{city.city_groomer_pic}}"></a>
                     </div>
                 </div>
 
