@@ -33,7 +33,7 @@ class Test (unittest.TestCase) :
 
     def test_city1 (self) :
         
-        c = City.objects.create(
+        c = City.objects.using('unt_test_db').create(
             city_name = "Dallas",
             city_state = "TX",
             city_country = "US",
@@ -51,7 +51,7 @@ class Test (unittest.TestCase) :
         
     def test_city2 (self) :
         
-        c = City.objects.create(
+        c = City.objects.using('unt_test_db').create(
             city_name = "San Francisco",
             city_state = "CA",
             city_country = "US",
@@ -69,7 +69,7 @@ class Test (unittest.TestCase) :
         
     def test_city3 (self) :
         
-        c = City.objects.create(
+        c = City.objects.using('unt_test_db').create(
             city_name = "Austin",
             city_state = "TX",
             city_country = "US",
@@ -87,7 +87,7 @@ class Test (unittest.TestCase) :
 
     def test_city4 (self) :
         
-        c = City.objects.create(
+        c = City.objects.using('unt_test_db').create(
             city_name = "Empty Case Test",
             city_state = "",
             city_country = "",
@@ -105,7 +105,7 @@ class Test (unittest.TestCase) :
         
     def test_city5 (self) :
         
-        c = City.objects.create(
+        c = City.objects.using('unt_test_db').create(
             city_name = "Sacramento",
             city_state = "CA",
             city_country = "US",
@@ -123,7 +123,7 @@ class Test (unittest.TestCase) :
         
     def test_city6 (self) :
         
-        c = City.objects.create(
+        c = City.objects.using('unt_test_db').create(
             city_name = "Totally a real city",
             city_state = "Denial",
             city_country = "USA",
@@ -141,7 +141,7 @@ class Test (unittest.TestCase) :
         
     def test_city7 (self) :
         
-        c = City.objects.create(
+        c = City.objects.using('unt_test_db').create(
             city_name = "Phase 2",
             city_state = "Almost Done",
             city_country = "CS 373",
@@ -159,7 +159,7 @@ class Test (unittest.TestCase) :
         
     def test_city8 (self) :
         
-        c = City.objects.create(
+        c = City.objects.using('unt_test_db').create(
             city_name = "New York",
             city_state = "New York",
             city_country = "US",
@@ -177,7 +177,7 @@ class Test (unittest.TestCase) :
         
     def test_city9 (self) :
         
-        c = City.objects.create(
+        c = City.objects.using('unt_test_db').create(
             city_name = "Testing for city with a really long name that should not break the database",
             city_state = "Texas",
             city_country = "USA",
@@ -195,7 +195,7 @@ class Test (unittest.TestCase) :
         
     def test_city10 (self) :
         
-        c = City.objects.create(
+        c = City.objects.using('unt_test_db').create(
             city_name = "Testing state name length",
             city_state = "Really long state name",
             city_country = "USA",
@@ -213,7 +213,7 @@ class Test (unittest.TestCase) :
         
     def test_city11 (self) :
         
-        c = City.objects.create(
+        c = City.objects.using('unt_test_db').create(
             city_name = "Country Length",
             city_state = "Test",
             city_country = "Country with a really unnecessarily long name to be put in the database",
@@ -231,7 +231,7 @@ class Test (unittest.TestCase) :
         
     def test_city12 (self) :
         
-        c = City.objects.create(
+        c = City.objects.using('unt_test_db').create(
             city_name = "Url",
             city_state = "Length",
             city_country = "Test",
@@ -253,7 +253,7 @@ class Test (unittest.TestCase) :
 
     def test_shelter1 (self) :
 
-        s = Shelter.objects.create(
+        s = Shelter.objects.using('unt_test_db').create(
             shelter_id = "TX1218",
             shelter_name = "Austin Pets Alive!",
             shelter_address = "1156 West Cesar Chavez",
@@ -275,7 +275,7 @@ class Test (unittest.TestCase) :
 
     def test_shelter2 (self) :
 
-        s = Shelter.objects.create(
+        s = Shelter.objects.using('unt_test_db').create(
             shelter_id = "CA500",
             shelter_name = "Hound Rescue",
             shelter_address = "Lakeline Petsmart 11066 Pecan Park Blvd, Cedar Park",
@@ -297,7 +297,7 @@ class Test (unittest.TestCase) :
         
     def test_shelter3 (self) :
 
-        s = Shelter.objects.create(
+        s = Shelter.objects.using('unt_test_db').create(
             shelter_id = "TX514",
             shelter_name = "Austin Animal Center",
             shelter_address = "7201 Levander Loop",
@@ -319,7 +319,7 @@ class Test (unittest.TestCase) :
         
     def test_shelter4 (self) :
 
-        s = Shelter.objects.create(
+        s = Shelter.objects.using('unt_test_db').create(
             shelter_id = "",
             shelter_name = "Empty Case Test",
             shelter_address = "",
@@ -341,7 +341,7 @@ class Test (unittest.TestCase) :
         
     def test_shelter5 (self) :
 
-        s = Shelter.objects.create(
+        s = Shelter.objects.using('unt_test_db').create(
             shelter_id = "CA765",
             shelter_name = "Animal Shelter",
             shelter_address = "1234 Shelter Dr.",
@@ -363,7 +363,7 @@ class Test (unittest.TestCase) :
         
     def test_shelter6 (self) :
 
-        s = Shelter.objects.create(
+        s = Shelter.objects.using('unt_test_db').create(
             shelter_id = "129802",
             shelter_name = "Turtle Pond",
             shelter_address = "UT Austin",
@@ -385,7 +385,7 @@ class Test (unittest.TestCase) :
         
     def test_shelter7 (self) :
 
-        s = Shelter.objects.create(
+        s = Shelter.objects.using('unt_test_db').create(
             shelter_id = "TX192837",
             shelter_name = "Pet Shelter for Pets",
             shelter_address = "Shelter Barkway",
@@ -407,7 +407,7 @@ class Test (unittest.TestCase) :
         
     def test_shelter8 (self) :
 
-        s = Shelter.objects.create(
+        s = Shelter.objects.using('unt_test_db').create(
             shelter_id = "TEST104",
             shelter_name = "Test Shelter",
             shelter_address = "Infinity Cir.",
@@ -429,7 +429,7 @@ class Test (unittest.TestCase) :
         
     def test_shelter9 (self) :
 
-        s = Shelter.objects.create(
+        s = Shelter.objects.using('unt_test_db').create(
             shelter_id = "IDLENGHTTEST1234567890",
             shelter_name = "Really Long Name That Should Fit In The Database",
             shelter_address = "1234567890 Really Long Street Name Dr. St.",
@@ -451,7 +451,7 @@ class Test (unittest.TestCase) :
         
     def test_shelter10 (self) :
 
-        s = Shelter.objects.create(
+        s = Shelter.objects.using('unt_test_db').create(
             shelter_id = "ID54321",
             shelter_name = "Long Attribute Test",
             shelter_address = "1405 Database",
@@ -477,7 +477,7 @@ class Test (unittest.TestCase) :
 
     def test_pet1 (self) :
 
-        p = Pet.objects.create(
+        p = Pet.objects.using('unt_test_db').create(
             pet_id = "24306492",
             pet_name = "Amigo",
             pet_age = "Adult",
@@ -498,7 +498,7 @@ class Test (unittest.TestCase) :
         
     def test_pet2 (self) :
 
-        p = Pet.objects.create(
+        p = Pet.objects.using('unt_test_db').create(
             pet_id = "32151337",
             pet_name = "Tita",
             pet_age = "Senior",
@@ -519,7 +519,7 @@ class Test (unittest.TestCase) :
     
     def test_pet3 (self) :
 
-        p = Pet.objects.create(
+        p = Pet.objects.using('unt_test_db').create(
             pet_id = "18620461",
             pet_name = "Little John II",
             pet_age = "Baby",
@@ -540,7 +540,7 @@ class Test (unittest.TestCase) :
     
     def test_pet4 (self) :
 
-        p = Pet.objects.create(
+        p = Pet.objects.using('unt_test_db').create(
             pet_id = "",
             pet_name = "",
             pet_age = "",
@@ -561,7 +561,7 @@ class Test (unittest.TestCase) :
     
     def test_pet5 (self) :
 
-        p = Pet.objects.create(
+        p = Pet.objects.using('unt_test_db').create(
             pet_id = "72727272",
             pet_name = "Alexander",
             pet_age = "Adult",
@@ -582,7 +582,7 @@ class Test (unittest.TestCase) :
     
     def test_pet6 (self) :
 
-        p = Pet.objects.create(
+        p = Pet.objects.using('unt_test_db').create(
             pet_id = "626",
             pet_name = "Stitch",
             pet_age = "Young",
@@ -603,7 +603,7 @@ class Test (unittest.TestCase) :
     
     def test_pet7 (self) :
 
-        p = Pet.objects.create(
+        p = Pet.objects.using('unt_test_db').create(
             pet_id = "1234567890",
             pet_name = "Mr. Fluffy",
             pet_age = "Baby",
@@ -624,7 +624,7 @@ class Test (unittest.TestCase) :
     
     def test_pet8 (self) :
 
-        p = Pet.objects.create(
+        p = Pet.objects.using('unt_test_db').create(
             pet_id = "19283746",
             pet_name = "Pet McPetson",
             pet_age = "Senior",
@@ -645,7 +645,7 @@ class Test (unittest.TestCase) :
     
     def test_pet9 (self) :
 
-        p = Pet.objects.create(
+        p = Pet.objects.using('unt_test_db').create(
             pet_id = "Pet ID Length Test Is Here",
             pet_name = "Really Long and Complicated Name for A Pet",
             pet_age = "12034 Days Old",
@@ -666,7 +666,7 @@ class Test (unittest.TestCase) :
     
     def test_pet10 (self) :
 
-        p = Pet.objects.create(
+        p = Pet.objects.using('unt_test_db').create(
             pet_id = "101",
             pet_name = "More Length Tests",
             pet_age = "Baby",
