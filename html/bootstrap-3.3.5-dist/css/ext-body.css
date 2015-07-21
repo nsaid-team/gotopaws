@@ -94,6 +94,19 @@ h5 {
     font-weight: bold;
     color: rgb(0,0,0);
 }
+a {
+    color: white;
+    /*text-shadow: 0px 0px 2px #000, -1px -1px #337DAD, 1px 1px #337DAD;*/
+}
+
+a:visited {
+   color: #001E76;
+
+}
+
+a:hover{
+color: black;
+}
 
 .description{
     
