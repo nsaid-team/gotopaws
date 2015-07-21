@@ -47,20 +47,19 @@
             <div class="col-lg-12">
                  <h1 class="page-header">{{shelter.shelter_name}} <img  src="{{shelter.shelter_pic}}" alt="">
                   <ul>
-                      <li>{{shelter.shelter_address}} {{shelter.shelter_city}}, {{shelter.shelter_state}}</li>
-                      <li>{{shelter.shelter_phone}}</li>
-                      <li>{{shelter.shelter_hours}}</li>
-                      <li>{{shelter.shelter_email}}</li>
-                      <li><a href="{{shelter.shelter_url}}">{{shelter.shelter_url}}</a></li>
+                      {{shelter.shelter_address}} {{shelter.shelter_city}}, {{shelter.shelter_state}}
+                      {{shelter.shelter_phone}}
+                      {{shelter.shelter_hours}}
+                      {{shelter.shelter_email}}
+                      <a href="{{shelter.shelter_url}}">{{shelter.shelter_url}}</a>
                   </ul> 
               </h1>
             </div>
         </div>
 
-
         <div class="row">
-            <div class="col-md-3">
-                <div class="text-box">
+            <div class="col-lg-12">
+                <div>
                  <p>{{shelter.shelter_blurb}}</p>  
                  </div>     
              </div>
