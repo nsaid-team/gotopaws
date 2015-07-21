@@ -40,7 +40,7 @@ p {
 
 #footer {
     clear: both;
-    position: absolute;
+    position: fixed;
     height: 1em;
     bottom: 2%;
 }
