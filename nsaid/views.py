@@ -17,11 +17,11 @@ import random
 import subprocess
 from django.core.management import call_command
 from django.core.management import execute_from_command_line
+from . import tests
 
 
 def test(request):
-    html = "<html><body>Hey that somehow worked!</body></html>"
-    return HttpResponse(html)
+    return HttpResponse(tests.run_unit_tests())
 
 def home(request):
     template = loader.get_template('Home.html')
