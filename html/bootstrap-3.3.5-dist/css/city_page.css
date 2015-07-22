@@ -38,8 +38,9 @@ h3{
 }
 
 .heading h1{
-    font-size: 90px;
-    margin-left: 110px;
+    font-size: 36px;
+    font-size: 8.0vw;
+    margin-left: 10.0vw;
     /*text-shadow: 0px 0px 3px #fff, -1px -1px #fff, 1px 1px #fff;*/
 }
 
@@ -74,7 +75,7 @@ hr { display: block; height: 1px;
     padding-right: 60px;
     padding-left: 60px;
    
-    padding-top: 48px;
+    padding-top: .25vh;
     padding-bottom: 48px;
 }
 
