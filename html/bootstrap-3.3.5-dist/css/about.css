@@ -48,6 +48,14 @@ div.text-box{
 
 }
 
+.img-circle{
+     border-radius: 70%;
+    
+}
+.page-header{
+    font-size: 50px;
+}
+
 h3{
 	color:black;
 	font-weight:bold;
@@ -60,19 +68,16 @@ h3{
 	text-align:left;
 }
 
-.description{   
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    margin-left: 0px;
-    font-family: times, Times New Roman, times-roman, georgia, serif;
-    
-      color:white;
-      padding: 0px 0px 6px 0px;
-      font-size: 30px;
-      line-height: 44px;
-      letter-spacing: -2px;
-      font-weight: normal;
+.description{  
+  color:white;
+  font-size:20px;
+  text-align: left;
+  font-weight: bold;
+  text-shadow:rgba(255,255,255,.4) 3px 5px 15px,rgba(0,0,0,1) 0 5px 30px;
+}
+
+h1 small {
+    color:white;
 }
 
 footer {
