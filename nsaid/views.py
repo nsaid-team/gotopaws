@@ -21,8 +21,8 @@ from . import tests
 
 
 def test(request):
-    test_results = tests.Test
-    return HttpResponse(test_results)
+    test_results = tests.run_unit_tests()
+    return HttpResponse(test_results['results'])
 
 def home(request):
     template = loader.get_template('Home.html')
@@ -122,34 +122,6 @@ def navbar(request):
     nav = loader.get_template('bootstrap-3.3.5-dist/templates/Navbar.html')
     return nav.render(c)
 
-def unit_test(request):
-    import os, sys
-    from django.conf import settings
-
-    DIRNAME = os.path.dirname(__file__)
-    settings.configure(DEBUG = True,
-                       DATABASE_ENGINE = 'mysql.connector.django',
-                       DATABASE_NAME = os.path.join(DIRNAME, 'database.db'),
-                       INSTALLED_APPS = ('django.contrib.auth',
-                                         'django.contrib.contenttypes',
-                                         'django.contrib.sessions',
-                                         'django.contrib.admin',
-                                         'nsaid',
-                                         'nsaid.tests',))
-
-    from django.test.simple import run_tests
-
-    #failures = run_tests(['nsaid',], verbosity=1)
-    #if failures:
-    #    test = "FAIL" + str(failures)
-    #else :
-    #f = open('workfile', 'w')
-    #test = f.read() 
-
-    test = tests.run_unit_tests()
-    return HttpResponse("sanity check")
-    #return HttpResponse(test['results'])
-
 @api_view(['GET'])
 def pet_list(request):
     if request.method == 'GET':
@@ -229,19 +201,15 @@ def search (request):
             "query": {
                 "bool": {
                     "should": [
-                        { "match": { "title":           q }},
-                        { "match": { "subtitle":        q }},
-                        { "match": { "shelters_text":   q }},
-                        { "match": { "pets_text":       q }},
-                        { "match": { "vets_text":       q }},
+                        { "match": { "title":  q }},
+                        { "match": { "text":   q }},
                     ]
                 }
             },
             "highlight": {
                 "fields" : {
-                    'title': {},
-                    'subtitle': {},
-                    "*_text" : {}
+                    "title": {},
+                    "text" : {},
                 }
             }
         }
@@ -254,35 +222,18 @@ def search (request):
         if hit["_source"]['title'] not in titles_list :
             titles_list.append(hit["_source"]['title'])  
             results['url'] = hit["_source"]['url']
-            if 'shelters_text' in hit['highlight']:
-                results['shelters_text'] = hit['highlight']['shelters_text'][0]
-                results['shelters_text'] = results['shelters_text'].replace("<em>", "<strong><em>")
-                results['shelters_text'] = results['shelters_text'].replace("</em>", "</em></strong>")
+            if 'text' in hit['highlight']:
+                results['text'] = hit['highlight']['text'][0]
+                results['text'] = results['text'].replace("<em>", "<strong><em>")
+                results['text'] = results['text'].replace("</em>", "</em></strong>")
             else :
-                results['shelters_text'] = None
-            if 'pets_text' in hit['highlight'] :
-                results['pets_text'] = hit['highlight']['pets_text'][0]
-                results['pets_text'] = results['pets_text'].replace("<em>", "<strong><em>")
-                results['pets_text'] = results['pets_text'].replace("</em>", "</em></strong>")
-            else :
-                results['pets_text'] = None
-            if 'vets_text' in hit['highlight'] :
-                results['vets_text'] = hit['highlight']['vets_text'][0]
-                results['vets_text'] = results['vets_text'].replace("<em>", "<strong><em>")
-                results['vets_text'] = results['vets_text'].replace("</em>", "</em></strong>")
-            else :
-                results['vets_text'] = None
+                results['text'] = None
             results['title'] = hit["_source"]['title']
             if 'title' in hit['highlight']:
                 results['title'] = hit['highlight']['title'][0]
                 results['title'] = results['title'].replace("<em>", "<strong><em>")
                 results['title'] = results['title'].replace("</em>", "</em></strong>")
-            results['subtitle'] = hit["_source"]['subtitle']
-            if 'subtitle' in hit['highlight']:
-                results['subtitle'] = hit['highlight']['subtitle'][0]
-                results['subtitle'] = results['subtitle'].replace("<em>", "<strong><em>")
-                results['subtitle'] = results['subtitle'].replace("</em>", "</em></strong>")
-            results_list.append({'title':results['title'], 'subtitle':results['subtitle'], 'vets_text':results['vets_text'], 'pets_text': results['pets_text'], 'shelters_text': results['shelters_text']})
+            results_list.append({'title':results['title'], 'text':results['text']})
     context = {"results_list": results_list} 
     #print({context})
     return render_to_response('search/search.html', context)

@@ -23,7 +23,6 @@ urlpatterns = [
     url(r'^about$', views.about),
     url(r'^extapi$', views.external_api),
     url(r'^search/$', views.search, name='search'),
-    url(r'^unit_test$', views.unit_test),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.home),
     url(r'^home$', views.home),
@@ -31,12 +30,11 @@ urlpatterns = [
     url(r'^shelters$', views.shelters),
     url(r'^cities$', views.cities),
     url(r'^id([\d]+)$', views.pet_template),
+    url(r'^test/$', views.test),
     url(r'^([A-Z][A-Z][\d]+)$', views.shelter_template),
     url(r'^([a-z_]+)$', views.city_template),
     # RESTful API
     url(r'^api/pets/$', views.pet_list),
     url(r'^api/shelters/$', views.shelter_list),
     url(r'^api/cities/$', views.city_list),
-    
-    url(r'^test/$', views.test),
 ]

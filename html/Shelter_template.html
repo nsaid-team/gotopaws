@@ -37,113 +37,76 @@
     <body>
 
     <div ng-controller = "templateController">        
-    <nav-bar></nav-bar>
+        <nav-bar></nav-bar>
     </div>
-     <!-- Navigation -->
-     <!-- <nav class="navbar navbar-inverse" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="home">Home</a></li>
-                <li ><a href="pets">Pets</a></li>
-                <li  class="active"><a href="shelters">Shelters</a></li>
-                <li ><a href="cities">Cities</a></li>
-                <li ><a href="extapi">External API</a></li>
-                <li><a href="about">About</a></li>
-            </ul>
-            <div class="col-sm-3 col-md-3 pull-right">
-                <form class="navbar-form" role="search" action="/search/">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search" name="q">
-                        <div class="input-group-btn">
-                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                        </div>
-                    </div>
-                </form>
-            </div>        
-        </div>
-    </nav> -->
 
     <!-- Page Content -->
     <div class="container">
 
         <div class="row">
-
-            <div class="col-md-3">
-
-                <p class="lead">{{shelter.shelter_name}}</p>
-
-                <h4>{{shelter.shelter_address}} {{shelter.shelter_city}}, {{shelter.shelter_state}}</h4>
-                    <h4>{{shelter.shelter_phone}}</h4>
-                        <h4>{{shelter.shelter_hours}}</h4>
-                            <h4>{{shelter.shelter_email}}</h4>
-                                <h4><a href="{{shelter.shelter_url}}">{{shelter.shelter_url}}</a></h4>
-
-                                <p>{{shelter.shelter_blurb}}
-                                </p>
-                                <div class="col-md-4">
-                            <img  src="{{shelter.shelter_pic}}" alt="">
-                                </div>
-                                
-                            </div>
-                            <div class="row">
-                                {% for pet in pet_list %}
-                             <div class="col-sm-4 col-lg-4 col-md-4">
-                                <div class="thumbnail">
-                                    <img class = "img-responsive" src="{{pet.pet_pic_url}}" alt="">
-                                    <div class="caption">
-                                        <h4 class="pull-right">
-                                        <h4><a href="{{pet.pet_url}}">{{pet.pet_name}}</a>
-                                        </h4>
-                                        <p>
-                                         <p><b>Age:</b> {{pet.pet_age}}</p>              
-                                         <p><b>Gender:</b> {{pet.pet_sex}}</p>                
-                                         <p><b>Size:</b> {{pet.pet_size}}</p>                 
-                                         <p><b>Breed:</b> {{pet.pet_breed}} </p>   
-                                         <a href="{{pet.pet_shelter}}">            <p><b>Shelter:</b> {{pet.pet_shelter_name}}</p></a>
-                                     </p>
-                                 </div>
-
-                             </div>
-                         </div>
-
-
-                         
-                        {% endfor %}
-                    </div>
-
-
-
-
-
-
-
-
-                </div> 
-
+            <div class="col-lg-12">
+                 <h1 class="page-header">{{shelter.shelter_name}}  </h1>
             </div>
-
         </div>
 
-    </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <img  src="{{shelter.shelter_pic}}" alt="" class="img-logo">
+                 <h4 class="page-contact-info">{{shelter.shelter_address}} <a href="{{shelter.shelter_city_urlized}}">{{shelter.shelter_city}}</a>, {{shelter.shelter_state}}</h4>
+                 <h4 class="page-contact-info">{{shelter.shelter_phone}}</h4>
+                 <h4 class="page-contact-info">{{shelter.shelter_hours}}</h4>
+                 <h4 class="page-contact-info">{{shelter.shelter_email}}</h4>
+                 <h4 class="page-contact-info"><a href="{{shelter.shelter_url}}">{{shelter.shelter_url}}</a></h4>   
+                 <hr>  
+             </div>
+        </div>
+
+         <div class="row">
+            <div class="col-lg-12">
+                 <p class="description">{{shelter.shelter_blurb}}</p> 
+                 <hr>
+            </div>
+         </div>
+
+         <div class="row">
+             {% for pet in pet_list %}
+                 <div class="col-sm-4 col-lg-4 col-md-4">
+                     <div class="thumbnail">
+                        <img class = "img-pet" src="{{pet.pet_pic_large}}" alt="">
+                         <div class="caption">
+                             <h4 class="pull-right">
+                             <h4 class="pet-name"><a href="{{pet.pet_url}}">{{pet.pet_name}}</a></h4>
+                             <p>
+                                 <p><b>Age:</b> {{pet.pet_age}}</p>              
+                                 <p><b>Gender:</b> {{pet.pet_sex}}</p>                
+                                 <p><b>Size:</b> {{pet.pet_size}}</p>                 
+                                 <p><b>Breed:</b> {{pet.pet_breed}} </p>   
+                                 <p><b>Shelter:</b> <a href="{{pet.pet_shelter}}"> {{pet.pet_shelter_name}}</a></p>
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+
+             {% endfor %}
+             
+         </div>
+         <hr>
+   </div>
+
     <!-- /.container -->
+    <div class="row">
+    <div class="col-lg-12">
 
-    <div class="container">
-
-        <iframe
+    <iframe
   width="600"
   height="450"
   frameborder="0" style="border:0"
   src='https://www.google.com/maps/embed/v1/search?key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg&q={{shelter.shelter_name.split|join:"+"}}+{{shelter.shelter_city.split|join:"+"}}' allowfullscreen>
 </iframe>
-        <hr>
+</div>
+
+
+     <hr>
 
         <!-- Footer -->
         <footer>

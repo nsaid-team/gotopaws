@@ -106,7 +106,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Pets</h1>
-                    <p> Search for and find your perfect companion. Rescue a pet and give them a forever home.</p>
+                    <p class="description"> Search for and find your perfect companion. Rescue a pet and give them a forever home.</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -134,7 +134,7 @@
                                 <td>{{pet.pet_sex}}</td>
                                 <td>{{pet.pet_size}}</td>
                                 <td>{{pet.pet_breed}}</td>
-                                <td><a href="{{pet.pet_shelter_url}}">{{pet.pet_shelter}}</a></td>
+                                <td><a href="{{pet.pet_shelter_url}}">{{pet.pet_shelter_name}}</a></td>
                                 <td><a href="{{pet.pet_city_url}}">{{pet.pet_city}}</a></td>
                             </tr>
                         {% endfor %}

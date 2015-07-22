@@ -42,7 +42,10 @@ p {
     clear: both;
     position: relative;
     height: 1em;
-    bottom: 4%;
+    bottom: 0px;
+    left:0px;
+    width:100%;
+    margin-left: 5%;
 }
 
 h1,
@@ -91,6 +94,23 @@ h5 {
     margin-left: 0.7em;
     font-weight: bold;
     color: rgb(0,0,0);
+}
+.description{
+    
+   
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+    
+      color:white;
+      padding: 0px 0px 6px 0px;
+      font-size: 35px;
+      line-height: 44px;
+      letter-spacing: -2px;
+      font-weight: normal;
+    text-shadow:rgba(0,0,0,.9) 3px 7px 5px,rgba(255,255,255,.6) 0 -4px 30px;
 }
 
 .text-box{
