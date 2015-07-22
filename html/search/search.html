@@ -72,28 +72,29 @@
             </div>        
         </div>
     </nav> -->
-
+    <div class="container">
     <!-- Introduction Row -->
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Search</h1>
             </div>
         </div>
-    <div id="text-box">
-        {% if not results_list %}
-            <h3><i>No Results Found</i></h3>
-            <p></p>
-            <p></p>
-        {% endif %}
+        <div id="text-box">
+            {% if not results_list %}
+                <h3><i>No Results Found</i></h3>
+                <p></p>
+                <p></p>
+            {% endif %}
 
-        {% for results in results_list %} 
-            <tr>
-                <td><h3><a href=http://nsaid.me/{{results.url}}>{{results.title|safe}}</a><br></h3>
-                    {% if results.text %} 
-                        <p>...{{results.text|safe}}...<br></p>
-                    {% endif %}
-            </tr>
-        {% endfor %}</tr>
+            {% for results in results_list %} 
+                <tr>
+                    <td><h3><a href=http://nsaid.me/{{results.url}}>{{results.title|safe}}</a><br></h3>
+                        {% if results.text %} 
+                            <p>...{{results.text|safe}}...<br></p>
+                        {% endif %}
+                </tr>
+            {% endfor %}</tr>
+        </div>    
     </div>
 </body>
 </div>
