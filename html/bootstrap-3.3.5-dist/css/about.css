@@ -80,10 +80,17 @@ h1 small {
     color:white;
 }
 
-footer {
-    margin: 50px 0;
+footer
+{
+		clear:both;
+		position: relative;
+    color:black;
+    margin-left: 10%;
+		height: 1em;
+    bottom:2%;
+   
 }
 
 a {
-	color: white;
+	color: #1E5893;
 };
