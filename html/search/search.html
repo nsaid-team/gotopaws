@@ -92,7 +92,7 @@
                 {% endfor %}</tr>
             </div>
          </div>    
-        </div>
+    </div>
     <div id="text-box">
         {% if not results_list %}
             <h3><i>No Results Found</i></h3>
@@ -103,20 +103,12 @@
         {% for results in results_list %} 
             <tr>
                 <td><h3><a href=../{{results.url}}>{{results.title|safe}}</a><br></h3>
-                    <h4>{{results.subtitle|safe}}<br></h4>
                     {% if results.shelters_text %} 
                         <p>...{{results.shelters_text|safe}}...<br></p>
-                    {% endif %}
-                    {% if results.pets_text %} 
-                        <p>...{{results.pets_text|safe}}...<br></p>
-                    {% endif %}
-                    {% if results.vets_text %}
-                        <p>...{{results.vets_text|safe}}...<br></p></td>
                     {% endif %}
             </tr>
         {% endfor %}</tr>
     </div>
->>>>>>> origin/dev-branch
 </body>
 </div>
 </div>
