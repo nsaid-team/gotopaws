@@ -699,7 +699,7 @@ class Test (unittest.TestCase) :
         self.assertEqual(response.status_code,404)
 
     def test_api_city_2 (self) :
-        response = requests.get('http://gotopaws.me/cities')
+        response = requests.get('http://gotopaws.me/cities/abcdefg')
         self.assertEqual(response.status_code,404)
     
     def test_api_city_3 (self) :
