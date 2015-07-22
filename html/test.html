@@ -1,40 +1,267 @@
-<div class="datagrid"><table>
+<!DOCTYPE html>
+<html lang="en">
 
-<thead>
-    <tr>
-        <th>header</th>
-        <th>header</th>
-        <th>header</th>
-        <th>header</th>
-    </tr>
-</thead>
-<tfoot>
-    <tr>
-        <td colspan="4">
-            <div id="paging">
-                <ul>
-                    <li><a href="#"><span>Previous</span></a></li>
-                    <li><a href="#" class="active"><span>1</span></a></li>
-                    <li><a href="#"><span>2</span></a></li>
-                    <li><a href="#"><span>3</span></a></li>
-                    <li><a href="#"><span>4</span></a></li>
-                    <li><a href="#"><span>5</span></a></li>
-                    <li><a href="#"><span>Next</span></a></li>
+<head>
+    <meta charset='UTF-8'>
+
+    <title>Responsive Table</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       {% load static from staticfiles %}
+    <script type="text/javascript" src="{% static "js/angular.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/sortable.js" %}"></script>
+    <script type="text/javascript" src="{% static  "js/cities.js" %}"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="bootstrap-3.3.5-dist/css/table.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/city-body.css" rel="stylesheet">
+    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/style-table.js"></script>
+
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/style.css">
+
+    <!--[if !IE]><!-->
+    <style>
+
+    /*
+    Max width before this PARTICULAR table gets nasty
+    This query will take effect for any screen smaller than 760px
+    and also iPads specifically.
+    */
+    @media
+    only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+        /* Force table to not be like tables anymore */
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tr { border: 1px solid #ccc; }
+
+        td {
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 50%;
+        }
+
+        td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        /*
+        Label the data
+        */
+        td:nth-of-type(1):before { content: "Name:"; }
+        td:nth-of-type(2):before { content: "State:"; }
+        td:nth-of-type(3):before { content: "Country:"; }
+        td:nth-of-type(4):before { content: "Vet:"; }
+        td:nth-of-type(5):before { content: "Park:"; }
+        td:nth-of-type(6):before { content: "Groomer:"; }
+    }
+
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+        body {
+            padding: 0;
+            margin: 0;
+            width: 320px; }
+        }
+
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        body {
+            width: 495px;
+        }
+    }
+
+    </style>
+    <!--<![endif]-->
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="home">Home</a></li>
+                <li ><a href="pets">Pets</a></li>
+                <li ><a href="shelters">Shelters</a></li>
+                <li  class="active"><a href="cities">Cities</a></li>
+                <li ><a href="extapi">External API</a></li>
+                <li><a href="about">About</a></li>
+            </ul>
+            <div class="col-sm-3 col-md-3 pull-right">
+                <form class="navbar-form" role="search" action="/search/">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>        
+        </div>
+    </nav>
+
+    <div id="page-wrap">
+
+    <h1>Cities</h1>
+    <br>
+
+    <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0" >
+        <thead>
+        <tr>
+            <th class="unsortable" >Picture: </th>
+            <th>Name:</th>
+            <th>State: </th>
+            <th>Country:</th>
+            <th>Vet:</th>
+            <th>Park:</th>
+            <th>Groomer:</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for city in cities_list %} 
+            <tr >
+                <td><img  class="img-responsive portfolio-item" src="{{city.city_pic}}" alt="city" height="60" width="60"></td>
+                <td><a href={{city.city_url}} id="nav_font">{{city.city_name}}</a></td>
+                <td>{{city.city_state}}</td>
+                <td>{{city.city_country}}</td>
+                <td><a href="{{city.city_vet_url}}"> <img  class="img-responsive portfolio-item" src="{{city.city_vet_pic}}" alt="cities"  height="42" width="42"> {{city.city_name}} vet</a></td>
+                <td><a href="{{city.city_park_url}}"> <img  class="img-responsive portfolio-item"src="{{city.city_park_pic}}" alt="cities"  height="42" width="42">{{city.city_name}} park </a></td>
+                <td><a href="{{city.city_groomer_url}}"> <img  class="img-responsive portfolio-item" src="{{city.city_groomer_pic}}" alt="cities"  height="42" width="42">{{city.city_name}} groomer </a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+            <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
                 </ul>
             </div>
-    </tr>
-</tfoot>
+        </div>
 
-<tbody>
-    <tr>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-    </tr>
-<tr class="alt"><td>data</td><td>data</td><td>data</td><td>data</td></tr>
-<tr><td>data</td><td>data</td><td>data</td><td>data</td></tr>
-<tr class="alt"><td>data</td><td>data</td><td>data</td><td>data</td></tr>
-<tr><td>data</td><td>data</td><td>data</td><td>data</td></tr>
-</tbody>
-</table></div>
+        <hr>
+
+
+    </div>
+
+ <style type="text/css" style="display: none !important;">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    #demo-top-bar {
+        text-align: left;
+        background: #222;
+        position: relative;
+        zoom: 1;
+        width: 100% !important;
+        z-index: 6000;
+        padding: 20px 0 20px;
+    }
+    #demo-bar-inside {
+        width: 960px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+    }
+    #demo-bar-buttons {
+        padding-top: 10px;
+        float: right;
+    }
+    #demo-bar-buttons a {
+        font-size: 12px;
+        margin-left: 20px;
+        color: white;
+        margin: 2px 0;
+        text-decoration: none;
+        font: 14px "Lucida Grande", Sans-Serif !important;
+    }
+    #demo-bar-buttons a:hover,
+    #demo-bar-buttons a:focus {
+        text-decoration: underline;
+    }
+    #demo-bar-badge {
+        display: inline-block;
+        width: 302px;
+        padding: 0 !important;
+        margin: 0 !important;
+        background-color: transparent !important;
+    }
+    #demo-bar-badge a {
+        display: block;
+        width: 100%;
+        height: 38px;
+        border-radius: 0;
+        bottom: auto;
+        margin: 0;
+        background: url(/images/examples-logo.png) no-repeat;
+        background-size: 100%;
+        overflow: hidden;
+        text-indent: -9999px;
+    }
+    #demo-bar-badge:before, #demo-bar-badge:after {
+        display: none !important;
+    }
+</style>
+</body>
+
+</html>

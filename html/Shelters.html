@@ -1,41 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" ng-app='GoToPaws'>
 
 <head>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="/ie9.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+    <![endif]-->
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--3 Col Portfolio - Start Bootstrap Template -->
-    <title> GoToPaws </title>
-    {% load static from staticfiles %}
-    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/angular.min.js"></script>
-    <script type="text/javascript" src="{% static "js/sortable.js" %}"></script>
-    <script type="text/javascript" src="{% static  "js/shelters.js" %}"></script>
+    
+    <title> GoToPaws Shelters </title>
+
+    <!--Tab Logo -->
+    <link rel="icon" type="image/png" href="bootstrap-3.3.5-dist/img/All/favicon-32x32.png" sizes="32x32" />
+
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="bootstrap-3.3.5-dist/css/table.css" rel="stylesheet">
-        <link href="bootstrap-3.3.5-dist/css/shelter-body.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/shelter-body.css" rel="stylesheet">
 
-     <script type="text/javascript" src="bootstrap-3.3.5-dist/js/style-table.js"></script>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Custom Fonts -->
+    <link href="bootstrap-3.3.5-dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+    {% load static from staticfiles %}
+    <script type="text/javascript" src='{% static "js/angular.min.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/templates.js" %}'></script>
+      
+    <!-- jQuery -->
+    <script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+      
+    <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.js"></script>
+    <script src="https://cdn.datatables.net/responsive/1.0.6/js/dataTables.responsive.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/1.0.6/css/dataTables.responsive.css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" language="javascript" class="init">
+        $(document).ready(function() {
+            $('#table_id').DataTable( {
+                responsive: true
+            } );
+        } );
+    </script>
 
 </head>
 
-
+<div id="container">
+<div id="content">
 <body>
- <!-- Navigation -->
-    <nav class="navbar navbar-inverse" role="navigation">
+
+    <div ng-controller = "templateController">        
+    <nav-bar></nav-bar>
+    </div>
+    <!-- <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -46,14 +78,15 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="Home.html">Home</a></li>
-                <li ><a href="Pets.html">Pets</a></li>
-                <li class="active"><a href="Shelters.html">Shelters</a></li>
-                <li  ><a href="Cities.html">Cities</a></li>
-                <li><a href="About.html">About</a></li>
+                <li><a href="home"><strong>Home</strong></a></li>
+                <li><a href="pets"><strong>Pets</strong></a></li>
+                <li class="active"><a href="shelters"><strong>Shelters</strong></a></li>
+                <li ><a href="cities"><strong>Cities</strong></a></li>
+                <li ><a href="extapi"><strong>External API</strong></a></li>
+                <li><a href="about"><strong>About</strong></a></li>
             </ul>
             <div class="col-sm-3 col-md-3 pull-right">
-                <form class="navbar-form" role="search">
+                <form class="navbar-form" role="search" action="/search/">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search" name="q">
                         <div class="input-group-btn">
@@ -63,16 +96,15 @@
                 </form>
             </div>        
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Page Content -->
     <div class="container">
         <!-- Portfolio Item Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Visit a shelter
-                   <!-- <small>Item Subheading</small> -->
-                </h1>
+                <h1 class="page-header">Visit a shelter</h1>
+                <p class="description">About Shelters: Looking to adopt? Visit or get in contact with a shelter in your area.</p>
             </div>
         </div>
         <!-- /.row -->
@@ -81,128 +113,66 @@
         <div class="row">
 
             <div class="col-md-8">
-                  <img class="img-responsive" src="bootstrap-3.3.5-dist/img/Shelters/ShelterBG.JPG" alt="">
+                  <!--img class="img-responsive" src="bootstrap-3.3.5-dist/img/Shelters/ShelterBG.JPG" alt=""-->
             </div>
 
-            <div class="col-md-4">
+            <!--div class="col-md-4">
                 <div class="text-box">
-                <h3>About Shelters:</h3>
-                <p>Looking to adopt? Check the shelters around your area.</h3>
-                <ul>
-                    <li>Shelters</li>
-                    <li>Location</li>
-                    <li>Contact Information</li>
-                </ul>
+                <h5>About Shelters:</h5>
+                <p class="description">Looking to adopt? Visit or get in contact with a shelter in your area.</p>
                 </div>
-            </div>
+            </div-->
 
         </div>
         <br>
         <!-- /.row -->
-
         <!-- Related Projects Row -->
         <div class="row">
 
-
             <div class="col-lg-12">
-                <h3 class="page-header">Find a shelter:</h3>
+                <!--h3 class="page-header">Find a shelter:</h3-->
             </div>
 
                     <!--Table for Shelters -->
-
-                <table align="center" class="sortable" id="anyid" cellpadding="0" cellspacing="0" >
-                  
-
-                    <!-- [[Shelter.set_dict(dict)]]   ?????????  -->
-                    <br>
-                    
+                <table id="table_id" class="display responsive no-wrap" width="100%">
                     <thead>  
                       <tr>
-                            <th class="unsortable" >Logo:
-                            <th>Name:</th>
-                            <th>City: </th>
-                            <th>State:</th>
-                            <th>Phone:</th>
-                            <th>E-mail:</th>
+                            <th>Logo  </th>
+                            <th>Name  </th>
+                            <th>City  </th>
+                            <th>State </th>
+                            <th>Phone </th>
+                            <th>E-mail</th>
                       </tr>
                     </thead>
                     <tbody>
                      {% for shelter in shelters_list %} 
                         <tr >
-                            <td><img class="img-responsive portfolio-item" src={{shelter.shelter_pic}} alt="shelters"  height="42" width="42"></td>
-                            <!--td><a href="/Shelters/{{shelter.shelter_id}}" id="nav_font">{{shelter.shelter_name}}</a></td-->
-                            <td><a href={{shelter.shelter_url}} id="nav_font">{{shelter.shelter_name}}</a></td>
+                            <td align="center"><img class="img-responsive portfolio-item" src={{shelter.shelter_pic}} alt="shelters"  height="42" width="42" align="middle"></td>
+                            <td><a href= "{{shelter.shelter_url}}" id="nav_font">{{shelter.shelter_name}}</a></td>
                             <td><a href="{{shelter.shelter_city_url}}">{{shelter.shelter_city}}</a></td>
                             <td>{{shelter.shelter_state}}</td>
                             <td>{{shelter.shelter_phone}}</td>
                             <td>{{shelter.shelter_email}}</td>
                         </tr>
-                    {% endfor %}</tr>
-                        
+                    {% endfor %}</tr>       
                     </tbody>
-                </table>         
-
-       
-        <!-- /.row -->
-
-        <hr>
-
-
-
-        
-        <!-- Pagination -->
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <ul class="pagination">
-                    <li>
-                        <a href="#">&laquo;</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                    <li>
-                        <a href="#">&raquo;</a>
-                    </li>
-                </ul>
+                </table> 
+                <hr>       
             </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; NSAID 2015</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
-
     </div>
-    <!-- /.container -->
-
-<!-- jQuery -->
-<script src="bootstrap-3.3.5-dist/js/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 
 </body>
-
-
-
+</div>
+</div>
+<!-- Footer -->
+<div id="footer">
+<footer>
+    <div class="row">
+        <div class="col-lg-12">
+            <small>Copyright &copy; NSAID 2015</small>
+        </div>
+    </div>
+</footer>
+</div>
 </html>

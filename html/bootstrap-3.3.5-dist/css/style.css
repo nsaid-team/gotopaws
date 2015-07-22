@@ -1,0 +1,42 @@
+* { 
+	margin: 0; 
+	padding: 0;
+}
+body { 
+	font: 14px/1.4 Georgia, Serif; 
+}
+#page-wrap {
+	margin: 50px;
+}
+p {
+	margin: 20px 0; 
+}
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+	width: 100%; 
+	border-collapse: collapse; 
+}
+
+tbody{
+	background: #E1EEf4 ; 
+	color: #00557F ; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #bcd9e1; 
+}
+th { 
+	background: #66a9bd;
+	color:#FFFFFF ; 
+	border-left: 0px solid #0070A8
+	font-weight: bold; 
+}
+
+td, th { 
+	padding: 6px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="GoToPaws">
 
 <head>
 
@@ -10,15 +10,20 @@
     <meta name="author" content="">
 
     <!--Round About - Start Bootstrap Template-->
-    <title>GoToPaws</title>
+    <title>GoToPaws About</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="bootstrap-3.3.5-dist/css/round-about.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/about.css" rel="stylesheet">
     <link href="./bootstrap-3.3.5-dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="bootstrap-3.3.5-dist/img/All/favicon-32x32.png" sizes="32x32" />
 
+
+    {% load static from staticfiles %}
+    <script type="text/javascript" src='{% static "js/angular.min.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/templates.js" %}'></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -29,8 +34,11 @@
 </head>
 
 <body>
+    <div ng-controller = "templateController">        
+    <nav-bar></nav-bar>
+    </div>
 
-    <nav class="navbar navbar-inverse" role="navigation">
+  <!--   <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -41,14 +49,15 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Pets.html">Pets</a></li>
-                <li><a href="Shelters.html">Shelters</a></li>
-                <li ><a href="Cities.html">Cities</a></li>
-                <li  class="active"><a href="About.html">About</a></li>
+                <li><a href="home">Home</a></li>
+                <li><a href="pets">Pets</a></li>
+                <li><a href="shelters">Shelters</a></li>
+                <li ><a href="cities">Cities</a></li>
+                <li ><a href="extapi">External API</a></li>
+                <li  class="active"><a href="about">About</a></li>
             </ul>
             <div class="col-sm-3 col-md-3 pull-right">
-                <form class="navbar-form" role="search">
+                <form class="navbar-form" role="search" action="/search/">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search" name="q">
                         <div class="input-group-btn">
@@ -56,10 +65,10 @@
                         </div>
                     </div>
                 </form>
-            </div>        
+            </div>             
         </div>
     </nav>
-
+ -->
 
 
 
@@ -73,7 +82,7 @@
                 <h1 class="page-header">About Us
                     <small>N.S.A.I.D!</small>
                 </h1>
-                <p align="center">Our aim is to provide easy access to information about animal shelters and other pet related services. We target 
+                <p class="description" align="center">Our aim is to provide easy access to information about animal shelters and other pet related services. We target 
 				  anyone interested on adopting or keeping up with their pet's care. </p>
             </div>
         </div>
@@ -88,11 +97,13 @@
 						<div class="clearfix"></div>
 						<div  class="text-box">
 						     <h3 class="section-heading">Sam Morris <br>Group Leader for Phase 1</h3>
-                			 <li class="member-info"> Bio: Like the rest of the team, Sam is a rank amateur when it comes to web development and hasn't slept in a week. </li>
-                			 <li class="member-info"> Major Responsibilities: Project management, data collection, Apiary api documentation, tech report </li>
-               	 			 <li class="member-info"> No. of Commits: 58</li>
-                			 <li class="member-info"> No. of Issues: 13</li>
-               				 <li class="member-info"> No. of Unit Tests: 8</li>
+                             <ul>
+                			 <li class="member-info"><b>Bio:</b> Like the rest of the team, Sam is a rank amateur when it comes to web development and hasn't slept in a week. </li>
+                			 <li class="member-info"> <b>Major Responsibilities: </b>Project management, data collection, Apiary api documentation, tech report </li>
+               	 			 <li class="member-info"> <b>No. of Commits:</b> 71</li>
+                			 <li class="member-info"> <b>No. of Issues:</b> 21</li>
+               				 <li class="member-info"> <b>No. of Unit Tests:</b> 8</li>
+                            </ul>
 					   </div>
 					   </div>
 					<div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -112,12 +123,14 @@
 						<hr class="section-heading-spacer">
 						<div class="clearfix"></div>
 						<div  class="text-box">
-						  <h3 class="section-heading">Alexander Adams </h3>
-                	<li class="member-info"> Bio: Alex is a CS student, has long hair, and is our de facto django expert. </li>
-                	<li class="member-info"> Major Responsibilities: VM management, DNS, django installation and management, tech report</li>
-                	<li class="member-info"> No. of Commits: 44</li>
-               		<li class="member-info"> No. of Issues: 5</li>
-                	<li class="member-info"> No. of Unit Tests: 8</li>
+						  <h3 class="section-heading">Alexander Adams  <br>Group Leader for Phase 2</h3>
+                          <ul>
+                        	<li class="member-info"> <b>Bio:</b> Alex is a CS student, has long hair, and is our de facto django expert. </li>
+                        	<li class="member-info"> <b>Major Responsibilities:</b> VM management, DNS, django installation and management, tech report</li>
+                        	<li class="member-info"> <b>No. of Commits:</b> 72</li>
+                       		<li class="member-info"> <b>No. of Issues:</b> 5</li>
+                        	<li class="member-info"> <b>No. of Unit Tests:</b> 8</li>
+                        </ul>
 					</div>
 					</div>
 					<div class="col-lg-5 col-sm-pull-6 col-sm-6">
@@ -135,12 +148,14 @@
 						<hr class="section-heading-spacer">
 						<div class="clearfix"></div>
 						<div  class="text-box">
-						     <h2 class="section-heading">Nelma Perera </h2>
-                 <li class="member-info"> Bio: Nelma is a major night owl.</li>
-                <li class="member-info"> Major Responsibilities: Travis setup, dependency untangling, unit testing, django, UML data modeling</li>
-                <li class="member-info"> No. of Commits: 145</li>
-                <li class="member-info"> No. of Issues: 6</li>
-                <li class="member-info"> No. of Unit Tests: 8</li>
+						     <h3 class="section-heading">Nelma Perera </h3>
+                             <ul>
+                                 <li class="member-info"> <b>Bio:</b> Nelma is a major night owl.</li>
+                                <li class="member-info"> <b>Major Responsibilities: </b>Travis setup, dependency untangling, unit testing, django, UML data modeling</li>
+                                <li class="member-info"> <b>No. of Commits: </b>495</li>
+                                <li class="member-info"> <b>No. of Issues:</b> 7</li>
+                                <li class="member-info"> <b>No. of Unit Tests:</b> 8</li>
+                            </ul>
 					</div>
 					</div>
 					<div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -160,12 +175,14 @@
 						<hr class="section-heading-spacer">
 						<div class="clearfix"></div>
 						<div  class="text-box">
-						  <h2 class="section-heading">Ian Smith</h2>
-                	 <li class="member-info"> Bio: Ian is a CS student, used to have long hair, and is one of our two on the Frontend team.</li>
-                <li class="member-info"> Major Responsibilities: Bootstrap, angular, html</li>
-                <li class="member-info"> No. of Commits: 94</li>
-                <li class="member-info"> No. of Issues: 9</li>
-                <li class="member-info"> No. of Unit Tests: 8</li>
+						  <h3 class="section-heading">Ian Smith</h3>
+                          <ul>
+                        	 <li class="member-info"> <b>Bio: </b>Ian is a CS student, used to have long hair, and is one of our two on the Frontend team.</li>
+                            <li class="member-info"> <b>Major Responsibilities:</b> Bootstrap, angular, html</li>
+                            <li class="member-info"> <b>No. of Commits:</b> 291</li>
+                            <li class="member-info"> <b>No. of Issues:</b> 8</li>
+                            <li class="member-info"> <b>No. of Unit Tests:</b> 8</li>
+                        </ul>
 					</div>
 					</div>
 					<div class="col-lg-5 col-sm-pull-6 col-sm-6">
@@ -183,12 +200,14 @@
 						<hr class="section-heading-spacer">
 						<div class="clearfix"></div>
 						<div  class="text-box">
-						     <h2 class="section-heading">Daniela Reyes </h2>
-                	 <li class="member-info"> Bio: Daniela, hailing from El Paso, is another of our de facto angular and html experts on the Frontend team.</li>
-                <li class="member-info"> Major Responsibilities: Bootstrap, angular, html, tech report</li>
-                <li class="member-info"> No. of Commits: 98</li>
-                <li class="member-info"> No. of Issues: 11</li>
-                <li class="member-info"> No. of Unit Tests: 7</li>
+						     <h3 class="section-heading">Daniela Reyes  <br>Group Leader for Phase 3</h3>
+                             <ul>
+                	 <li class="member-info"> <b>Bio:</b> Daniela, hailing from El Paso, is another of our de facto angular and html experts on the Frontend team.</li>
+                <li class="member-info"> <b>Major Responsibilities:</b> Bootstrap, angular, html, tech report</li>
+                <li class="member-info"> <b>No. of Commits:</b> 259</li>
+                <li class="member-info"> <b>No. of Issues:</b> 11</li>
+                <li class="member-info"> <b>No. of Unit Tests:</b> 7</li>
+            </ul>
 					</div>
 					</div>
 					<div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -209,17 +228,21 @@
 						<hr class="section-heading-spacer">
 						<div class="clearfix"></div>
 						<div  class="text-box">
-						  <h2 class="section-heading">Stats: </h2>
-                	  <li class="member-info"> Total no. of commits: 439</li>
-                        <li class="member-info"> Total no. of issues: 51</li>
-                        <li class="member-info"> Total no. of unit tests: 39</li>
+						  <h3 class="section-heading">Stats: </h3>
+                          <ul>
+                	  <li class="member-info"> <b>Total no. of commits:</b> 1,193</li>
+                        <li class="member-info"> <b>Total no. of issues:</b> 52</li>
+                        <li class="member-info"> <b>Total no. of unit tests:</b> 39</li>
+                    </ul>
                         <h3> Data </h3>
-                        <li class="member-info"> links to the data sources: <a href="https://www.petfinder.com/developers/api-docs"> https://www.petfinder.com/developers/api-docs</a></li>
-                        <li class="member-info"> how each was scraped: </li>
+                        <ul>
+                        <li class="member-info"> <b>Data Sources:</b> <a href="https://www.petfinder.com/developers/api-docs"> https://www.petfinder.com/developers/api-docs</a></li>
+                        <li class="member-info"> <b>Scraping Method:</b> <a href="https://github.com/nsaid-team/gotopaws/wiki/All-Things-API"> https://github.com/nsaid-team/gotopaws/wiki/All-Things-API </a></li>
+                    </ul>
 				</div>
             </div>
 					<div class="col-lg-5 col-sm-pull-6 col-sm-6">
-						<img class="img-circle img-responsive" src="bootstrap-3.3.5-dist/img/All/dog-path.jpg" alt="" hm-rotate="rotate($event)">
+						<img class="img-circle img-responsive" src="bootstrap-3.3.5-dist/img/All/cat-dog3.jpg" alt="" hm-rotate="rotate($event)">
 					</div>
 				</div>
 			</div>
@@ -246,7 +269,7 @@
                 <div class="col-lg-12">
                     <ul class="list-inline banner-social-buttons">
                         <li >
-                            <a href="http://docs.gotopaws1.apiary.io/#" class="btn btn-default btn-lg"><i class="fa fa-font fa-fw"></i> <span class="network-name">Apiary API</span></a>
+                            <a href="http://docs.gotopaws1.apiary.io/#" class="btn btn-default btn-lg"><i class="fa fa-cubes"></i> <span class="network-name">Apiary API</span></a>
                         </li>
                         <li>
                             <a href="https://github.com/nsaid-team/gotopaws/issues" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github Issue Tracker</span></a>
@@ -256,6 +279,14 @@
                         </li>
                          <li>
                             <a href="https://github.com/nsaid-team/gotopaws/wiki" class="btn btn-default btn-lg"><i class="fa fa-github-square fa-fw"></i> <span class="network-name">Github Wiki</span></a>
+                        </li>
+                        <li>
+                            <form ng-submit="submit()" ng-controller="ExampleController as ctrl" class="btn btn-default btn-lg"><i class="fa fa-gears"></i> <span class="network-name"></span>
+                             <input type="submit" id="submit" value="Unit Test" />
+                           
+                            <pre>[{list[0]}]</pre>
+                          
+                        </form>
                         </li>
                     </ul>
                 </div>
@@ -267,11 +298,16 @@
 
 
 
+
+
+
+
+
         <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; NSAID 2015/p>
+                    <small>Copyright &copy; NSAID 2015</small>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>

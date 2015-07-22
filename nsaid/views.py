@@ -1,16 +1,28 @@
 from django.http import HttpResponse
-from django.template import loader
+from django.template import loader, Template, Context
 from django.shortcuts import render, render_to_response
 from django.db import connection
+from django.conf import settings
+from django.core import serializers
+from django import http
 from nsaid.models import *
 from rest_framework import status
 from rest_framework.decorators import api_view
+from datetime import datetime
+from elasticsearch import Elasticsearch
+import requests
 import json
+import urllib
+import random
+import subprocess
+from django.core.management import call_command
+from django.core.management import execute_from_command_line
+from . import tests
 
 
 def test(request):
-    html = "<html><body>Hey that somehow worked!</body></html>"
-    return HttpResponse(html)
+    test_results = tests.run_unit_tests()
+    return HttpResponse(test_results['results'])
 
 def home(request):
     template = loader.get_template('Home.html')
@@ -79,20 +91,36 @@ def city_SF(request):
     template = loader.get_template('City_SF.html')
     return HttpResponse(template.render())
 
-def pet_template(request, id):
-    pet = Pet.object.filter(pet_id = id)
-    context = {'pet': pet}
-    return render(request, 'Pet_Page.html', context)
+def pet_template(request, identifier):
+    pet = Pet.objects.filter(pet_id = identifier)
+    context = {'pet': pet[0]}
+    return render(request, 'Pet_template.html', context)
+    
+def shelter_template(request, identifier):
+    shelter = Shelter.objects.filter(shelter_id = identifier)
+    address = shelter[0].shelter_address + "," + shelter[0].shelter_city + "," + shelter[0].shelter_state
+    url="https://maps.googleapis.com/maps/api/geocode/json?address=%s" % address.replace(" ", "+")
+    response = urllib.request.urlopen(url)
+    jsongeocode = response.read()
+    pet_list = Pet.objects.filter(pet_shelter = identifier)
+    context = {'shelter': shelter[0], 'map_json': jsongeocode, 'pet_list': pet_list}
+    return render(request, 'Shelter_template.html', context)
+    
+def city_template(request, identifier):
+    city = City.objects.filter(city_urlized = identifier)
+    city_shelter_list = Shelter.objects.filter(shelter_city_urlized = identifier)
+    pet_list = Pet.objects.filter(pet_city_urlized = identifier)
+    context = {'city': city[0], 'shelter_list' : city_shelter_list, 'pet_list': pet_list}
+    return render(request, 'City_template.html', context)
 
-def shelter_template(request, id):
-    shelter = Shelter.objects.filter(shelter_id = id)
-    context = {'shelter_id': shelter}
-    return render(request, 'Shelter_Template.html', context)
+def about(request):
+    template = loader.get_template('About.html')
+    return HttpResponse(template.render())
 
-def city_template(request, id):
-    city = City.object.filter(city_id = id)
-    context = {'city_id': city}
-    return render(request, 'City_Page.html', context)
+def navbar(request):
+    c = context({'request': request.path})
+    nav = loader.get_template('bootstrap-3.3.5-dist/templates/Navbar.html')
+    return nav.render(c)
 
 @api_view(['GET'])
 def pet_list(request):
@@ -165,3 +193,91 @@ def city_list(request):
             info[str(city_obj.city_name + '_' + city_obj.city_state)] = city_info
         return HttpResponse(json.dumps(info), content_type="application/json")
 
+def search (request):
+    q = request.GET.get('q')
+    es = Elasticsearch()
+    rs = es.search(index="gtp_index", body=
+        {
+            "query": {
+                "bool": {
+                    "should": [
+                        { "match": { "title":  q }},
+                        { "match": { "text":   q }},
+                    ]
+                }
+            },
+            "highlight": {
+                "fields" : {
+                    "title": {},
+                    "text" : {},
+                }
+            }
+        }
+    )
+
+    results = {}
+    results_list = []
+    titles_list = []
+    for hit in rs['hits']['hits']:
+        if hit["_source"]['title'] not in titles_list :
+            titles_list.append(hit["_source"]['title'])  
+            results['url'] = hit["_source"]['url']
+            if 'text' in hit['highlight']:
+                results['text'] = hit['highlight']['text'][0]
+                results['text'] = results['text'].replace("<em>", "<strong><em>")
+                results['text'] = results['text'].replace("</em>", "</em></strong>")
+            else :
+                results['text'] = None
+            results['title'] = hit["_source"]['title']
+            if 'title' in hit['highlight']:
+                results['title'] = hit['highlight']['title'][0]
+                results['title'] = results['title'].replace("<em>", "<strong><em>")
+                results['title'] = results['title'].replace("</em>", "</em></strong>")
+            results_list.append({'title':results['title'], 'text':results['text'], 'url': results['url']})
+    context = {"results_list": results_list} 
+    #print({context})
+    return render_to_response('search/search.html', context)
+
+def external_api (request) :
+    heroes_list = []
+    items_list = []
+    sets_list = []
+    pet_list = []
+    pet_url = []
+    results_list = []
+    item_hero_list = []
+    identifiers_list = ['heroes', 'items', 'sets']
+    
+    url = "http://nsaid.me/api/pets/"
+    our_response = urllib.request.urlopen(url).read().decode("utf-8")
+    our_api_json = json.loads(our_response)
+
+    for t in our_api_json :
+        pet_list.append(our_api_json[t]['pet_name'])
+        pet_url.append(our_api_json[t]['pet_url'])
+    
+    for i in identifiers_list :
+        url = "http://hatfancy.me/api/" + i + "/"
+        response = urllib.request.urlopen(url).read().decode("utf-8")
+        api_json = json.loads(response)
+        if (i == 'heroes') :
+            heroes_list = api_json
+        if (i == 'items') :
+            items_list = api_json
+        if (i == 'sets') :
+            sets_list = api_json
+
+    for j in range(len(heroes_list)) :
+        for k in range(len(items_list)) :
+            ran_num = random.randrange(len(pet_list))
+            h = heroes_list[j]
+            m = items_list[k]
+
+            if ((h['name'] == m['hero']) and (h['name'] not in item_hero_list)) :
+                results_list.append({'hero': h['name'], 'main_item': m['name'], 'main_set': m['item_set'], 'pet': pet_list[ran_num], 'pet_url': pet_url[ran_num]})
+                item_hero_list.append(m['hero'])
+
+    context = {"results_list": results_list}
+    #print({context})
+    return render_to_response('extapi.html', context)
+    

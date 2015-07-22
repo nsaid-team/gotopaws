@@ -20,36 +20,21 @@ from . import views
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^about$', views.about),
+    url(r'^extapi$', views.external_api),
+    url(r'^search/$', views.search, name='search'),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^test/$', views.test),
     url(r'^$', views.home),
-    url(r'^Home.html$', views.home),
-    url(r'^Shelters.html$', views.shelters),
-    url(r'^Pets.html$', views.pets),
-    url(r'^Cities.html$', views.cities),
-    url(r'^About.html$', views.about),
-    url(r'^Cats.html$', views.cats),
-    url(r'^Dogs.html$', views.dogs),
-    url(r'^Shelter_APA.html$', views.shelter_apa),
-    url(r'^Cat_Sari.html$', views.cat_sari),
-    url(r'^Dog_Earl.html$', views.dog_earl),
-    url(r'^Dog_Rangel.html$', views.dog_Rangel),
-    url(r'^Shelter_HPPL.html$', views.shelter_HPPL),
-    url(r'^Shelter_Muttville.html$', views.shelter_Muttville),
-    url(r'^City_Austin.html$', views.city_Austin),
-    url(r'^City_SF.html$', views.city_SF),
-    url(r'^City_Houston.html$', views.city_Houston),
-    #RESTful API
-    #url(r'^api/', include('api.urls')),
-    #url(r'^api/', include(ShelterResource().urls)),
-    #url(r'^api/', include(CityResource().urls)),
-
-    #url(r'^Pets/(?P<id>[\w-]+)$', views.pet_template),
-    #url(r'^Shelters/(?P<id>[\w-]+)$', views.shelter_template),
-    #url(r'^Cities/(?P<id>[\w-]+)$', views.city_template),
+    url(r'^home$', views.home),
+    url(r'^pets$', views.pets),
+    url(r'^shelters$', views.shelters),
+    url(r'^cities$', views.cities),
+    url(r'^id([\d]+)$', views.pet_template),
+    url(r'^test/$', views.test),
+    url(r'^([A-Z][A-Z][\d]+)$', views.shelter_template),
+    url(r'^([a-z_]+)$', views.city_template),
+    # RESTful API
     url(r'^api/pets/$', views.pet_list),
     url(r'^api/shelters/$', views.shelter_list),
     url(r'^api/cities/$', views.city_list),
-
-    url(r'^hatfancy/(?P<identifier>[\w-]+)/$', views.hat_fancy),
 ]

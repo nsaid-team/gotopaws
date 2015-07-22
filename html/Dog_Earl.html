@@ -16,9 +16,9 @@
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="bootstrap-3.3.5-dist/css/shop-homepage.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/indiv-pets.css" rel="stylesheet">
     <link href="bootstrap-3.3.5-dist/css/full-slider.css" rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="bootstrap-3.3.5-dist/img/All/favicon-32x32.png" sizes="32x32" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -42,22 +42,23 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="Home.html">Home</a></li>
-                    <li  class="active"><a href="Pets.html">Pets</a></li>
-                    <li><a href="Shelters.html">Shelters</a></li>
-                    <li ><a href="Cities.html">Cities</a></li>
-                    <li><a href="About.html">About</a></li>
+                    <li><a href="home">Home</a></li>
+                    <li  class="active"><a href="pets">Pets</a></li>
+                    <li><a href="shelters">Shelters</a></li>
+                    <li ><a href="cities">Cities</a></li>
+                    <li ><a href="extapi">External API</a></li>
+                    <li><a href="about">About</a></li>
                 </ul>
                 <div class="col-sm-3 col-md-3 pull-right">
-                    <form class="navbar-form" role="search">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search" name="q">
-                            <div class="input-group-btn">
-                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                            </div>
+                <form class="navbar-form" role="search" action="/search/">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                         </div>
-                    </form>
-                </div>        
+                    </div>
+                </form>
+            </div>         
             </div>
         </nav>
 
@@ -128,8 +129,8 @@
                         <p><b>Sex:</b> Male</p>
                         <p><b>Size:</b> Medium</p>
                         <p><b>Breed:</b> Poodle </p>
-                        <p><b>Shelter:</b><a href="Shelter_Muttville.html"> Muttville Senior Dog Rescue </a></p>
-                        <p><b>City:</b><a href="City_SF.html"> San Francisco</a></p>
+                        <p><b>Shelter:</b><a href="muttville"> Muttville Senior Dog Rescue </a></p>
+                        <p><b>City:</b><a href="sf"> San Francisco</a></p>
 
 
 
@@ -160,14 +161,16 @@
 
     <hr>
 
-    <!-- Footer -->
-    <footer>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>Copyright &copy; NSAID 2015</p>
+<!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; NSAID 2015/p>
+                </div>
+                <!-- /.col-lg-12 -->
             </div>
-        </div>
-    </footer>
+            <!-- /.row -->
+        </footer>
 
 </div>
 <!-- /.container -->

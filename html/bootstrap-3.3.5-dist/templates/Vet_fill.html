@@ -1,0 +1,14 @@
+<div class="summary">
+    <h2 class="summary-heading">Vets <span class="text-muted">in {{city.city_name}}</span>
+    </h2>
+    {% for vet in city.vets_list %}
+
+    <a href ="{{vet.vet_url}}"><img class="summary-image img-suqare img-responsive pull-right" alt="{{vet.vet_name}}" src="{{vet.vet_pic}}"></a>
+
+    <div class="text-box">
+        <p class="lead">
+            {{vet.vet_description}}
+        </p>
+    </div>
+    {% endfor %}
+</div>

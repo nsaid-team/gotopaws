@@ -1,24 +1,137 @@
-body{
-    width: 100%;
-    height: 120%;
-     background: url(../img/All/dog-leaf.jpg) no-repeat center center;
+html{
+    background: url(../img/All/dog-leaf.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	color: white;
+    min-height: 100%;
+    height: 100%;
+    overflow: auto
 }
 
-div.text-box{
+body {
+    background:transparent;
+    overflow: auto;
+    min-height: 100%;
+    height: 100%;
+}
+
+#container {height: 100%;}
+
+body > #container { height: auto; min-height: 100%; }
+
+#content { padding-bottom: 3em; }
+
+small {
+    color: rgb(255,255,255);
+    text-align: center;
+}
+
+p {
+    display: block;
+    font-size:1em;
+    text-align: justify;
+    margin-top:0em;
+    margin-bottom: 0.67em;
+    margin-right: 0.67em;
+    margin-left: 0.7em;
+    color: rgb(0,0,0);
+}
+
+#footer {
+    clear: both;
+    position: relative;
+    height: 1em;
+    bottom: 0px;
+    left:0px;
+    width:100%;
+    margin-left: 5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+}
+
+h1 {color: rgb(255, 255, 255);}
+
+h3 {
+    display: block;
+    font-size:1.5em;
+    text-align: justify;
+    margin-top:2em;
+    margin-bottom: 0em;
+    margin-right: 0.67em;
+    margin-left: 0.5em;
+    font-weight: bold;
+    color: rgb(255,255,255);
+}
+
+h4 {
+    display: block;
+    font-size:1.2em;
+    text-align: justify;
+    margin-top:0em;
+    margin-bottom: 0.67em;
+    margin-right: 0.67em;
+    margin-left: 0.7em;
+    font-weight: bold;
+    color: rgb(255,255,255);
+}
+
+h5 {
+    display: block;
+    font-size:2em;
+    text-align: justify;
+    margin-top:0.2em;
+    margin-bottom: 0.67em;
+    margin-right: 0.67em;
+    margin-left: 0.7em;
+    font-weight: bold;
+    color: rgb(0,0,0);
+}
+.description{
+    
+   
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+    
+      color:white;
+      padding: 0px 0px 6px 0px;
+      font-size: 35px;
+      line-height: 44px;
+      letter-spacing: -2px;
+      font-weight: normal;
+    text-shadow:rgba(0,0,0,.9) 3px 7px 5px,rgba(255,255,255,.6) 0 -4px 30px;
+}
+
+.text-box{
     background-color: rgba(145, 197, 212, .4);
     width: 100%;
     height:100%;
     margin-top:7%;
     margin-bottom: 5%;
-    margin-right: 25%;
+    margin-left: auto;
+    margin-right:auto; 
+    padding: 2px; 
     font-size:16px;
     color: black;
     text-align: justify;
-
 }
   
+.topnav {
+    font-size: 14px; 
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}

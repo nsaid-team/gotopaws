@@ -1,0 +1,96 @@
+/*!
+ * Start Bootstrap - Round About HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body{
+    background: url(../img/All/cat6.jpg);
+     /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+
+	color: black;
+}
+
+
+.img-center {
+	width: 45%;
+    height: 45%;
+	margin-top:5%;
+	margin-bottom: 5%;
+	margin-left: 25%;
+	
+}
+
+div.text-box{
+	
+	background-color: rgba(255, 255, 255, .7);
+	width: 110%;
+	height:auto;
+	margin-top:5%;
+	margin-bottom: 5%;
+	margin-right: 25%;
+	font-size:14px;
+	text-align: center;
+
+}
+
+.img-circle{
+     border-radius: 70%;
+    
+}
+.page-header{
+    font-size: 50px;
+}
+
+h3{
+	color:black;
+	font-weight:bold;
+	font-size: 30px;
+}
+
+.member-info{
+	color:black;
+	font-size:17px;
+	text-align:left;
+}
+
+.description{  
+  color:white;
+  font-size:20px;
+  text-align: left;
+  font-weight: bold;
+  text-shadow:rgba(255,255,255,.4) 3px 5px 15px,rgba(0,0,0,1) 0 5px 30px;
+}
+
+h1 small {
+    color:white;
+}
+
+footer
+{
+		clear:both;
+		position: relative;
+    color:black;
+    margin-left: 10%;
+		height: 1em;
+    bottom:2%;
+   
+}
+
+a {
+	color: #1E5893;
+};
