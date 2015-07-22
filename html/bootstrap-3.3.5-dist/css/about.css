@@ -60,6 +60,20 @@ h3{
 	text-align:left;
 }
 
+.description{   
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+    
+      color:white;
+      padding: 0px 0px 6px 0px;
+      font-size: 30px;
+      line-height: 44px;
+      letter-spacing: -2px;
+      font-weight: normal;
+}
 
 footer {
     margin: 50px 0;
