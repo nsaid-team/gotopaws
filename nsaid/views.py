@@ -208,8 +208,8 @@ def search (request):
             },
             "highlight": {
                 "fields" : {
-                    'title': {},
-                    'text' : {},
+                    "title": {},
+                    "text" : {},
                 }
             }
         }
@@ -227,7 +227,7 @@ def search (request):
                 results['text'] = results['text'].replace("<em>", "<strong><em>")
                 results['text'] = results['text'].replace("</em>", "</em></strong>")
             else :
-                results['shelters_text'] = None
+                results['text'] = None
             results['title'] = hit["_source"]['title']
             if 'title' in hit['highlight']:
                 results['title'] = hit['highlight']['title'][0]
