@@ -6,9 +6,25 @@
 
 import requests, json
 from django.test import TestCase
+from django.test.utils import *
+from django.db import connection
 from nsaid.models import *
+from unittest import TestLoader, TextTestRunner
+from io import StringIO
+from . import settings
 import unittest
 import coverage
+
+def run_unit_tests():
+    setup_test_environment()
+    old_name = settings.DATABASES['default']['NAME']
+    db = connection.creation.create_test_db(serialize=False, keepdb=True)
+    test_suite = TestLoader().loadTestsFromTestCase(Test)
+    test_stream = StringIO()
+    test_runner = TextTestRunner(stream=test_stream).run(test_suite)
+    connection.creation.destroy_test_db(old_name, keepdb=True)
+    teardown_test_environment()
+    return {'results': test_stream.getvalue(), 'status': str(test_runner)}
 
 # -----------
 # test
@@ -186,7 +202,7 @@ class Test (unittest.TestCase) :
         
         c = City.objects.create(
             city_name = "Testing state name length",
-            city_state = "Really long state name that the database should handle just fine",
+            city_state = "Really long state name",
             city_country = "USA",
             city_vet_url = "vet url",
             city_groomer_url = "groomer url",
@@ -194,7 +210,7 @@ class Test (unittest.TestCase) :
 
         self.assertTrue(type(c) == City)
         self.assertEqual(c.city_name, "Testing state name length")
-        self.assertEqual(c.city_state, "Really long state name that the database should handle just fine")
+        self.assertEqual(c.city_state, "Really long state name")
         self.assertEqual(c.city_country, "USA")
         self.assertEqual(c.city_vet_url, "vet url")
         self.assertEqual(c.city_groomer_url, "groomer url")

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="GoToPaws">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GoToPaws {{shelter.shelter_name}}</title>
+
+    <!-- Bootstrap Core CSS -->
+    {% load static from staticfiles %}
+      <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+     <link href="{% static "css/indiv-shelters.css" %}" rel="stylesheet">
+    <link href="/bootstrap-3.3.5-dist/css/full-slider.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/bootstrap-3.3.5-dist/img/All/favicon-32x32.png" sizes="32x32" />
+
+    <script type="text/javascript" src='{% static "js/angular.min.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/templates.js" %}'></script>
+
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+    <div ng-controller = "templateController">        
+        <nav-bar></nav-bar>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                 <h1 class="page-header">{{shelter.shelter_name}}  </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <img  src="{{shelter.shelter_pic}}" alt="" class="img-logo">
+                 <h4 class="page-contact-info">{{shelter.shelter_address}} <a href="{{shelter.shelter_city_urlized}}">{{shelter.shelter_city}}</a>, {{shelter.shelter_state}}</h4>
+                 <h4 class="page-contact-info">{{shelter.shelter_phone}}</h4>
+                 <h4 class="page-contact-info">{{shelter.shelter_hours}}</h4>
+                 <h4 class="page-contact-info">{{shelter.shelter_email}}</h4>
+                 <h4 class="page-contact-info"><a href="{{shelter.shelter_url}}">{{shelter.shelter_url}}</a></h4>   
+                 <hr>  
+             </div>
+        </div>
+
+         <div class="row">
+            <div class="col-lg-12">
+                 <p class="description">{{shelter.shelter_blurb}}</p> 
+                 <hr>
+            </div>
+         </div>
+
+         <div class="row">
+             {% for pet in pet_list %}
+                 <div class="col-sm-4 col-lg-4 col-md-4">
+                     <div class="thumbnail">
+                        <img class = "img-pet" src="{{pet.pet_pic_large}}" alt="">
+                         <div class="caption">
+                             <h4 class="pull-right">
+                             <h4 class="pet-name"><a href="{{pet.pet_url}}">{{pet.pet_name}}</a></h4>
+                             <p>
+                                 <p><b>Age:</b> {{pet.pet_age}}</p>              
+                                 <p><b>Gender:</b> {{pet.pet_sex}}</p>                
+                                 <p><b>Size:</b> {{pet.pet_size}}</p>                 
+                                 <p><b>Breed:</b> {{pet.pet_breed}} </p>   
+                                 <p><b>Shelter:</b> <a href="{{pet.pet_shelter}}"> {{pet.pet_shelter_name}}</a></p>
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+
+             {% endfor %}
+             
+         </div>
+         <hr>
+   </div>
+
+    <!-- /.container -->
+    <div class="row"="map-container">
+
+    <iframe  width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+     src='https://www.google.com/maps/embed/v1/search?key=AIzaSyDzxvEyxBLPbGafvPwQR9AC3YFLnPk2hWg&q={{shelter.shelter_name.split|join:"+"}}+{{shelter.shelter_city.split|join:"+"}}' allowfullscreen> </iframe>
+
+    </div>
+     <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <small>Copyright &copy; NSAID 2015</small>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="bootstrap-3.3.5-dist/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

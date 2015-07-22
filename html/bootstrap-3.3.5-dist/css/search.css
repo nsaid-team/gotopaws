@@ -1,32 +1,48 @@
-html{
-    color:white;
-    background: url(../img/All/bg_search1.jpg) no-repeat center center;
+html {
+    background: url(../img/All/search-dog2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow-x: hidden;
+    min-height: 100%;
+    height: 101%;
 }
 
 body {
-    width: 100%;
+    background:transparent;
+    min-height: 100%;
     height: 100%;
-    min-height:100%;
-    margin-bottom: 5%;
 }
 
-.text-box{
-    background-color: rgba(255,  255,  255,  0.8);*/
-    color: rgba(255,  255,  255,  0.8);
-    -moz-box-shadow: 13px 13px 18px #8c8c8c;
-    -webkit-box-shadow: 13px 13px 18px #8c8c8c;
-    box-shadow: 13px 13px 18px #8c8c8c;
-    font-color:black;
+#container {height: 100%;}
+
+body > #container { height: auto; min-height: 100%; }
+
+#content { padding-bottom: 3em; }
+
+#text-box{
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right:auto; 
+    padding: 10px; 
+    background-color: rgba(255,  255,  255,  0.9);
+    -moz-box-shadow: 0 0 20px black; 
+    -webkit-box-shadow: 0 0 20px black; 
+    box-shadow: 0 0 20px black;
     width: 90%;
     height:80%;
-    margin-top:5%;
-    margin-bottom: 5%;
-    margin-right: 5%;
-    margin-left: 5%;
+    min-height: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 h3 {
@@ -67,10 +83,10 @@ p {
     color: rgb(0,0,0);
 }
 
-footer {
-    position:relative;
-    vertical-align:bottom; 
-    bottom:0; /* added - fix to bottom */
-    left:0; /* added -for full width */
-    right:0; /* added -for full width */
+#footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 1em;
+    margin-top: -3em;
 }

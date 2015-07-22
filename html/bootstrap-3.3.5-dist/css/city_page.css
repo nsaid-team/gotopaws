@@ -1,15 +1,81 @@
-body
+body{
+     background: url(../img/All/dog2.jpg);
+     /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+    
+    
+}
 
+p{
+    font-size:80%;  
+
+}
+
+.description {
+     color: black;
+     font-size:130%; 
+}
+
+p,h1,h2,h3{
+    font-family: Comic Sans, Comic Sans MS, cursive;
+}
+
+h3{
+    font-size: 190%;
+}
+
+.heading h1{
+    font-size: 36px;
+    font-size: 8.0vw;
+    margin-left: 10.0vw;
+    /*text-shadow: 0px 0px 3px #fff, -1px -1px #fff, 1px 1px #fff;*/
+}
+
+
+a.shelter-link {
+    color: black;
+    /*text-shadow: 0px 0px 2px #000, -1px -1px #337DAD, 1px 1px #337DAD;*/
+}
+
+a:visited.shelter-link {
+   color: #001E76;
+
+}
+
+a:hover.shelter-link {
+color: black;
+}
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 2px solid white;
+    margin: 1em 0; padding: 0; }
+
+.thumbnail img {
+    width: 100%;
+}
 
 .heading
 {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     border-radius: 6px;
     padding-right: 60px;
     padding-left: 60px;
-    background-color: rgba(145, 197, 212, .4);
-    padding-top: 48px;
+   
+    padding-top: .25vh;
     padding-bottom: 48px;
 }
 
@@ -30,19 +96,27 @@ body
 
 .summary-image.pull-right
 {
-    margin-left: 40px;
+    margin-right: 40px;
+    position: absolute;
+    right: 0px;
+    width: 140px;
+    border:5px solid black;
+    padding: 0px;
 }
 
 .summary-heading
 {
     font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 .text-muted{
     color:white;
+    text-shadow: 0px 0px 9px #000, -1px -1px #000, 1px 1px #000;
 }
 
 div.text-box{
-    background-color: rgba(145, 197, 212, .4);
+    background-color: rgba(000, 197, 212, .5);
     width: 100%;
     height:100%;
     margin-top:5%;
@@ -56,7 +130,24 @@ div.text-box{
 
 }
 
+/*Picture Gallery */
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+.img-city{
+    margin: 5px;
+    padding: 0px;
+    border: 5px solid black;
+    height: 190px;
+    width: 190px;
+    float: left;
+    text-align: center;
+}
+
 footer
 {
+    color:black;
     margin: 50px 0;
+    margin-left: 5%;
 }

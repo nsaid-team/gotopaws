@@ -1,91 +1,73 @@
-var app = angular.module("GoToPaws", ['mapModule'], function($interpolateProvider) {
+var app1 = angular.module("GoToPaws", []);
+
+app1.config(function($interpolateProvider) {
     $interpolateProvider.startSymbol('[{');
     $interpolateProvider.endSymbol('}]');
+  });
+
+app1.controller('templateController', function($scope, $location) {
+    $scope.isActive = function(route) {
+      console.log($location.path());
+        return route === $location.path();
+    }
 });
 
 
-app.directive('navBar', function(){
+
+app1.directive("navBar", function(){
+
   return{
     restrict: 'E',
     templateUrl: '/bootstrap-3.3.5-dist/templates/Navbar.html'
   };
 });
 
-app.directive('cityShelters', function(){
-  return{
-    restrict: 'E',
-    templateUrl: '/bootstrap-3.3.5-dist/templates/Shelter_fill.html'
-  };
-});
 
-app.directive('cityPets', function(){
-  return{
-    restrict: 'E',
-    templateUrl: '/bootstrap-3.3.5-dist/templates/Pet_fill.html'
-  };
-});
-
-app.directive('cityVets', function(){
-  return{
-    restrict: 'E',
-    templateUrl: '/bootstrap-3.3.5-dist/templates/Vet_fill.html'
-  };
-});
-
-
-var app2 = angular.module("mapModule", [], function(){});
-
-// app2.controller("MapController", function{
   
-//   geocoder = new google.maps.Geocoder();
-//   geocoder.geocode({ 'address': address }, function(results, status) {
-//     if (status == google.maps.GeocoderStatus.OK) {
-//       map.setCenter(results[0].geometry.location);
-//       var marker = new google.maps.Marker({
-//       map: map,
-//       position: results[0].geometry.location
-//     })}
-//     });
+    app1.controller('ExampleController', ['$scope', '$http', function($scope, $http) {
+      $scope.list = [];
+      $scope.text = "Unit Tests";
+      var temp = this;
+      $scope.submit = function() {
+        $scope.list = [];
+       $http.get("/test/").success(function(load){
+            $scope.text = load.toString();
+          });
+       
+
+      $scope.list.push(this.text);
+      console.log(this.text);
+      $scope.text = '';
+
+       };
+        
+      
+    }]);
 
 
 
+// app.directive('cityShelters', function(){
+//   return{
+//     restrict: 'E',
+//     templateUrl: '/bootstrap-3.3.5-dist/templates/Shelter_fill.html'
+//   };
+// });
+
+// app.directive('cityPets', function(){
+//   return{
+//     restrict: 'E',
+//     templateUrl: '/bootstrap-3.3.5-dist/templates/Pet_fill.html'
+//   };
+// });
+
+// app.directive('cityVets', function(){
+//   return{
+//     restrict: 'E',
+//     templateUrl: '/bootstrap-3.3.5-dist/templates/Vet_fill.html'
+//   };
 // });
 
 
-
-
-  app.controller('MyCtrl', ['$scope', '$http',  function($scope, $http) {
-    $scope.test = "Hola";
-    var temp = this
-    delete $http.defaults.headers.common['X-Requested-With'];
-    $http.get("json").success(function(data) {
-      $scope.results = data;
-      temp.results = data;
-      console.log(data);
-      initialize();
-    }).error(function(data, status) {
-      $scope.data = data || "Request failed";
-      $scope.status = status;
-      console.log(data);
-    });
-  }]);
-
-
-    function initialize(){
-     var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
-     var myOptions = {
-         zoom: 4,
-         center: myLatlng,
-         mapTypeId: google.maps.MapTypeId.ROADMAP
-         }
-      map = new google.maps.Map(document.getElementById("map"), myOptions);
-      var marker = new google.maps.Marker({
-          position: myLatlng, 
-          map: map,
-      title:"Fast marker"
-     });
-    }
- 
 
 
 

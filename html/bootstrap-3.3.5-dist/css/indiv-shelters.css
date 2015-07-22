@@ -21,9 +21,95 @@ body{
   
   /* Pick a solid background color that will be displayed while the background image is loading */
   background-color:#464646;
-	color:white;
+  color:white;
 }
 
-.portfolio-item {
-    margin-bottom: 25px;
+h1,h2,h3,h4{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+   font-family: times, Times New Roman, times-roman, georgia, serif;
+    
+   color:black;
+   padding: 0px 0px 0px 0px;
+   font-size: 35px;
+   line-height: 40px;
+   letter-spacing: 0px;
+   font-weight: normal;
+}
+
+h1{
+  font-size:60px;
+}
+
+h4{
+  color:white;
+  font-size:30px;
+}
+
+h4 a{
+  color:#ACC7EF;
+}
+
+.description{   
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+    
+      color:white;
+      padding: 0px 0px 6px 0px;
+      font-size: 30px;
+      line-height: 44px;
+      letter-spacing: -2px;
+      font-weight: normal;
+}
+
+
+.img-logo{
+  margin-right: 40px;
+  position: absolute;
+  right: 0px;
+  width: 140px;
+  border:5px solid black;
+  padding: 0px;
+}
+
+.thumbnail img{
+   max-width: 200px;
+    max-height: 150px;
+    min-width: 200px;
+    min-height: 150px;
+   border:5px solid black;
+}
+
+.thumbnail h4 {
+   text-align:center;
+  font-size: 25px
+}
+.thumbnail a{
+  color:#007CCF;
+ 
+}
+
+.thumbnail a:hover {
+    color:blue;
+    text-decoration:none;
+}
+
+iframe {
+    margin-left: 15%;
+    background-color: #777;
+
+}
+
+footer
+{
+    color:black;
+    margin: 50px 0;
+    margin-left: 8%;
+    bottom:2%;
+    height: 1em;
 }
