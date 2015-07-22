@@ -235,7 +235,7 @@ def search (request):
                 results['title'] = results['title'].replace("</em>", "</em></strong>")
             results_list.append({'title':results['title'], 'text':results['text']})
     context = {"results_list": results_list} 
-    #print({context})
+    print({context})
     return render_to_response('search/search.html', context)
 
 def external_api (request) :
