@@ -233,9 +233,9 @@ def search (request):
                 results['title'] = hit['highlight']['title'][0]
                 results['title'] = results['title'].replace("<em>", "<strong><em>")
                 results['title'] = results['title'].replace("</em>", "</em></strong>")
-            results_list.append({'title':results['title'], 'text':results['text']})
+            results_list.append({'title':results['title'], 'text':results['text']}, 'url': result['url'])
     context = {"results_list": results_list} 
-    print({context})
+    #print({context})
     return render_to_response('search/search.html', context)
 
 def external_api (request) :
