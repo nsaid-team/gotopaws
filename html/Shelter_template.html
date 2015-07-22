@@ -75,13 +75,13 @@
                         <img class = "img-pet" src="{{pet.pet_pic_large}}" alt="">
                          <div class="caption">
                              <h4 class="pull-right">
-                             <h4><a href="{{pet.pet_url}}">{{pet.pet_name}}</a></h4>
+                             <h4 class="pet-name"><a href="{{pet.pet_url}}">{{pet.pet_name}}</a></h4>
                              <p>
                                  <p><b>Age:</b> {{pet.pet_age}}</p>              
                                  <p><b>Gender:</b> {{pet.pet_sex}}</p>                
                                  <p><b>Size:</b> {{pet.pet_size}}</p>                 
                                  <p><b>Breed:</b> {{pet.pet_breed}} </p>   
-                                 <p><a href="{{pet.pet_shelter}}"> <b>Shelter:</b> {{pet.pet_shelter_name}}</a></p>
+                                 <p><b>Shelter:</b> <a href="{{pet.pet_shelter}}"> {{pet.pet_shelter_name}}</a></p>
                              </p>
                          </div>
                      </div>
