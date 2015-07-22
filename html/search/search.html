@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app = "GoToPaws">
 
 <head>
     <meta charset="utf-8">
@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>GoToPaws Search</title>
+
+     {% load static from staticfiles %}
+    <!-- Custom AngularJS -->
+    <script type="text/javascript" src='{% static "js/angular.min.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/templates.js" %}'></script>
 
     <!--Tab Logo -->
     <link rel="icon" type="image/png" href="../bootstrap-3.3.5-dist/img/All/favicon-32x32.png" sizes="32x32" />
@@ -33,7 +38,13 @@
 <div id="container">
 <div id="content">
 <body>
-    <nav class="navbar navbar-inverse" role="navigation">
+    
+    <div ng-controller = "templateController">        
+        <nav-bar></nav-bar>
+    </div>
+
+
+    <!-- <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -62,7 +73,7 @@
                 </form>
             </div>        
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Introduction Row -->
         <div class="row">
