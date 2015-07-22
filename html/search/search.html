@@ -79,7 +79,7 @@
 
         {% for results in results_list %} 
             <tr>
-                <td><h3><a href=../{{results.url}}>{{results.title|safe}}</a><br></h3>
+                <td><h3><a href={{results.url}}>{{results.title|safe}}</a><br></h3>
                     {% if results.text %} 
                         <p>...{{results.text|safe}}...<br></p>
                     {% endif %}
