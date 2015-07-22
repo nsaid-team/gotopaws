@@ -22,7 +22,7 @@ def run_unit_tests():
     test_suite = TestLoader().loadTestsFromTestCase(Test)
     test_stream = StringIO()
     test_runner = TextTestRunner(stream=test_stream).run(test_suite)
-    connection.creation.destroy_test_db(old_name)
+    connection.creation.destroy_test_db(old_name, keepdb=True)
     teardown_test_environment()
     return {'results': test_stream.getvalue(), 'status': str(test_runner)}
 

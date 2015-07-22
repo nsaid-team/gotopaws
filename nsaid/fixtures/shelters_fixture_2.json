@@ -1,0 +1,282 @@
+[
+    {
+        "model": "nsaid.Shelter",
+        "fields": {
+            "shelter_longitude": "-95.3631",
+            "shelter_state": "TX",
+            "shelter_city": "Houston",
+            "shelter_hours": "",
+            "shelter_address": "P. O. Box 273027",
+            "shelter_email": "hppl@hppl.org",
+            "shelter_pic": "http://s3-media3.fl.yelpcdn.com/bphoto/DAtTe2-FWE0lKKhXgyYxOA/ms.jpg",
+            "shelter_id": "TX154",
+            "shelter_name": "Homeless Pet Placement League",
+            "shelter_city_urlized": "houston",
+            "shelter_phone": "(713) 862-7387   ",
+            "shelter_blurb": "My first visit to this clinic was because of an emergency. My regular vet was unavailable, the Emergency Clinic refused to see my dog and these folks...",
+            "shelter_lattitude": "29.7631",
+            "shelter_url": "TX154"
+        },
+        "pk": 1
+    },
+    {
+        "model": "nsaid.Shelter",
+        "fields": {
+            "shelter_longitude": "-97.766",
+            "shelter_state": "TX",
+            "shelter_city": "Austin",
+            "shelter_hours": "",
+            "shelter_address": "1156 West Cesar Chavez",
+            "shelter_email": "adopt@austinpetsalive.org",
+            "shelter_pic": "http://s3-media3.fl.yelpcdn.com/bphoto/IVs66laHhaH5LYwNXtB0Jg/ms.jpg",
+            "shelter_id": "TX1218",
+            "shelter_name": "Austin Pets Alive!",
+            "shelter_city_urlized": "austin",
+            "shelter_phone": "",
+            "shelter_blurb": "Love, love, love this place! I have so much respect for the people who work & volunteer here. They are all doing it for the right reasons, the animals.",
+            "shelter_lattitude": "30.2458",
+            "shelter_url": "TX1218"
+        },
+        "pk": 2
+    },
+    {
+        "model": "nsaid.Shelter",
+        "fields": {
+            "shelter_longitude": "-97.7631",
+            "shelter_state": "TX",
+            "shelter_city": "Austin",
+            "shelter_hours": "",
+            "shelter_address": "P. O. Box 301197",
+            "shelter_email": "can.adoptions@yahoo.com",
+            "shelter_pic": "http://s3-media1.fl.yelpcdn.com/bphoto/MKPM4UzKr1Qv3EldWuD6bg/ms.jpg",
+            "shelter_id": "TX443",
+            "shelter_name": "Companion Animal Network",
+            "shelter_city_urlized": "austin",
+            "shelter_phone": "Please Email Us!!     ",
+            "shelter_blurb": "I've adopted two cats from catz jazz and have loved both! Cathy is a god send and knows exactly what the cats need!  One cat even was struck ill from a...",
+            "shelter_lattitude": "30.2914",
+            "shelter_url": "TX443"
+        },
+        "pk": 3
+    },
+    {
+        "model": "nsaid.Shelter",
+        "fields": {
+            "shelter_longitude": "-97.7027",
+            "shelter_state": "TX",
+            "shelter_city": "Austin",
+            "shelter_hours": "",
+            "shelter_address": "124 W. Anderson Lane",
+            "shelter_email": "info@austinhumanesociety.org",
+            "shelter_pic": "http://s3-media2.fl.yelpcdn.com/bphoto/77iUrxh2HEqRd9I_bDeQwQ/ms.jpg",
+            "shelter_id": "TX21",
+            "shelter_name": "Austin Humane Society",
+            "shelter_city_urlized": "austin",
+            "shelter_phone": "512-646-PETS (7387)",
+            "shelter_blurb": "Wahooo!!! We recently adopted our two year old pit bull mix, Emma, from the Humane Society and couldn't be happier. She is the sweetest little thing and has...",
+            "shelter_lattitude": "30.3309",
+            "shelter_url": "TX21"
+        },
+        "pk": 4
+    },
+    {
+        "model": "nsaid.Shelter",
+        "fields": {
+            "shelter_longitude": "-95.3631",
+            "shelter_state": "TX",
+            "shelter_city": "Houston",
+            "shelter_hours": "",
+            "shelter_address": "P.O. Box 541286",
+            "shelter_email": "nnaira12@sbcglobal.net",
+            "shelter_pic": "http://s3-media3.fl.yelpcdn.com/bphoto/cwZwEF_Izjf1QoyurEqxHg/ms.jpg",
+            "shelter_id": "TX379",
+            "shelter_name": "Lone Star Boxer Rescue",
+            "shelter_city_urlized": "houston",
+            "shelter_phone": "713-464-1381",
+            "shelter_blurb": "My fiance and I were thinking about adopting a pet so I looked into friends for life. One day we decided to visit and we were impressed by their facility...",
+            "shelter_lattitude": "29.7631",
+            "shelter_url": "TX379"
+        },
+        "pk": 5
+    },
+    {
+        "pk": 6,
+        "model": "nsaid.Shelter",
+        "fields": {
+            "shelter_lattitude": "29.5005",
+            "shelter_phone": "210-226-7461        ",
+            "shelter_hours": "",
+            "shelter_city": "San Antonio",
+            "shelter_state": "TX",
+            "shelter_address": "4804 Fredericksburg Road",
+            "shelter_url": "TX295",
+            "shelter_blurb": "This is the most clean well kept animal shelter I've ever perused. And even though I'm biased because my pup adopted me here, I can say with confidence that...",
+            "shelter_email": "adoption@sahumane.org",
+            "shelter_id": "TX295",
+            "shelter_pic": "http://s3-media2.fl.yelpcdn.com/bphoto/36ZrqozYO-cEoBKVzwc-uQ/ms.jpg",
+            "shelter_longitude": "-98.5716",
+            "shelter_name": "San Antonio Humane Society",
+            "shelter_city_urlized": "san_antonio"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "nsaid.Shelter",
+        "fields": {
+            "shelter_lattitude": "29.4878",
+            "shelter_phone": "210-PET-CARE ",
+            "shelter_hours": "",
+            "shelter_city": "San Antonio",
+            "shelter_state": "TX",
+            "shelter_address": "900 NE Loop 410  #311-D",
+            "shelter_url": "TX1046",
+            "shelter_blurb": "The office staff is very good and very communicative.  I've been using this service for over 2 years and any time I've not been satisfied, which is rarely,...",
+            "shelter_email": "NewLeashonLife@ymail.com",
+            "shelter_id": "TX1046",
+            "shelter_pic": "http://s3-media3.fl.yelpcdn.com/bphoto/AhlowNDllFrbJomzn9VxEQ/ms.jpg",
+            "shelter_longitude": "-98.4573",
+            "shelter_name": "Responsible Pet Owners Alliance",
+            "shelter_city_urlized": "san_antonio"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "nsaid.Shelter",
+        "fields": {
+            "shelter_lattitude": "37.7738",
+            "shelter_phone": "415-554-6364  ",
+            "shelter_hours": "",
+            "shelter_city": "San Francisco",
+            "shelter_state": "CA",
+            "shelter_address": "1200 15th Street (at Harrison)",
+            "shelter_url": "CA326",
+            "shelter_blurb": "Thank you, SF Animal Care & Control!\n\nWe made a frantic call Friday because a beautiful raptor had somehow made its way into our condo's courtyard despite...",
+            "shelter_email": "acc@sfgov.org",
+            "shelter_id": "CA326",
+            "shelter_pic": "http://s3-media2.fl.yelpcdn.com/bphoto/osbIdTzn6hkMgt3k-xFPyQ/ms.jpg",
+            "shelter_longitude": "-122.4114",
+            "shelter_name": "San Francisco Animal Care and Control",
+            "shelter_city_urlized": "san_francisco"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "nsaid.Shelter",
+        "fields": {
+            "shelter_lattitude": "29.9749",
+            "shelter_phone": "5043048223",
+            "shelter_hours": "",
+            "shelter_city": "New Orleans",
+            "shelter_state": "LA",
+            "shelter_address": "3821 Orleans Ave.",
+            "shelter_url": "LA297",
+            "shelter_blurb": "I am new to New Orleans and was recommended by a friend to try out the MidCity Vet Hospital and I was very glad that I did! The staff was uber friendly and...",
+            "shelter_email": "midcityvet@gmail.com",
+            "shelter_id": "LA297",
+            "shelter_pic": "http://s3-media1.fl.yelpcdn.com/bphoto/7LPwfTWlVnvW4gnQuhocbQ/ms.jpg",
+            "shelter_longitude": "-90.085",
+            "shelter_name": "MidCity Veterinary Hospital",
+            "shelter_city_urlized": "new_orleans"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "nsaid.Shelter",
+        "fields": {
+            "shelter_lattitude": "37.7928",
+            "shelter_phone": "Please email us ",
+            "shelter_hours": "",
+            "shelter_city": "San Francisco",
+            "shelter_state": "CA",
+            "shelter_address": "Bay Area",
+            "shelter_url": "CA1130",
+            "shelter_blurb": "I think it's wonderful when you find someone who is truly passionate about what they're doing, and it's not \"just a job\" - Carolina runs this business...",
+            "shelter_email": "falceyp@comcast.net",
+            "shelter_id": "CA1130",
+            "shelter_pic": "http://s3-media1.fl.yelpcdn.com/bphoto/bzQCmYKTV4eZIynXccx4oA/ms.jpg",
+            "shelter_longitude": "-122.4185",
+            "shelter_name": "All Fur Love",
+            "shelter_city_urlized": "san_francisco"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "nsaid.Shelter",
+        "fields": {
+            "shelter_lattitude": "37.7493",
+            "shelter_phone": "1 415 786-5566  ",
+            "shelter_hours": "",
+            "shelter_city": "San Francisco",
+            "shelter_state": "CA",
+            "shelter_address": "P.O Box 460826",
+            "shelter_url": "CA534",
+            "shelter_blurb": "I trust no one other than Lena!!!.I have seen her in action and she truly is the best !!.if you are looking at adopting or wanna be a foster parent I would...",
+            "shelter_email": "adopt@rocketdogrescue.org",
+            "shelter_id": "CA534",
+            "shelter_pic": "http://s3-media2.fl.yelpcdn.com/bphoto/J_hGzWb9pGMLJAlg9Nix2A/ms.jpg",
+            "shelter_longitude": "-122.4153",
+            "shelter_name": "Rocket Dog Rescue",
+            "shelter_city_urlized": "san_francisco"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "nsaid.Shelter",
+        "fields": {
+            "shelter_lattitude": "37.7493",
+            "shelter_phone": "",
+            "shelter_hours": "",
+            "shelter_city": "San Francisco",
+            "shelter_state": "CA",
+            "shelter_address": "",
+            "shelter_url": "CA1021",
+            "shelter_blurb": "Our cat at home is 6 years old.  Adopted from the local shelter in LA when she was young.  She's pretty shy and timid, so we definitely wanted to find a...",
+            "shelter_email": "wondercatrescue@gmail.com",
+            "shelter_id": "CA1021",
+            "shelter_pic": "http://s3-media3.fl.yelpcdn.com/bphoto/-Vi8Z0KEVpvAwM2RbXi8CQ/ms.jpg",
+            "shelter_longitude": "-122.4153",
+            "shelter_name": "Wonder Cat Rescue",
+            "shelter_city_urlized": "san_francisco"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "nsaid.Shelter",
+        "fields": {
+            "shelter_lattitude": "29.9275",
+            "shelter_phone": "5043044718",
+            "shelter_hours": "",
+            "shelter_city": "New Orleans",
+            "shelter_state": "LA",
+            "shelter_address": "4601 Freret Street",
+            "shelter_url": "LA322",
+            "shelter_blurb": "Very affordable. Awesome staff. You can see your dog via web cam when you want. Staff was Very helpful for us newbies in the area. Clean and well...",
+            "shelter_email": "zeusrescues@gmail.com",
+            "shelter_id": "LA322",
+            "shelter_pic": "http://s3-media3.fl.yelpcdn.com/bphoto/i2kjcSV_qqgG_vlHLmyTeg/ms.jpg",
+            "shelter_longitude": "-90.1013",
+            "shelter_name": "Zeus' Rescues",
+            "shelter_city_urlized": "new_orleans"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "nsaid.Shelter",
+        "fields": {
+            "shelter_lattitude": "29.9397",
+            "shelter_phone": "504.368.5191  ",
+            "shelter_hours": "",
+            "shelter_city": "New Orleans",
+            "shelter_state": "LA",
+            "shelter_address": "1700 Mardi Gras Blvd.",
+            "shelter_url": "LA60",
+            "shelter_blurb": "Extremely clean facility, the animals were comfortable and well-socialized.  Staff was attentive and not simply going through the motions, they really care...",
+            "shelter_email": "info@la-spca.org",
+            "shelter_id": "LA60",
+            "shelter_pic": "http://s3-media1.fl.yelpcdn.com/bphoto/iEw9cWL-zLIy9es37TJ_dg/ms.jpg",
+            "shelter_longitude": "-90.0355",
+            "shelter_name": "Louisiana SPCA",
+            "shelter_city_urlized": "new_orleans"
+        }
+    }
+]

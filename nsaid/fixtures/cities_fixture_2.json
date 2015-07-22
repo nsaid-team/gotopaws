@@ -1,0 +1,97 @@
+[
+    {
+        "model": "nsaid.City",
+        "fields": {
+            "city_park_url": "http://www.yelp.com/biz/auditorium-shores-leash-free-dog-zone-austin-3",
+            "city_name": "Austin",
+            "city_pic": "http://s3-media4.fl.yelpcdn.com/bphoto/YJ4gE0MFfzHV1bcDYgDIyg/ms.jpg",
+            "city_urlized": "austin",
+            "city_vet_url": "http://www.yelp.com/biz/corner-vet-austin-3",
+            "city_country": "US",
+            "city_blurb": "Bat City, The City of the Violet Crown, The Live Music Capital of the World, The Blueberry in a Red State. These are some of the names that characterize...",
+            "city_groomer_pic": "http://s3-media2.fl.yelpcdn.com/bphoto/849kuLQr36BJdqw4GlyX1w/ms.jpg",
+            "city_vet_pic": "http://s3-media2.fl.yelpcdn.com/bphoto/W9fllH267gqpRXcCnwtXlg/ms.jpg",
+            "city_url": "austin",
+            "city_state": "TX",
+            "city_park_pic": "http://s3-media3.fl.yelpcdn.com/bphoto/cb3te_dvsTS2ZRb0T840wg/ms.jpg",
+            "city_groomer_url": "http://www.yelp.com/biz/groom-envy-austin"
+        },
+        "pk": 1
+    },
+    {
+        "model": "nsaid.City",
+        "fields": {
+            "city_park_url": "http://www.yelp.com/biz/madison-square-dog-park-san-antonio",
+            "city_name": "San Antonio",
+            "city_pic": "http://s3-media4.fl.yelpcdn.com/bphoto/DPHgpYVDMhYmwFmDfnUrtA/ms.jpg",
+            "city_urlized": "san_antonio",
+            "city_vet_url": "http://www.yelp.com/biz/north-star-animal-hospital-san-antonio",
+            "city_country": "US",
+            "city_blurb": "I could put on my teacher's glasses and give you a history lesson on San Antonio. I could put on some tennis shoes and transform into a tour guide through...",
+            "city_groomer_pic": "http://s3-media4.fl.yelpcdn.com/bphoto/SSJMCorNjTHnu1BqYfmUiA/ms.jpg",
+            "city_vet_pic": "http://s3-media4.fl.yelpcdn.com/bphoto/WjIew7ypKs5TVbbll2P0iA/ms.jpg",
+            "city_url": "san_antonio",
+            "city_state": "TX",
+            "city_park_pic": "http://s3-media4.fl.yelpcdn.com/bphoto/RXWuekTV7jMRbRh2mP11MQ/ms.jpg",
+            "city_groomer_url": "http://www.yelp.com/biz/little-debbys-dog-grooming-san-antonio"
+        },
+        "pk": 2
+    },
+    {
+        "model": "nsaid.City",
+        "fields": {
+            "city_park_url": "http://www.yelp.com/biz/johnny-steele-dog-park-houston",
+            "city_name": "Houston",
+            "city_pic": "http://s3-media3.fl.yelpcdn.com/bphoto/ypj9-AslTHNh2dmXNbyFBw/ms.jpg",
+            "city_urlized": "houston",
+            "city_vet_url": "http://www.yelp.com/biz/midtown-veterinary-hospital-houston",
+            "city_country": "US",
+            "city_blurb": "LOL.  The only thing I don't like about this city is the damn rain!  So many memories.  \n\n\n-Being Miss Upward Bound at Texas Southern University.  What up,...",
+            "city_groomer_pic": "http://s3-media1.fl.yelpcdn.com/bphoto/YWSEoe_Wczf-E4ETeM4Pgg/ms.jpg",
+            "city_vet_pic": "http://s3-media4.fl.yelpcdn.com/bphoto/odgEikPDoxcnvMzSi6gWPw/ms.jpg",
+            "city_url": "houston",
+            "city_state": "TX",
+            "city_park_pic": "http://s3-media4.fl.yelpcdn.com/bphoto/CjdPYIAr86nbu2brsqibjw/ms.jpg",
+            "city_groomer_url": "http://www.yelp.com/biz/krisers-natural-pet-houston-3"
+        },
+        "pk": 3
+    },
+    {
+        "model": "nsaid.City",
+        "fields": {
+            "city_park_url": "http://www.yelp.com/biz/corona-heights-park-san-francisco",
+            "city_name": "San Francisco",
+            "city_pic": "http://s3-media1.fl.yelpcdn.com/bphoto/ruz8Zv1Tbfj7uQZ9AshGHA/ms.jpg",
+            "city_urlized": "san_francisco",
+            "city_vet_url": "http://www.yelp.com/biz/san-francisco-pet-hospital-san-francisco",
+            "city_country": "US",
+            "city_blurb": "(Sang to the tune of the \"Twelve Days of Christmas \")\n\nFivvvvve parking tickets ....\n\n4 rainbow flags....., 3 Union Squares......., 2 Uber rides........ and...",
+            "city_groomer_pic": "http://s3-media1.fl.yelpcdn.com/bphoto/UOGhgNuFkeyGh-RJs6cz-Q/ms.jpg",
+            "city_vet_pic": "http://s3-media3.fl.yelpcdn.com/bphoto/3_6ss0tHfiKve9QLpaRziw/ms.jpg",
+            "city_url": "san_francisco",
+            "city_state": "CA",
+            "city_park_pic": "http://s3-media1.fl.yelpcdn.com/bphoto/UEFnoLDtFYUM4J_Qi4oLwA/ms.jpg",
+            "city_groomer_url": "http://www.yelp.com/biz/doggie-day-spaw-san-francisco-2"
+        },
+        "pk": 4
+    },
+    {
+        "model": "nsaid.City",
+        "fields": {
+            "city_park_url": "http://www.yelp.com/biz/cabrini-park-new-orleans-2",
+            "city_name": "New Orleans",
+            "city_pic": "http://s3-media1.fl.yelpcdn.com/bphoto/I5-L7C9UcWxC5iXoeF649A/ms.jpg",
+            "city_urlized": "new_orleans",
+            "city_vet_url": "http://www.yelp.com/biz/canal-street-veterinary-hospital-new-orleans",
+            "city_country": "US",
+            "city_blurb": "Had an excellent time here in New Orleans or NOLA as a lot of people say! \n\nWe ate so much wonderful food. I feel like I was always full. Never hungry....",
+            "city_groomer_pic": "http://s3-media1.fl.yelpcdn.com/bphoto/VofH6L2ZI2FHq5W8b8cd9w/ms.jpg",
+            "city_vet_pic": "http://s3-media1.fl.yelpcdn.com/bphoto/s3aB-9QH0aBI5MdTGtQZSQ/ms.jpg",
+            "city_url": "new_orleans",
+            "city_state": "LA",
+            "city_park_pic": "http://s3-media3.fl.yelpcdn.com/bphoto/qJHiJzTcpqR2x8QAnAtWKg/ms.jpg",
+            "city_groomer_url": "http://www.yelp.com/biz/hair-of-the-dog-salon-new-orleans"
+        },
+        "pk": 5
+    }
+]

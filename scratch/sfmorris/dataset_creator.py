@@ -84,7 +84,7 @@ def create_cities_file(city_list_parameter):
         fixture_list.append(fixture_element)
         pk += 1
     #    fixture_superlist += fixture_list
-    city_file = open("../../nsaid/fixtures/cities_fixture.json", "w")
+    city_file = open("../../nsaid/fixtures/cities_fixture_2.json", "w")
     json.dump(fixture_list, city_file, indent = 4)
     city_file.close()
     
@@ -145,6 +145,7 @@ def create_shelters_file(city_list, shelter_count):
         for sh in r.json()["petfinder"]["shelters"]["shelter"]:
             #print(str(sh))
             try:
+                print("       attempting to create shelter " + sh["id"]["$t"] + " " + sh["name"]["$t"])
                 shelter_fields = {"shelter_id" : "", "shelter_name" : "", "shelter_city_urlized" : "", "shelter_hours" : "", 
                                   "shelter_address" : "", "shelter_phone" : "", "shelter_email" : "", "shelter_city" : "",
                                   "shelter_state" : "", "shelter_lattitude" : "", "shelter_longitude" : "",
@@ -220,7 +221,7 @@ def create_shelters_file(city_list, shelter_count):
                 fixture_list.append(fixture_element)
                 pk += 1
         fixture_superlist += fixture_list
-    shelter_file = open("../../nsaid/fixtures/shelters_fixture.json", "w")
+    shelter_file = open("../../nsaid/fixtures/shelters_fixture_2.json", "w")
     json.dump(fixture_superlist, shelter_file, indent = 4)
     shelter_file.close()
 
@@ -237,7 +238,7 @@ def create_pets_file(pet_count):
     pk = 1
 
     print("count is " + str(pet_count))
-    shelters_file = json.loads(open("../../nsaid/fixtures/shelters_fixture.json").read())
+    shelters_file = json.loads(open("../../nsaid/fixtures/shelters_fixture_2.json").read())
     master_pets = []
     for shelter in shelters_file:
         #pets = pet_validate(city.city_name, city.city_state, "pet_city", "pet_state", pets_per_shelter(shelter))
@@ -357,7 +358,7 @@ def create_pets_file(pet_count):
             #print(json.dumps(r.json()["petfinder"]["pets"]["pet"], indent = 4))
         fixture_superlist += fixture_list
         #break
-    pet_file = open("../../nsaid/fixtures/pets_fixture.json", "w")
+    pet_file = open("../../nsaid/fixtures/pets_fixture_2.json", "w")
     json.dump(fixture_superlist, pet_file, indent = 4)    
     #rint(json.dumps(fixture_superlist, indent = 4))
     #return fixture_superlist
@@ -380,8 +381,8 @@ if __name__ == "__main__" :
     #print(yelp_query("austin tx", "vetrinarian", "image_url"))
     #print(google_query("Austin pets alive"))
 
-    #create_shelters_file(city_list, 2)
-    create_pets_file(10)
+    #create_shelters_file(city_list, 10)
+    #create_pets_file(10)
     
     #create_city_file(city_list)
     #print(petfinder_query(31256107, "description"))
