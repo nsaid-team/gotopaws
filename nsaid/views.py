@@ -194,9 +194,46 @@ def city_list(request):
         return HttpResponse(json.dumps(info), content_type="application/json")
 
 def search (request):
+    results = {}
+    results_list = []
+    titles_list = []
     q = request.GET.get('q')
     es = Elasticsearch()
     rs = es.search(index="gtp_index", body=
+        {
+            "query": {
+                "bool": {
+                    "must":{ "match": { "text":   q }},
+                    "should":  { "match": { "title":   q }}
+                }
+            },
+            "highlight": {
+                "fields" : {
+                    "title": {},
+                    "text" : {},
+                }
+            }
+        }
+    )
+
+    for hit in rs['hits']['hits']:
+        if hit["_source"]['title'] not in titles_list :
+            titles_list.append(hit["_source"]['title'])  
+            results['url'] = hit["_source"]['url']
+            if 'text' in hit['highlight']:
+                results['text'] = hit['highlight']['text'][0]
+                results['text'] = results['text'].replace("<em>", "<strong><em>")
+                results['text'] = results['text'].replace("</em>", "</em></strong>")
+            else :
+                results['text'] = None
+            results['title'] = hit["_source"]['title']
+            if 'title' in hit['highlight']:
+                results['title'] = hit['highlight']['title'][0]
+                results['title'] = results['title'].replace("<em>", "<strong><em>")
+                results['title'] = results['title'].replace("</em>", "</em></strong>")
+            results_list.append({'title':results['title'], 'text':results['text'], 'url': results['url']})
+
+    rss = es.search(index="gtp_index", body=
         {
             "query": {
                 "bool": {
@@ -215,10 +252,7 @@ def search (request):
         }
     )
 
-    results = {}
-    results_list = []
-    titles_list = []
-    for hit in rs['hits']['hits']:
+    for hit in rss['hits']['hits']:
         if hit["_source"]['title'] not in titles_list :
             titles_list.append(hit["_source"]['title'])  
             results['url'] = hit["_source"]['url']
@@ -234,8 +268,10 @@ def search (request):
                 results['title'] = results['title'].replace("<em>", "<strong><em>")
                 results['title'] = results['title'].replace("</em>", "</em></strong>")
             results_list.append({'title':results['title'], 'text':results['text'], 'url': results['url']})
+
     context = {"results_list": results_list} 
     #print({context})
+
     return render_to_response('search/search.html', context)
 
 def external_api (request) :
